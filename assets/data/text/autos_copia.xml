@@ -1803,7 +1803,7 @@
                     <pb n="20r1" facs="20r.jpg"/>
                     <fw place="top_right" type="pageNum">2<app><lem varSeq="2"><mod change="#strato-4">3</mod></lem><rdg varSeq="1"><mod change="#strato-1">1</mod></rdg></app></fw>
                     
-                <p>PROVA</p>    
+                <p><mod change="#strato-1">PROVA</mod></p>    
                 </div>
             </div>
         </body>
