@@ -1,6 +1,13 @@
 {
 	"availableViewModes": [
 		{
+			"icon": "imgTxt",
+			"iconSet": "evt",
+			"id": "imageText",
+			"label": "Image Text",
+			"enable": true
+		},
+		{
 			"icon": "images",
 			"iconSet": "fas",
 			"id": "imageImage",
@@ -21,13 +28,7 @@
 			"label": "Reading Text",
 			"enable": true
 		},
-		{
-			"icon": "imgTxt",
-			"iconSet": "evt",
-			"id": "imageText",
-			"label": "Image Text",
-			"enable": true
-		},
+
 		{
 			"icon": "txtTxt",
 			"iconSet": "evt",
