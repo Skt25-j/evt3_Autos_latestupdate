@@ -1,0 +1,212 @@
+{
+  "editionTitle": "Progetto Autos",
+  "badge": "beta",
+  "editionHome": "",
+  "availableEditionLevels": [
+    {
+      "id": "diplomatic",
+      "label": "diplomatica",
+      "enable": true,
+      "hidden": false
+    },
+    {
+      "id": "interpretative",
+      "label": "critica",
+      "enable": true,
+      "hidden": false
+    },
+    {
+      "id": "critical",
+      "label": "critical",
+      "enable": false,
+      "hidden": false
+    },
+    {
+      "id": "changesView",
+      "label": "changes",
+      "enable": true,
+      "hidden": false
+    }
+  ],
+  "downloadableXMLSource": false,
+  "namedEntitiesLists": {
+    "persons": {
+      "defaultLabel": "Persons",
+      "enable": true,
+      "listSelector": "listPerson",
+      "namedEntityType": "person"
+    },
+    "places": {
+      "enable": true,
+      "defaultLabel": "Places",
+      "listSelector": "listPlace",
+      "namedEntityType": "place"
+    },
+    "organizations": {
+      "enable": true,
+      "defaultLabel": "Organizations",
+      "listSelector": "listOrg",
+      "namedEntityType": "org"
+    },
+    "relations": {
+      "enable": true,
+      "defaultLabel": "Relations",
+      "listSelector": "listRelation",
+      "namedEntityType": "relation"
+    },
+    "events": {
+      "enable": false,
+      "defaultLabel": "Events",
+      "listSelector": "listEvent",
+      "namedEntityType": "event"
+    },
+    "entries": {
+  "enable": true,
+  "defaultLabel": "Opere",
+  "listSelector": "listBibl",
+  "namedEntityType": "doc",
+  "labelProperty": "title" 
+}
+  },
+  "showLists": true,
+  "entitiesSelectItems": [
+    {
+      "label": "Named Entities",
+      "items": [
+        {
+          "value": "persName",
+          "label": "persons",
+          "color": "#ffcdd2",
+          "enable": true
+        },
+        {
+          "value": "persName[type='episcopus']",
+          "label": "bishops",
+          "color": "rgb(139, 98, 236)",
+          "enable": false
+        },
+        {
+          "value": "placeName,geogName",
+          "label": "places",
+          "color": "#A5D6A7",
+          "enable": true
+        },
+        {
+          "value": "orgName",
+          "label": "organizations",
+          "color": "#FFB74D",
+          "enable": true
+        },
+        {
+          "value": "eventName",
+          "label": "events",
+          "color": "#fcfc60",
+          "enable": false
+        },
+        {
+          "value": "relation",
+          "label": "relations",
+          "color": "#90caf9",
+          "enable": true
+        },
+        {
+          "value": "title",
+          "label": "Opere",
+          "color": "#ce93d8",
+          "enable": true
+        }
+      ],
+      "enable": true
+    },
+    {
+      "label": "Other",
+      "items": [
+        {
+          "value": "rolename",
+          "label": "roles",
+          "enable": true
+        },
+        {
+          "value": "measure",
+          "label": "measures",
+          "enable": true
+        }
+      ],
+      "enable": false
+    }
+  ],
+  "notSignificantVariants": [
+    "type=orthographic"
+  ],
+  "defaultEdition": "changesView",
+  "defaultViewMode": "text",
+  "proseVersesToggler": true,
+  "defaultTextFlow": "prose",
+  "verseNumberPrinter": 100,
+  "readingColorLight": "rgb(255 241 208)",
+  "readingColorDark": "rgb(101, 138, 255)",
+  "externalBibliography": {
+    "biblAttributeToMatch": "xml:id",
+    "elementAttributesToMatch": [
+      "target",
+      "source"
+    ]
+  },
+  "biblView": {
+    "propsToShow": [
+      "author",
+      "title",
+      "date",
+      "ref",
+      "editor",
+      "publisher",
+      "pubPlace",
+      "citedRange",
+      "biblScope",
+      "note"
+    ],
+    "showAttrNames": false,
+    "showEmptyValues": false,
+    "inline": true,
+    "commaSeparated": true,
+    "showMainElemTextContent": true
+  },
+  "analogueMarkers": [
+    "ParallelPassage",
+    "parallelPassage",
+    "Parallel",
+    "parallel"
+  ],
+  "sourcesExcludedFromListByParent": [
+    "desc"
+  ],
+  "showSubstitutionMarker": true,
+  "showSeparatorBetweenChanges": true,
+  "startingFromDefinitiveLayer": false,
+  "showChangeLayerMarkerInText": true,
+  "changeSequenceView": {
+    "showVarSeqAttr": false,
+    "showSeqAttr": false,
+    "layerColors": {
+      "strato-0": "#E67E22",
+      "strato-1": "#D35400",
+      "strato-2": "#E91E63",
+      "strato-3": "#C2185B",
+      "strato-4": "#9E9B9B",
+      "strato-5": "#9C27B0",
+      "strato-6": "#7B1FA2",
+      "strato-7": "#512DA8",
+      "strato-8": "#4C4A4A",
+      "strato-9": "#2404B5",
+      "strato-10": "#BB1515",
+      "strato-11": "#080277",
+      "strato-X": "#0097A7",
+      "strato-Y": "#00796B"
+    }
+  },
+  "defaultImageZoomLevel": 0.6,
+  "maxImageZoomLevel": 2,
+  "multiPageEngineForCriticalEdition": false,
+  "syncZonesHighlightButton": false,
+  "editionStructureSeparator": "pb"
+}

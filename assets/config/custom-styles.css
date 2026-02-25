@@ -1,0 +1,229 @@
+.ab[rend="align-center"] {
+    display: block;
+    text-align: center;
+}
+
+*[rend="strikethrough"] {
+    text-decoration: line-through;
+    display: inline;
+}
+
+*[rend="overwritten"] {
+    font-weight: bold;
+}
+
+*[rend="underline"] {
+    text-decoration: underline;
+}
+
+*[rend="italic"] {
+    font-style: italic;
+}
+
+*[rend="erasure"] {
+    background-color: rgb(70, 70, 70);
+}
+
+*[rend="cross"] {
+    text-decoration: line-through;
+}
+
+*[rend="line_full_width"] {
+    margin-bottom: 0.1rem;
+    border-bottom: 1px solid black;
+    display: block;
+}
+
+*[rend="sup"] {
+    vertical-align: text-bottom;
+}
+
+*[place="superscript"] {
+    vertical-align: text-bottom;
+}
+
+.metamark[rend="line"] {
+    display: block;
+    border: 1px solid black;
+    margin-top:-1em;
+    margin-right:70%;
+}
+
+.fw {
+    display: inline-flex;
+}
+
+[type="pageNum"][place="top_right"] {
+    float:right;
+    margin-top: -1.5rem;
+}
+
+evt-reading evt-note,
+evt-addition evt-note {
+  display: none !important;
+}
+
+
+
+
+evt-mod[change="#strato-4"] * {
+    color: rgb(93, 91, 91) !important;
+}
+evt-mod[change="#strato-8"]*{
+    color: rgb(76, 74, 74);
+    
+}
+evt-mod[change="#strato-9"] * {
+    color: rgb(36, 4, 181) !important;
+}
+
+evt-mod[change="#strato-10"] * {
+    color: #bb1515;
+    
+}
+
+
+/* Regola definitiva per il contenitore principale del cambiamento */
+evt-mod[change="#strato-11"] * {
+    color: rgb(68, 62, 179) !important;
+}
+
+/* 1. Rimuove la possibilità di click sul contenitore della riga numerata */
+span.lb[data-n] { 
+    pointer-events: none !important;
+}
+
+/* 2. Assicura che la riga numerata e il numero a margine siano visibili */
+/* Li impostiamo come elementi in linea (o inline-block) se EVT li ha modificati */
+span.lb[data-n], span.lb[data-n] br {
+    display: inline !important; /* Mantiene l'elemento nel flusso del testo */
+}
+
+/* 3. Assicura che il numero di riga a margine sia visibile */
+.lineN {
+    display: inline !important; 
+    /* Spesso il display viene gestito dalle impostazioni del view mode di EVT */
+}
+
+/* Seleziona l'elemento ADD di EVT (<evt-addition>) con l'attributo rend="indent-start" */
+
+/* 1. Targettiamo l'elemento contenitore <evt-addition> che ha l'attributo data-rend */
+/* 2. Applichiamo la proprietà al discendente che contiene il testo (.evt-span) */
+
+/* Seleziona l'elemento ADD di EVT (<evt-addition>) usando l'attributo 'rend' diretto. */
+evt-addition[rend="indent-start"] .evt-span {
+    /* Rientro marcato e visibile */
+    text-indent: 1em !important; 
+    
+    /* Essenziale per far funzionare text-indent sui tag in linea */
+    display: inline-block !important; 
+}
+
+evt-addition[rend="indent-center"] .evt-span {
+    /* Rientro marcato e visibile */
+    text-indent: 15em !important; 
+    
+    /* Essenziale per far funzionare text-indent sui tag in linea */
+    display: inline-block !important; 
+}
+
+
+
+/* Se l'attributo è mappato come data-rend: */
+evt-lb[data-rend="my-indent"] ~ evt-text {
+    margin-left: 3em !important; 
+}
+
+/* Posiziona l'elemento con place="right" all'estrema destra */
+evt-addition[place="right"] {
+    margin-left: auto; /* Spinge l'elemento a destra nel suo contenitore */
+    float: right;     /* Alternativa: garantisce che sia a destra */
+}
+
+/* Colpisce la cancellazione solo nella prima riga assoluta del box */
+.app-detail-content .row:first-of-type evt-deletion {
+    display: none !important;
+}
+
+/* Nasconde il separatore > solo all'interno del Lemma nell'apparato */
+evt-content-viewer.lem .readingSeparator,
+.lem .readingSeparator,
+.lem .changeGroupSeparator {
+    display: none !important;
+}
+
+/* --- NUOVA GESTIONE METAMARK --- */
+
+/* --- ATTIVAZIONE SELETTIVA DEL METAMARK --- */
+
+/* 1. ATTIVAZIONE GENERALE */
+/* Mostriamo il cerchio a tutti gli elementi metamark strato 9 */
+.metamark[change="#strato-9"], 
+evt-generic-element[rend="circled"] {
+    display: inline-block !important; 
+    border: 2px solid rgb(36, 4, 181) !important;
+    border-radius: 50% / 15% !important;
+    padding: 10px !important;
+    margin: 5px !important;
+    color: black !important;
+}
+
+/* 2. DISATTIVAZIONE CHIRURGICA PER L'INTERPRETATIVA */
+/* Usiamo l'attributo che abbiamo visto nel tuo HTML (data-edition="interpretative") */
+/* Questa regola dice: "Se dentro il metamark c'è un testo interpretativo, spegni il cerchio" */
+
+.metamark:has([data-edition="interpretative"]),
+evt-generic-element:has([data-edition="interpretative"]),
+[data-edition="interpretative"] .metamark,
+.metamark[data-edition="interpretative"] {
+    display: inline !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 3. PROTEZIONE COLORI */
+.metamark[change="#strato-9"] * {
+    color: black !important;
+}
+
+/* Eccezione: l'aggiunta dello strato 9 deve restare blu */
+[change="#strato-9"] [change="#strato-9"] {
+    color: rgb(36, 4, 181) !important;
+}
+/* Eccezione: le aggiunte dello strato 9 devono restare blu */
+.metamark[change="#strato-9"] [change="#strato-9"],
+[change="#strato-9"] [change="#strato-9"] {
+    color: rgb(36, 4, 181) !important;
+}
+
+/* Eccezione per le aggiunte dello strato 9: devono restare blu */
+[change="#strato-9"] [change="#strato-9"],
+.metamark[change="#strato-9"] [change="#strato-9"] {
+    color: rgb(36, 4, 181) !important;
+}
+ /* Esempio di dichiarazione CSS */
+[rend="apice"] {
+    vertical-align: super;
+    font-size: smaller;
+}
+/* Colpisce SOLO il quadratino del selettore strati (Change View) */
+.layerMarker.ng-star-inserted {
+    color: #ffffff !important;      /* Numero Bianco */
+    font-weight: bold !important;   /* Più leggibile */
+    border: 1px solid #ffffff;     /* Opzionale: un sottile bordo bianco */
+}
+
+/* Assicura che anche se il background cambia, il testo resti bianco */
+span[style*="background-color: rgb(36, 4, 181)"] {
+    color: white !important;
+}
+/* Forza la visibilità del contenuto dell'entry prima dell'espansione */
+.entity-item-title, .bibl-label {
+    display: block !important;
+    min-width: 10px;
+    min-height: 20px;
+    color: black !important; /* O il colore che preferisci */
+}
+
+
