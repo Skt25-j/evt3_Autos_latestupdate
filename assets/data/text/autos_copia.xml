@@ -611,7 +611,7 @@
                         <lb/><l n="11">Di <mod change="#strato-0"><subst><del rend="overwritten"><gap quantity="2"  unit="char"/></del>
                                     <add place="superimposed"><hi rend="underline">lupo</hi></add>
                                 </subst></mod>parevano</l>
-                        <l n="12">gli occhi <mod change="#strato-0"><add place="above">rossi e</add></mod><note n="1" type="critical" resp="#ST">L’autore inserisce in interlinea superiore, oltre all’aggettivo, la congiunzione «e», non cassandola in riga; onde evitare la ripetizione, non è stata riportata a testo e considerata soppressa.</note> la mano.</l></lg>
+                        <lb/><l n="12">gli occhi <mod change="#strato-0"><add place="above">rossi e</add></mod><note n="1" type="critical" resp="#ST">L’autore inserisce in interlinea superiore, oltre all’aggettivo, la congiunzione «e», non cassandola in riga; onde evitare la ripetizione, non è stata riportata a testo e considerata soppressa.</note> la mano.</l></lg>
                     <lb/><lb/>
                     <lg n="3"><l n="13">Voleva gridar “mamma”</l>
                         <lb/><l n="14">ma non ebbi coraggio</l>
@@ -1157,10 +1157,9 @@
                     <mod change="#strato-0">
                         <add place="above">per</add></mod> gli altri sti-
                     <lb n="3"/>mati come <app>
-                        <lem varSeq="1"><mod change="#strato-0">uominini</mod></lem>
-                        <rdg varSeq="2"><mod change="#strato-4">
-                                <add place="above">ragazzi</add>
-                            </mod></rdg>
+                        <lem varSeq="2"><mod change="#strato-4"><add place="above">ragazzi</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-0">uominini</mod>
+                            </rdg>
                     </app>
                     <!-- Varianti alternative
                          <w xml:id="alt1">uominini</w>
@@ -1803,7 +1802,7 @@
                     <pb n="20r1" facs="20r.jpg"/>
                     <fw place="top_right" type="pageNum">2<app><lem varSeq="2"><mod change="#strato-4">3</mod></lem><rdg varSeq="1"><mod change="#strato-1">1</mod></rdg></app></fw>
                     
-                <p><mod change="#strato-1">PROVA</mod></p>    
+                <p><mod change="#strato-0">PROVA 1</mod></p>    
                 </div>
             </div>
         </body>
