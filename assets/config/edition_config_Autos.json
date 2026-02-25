@@ -138,7 +138,7 @@
   "notSignificantVariants": [
     "type=orthographic"
   ],
-  "defaultEdition": "changesView",
+  "defaultEdition": "diplomatic",
   "defaultViewMode": "text",
   "proseVersesToggler": true,
   "defaultTextFlow": "prose",
