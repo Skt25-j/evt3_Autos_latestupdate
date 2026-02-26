@@ -252,10 +252,7 @@
                         <lb n="3"/>quasi vent’anni, rileggendole,
                         <lb n="4"/>riconosco me stesso d’allora,
                         <lb n="5"/>quasi eguale a quello d’oggi.
-                        <lb n="6"/>Qua<mod change="#strato-11"> 
-                            <subst>
-                                <del rend="overwritten">nt'</del>
-                                <add place="superimposed">le</add>
+                        <lb n="6"/>Qua<mod change="#strato-11"><subst><del rend="overwritten">nt'</del><add place="superimposed">le</add>
                             </subst>
                         </mod> insegnamento
                         <lb n="7"/>e quale merito me ne viene!
@@ -450,14 +447,15 @@
                     </mod> di non<lb n="15"/>voler essere scoperto da’ maggiori di questo
                     <mod change="#strato-0"><add place="above">mio</add></mod> orgoglio, e, pur<lb n="16"/>conoscendolo dentro me stesso lo negava in famiglia e a’ maestri in<lb n="17"/>modo pertinace,
                     tal ché l’intensità di esso invece di 
-                    <mod change="#strato-0"><subst><add place="above">scender</add> <del rend="strikethrough">calare</del></subst></mod><note n="1">Calare viene nuovamente cassato con il lapis - E</note> si faceva sempre maggiore.
+                    <mod change="#strato-0"><subst><add place="above">scender</add> <del rend="strikethrough">calare</del></subst></mod><note n="1">Calare viene nuovamente cassato con il lapis - E</note>
+                    <lb n="18"/>si faceva sempre maggiore.
                 </p>
-                <p rend="indent"><lb n="18"/>Questo fu il mio vizio dominante in quell’età e non me ne potei
+                <p rend="indent"><lb n="19"/>Questo fu il mio vizio dominante in quell’età e non me ne potei
                     
                     <mod change="#strato-0">
                         <del rend="strikethrough" seq="4"><add place="above" seq="3">mai</add>
                         </del>
-                        esser <del rend="strikethrough" seq="2"><add place="above" seq="1">mai</add>
+                        esser <lb n="20"/><del rend="strikethrough" seq="2"><add place="above" seq="1">mai</add>
                         </del>corretto
                     </mod>
                     
@@ -475,8 +473,7 @@
             <div type="page">
                 <pb n="3r1" facs="3r.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-1"><add>3</add></mod></fw>
-                <p rend="indent"><lb n="1"/>
-                    mi sembrava ingiusto il rimprovero e più perciò imparava a far osserva-<lb n="2"/>zioni sul contegno de’
+                <p rend="indent"><lb n="1"/>mi sembrava ingiusto il rimprovero e più perciò imparava a far osserva-<lb n="2"/>zioni sul contegno de’
                     maggiori; a credermi da essi perseguitato, a<lb n="3"/>non voler esser riguardato nelle proprie azioni pel timore
                     di essere<lb n="4"/>accusato dello stesso difetto, e in una parola a essere sempre<lb n="5"/>più superbo per <mod change="#strato-0"><subst><del rend="strikethrough">esser</del> <add place="inline">sembrar</add></subst></mod> sempre meno suberbo.
                 </p>
@@ -526,7 +523,7 @@
                          </app> Codifica sbagliata perchè ho più di un reading per il medesimo strato-->
                     <!-- Trovare il modo di separare le due lezioni visivamente--><gap/> <mod change="#strato-0">
                         <subst><add place="above">non potendomi<lb n="12"/></add>
-                            <del rend="strikethrough">e non mi riuscì <lb n="12"/> dormire</del><add place="inline">addormentare</add></subst></mod>,
+                            <del rend="strikethrough">e non mi riuscì <lb n="12"/>dormire</del><add place="inline">addormentare</add></subst></mod>,
                     <!-- <mod change="#strato-0"><add place="above">non potendomi</add> <del rend="strikethrough">e non mi riuscì</del></mod>
                          <lb n="11"/><mod change="#strato-0"><del rend="strikethrough">dormire</del> <add place="inline">addormentare</add></mod>,
                          Usare questa codifica spezza l'organicità della correzione
@@ -595,8 +592,7 @@
                         <del rend="strikethrough">tutto</del>
                     </mod>che credo avrebbe
                     <lb n="5"/>fatto figura in qualunque museo d’antichità.
-                    <lb n="6"/><mod change="#strato-0"><del rend="strikethrough">Senza comprenderne il significato contai <lb/>alla meglio tutte le sillabe de’ primi versi</del></mod>
-                    I versi sono
+                    <lb n="6"/><mod change="#strato-0"><del rend="strikethrough">Senza comprenderne il significato contai <lb/>alla meglio tutte le sillabe de’ primi versi</del></mod>I versi sono
                     <lb n="7"/>questi: <lg n="1" rend="align-center"><l n="1">Paura questa notte</l>
                         <lb/><l n="2">io ho avuto tanto;</l>
                         <lb/><l n="3">e l’ore interrotte</l>
@@ -631,10 +627,7 @@
                     <l n="19">Maledissi la serva</l>
                     <lb/><l n="20">e le sue novelle</l>
                     <lb/><l n="21">della cornuta cerva</l>
-                    <lb/><l n="22">e le re<mod change="#strato-0">
-                            <subst><del rend="overwritten">i</del>
-                                <add place="superimposed">gi</add></subst>
-                        </mod>ne sorelle</l>
+                    <lb/><l n="22">e le re<mod change="#strato-0"><subst><del rend="overwritten">i</del><add place="superimposed">gi</add></subst></mod>ne sorelle</l>
                     <lb/><l n="23">della fata Morgana</l>
                     <lb/><l n="24">e della testa umana.</l>
                 </lg>
@@ -663,7 +656,7 @@
                     <!-- In questa codifica viene persa l'organicità della correzione:
                          Tuscano scrive prima "il trem" e lo corregge subito con "lo spavento": l'uso dia app potrebbe ripristinarla, però forse non è necessario da esplicitare. Si tratta, inoltre, di una correzione currenti calamo e, dunque, l'uso di subst magari è più indicato
                          NB gli atributi left e right alterano la visualizzazione di questi interventi sulla pagina-->
-                    <l n="30">dalla mia atterrita faccia.</l>
+                    <lb/><l n="30">dalla mia atterrita faccia.</l>
                 </lg>
                 <lb/><lb/>
                 <lg n="5">
@@ -681,14 +674,8 @@
                                 <add place="superimposed">stella</add></subst></mod>.</l>
                 </lg>
                 <p rend="indent">
-                    <lb n="15"/><mod change="#strato-0">
-                        <subst>
-                            <del rend="strikethrough">Dopo fatta</del>
-                            <add place="inline">
-                                <subst>
-                                    <del rend="overwritten">m</del>
-                                    <add place="superimposed">M</add>
-                                </subst>i
+                    <lb n="15"/><mod change="#strato-0"><subst><del rend="strikethrough">Dopo fatta</del>
+                            <add place="inline"><subst><del rend="overwritten">m</del><add place="superimposed">M</add></subst>i
                             </add>
                         </subst> </mod>ricordo d’averla letta più volte con soddisfazione, ma<lb n="16"/>non ebbi però il coraggio di farla leggere ad altri; la misi in buona
                     <lb n="17"/>copia (come sapevo scrivere allora) in un <mod change="#strato-0">
@@ -748,7 +735,7 @@
                     <lb n="6"/>tino appositamente per tenere giorno per gior<mod change="#strato-0">
                         <subst><del rend="overwritten">g</del>
                             <add place="superimposed">n</add></subst></mod>o informati i miei genitori
-                    <lb n="7"/> <mod change="strato-0"><del rend="strikethrough">di come studiavo, di come</del></mod>
+                    <lb n="7"/><mod change="strato-0"><del rend="strikethrough">di come studiavo, di come</del></mod>
                     del mio studio e della mia condotta. 
                     <mod change="#strato-0"><add place="above">Quando ci penso</add> <subst>
                             <del rend="overwritten">M</del>
@@ -832,8 +819,7 @@
                                 <subst seq="1">
                                     <del rend="strikethrough">risolsi</del>
                                     <add place="inline">compresi</add>
-                                </subst> </del> <add>
-                                <add place="above">mi parve di</add>comprendere
+                                </subst></del><add><add place="above">mi parve di </add>comprendere
                             </add></subst>
                     </mod><note resp="#ST" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
                     quella mia baggianata e
@@ -905,7 +891,7 @@
                     </mod> d’Orcia, il quale <mod change="#strato-0">
                         <subst><del rend="strikethrough">non potè</del>
                             <add place="inline">andò</add></subst></mod> sperso 
-                    <app><lem varSeq="2"><mod change="#strato-1"><add place="above">e del quale <del rend="strikethrough">ho</del>or ultimamente</add>non 
+                    <app><lem varSeq="2"><mod change="#strato-1"><add place="above">e del quale <del rend="strikethrough">ho</del>or ultimamente</add> non 
                                 <subst><del rend="strikethrough">mi ricordo</del><add place="above"> 
                                         <lb n="3"/>ho potuto ritrovare tra i miei fogli antichi non oltre</add></subst> che la prima quartina e 
                                 <subst><del rend="strikethrough">del</del><add>l’</add></subst>ultima terzina.</mod></lem>
@@ -930,8 +916,8 @@
                 <lb n="8"/><ab>......................</ab>
                 <lg n="2">
                     <lb n="9"/><l n="5">Orcia<mod change="#strato-11"><add place="inline">,</add></mod> ti dico che mi sa mill’anni,</l>
-                    <lb n="10"/><l n="6">di crescere e doventare qualche cosa</l> 
-                    <lb n="11"/><l n="7">e poi morire anche di vent’anni.</l>
+            <lb n="10"/><l n="6">di crescere e doventare qualche cosa</l> 
+              <lb n="11"/><l n="7">e poi morire anche di vent’anni.</l>
                 </lg>
                 <p rend="indent">
                     <lb n="12"/>Altri documenti di <mod change="#strato-0">
@@ -1098,15 +1084,12 @@
                     <lb n="8"/>svogliato di tutto che non era versi; e accrebbe
                     <mod change="#strato-0"><del rend="strikethrough">in me</del></mod>
                     <lb n="9"/>la mia scapataggine, per la quale presso i maestri,
-                    <lb n="10"/>
-                    <mod change="#strato-0"><subst><del rend="overwritten">a</del>
+                    <lb n="10"/><mod change="#strato-0"><subst><del rend="overwritten">a</del>
                             <add place="superimposed">e</add></subst></mod> i superiori persi la stima 
                     <mod change="#strato-0"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del>
                             <add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                     <!-- Quando si scrive qualcosa sopra qualcos'altro si usa del rend overwritten e place su add superimposed. Vedi ⚓︎12.3.4.7 Instant Corrections nella TEI  -->
-                    <lb n="11"/>
-                    <mod change="#strato-1"><add place="opposite" copyOf="#testo_aggiunta_12v">
-                            <lb/><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark> Molte volte <subst><add place="inline">m’avvenne</add>
+                    <lb n="11"/><mod change="#strato-1"><add place="opposite" copyOf="#testo_aggiunta_12v"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark> Molte volte <subst><add place="inline">m’avvenne</add>
                                 <del rend="strikethrough">andare</del></subst>
                             non far le lezioni perché
                             <lb/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
@@ -1140,11 +1123,11 @@
             <div type="page">
                 <pb n="12v1" facs="12v.jpg"/>
                 <p rend="indent" xml:id="agg_12v"><mod change="#strato-1"><add place="inline" copyOf="#testo_aggiunta_12v">
-                            <lb n="1"/><metamark xml:id="ref_1v" target="#testo_aggiunta_12v">(1)</metamark>  Molte volte <subst><add place="inline">m’avvenne</add>
+                            <lb n="1"/><metamark xml:id="ref_1v" target="#testo_aggiunta_12v">(1)</metamark>Molte volte <subst><add place="inline">m’avvenne</add>
                                 <del rend="strikethrough">andare</del></subst>
                             non far le lezioni perché
                             <lb n="2"/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
-                            <lb n="3"/> perché scambiavo i compiti d’un giorno per quelli d’un altro
+                            <lb n="3"/>perché scambiavo i compiti d’un giorno per quelli d’un altro
                         </add> </mod>
                 </p>
             </div>
@@ -1189,12 +1172,9 @@
                     <mod change="#strato-0"><del rend="strikethrough">dopo</del></mod>
                     non me ne potei per 
                     <lb n="9"/>allora, anche volendo,
-                    <app><lem varSeq="2"><mod change="#strato-11">liberar
-                                <subst><del rend="overwritten">mene</del>
-                                    <add place="superimposed">e</add></subst></mod></lem>
+                    <app><lem varSeq="2"><mod change="#strato-11">liberar<subst><del rend="overwritten">mene</del><add place="superimposed">e</add></subst></mod></lem>
                         <rdg varSeq="1">liberar<mod change="#strato-0">mene</mod></rdg>    
-                    </app>
-                    . I miei superiori
+                    </app>. I miei superiori
                     <mod change="#strato-0"><add place="above" xml:id="add_eccetto_Buoni">, eccetto Buoni,</add> co-
                         <lb n="10"/>minciarono a credermi maligno
                         <del rend="strikethrough" xml:id="del_eccetto">eccetto</del>
@@ -1232,10 +1212,10 @@
                             <add place="inline">superiori</add></subst></mod>, 
                     <mod change="#strato-0"><del rend="strikethrough">mi</del></mod>
                     da cui mi
-                    <mod change="#strato-0"><choice resp="UT"><sic>ingenuamente <add place="above">1</add><subst seq="1"><del rend="strikethrough">f</del>
+                    <mod change="#strato-0"><choice resp="UT"><sic><subst seq="1"><del rend="strikethrough">f</del>
                                     <add place="inline">credetti</add><add place="above">2</add> 
-                                </subst></sic>
-                            <corr>credetti ingenuamente</corr>   
+                                </subst>ingenuamente <add place="above">1</add></sic>
+                            <corr>ingenuamente credetti</corr>   
                         </choice></mod> 
                     
                     <!-- <app>
@@ -1366,7 +1346,7 @@
                     <lb n="14"/>Ginnasiale, del Prinzivalli e Salvadori; la lessi e vi gustai
                     <lb n="15"/><mod change="#strato-0">
                         <add place="above">immensamente </add>
-                    </mod>quella scena tragica dell’atto 3’ del Saul Alfieriano.
+                    </mod>quella scena tragica dell’atto 3<hi rend="apice">o</hi> del Saul Alfieriano.
                     <lb n="16"/>Lo lessi molte volte e quantunque non ci dovessi capir
                     <lb n="17"/>tanto, mi ricordo d’averci sentito un che di fiero, d’audace
                     <lb n="18"/>e a un tempo di dolce,
@@ -1473,10 +1453,7 @@
                     <lb n="13"/>(La feci certo come la poteva fare <choice>
                         <sic>un'ingegno</sic>
                         <corr resp="#ST">un ingegno</corr></choice> di 
-                    <mod change="#strato-0"><add place="inline">12 e</add> 1
-                        <subst><del rend="overwritten">2</del>
-                            <add place="superimposed">3</add></subst></mod> anni.) 
-                    <lb n="14"/>
+                    <mod change="#strato-0"><add place="inline">12 <lb n="14"/>e</add> 1<subst><del rend="overwritten">2</del><add place="superimposed">3</add></subst></mod> anni.) 
                     <mod change="#strato-0"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">I nomi erano moderni I nomi erano moderni </del>
                                     <add place="inline">Il titolo</add></subst></del>
                             <add place="inline"><lb n="15"/>Questa tragedia</add></subst></mod> nella mia intenzione doveva essere
@@ -1594,7 +1571,7 @@
                         <mod change="#strato-1"><subst><del rend="overwritten">r</del>
                                 <add place="superimposed">v</add></subst></mod>ari; uno dei quali era
                         <lb n="2"/>questo:
-                        <lb n="3"/>Dario:<lg n="1">
+                        <lb n="3"/>Dario:<lg>
                             <l n="1">Sorgi, Daniele; la fortuna arride</l>
                             <lb n="4"/><l n="2">a te benigna;</l>
                             <lb n="5"/><l n="3">e dal suo trono eccelso il divo nume</l>
@@ -1610,9 +1587,7 @@
                                 <mod change="#strato-1"><subst><del rend="overwritten">r</del>
                                         <add place="superimposed">a</add> </subst></mod>più fulgida degli altri</l>
                             <lb n="10"/><l n="8">si compiace l’Eterno e a te un sorriso</l>
-                            <lb n="11"/><l n="9">d
-                                <mod change="#strato-1"><subst><del rend="overwritten">ono</del>
-                                        <add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></lg>
+                            <lb n="11"/><l n="9">d<mod change="#strato-1"><subst><del rend="overwritten">ono</del><add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></lg>
                         
                         <lb n="12"/>un altro era questo: 
                         <lb n="13"/>Dario: <lg><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
@@ -1699,7 +1674,7 @@
                             <del rend="strikethrough">'</del>
                         </mod>altro era questo:
                         <lb n="5"/>Dario: 
-                        <lg n="6"><l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#strato-1">
+                        <lg><l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#strato-1">
                                     <subst><del rend="overwritten">e</del>
                                         <add place="superimposed">i</add></subst></mod></l>
                             <lb n="6"/><l n="2">fantasime, non ombre insidiatrici</l>
@@ -1795,14 +1770,74 @@
                     <mod change="#strato-2">
                         <lb n="20"/>
                         <mod change="#strato-2"><subst><del rend="strikethrough">Allor</del>
-                                <add place="inline">Nel</add> </subst></mod><ref target="#Dante1321">Febbraio</ref> di quell’anno io compii i miei 14 anni e mi
+                                <add place="inline">Nel</add> </subst></mod>Febbraio di quell’anno io compii i miei 14 anni e mi
                     </mod>
                 </p>
                 <div type="page">
                     <pb n="20r1" facs="20r.jpg"/>
-                    <fw place="top_right" type="pageNum">2<app><lem varSeq="2"><mod change="#strato-4">3</mod></lem><rdg varSeq="1"><mod change="#strato-1">1</mod></rdg></app></fw>
+                    <fw place="top_right" type="pageNum"><mod change="#strato-1">2</mod><app><lem varSeq="2"><mod change="#strato-4">3</mod></lem><rdg varSeq="1"><mod change="#strato-1">1</mod></rdg></app></fw>
                     
-                <p><mod change="#strato-0">PROVA 1</mod></p>    
+                <p rend="indent"><mod change="#strato-1"><lb n="1"/>E più sotto alcuni versi destinati a Daniele dipinto sem-
+                            <lb n="2"/>pre come mansueto e mesto a un tempo, sembrano emulare alcuni
+                            <lb n="3"/>altri <mod change="#strato-1"><subst><del rend="strikethrough">del</del><add place="inline">tanto</add></subst></mod> <!-- che debba mettere solo del?--> più perfetti dell’Edmengarda di Manzoni; e dire
+                            <lb n="4"/>che allora io non sapeva neppure che il Manzoni<choice resp="#ST"><sic>l</sic><corr/></choice> aveva scritto
+                            <lb n="5"/><mod change="#strato-1"><subst><del rend="strikethrough">non molto altro che non fossero</del><add place="above">anche tragedie oltre</add></subst></mod> i Promessi Sposi. E mi ricordo
+                            <lb n="6"/>che quando per la prima volta lessi quei versi del gran Romanzie-
+                            <lb n="7"/>re mi fecero un caso strano quasi che il sommo scrittore si
+                            <lb n="8"/>(che anacronismi!) si fosse ricordato dei miei <mod change="#strato-1">(scritti <subst><del rend="strikethrough">a</del><add place="above">in età di</add></subst> 12 o 13 anni<subst><del rend="strikethrough">)</del>
+                            <lb n="9"/><add place="inline">e quasi un secolo dopo.)</add></subst></mod>
+                          </mod>
+                </p>
+                    <p>
+                        <mod change="#strato-1"><lb n="10"/>Dan.: <lg><l n="1">Perché sì truci</l>
+                            <lb n="11"/><l n="2">pensieri, o Sir? Non vedi come il cielo</l>
+                            <lb n="12"/><l n="3">apre maestoso il vasto manto e come</l>
+                            <lb n="13"/><l n="4">natura esulta e a te sorride?</l></lg>
+                            <lb n="14"/>E più sotto da notarsi l’agilità <mod change="#strato-1"><subst><del rend="overwritten">d</del><add place="superimposed">n</add></subst></mod>ella forma di questi:
+                            <lb n="15"/><lg><l n="1">Come innocente la colomba al cielo</l>
+                            <lb n="16"/><l n="2">spicca da terra l’anelante volo</l>
+                            <lb n="17"/><l n="3">tale alle stelle volerà mia prece</l>
+                            <lb n="18"/><l n="4">fervida e grata.</l></lg>
+                            <lb n="19"/>E questi in bocca d<mod change="#strato-1"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> Dario:
+                            <lb n="20"/><lg><l n="1">Ma la potenza lor troppo è crudele</l>
+                            <lb n="21"/><l n="2"><hi rend="underline">ad ogni orrendo crimine assuefatta!</hi></l></lg>
+                        </mod>
+                    </p>
+                </div>
+                <div type="page">
+                    <pb n="20v1" facs="20v.jpg"/>
+                    <fw place="top_left" type="pageNum"><mod change="#strato-4"><add><hi rend="underline">24</hi></add></mod></fw>
+                    <p rend="indent">
+                        <mod change="#strato-2"><lb n="1"/>ricordo che la superbia s’era moltiplicata per 14 e la mia fede invece
+                            <lb n="2"/><mod change="#strato-2"><choice resp="UT"><sic>infelicemente <add place="above">2</add>
+                                        <del rend="strikethrough">ri</del>cominciava<add place="above">1</add>
+                                    </sic>
+                            <corr>cominciava infelicemente</corr>   
+                        </choice></mod> a doventare quattordicesima.  
+                        </mod>
+                    </p>
+                    <p rend="indent">
+                        <mod change="#strato-2"><lb n="3"/>La terza edizione è questa qui notata, e il lettore potrà dire
+                            <lb n="4"/>liberamente <mod change="#strato-2"><add place="above">e saggiamente</add></mod> il suo parere quando avrà notato la mia età e
+                            <lb n="5"/>il modo <mod change="#strato-2"><subst><del rend="strikethrough">irregolo</del><add place="above">avversativo</add></subst></mod> in cui <mod change="#strato-2"><subst><del rend="overwritten">n</del><add place="superimposed">e</add></subst></mod> ra stato allevato il mio ingegno.</mod>
+                    </p>
+                    <p rend="indent"><lb n="6"/>Il Settembre 1907 disapprovai tutto quello ch’avevo scritto
+                        <lb n="7"/>su quel tema e nascosi agli occhi dei miei amici i 4 atti,
+                        <lb n="8"/>e non ebbi la forza (o meglio ebbi il giudizio) di non mettermi
+                        <lb n="9"/>a scrivere il 5°. Quello che un anno, un mese fa m’era
+                        <lb n="10"/>parso onorevole e glorioso, mi parve allora noioso a leggersi, in-
+                        <lb n="11"/>degno di mostra. Da prima non mi andava tanto questo
+                        <lb n="12"/>sfratto, sembrandomi poco giudizioso gittare al vento ciò
+                        <lb n="13"/>che era stato fatica di 2 anni, perdita di tanto
+                        <lb n="14"/>tempo; ma poi il sentimento domi-
+                        <lb n="15"/>nante di superbia sottentrò e mi fece notare (e non me
+                        <lb n="16"/>l’aspettavo) che quel dispregiare, quel non piacere quegli
+                        <lb n="17"/>scritti quantunque prima adorati, denotava un avverti-
+                        <lb n="18"/>mento di ingegno e un miglioramento di gusto. Dietro
+                        <lb n="19"/>queste considerazioni io misi da parte il mio lavoro però
+                        <lb n="20"/>senza annientarlo, e tenendolo invece come ricordo della mia<mod change="#strato-2">
+                            
+                    </mod></p>
                 </div>
             </div>
         </body>

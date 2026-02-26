@@ -13,7 +13,7 @@
 }
 
 *[rend="underline"] {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 *[rend="italic"] {
