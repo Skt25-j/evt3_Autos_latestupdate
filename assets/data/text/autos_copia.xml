@@ -427,8 +427,7 @@
                      già
                     <mod change="#strato-0"><add place="above">de'</add></mod> frutti <lb n="4"/>maturi, 
                     <mod change="#strato-0"><del rend="strikethrough">e mi</del>
-                        mostra<subst>
-                            <add place="superimposed">ndomi</add> <del rend="overwritten">rono</del>
+                        mostra<subst><add place="superimposed">ndomi</add><del rend="overwritten">rono</del>
                         </subst> </mod> 
                     chi fossi, e mi dettero a sperare gran-<lb n="5"/>demente
                     <mod change="#strato-0">
@@ -1264,9 +1263,7 @@
                     <lb n="4"/>Cominciai a far <mod change="#strato-0">
                         <add place="above">il</add></mod> cattivo per dispetto. I miei compa-
                     <lb n="5"/>gni che parevano tutti santarelli mi lasciarono
-                    <lb n="6"/>sol<mod change="#strato-0"><subst>
-                            <del rend="overwritten">l</del>
-                            <add place="superimposed">o</add></subst></mod> alla battaglia, anzi mi sembrarono nemici,
+                    <lb n="6"/>sol<mod change="#strato-0"><subst><del rend="overwritten">l</del><add place="superimposed">o</add></subst></mod> alla battaglia, anzi mi sembrarono nemici,
                     <lb n="7"/>ed io desiderai la solitudine, odiai la loro com-
                     <lb n="8"/>pagnia. 
                     <mod change="#strato-0"><subst><del rend="strikethrough">Il g</del>
@@ -1662,7 +1659,7 @@
                 <pb n="19r1" facs="19r.jpg"/>
                 <fw place="top_right" type="pageNum">
                     <app>
-                        <lem varSeq="2"><mod change="#strato-4">21</mod></lem>
+                        <lem varSeq="2"><mod change="#strato-4"><subst><del rend="overwritten">20</del><add place="superimposed">21</add></subst></mod></lem>
                         <rdg varSeq="1"><mod change="#strato-1">20</mod></rdg>
                     </app></fw>
                 <p rend="indent">
@@ -1772,10 +1769,10 @@
                         <mod change="#strato-2"><subst><del rend="strikethrough">Allor</del>
                                 <add place="inline">Nel</add> </subst></mod>Febbraio di quell’anno io compii i miei 14 anni e mi
                     </mod>
-                </p>
+                </p></div>
                 <div type="page">
                     <pb n="20r1" facs="20r.jpg"/>
-                    <fw place="top_right" type="pageNum"><mod change="#strato-1">2</mod><app><lem varSeq="2"><mod change="#strato-4">3</mod></lem><rdg varSeq="1"><mod change="#strato-1">1</mod></rdg></app></fw>
+                    <fw place="top_right" type="pageNum"><mod change="#strato-1">2</mod><app><lem varSeq="2"><mod change="#strato-4"><del rend="overwritten">1</del><add place="superimposed">3</add></mod></lem><rdg varSeq="1"><mod change="#strato-1">1</mod></rdg></app></fw>
                     
                 <p rend="indent"><mod change="#strato-1"><lb n="1"/>E più sotto alcuni versi destinati a Daniele dipinto sem-
                             <lb n="2"/>pre come mansueto e mesto a un tempo, sembrano emulare alcuni
@@ -1821,24 +1818,47 @@
                             <lb n="4"/>liberamente <mod change="#strato-2"><add place="above">e saggiamente</add></mod> il suo parere quando avrà notato la mia età e
                             <lb n="5"/>il modo <mod change="#strato-2"><subst><del rend="strikethrough">irregolo</del><add place="above">avversativo</add></subst></mod> in cui <mod change="#strato-2"><subst><del rend="overwritten">n</del><add place="superimposed">e</add></subst></mod> ra stato allevato il mio ingegno.</mod>
                     </p>
-                    <p rend="indent"><mod change="#strato-2"><lb n="6"/>Il Settembre 1907 disapprovai tutto quello ch’avevo scritto
-                        <lb n="7"/>su quel tema e nascosi agli occhi dei miei amici i 4 atti,
-                        <lb n="8"/>e non ebbi la forza (o meglio ebbi il giudizio) di non mettermi
-                        <lb n="9"/>a scrivere il 5°. Quello che un anno, un mese fa m’era
+                    <p rend="indent"><mod change="#strato-2"><lb n="6"/>Il Settembre 190<mod change="#strato-2"><subst><del rend="overwritten">6</del><add place="superimposed">7</add></subst></mod> disapprovai tutto quello ch’avevo scritto
+                        <lb n="7"/>su quel tema e nascosi agli occhi dei miei amici <mod change="#strato-2"><subst><del rend="strikethrough">am</del><add place="inline">i</add></subst></mod> 4 atti,
+                        <lb n="8"/>e non ebbi la for<app><lem varSeq="2"><mod change="#strato-11"><subst><del rend="overwritten">tezza</del><add place="superimposed">za</add></subst></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-2">tezza</mod></rdg>    
+                            </app> (o meglio ebbi il giudizio) <mod change="#strato-2"><subst><del rend="overwritten">a</del><add place="superimposed">di</add></subst></mod> non mettermi
+                        <lb n="9"/>a <mod change="#strato-2"><subst><del rend="strikethrough">fo</del><add place="inline">scrivere</add></subst></mod> il 5°. <mod change="#strarto-2"><subst><del rend="strikethrough">Mi par</del><add place="inline">Quello</add></subst></mod> che un anno, un mese fa m’era
                         <lb n="10"/>parso onorevole e glorioso, mi parve allora noioso a leggersi, in-
                         <lb n="11"/>degno di mostra. Da prima non mi andava tanto questo
                         <lb n="12"/>sfratto, sembrandomi poco giudizioso gittare al vento ciò
-                        <lb n="13"/>che era stato fatica di 2 anni, perdita di tanto
-                        <lb n="14"/>tempo; ma poi il sentimento domi-
+                        <lb n="13"/>che era stato fatica <mod change="#strato-2"><subst><del rend="strikethrough">di tanto tempo</del><add place="inline">di 2 anni</add></subst></mod>, perdita di tanto
+                        <lb n="14"/>tempo; <mod change="#strato-2"><subst><del rend="strikethrough">e acquisto di disp</del><add place="inline">ma</add></subst></mod> poi il sentimento domi-
                         <lb n="15"/>nante di superbia sottentrò e mi fece notare (e non me
-                        <lb n="16"/>l’aspettavo) che quel dispregiare, quel non piacere quegli
+                        <lb n="16"/>l’aspettavo) che <mod change="#strato-2"><subst><del rend="strikethrough">se io</del><add place="inline">quel</add></subst></mod> dispregiare, quel non piacere quegli
                         <lb n="17"/>scritti quantunque prima adorati, denotava un avverti-
                         <lb n="18"/>mento di ingegno e un miglioramento di gusto. Dietro
-                        <lb n="19"/>queste considerazioni io misi da parte il mio lavoro però
-                        <lb n="20"/>senza annientarlo, e tenendolo invece come ricordo della mia
-                            
+                        <lb n="19"/>queste considerazioni io mis<mod change="#strato-2"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> da parte il mio lavoro però
+                        <lb n="20"/>senza annientarlo, e tenendolo invece come ricordo della mia     
                     </mod></p>
                 </div>
+                <div type="page">
+                    <pb n="21r1" facs="21r.jpg"/>
+                    <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-4"><subst><del rend="overwritten">22</del><add place="superimposed">25</add></subst></mod></lem><rdg varSeq="1"><mod change="#strato-1">22</mod></rdg></app></fw>
+<p>Un cortigiano amico del profeta e del Re di nome Corrado diceva:</p>
+
+<p>È facil cosa
+piegar della plebaglia il fido cuore
+ma dei potenti è dura cosa.</p>
+
+<p>Impreciso il significato di quel fido. Ancora nella 3a scena il Re minaccia morte a Corrado se mancherà al patto:</p>
+
+<p>Sul palco il capo
+a te cadrà se a me fedel non resti;
+evitar non potrai la giusta pena
+se macchiarti oserai di tal misfatto.</p><!-- Le strofe so solo strofe, non paragrafi a sè; correggi dopo-->
+
+<p>Figurati, o lettore, la ghigliottina 500 anni avanti Cristo e perdona insieme ai miei tredici anni.</p>
+<p>Flaviano, il padre del profeta che per inganni dei satrapi nemici di suo figlio credeva Daniele ingrato al padre invoca la sua pietà con parole amorose e che quantunque poco bene espresse nascondono gentili sentimenti e volevano almeno esprimere l’amore paterno.</p>
+                    
+<p>Oh! quali voci?... Mio Daniele!... forse
+sei tu qui presso? Ove t’aggiri?... Ferma</p>
+
             </div>
         </body>
         <back>
