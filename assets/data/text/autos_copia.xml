@@ -1939,7 +1939,7 @@
                         <lb n="9"/>questa conclusione<mod change="#strato-2"><add place="above">, ora comprendo,</add></mod> mi si faceva spesso ammonimenti
                         <lb n="10"/>severi sullo studio, e il maestro mi dava miseri punti nella
                         <lb n="11"/>cartella bimestrale. <mod change="#strato-2"><subst><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In</del> <add place="inline">I sup</add></subst></del> <add place="inline">talchè</add></subst></del> <add place="inline">I superiori</add></subst></mod> e i miei di casa
-                        <lb n="12"/>si meravigliavano dei miei <mod><add place="above">scarsi</add></mod> <!-- lapis non si capisce quando usato--> successi e mi persero <mod change="#strato-2"><del rend="strikethrough">un po'</del></mod>
+                        <lb n="12"/>si meravigliavano dei miei <mod change="#strato-8"><add place="above">scarsi</add></mod> <!-- lapis non si capisce quando usato--> successi e mi persero <mod change="#strato-2"><del rend="strikethrough">un po'</del></mod>
                         <lb n="13"/>la stima di fanciullo amante dello studio; questi a
                         <lb n="14"/>rimproverarmi <mod change="#strato-2"><subst><del rend="strikethrough">i sacri</del><add place="inline">come</add></subst></mod> male ricompensavo i sacrifici dello
                         <lb n="15"/>zio che mi manteneva a quegli studi, quelli a minacciarmi
@@ -1986,6 +1986,32 @@
                             <lb n="20"/><l n="5">Degno è di lode chi lo spirto <mod change="#strato-1"><del rend="strikethrough">d'</del></mod>adorno</l>
                             <lb n="21"/><l n="6">d’amore ha per chi l’odia</l>
                         </mod></lg></sp>
+            </div>
+            <div type="page">
+                <pb n="23v1" facs="23v.jpg"/>
+                <fw place="top_left" type="pageNum"><mod change="#strato-3"><add>30</add></mod></fw>
+<p rend="indent"><mod change="#strato-2">
+                        <lb n="1"/>pensiero del dovere. Saltavo e pensavo a qualche scena, reci-
+                        <lb n="2"/>tavo preci in cappell<mod change="#strato-2"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod>, e faceva qualche verso, servivo la Messa
+                        <lb n="3"/>e dentro me declamavo qualche squarcio; andavamo a spasso,
+                        <lb n="4"/>a letto, a studio, <mod change="#strato-2"><add place="inline">qu<subst><del rend="overwritten">i</del><add place="superimposed">e</add></subst>l</add></mod> pensiero sopravveniva sempre ed io re-
+                        <lb n="5"/>stava <mod change="#strato-2"><del rend="strikethrough" seq="2">così sempre sullo stesso t<add place="above" seq="1">u</add>ono</del></mod>in mezzo agli altri come
+                        <lb n="6"/>se fossi solo, solo come se fossi in mezzo agli altri <mod change="#strato-8"><add place="top">sia dopo 20 anni</add></mod> <!-- Chiedere di questo addition top; va messo nel editorial-cofig ma non so come-->
+</mod></p>
+                <p rend="indent"><mod change="#strato-2"><lb n="7"/>Tale condizione <mod change="#strato-2"><subst><del rend="strikethrough">er</del><add place="inline">mi</add></subst></mod> rendeva mal accetto ai <mod change="#strato-2"><subst><del rend="strikethrough">superiori</del><add place="above">prefetti</add></subst></mod>
+                        <lb n="8"/>i quali mi fecero avvezzare al sile<del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">nzio</add> come alla preghiera;
+                        <lb n="9"/>molte volte il prefetto ammoniva,<mod change="#strato-2"><del rend="strikethrough">qual per buona fortuna</del></mod>
+                        <lb n="10"/>qualche altro compagno e <mod change="#strato-2"><del rend="strikethrough"><add place="above">tali</add></del></mod> aggiungeva talora una postilla
+                        <lb n="11"/>a un articolo del Regolamento Generale:<mod change="#strato-2"><subst seq="1"><del rend="strikethrough">ed io arrivava<lb/>in fondo </del>
+                        <lb n="12"/><add place="inline">ed io il giorno <add place="above" seq="2">dopo ero punito in quella postilla</add> potevo in coscienza</add></subst></mod> assicurare che
+                        <lb n="13"/>non lo sapeva e non avevo sentito nulla: pensavo ad altro!
+                        <lb n="14"/>Talora per ordine del Rettore si <mod change="#strato-2"><add place="above">doveva</add> muta<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst></mod> o al Refettorio
+                        <lb n="15"/>o in Cappella; <mod change="#strato-2"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">ed</add></subst></mod> io andavo sempre al luogo solito: pensavo ad
+                        <lb n="16"/>altro! Dicendo le preci <mod change="#strato-2"><subst><del rend="strikethrough">imb</del><add place="inline">sbagliavo</add></subst></mod> il Credo con l’Atto di
+                        <lb n="17"/>fede<choice resp="#ST"><sic>:</sic><corr/></choice><mod change="#strato-2"><del rend="strikethrough">pensavo a altro</del></mod>! Commetteva insomma più
+                        <lb n="18"/>mancanze possibil<mod change="#strato-2"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> senza malizia e perfidia di animo,
+                        <lb n="19"/>per il solo motivo d’essere <mod change="#strato-2"><subst seq="1"><del rend="strikethrough">scapa</del> <add place="inline">sbadato</add></subst> e <del rend="strikethrough" xml:id="del_superbo">superbo</del> <choice resp="#ST"><sic>e</sic><corr/></choice><add place="inline" xml:id="add_noncurante">noncurante</add><substJoin seq="2" target="#del_superbo #add_noncurante"/></mod>.
+                        <lb n="20"/>Stare in silenzio era per me usuale come andare al refettorio,</mod></p>
             </div>
         </body>
         <back>

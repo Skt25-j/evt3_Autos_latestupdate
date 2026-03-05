@@ -134,8 +134,8 @@
                 }
             }
         }
-    },
-    "additionLeft": {
+    }
+,    "additionLeft": {
         "markup": {
             "element": "add",
             "attributes": [
