@@ -1561,7 +1561,7 @@
                         <mod change="#strato-1"><subst><del rend="overwritten">r</del>
                                 <add place="superimposed">v</add></subst></mod>ari; uno dei quali era
                         <lb n="2"/>questo:</mod></p>
-                        <ab rend="indent"><lb n="3"/><mod change="#strato-1">Dario:<lg>
+                        <ab rend="indent"><mod change="#strato-1"><lb n="3"/>Dario:</mod></ab><sp><lg><mod change="#strato-1">
                             <l n="1">Sorgi, Daniele; la fortuna arride</l>
                             <lb n="4"/><l n="2">a te benigna;</l>
                             <lb n="5"/><l n="3">e dal suo trono eccelso il divo nume</l>
@@ -1575,10 +1575,10 @@
                                 </app> spirto.</l>
                             <lb n="9"/><l n="7">Ne l’alma tu<mod change="#strato-1"><subst><del rend="overwritten">r</del><add place="superimposed">a</add></subst></mod>più fulgida degli altri</l>
                             <lb n="10"/><l n="8">si compiace l’Eterno e a te un sorriso</l>
-                            <lb n="11"/><l n="9">d<mod change="#strato-1"><subst><del rend="overwritten">ono</del><add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></lg></mod></ab>
+                            <lb n="11"/><l n="9">d<mod change="#strato-1"><subst><del rend="overwritten">ono</del><add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></mod></lg></sp>
                         
                         <p rend="indent"><mod change="#strato-1"><lb n="12"/>un altro era questo:</mod></p> 
-                        <ab rend="indent"><mod change="#strato-1"><lb n="13"/>Dario: <lg><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
+                <ab rend="indent"><mod change="#strato-1"><lb n="3"/>Dario:</mod></ab> <sp><lg><mod change="#strato-1"><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
                             <lb n="14"/><l n="2">sorgi, Daniele; la fortuna arride</l>
                             <lb n="15"/><l n="3">a te benigna; e già mi par che lieta</l>
                             <lb n="16"/><l n="4">con dive mani un regio serto al crine</l>
@@ -1587,8 +1587,9 @@
                             <lb n="18"/><l n="6">Da’ vasti campi degli eccelsi cieli</l>
                             <lb n="19"/><l n="7">ti guarda Dio com’<mod change="#strato-1"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del>
                                         <add place="superimposed">uom</add></subst></mod> la sua pupilla.</l>
-                            <lb n="20"/><l n="8">Grande ti fè l’onnipotente mano</l></lg>
-                    </mod></ab> <!-- é il varSeq che fa nascere i problemi legati allo 12121 nella visualizzazione della sequenza delle correzioni-->
+                            <lb n="20"/><l n="8">Grande ti fè l’onnipotente mano</l></mod></lg></sp>
+                
+                 <!-- é il varSeq che fa nascere i problemi legati allo 12121 nella visualizzazione della sequenza delle correzioni-->
                 
             </div>
             <div type="page">
@@ -1654,21 +1655,21 @@
                         <rdg varSeq="1"><mod change="#strato-1">20</mod></rdg>
                     </app></fw>
                 
-                    <lg><mod change="#strato-1">
+                    <sp><lg><mod change="#strato-1">
                         <lb n="1"/><l n="9">e dagli eletti suoi recinti un’alma</l>
                             <lb n="2"/><l n="10">grande ti trasse e per le tue virtudi</l>
-                            <lb n="3"/><l n="11">ti rendi quasi Sol fra lucidi astri.</l></mod></lg> 
+                            <lb n="3"/><l n="11">ti rendi quasi Sol fra lucidi astri.</l></mod></lg> </sp>
                 <p rend="indent"> <mod change="#strato-1"><lb n="4"/>un 
                             <del rend="strikethrough">'</del>
                     altro era questo:</mod></p>
-                       <ab rend="indent"> <mod change="#strato-1"><lb n="5"/>Dario: 
-                        <lg><l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#strato-1">
+                       <ab rend="indent"><mod change="#strato-1">Dario:</mod></ab>
+                        <sp><lg><mod change="#strato-1"><lb n="5"/><l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#strato-1">
                                     <subst><del rend="overwritten">e</del>
                                         <add place="superimposed">i</add></subst></mod></l>
                             <lb n="6"/><l n="2">fantasime, non ombre insidiatrici</l>
                             <lb n="7"/><l n="3">vagano  per quest’aure e l’ira iniqua</l>
                             <lb n="8"/><l n="4">dei tuoi nemici non un cupo suono</l>
-                            <lb n="9"/><l n="5">rende a le regie stanze.</l></lg></mod></ab>
+                            <lb n="9"/><l n="5">rende a le regie stanze.</l></mod></lg></sp>
                     <ab rend="indent"><mod change="#strato-3">
                         <add place="margin">Ci si sente l’<persName ref="#Alfieri">Alfieri</persName></add>
                     </mod><lb/></ab>
@@ -1679,7 +1680,7 @@
                             <del rend="strikethrough">dipinto quasi filosofo</del>
                         </mod>
                     </mod></p>
-                <lg><mod change="#strato-1"><lb n="13"/><l n="1" rend="align-center">Ormai</l>
+                <sp><lg><mod change="#strato-1"><lb n="13"/><l n="1" rend="align-center">Ormai</l>
                             <lb n="14"/><l n="2">non lungi è l’ora in cui piegherò il capo</l>
                             <lb n="15"/><l n="3">sotto l’avello, che pur degno l’ossa</l>
                             <lb n="16"/><l n="4">mie serberà fra le sacrate mura;</l>
@@ -1689,7 +1690,7 @@
                             </mod> 
                             <lb n="18"/><l n="6">di silenzio profonda e di virtude</l> 
                             <lb n="19"/><l n="7">magnanima vedranno sacro ricordo</l>
-                            <lb n="20"/><l n="8">sarà quel marmo.</l></mod></lg>
+                            <lb n="20"/><l n="8">sarà quel marmo.</l></mod></lg></sp>
             </div>
             <div type="page">
                 <pb n="19v1" facs="19v.jpg"/>
@@ -1777,19 +1778,19 @@
                           </mod>
                 </p>
                     <ab rend="indent">
-                        <mod change="#strato-1"><lb n="10"/>Dan.: <lg><l n="1">Perché sì truci</l>
+                        <mod change="#strato-1"><lb n="10"/>Dan.:</mod></ab> <sp><lg><mod change="#strato-1"><l n="1">Perché sì truci</l>
                             <lb n="11"/><l n="2">pensieri, o Sir? Non vedi come il cielo</l>
                             <lb n="12"/><l n="3">apre maestoso il vasto manto e come</l>
-                            <lb n="13"/><l n="4">natura esulta e a te sorride?</l></lg></mod>
-                    </ab>
+                            <lb n="13"/><l n="4">natura esulta e a te sorride?</l></mod></lg></sp>
+                    
                             <p rend="indent"><mod change="#strato-1"><lb n="14"/>E più sotto da notarsi l’agilità <mod change="#strato-1"><subst><del rend="overwritten">d</del><add place="superimposed">n</add></subst></mod>ella forma di questi:</mod></p>
-                <lg><mod change="#strato-1"><lb n="15"/><l n="1">Come innocente la colomba al cielo</l>
+                <sp><lg><mod change="#strato-1"><lb n="15"/><l n="1">Come innocente la colomba al cielo</l>
                             <lb n="16"/><l n="2">spicca da terra l’anelante volo</l>
                             <lb n="17"/><l n="3">tale alle stelle volerà mia prece</l>
-                            <lb n="18"/><l n="4">fervida e grata.</l></mod></lg>
+                            <lb n="18"/><l n="4">fervida e grata.</l></mod></lg></sp>
                             <p rend="indent"><mod change="#strato-1"><lb n="19"/>E questi in bocca d<mod change="#strato-1"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> Dario:</mod></p>
-                            <lg><mod change="#strato-1"><lb n="20"/><l n="1">Ma la potenza lor troppo è crudele</l>
-                            <lb n="21"/><l n="2"><hi rend="underline">ad ogni orrendo crimine assuefatta!</hi></l></mod></lg>
+                            <sp><lg><mod change="#strato-1"><lb n="20"/><l n="1">Ma la potenza lor troppo è crudele</l>
+                            <lb n="21"/><l n="2"><hi rend="underline">ad ogni orrendo crimine assuefatta!</hi></l></mod></lg></sp>
                         
                     
                 </div>
@@ -1834,15 +1835,15 @@
                     <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-3"><subst><del rend="overwritten">22</del><add place="superimposed">25</add></subst></mod></lem><rdg varSeq="1"><mod change="#strato-1">22</mod></rdg></app></fw>
 <p rend="indent"><mod change="#strato-1"><lb n="1"/>Un cortigiano amico del profeta e del Re di nome Corrado 
                     <lb n="2"/>diceva<mod change="#strato-1"><subst seq="2"><add place="inline">:</add><del rend="strikethrough">a<del rend="strikethrough" seq="1">l</del> Dario</del></subst></mod></mod><note n="1" resp="#ST">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
-                    <lg><mod change="#strato-1"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
+                    <sp><lg><mod change="#strato-1"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
                     <lb n="4"/><l n="2">piegar della plebaglia il fido cuore</l>
-                    <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></mod></lg>
+                    <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></mod></lg></sp>
 <p rend="indent"><mod change="#strato-1"><lb n="6"/>Impreciso il significato di quel <hi rend="underline">fido</hi>. Ancora nella 3a scena il Re
                     <lb n="7"/>minaccia morte a Corrado se mancherà al patto:</mod></p>
-                    <lg><mod change="#strato-1"><lb n="8"/><l n="1">Sul palco il capo</l>
+                    <sp><lg><mod change="#strato-1"><lb n="8"/><l n="1">Sul palco il capo</l>
                     <lb n="9"/><l n="2">a te cadrà se a me fedel non resti;</l>
                     <lb n="10"/><l n="3">evitar non potrai la giusta pena</l>
-                    <lb n="11"/><l n="4">se macchiarti oserai di tal misfatto.</l></mod></lg>
+                    <lb n="11"/><l n="4">se macchiarti oserai di tal misfatto.</l></mod></lg></sp>
 <p rend="indent"><mod change="#strato-1"><lb n="12"/><mod change="#strato-1"><subst><del rend="strikethrough">Il</del><add place="inline">Figurati</add></subst></mod>, o lettore, la <app><lem varSeq="2"><mod change="#strato-3"><hi rend="underline">ghigliottina 500 anni avanti</hi></mod></lem>
                         <rdg varSeq="1"><mod change="#strato-1">ghigliottina 500 anni avanti</mod></rdg>    
                         </app>
@@ -1852,8 +1853,8 @@
                     <lb n="16"/>sua pietà con parole amorose e che quantunque poco bene
                     <lb n="17"/>espresse nascondono gentili sentimenti <choice resp="#ST"><sic>ed</sic><corr/></choice><mod change="#strato-1"><subst><del rend="strikethrough">esprimono</del><add place="above">e volevano almeno esprimere</add></subst></mod> l’amore
                     <lb n="18"/>paterno.</mod></p>
-                    <lg><mod change="#strato-1"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
-                    <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></mod></lg>
+                    <sp><lg><mod change="#strato-1"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
+                    <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></mod></lg></sp>
 
             </div>
             <div type="page">
@@ -1869,8 +1870,8 @@
                         <lb n="8"/>dal prefetto che <mod change="#strato-2">me <subst><add place="above">ne</add><del rend="strikethrough">l'</del></subst> avrebbe tosto <subst><del rend="strikethrough">proibito</del><add place="above">punito</add></subst> come <add place="above">d'</add>un delitto <del rend="strikethrough">de-<lb/>gno d'ergastolo</del></mod>
                         <lb n="9"/>, e <mod change="#strato-2"><subst><del rend="strikethrough">d</del><add place="inline">per</add></subst></mod> <mod change="#strato-2"><add place="above">non</add></mod> essere veduto dai compagni i quali
                         <lb n="10"/>avrebbero potuto riferire al prefetto. Quindi una barca di libri
-                        <lb n="11"/>studiavo che coprissero il mio operato <mod change="#strato-2"><subst seq="2"><del rend="overwritten" xml:id="del_p">.</del><add place="superimposed" xml:id="add_v">,</add><del><subst seq="1"><del rend="strikethrough">In q</del> <add place="inline">Sembr</add></subst></del> <add place="inline"> quasi</add></subst>
-                        <substJoin target="#del_p #add_v" seq="2"/></mod>
+                        <lb n="11"/>studiavo che coprissero il mio operato <mod change="#strato-2"><subst seq="2"><del rend="overwritten">.</del><add place="superimposed">,</add><del><subst seq="1"><del rend="strikethrough">In q</del> <add place="inline">Sembr</add></subst></del> <add place="inline"> quasi</add></subst>
+                        </mod>
                         io fossi
                         <lb n="12"/>un delinquente che dovessi nascondere i misfatti che compievo.
                         <lb n="13"/><mod change="#strato-2"><subst><del rend="strikethrough">Non ost</del><add place="inline">Quando</add></subst></mod> le camerate erano tutte a letto addormentate
@@ -1881,6 +1882,110 @@
                         <lb n="18"/>esposto agli sguardi di migliaia di persone, figurate attonite
                         <lb n="19"/>e plaudenti, e<choice resp="#ST"><sic>|</sic><corr> </corr></choice>quante in quel silenzio <mod change="#strato-2"><subst><del rend="strikethrough">mi p</del><add place="inline">sognai</add></subst></mod> di sentire battimani.</mod></p>
                 <p rend="indent"><mod change="#strato-2"><lb n="20"/>Nonostante <mod change="#strato-2"><subst><del rend="strikethrough">i mi</del><add place="inline"><subst><del rend="overwritten">ei</del><add place="superimposed">g</add></subst>li</add></subst></mod> sforzi di tener celati i miei getti, nonostante</mod></p>
+            </div>
+            <div type="page">
+                <pb n="22r1" facs="22r.jpg"/>
+                <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-3"><subst><del rend="overwritten">23</del><add place="superimposed">27</add></subst></mod></lem><rdg varSeq="1"><mod change="#strato-1">23</mod></rdg></app></fw>
+<sp><lg>
+                   <mod change="#strato-1"> <lb n="1"/><l n="3">il tuo inse<mod change="#strato-1"><subst><del rend="overwritten"><gap unit="char" quantity="1"/></del><add place="superimposed">n</add></subst></mod>sato passo e ascolta il padre</l>
+                        <lb n="2"/><l n="4">che tanto t’ama!... Osa guardarmi in volto!...</l>
+                        <lb n="3"/><l n="5">Del genitor la voce a te non giunge?</l>
+                        <lb n="4"/><l n="6">Quai scellerate mura a me divide</l>
+                        <lb n="5"/><l n="7">di te la vista?... Oh la tua dolce voce</l>
+                        <lb n="6"/><l n="8">a me l’orecchie <app><lem varSeq="2"><mod change="#strato-3"><hi rend="overwritten">più giammai</hi></mod></lem>
+                             <rdg varSeq="1"><mod change="#strato-1">più giammai</mod></rdg>   
+                            </app> percuote?...</l><mod change="#strato-3"><add place="margin">? ridi</add></mod>
+                        <lb n="7"/><l n="9"><mod change="#strato-1"><subst><del rend="overwritten">q</del><add place="superimposed">Q</add></subst></mod>uell’orecchie che udiro i <mod change="#strato-1"><subst><del rend="overwritten">miei</del><add place="superimposed">tuoi</add></subst></mod> discorsi </l>
+                        <lb n="8"/><l n="10">infantili; quegli <mod change="#strato-1"><add place="above">occhi</add></mod> che miraro</l>
+                        <lb n="9"/><l n="11">le tue manine giunte in prece al cielo,</l>
+                        <lb n="10"/><l n="12">dei loro sensi più goder non ponno</l>
+                        <lb n="11"/><l n="13">poiché l’amor gli è tolto… Ah ch’io ti segua!...</l>
+                    <lb n="12"/>    
+                    </mod></lg></sp>
+                <p rend="indent">
+                    <mod change="#strato-1"><lb n="13"/> E nella 4<hi rend="apice">a</hi> scena notevole è il pensiero espresso da un satrapo nemico
+                        <lb n="14"/> del profeta di nome Gerardo:</mod>
+                </p>
+                <sp><lg>
+                    <mod change="#strato-1"><lb n="15"/><l n="1">E maggior duolo apporta a un cuore afflitto</l>
+                        <lb n="16"/><l n="2">veder vicina la sua meta e indarno</l>
+                        <lb n="17"/><l n="3">sperar di giungervi assetato e stanco.</l>
+                    </mod>
+                </lg></sp>
+                <p rend="indent">
+                    <mod change="#strato-1"><lb n="18"/>Più sotto il compagno di Gerardo, Leopoldo:</mod>
+                </p>
+                <sp><lg>
+                    <mod change="#strato-1">
+                        <lb n="19"/><l n="1">E d’amistade</l>
+                        <lb n="20"/><l n="2">non si strinsero in noi tenaci nodi?</l>
+                    </mod>
+                </lg></sp>
+            </div>
+            <div type="page">
+                <pb n="22v1" facs="22v.jpg"/>
+                <fw place="top_left" type="pageNum"><mod change="#strato-3"><add><hi rend="underline">28</hi></add></mod></fw>
+                <p rend="indent"><mod change="#strato-2">
+                        <lb n="1"/>studiassi di sembrare attento alle lezioni del maestro e agli
+                        <lb n="2"/>ammonimenti del prefetto, io non vi riusciva.
+                </mod></p>
+                <p rend="indent"><mod change="#strato-2">
+                        <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <choice><sic>curioso<mod change="#strato-3"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-3"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#UT">superiore curioso</corr></choice>
+                        <lb n="4"/>era arrivato a frugare su’ miei cassetti e scoprire gli arcani
+                        <lb n="5"/>gelosi, e ridere sulle mie baggianate. E <mod change="#strato-2">n<del rend="overwritten">i</del><add place="superimposed">e</add>l</mod> veder tanto scritto,
+                        <lb n="6"/>tanto <mod change="#strato-2">lavoro <subst seq="1"><del rend="strikethrough">avrà il</del><add place="inline">quel</add></subst> superiore avrà naturalmente concluso:<subst seq="2"><del rend="strikethrough">«per
+                                <lb n="7"/>fa i versi perde molto tempo e <add place="above">a</add>studiare per il scuola non ci pensa </del>
+                        <lb n="8"/><add place="inline">«com’è possibile che sia attento alla scuola?».</add></subst></mod> E dietro
+                        <lb n="9"/>questa conclusione<mod change="#strato-2"><add place="above">, ora comprendo,</add></mod> mi si faceva spesso ammonimenti
+                        <lb n="10"/>severi sullo studio, e il maestro mi dava miseri punti nella
+                        <lb n="11"/>cartella bimestrale. <mod change="#strato-2"><subst><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In</del> <add place="inline">I sup</add></subst></del> <add place="inline">talchè</add></subst></del> <add place="inline">I superiori</add></subst></mod> e i miei di casa
+                        <lb n="12"/>si meravigliavano dei miei <mod><add place="above">scarsi</add></mod> <!-- lapis non si capisce quando usato--> successi e mi persero <mod change="#strato-2"><del rend="strikethrough">un po'</del></mod>
+                        <lb n="13"/>la stima di fanciullo amante dello studio; questi a
+                        <lb n="14"/>rimproverarmi <mod change="#strato-2"><subst><del rend="strikethrough">i sacri</del><add place="inline">come</add></subst></mod> male ricompensavo i sacrifici dello
+                        <lb n="15"/>zio che mi manteneva a quegli studi, quelli a minacciarmi
+                        <lb n="16"/>castighi o meglio a coprirmi di castighi.
+                    </mod></p>
+                <p rend="indent"><mod change="#strato-2">
+                        <lb n="17"/>Ma oltre lo studio erano <mod change="#strato-2"><add place="above">al solito</add></mod> causa di punizioni le mie scapa-
+                        <lb n="18"/>taggini<mod change="#strato-2"><subst><del rend="overwritten">.</del><add place="superimposed">,</add><del rend="strikethrough">Il pensare</del><add place="inline">le quali</add></subst></mod> invece di scemare aumentavano.
+                        <lb n="19"/>Il lavoro poetico che avevo tra mane mi <mod change="#strato-2"><subst><del rend="strikethrough">to</del><add place="inline">assimilava</add></subst></mod> tutte
+                        <lb n="20"/>l’energie, mi rubava ogni altra cura, mi toglieva anche il
+                    </mod></p>
+            </div>
+            <div type="page">
+                <pb n="23r1" facs="23r.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-1">2</mod><app><lem varSeq="2"><mod change="#strato-3"><del rend="overwritten">6</del><add place="superimposed">9</add></mod></lem><rdg varSeq="1"><mod change="#strato-1">6</mod></rdg></app></fw>
+            <p rend="indent"><mod change="#strato-1"><lb n="1"/>Nella stessa scena Gerardo dice a Leopoldo:</mod></p>
+            <lg><mod change="#strato-1">
+                        <lb n="2"/><l n="1">E se pazzo timore non adombri</l>
+                        <lb n="3"/><l n="2">le labbra e il core ancor più apertamente</l>
+                        <lb n="4"/><l n="3">parlar saprò come più aperto il campo</l>
+                        <lb n="5"/><l n="4">all’ira.</l>
+            </mod></lg> 
+                <p rend="indent"><mod change="#strato-1"><lb n="6"/>A cui risponde l’altro:</mod></p>
+                <sp><lg><mod change="#strato-1">
+                            <lb n="7"/><l n="1">E in cor s'accende</l>
+                            <lb n="8"/><l n="2">del rancore la vampa assai più ardente</l>
+                            <lb n="9"/><l n="3">quando il nemico innanzi a noi trionfa.</l>
+                    </mod></lg></sp>
+                <p rend="indent"><mod change="#strato-1"><lb n="10"/>Gerardo..........</mod></p>
+                <sp><lg><mod change="#strato-1">
+                            <lb n="11"/><l n="1">......E presto</l>
+                            <lb n="12"/><l n="2">verrà quell’ora in cui cadrà <app><lem varSeq="2"><mod change="#strato-3"><hi rend="underline">sommerso</hi></mod></lem>
+                                <rdg varSeq="1"><mod change="#strato-1">sommerso</mod></rdg>    
+                                </app></l>
+                            <lb n="13"/><l n="3">nel sangue di sue vene.</l>
+                        </mod></lg></sp>
+                <p rend="indent"><mod change="#strato-1"><lb n="14"/>Nella 6<hi rend="apice">a</hi> scena il Re rimprovera i malvagi satrapi:</mod></p>
+                <sp><lg><mod change="#strato-1">
+                            <lb n="15"/><l n="1">......Invidia</l>
+                            <lb n="16"/><l n="2">nei vostri cor malaugurato seme</l>
+                            <lb n="17"/><l n="3">por non dovea…</l>
+                            <lb n="18"/><l n="4">E l’odio v’accecò la mente e il cuore.</l>
+                            <lb n="19"/>.......
+                            <lb n="20"/><l n="5">Degno è di lode chi lo spirto <mod change="#strato-1"><del rend="strikethrough">d'</del></mod>adorno</l>
+                            <lb n="21"/><l n="6">d’amore ha per chi l’odia</l>
+                        </mod></lg></sp>
             </div>
         </body>
         <back>
