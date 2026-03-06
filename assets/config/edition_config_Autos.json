@@ -201,7 +201,8 @@
       "strato-10": "#BB1515",
       "strato-11": "#080277",
       "strato-X": "#0097A7",
-      "strato-Y": "#00796B"
+      "strato-Y": "#00796B",
+      "strato-2.1":"#FFFFFF"
     }
   },
   "defaultImageZoomLevel": 0.6,
