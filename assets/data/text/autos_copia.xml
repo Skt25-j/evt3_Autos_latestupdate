@@ -175,7 +175,7 @@
         <graphic n="25v-26r" width="1820px" height="1440px" url="25v-26r.jpg"/>
         <graphic n="26v-27r" width="1820px" height="1440px" url="26v-27r.jpg"/>
     </facsimile> <!-- Problema dello sdoppiamento della navbar: probabilmente dipende dal changeView attivo-->
-    <text n="Autos" xml:id="Autos">
+    <text n="Autos_1" xml:id="Autos_1">
         <front> <!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
         </front>
         <body>
@@ -263,6 +263,8 @@
                         <lb n="12"/><eventName ref="#Tentato_suicidio">1921</eventName></mod></p> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
                 
             </div>
+            
+
             <div type="page" xml:id="Quaderno1_1r">
                 <pb n="1r1" facs="1r.jpg"/> 
                 <ab rend="indent">
@@ -2128,8 +2130,61 @@
             </div>
             <div type="page">
                 <pb n="26r1" facs="26r.jpg"/>
-                <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-3"><add place="inline">35</add><del rend="strikethrough">27</del></mod></lem><rdg varSeq="1"><mod change="#strato-1">27</mod></rdg></app></fw>
-
+                <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-3"><add place="inline">35</add> <del rend="strikethrough">27</del></mod></lem><rdg varSeq="1"><mod change="#strato-1">27</mod></rdg></app></fw>
+<sp><lg><mod change="#strato-1"><lb n="1"/><l n="1">e l’infule indossiamo e le corazze;</l>
+                            <lb n="2"/><l n="2">e colla rabbia in sen, della vendetta </l>
+                            <lb n="3"/><l n="3">col grido acerbo nell'enfiate labbia </l>
+                            <lb n="4"/><l n="4">ripetiamo: la morte o la vittoria!</l>
+</mod></lg></sp>
+                <p rend="indent"><mod change="#strato-1"><lb n="5"/>Quali bestialità!  E dire che allora questi versi mi consola-
+                        <lb n="6"/>vano e mi parevano eco dei sentimenti ch’io nutrivo allora,
+                        <lb n="7"/>che confacessero all’indole mia irrequieta, e all’animo mio
+                        <lb n="8"/>inasprito!</mod></p>
+                <p rend="indent"><mod change="#strato-1"><lb n="9"/>Nella 3<hi rend="apice">a</hi> scena Corrado dice:</mod></p>
+                <sp><lg><mod change="#strato-1"><lb n="10"/><l n="1">Chi non è giusto</l>
+                            <lb n="11"/><l n="2">esser non può co’ suoi colleghi unito.</l>
+                            <lb n="12"/>..........
+                            <lb n="13"/><l n="3">Un dì delusi rimarrete e indarno</l>
+                            <lb n="14"/><l n="4">di perdon spererete il dolce grido</l>
+                        </mod></lg></sp>
+                <p rend="indent"><mod change="#strato-1"><lb n="15"/>Nella 5<hi rend="apice">a</hi>, Gerardo predice al Re tempi migliori.</mod></p>
+                <sp><lg><mod change="#strato-1"><lb n="16"/><l n="1"><choice resp="#ST"><sic>Un olezzante</sic><corr>Un’olezzante</corr></choice></l>
+                            <lb n="17"/><l n="2">pace pel regno spanderassi; estinte</l>
+                            <lb n="18"/><l n="3"> si vedranno l’invidie e dei paesi</l>
+                            <lb n="19"/><l n="4">l’ardenti parti e le <choice resp="#ST"><sic>minaccie</sic><corr>minacce</corr></choice> e l’ira;</l>
+                            <lb n="20"/><l n="5">dei nemici la fiamma estinguerassi</l>
+                        </mod></lg></sp>
+            </div>
+            <div type="page">
+                <pb n="26v1" facs="26v.jpg"/>
+                <fw place="top_left" type="pageNum"><mod change="#strato-3"><add>36</add></mod></fw>
+                <p rend="indent"><mod change="#strato-2"><lb n="1"/>il giorno che compivo 16 anni. Dubitavo ed ero <mod change="#strato-2"><subst><del rend="strikethrough">tra</del> <add place="inline">nato</add></subst></mod> e cresciu-
+                        <lb n="2"/>to tra le tonache e gli altari, <mod change="#strato-2"><subst><del rend="strikethrough">di</del> <add place="inline">era</add></subst></mod> indisciplinato ed ero
+                        <lb n="3"/><mod change="#strato-2"><subst><del rend="strikethrough">all</del> <add place="inline">educato</add></subst></mod> dalla disciplina e dal rigare: questo, a <choice resp="#ST"><sic>paree</sic> <corr>parere</corr></choice> mio,
+                        <lb n="4"/>mi dava a conoscere il mio fiero spirito che <mod change="#strato-2"><subst><del rend="strikethrough">si</del> <add place="inline">voleva</add></subst></mod>
+                        <lb n="5"/>in qualche modo segnalar<mod change="#strato-2"><subst><del rend="overwritten">e</del><add place="superimposed">si</add></subst></mod>, <mod change="#strato-2"><add place="above">elevarsi</add></mod> e che non volendo essere pari,
+                        <lb n="6"/>uguale agli altri sceglieva un mezzo falso ed erroneo
+                        <lb n="7"/><mod change="#strato-2"><add place="above">tanto</add></mod> per dire: «io <mod change="#strato-2"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst></mod>voi».</mod></p>
+                <p rend="indent"><mod change="#strato-2"><lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#strato-2"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
+                        <lb n="9"/>di punizioni e che ho descritto, germogliò un<mod change="#strato-2"><subst><del rend="strikethrough">'</del><add place="inline">o</add></subst></mod>altro non
+                        <lb n="10"/>migliore e fu l’ira. Il caratter<mod change="#strato-2"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst></mod> fiero, <mod change="#strato-2"><subst seq="1"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">a</del> <add place="inline">stuzzicato</add></subst></del>
+                        <lb n="11"/><add place="inline">provocato,</add></subst></mod> divenne irascibilissimo e fece come la piaga
+                        <lb n="12"/>molto stuzzicata. La rabbia <mod change="#strato-2"><del rend="strikethrough">nonché l'ira</del></mod>eccedeva per nulla
+                        <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
+                        <lb n="14"/>l’andava raramente e penosamente soffocando, e più  
+                        <lb n="15"/>spesso<mod change="#strato-2"><subst seq="1"><del rend="strikethrough">spe</del> <add place="inline">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add></subst><add place="above" xml:id="add_frenandola">frenandola</add><substJoin target="#del_ferrandola #add_frenandola" seq="3"/> a solo nella mia camera<subst seq="2"><del rend="overwritten">. T</del><add place="superimposed">; t</add></subst>alora
+                        <lb n="16"/><add place="above" seq="3">anche a me stesso</add> <subst seq="2"><del rend="strikethrough"><add place="above">venni ad</add></del> <add place="above">trascesi ad atti che</add></subst> sembraro<subst seq="1"><del rend="overwritten">mi</del><add place="superimposed">no</add></subst> con ragione <del rend="strikethrough" seq="2">atti</del> da pazzo<del rend="overwritten" xml:id="del_2p">:</del> <del rend="strikethrough" seq="3"><subst seq="2"><del rend="overwritten">U</del><add place="superimposed">u</add></subst>n</del> <add place="superimposed" xml:id="add_p">.</add><substJoin target="#del_2p #add_p" seq="3"/></mod> 
+                        
+                        
+                        
+                    </mod></p>
+                <p rend="indent"><mod change="#strato-2"><lb n="17"/>Una volta per essere stato messo in silenzio per due giorni
+                        <lb n="18"/>dal Rettore, senza pietanza, senza boccino al Refettorio per cagione
+                        <lb n="19"/>non sembratami giusta e certamente non adeguata, mi
+                        <lb n="20"/>ricordo aver portato <mod change="#strato-2"><add place="above">con uno strattone</add></mod> il letto <mod change="#strato-1"><subst><del rend="strikethrough">a met</del> <add place="inline">in mezzo</add></subst></mod> alla camera e</mod></p>
+            </div>
+            <div type="page">
+                <pb n="27r1" facs="27r.jpg"/>
             </div>
         </body>
         <back>
@@ -2146,5 +2201,12 @@
                 
             </div>
         </back>
+    </text>
+    <text n="Autos_2" xml:id="Autos_2">
+        <body>
+            <div type="page">
+               
+            </div>
+        </body>
     </text>
 </TEI>
