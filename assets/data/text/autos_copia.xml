@@ -110,6 +110,15 @@
                         <eventName>Tentato suicidio</eventName>
                     </event>
                 </listEvent>
+                <listBibl xml:id="Opere_citate">
+                    <head>Opere citate</head>
+                    <bibl xml:id="OdePallavicini">
+                        <author>Ugo Foscolo</author>, 
+                        <title level="a">Ode a Luigia Pallavicini</title> 
+                        (<date when="1800">1800</date>). 
+                        <ref target="https://it.wikisource.org/...">Testo online</ref>
+                    </bibl>
+                </listBibl>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -2188,18 +2197,6 @@
             </div>
         </body>
         <back>
-            <div type="bibliography">
-                <listBibl xml:id="Opere_citate">
-                    <head>Opere citate</head>
-                    <bibl xml:id="OdePallavicini">
-                        <author>Ugo Foscolo</author>, 
-                        <title level="a">Ode a Luigia Pallavicini</title> 
-                        (<date when="1800">1800</date>). 
-                        <ref target="https://it.wikisource.org/...">Testo online</ref>
-                    </bibl>
-                </listBibl>
-                
-            </div>
         </back>
     </text>
     <text n="Autos_2" xml:id="Autos_2">
