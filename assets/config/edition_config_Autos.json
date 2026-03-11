@@ -191,18 +191,19 @@
       "strato-0": "#E67E22",
       "strato-1": "#D35400",
       "strato-2": "#E91E63",
-      "strato-4": "#C2185B",
-      "strato-3": "#9E9B9B",
+      "strato-3": "#C2185B",
+      "strato-4": "#9E9B9B",
       "strato-5": "#9C27B0",
       "strato-6": "#7B1FA2",
       "strato-7": "#512DA8",
-      "strato-8": "#4C4A4A",
-      "strato-9": "#2404B5",
-      "strato-10": "#BB1515",
-      "strato-11": "#080277",
+      "strato-8": "#260F8B",
+      "strato-9": "#BB1515",
+      "strato-10": "#2404B5",
+      "strato-11": "#4A148C",
+      "strato-12":"#080277",
       "strato-X": "#0097A7",
-      "strato-Y": "#00796B",
-      "strato-2.1":"#FFFFFF"
+      "strato-Y": "#00796B"
+      
     }
   },
   "defaultImageZoomLevel": 0.6,
