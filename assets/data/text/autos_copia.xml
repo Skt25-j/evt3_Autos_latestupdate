@@ -1108,12 +1108,12 @@
                         <mod change="#strato-1"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del>
                                 <add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                         <!-- Quando si scrive qualcosa sopra qualcos'altro si usa del rend overwritten e place su add superimposed. Vedi ⚓︎12.3.4.7 Instant Corrections nella TEI  -->
-                        <lb n="11"/><mod change="#strato-1"><add place="opposite" copyOf="#testo_aggiunta_12v"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark> Molte volte <subst><add place="inline">m’avvenne</add>
+                        <lb n="11"/><mod change="#strato-1"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark><choice resp="#UT"><sic/><corr><add place="opposite" copyOf="#testo_aggiunta_12v"> Molte volte <subst><add place="inline">m’avvenne</add>
                                     <del rend="strikethrough">andare</del></subst>
                                 non far le lezioni perché
                                 <lb/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
                                 <lb/> perché scambiavo i compiti d’un giorno per quelli d’un altro
-                            </add> </mod>
+                            </add></corr></choice> </mod>
                         Molte <mod change="#strato-1">
                             <add place="above">altre</add>
                         </mod> 
@@ -1141,13 +1141,13 @@
             </div>
             <div type="page">
                 <pb n="12v1" facs="12v.jpg"/>
-                <p rend="indent" xml:id="agg_12v"><mod change="#strato-1"><add place="inline" copyOf="#testo_aggiunta_12v">
+                <p rend="indent" xml:id="agg_12v"><choice resp="#UT"><sic><mod change="#strato-1"><add place="inline" copyOf="#testo_aggiunta_12v">
                             <lb n="1"/><metamark xml:id="ref_1v" target="#testo_aggiunta_12v">(1)</metamark>Molte volte <mod change="#strato-1"><subst><add place="inline">m’avvenne</add>
                                     <del rend="strikethrough">andare</del></subst></mod>
                             non far le lezioni perché
                             <lb n="2"/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
                             <lb n="3"/>perché scambiavo i compiti d’un giorno per quelli d’un altro
-                        </add> </mod>
+                        </add> </mod></sic><corr/></choice>
                 </p>
             </div>
             <div type="page">
@@ -2556,11 +2556,11 @@
                         <lb n="18"/>seguitai l’<mod change="#strato-3"><subst><del rend="strikethrough">Iliade</del> <add place="inline">Eneide</add></subst></mod> tradotta dal Caro; di più imparai
                         <lb n="19"/>il Canto di Ugolino e lessi 6 o 7 tragedie dell’Alfieri, e molte Satire <mod change="#strato-3"><add place="below">del Giusti</add></mod>.
                         <lb n="20"/><mod change="#strato-3"><subst><del rend="strikethrough">Nel totale a</del> <add place="inline">Di prosa</add></subst></mod> <mod change="#strato-3"><subst><del rend="strikethrough">avevo letto</del> <add place="above">lessi</add></subst></mod> i Promessi Sposi due volte</mod></p>
-            <p rend="indent"><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_7r2"><metamark xml:id="ref_2" target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark><lb/>In quell’anno <mod change="#strato-3"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
+                <p rend="indent"><choice resp="#UT"><sic/><corr><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_7r2"><metamark xml:id="ref_2" target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark><lb/>In quell’anno <mod change="#strato-3"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
                             <lb/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
                             <lb/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo">ricordo</add> un aneddoto veramente notabile
                             <lb/><del rend="strikethrough" xml:id="del_mi">mi rammentò Boni</del><substJoin target="#del_mi #add_ricordo"/></mod> intorno alla morte di Giosue.
-                            </add> </mod></p>    
+                            </add> </mod></corr></choice> </p> <!-- ha senso qui l'uso di choice?-->
             </div>
             <div type="page">
                 <pb n="7r2" facs="7r2.jpg"/>
