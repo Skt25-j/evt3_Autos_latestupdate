@@ -2561,6 +2561,24 @@
                             <lb/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo">ricordo</add> un aneddoto veramente notabile
                             <lb/><del rend="strikethrough" xml:id="del_mi">mi rammentò Boni</del><substJoin target="#del_mi #add_ricordo"/></mod> intorno alla morte di Giosue.
                             </add> </mod></corr></choice> </p> <!-- ha senso qui l'uso di choice?-->
+                <p rend="indent"><choice resp="#UT"><sic/><corr><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_8r2">
+                                    <lb/>Quel giorno 7 Febbraio al refettorio Boni <mod change="#strato-1"><subst><del rend="strikethrough">disse</del> <add place="inline">annunziò</add></subst></mod>
+                                    <lb/>addolorato la <mod change="#strato-1"><subst><del rend="strikethrough">fatale</del> <add place="inline">morte</add></subst></mod> di tanto uomo. Gli altri <mod change="#strato-3"><add place="above">maggiori</add></mod> che
+                                    <lb/>ci avevano sentiti parlare e che forse <mod change="#strato-3"><add place="above">un po’ ne</add></mod> conoscevano <mod change="#strato-3"><subst><del rend="strikethrough">come</del> <add place="above">le opere e
+                                    <lb/>lo stimavano</add></subst></mod> un grand’uomo se ne dolsero e tutti restarono cheti. Io in
+                                    <lb/>quel silenzio <mod change="#strato-3"><add place="above">mi</add></mod> <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
+                                    <lb/>si meravigliarono,</hi></mod></lem>
+                                    <rdg varSeq="1"><mod change="#strato-3">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
+                                    <lb/>si meravigliarono,</mod></rdg>    
+                                    </app> e Boni non lasciò di rimproverarmi.
+                                    <lb/>Io non lo seppi allora ed ora pure non ne posso dire il <app><lem varSeq="2"><mod change="#strato-4"><hi rend="underline">per-
+                                    <lb/>ché!</hi></mod></lem>
+                                    <rdg varSeq="1"><mod change="#strato-3">perché!</mod></rdg>    
+                                    </app> Solo dirò che diss<mod change="#strato-3"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> allora <app><lem varSeq="2"><mod change="#strato-4">un<del rend="strikethrough">'</del>errore</mod></lem>
+                                    <rdg varSeq="1"><mod change="#strato-3">un'errore</mod></rdg>    
+                                    </app>.
+                                    <lb/>Gli Inni Sacri del Manzoni non mi piacquero in <mod change="#strato-3"><subst><del rend="strikethrough">q</del> <add place="inline">una</add></subst></mod>
+                                    <lb/>prima lettura, poi mi parve bellissima <mod change="#strato-3"><subst><del rend="overwritten">il</del><add place="superimposed">la</add></subst></mod> Pentecoste.</add> </mod></corr></choice> </p>   
             </div>
             <div type="page">
                 <pb n="7r2" facs="7r2.jpg"/>
@@ -2586,7 +2604,65 @@
                         </mod></lg></sp><ab rend="indent"><mod change="#strato-4">
                         <add place="margin">bene</add>
                     </mod><lb/></ab>
-                <p rend="indent"><mod change="#strato-3"></mod></p>
+                <lb n="8"/>
+                <lb n="9"/>
+                <p rend="indent"><mod change="#strato-3"><lb n="10"/>a fila, le lettere del Leopardi e del Giusti, il Cuore e i
+                        <lb n="11"/>Bozzetti di De Amicis, il <mod change="#strato-3"><subst><del rend="strikethrough">Ma</del> <add place="inline">Fieramosca</add></subst></mod> del D’Azeglio,
+                        <lb n="12"/>il Marco Visconti del Grossi; <mod change="#strato-3"><del rend="strikethrough">la Fabiola</del></mod><choice resp="#ST"><sic>;</sic><corr/></choice> i Ricordi di
+                        <lb n="13"/>Dupré, alcune Commedie del Goldoni. <mod change="#strato-3"><add place="above">L’antologie del Bruni, del Mondi,</add> <subst><del rend="strikethrough">di</del> <add place="inline">del</add></subst> Martini <del rend="strikethrough">Fior da Fiore</del></mod>.</mod></p>
+                        <p rend="indent"><mod change="#strato-3"><lb n="14"/>Il lettore <mod change="#strato-3"><subst><del rend="strikethrough">vedrà</del> <add place="inline">giudicherà</add></subst></mod> se con tutte queste letture volontarie
+                        <lb n="15"/>poteva avanzarmi gran tempo per ben riuscire agli studi
+                        <lb n="16"/>obbligatorii.</mod></p>
+               <p><mod><choice resp="#UT"><sic><lb n="17"/><metamark target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark>In quell’anno <mod change="#strato-3"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
+                <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
+                <lb n="19"/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
+                    <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</sic><corr/></choice></mod></p>
+            </div>
+            <div type="page">
+                <pb n="7v2" facs="7v2.jpg"/>
+                <ab><mod change="#strato-4">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>" </mod></ab>
+            </div>
+            <div type="page">
+                <pb n="8r2" facs="8r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-5"><add>50</add></mod></fw>
+                <p rend="indent"><choice resp="#UT"><sic><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_8r2">
+                                    <lb n="1"/>Quel giorno 7 Febbraio al refettorio Boni <mod change="#strato-3"><subst><del rend="strikethrough">disse</del> <add place="inline">annunziò</add></subst></mod>
+                                    <lb n="2"/>addolorato la <mod change="#strato-3"><subst><del rend="strikethrough">fatale</del> <add place="inline">morte</add></subst></mod> di tanto uomo. Gli altri <mod change="#strato-3"><add place="above">maggiori</add></mod> che
+                                    <lb n="3"/>ci avevano sentiti parlare e che forse <mod change="#strato-3"><add place="above">un po’ ne</add></mod> conoscevano <mod change="#strato-3"><subst><del rend="strikethrough">come</del> <add place="above">le opere e
+                                                <lb n="4"/>lo stimavano</add></subst></mod> un grand’uomo se ne dolsero e tutti restarono cheti. Io in
+                                    <lb n="5"/>quel silenzio <mod change="#strato-3"><add place="above">mi</add></mod> <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
+                                                    <lb n="6"/>si meravigliarono,</hi></mod></lem>
+                                        <rdg varSeq="1"><mod change="#strato-3">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
+                                                <lb />si meravigliarono,</mod></rdg>    
+                                    </app> e Boni non lasciò di rimproverarmi.
+                                    <lb n="7"/>Io non lo seppi allora ed ora pure non ne posso dire il <app><lem varSeq="2"><mod change="#strato-4"><hi rend="underline">per-
+                                                    <lb n="8"/>ché!</hi></mod></lem>
+                                        <rdg varSeq="1"><mod change="#strato-3">per-<lb/>ché!</mod></rdg>    
+                                    </app> Solo dirò che diss<mod change="#strato-3"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> allora <app><lem varSeq="2"><mod change="#strato-4">un<del rend="strikethrough">'</del>errore</mod></lem>
+                                        <rdg varSeq="1"><mod change="#strato-3">un'errore</mod></rdg>    
+                                    </app>.
+                                    <lb n="9"/>Gli Inni Sacri del Manzoni non mi piacquero in <mod change="#strato-3"><subst><del rend="strikethrough">q</del> <add place="inline">una</add></subst></mod>
+                                    <lb n="10"/>prima lettura, poi mi parve bellissima <mod change="#strato-3"><subst><del rend="overwritten">il</del><add place="superimposed">la</add></subst></mod> Pentecoste.</add> </mod></sic><corr></corr></choice> </p>    
+            <ab rend="indent"><mod change="#strato-5"><lb n="11"/><title>Montalcino</title></mod></ab>
+            <p rend="indent"><mod change="#strato-5"><lb n="12"/>Nel Novembre di quell’anno 1907, per <mod change="#strato-5"><subst><del rend="strikethrough">certi mutamenti</del> <add place="inline">decisione</add></subst></mod> de’ Vescovi
+                        <lb n="13"/>de<mod change="#strato-5"><del rend="strikethrough">l</del></mod>la Diocesi di <mod change="#strato-5"><del rend="strikethrough">Pienza</del> Montepulciano<subst><del rend="overwritten">-</del><add place="superimposed">,</add></subst> <del rend="strikethrough">Chiusi e</del> Pienza e Montalcino</mod>, <mod change="#strato-5"><add place="above">fondendo in uno i tre Seminari,</add></mod> fu trasferito il Ginnasio
+                        <lb n="14"/><mod change="#strato-5"><subst><del rend="strikethrough">a Montalc</del> <add place="inline">nel Seminario</add></subst></mod> di Montalcino, <mod change="#strato-5"><subst><del rend="strikethrough">con</del> <add place="inline">il</add></subst></mod> liceo a Montepulciano, e <mod change="#strato-5"><subst><del rend="strikethrough">una specie di<lb/>Università Ecclesiastica</del> <add place="above">gli studi
+                        <lb n="15"/>superiori</add></subst></mod> a Pienza. <mod change="#strato-5"><subst><del rend="overwritten">I</del><add place="superimposed">T</add></subst></mod>utto questo fu fatto con intento di riportare più
+                        <lb n="16"/>vigore agli studi e pareggiarli <mod change="#strato-5"><subst><del rend="strikethrough">al</del> <add place="above">pel</add></subst></mod> possibile agli studi governativi. Se questo fu
+                        <lb n="17"/>raggiunto <mod change="#strato-5">non sta<add place="above" seq="2">rebbe</add> a me <add place="above">darne <subst seq="2"><del rend="strikethrough">un</del> <add place="inline">il</add></subst></add><subst seq="1"><del rend="strikethrough">deciderlo</del> <add place="inline">giudi<subst seq="2"><del rend="overwritten">carlo</del><add place="superimposed">zio</add></subst> </add></subst></mod>: quando però mi si chieda
+                        <lb n="18"/><mod change="#strato-5"><del rend="strikethrough">un giudizio</del></mod> io posso affermare che almeno a Montalcino i <mod change="#strato-5"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">p</del> <add place="inline">pr</add></subst></del> <add place="inline">maestri</add></subst></mod> furo-
+                        <lb n="19"/>no discreti e taluni, come il Can(oni)co Don Alberto Borghi, <mod change="#strato-5"><subst><del rend="strikethrough">dottissimi</del> <add place="above">assai dotti</add></subst></mod>. Degli altri
+                        <lb n="20"/><mod change="#strato-5"><subst><del rend="strikethrough">S</del> <add place="inline">due</add></subst></mod> Seminari io non ne so nulla, perché ebbi la felicità di non andarvi.</mod></p>    
+            </div>
+            <div type="page">
+                <pb n="8v2" facs="8v2.jpg"/>
+            </div>
+            <div type="page">
+                <div type="page">
+                    <pb n="9r2" facs="9r2.jpg"/>
+                    <fw place="top_right" type="pageNum"><mod change="#strato-5"><add>51</add></mod></fw>
+                    <p rend="indent"><mod change="#strato-5"></mod></p>
+                </div>
             </div>
         </body>
     </text>
