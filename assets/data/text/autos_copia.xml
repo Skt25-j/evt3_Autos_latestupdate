@@ -1109,11 +1109,11 @@
                                 <add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                         <!-- Quando si scrive qualcosa sopra qualcos'altro si usa del rend overwritten e place su add superimposed. Vedi ⚓︎12.3.4.7 Instant Corrections nella TEI  -->
                         <lb n="11"/><mod change="#strato-1"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark><choice resp="#UT"><sic/><corr><add place="opposite" copyOf="#testo_aggiunta_12v"> Molte volte <subst><add place="inline">m’avvenne</add>
-                                    <del rend="strikethrough">andare</del></subst>
-                                non far le lezioni perché
-                                <lb/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
-                                <lb/> perché scambiavo i compiti d’un giorno per quelli d’un altro
-                            </add></corr></choice> </mod>
+                                            <del rend="strikethrough">andare</del></subst>
+                                        non far le lezioni perché
+                                        <lb/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
+                                        <lb/> perché scambiavo i compiti d’un giorno per quelli d’un altro
+                                    </add></corr></choice> </mod>
                         Molte <mod change="#strato-1">
                             <add place="above">altre</add>
                         </mod> 
@@ -1142,12 +1142,12 @@
             <div type="page">
                 <pb n="12v1" facs="12v.jpg"/>
                 <p rend="indent" xml:id="agg_12v"><choice resp="#UT"><sic><mod change="#strato-1"><add place="inline" copyOf="#testo_aggiunta_12v">
-                            <lb n="1"/><metamark xml:id="ref_1v" target="#testo_aggiunta_12v">(1)</metamark>Molte volte <mod change="#strato-1"><subst><add place="inline">m’avvenne</add>
-                                    <del rend="strikethrough">andare</del></subst></mod>
-                            non far le lezioni perché
-                            <lb n="2"/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
-                            <lb n="3"/>perché scambiavo i compiti d’un giorno per quelli d’un altro
-                        </add> </mod></sic><corr/></choice>
+                                    <lb n="1"/><metamark xml:id="ref_1v" target="#testo_aggiunta_12v">(1)</metamark>Molte volte <mod change="#strato-1"><subst><add place="inline">m’avvenne</add>
+                                            <del rend="strikethrough">andare</del></subst></mod>
+                                    non far le lezioni perché
+                                    <lb n="2"/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
+                                    <lb n="3"/>perché scambiavo i compiti d’un giorno per quelli d’un altro
+                                </add> </mod></sic><corr/></choice>
                 </p>
             </div>
             <div type="page">
@@ -1581,7 +1581,7 @@
                 <pb n="17v1" facs="17v.jpg"/></div>
             <div type="page">
                 <pb n="18r1" facs="18r.jpg"/>
-                <fw place="top_right" type="pageNum"><mod change="#strato-2"><add>19</add></mod></fw>
+                <fw place="top_right" type="pageNum"><mod change="#strato-2">19</mod></fw>
                 
                 <p rend="indent"><mod change="#strato-2">
                         <lb n="1"/>I principii erano molteplici e 
@@ -2453,7 +2453,7 @@
             <div type="page">
                 <pb n="5r2" facs="5r2.jpg"/>
                 <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-4"><add place="inline">45</add> <del rend="strikethrough">32</del> </mod></lem><rdg varSeq="1"><mod change="#strato-2">32</mod></rdg></app></fw>
-            <sp><lg><mod change="#strato-2">
+                <sp><lg><mod change="#strato-2">
                             <lb n="1"/><l n="1">dei nostri cor non pera,</l> 
                             <lb n="2"/><l n="2">è questa la preghiera</l>
                             <lb n="3"/><l n="3">che grata porsi al ciel,</l>
@@ -2471,7 +2471,7 @@
                             <lb n="15"/><l n="15">per premio del suo amor,</l>
                             <lb n="16"/><l n="16">lo salverà dal morso</l>
                             <lb n="17"/><l n="17">di sì feroci belve il suo Signor.</l>
-            </mod></lg></sp>    <!-- Ci sarebbe da inserire la spirale con il metamark-->
+                        </mod></lg></sp>    <!-- Ci sarebbe da inserire la spirale con il metamark-->
             </div>
             <div type="page">
                 <pb n="5v2" facs="5v2.jpg"/>
@@ -2520,7 +2520,7 @@
                 <p rend="indent"><mod change="#strato-2"><lb n="14"/>Nella 2 sce<mod change="#strato-2"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del> <add place="superimposed">na</add></subst></mod> Leopoldo a Corrado:</mod></p>
                 <sp><lg><mod change="#strato-2">
                             <lb n="15"/><l n="1">Chi eccitò, <app><lem varSeq="2"><mod change="#strato-4"><hi rend="underline">chi giurò, chi non mantenne</hi></mod></lem>
-                                <rdg varSeq="1"><mod change="#strato-2">chi giurò, chi non mantenne</mod></rdg>    
+                                    <rdg varSeq="1"><mod change="#strato-2">chi giurò, chi non mantenne</mod></rdg>    
                                 </app></l> 
                             <lb n="16"/><l n="2">deve perir!</l>
                         </mod></lg></sp>
@@ -2538,9 +2538,9 @@
                 <fw place="top_left" type="pageNum"><mod change="#strato-4"><add>48</add></mod></fw>
                 <p rend="indent"><mod change="#strato-3"><lb n="1"/>il poema; imparai il Pater Noster <mod change="#strato-3"><subst><del rend="strikethrough">tutto versi</del> <add place="inline">poetizzato</add></subst></mod> nel Canto
                         <lb n="2"/>11<hi rend="apice">o</hi> del Purg. imparai tutto il Canto 23° del Paradiso e il <mod change="#strato-3"><subst><del rend="strikethrough">21
-                        <lb n="3"/> del Purgatorio</del><add place="inline">2<hi rend="apice">o</hi> dell’Inferno</add></subst></mod>; e ne <mod change="#strato-3"><subst><del rend="strikethrough">pre</del> <add place="inline">sentii</add></subst></mod> un affetto
+                                    <lb n="3"/> del Purgatorio</del><add place="inline">2<hi rend="apice">o</hi> dell’Inferno</add></subst></mod>; e ne <mod change="#strato-3"><subst><del rend="strikethrough">pre</del> <add place="inline">sentii</add></subst></mod> un affetto
                         <lb n="4"/>grande e attraente. Quell’Ottobre mi capitò e mi piacque immensa<mod change="#strato-3"><add place="inline">-</add>
-                        <lb n="5"/><subst><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod> la traduzione de l’Iliade del Monti
+                            <lb n="5"/><subst><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod> la traduzione de l’Iliade del Monti
                         <lb n="6"/>e la lessi tutta: Boni mi disse che non ci avrei capito nulla, così
                         <lb n="7"/><mod change="#strato-3"><del rend="strikethrough">però</del></mod>non fù, <mod change="#strato-3"><subst><del rend="strikethrough">chè</del> <add place="inline">perchè</add></subst></mod> se non capii l’immensità del poema, sen-
                         <lb n="8"/>tii almeno (mi parve) quanto il Monti sia più ammira-
@@ -2557,25 +2557,25 @@
                         <lb n="19"/>il Canto di Ugolino e lessi 6 o 7 tragedie dell’Alfieri, e molte Satire <mod change="#strato-3"><add place="below">del Giusti</add></mod>.
                         <lb n="20"/><mod change="#strato-3"><subst><del rend="strikethrough">Nel totale a</del> <add place="inline">Di prosa</add></subst></mod> <mod change="#strato-3"><subst><del rend="strikethrough">avevo letto</del> <add place="above">lessi</add></subst></mod> i Promessi Sposi due volte</mod></p>
                 <p rend="indent"><choice resp="#UT"><sic/><corr><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_7r2"><metamark xml:id="ref_2" target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark><lb/>In quell’anno <mod change="#strato-3"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
-                            <lb/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
-                            <lb/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo">ricordo</add> un aneddoto veramente notabile
-                            <lb/><del rend="strikethrough" xml:id="del_mi">mi rammentò Boni</del><substJoin target="#del_mi #add_ricordo"/></mod> intorno alla morte di Giosue.
-                            </add> </mod></corr></choice> </p> <!-- ha senso qui l'uso di choice?-->
+                                    <lb/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
+                                    <lb/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo">ricordo</add> un aneddoto veramente notabile
+                                        <lb/><del rend="strikethrough" xml:id="del_mi">mi rammentò Boni</del><substJoin target="#del_mi #add_ricordo"/></mod> intorno alla morte di Giosue.
+                                </add> </mod></corr></choice> </p> <!-- ha senso qui l'uso di choice?-->
                 <p rend="indent"><choice resp="#UT"><sic/><corr><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_8r2">
                                     <lb/>Quel giorno 7 Febbraio al refettorio Boni <mod change="#strato-1"><subst><del rend="strikethrough">disse</del> <add place="inline">annunziò</add></subst></mod>
                                     <lb/>addolorato la <mod change="#strato-1"><subst><del rend="strikethrough">fatale</del> <add place="inline">morte</add></subst></mod> di tanto uomo. Gli altri <mod change="#strato-3"><add place="above">maggiori</add></mod> che
                                     <lb/>ci avevano sentiti parlare e che forse <mod change="#strato-3"><add place="above">un po’ ne</add></mod> conoscevano <mod change="#strato-3"><subst><del rend="strikethrough">come</del> <add place="above">le opere e
-                                    <lb/>lo stimavano</add></subst></mod> un grand’uomo se ne dolsero e tutti restarono cheti. Io in
+                                                <lb/>lo stimavano</add></subst></mod> un grand’uomo se ne dolsero e tutti restarono cheti. Io in
                                     <lb/>quel silenzio <mod change="#strato-3"><add place="above">mi</add></mod> <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
-                                    <lb/>si meravigliarono,</hi></mod></lem>
-                                    <rdg varSeq="1"><mod change="#strato-3">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
-                                    <lb/>si meravigliarono,</mod></rdg>    
+                                                    <lb/>si meravigliarono,</hi></mod></lem>
+                                        <rdg varSeq="1"><mod change="#strato-3">lasciai uscir di bocca un “Bene!”, <mod change="#strato-3"><add place="inline">d</add><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst>l</mod> quale tutti
+                                                <lb/>si meravigliarono,</mod></rdg>    
                                     </app> e Boni non lasciò di rimproverarmi.
                                     <lb/>Io non lo seppi allora ed ora pure non ne posso dire il <app><lem varSeq="2"><mod change="#strato-4"><hi rend="underline">per-
-                                    <lb/>ché!</hi></mod></lem>
-                                    <rdg varSeq="1"><mod change="#strato-3">perché!</mod></rdg>    
+                                                    <lb/>ché!</hi></mod></lem>
+                                        <rdg varSeq="1"><mod change="#strato-3">perché!</mod></rdg>    
                                     </app> Solo dirò che diss<mod change="#strato-3"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> allora <app><lem varSeq="2"><mod change="#strato-4">un<del rend="strikethrough">'</del>errore</mod></lem>
-                                    <rdg varSeq="1"><mod change="#strato-3">un'errore</mod></rdg>    
+                                        <rdg varSeq="1"><mod change="#strato-3">un'errore</mod></rdg>    
                                     </app>.
                                     <lb/>Gli Inni Sacri del Manzoni non mi piacquero in <mod change="#strato-3"><subst><del rend="strikethrough">q</del> <add place="inline">una</add></subst></mod>
                                     <lb/>prima lettura, poi mi parve bellissima <mod change="#strato-3"><subst><del rend="overwritten">il</del><add place="superimposed">la</add></subst></mod> Pentecoste.</add> </mod></corr></choice> </p>   
@@ -2585,7 +2585,7 @@
                 <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-4"><add place="inline">49</add> <del rend="strikethrough">34</del> </mod></lem><rdg varSeq="1"><mod change="#strato-2">34</mod></rdg></app></fw>
                 <sp><lg><mod change="#strato-2">
                             <lb n="1"/><l n="2">fra voi fu sempre com’<app><lem varSeq="2"><mod change="#strato-4"><hi rend="underline">agnol tra i lupi.</hi></mod></lem>
-                            <rdg varSeq="1"><mod change="#strato-2">agnol tra i lupi.</mod></rdg>        
+                                    <rdg varSeq="1"><mod change="#strato-2">agnol tra i lupi.</mod></rdg>        
                                 </app></l> 
                             <lb n="2"/><l n="3">Or le medesme belve acerbo scempio</l>
                             <lb n="3"/><l n="4">faran di voi.</l>
@@ -2593,13 +2593,13 @@
                 <p rend="indent"><mod change="#strato-2"><lb n="4"/>e più sotto <mod change="#strato-2"><subst><del rend="strikethrough">incredibile</del> <add place="inline">ammirabile</add></subst></mod> per quell’età la forma <mod change="#strato-8"><add place="above">e il concetto</add></mod> di questi:</mod></p>
                 <sp><lg><mod change="#strato-2">
                             <lb n="5"/><l n="1">In tale stato un Sire? </l> <app><lem varSeq="2"><mod change="strato-4"><hi rend="underline">Oh ingrato scettro
-                            <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
-                            <lb n="7"/><l n="3">che ti provò.</l></hi></mod></lem>
-                            <rdg varSeq="1"><mod change="#strato-2">
+                                            <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
+                                            <lb n="7"/><l n="3">che ti provò.</l></hi></mod></lem>
+                                <rdg varSeq="1"><mod change="#strato-2">
                                         Oh ingrato scettro
                                         <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
                                         <lb n="7"/><l n="3">che ti provò.</l>
-                            </mod></rdg>    
+                                    </mod></rdg>    
                             </app>
                         </mod></lg></sp><ab rend="indent"><mod change="#strato-4">
                         <add place="margin">bene</add>
@@ -2610,13 +2610,13 @@
                         <lb n="11"/>Bozzetti di De Amicis, il <mod change="#strato-3"><subst><del rend="strikethrough">Ma</del> <add place="inline">Fieramosca</add></subst></mod> del D’Azeglio,
                         <lb n="12"/>il Marco Visconti del Grossi; <mod change="#strato-3"><del rend="strikethrough">la Fabiola</del></mod><choice resp="#ST"><sic>;</sic><corr/></choice> i Ricordi di
                         <lb n="13"/>Dupré, alcune Commedie del Goldoni. <mod change="#strato-3"><add place="above">L’antologie del Bruni, del Mondi,</add> <subst><del rend="strikethrough">di</del> <add place="inline">del</add></subst> Martini <del rend="strikethrough">Fior da Fiore</del></mod>.</mod></p>
-                        <p rend="indent"><mod change="#strato-3"><lb n="14"/>Il lettore <mod change="#strato-3"><subst><del rend="strikethrough">vedrà</del> <add place="inline">giudicherà</add></subst></mod> se con tutte queste letture volontarie
+                <p rend="indent"><mod change="#strato-3"><lb n="14"/>Il lettore <mod change="#strato-3"><subst><del rend="strikethrough">vedrà</del> <add place="inline">giudicherà</add></subst></mod> se con tutte queste letture volontarie
                         <lb n="15"/>poteva avanzarmi gran tempo per ben riuscire agli studi
                         <lb n="16"/>obbligatorii.</mod></p>
-               <p><mod><choice resp="#UT"><sic><lb n="17"/><metamark target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark>In quell’anno <mod change="#strato-3"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
-                <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
-                <lb n="19"/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
-                    <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</sic><corr/></choice></mod></p>
+                <p><mod><choice resp="#UT"><sic><lb n="17"/><metamark target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark>In quell’anno <mod change="#strato-3"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
+                                <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
+                                <lb n="19"/>noscenza delle sue opere. Anzi <mod change="strato-3"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
+                                    <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</sic><corr/></choice></mod></p>
             </div>
             <div type="page">
                 <pb n="7v2" facs="7v2.jpg"/>
@@ -2624,7 +2624,7 @@
             </div>
             <div type="page">
                 <pb n="8r2" facs="8r2.jpg"/>
-                <fw place="top_right" type="pageNum"><mod change="#strato-5"><add>50</add></mod></fw>
+                <fw place="top_right" type="pageNum"><mod change="#strato-5">50</mod></fw>
                 <p rend="indent"><choice resp="#UT"><sic><mod change="#strato-3"><add place="opposite" copyOf="#testo_aggiunta_8r2">
                                     <lb n="1"/>Quel giorno 7 Febbraio al refettorio Boni <mod change="#strato-3"><subst><del rend="strikethrough">disse</del> <add place="inline">annunziò</add></subst></mod>
                                     <lb n="2"/>addolorato la <mod change="#strato-3"><subst><del rend="strikethrough">fatale</del> <add place="inline">morte</add></subst></mod> di tanto uomo. Gli altri <mod change="#strato-3"><add place="above">maggiori</add></mod> che
@@ -2643,11 +2643,11 @@
                                     </app>.
                                     <lb n="9"/>Gli Inni Sacri del Manzoni non mi piacquero in <mod change="#strato-3"><subst><del rend="strikethrough">q</del> <add place="inline">una</add></subst></mod>
                                     <lb n="10"/>prima lettura, poi mi parve bellissima <mod change="#strato-3"><subst><del rend="overwritten">il</del><add place="superimposed">la</add></subst></mod> Pentecoste.</add> </mod></sic><corr></corr></choice> </p>    
-            <ab rend="indent"><mod change="#strato-5"><lb n="11"/><title>Montalcino</title></mod></ab>
-            <p rend="indent"><mod change="#strato-5"><lb n="12"/>Nel Novembre di quell’anno 1907, per <mod change="#strato-5"><subst><del rend="strikethrough">certi mutamenti</del> <add place="inline">decisione</add></subst></mod> de’ Vescovi
+                <ab rend="indent"><mod change="#strato-5"><lb n="11"/><title>Montalcino</title></mod></ab>
+                <p rend="indent"><mod change="#strato-5"><lb n="12"/>Nel Novembre di quell’anno 1907, per <mod change="#strato-5"><subst><del rend="strikethrough">certi mutamenti</del> <add place="inline">decisione</add></subst></mod> de’ Vescovi
                         <lb n="13"/>de<mod change="#strato-5"><del rend="strikethrough">l</del></mod>la Diocesi di <mod change="#strato-5"><del rend="strikethrough">Pienza</del> Montepulciano<subst><del rend="overwritten">-</del><add place="superimposed">,</add></subst> <del rend="strikethrough">Chiusi e</del> Pienza e Montalcino</mod>, <mod change="#strato-5"><add place="above">fondendo in uno i tre Seminari,</add></mod> fu trasferito il Ginnasio
                         <lb n="14"/><mod change="#strato-5"><subst><del rend="strikethrough">a Montalc</del> <add place="inline">nel Seminario</add></subst></mod> di Montalcino, <mod change="#strato-5"><subst><del rend="strikethrough">con</del> <add place="inline">il</add></subst></mod> liceo a Montepulciano, e <mod change="#strato-5"><subst><del rend="strikethrough">una specie di<lb/>Università Ecclesiastica</del> <add place="above">gli studi
-                        <lb n="15"/>superiori</add></subst></mod> a Pienza. <mod change="#strato-5"><subst><del rend="overwritten">I</del><add place="superimposed">T</add></subst></mod>utto questo fu fatto con intento di riportare più
+                                    <lb n="15"/>superiori</add></subst></mod> a Pienza. <mod change="#strato-5"><subst><del rend="overwritten">I</del><add place="superimposed">T</add></subst></mod>utto questo fu fatto con intento di riportare più
                         <lb n="16"/>vigore agli studi e pareggiarli <mod change="#strato-5"><subst><del rend="strikethrough">al</del> <add place="above">pel</add></subst></mod> possibile agli studi governativi. Se questo fu
                         <lb n="17"/>raggiunto <mod change="#strato-5">non sta<add place="above" seq="2">rebbe</add> a me <add place="above">darne <subst seq="2"><del rend="strikethrough">un</del> <add place="inline">il</add></subst></add><subst seq="1"><del rend="strikethrough">deciderlo</del> <add place="inline">giudi<subst seq="2"><del rend="overwritten">carlo</del><add place="superimposed">zio</add></subst> </add></subst></mod>: quando però mi si chieda
                         <lb n="18"/><mod change="#strato-5"><del rend="strikethrough">un giudizio</del></mod> io posso affermare che almeno a Montalcino i <mod change="#strato-5"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">p</del> <add place="inline">pr</add></subst></del> <add place="inline">maestri</add></subst></mod> furo-
@@ -2658,11 +2658,385 @@
                 <pb n="8v2" facs="8v2.jpg"/>
             </div>
             <div type="page">
-                <div type="page">
-                    <pb n="9r2" facs="9r2.jpg"/>
-                    <fw place="top_right" type="pageNum"><mod change="#strato-5"><add>51</add></mod></fw>
-                    <p rend="indent"><mod change="#strato-5"></mod></p>
-                </div>
+                <pb n="9r2" facs="9r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-5">51</mod></fw>
+                <p rend="indent"><mod change="#strato-5"><lb n="1"/>L’allontanarsi dal paese nativo, <mod change="#strato-5"><subst><del rend="strikethrough">mi rese</del> <add place="inline">dal quale</add></subst></mod> non m’ero mai stacca-
+                        <lb n="2"/>to, mi rese ancor più dubitoso nel procedere <mod change="#strato-5"><add place="above">in</add></mod> quella carriera, ch’esigeva
+                        <lb n="3"/>un sacrifizio allora <mod change="#strato-5"><subst><del rend="strikethrough">assai</del> <add place="above">così</add></subst></mod> duro, anche per la ragione che <mod change="#strato-5"><subst><del rend="strikethrough">mi era</del>
+                                <lb n="4"/><add place="inline">per</add></subst></mod> <mod change="#strato-5"><subst seq="2"><del rend="overwritten"><subst seq="1"><del rend="strikethrough">9</del> <add place="inline">10</add></subst></del> <add place="superimposed">9</add></subst></mod> mesi mi era tolta la vista di quella <mod change="#strato-5"><add place="above">creatura</add></mod> che mi aveva rapito il cuore
+                        <lb n="5"/>insieme e la vita. <mod change="#strato-5"><subst><del rend="strikethrough">Da<del rend="strikethrough">l</del> la famiglia era già tre anni che vivevo
+                                    <lb n="6"/>lontano</del> <add place="inline">Mi ricordo</add></subst></mod> che il viaggio fu assai mesto quantunque fossi
+                        <lb n="7"/> in una <mod change="#strato-5"><add place="above" xml:id="add_ampia">ampia</add> giardiniera <del rend="strikethrough" xml:id="del_grande">grande</del> <substJoin target="#add_ampia #del_grande" seq="1"/> dove <subst seq="1"><del rend="strikethrough"><subst><del rend="strikethrough">alcuni</del><add place="above">molti</add></subst></del> <add place="above">alcuni</add></subst> <add place="above" seq="1">dei più</add> piccoli<del rend="strikethrough" seq="1">ssimi</del> <subst><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">Seminaristi</del> <add place="above">colleghi di viaggio</add></subst></del> <add place="above">colleghi di viaggio e di <subst><del rend="strikethrough"><gap unit="char" quantity="2"/></del><add place="above">strada</add></subst></add></subst> ri-
+                            <lb n="8"/>davano <add place="above">saporitamente</add></mod> a<mod change="#strato-5"><del rend="strikethrough">l</del></mod> le spalle <mod change="#strato-5"><subst><del rend="strikethrough">a</del> <add place="inline">di</add></subst></mod> un altro assai barbagianni che mostrava
+                        <lb n="9"/>tanto di bazza quanto una fortezza di bastione, e che aveva certi occhi,
+                        <lb n="10"/><mod change="#strato-5"><subst><del rend="strikethrough">ot</del> <add place="above">stralunati e bianchi</add></subst></mod> molto simili (se non sbaglio) a quelli di Vener<mod change="#strato-5"><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst></mod>, i quali anzi nella
+                        <lb n="11"/>loro bruttezza risalta<mod change="#strato-5"><subst><del rend="overwritten"><add place="inline" seq="1">va</add><add place="inline" seq="2">no</add></del><add place="superimposed">rono</add></subst> <add place="above">nella memoria</add></mod> il contrasto di quelli che sognavo giorno
+                        <lb n="12"/>e notte e che m’avevano portato <mod change="#strato-5"><add place="above">nel cuore</add></mod> la guerra e la pace<mod change="#strato-5"><subst><add place="inline">.</add><del rend="strikethrough">a un tempo</del></subst></mod> Oltre
+                        <lb n="13"/>essere mesto <mod change="#strato-5"><add place="above">il viaggio</add></mod> mi parve anche <mod change="#strato-5"><subst><del rend="strikethrough">no</del> <add place="inline">lungo</add></subst></mod> e noioso. <mod change="#strato-5"><subst><del rend="strikethrough">Finale</del> <add place="inline">Giunto</add></subst></mod> al Seminario,
+                        <lb n="14"/><mod change="#strato-5"><del rend="strikethrough">di bella entratura e di grande effetto,</del></mod> vidi con <mod change="#strato-5"><subst><del rend="strikethrough"><subst><del rend="strikethrough">gioia</del> <add place="inline">dispi</add></subst></del> <add place="inline">gioia</add></subst></mod> i nuovi
+                        <lb n="15"/>superiori, dai quali mi speravo un apprezzamento felice de<mod change="#strato-5"><del rend="strikethrough">l</del></mod> le mie incli-
+                        <lb n="16"/>nazion<mod change="#strato-5"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod>, e sotto i quali mi pareva sicura una vita <mod change="#strato-5"><subst><del rend="strikethrough">più</del> <add place="inline">meno</add></subst></mod> agitata da
+                        <lb n="17"/>interni contrasti. Oh! quante vane speme! <mod change="#strato-5"><del rend="strikethrough" seq="3">Il Rettore <add place="above" seq="2"> <subst><del rend="strikethrough">pingue</del><add place="inline">burbero</add></subst> e <del rend="strikethrough">e grasso e monumentale</del><add place="below">pingue</add></add>mi fece
+                                <lb n="18"/>l'idea di un bel <subst seq="1"><del rend="strikethrough">priore</del> <add place="inline">canonico</add></subst> <subst seq="2"><del rend="strikethroug">atto al riposo</del> <add place="above">che sapesse stare bene a gambe larghe e fare meglio i versi con la bocca</add></subst>, e da la testa molto
+                                <lb n="19"/>sviluppata,<subst seq="1"><del rend="strikethrough">che</del> <add place="inline">a cui</add></subst> con difficoltà <add place="above" seq="2"> <subst><del rend="strikethrough">sedendosi in grande</del> <add place="above">col sedere</add></subst> a poltrona</add> riuscivano i complimenti e le
+                                <lb n="20"/>gentilezze.</del></mod>
+                    </mod></p>
+                
+            </div>
+            <div type="page">
+                <pb n="9v2" facs="9v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="10r2" facs="10r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-5">52</mod></fw>
+                <p rend="indent"><mod change="#strato-5"><lb n="1"/><mod change="#strato-5">Il Rettore era burbero <add place="above" seq="3">e</add> pingue, poco atto a gentilezze e <subst seq="3"><del rend="strikethrough">co</del> <add place="inline">meno</add></subst> atto
+                            <lb n="2"/>atto a<del rend="strikethrough" seq="4">l</del> <add place="above" seq="4">ben</add> regola<subst seq="4"><del rend="overwritten">mento</del><add place="superimposed">re</add></subst> <add place="above" seq="4">l'andamento</add> d’un Istituto. Da la testa molto sviluppata<subst seq="4"><del rend="overwritten">,</del> <add place="superimposed">(</add></subst>non
+                            <lb n="3"/>so se unitamente al suo contenuto<subst seq="4"><del rend="overwritten">,</del> <add place="superimposed">)</add></subst> da le fattezze grasse e flosce, <add place="above" seq="4">dai cigli fatti a sesto acuto, dalla bocca molto facile a’ versi </add>
+                            <lb n="4"/>dal passo <mod change="#strato-5"><subst seq="3"><del rend="strikethrough">largo</del> <add place="inline">aperto</add></subst></mod> e a sbalzi <mod change="#strato-5"><subst seq="3"><del rend="strikethrough">egl</del> <add place="inline">esso</add></subst></mod> dava un’idea di persona
+                            <lb n="5"/><subst seq="3"><del rend="strikethrough">tor</del> <add place="inline">molto</add></subst> presa dal torpore <subst seq="4"><del rend="strikethrough"><subst><del rend="strikethrough">desiderosa</del> <add place="above">affamata</add></subst> solo di pasto</del> <add place="above">materiale</add></subst>, a cui non sia bale-
+                            <lb n="6"/>nato ne<del rend="strikethrough" seq="3">l</del> la mente mai un <subst seq="4"><del rend="strikethrough">ideale</del> <add place="above">raggio</add></subst> neppure mediocre d’idealità. A me
+                            <lb n="7"/>parve molto capace per stare a gambe larghe <add place="above" seq="4">, sberciare i labbri, e dondolarsi su la poltrona,</add> e forse fu quello tutto
+                            <lb n="8"/>lo studio de<del rend="strikethrough" seq="3">l</del> la sua <subst seq="4"><del rend="strikethrough">vana</del> <add place="above">stupida</add></subst> <subst seq="4"><del rend="strikethrough"><subst seq="4"><del rend="strikethrough">gioventù</del> <add place="above">vida</add></subst></del> <add place="inline">vita</add></subst></mod><mod change="#strato-5"><subst><del rend="overwritten">. S</del><add place="superimposed">; s</add></subst>lanci <del rend="strikethrough">ora</del></mod> ammirabili de<mod change="#strato-5"><del rend="strikethrough" seq="3">l</del></mod> la sua
+                        <lb n="9"/>eloquenza, e che dimostravano la pienezza degli affetti che <mod change="#strato-5"><subst seq="2"><del rend="strikethrough">nutriva nel</del> <add place="above">gli traboccavano</add></subst> <add place="inline" seq="2">da</add>
+                            <lb n="10"/><subst seq="1"><del rend="strikethrough">cuore</del> <add place="inline">l’animo</add></subst></mod>, la vastità de la fantasia ch’era confine a la sua zucca, furono
+                        <lb n="11"/><mod change="#strato-5"><add place="above">questi</add></mod> motti molto <mod change="#strato-5"><subst><del rend="strikethrough">rino</del> <add place="inline">famigerati</add></subst></mod> <mod change="#strato-5"><subst seq="1"><del rend="overwritten">e</del><add place="superimposed">t</add></subst>ra <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">molto fitti ne’ suoi discorsi</del> <add place="above">i colleghi</add></subst></del> <add place="above">i miei colleghi : «<del rend="strikethrough" xml:id="del_Beh">Beh</del> </add></subst> <add place="above" xml:id="add_Boff">Boff!</add> <substJoin target="#del_Beh #add_Boff" seq="3"/></mod> <hi rend="underline">beh! vedre-
+                            <lb n="12"/>mo! vedremo!</hi> <mod change="#strato-5"><subst><del rend="strikethrough">Ho capito</del><add place="above">Ho capito</add></subst></mod>! <hi rend="underline">Beh! Beh!</hi> <mod change="#strato-5"><subst><del rend="strikethrough">Egli però non vide mai, né capì mai.</del> <add place="above">vedremo! vedremo;</add></subst></mod>
+                        <lb n="13"/><mod change="#strato-5"><subst><del rend="strikethrough">Altra</del> <add place="inline">Io</add></subst></mod> <mod change="#strato-5"><subst><del rend="strikethrough">che</del> <add place="inline">credo</add></subst></mod> che altro non dicesse nella sua vita; e anzi dal ripetere
+                        <lb n="14"/>frequente e assiduo di questi motti viene ad aumentare in chi
+                        <lb n="15"/>vi pensi la meraviglia come <mod change="#strato-5"><subst><del rend="strikethrough">non a</del> <add place="inline">egli</add></subst></mod> non abbia mai né veduto
+                        <lb n="15"/>né capito, né molto, né poco.</mod></p>
+                <p rend="indent"><mod change="#strato-5"><lb n="17"/>L’ebbi a maestro <mod change="#strato-5"><subst><del rend="strikethrough">di</del> <add place="inline">in</add></subst></mod> Geografia a 4a e 5a Ginnasiale, e potei provare
+                        <lb n="18"/>che con tutta la sua scienza geografico-<mod change="#strato-5"><subst><del rend="strikethrough">fisico</del> <add place="inline">astronomico</add></subst></mod>-cosmografica-
+                        <lb n="19"/>politic<mod change="#strato-5"><subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst> <del rend="strikethrough">- etnografico</del></mod> era riuscito a far mente <mod change="#strato-5"><subst><del rend="overwritten">n</del><add place="superimposed">l</add></subst></mod>ocale nella distinzione
+                        <lb n="20"/>molto importante a sapersi (e difficile a <mod change="#strato-5"><subst><del rend="strikethrough">immaginarsi</del> <add place="above">capirsi</add></subst></mod>) che <mod change="#strato-5"><del rend="strikethrough">:</del></mod> esiste tra nave e tor-</mod></p>
+            </div>
+            <div type="page">
+                <pb n="10v2" facs="10v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="11r2" facs="11r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-5">53</mod></fw>
+                <p rend="indent"><mod change="#strato-5"><lb n="1"/>pediniera. Delle torpediniere anzi <mod change="#strato-5"><subst><del rend="strikethrough">fu amatissimo</del> <add place="above">era esageratamente entusiasta</add></subst></mod>, e di esse<mod change="#strato-5"><del rend="strikethrough">re</del></mod> più
+                        <lb n="2"/>volte <mod change="#strato-5"><subst><del rend="strikethrough">ci</del> <add place="inline">e</add></subst></mod> a lungo ci parlò, con la convinzione di <mod change="#strato-5"><del rend="strikethrough">non</del> <subst><del rend="overwritten">raccontarne</del> <add place="superimposed">parlarne</add></subst></mod>
+                        <lb n="3"/>per la 1<hi rend="apice">a</hi> volta (<mod change="#strato-5"><subst seq="1"><del rend="strikethrough">anche buona</del> <add place="above"><del rend="strikethrough" seq="2">per la sua</del> tenace</add></subst></mod> memoria!) e <mod change="#strato-5"><add place="above">con l'intenzione di</add> mostra<subst><del rend="overwritten">ndoci</del><add place="superimposed">rci</add></subst> <subst><del rend="strikethrough">uno di quei</del><add place="above">i bei</add></subst></mod> frutti
+                        <lb n="4"/>ch'aveva colto da' suoi grandi e lunghi viaggi. I punti di merit<mod change="#strato-5"><subst><del rend="overwritten">i</del> <add place="superimposed">o</add></subst></mod>
+                        <lb n="5"/>poi io credo, e tutti gli scolari <mod change="#strato-5"><subst seq="1"><del rend="strikethrough">erano concordi</del> <add place="above">d'allora <del rend="strikethrough" xml:id="del_era">era</del> <add place="above" xml:id="add_lo">lo</add> credono</add></subst> <substJoin target="#del_era #add_lo" seq="2"/></mod>, che le sognasse la notte e
+                        <lb n="6"/>che la mattina invece di metterli <mod change="#strato-5"><subst><del rend="overwritten">a</del> <add place="superimposed">al</add></subst></mod> lotto, l<mod change="#strato-5"><subst><del rend="overwritten">o</del> <add place="superimposed">i</add></subst></mod> mettesse a prova de<mod change="#strato-5"><del rend="strikethrough">l</del></mod> la
+                        <lb n="7"/>nostra pazienza per veder se usciva (dai suoi limiti) <mod change="#strato-5"><add place="above">con qualche terno d'accidenti o meglio con qualche <subst><del rend="strikethrough">tombol</del> <add place="inline">cinquina</add></subst></add></mod>. In quanto a questo
+                        <lb n="8"/>particolare però <mod change="#strato-5"><subst><del rend="strikethrough">n</del> <add place="inline">è</add></subst></mod> scusabile, perché l’aveva comune con molti o qua-
+                        <lb n="9"/>si tutti i professori o insegnanti <mod change="#strato-5"><subst seq="2"><del rend="strikethrough"><add place="below" seq="1">e</add></del><add place="above">e</add></subst></mod> non solo di quell’Istituto, <mod change="#strato-5"><subst><del rend="strikethrough">ma di tutti</del> <add place="above">ma di molti altri</add></subst></mod>.</mod></p>
+                <p rend="indent"><mod change="#strato-5"><lb n="10"/>Il Vicedirettore era <choice resp="#ST"><sic>deficente</sic><corr>deficiente</corr></choice> di <mod change="#strato-5"><subst><del rend="strikethrough">carne</del> <add place="inline">tutta</add></subst></mod> quella carne che il Rettore
+                        <lb n="11"/>aveva di più, <mod change="#strato-5"><add place="above">mentre avea di più quel<subst><add place="inline">l’</add><del rend="strikethrough">ceri</del> <add place="inline">intelligenza</add></subst> e quella dottrina che al Rettore mancavano.</add></mod> <mod change="#strato-5"><subst><del rend="strikethrough">Un</del> <add place="inline">Uomo</add></subst></mod> serio, <mod change="#strato-5"><subst><del rend="strikethrough">magro</del> <add place="inline">asciutto</add></subst></mod> di viso <mod change="#strato-5"><subst><del rend="#overwritten"><gap unit="char" quantity="1"/> <gap unit="char" quantity="2"/></del> <add place="superimposed">e di</add></subst></mod> persona, <mod change="#strato-5"><add place="above">non bello,</add></mod> dall’andare
+                        <lb n="12"/>pensoso <mod change="#strato-5"><add place="above">e grave,</add></mod> pazzo di libri in specie di letteratura, amante d’assiduità, <mod change="#strato-5"><del rend="strikethrough">di</del></mod>
+                        <lb n="13"/>lavoro, di costumi intemerato, di sentimenti alt<mod change="#strato-5"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst><add place="inline">ro</add></mod>, persona ama-
+                        <lb n="14"/>bilissima, veneranda, <mod change="#strato-5"><subst><del rend="strikethrough">mamma</del> <add place="inline">aveva</add></subst></mod> un solo difetto <mod change="#strato-5"><subst><del rend="overwritten">:</del><add place="superimposed">o</add></subst> <add place="above"> meglio un sol male:</add></mod> soffriva di nervosismo.</mod></p>
+                <p rend="indent"><mod change="#strato-5"><lb n="15"/><mod change="#strato-5"><subst><del rend="strikethrough">E freq</del> <add place="inline">E</add></subst></mod> <choice resp="#ST"><sic>non'ostanti</sic><corr>non ostanti</corr></choice> queste grandi virtù, l’unico suo difetto valse a render-
+                        <lb n="16"/>melo quasi odioso, e farmi disparire in lui tutti quelle doti; e risultare suo quel
+                        <lb n="17"/>mancare involontario<mod change="#strato-5"><subst><add place="inline">.</add> <del rend="strikethrough">e</del></subst></mod></mod></p>
+                <p rend="indent"><mod change="#strato-5"><lb n="18"/>In conclusione tra un superiore e l’altro esisteva la più perfetta
+                        <lb n="19"/>antitesi, e l’uno in tutto e per tutto poteva <mod change="#strato-5"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">anda</del> <add place="inline">stare</add></subst></del> <add place="inline">essere</add></subst></mod> antipo-
+                        <lb n="20"/>de a l’altro.</mod></p> 
+            </div>
+            <div type="page">
+                <pb n="11v2" facs="11v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="12r2" facs="12r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">54</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/> <mod change="#strato-6"><del rend="strikethourgh">I maestri de la mia classe erano il <choice>
+                            <abbr>Canco</abbr>
+                            <expan>Canonico</expan>
+                        </choice> Scarpini</del></mod> Il <choice>
+                            <abbr>Canco</abbr>
+                            <expan>Canonico</expan>
+                        </choice> Scarpini
+                        <lb n="2"/>mi fu maestro, a quarta ginnasiale, <mod change="#strato-6"><del rend="strikethrough">cioè nel primo anno</del></mod> di latino,
+                        <lb n="3"/>d’italiano, di greco, di storia greca, di matematiche, nelle
+                        <lb n="4"/>quali ultime era dottissimo. Sapea profondamente il latino,
+                        <lb n="5"/>ed io v’imparai molto; ne l’italiano non era tanto moder-
+                        <lb n="6"/>nista, però mostrava di aver del gusto. Nel metodo pedago-
+                        <lb n="7"/>gico era severo, spesso tollerante; amava molto gli scola-
+                        <lb n="8"/>ri diligenti a godeva <mod change="#strato-6"><del rend="strikethrough">quando s'accorgeva</del></mod> a un compito
+                        <lb n="9"/>ben fatto; nei punti di merito era spesso trascurato
+                        <lb n="10"/>e qualche volta ingiusto. <mod change="#strato-6"><subst seq="1"><del rend="strikethrough">Di essere</del> <add place="inline">Era <subst seq="2"><del rend="strikethrough">esperto</del> <add place="above">versato</add></subst></add></subst></mod> ne la mu-
+                        <lb n="11"/>sica e aveva una voce <mod change="#strato-6"><add place="above">d’</add></mod>angelo.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="12"/>Ebbi a <mod change="#strato-6"><subst><del rend="strikethrough">scuola</del> <add place="above">maestro</add></subst></mod> di Francese e di Religione il <choice>
+                            <abbr>Canco</abbr>
+                            <expan>Canonico</expan>
+                        </choice> d. Ilario
+                        <lb n="13"/>Imberciatori, del quale serbo grata memoria per avermi,
+                        <lb n="14"/>come dirò <mod change="#strato-6"><subst><del rend="strikethrough">in avanti</del> <add place="inline">tra poco</add></subst></mod>, <mod change="#strato-6"><add place="above">saputo</add></mod> mostrare la bellezza de la religio-
+                        <lb n="15"/>ne intesa nel vero senso, priva di superstizioni, cauta <mod change="#strato-6"><subst><del rend="strikethrough">ma</del> <add place="above">e</add></subst></mod>
+                        <lb n="16"/>non scrupolosa. Il primo anno di insegnamento però non
+                        <lb n="17"/>trassi frutti da la <mod change="#strato-6"><del rend="strikethrough">sua</del> <add place="above">in</add>temeratezza</mod> de la sua vita, e <mod change="#strato-6"><add place="above">da</add></mod> la sapienza
+                        <lb n="18"/>de la sua parola; anzi io era il prim<mod change="#strato-6"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> fra quelli a discono-
+                        <lb n="19"/>scere la necessità de lo studio apologetico, e di criticare
+                        <lb n="20"/>con ragione o senza, le <mod change="#strato-6"><subst><del rend="strikethrough">teorie</del> <add place="above">dottrine</add></subst></mod> che ci andava <mod change="#strato-6"><subst><del rend="overwritten">inn</del><add place="superimposed">ins</add></subst></mod>egnando.</mod></p>
+            </div>
+            <div type="page">
+                <pb n="12v2" facs="12v2.jpg"/>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/>L’Apologia era del Ballerini, scritta con arte e con scienza,
+                        <lb n="2"/>facile e divertente ai volenterosi, noiosa e difficile agli
+                        <lb n="3"/>indifferenti. <mod change="#strato-6"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In quella</del> <add place="above">Tra questi</add></subst></del> <add place="above">Allora</add></subst> appunto <add place="above" seq="3">io</add></mod> era tra questi ultimi.</mod></p>
+            </div>
+            <div type="page">
+                <pb n="13r2" facs="13r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">55</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/>
+                        <lb n="2"/>
+                        <metamark function="grouping" rend="square" change="#strato-11">
+                            <lb n="3"/> <mod change="#strato-6"><del rend="strikethrough">e non era il solo</del></mod> In fatto di fede, come <mod change="#strato-6"><subst><del rend="strikethrough">s'annunziò</del> <add place="above">dissi altrove</add></subst></mod>,
+                            <lb n="4"/>io era <mod change="#strato-6"><add place="above">doventato</add></mod> completamente incredulo, se non ché mi era ri-
+                            <lb n="5"/>masta la credenza ne l'esistenza di un Dio assoluto,
+                            <lb n="6"/>diverso però da quello concepito da la fede cristiana.
+                </metamark></mod></p>
+                <p rend="indent"><mod change="#strato-6"><metamark function="grouping" rend="square" change="#strato-11">
+                            <lb n="7"/>Vi credevo, ma amava però che non vi fosse; forse per 
+                            <lb n="8"/> not sentirne la voce. I superiori, i maestri m’erano
+                            <lb n="9"/>doventati odiosi: io ero <mod change="#strato-6"><subst><del rend="strikethrough">mammo</del> <add place="above">un rivoluzionario</add></subst></mod>: <app><lem varSeq="2"><mod change="#strato-9"><del rend="strikethrough">e non me stolto! 
+                            <lb n="10"/>non me ne vergognava!     
+                            </del></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-6">e non me stolto! 
+                            <lb n="10"/>non me ne vergognava!</mod></rdg>    
+                            </app>
+                        </metamark></mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="11"/>In tale condizion<choice resp="#ST"><sic>e</sic><corr>i</corr></choice> ognuno può comprendere con
+                        <lb n="12"/>che <mod change="#strato-6"><subst><del rend="strikethrough">atten</del> <add place="inline">volontà</add></subst></mod> e attenzione ascoltassi quelle
+                        <lb n="13"/><mod change="#strato-6"><subst><del rend="strikethrough">discussioni</del> <add place="above">lezioni</add></subst></mod> apologetiche, che non si confacevano
+                        <lb n="14"/>con le mie <mod change="#strato-6"><add place="above">interne</add></mod> convinzioni, e che mettevano nel mio
+                        <lb n="15"/>animo un dubbio sempre più feroce e salutare, e che
+                        <lb n="16"/>qualche volta mi <mod change="#strato-6"><subst><del rend="strikethrough">facevano</del> <add place="above">avrebbero fatto</add></subst></mod> chinare la testa se io
+                        <lb n="17"/>non fossi stato tanto somaro e caparbio da dire: «<hi rend="underline">Sarà
+                        <lb n="18"/>vero, ma io non l’ascolto</hi>». La scuola d’apologia era
+                        <lb n="19"/>per me un<choice resp="#ST"><sic/><corr>'</corr></choice>ora di tempo per leggere saporitamente
+                        <lb n="20"/>le Canzoni del melanconico Leopardi, ch’io aveva in un</mod></p>
+            </div>
+            <div type="page">
+                <pb n="13v2" facs="13v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="14r2" facs="14r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">56</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/>piccolo volume senza note, <mod change="#strato-6"><add place="above">edito da Oreste Garroni, non mai veduto dai miei superiori,</add></mod> e che nascondevo dietro le spalle
+                        <lb n="2"/>dei compagni che <mod change="#strato-6"><subst><del rend="strikethrough">mi</del> <add place="inline">stavano</add></subst></mod> fra me e il maestro,
+                        <lb n="3"/>o <mod change="#strato-6"><subst><del rend="strikethrough">sotto</del> <add place="inline">dietro</add></subst></mod> barche di libri, o tra un foglio e l’altro
+                        <lb n="4"/>del libro apologetico. La lezione non la seppi mai,
+                        <lb n="5"/>e quand’ero interrogato faceva come <mod change="#strato-6"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="overwritten">lo</del> <add place="superimposed">il</add></subst> <subst seq="1"><del rend="overwritten">svo</del><add place="superimposed">ne</add></subst>gli<subst seq="1"><del rend="overwritten">a</del><add place="superimposed">giente</add></subst></del> <add place="above">lo</add>
+                        <lb n="6"/><add place="inline">scolaro negliglente</add></subst></mod> che ruba una parola in questo libro,
+                        <lb n="7"/>una parola in quell’altro, e più spesso finiva in risate
+                        <lb n="8"/>con qualche <mod change="#strato-6"><add place="above">sarcastica</add></mod> baggianata o facendo qualche obbiezio-
+                        <lb n="9"/>ne <mod change="#strato-6"><subst><del rend="strikethrough">stolida</del> <add place="above">casuale e frivola</add></subst></mod> a quelle asserzioni e provocando <mod change="#strato-6"><subst seq="1"><del rend="strikethrough">delle</del> <add place="above">così <del rend="strikethrough" xml:id="del_più">più</del></add></subst>
+                        <lb n="10"/><add place="above" xml:id="add_confusione">confusione <subst seq="3"><del rend="overwritten">tra</del><add place="superimposed">con</add></subst> più</add><substJoin target="#del_più #add_confusione" seq="2"/></mod> risposte simultanee tra maestro e compagni.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="11"/>Tanto più che trattandosi d’una materia tale, ve ne <mod change="#strato-6">era<add place="inline">no</add>
+                        <lb n="12"/><subst><del rend="strikethrough">molti</del> <add place="above">alcuni</add></subst></mod> chiamati al sacerdozio, ai quali non sembra-
+                        <lb n="13"/>va <mod change="#strato-8"><add place="above">il</add></mod> vero <mod change="#strato-8"><add place="above">di</add></mod> mostrarsi versati ne la loro scienza ed acquista-
+                        <lb n="14"/>re il favore del superiore rispondendo anche senza
+                        <lb n="15"/>essere interrogati, correggendo gli errori de’ colle-
+                        <lb n="16"/>ghi, e condannando con suono di spregio la
+                        <lb n="17"/>leggerezza con cui alcuni, e più io, pigliavamo
+                        <lb n="18"/>quello studio. Il <mod change="#strato-6"><add place="above">buon</add></mod> maestro <mod change="#strato-6"><subst><del rend="strikethrough">mi</del> <add place="inline">si</add></subst></mod> lamentò ripetuta-
+                        <lb n="19"/>mente, finché vedendomi incorreggibile finì per
+                        <lb n="20"/>non interrogarmi più, <mod change="#strato-6"><subst><del rend="strikethrough">per</del> <add place="inline">aspettandomi</add></subst></mod> a fare i conti</mod></p>
+            </div>
+            <div type="page">
+                <pb n="14v2" facs="14v2.jpg"/>
+                <p rend="indent"><mod change="#strato-6"><lb n="4"/><del rend="strikethrough">Int</del></mod></p>
+            </div>
+            <div type="page">
+                <pb n="15r2" facs="15r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">57</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/>a l’esame, e per stimarmi un capo ameno e strano,
+                        <lb n="2"/>che non <mod change="#strato-6">er<subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst> da prender<subst><del rend="overwritten">si</del><add place="superimposed">mi</add></subst></mod> sul serio in quello che facevo
+                        <lb n="3"/>e dicevo, <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">e che avessi avuto del mattoide per la testa.</hi></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-6">e che avessi avuto del mattoide per la testa.</mod></rdg>    
+                        </app> 
+                        <choice resp="#UT"><sic><lb n="4"/><hi rend="apice">(1)</hi>Di tutto ciò <app><lem varSeq="2"><mod change="#strato-9">m<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> <del rend="strikethrough">ne</del></mod></lem>
+                                <rdg varSeq="1"><mod change="#strato-6">me ne</mod></rdg> </app> rallegrai allora, ora me ne dolgo
+                                <lb n="5"/>e riconosco la mia spensieratezza e stravaganza.
+                                <lb n="6"/><hi rend="apice">(1)</hi>Intanto io avevo imparato con immenso piacere “A Silvia”
+                                <lb n="7"/>“La vita solitaria” “Le ricordanze” “Amore e morte” e letto ripetu-
+                                <lb n="8"/>tamente “La Ginestra” che mi piaceva oltremodo <mod change="#strato-6"><add place="above">e dato uno sguardo a’ tutte le altre</add></mod>. <mod change="#strato-6"><del rend="strikethrough">Da</del> <subst><del rend="overwritten">t</del><add place="superimposed">T</add></subst>utto
+                                <lb n="9"/><subst><del rend="strikethrough">lo</del> <add place="above">questo</add></subst> studio</mod> del Leopardi non lo mostrai mai ad alcuno,
+                                <lb n="10"/> pel timore <mod change="#strato-6"><add place="above">molto più de' superiori</add></mod> che mi fosse trovato e tolto quel caro libric-
+                                <lb n="11"/>cino che poi nell’ottobre del 1910, già secolare,
+                                <lb n="12"/><mod change="#strato-6"><subst><del rend="strikethrough">perdessi</del> <add place="inline">lasciai</add></subst></mod> per <mod change="#strato-6">l<subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst> solit<subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst> distrazion<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> in un tram <mod change="#strato-6"><subst><del rend="strikethrough"> tra F</del> <add place="inline">che</add></subst></mod> an-
+                                <lb n="13"/>dava da Firenze a Settignano.</sic>
+                            <corr>Intanto io avevo imparato con immenso piacere “A Silvia”
+                                <lb/>“La vita solitaria” “Le ricordanze” “Amore e morte” e letto ripetu-
+                                <lb/>tamente “La Ginestra” che mi piaceva oltremodo <mod change="#strato-6"><add place="above">e dato uno sguardo a’ tutte le altre</add></mod>. <mod change="#strato-6"><del rend="strikethrough">Da</del> <subst><del rend="overwritten">t</del><add place="superimposed">T</add></subst>utto
+                                <lb/><subst><del rend="strikethrough">lo</del> <add place="above">questo</add></subst> studio</mod> del Leopardi non lo mostrai mai ad alcuno,
+                                <lb/> pel timore <mod change="#strato-6"><add place="above">molto più de' superiori</add></mod> che mi fosse trovato e tolto quel caro libric-
+                                <lb/>cino che poi nell’ottobre del 1910, già secolare,
+                                <lb/><mod change="#strato-6"><subst><del rend="strikethrough">perdessi</del> <add place="inline">lasciai</add></subst></mod> per <mod change="#strato-6">l<subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst> solit<subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst> distrazion<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> in un tram <mod change="#strato-6"><subst><del rend="strikethrough"> tra F</del> <add place="inline">che</add></subst></mod> an-
+                                <lb/>dava da Firenze a Settignano.
+                                <lb/>Di tutto ciò <app><lem varSeq="2"><mod change="#strato-9">m<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> <del rend="strikethrough">ne</del></mod></lem>
+                                <rdg varSeq="1"><mod change="#strato-6">me ne</mod></rdg>    
+                                </app> rallegrai allora, ora me ne dolgo
+                                <lb/>e riconosco la mia spensieratezza e stravaganza.
+                            </corr></choice>
+                </mod></p>
+                <p rend="indnet"><mod change="#strato-6"><lb n="14"/>Oltre il Leopardi, m’era assi facile <mod change="#strato-6"><subst><del rend="strikethrough">il</del> <add place="inline">il</add></subst></mod> Foscolo e in
+                        <lb n="15"/>quell’anno stesso giunsi a impararne <mod change="#strato-6"><subst><del rend="strikethrough">a mena dito</del> <add place="above">da capo a fondo</add></subst></mod>
+                        <lb n="16"/>tutto il Carme “I Sepolcri”. A scuola non lo toccammo
+                        <lb n="17"/>in quell’anno, e Scarpini, seguendo il programma
+                        <lb n="18"/>in vigore, ci fece studiare <mod change="#strato-6"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">il</del> <add place="inline">le</add></subst></del> <add place="inline"><del rend="strikethrough" seq="3">l'Odissea e</del> l'Iliade
+                        <lb n="19"/>ne <subst seq="3"><del rend="strikethrough">le due</del> <add place="above">la</add></subst> stupend<choice resp="#ST"><sic>e</sic><corr>a</corr></choice> traduzion<subst seq="3"><del rend="overwritten">i</del><add place="superimposed">e</add></subst></add></subst></mod> del Monti e <mod change="#strato-6"><del rend="strikethrough">e del Pindemonte</del>
+                        <lb n="20"/><subst><del rend="strikethrough">e il <gap unit="char" quantity="5"/></del><add place="above">con note</add></subst></mod> di G. Mestica, e altre sparse poesie del Parini,</mod></p>
+            </div>
+            <div type="page">
+                <pb n="15v2" facs="15v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="16r2" facs="16r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">58</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/>del Monti, del Carducci; e il Canto di Ugolino commentato
+                        <lb n="2"/>da De Sanctis.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="3"/>Io nel mio studio particolare giunsi a formarmi
+                        <lb n="4"/><mod change="#strato-6"><subst><del rend="strikethrough">p</del> <add place="inline">una</add></subst></mod> <mod change="#strato-6"><add place="above">speciale</add></mod> predilezione per Dante, per Foscolo, per Carduc-
+                        <lb n="5"/>ci, per Leopardi. <app><lem varSeq="2"><mod change="#strato-11"><hi rend="underline">In questi quattro io trovava me stesso.</hi></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-6">In questi quattro io trovava me stesso.</mod></rdg>    
+                        </app>
+                        <lb n="6"/>Lessi con disgusto la <choice resp="#ST"><sic>Basvilliana</sic><corr>Bassvilliana</corr></choice> e mi sembrò
+                        <lb n="7"/>una sciocca e servile imitazione dantesca; i quattro
+                        <lb n="8"/>sonetti di Giuda mi <mod change="#strato-6"><subst><del rend="strikethrough">dettero</del> <add place="inline">rimasero</add></subst></mod> così antipa-
+                        <lb n="9"/>tici <mod change="#strato-6"><subst><del rend="strikethrough">che</del> <add place="inline">da</add></subst></mod> proibirmi di leggere tutto quello che era
+                        <lb n="10"/>del Monti. Mi piacque il Parini ne le odi, ma non <mod change="strato-6"><subst><del rend="strikethrough">altri</del> <add place="above">fui</add></subst>
+                        <lb n="11"/><del rend="strikethrough"><add place="above">più</add></del></mod> predisposto ad amarlo, e lo lasciai in un canto non
+                        <lb n="12"/>come cosa non degna, ma come non voluta conoscere.
+                        <lb n="13"/>Del Manzoni ammirai (e chi non potrebbe ammirare?) 
+                        <lb n="14"/><mod change="#strato-6"><del rend="strikethrough">il romanzo</del></mod> i Promessi Sposi, <mod change="#strato-6"><del rend="strikethrough"><add place="above">che</add></del></mod> ma non lessi volentieri
+                        <lb n="15"/>gl’inni sacri<mod change="#strato-6"><subst><del rend="overwritten">,</del><add place="superimposed">;</add></subst> <del rend="strikethrough"> fuor che la Pentecoste</del></mod> stupendo mi parve
+                        <lb n="16"/>il canto di Ermengarda, ammirabile il Cinque Maggio.
+                        <lb n="17"/>L’Alfieri mi rapì l’anima ogni volta che lo lessi,<mod change="#strato-6"><del rend="strikethrough">(Oreste, 
+                        <lb n="18"/><gap unit="char" quantity="3"/>)</del></mod> ma non mi attrasse tanto da esigerne uno studio assiduo.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="19"/>Io era innamorato, appassionato, perduto per questi
+                        <lb n="20"/>quattro, e nei miei giudizi ero erroneamente parziale</mod></p>
+            </div>
+            <div type="page">
+                <pb n="16v2" facs="16v2.jpg"/>
+                <p rend="indent"><mod change="#strato-7"><lb/>Nota – Va all’anno 1911 – </mod></p>
+                <p rend="indent"><mod change="#strato-7"><lb/>Agitato da sì forti passioni, uscivo di casa, <mod change="#strato-7"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">fuggivo</add></subst> <subst><del rend="overwritten">di</del><add place="superimposed">la</add></subst> <subst><del rend="overwritten"><gap unit="char" quantity="4"/></del><add place="superimposed">gente</add></subst></mod> clamorosa
+                        <lb/>prendevo la strada più solitaria, e mi gettavo su l’erba del primo prato che
+                        <lb/>incontravo e disteso colla faccia verso il cielo <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">disegnav<mod change="#strato-7"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> per l’infinito la storia dei miei
+                        <lb/>dolori.</hi></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">disegnav<mod change="#strato-7"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> per l’infinito la storia dei miei
+                        <lb/>dolori.</mod></rdg>    
+                        </app></mod></p>
+                <p rend="indent"><mod change="#strato-7"><lb/>Però quell’immenso luccichio, mentre <mod change="#strato-7"><subst><del rend="strikethrough">stornandomi</del><add place="above">distraendomi</add></subst></mod> da essi, mi attraeva <mod change="#strato-7"><subst><del rend="strikethrough">più</del> <add place="inline">sempre</add></subst></mod>
+                        <lb/>più vicino a sé, mi commoveva nella sua meraviglia e diceva: “Che cosa sono
+                        <lb/>le mie sventure per tutti questi m<mod change="#strato-7"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod>ndi che vedo? Nulla. <mod change="#strato-7"><subst><del rend="overwritten">C'</del><add place="superimposed">Ce</add></subst><subst><del rend="overwritten">è</del><add place="superimposed">n'</add></subst></mod>è forse <mod change="#strato-7"><subst><del rend="overwritten">m</del><add place="superimposed">uno</add></subst></mod>
+                        <lb/>tra tanti che mi conosce e mi compiange? Nessuno. E perché dunque
+                        <lb/>io mi sento consolato a guardarli?</mod></p>
+                <p rend="indent"><mod change="#strato-7"><lb/><mod change="#strato-7"><subst><del rend="strikethrough">Penso presto</del><add place="inline">A</add></subst></mod> queste domande <mod change="#strato-7"><subst><del rend="strikethrough">il pensiero</del><add place="inline">mi pervedevo</add></subst></mod> nel pensiero senza pensare,
+                        <lb/><mod change="#strato-7"><del rend="strikethrough">nulla di</del></mod> come quando si <mod change="#strato-7"><subst><del rend="overwritten">guarda <gap unit="char" quantity="4"/><gap unit="char" quantity="4"/></del><add place="superimposed">fissa lo sguardo</add></subst></mod> vedere nulla. Poi <app><lem varSeq="2"><mod change="#strato-8">segu<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst><add place="above">vo</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">seguo</mod></rdg>    
+                        </app>
+                        <lb/>un’idea, poi un’altra e, un’altra, ma <mod change="#strato-7"><subst><del rend="overwritten">mi</del><add place="superimposed">non</add></subst></mod> <app><lem varSeq="2"><mod change="#strato-8">trov<subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst><add place="above">vo</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">trova</mod></rdg>    
+                        </app> risoluzione.</mod></p>
+                <p rend="indent"><mod change="#strato-7"><lb/><app><lem varSeq="2"><mod change="#strato-8">pens<subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst><add place="above">vo</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">penso</mod></rdg>    
+                        </app> <app><lem varSeq="2"><mod change="#strato-8">pens<subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst><add place="above">vo</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">penso</mod></rdg>    
+                        </app> e <app><lem varSeq="2"><mod change="#strato-8">ripens<subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst><add place="above">vo</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">ripenso</mod></rdg>    
+                        </app>, <app><lem varSeq="2"><mod change="#strato-8">sent<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst><add place="above">vo</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">sento</mod></rdg>    
+                        </app> una lacrima sugli occhi, un desiderio di <mod change="#strato-7"><subst><del rend="overwritten"><gap unit="char" quantity="4"/></del><add place="superimposed">pianto</add></subst></mod>
+                        <lb/>m’<app><lem varSeq="2"><mod change="#strato-8">invad<add place="below">va</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">invade</mod></rdg>    
+                        </app> l’anima.</mod></p>
+            </div>
+            <div type="page">
+                <pb n="17r2" facs="17r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">59</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/>e mi partivo dal cuore e non da l’intelletto, come
+                        <lb n="2"/>appunto fa il giovane innamorato, <mod change="#strato-6"><subst><del rend="strikethrough">che</del> <add place="inline">a</add></subst></mod> cui sembra
+                        <lb n="3"/>più bella di tutte la sua bambina ancor che non sia,
+                        <lb n="4"/>e che <mod change="#strato-6"><del rend="strikethrough">non</del></mod> tralascia di guardare le bellezze <mod change="#strato-6"><subst><del rend="strikethrough">p</del> <add place="inline">anche</add></subst></mod>
+                        <lb n="5"/>maggiori di altre fanciulle per bearsi nella vista
+                        <lb n="6"/>di quella che gli ha rapito il cuore.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="7"/>Da questo appunto <mod change="#strato-6"><subst><del rend="strikethrough">faccio</del> <add place="above">è necessario</add></subst></mod> il notare come non era allora
+                        <lb n="8"/>in quel<mod change="#strato-6"><add place="inline">l'</add><subst><del rend="overwritten">temp</del><add place="superimposed">età</add></subst></mod>, in quel tempo da esigere da me un
+                        <lb n="9"/>giudizio sicuro e imparziale prima per la
+                        <lb n="10"/>mia poca dottrina, quindi per il troppo attacca-
+                        <lb n="11"/>mento a questi quattro sommi. S’intenda
+                        <lb n="12"/>dunque che io non ho preteso dar sentenze lettera-
+                        <lb n="13"/>rie <mod change="#strato-6"><subst><del rend="strikethrough">ma soltanto ho inteso dire quello</del> <add place="above">e dire ciò che è o non è bello, ma soltanto</add></subst></mod> ho inteso dire
+                        <lb n="14"/>quello che mi pareva essere o non essere bello.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="15"/>L’ore di tempo passate a le <mod change="#strato-6">letture <add place="above">e a’ componimenti</add> volontar<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> e non
+                        <lb n="16"/>obbligator<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> era più di quelle occupate per la
+                        <lb n="17"/>scuola, talché, come negli anni <mod change="#strato-6"><subst><del rend="overwritten">pas</del><add place="superimposed">ore</add></subst></mod>cedenti non
+                        <lb n="18"/>mi seppi guadagnare, né la stima né l’affetto dei
+                        <lb n="19"/>maestri. <mod change="#strato-6">Ne<subst><del rend="overwritten">i</del><add place="superimposed">gli</add></subst> <subst><del rend="strikethrough">tem</del> <add place="inline">svolgimenti</add></subst></mod> dei temi italiani
+                        <lb n="20"/>dati dal maestr<choice resp="#ST"><sic>i</sic><corr>o</corr></choice> io era affatto un <mod change="#strato-6"><subst><del rend="strikethrough">animale</del> <add place="inline">somaro</add></subst></mod>;</mod></p>
+            </div>
+            <div type="page">
+                <pb n="17v2" facs="17v2.jpg"/>
+                <p rend="indent"><mod change="#strato-7"><lb/><mod change="#strato-7">Quel<del rend="strikethrough">la</del> <subst><del rend="strikethrough">solitudine</del><add place="above">grande spazio, azzurro e silenzioso</add></subst></mod> mi <app><lem varSeq="2"><mod change="#strato-8">sembra<add place="inline">va</add></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">sembra</mod></rdg>    
+                </app> popolat<choice resp="#ST"><sic>a</sic><corr>o</corr></choice> di mille persone che a gran voce con-
+                        <lb/>corde <app><lem varSeq="2"><mod change="#strato-8">grida<subst><del rend="overwritten">no</del><add place="superimposed">ssero</add></subst></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-7">gridano</mod></rdg>    
+                </app>. Il dolore, la solitudine, la contemplazione de l’infinito sono la
+                        <lb/>mano di Dio che stringe il cuore de l’uomo.</mod></p>
+                <p rend="indent"><mod change="#strato-7"><lb/>Allora mi tastava il petto per sentire se nessuno me lo stringesse, <mod change="#strato-7"><subst><del rend="strikethrough">man</del> <add place="inline">mi</add></subst></mod> sembrava
+                        <lb/>che un braccio sovrumano mi sollevasse fino e più sù delle stelle, mi sentivo come
+                        <lb/>in un amplesso mistico <mod change="#strato-7"><add place="above">soprannaturale</add></mod> con Dio, cadevo nel colmo della commozione du-
+                        <lb/>bitavo di essere uomo; credevo <mod change="#strato-7"><subst><del rend="strikethrough">morire</del> <add place="above">la vita mi</add></subst></mod> venisse meno...</mod></p>
+                <p rend="indent"><mod change="#strato-7"><lb/>La voglia di presto morire mi spariva del tutto, o questo era l’unico mezzo
+                        <lb/>per annientarla. Dal pessimismo più spinto io mi elevavo al
+                        <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">misticismo più alto,
+                                        <lb/>dalla <mod change="#strato-7"><add place="above">cupa</add></mod> tristezza dell’ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice> <mod change="#strato-9"><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></mod>
+                                        più pura d’un santo.</hi></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-7">al misticismo più alto, dalla cupa tristezza dell’ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice><mod change="#strato-9"><subst><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></subst></mod> più pura d’un santo.</mod></rdg>
+                            <rdg varSeq="1"><mod change="#strato-7">al misticismo più alto, dalla cupa tristezza dell’ateo all'<gap unit="char" quantity="3"/>più pura d’un santo.</mod></rdg>
+                    </app>
+                    <!-- <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">misticismo più alto,
+                        <lb/>dalla <mod change="#strato-7"><add place="above">cupa</add></mod> tristezza dell’ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice> <mod change="#strato-9"><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></mod>
+                         più pura d’un santo.</hi></mod></lem>
+                             <rdg varSeq="1"><mod change="#strato-7">al misticismo più alto, dalla cupa tristezza dell’ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice><mod change="#strato-9"><subst><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></subst></mod> più pura d’un santo.</mod></rdg>
+                             <rdg varSeq="1"><mod change="#strato-7">al misticismo più alto, dalla cupa tristezza dell’ateo all'<gap unit="char" quantity="3"/></mod>più pura d’un santo.</mod></rdg>
+                             </app> 
+                             oppure?
+                             <app><lem varSeq="2"><mod change="#strato-10"><hi rend="underline">misticismo più alto,
+                             <lb/>dalla <mod change="#strato-7"><add place="above">cupa</add></mod> tristezza dell’ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice> <app><lem><mod change="#strato-9"><subst><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></subst></mod></lem>
+                             <rdg varSeq="1"><mod change="#strato-7"><gap unit="char" quantity="3"/></mod></rdg>    
+                             </app> più pura d’un santo.</hi></mod></lem>
+                             <rdg varSeq="1"><mod change="#strato-7">misticismo più alto,
+                             <lb/>dalla <mod change="#strato-7"><add place="above">cupa</add></mod> tristezza dell’ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice> <app><lem><mod change="#strato-9"><subst><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></subst></mod></lem>
+                             <rdg varSeq="1"><mod change="#strato-7"><gap unit="char" quantity="3"/></mod></rdg>    
+                             </app> più pura d’un santo.</mod></rdg>    
+                             </app>-->    
+                    </mod></p>
+                <fw place="down_right" type="date"><mod change="#strato-7">2S Agosto 1911</mod></fw>  
+            </div>
+            <div type="page">
+                <pb n="18v2" facs="18v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="18r2" facs="18r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-6">60</mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/><mod change="#strato-6"><subst><del rend="strikethrough">scrivevo come non scrivevo le</del> <add place="inline">e il maestro</add></subst></mod> <mod change="#strato-6"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">con</add></subst></mod>
+                        <lb n="2"/>forte ragione diceva: «A te, Benocci, pare di scriver bene,
+                        <lb n="3"/>ma <mod change="#strato-6"><subst><del rend="overwritten"><gap unit="char" quantity="1"/></del><add place="superimposed">a</add></subst></mod> me sembra di no.» E di fatto era così. Io non
+                        <lb n="4"/>ne comprendevo il perché e spesse volte infierivo
+                        <lb n="5"/>contro me stesso. Certe composizioni fatte da me,
+                        <lb n="6"/>con tema scelto,<mod change="#strato-6"><del rend="strikethrough" seq="2">rilette <subst seq="1"><del rend="strikethrough">di</del> <add place="inline">negli</add></subst> anni</del></mod> non
+                        <lb n="7"/>avevano che fare co<mod change="#strato-6"><subst><del rend="overwritten">n</del><add place="superimposed">i</add></subst> <del rend="strikethrough">que</del></mod> temi scolastici, che avreb-
+                        <lb n="8"/>bero fatto uggia a qualunque lettore, figuria-
+                        <lb n="9"/>moci a un maestro. Di queste libere composizioni
+                        <lb n="10"/>ce n’ho ancora alcune <mod change="#strato-6"><subst><del rend="strikethrough">spec</del> <add place="inline">e in</add></subst></mod> specie poetiche,
+                        <lb n="11"/>che davano bene a sperare, come per esempio il
+                        <lb n="12"/>sonetto “<mod change="#strato-6"><subst><del rend="overwritten">s</del><add place="superimposed">S</add></subst></mod>ogni di luna” e tanti altri. L’unica
+                        <lb n="13"/>ragione di questa diversità si può trovare ne lo stato
+                        <lb n="14"/>de l’animo in cui allora vivevo; dall’odio <mod change="#strato-6"><subst><del rend="strikethrough">dei</del> <add place="above">verso</add></subst></mod> i superio-
+                        <lb n="15"/>ri, <mod change="#strato-6"><subst><del rend="strikethrough">derivava</del> <add place="inline">che</add></subst></mod> non mi sembravano proclivi ad
+                        <lb n="16"/>ammirarmi (e in che cosa allora?), derivava l'avversità
+                        <lb n="17"/>a tutto ciò che m'era da loro comandato, di tutto
+                        <lb n="18"/>ciò che cadesse sotto loro mano, e sotto il loro
+                        <lb n="19"/>giudizio. <mod change="#strato-6"><subst><del rend="strikethrough">Io</del> <add place="inline">Avevo</add></subst></mod> formato un carattere veramente
+                        <lb n="20"/>bilioso, collerico; e godeva freneticamente quando </mod></p>
             </div>
         </body>
     </text>

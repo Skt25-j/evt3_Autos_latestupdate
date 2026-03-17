@@ -66,6 +66,11 @@
     margin-top: -0.5rem;
 }
 
+[place="down_right"] {
+    float:right;
+    margin-top: -2.5rem;
+}
+
 evt-reading evt-note,
 evt-addition evt-note {
   display: none !important;
@@ -169,7 +174,7 @@ evt-content-viewer.lem .readingSeparator,
 /* --- ATTIVAZIONE SELETTIVA DEL METAMARK --- */
 
 /* 1. ATTIVAZIONE GENERALE */
-/* Mostriamo il cerchio a tutti gli elementi metamark strato 9 */
+/* Mostriamo il cerchio a tutti gli elementi metamark strato 10 */
 .metamark[change="#strato-10"], 
 evt-generic-element[rend="circled"] {
     display: inline-block !important; 
@@ -237,6 +242,50 @@ span[style*="background-color: rgb(36, 4, 181)"] {
     min-height: 20px;
     color: black !important; /* O il colore che preferisci */
 }
+/* Mostriamo il cerchio a tutti gli elementi metamark strato 11 */
+.metamark[change="#strato-11"], 
+evt-generic-element[rend="square"] {
+    display: inline-block !important; 
+    border: 2px solid rgb(181, 4, 4) !important;
+    border-radius: 50% / 15% !important;
+    padding: 10px !important;
+    margin: 5px !important;
+    color: black !important;
+}
 
+/* 2. DISATTIVAZIONE CHIRURGICA PER L'INTERPRETATIVA */
+/* Usiamo l'attributo che abbiamo visto nel tuo HTML (data-edition="interpretative") */
+/* Questa regola dice: "Se dentro il metamark c'è un testo interpretativo, spegni il cerchio" */
+
+.metamark:has([data-edition="interpretative"]),
+evt-generic-element:has([data-edition="interpretative"]),
+[data-edition="interpretative"] .metamark,
+.metamark[data-edition="interpretative"] {
+    display: inline !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 3. PROTEZIONE COLORI */
+.metamark[change="#strato-11"] * {
+    color: black !important;
+}
+
+/* Eccezione: l'aggiunta dello strato 11 deve restare blu */
+[change="#strato-11"] [change="#strato-11"] {
+    color: rgb(181, 4, 4) !important;
+}
+/* Eccezione: le aggiunte dello strato 11 devono restare blu */
+.metamark[change="#strato-11"] [change="#strato-11"],
+[change="#strato-11"] [change="#strato-11"] {
+    color: rgb(181, 4, 4) !important;
+}
+
+/* Eccezione per le aggiunte dello strato 11: devono restare blu */
+[change="#strato-11"] [change="#strato-11"],
+.metamark[change="#strato-11"] [change="#strato-11"] {
+    color: rgb(181, 4, 4) !important;
+}
 
 
