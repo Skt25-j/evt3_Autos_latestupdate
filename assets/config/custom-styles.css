@@ -82,8 +82,8 @@ evt-addition evt-note {
 evt-mod[change="#strato-4"] * {
     color: rgb(93, 91, 91) !important;
 }
-evt-mod[change="#strato-9"]*{
-    color: rgb(76, 74, 74);
+evt-mod[change="#strato-9"] * {
+    color: rgb(90, 92, 90);
     
 }
 evt-mod[change="#strato-8"] * {

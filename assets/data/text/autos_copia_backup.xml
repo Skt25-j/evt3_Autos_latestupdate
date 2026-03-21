@@ -229,21 +229,72 @@
                     <lb />
                     
                     <mod change="#strato-0">
+                        
                         <subst>
                             <del seq="1" rend="strikethrough">Autopsicologia</del>
                             <del seq="2" rend="strikethrough">
-                                <add place="inline">- (Autologia) -</add>
+                                <add seq="1" place="inline">- (Autologia) -</add>
                             </del><lb/>
                             <del seq="3" rend="strikethrough">
-                                <add place="inline">Wstefano</add>
+                                <add seq="2" place="inline">Wstefano</add>
                             </del><lb/>
-                            <add seq="3" place="inline">- Autos -</add>
+                            <add seq="3">- Autos -</add>
                         </subst>
-                    </mod>
-                    <note n="1">La cancellature sono ribatite con il lapis - E</note>
+                        
+                    </mod> <note n="1">La cancellature sono ribatite con il lapis - E</note>
                     <mod change="#strato-4">
                         <del rend="strikethrough">Pazzo d'Italia</del>
                     </mod>
+                    
+                    <!-- Annidamento dei mod: funziona la visualizzazione ma è corretta formarlmente? un evento dello strato-4 può essere contenuto già nello strato-0?
+                         <mod change="#strato-0">
+                         <mod change="#strato-4">
+                         <del>
+                         <del rend="strikethrough" seq="5"><del rend="strikethrough" seq="1">Autopsicologia</del>
+                         <del rend="strikethrough" seq="2"> - (Autologia)</del><lb/>
+                         <del rend="strikethrough" seq="3" >Wstefano</del></del> </del>  </mod>
+                         <lb n="4"/>
+                         <add place="below" seq="4">- Autos -</add> 
+                         </mod>
+                         
+                         <note n="1" resp="ST">Autos è titolo scelto da Tuscano dopo diversi tentativi, cancellati sia durante la prima stesura che successivamente, con il lapis E</note>
+                         <mod change="#strato-4">
+                         <add>
+                         <del rend="strikethrough">Pazzo d'Italia</del>
+                         </add>
+                         </mod>
+                         
+                         Altra codifica:
+                         
+                         
+                         
+                         <subst>
+                         <del seq="1" rend="strikethrough">Autopsicologia</del>
+                         <del seq="2" rend="strikethrough"><add>- (Autologia)</add></del><lb/>
+                         <del seq="3" rend="strikethrough"><add>Wstefano</add></del>
+                         <lb n="4"/><add seq="4" place="above">- Autos -</add>
+                         </subst>
+                         <subst>
+                         <del seq="1" rend="strikethrough">Autopsicologia</del>
+                         <del seq="3" rend="strikethrough">
+                         <del seq="2" rend="strikethrough"><add seq="1" place="inline">- (Autologia) </add><lb/>
+                         </del>
+                         <add seq="2" place="inline">Wstefano</add></del>
+                         <add seq="3" place="above">- Autos -</add></subst>
+                         
+                         <mod>
+                         <subst><del rend="strikethrough" seq="1" change="#strato-0 #strato-4">Autopsicologia</del>
+                         <del rend="strikethrough" seq="2" change="#strato-0 #strato-4"> - (Autologia)</del><lb/>
+                         <del rend="strikethrough" seq="3" change="#strato-0 #strato-4">Wstefano</del><lb/>
+                         <add place="below" seq="4" change="#strato-0">- Autos -</add> </subst>
+                         </mod> Usare l'attributo gòobale change per indicare che la cancellazione è avvenuta sia nello strato-0 che nello strato-4: non funziona la visualizzazione
+                         
+                         La codifica corrente, seppur giusta filologicamente, non permette di visualizzare le cancellazioni fatte con il lapis E, che si sovrappongono a quelle fatte in precedenza con la penna A. i può ovviare con una nota.
+                         Usare mod annidati, non so se è formalmente corretto, ma almeno si visualizza correttamente il testo. Non permette, però, di usare subst, perchè questo non ammette un mod dentro di sè.
+                         Usare app: presenta la problematica della visualizzazione: si vedono le varianti in sequenza, ma non si capisce che le cancellazioni fatte con il lapis E si sovrappongono a quelle fatte in precedenza con la penna A. In pratica, il testo appare due volte.
+                    -->
+                    
+                    
                 </ab>
             </div>
             <div type="page" xml:id="Copertina_interno">
@@ -367,7 +418,7 @@
                                     compagni, di cui non nutriva che disistima<lb n="15"/>  o gelosia, a disubbidire a’ genitori, ad aggrottar le ciglia quan-<lb n="16"/>do incontravo la
                                     gente e andarmene leggendo a spasso solo e  con rado passo,<lb n="17"/>ad esigere la risposta alle mie domande, alle<lb n="18"/>mie scappellate.
                                     
-                                </del></mod></lem>
+                                </del></mod></lem><note type="critical">La cassatura in lapis, anche se non copre l'intera porzione, è da intendersi totale</note>
                         <!--   <rdg varSeq="3">
                              <mod change="#strato-2">
                              <del rend="strikethrough"> Già cominciavo<lb n="13"/>a veder di mal occhio i maestri, a vedermi già dotto, a ri- <lb n="14"/>tirarmi dagli altri
@@ -394,14 +445,14 @@
                                 <subst><del rend="strikethrough">legg</del> <add place="inline">ad esigere</add></subst> la risposta alle mie domande, alle <lb n="18"/> mie scappellate.</mod>
                             
                         </rdg>
-                    </app><note type="critical">La cassatura in lapis, anche se non copre l'intera porzione, è da intendersi totale</note>
+                    </app>
                 </p>
                 <p rend="indent"> <lb n="19"/> Frequentavo già la prima ginnasiale privatamente da <lb n="20"/> un caro prete, che <mod change="#strato-0"><subst><add place="above">io ho tenuto</add> <del rend="strikethrough">poi mi è stato</del></subst></mod>
                     sempre tra le persone più care.<lb n="21"/> Non nego di aver avuto intelligenza, ma neppure di avermi essa <lb n="22"/> procurato e
                     alimentato nell’animo quel germe di sentimento
                     
                 </p>
-            </div> 
+            </div> <!-- occhio ai numeri di pagina qua-->
             <div type="page" xml:id="Quaderno1_1v">
                 <pb n="1v1" facs="1v.jpg"/>
                 <p rend="indent"><mod change="#strato-2"><add place="margin-left"><hi rend="underline">Corrigendo</hi></add></mod></p>
@@ -661,7 +712,8 @@
                     <lb/><l n="27">ch’è giorno mi dice</l>
                     <lb/><l n="28">un’altra volta ancora,</l>
                     <lb/><l n="29">e <mod change="#strato-0">
-                            <del rend="strikethrough" xml:id="del_i">i</del>l<add xml:id="add_o">o</add><substJoin target="#del_i #add_o"/>
+                            <substJoin target="#del_i #add_o"/>
+                            <del rend="strikethrough" xml:id="del_i">i</del>l<add xml:id="add_o">o</add>
                             <subst><del rend="strikethrough">trem</del>
                                 <add place="inline">spavento</add></subst>
                         </mod> scaccia</l>
@@ -701,7 +753,7 @@
                         </subst><del rend="strikethrough">sen</del>
                     </mod>di maggior valore col tempo e co<mod change="#strato-0">
                         <subst><del rend="overwritten">ll'</del>
-                            <add place="superimposed">n l’</add></subst></mod>oblio;
+                            <add rend="superimposed">n l’</add></subst></mod>oblio;
                     <lb n="20"/>di quando in quando però mi era dolce andare a ricavarla e specialmente
                 </p>
             </div>
@@ -819,7 +871,7 @@
                     <mod change="#strato-0">
                         <del rend="strikethrough" seq="1"> ratto </del>
                         <del rend="strikethrough" seq="2">
-                            <add place="inline">presto</add>
+                            <add place="inile">presto</add>
                         </del>
                         <add place="above" seq="2">sollecito</add>
                     </mod> 
@@ -851,7 +903,7 @@
                     <lb n="10"/><mod change="#strato-0">
                         <subst>
                             <del rend="strikethrough" seq="1">risolsi</del>
-                            <del seq="2" rend="strikethrough" ><add place="inline">compresi</add></del>
+                            <del seq="2"><add place="inline">compresi</add></del>
                             <add seq="2"><add place="above">mi parve di</add>comprendere</add>
                         </subst>
                         
@@ -3570,54 +3622,24 @@
                                 <add place="above" seq="2">traeva</add>
                             </subst>
                             <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">trovavo</del> <add place="above">ritrovava</add></subst></del> <add place="inline">traeva</add></subst>-->
-                </mod> in un modo così diverso,<app><lem><mod change="#strato-10"><hi rend="underline"><mod change="#strato-6"><subst>
-                                <del rend="strikethrough" seq="1">da la mia</del>
-                                <del rend="strikethrough" seq="2">
-                                    <add place="above">da</add>
-                                </del>
-                                <add place="above" seq="2"><lb n="2"/>tornava</add>
-                            </subst></mod>
-                         tra i miei neri compagni</hi></mod></lem>
-                        <rdg varSeq="1"><mod change="#strato-6"><mod change="#strato-6"><subst>
-                                <del rend="strikethrough" seq="1">da la mia</del>
-                                <del rend="strikethrough" seq="2">
-                                    <add place="above">da</add>
-                                </del>
-                                <add place="above" seq="2"><lb n="2"/>tornava</add>
-                            </subst></mod>
-                         tra i miei neri compagni</mod></rdg>    
-                        </app>, sotto la disciplina;
-                        <lb n="3"/>tornavo alla rabbia <choice resp="#ST"><sic>alla</sic><corr>all'</corr></choice><mod change="#strato-6"><subst>
-                                <del rend="strikethrough" seq="1"> desider</del>
-                                <del rend="strikethrough" seq="2">
-                                    <add place="inline">dispregiata</add>
-                                </del>
-                                <add place="inline" seq="2"><lb n="2"/>improperii</add>
-                            </subst></mod>
-                        <lb n="4"/>del mio stato, e alcuna volta 
-                        <app><lem varSeq="2"><mod change="#strato-9"><hi rend="underline">a la tentazione di toglier-
-                        <lb n="5"/>mi la vita.</hi></mod></lem>
-                        <rdg varSeq="1"><mod change="#strato-6">a la tentazione di toglier-
-                        <lb n="5"/>mi la vita.</mod></rdg></app></mod></p>
-                <p rend="indent"><mod change="#strato-6"><lb n="6"/>Infelice! e avevo 15 anni! Quale fiore di maggio
-                        <lb n="7"/>perduto, quale fuoco acceso per la distruzione de la
-                        <lb n="8"/><mod change="#strato-6"><subst><del rend="#strikethrough">pace, de la tranquillità</del> <add place="inline">giovinezza!</add></subst></mod></mod></p>
-                <p rend="indent"><mod change="#strato-6">
-                        <mod change="#strato-6"><subst seq="2">
-                            <del rend="strikethrough"><lb n="9"/>Questo stato terribile che io solea tenere represso
-                                    <lb n="10"/>e nascosto
-                            <subst seq="1"><del rend="strikethrough" > mi rendeva sconstro <gap unit="char" quantity="3"/>coi compagni
-                                            <lb n="11"/>spesso
-                            </del>
-                                <add place="inline">rompeva dal profondo del mio animo risposte ardi-
-                                            <lb n="12"/>te al prefetto</add></subst></del>
-                            <add place="inline" seq="2">Quest’orribile stato interno era la
-                                    <lb n="13"/>cagione di tutte le mie scapataggini, di
-                                    <lb n="14"/>tutte le mie svogliatezze:</add>
-                        </subst></mod>vivevo
-                        <lb n="15"/>una vita troppo scomposta, troppo anormale per un ragazzo del-
-                        <lb n="16"/>le mie inclinazioni, talché lo svolgimento di esse
-                        <lb n="17"/>fu disviato, scorretto ed erroneo.</mod></p>
+                </mod> in un mondo così diverso,
+                        <mod change="#strato-6">
+                            <subst seq="1">
+                                <del rend="strikethrough">trovavo</del>
+                                <add place="above">
+                                    <subst seq="2">
+                                        <del rend="strikethrough">ritrovava</del>
+                                        <add place="above">traeva</add>
+                                    </subst>
+                                </add>
+                            </subst>
+                        </mod>
+                        <lb n="2"/>tornava tra i miei neri compagni, sotto la disciplina;
+                        <lb n="3"/>tornavo alla rabbia all’improprerii
+                        <lb n="4"/>del mio stato, e alcuna volta a la tentazione di toglier-
+                        <lb n="5"/>mi la vita.</mod></p>
+                <p rend="indent"><mod change="#strato-6"></mod></p>
+                <p rend="indent"><mod change="#strato-6"></mod></p>
                 <p rend="indent"><mod change="#strato-6"></mod></p>
             </div>
         </body>

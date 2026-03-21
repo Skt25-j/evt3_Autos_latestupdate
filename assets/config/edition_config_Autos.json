@@ -186,7 +186,7 @@
   "showChangeLayerMarkerInText": true,
   "changeSequenceView": {
     "showVarSeqAttr": false,
-    "showSeqAttr": false,
+    "showSeqAttr": true,
     "layerColors": {
       "strato-0": "#E67E22",
       "strato-1": "#D35400",
