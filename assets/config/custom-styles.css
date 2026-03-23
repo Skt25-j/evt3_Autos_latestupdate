@@ -70,6 +70,10 @@
     float:right;
     margin-top: -2.5rem;
 }
+[place="bottom_right"] {
+    float:right;
+    margin-bottom: -4.5rem;
+}
 
 evt-reading evt-note,
 evt-addition evt-note {

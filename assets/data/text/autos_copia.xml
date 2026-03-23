@@ -1030,8 +1030,12 @@
                     </mod>narrazione della mia fanciullezza. B<mod change="#strato-0"><add place="above">u</add></mod>oni, il mio maestro, mi
                     <mod change="#strato-0"><del rend="strikethrough"><add place="above">di già</add></del></mod>aveva insegna-
                     <lb n="4"/>to il latino, ma non l’italiano <mod change="#strato-0">
-                        <subst><del>di</del><add place="above">per</add><del rend="strikethrough">I° gin</del></subst>
-                    </mod> I° ginnasiale, tanto che essendo 
+                        <del rend="overwritten" xml:id="del_di">di</del>
+                        <add place="superimposed" xml:id="add_per">per</add>
+                        <del rend="strikethrough" xml:id="del_Igin">I<hi rend="apice">o</hi>  gin</del>
+                        <add place="inline" xml:id="add_Igin">I<hi rend="apice">o</hi> ginnasiale</add>
+                        <substJoin target="#del_di #add_per #del_Igin #add_Igin"/> <!-- L'uso di substJoin invece è dettato dal fatto che si debba esprimere la contemporaneità degli interventi; due subst separati avrebbero fatto perdere questa indormazione. Ugaule nel caso di 11r1-->
+                    </mod>, tanto che essendo 
                     <lb n="5"/>ancora molto piccolo decisi ripetere la prima classe. <mod change="#strato-0">
                         <subst><del rend="strikethrough">Allora</del>
                             <add place="inline">Fin’allora</add></subst></mod> 
@@ -1075,7 +1079,7 @@
                     <mod change="#strato-0">
                         <subst>
                             <del rend="strikethrough" seq="1">come</del>
-                            <del seq="2"><add place="above">ad</add></del>
+                            <del seq="2" rend="strikethrough"><add place="above">ad</add></del>
                             <add place="above" seq="2">il posto di</add>
                         </subst></mod>
                     <!-- 
@@ -1106,8 +1110,12 @@
                         <lb n="4"/>lessi e gustai con nuovo piacere le famose stanze del
                         <lb n="5"/>Poliziano sulla [Dolcezza della vita campestre] (Quant’è
                         <lb n="6"/>più dolce, quant’è più sicura etc) talché non potei stare 
-                        <mod change="#strato-1"><subst><del rend="overwritten">di</del> <add place="superimposed">a</add> <del rend="strikethrough"> imp</del>
-                                <lb n="7"/><add place="inline">non</add></subst></mod> impararle e ripeterle ne’ brevi momenti che
+                        <mod change="#strato-1"><del rend="overwritten" xml:id="del_di2">di</del>
+                            <add place="superimposed" xml:id="add_a">a</add>
+                            <del rend="strikethrough" xml:id="del_imp">imp</del>
+                            <lb n="7"/>
+                            <add place="inline" xml:id="add_non">non</add>
+                            <substJoin target="#del_di2 #add_a #del_imp #add_non"/></mod> impararle e ripeterle ne’ brevi momenti che
                         <lb n="8"/>uscivamo all’aria pura. Imparai senza capirci
                         <lb n="9"/>nulla, ma trovandoci a un tempo un che di bello.</mod>
                 </p>
@@ -1158,7 +1166,7 @@
                             <del rend="strikethrough">del Seminario</del></mod>,
                         <lb n="5"/>approfittando della 
                         <mod change="#strato-1"><del rend="strikethrough" xml:id="del_tena" seq="2">
-                                <subst seq="1"><add place="above">tena</add><del>buona</del></subst>
+                                <subst seq="1"><add place="above">tena</add><del rend="strikethrough">buona</del></subst>
                                 e </del>facile
                             <add place="inline" xml:id="add_e_tenace" seq="3"> e tenace</add>
                             <substJoin target="#del_tena #add_e_tenace"/>    
@@ -1169,7 +1177,7 @@
                         <mod change="#strato-1"><subst><del rend="strikethrough">La</del>
                                 <add place="inline">Inoltre</add> </subst></mod>la passione di questi libri o meglio delle poesie 
                         <lb n="7"/>che trovav
-                        <mod change="#strato-1"><subst><del rend="overwritten">o</del>
+                        <mod change="#strato-1"><subst><del rend="overwritten">a</del>
                                 <add place="superimposed">o</add></subst></mod> solo in questi libri mi rese assolutamente
                         <lb n="8"/>svogliato di tutto che non era versi; e accrebbe
                         <mod change="#strato-1"><del rend="strikethrough">in me</del></mod>
@@ -1274,13 +1282,24 @@
                         <mod change="#strato-1"><subst><del rend="strikethrough">per essere ese</del>
                                 <add place="inline">affinché</add></subst></mod> io fossi un 
                         <mod change="#strato-1">
+                            <del rend="strikethrough" xml:id="del_modello">modello</del>
+                            <add place="above" xml:id="add_esempio">esempio</add>
+                            <lb/>
+                            <del rend="strikethrough" xml:id="del_atutti">a tutti</del>
+                            <add place="inline" xml:id="add_dalquale">
+                                <lb n="12"/>dal quale
+                                <add place="above" seq="2">tutti</add>
+                                imparassero
+                            </add>
+                            <substJoin target="#del_modello #add_esempio #del_atutti #add_dalquale"/>
+                        </mod> <!-- <mod change="#strato-1">
                             <subst seq="1"><del rend="strikethrough">modello</del>
                                 <add place="above">esempio</add></subst>
                             <lb/> <subst seq="1"><del rend="strikethrough">a tutti</del>
                                 <add place="inline" seq="1">
                                     <lb n="12"/>dal quale
                                     <add place="above" seq="2">tutti</add>
-                                    imparassero</add></subst></mod> 
+                                    imparassero</add></subst></mod> non è meglio substJoin per la contemporaneità?-->
                         ciò che non era esemplare.
                         <lb n="13"/>Essi 
                         <mod change="#strato-1">
@@ -1587,7 +1606,7 @@
                                 <mod change="#strato-4">
                                     <add place="above">alla mia vita d'allora</add>
                                     e <subst><del rend="strikethrough">ogni</del>
-                                        <add rend="above">i</add></subst>
+                                        <add place="above">i</add></subst>
                                     personaggi<del rend="strikethrough">o</del>
                                     <subst><del rend="strikethrough">avere il suo simbolo </del>
                                         <add place="inline"> <lb n="17"/>alludere 
@@ -1837,7 +1856,7 @@
                             <add place="superimposed" xml:id="agg_ap">’</add>avevo mai vist
                             <del rend="overwritten" xml:id="del_visto">o</del>
                             <add place="superimposed" xml:id="agg_vista">a</add>
-                            <substJoin target="#del_o #agg-ap"/>
+                            <substJoin target="#del_o #agg_ap"/>
                             <substJoin target="#del_visto #agg_vista"/>
                         </mod> e 
                         <mod change="#strato-3">
@@ -1890,7 +1909,7 @@
                         <add place="margin">Ci si sente l’<persName ref="#Alfieri">Alfieri</persName></add>
                     </mod><lb/></ab>
                 
-                <p rend="indent"><mod change="#strato-2" rend="strikethrought"><lb n="11"/>Quindi nello svolgersi delle scene sono da mostrarsi i seguenti versi
+                <p rend="indent"><mod change="#strato-2"><lb n="11"/>Quindi nello svolgersi delle scene sono da mostrarsi i seguenti versi
                         <lb n="12"/>messi in bocca al Re Persiano.
                         <mod change="#strato-2">
                             <del rend="strikethrough">dipinto quasi filosofo</del>
@@ -2070,7 +2089,7 @@
                             <rdg varSeq="1"><mod change="#strato-2">ghigliottina 500 anni avanti</mod></rdg>    
                         </app>
                         <lb n="13"/>Cristo e perdona insieme ai miei tredici anni.</mod></p>
-                <p rend="indent"><mod change="#strato-2"><lb n="14"/><mod change="#strato-2"><add place="above">Flaviano,</add></mod> <choice resp="#ST"><sic>Il</sic><corr>il</corr></choice> padre del profeta <mod change="#strato-2"><subst><del rend="strikethrough"></del><add place="above">che</add></subst></mod> per inganni dei satrapi nemici
+                <p rend="indent"><mod change="#strato-2"><lb n="14"/><mod change="#strato-2"><add place="above">Flaviano,</add></mod> <choice resp="#ST"><sic>Il</sic><corr>il</corr></choice> padre del profeta <mod change="#strato-2"><subst><del rend="strikethrough">credeva</del><add place="above">che</add></subst></mod> per inganni dei satrapi nemici
                         <lb n="15"/>d<mod change="#strato-2"><subst><del rend="overwritten">el</del><add place="superimposed">i</add></subst></mod> suo figlio credeva Daniele ingrato <mod change="#strato-2"><subst><del rend="overwritten"><gap quantity="1"  unit="char"/></del><add place="superimposed">a</add></subst></mod>l padre invoca la
                         <lb n="16"/>sua pietà con parole amorose e che quantunque poco bene
                         <lb n="17"/>espresse nascondono gentili sentimenti <choice resp="#ST"><sic>ed</sic><corr/></choice><mod change="#strato-2"><subst><del rend="strikethrough">esprimono</del><add place="above">e volevano almeno esprimere</add></subst></mod> l’amore
@@ -3044,7 +3063,7 @@
                                 <add place="inline" seq="2">gioia</add>
                             </subst>
                             <!--    <subst><del rend="strikethrough"><subst><del rend="strikethrough">gioia</del> <add place="inline">dispi</add></subst></del> <add place="inline">gioia</add></subst>-->
-                         </mod> i nuovi
+                        </mod> i nuovi
                         <lb n="15"/>superiori, dai quali mi speravo un apprezzamento felice de<mod change="#strato-5"><del rend="strikethrough">l</del></mod> le mie incli-
                         <lb n="16"/>nazion<mod change="#strato-5"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod>, e sotto i quali mi pareva sicura una vita <mod change="#strato-5"><subst><del rend="strikethrough">più</del> <add place="inline">meno</add></subst></mod> agitata da
                         <lb n="17"/>interni contrasti. Oh! quante vane speme! <mod change="#strato-5"><del rend="strikethrough" seq="3">Il Rettore <add place="above" seq="2"> <subst><del rend="strikethrough">pingue</del><add place="inline">burbero</add></subst> e <del rend="strikethrough">e grasso e monumentale</del><add place="below">pingue</add></add>mi fece
@@ -3074,7 +3093,7 @@
                                 <add place="inline" seq="2">vita</add>
                             </subst>
                             <!--  <subst seq="4"><del rend="strikethrough"><subst seq="4"><del rend="strikethrough">gioventù</del> <add place="above">vida</add></subst></del> <add place="inline">vita</add></subst>-->
-                           </mod><mod change="#strato-5"><subst><del rend="overwritten">. S</del><add place="superimposed">; s</add></subst>lanci <del rend="strikethrough">ora</del></mod> ammirabili de<mod change="#strato-5"><del rend="strikethrough" seq="3">l</del></mod> la sua
+                        </mod><mod change="#strato-5"><subst><del rend="overwritten">. S</del><add place="superimposed">; s</add></subst>lanci <del rend="strikethrough">ora</del></mod> ammirabili de<mod change="#strato-5"><del rend="strikethrough" seq="3">l</del></mod> la sua
                         <lb n="9"/>eloquenza, e che dimostravano la pienezza degli affetti che <mod change="#strato-5"><subst seq="2"><del rend="strikethrough">nutriva nel</del> <add place="above">gli traboccavano</add></subst> <add place="inline" seq="2">da</add>
                             <lb n="10"/><subst seq="1"><del rend="strikethrough">cuore</del> <add place="inline">l’animo</add></subst></mod>, la vastità de la fantasia ch’era confine a la sua zucca, furono
                         <lb n="11"/><mod change="#strato-5"><add place="above">questi</add></mod> motti molto <mod change="#strato-5"><subst><del rend="strikethrough">rino</del> <add place="inline">famigerati</add></subst></mod> <mod change="#strato-5"><subst seq="1"><del rend="overwritten">e</del><add place="superimposed">t</add></subst>ra 
@@ -3083,7 +3102,7 @@
                                 <del rend="strikethrough" seq="2"><add place="above">i colleghi</add></del>
                                 <add place="above" seq="2">i miei colleghi</add>
                             </subst> <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">molto fitti ne’ suoi discorsi</del> <add place="above">i colleghi</add></subst></del> <add place="above">i miei colleghi : «<del rend="strikethrough" xml:id="del_Beh">Beh</del> </add></subst>-->
-                             <add place="above" xml:id="add_Boff">Boff!</add> <substJoin target="#del_Beh #add_Boff" seq="3"/></mod> <hi rend="underline">beh! vedre-
+                            <add place="above" xml:id="add_Boff">Boff!</add> <substJoin target="#del_Beh #add_Boff" seq="3"/></mod> <hi rend="underline">beh! vedre-
                             <lb n="12"/>mo! vedremo!</hi> <mod change="#strato-5"><subst><del rend="strikethrough">Ho capito</del><add place="above">Ho capito</add></subst></mod>! <hi rend="underline">Beh! Beh!</hi> <mod change="#strato-5"><subst><del rend="strikethrough">Egli però non vide mai, né capì mai.</del> <add place="above">vedremo! vedremo;</add></subst></mod>
                         <lb n="13"/><mod change="#strato-5"><subst><del rend="strikethrough">Altra</del> <add place="inline">Io</add></subst></mod> <mod change="#strato-5"><subst><del rend="strikethrough">che</del> <add place="inline">credo</add></subst></mod> che altro non dicesse nella sua vita; e anzi dal ripetere
                         <lb n="14"/>frequente e assiduo di questi motti viene ad aumentare in chi
@@ -3124,8 +3143,8 @@
                                 <del rend="strikethrough" seq="2"><add place="inline">stare</add></del>
                                 <add place="inline" seq="2">essere</add>
                             </subst> <!-- 
-                            <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">anda</del> <add place="inline">stare</add></subst></del> <add place="inline">essere</add></subst>-->
-                        </mod> antipo-
+                                 <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">anda</del> <add place="inline">stare</add></subst></del> <add place="inline">essere</add></subst>-->
+                         </mod> antipo-
                         <lb n="20"/>de a l’altro.</mod></p> 
             </div>
             <div type="page">
@@ -3174,8 +3193,8 @@
                                 <del rend="strikethrough" seq="2"><add place="above">Tra questi</add></del>
                                 <add place="above" seq="2">Allora</add>
                             </subst> <!-- 
-                            <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In quella</del> <add place="above">Tra questi</add></subst></del> <add place="above">Allora</add></subst>-->
-                            appunto <add place="above" seq="3">io</add></mod> era tra questi ultimi.</mod></p>
+                                 <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In quella</del> <add place="above">Tra questi</add></subst></del> <add place="above">Allora</add></subst>-->
+                             appunto <add place="above" seq="3">io</add></mod> era tra questi ultimi.</mod></p>
             </div>
             <div type="page">
                 <pb n="13r2" facs="13r2.jpg"/>
@@ -3296,8 +3315,8 @@
                                     </subst>
                                 </add>
                             </subst> <!--  <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">il</del> <add place="inline">le</add></subst></del> <add place="inline"><del rend="strikethrough" seq="3">l'Odissea e</del> l'Iliade
-                                    <lb n="19"/>ne <subst seq="3"><del rend="strikethrough">le due</del> <add place="above">la</add></subst> stupend<choice resp="#ST"><sic>e</sic><corr>a</corr></choice> traduzion<subst seq="3"><del rend="overwritten">i</del><add place="superimposed">e</add></subst></add></subst>-->
-                           </mod> del Monti e <mod change="#strato-6"><del rend="strikethrough">e del Pindemonte</del>
+                                 <lb n="19"/>ne <subst seq="3"><del rend="strikethrough">le due</del> <add place="above">la</add></subst> stupend<choice resp="#ST"><sic>e</sic><corr>a</corr></choice> traduzion<subst seq="3"><del rend="overwritten">i</del><add place="superimposed">e</add></subst></add></subst>-->
+                         </mod> del Monti e <mod change="#strato-6"><del rend="strikethrough">e del Pindemonte</del>
                             <lb n="20"/><subst><del rend="strikethrough">e il <gap unit="char" quantity="5"/></del><add place="above">con note</add></subst></mod> di G. Mestica, e altre sparse poesie del Parini,</mod></p>
             </div>
             <div type="page">
@@ -3472,7 +3491,7 @@
                                                         <add place="superimposed">are</add>
                                                     </subst></add>
                                             </subst> <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">provocassi la fi</del> <add place="inline">provocassi</add></subst></del> <add place="inline">provoc<subst seq="3"><del rend="overwritten">ssi</del><add place="superimposed">are</add></subst></add></subst>-->
-                                            </mod> il mio sdegno verso</hi></mod></lem>
+                                        </mod> il mio sdegno verso</hi></mod></lem>
                             <rdg varSeq="1"><mod change="#strato-6">un mezzo per <mod change="#strato-6"><del rend="strikethrough">pur</del></mod> maggiormente attirar-
                                     <lb n="2"/>mi il dispregio de’ maestri, onde <mod change="#strato-6"><del rend="strikethrough">io</del></mod> maggiormente
                                     <lb n="3"/><mod change="#strato-6">
@@ -3570,22 +3589,22 @@
                                 <add place="above" seq="2">traeva</add>
                             </subst>
                             <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">trovavo</del> <add place="above">ritrovava</add></subst></del> <add place="inline">traeva</add></subst>-->
-                </mod> in un modo così diverso,<app><lem><mod change="#strato-10"><hi rend="underline"><mod change="#strato-6"><subst>
-                                <del rend="strikethrough" seq="1">da la mia</del>
-                                <del rend="strikethrough" seq="2">
-                                    <add place="above">da</add>
-                                </del>
-                                <add place="above" seq="2"><lb n="2"/>tornava</add>
-                            </subst></mod>
-                         tra i miei neri compagni</hi></mod></lem>
-                        <rdg varSeq="1"><mod change="#strato-6"><mod change="#strato-6"><subst>
-                                <del rend="strikethrough" seq="1">da la mia</del>
-                                <del rend="strikethrough" seq="2">
-                                    <add place="above">da</add>
-                                </del>
-                                <add place="above" seq="2"><lb n="2"/>tornava</add>
-                            </subst></mod>
-                         tra i miei neri compagni</mod></rdg>    
+                        </mod> in un modo così diverso,<app><lem><mod change="#strato-10"><hi rend="underline"><mod change="#strato-6"><subst>
+                                                <del rend="strikethrough" seq="1">da la mia</del>
+                                                <del rend="strikethrough" seq="2">
+                                                    <add place="above">da</add>
+                                                </del>
+                                                <add place="above" seq="2"><lb n="2"/>tornava</add>
+                                            </subst></mod>
+                                        tra i miei neri compagni</hi></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-6"><mod change="#strato-6"><subst>
+                                            <del rend="strikethrough" seq="1">da la mia</del>
+                                            <del rend="strikethrough" seq="2">
+                                                <add place="above">da</add>
+                                            </del>
+                                            <add place="above" seq="2"><lb n="2"/>tornava</add>
+                                        </subst></mod>
+                                    tra i miei neri compagni</mod></rdg>    
                         </app>, sotto la disciplina;
                         <lb n="3"/>tornavo alla rabbia <choice resp="#ST"><sic>alla</sic><corr>all'</corr></choice><mod change="#strato-6"><subst>
                                 <del rend="strikethrough" seq="1"> desider</del>
@@ -3596,29 +3615,148 @@
                             </subst></mod>
                         <lb n="4"/>del mio stato, e alcuna volta 
                         <app><lem varSeq="2"><mod change="#strato-9"><hi rend="underline">a la tentazione di toglier-
-                        <lb n="5"/>mi la vita.</hi></mod></lem>
-                        <rdg varSeq="1"><mod change="#strato-6">a la tentazione di toglier-
-                        <lb n="5"/>mi la vita.</mod></rdg></app></mod></p>
+                                        <lb n="5"/>mi la vita.</hi></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-6">a la tentazione di toglier-
+                                    <lb n="5"/>mi la vita.</mod></rdg></app></mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="6"/>Infelice! e avevo 15 anni! Quale fiore di maggio
                         <lb n="7"/>perduto, quale fuoco acceso per la distruzione de la
                         <lb n="8"/><mod change="#strato-6"><subst><del rend="#strikethrough">pace, de la tranquillità</del> <add place="inline">giovinezza!</add></subst></mod></mod></p>
                 <p rend="indent"><mod change="#strato-6">
                         <mod change="#strato-6"><subst seq="2">
-                            <del rend="strikethrough"><lb n="9"/>Questo stato terribile che io solea tenere represso
+                                <del rend="strikethrough"><lb n="9"/>Questo stato terribile che io solea tenere represso
                                     <lb n="10"/>e nascosto
-                            <subst seq="1"><del rend="strikethrough" > mi rendeva sconstro <gap unit="char" quantity="3"/>coi compagni
+                                    <subst seq="1"><del rend="strikethrough" > mi rendeva sconstro <gap unit="char" quantity="3"/>coi compagni
                                             <lb n="11"/>spesso
-                            </del>
-                                <add place="inline">rompeva dal profondo del mio animo risposte ardi-
+                                        </del>
+                                        <add place="inline">rompeva dal profondo del mio animo risposte ardi-
                                             <lb n="12"/>te al prefetto</add></subst></del>
-                            <add place="inline" seq="2">Quest’orribile stato interno era la
+                                <add place="inline" seq="2">Quest’orribile stato interno era la
                                     <lb n="13"/>cagione di tutte le mie scapataggini, di
                                     <lb n="14"/>tutte le mie svogliatezze:</add>
-                        </subst></mod>vivevo
-                        <lb n="15"/>una vita troppo scomposta, troppo anormale per un ragazzo del-
-                        <lb n="16"/>le mie inclinazioni, talché lo svolgimento di esse
+                            </subst></mod>vivevo <mod change="#strato-6"><subst><del rend="strikethrough">una condi</del>
+                        <lb n="15"/><add place="inline">una vita</add></subst></mod> troppo <mod change="#strato-8"><add place="above">scomposta, troppo</add></mod> anormale per un ragazzo del-
+                        <lb n="16"/>le mie in<mod change="#strato-6"><subst><del rend="overwritten">d</del><add place="superimposed">cl</add></subst></mod>inazioni, talché lo svolgimento di esse
                         <lb n="17"/>fu disviato, scorretto ed erroneo.</mod></p>
-                <p rend="indent"><mod change="#strato-6"></mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="18"/>Sentivo nel<mod change="#strato-6"><subst><del rend="overwritten">ll'</del><add place="superimposed">mio</add></subst></mod> interno che avrei potuto far di più,
+                        <lb n="19"/>ma non mi riusciva; <mod change="#strato-6"><subst><del rend="strikethrough">che mi</del><add place="inline">che</add></subst></mod> potevo farmi ammirare,
+                        <lb n="20"/>ma non mi riusciva; ch’anzi ero destinato a far <mod change="#strato-6"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">male</add></subst></mod></mod></p>
+            </div>
+            <div type="page">
+                <pb n="21v2" facs="21v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="22r2" facs="22r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-8"><add>64</add></mod></fw>
+                <p rend="indent"><mod change="#strato-6"><lb n="1"/><app><lem varSeq="2"><mod change="#strato-9"><hi rend="underline">tutto quello che doveva <app><lem varSeq="2"><mod change="#strato-8"><subst><del rend="strikethrough">far credere ai maestri</del><add place="above">cadere sotto giudizio</add></subst></mod></lem>
+                            <rdg></rdg>
+                            <rdg varSeq="1"><mod change="#strato-6">far credere ai maestri</mod></rdg>    
+                        </app>.</hi></mod></lem>
+                        <rdg varSeq="1">tutto quello che doveva <app><lem varSeq="2"><mod change="#strato-8"><subst><del rend="strikethrough">far credere ai maestri</del><add place="above">cadere sotto giudizio</add></subst></mod></lem>
+                            <rdg></rdg>
+                            <rdg varSeq="1"><mod change="#strato-6">far credere ai maestri</mod></rdg>    
+                        </app>.</rdg>    
+                        </app></mod></p> <!-- Codifica complessa-->
+                <p rend="indent"><mod change="#strato-6"><lb n="2"/>Mi ricordo <mod change="#strato-6"><add place="above">che</add></mod> una volta <mod change="#strato-6">f<del rend="overwritten" xml:id="del_eci">eci</del><add place="superimposed" xml:id="add_atti">atti</add>
+                            <del rend="strikethrough" xml:id="del_una">una</del>
+                            <add place="inline" xml:id="add_alcuni">alcuni</add>
+                        <substJoin target="#del_feci #add_atti #del_una #add_alcuni"/>    
+                        </mod> versi nel
+                        <lb n="3"/>metro di Courmayeur Carducciana per
+                        <mod change="#strato-6"><subst>
+                            <del rend="strikethrough" seq="1">il g</del>
+                            <del rend="strikethrough" seq="2">
+                                <add place="inline">il giorno</add>
+                            </del><lb n="4"/>
+                            <add place="inline" seq="2">la Prima Comunione</add>
+                        </subst></mod> d’un mio collega, li portai
+                        <lb n="5"/>a far vedere al dotto Borghi con la speranza di sentir-
+                        <lb n="6"/>mi lodare.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="7"/>Invece <mod change="#strato-6"><del rend="strikethrough" xml:id="del_conobbi">conobbi che</del> il <add place="above">dotto</add> maestro <add place="above" xml:id="add_nelsuo">nel suo grande gusto</add> <del rend="strikethrough" xml:id="del_uso">uso ai verbi di 
+                        <lb n="8"/>quel grande</del>
+                        <substJoin target="#del_conobbi #add_nelsuo #del_uso"/></mod>
+                        e nella sua vasta conoscenza, finì per
+                        <lb n="9"/>compatirmi <mod change="#strato-6"><subst><del rend="strikethrough">e per</del> <add place="inline">e per</add></subst></mod> dichiararmi inetto. </mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="10"/>Io un po’ scoraggiato, <mod change="#strato-6"><subst><del rend="strikethrough">un po'</del> <add place="inline">molto</add></subst></mod> superbo, presi
+                        <mod change="#strato-6"><subst><del rend="strikethrough">in <lb n="11"/>buon</del> <add place="inline">docilmente</add></subst></mod> l’avvertimento quantunque
+                        <lb n="12"/>non fossi tanto convinto.</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="13"/>Poveretto me! che razza di versi eran quelli! che
+                        <lb n="14"/><add place="above">brutto</add> concetto si <mod change="#strato-6"><add place="above" xml:id="add_sarebbe">sarebbe</add> f<del rend="overwritten" xml:id="del_aceva">aceva</del><add place="superimposed" xml:id="add_atto1">atto</add>
+                        <substJoin target="#del_aceva #add_atto1"/>
+                        </mod> di me chi<mod change="#strato-6"><add place="below">unque</add></mod> avesse letto quei versi!</mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="15"/>Pochi giorni dopo<mod change="#strato-6"><del rend="strikethrough">averli offerti all'amico</del></mod>, li
+                        <lb n="16"/>rilessi e mi parvero immensamente brutti; richiesi <mod change="#strato-6"><add place="above">con buone scuse</add></mod> la copia all’amico e li strappai sul-
+                        <lb n="17"/>l’istante. <app><lem varSeq="2"><mod change="#strato-11"><hi rend="underline">Il disordine che avevo nell'animo
+                        <lb n="18"/>si manifestava anche sull<mod change="#strato-6"><subst><del rend="overwritten"></del><add place="superimposed">a</add></subst></mod> penna!</hi></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-6">Il disordine che avevo nell'animo
+                        <lb n="19"/>si manifestava anche sull<mod change="#strato-6"><subst><del rend="overwritten"></del><add place="superimposed">a</add></subst></mod> penna!</mod></rdg>    
+                        </app></mod></p>
+                <p rend="indent"><mod change="#strato-6"><lb n="20"/>In quell’anno <mod change="#strato-8"><add place="above">o nell’anno di poi</add></mod> scrissi<app>
+                            <lem varSeq="2"><mod change="#strato-8"><del rend="strikethrough">poi</del></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-6">poi</mod></rdg>
+                </app><mod change="#strato-8">, molte altre poesie</mod></mod></p>
+            </div>
+            <div type="page">
+                <pb n="22v2" facs="22v2.jpg"/>
+                <fw place="bottom_right"><mod change="#strato-11">!</mod></fw>
+            </div>
+            <div type="page">
+                <pb n="23r2" facs="23r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-8">65</mod></fw>
+                <p rend="indent"><mod change="#strato-8"><lb n="1"/>di cui <app><lem varSeq="2"><mod change="#strato-9"><del rend="strikethrough">ne</del></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-8">ne</mod></rdg>
+                        </app>riporterò qui le migliori. (V. Quaderni Natale <choice resp="#ST"><sic>Infanzi</sic><corr>Infanzia</corr></choice>)
+                        <lb n="2"/></mod></p>
+                <p rend="indent"><mod change="#strato-8"><lb n="3"/>Tutte queste l’avevo <mod change="#strato-8"><subst><del rend="strikethrough">riuni</del> <add place="inline">raccolte</add></subst></mod> in due quaderni,
+                        <lb n="4"/>che io tenevo con la massima cura e nascosti come tesori<app><lem varSeq="2"><mod change="#strato-9"><del rend="strikethrough">d'oro</del></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-8">d'oro</mod></rdg>
+                        </app>.</mod></p>
+                <p rend="indent"><mod change="#strato-8"><lb n="5"/>Nel maggio 1909 le feci leggere al mio Prefetto,
+                        <lb n="6"/>il quale in ricambio mi <mod change="#strato-8"><subst><del rend="strikethrough">fece leggere</del> <add place="inline">dette</add></subst></mod> le sue. Però
+                        <lb n="7"/>anche da questa mostra non potei ricavarne elogi,
+                        <lb n="8"/>tanto meno che in conseguenza del cambio fatto
+                        <lb n="9"/>io venivo <mod change="#strato-8"><subst><del rend="strikethrough">come</del> <add place="inline">anche</add></subst></mod> come minore d’anni e di<mod change="#strato-8"><subst><del rend="strikethrough">dotto</del> 
+                        <lb n="10"/><add place="inline">esercizio</add></subst></mod>, a <app><lem varSeq="2"><mod change="#strato-9"><subst><del rend="strikethrough">soffrirne</del> <add place="above">subirne</add></subst></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-8">soffrirne</mod></rdg>
+                        </app> del discredito <app><lem varSeq="2"><mod change="#strato-9"><subst><del rend="strikethrough">e della</del> <add place="above">per</add></subst></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-8">e della</mod></rdg>
+                        </app> <mod change="#strato-8"><subst><del rend="strikethrough">minoranza</del><add place="above">inferiorità</add></subst></mod>.
+                        <lb n="11"/><mod change="#strato-8"><del rend="strikethrough">Realmente</del>
+                            <subst><del rend="overwritten">q</del><add place="superimposed">Q</add></subst>uesta</mod> v’era allora <mod change="#strato-8"><subst><del rend="strikethrough">real</del> <add place="inline">effettivamente</add></subst></mod>, però
+                        <lb n="12"/>non tanto da doverne ricavare <mod change="#strato-8"><subst><del rend="strikethrough">la massima</del> <add place="inline">il consiglio</add></subst></mod> che
+                        <lb n="13"/>il maggiore mi dette, di non comporre cioè nessun
+                        <lb n="14"/>altro verso fin a vent’anni.</mod></p>
+                <p rend="indent"><mod change="#strato-8"><lb n="15"/>Forse il mio <mod change="#strato-8"><add place="above">caro</add></mod> Prefetto sperava che col crescere mi
+                        <lb n="16"/><app><lem varSeq="2"><mod change="#strato-9"><add place="above">venire a </add>cessa<subst><del rend="overwritten">ss</del><add place="superimposed">r</add></subst>e</mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-8">cessasse</mod></rdg>
+                        </app> a cessar la passione di scrivere e così mandassi
+                        <lb n="17"/>in fumo <mod change="#strato-8"><subst><del rend="strikethrough">le m</del> <add place="inline">i miei</add></subst></mod> principi, e venissi a ritrattar-
+                        <lb n="18"/>mi dall’inclinazione per cui io mi sentivo nato e desti-
+                        <lb n="19"/>nato, mostrando insieme <mod change="#strato-8"><add place="above">la <del rend="strikethrough">mia</del> pazzia</add></mod> di essermi
+                        <lb n="20"/>creduto, senza esserlo, poeta.</mod></p>
+            </div>
+            <div type="page">
+                <pb n="23v2" facs="23v2.jpg"/>
+            </div>
+            <div type="page">
+                <pb n="24r2" facs="24r2.jpg"/>
+                <fw place="top_right" type="pageNum"><mod change="#strato-8">66</mod></fw>
+                <p rend="indent"><mod change="#strato-8"><lb n="1"/>Tutti i canti che da quell’età fino a vent’anni composi
+                        <lb n="2"/>pare che non diano ragione <mod change="#strato-8"><subst><del rend="strikethrough">al poeta</del><add place="above">al mio superiore</add></subst> che
+                            <subst><add place="above" seq="2">s'atteggiava</add><lb n="3"/>
+                                <del rend="strikethrough" seq="1">voleva <del rend="strikethrough" xml:id="del_fare">fare</del>
+                                    <substJoin target="#del_fare #add_essere" seq="1"/>        
+                                </del>
+                                    <del rend="strikethrough" seq="2"><add place="above" xml:id="add_essere">essere</add></del>
+                                </subst> non solo <subst><del rend="strikethrough">al</del><add place="above">a</add></subst> giudice, ma anche a <del rend="strikethrough">l'</del> indovino. <del rend="strikethrough">(vero vate!)</del></mod>
+                        <lb n="4"/><app><lem varSeq="2"><mod change="#strato-9"><del rend="strikethrough"><mod change="#strato-8"><del rend="strikethrough">Però</del> <subst><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
+                        <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a quinta ginnasiale e poi</corr></choice> Conversione.</del></mod></lem>
+                    <rdg varSeq="1"><mod change="#strato-8"><mod change="#strato-8"><del rend="strikethrough" seq="2">Però</del> <subst seq="1"><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
+                        <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a Quinta ginnasiale e poi</corr></choice> Conversione.</mod></rdg>        
+                        </app></mod></p>
+                <p rend="indent"><mod change="#strato-8"><lb n="6"/><del rend="strikethrough">Fu</del><add place="above">Nel febbraio di</add> quell’anno 1909, il sedicesimo di mia
+                        <lb n="7"/>età, avvenne il fatto più importante della
+                        <lb n="8"/>mia giovinezza.</mod> <mod change="#strato-9"><add place="inline">Tolsi l'abito talare</add></mod></p>
+                <p rend="indent"><mod change="#strato-8"><lb n="9"/><choice><sic><hi rend="apice">(1)</hi>Scuola del Borghi a quinta ginnasiale e poi</sic><corr/></choice></mod></p>
             </div>
         </body>
     </text>
