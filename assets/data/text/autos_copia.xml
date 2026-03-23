@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="#http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="#http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Prova a mettere questo nel tei all:
      <?xml version="1.0" encoding="UTF-8"?>
-     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+     <?xml-model href="#http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -69,6 +69,30 @@
                 </msDesc>
                 
                 <listPerson> <!-- Guarda il codice pelavicino per la listperson e la listplace; così come la bibliografia-->
+                    <person xml:id="Stefano_Tuscano">
+                        <persName>Stefano Tuscano</persName>
+                        <note>
+                            <p>1893-1966. Scrittore pientino autore di Autos.</p>
+                        </note>
+                    </person>
+                    <person xml:id="Olindo_Tuscano">
+                        <persName>Olindo Tuscano</persName>
+                        <note>
+                            <p>Padre di Stefano Tuscano, falegname.</p>
+                        </note>
+                    </person>
+                    <person xml:id="genitori">
+                        <persName>Olindo Tuscano e Anna Riendi</persName>
+                        <note>
+                            <p>Padre e madre di Stefano Tuscano.</p>
+                        </note>
+                    </person>
+                    <person xml:id="maestro_elementare">
+                        <persName>maestro elementare</persName>
+                        <note>
+                            <p>Il maestro di Tuscano durante l'istruzione elementare; non è stato per ora identificato.</p>
+                        </note>
+                    </person>
                     <person xml:id="Alfieri">
                         <persName>Vittorio Alfieri</persName>
                         <note>
@@ -104,6 +128,9 @@
                 </listPerson>
                 <listRelation>
                     <relation name="madre" active="#Anna_Riedi" passive="#Stefano_Tuscano" />
+                    <relation name="padre" active="#Olindo_Tuscano" passive="#Stefano_Tuscano" />
+                    <relation name="maestro" active="#maestro_elementare" passive="#Stefano_Tuscano" />
+                    <relation name="genitori" active="#genitori" passive="#Stefano_Tuscano" />
                 </listRelation>
                 <listEvent>
                     <event xml:id="Tentato_suicidio">
@@ -242,7 +269,7 @@
                     </mod>
                     <note n="1">La cancellature sono ribatite con il lapis - E</note>
                     <mod change="#strato-4">
-                        <del rend="strikethrough">Pazzo d'Italia</del>
+                        <del rend="strikethrough">Pazzo d'Italia</del> <!-- La posizione non è corretta, ma altrimenti si ha una codifica errata  -->
                     </mod>
                 </ab>
             </div>
@@ -262,7 +289,7 @@
                         <lb n="8"/>S’io mi fossi corretto dai vizî
                         <lb n="9"/>d’allora, oggi sarei forse più
                         <lb n="10"/>fortunato. Forse?!.
-                        <lb n="11"/><add rend="indent-center">Tuscano</add> <!-- Poco ortodosso-->
+                        <lb n="11"/><add rend="indent-center"><persName ref="#Stefano_Tuscano">Tuscano</persName></add> <!-- Poco ortodosso-->
                         <lb n="12"/><eventName ref="#Tentato_suicidio">1921</eventName></mod></p> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
                 
             </div>
@@ -364,7 +391,7 @@
                         <lem varSeq="3"><mod change="#strato-4"><del rend="strikethrough">
                                     
                                     Già cominciavo<lb n="13"/>a veder di mal occhio i maestri, a vedermi già dotto, a ri- <lb n="14"/>tirarmi dagli altri
-                                    compagni, di cui non nutriva che disistima<lb n="15"/>  o gelosia, a disubbidire a’ genitori, ad aggrottar le ciglia quan-<lb n="16"/>do incontravo la
+                                    compagni, di cui non nutriva che disistima<lb n="15"/>  o gelosia, a disubbidire a’ <persName ref="#genitori">genitori</persName>, ad aggrottar le ciglia quan-<lb n="16"/>do incontravo la
                                     gente e andarmene leggendo a spasso solo e  con rado passo,<lb n="17"/>ad esigere la risposta alle mie domande, alle<lb n="18"/>mie scappellate.
                                     
                                 </del></mod></lem>
@@ -378,7 +405,7 @@
                         <rdg varSeq="2">
                             <mod change="#strato-1">
                                 <del rend="strikethrough">Già cominciavo <lb n="13"/> a veder di mal occhio i maestri, a vedermi già dotto, a ri-<lb n="14"/>tirarmi dagli altri
-                                    compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ genitori, ad aggrottar le ciglia quan-<lb n="16"/> do incontravo la
+                                    compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ <persName ref="#genitori">genitori</persName>, ad aggrottar le ciglia quan-<lb n="16"/> do incontravo la
                                     gente e andarmene leggendo a spasso solo e  con
                                     <add xml:id="add_rado_1" place="above">rado</add> 
                                     passo 
@@ -389,7 +416,7 @@
                         </rdg>
                         <rdg varSeq="1">
                             <mod change="#strato-0">Già cominciavo<lb n="13"/>a veder di mal occhio i maestri, a vedermi già dotto, a ri-<lb n="14"/>tirarmi dagli altri
-                                compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ genitori, ad aggrottar le ciglia quan-<lb n="16"/>do incontravo la
+                                compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ <persName ref="#genitori">genitori</persName>, ad aggrottar le ciglia quan-<lb n="16"/>do incontravo la
                                 gente e andarmene <add place="above">leggendo</add> a spasso solo <add place="above">e </add>con passo <lb n="17"/> piano,
                                 <subst><del rend="strikethrough">legg</del> <add place="inline">ad esigere</add></subst> la risposta alle mie domande, alle <lb n="18"/> mie scappellate.</mod>
                             
@@ -572,7 +599,7 @@
                     mi consolò <lb n="16"/>ineffabilmente, la paura 
                     <mod change="#strato-0">
                         <del rend="strikethrough">s</del>cessò</mod>, non vidi, non sentii più nulla.<lb n="17"/>
-                    La mattina non raccontai nulla alla <persName ref="Anna_Riedi">mamma</persName>, che mi venne <lb n="18"/>a destare; per non parer pusillanime e
+                    La mattina non raccontai nulla alla <persName ref="#Anna_Riedi">mamma</persName>, che mi venne <lb n="18"/>a destare; per non parer pusillanime e
                     <mod change="#strato-0">
                         <del rend="strikethrough">d</del></mod>
                     cader dalla stima<lb n="19"/> di ragazzo coraggioso o meglio di uomo già serio e esperiente.</p>
@@ -675,8 +702,7 @@
                     <lb/><l n="31">Ahi dolce aurora bella</l>
                     <lb/><l n="32">quanto mi consolasti</l>
                     <lb/><l n="33">che tu, <mod change="#strato-0">
-                            <subst> <del rend="overwritten">q</del>
-                                <add place="superimposed">c</add></subst></mod>ome sorella,</l>
+                            <subst> <del rend="overwritten">q</del><add place="superimposed">c</add></subst></mod>ome sorella,</l>
                     <lb/><l n="34">venisti e mi consolasti,</l>
                     <lb/><l n="35">col bacio <mod change="#strato-0">
                             <subst><add place="above">e la </add>
@@ -700,8 +726,7 @@
                         <subst><del rend="overwritten"><gap quantity="4"  unit="char"/></del><add place="superimposed">isse</add> 
                         </subst><del rend="strikethrough">sen</del>
                     </mod>di maggior valore col tempo e co<mod change="#strato-0">
-                        <subst><del rend="overwritten">ll'</del>
-                            <add place="superimposed">n l’</add></subst></mod>oblio;
+                        <subst><del rend="overwritten">ll'</del><add place="superimposed">n l’</add></subst></mod>oblio;
                     <lb n="20"/>di quando in quando però mi era dolce andare a ricavarla e specialmente
                 </p>
             </div>
@@ -712,7 +737,7 @@
                 <pb n="6r1" facs="6r.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-2"><add>6</add></mod></fw>
                 <p rend="indent">
-                    <lb n="1"/>quando il maestro o la <persName ref="Anna_Riedi">mamma</persName> m’aveva <mod change="#strato-0">
+                    <lb n="1"/>quando il <persName ref="#maestro_elementare">maestro</persName> o la <persName ref="#Anna_Riedi">mamma</persName> m’aveva <mod change="#strato-0">
                         <subst><del rend="strikethrough">bro</del>
                             <add place="inline">rimproverato</add></subst></mod> la condotta,
                     <lb n="2"/>e il mio <mod change="#strato-0">
@@ -743,12 +768,12 @@
                     apprendevo<mod change="#strato-1"><add place="above">, non ho detto,</add></mod> 
                     i principi di lingua latina da<mod change="#strato-0"><del rend="strikethrough">l</del></mod> quel
                     <lb n="5"/>caro <mod change="#strato-0"><subst><del rend="strikethrough">amico</del>
-                            <add place="above">maestro</add></subst></mod> sopra nominato, il quale, tra le altre cose, aveva fatto un <mod change="#strato-0">
+                            <add place="above"><persName ref="#maestro_elementare">maestro</persName></add></subst></mod> sopra nominato, il quale, tra le altre cose, aveva fatto un <mod change="#strato-0">
                         <del rend="strikethrough">i</del>
                     </mod> libret-
                     <lb n="6"/>tino appositamente per tenere giorno per gior<mod change="#strato-0">
                         <subst><del rend="overwritten">g</del>
-                            <add place="superimposed">n</add></subst></mod>o informati i miei genitori
+                            <add place="superimposed">n</add></subst></mod>o informati i miei <persName ref="#genitori">genitori</persName>
                     <lb n="7"/><mod change="#strato-0"><del rend="strikethrough">di come studiavo, di come</del></mod>
                     del mio studio e della mia condotta. 
                     <mod change="#strato-0"><add place="above">Quando ci penso</add> <subst>
@@ -777,8 +802,8 @@
                          <del rend="strikethrough">sentivo anche lui riportare</del>
                          <add place="above">poi</add></subst></del>
                          <add place="above">insomma</add></subst>-->
-                    <lb n="12"/>il maestro portarlo per esempio. Un giorno <mod change="#strato-1"><add place="above">di novembre</add></mod> io mi piccai
-                    <lb n="13"/>da ostinato, il maestro <mod change="#strato-0"><del rend="strikethrough">lo stesso</del></mod> si piccò da ostinato; lui a volermi 
+                    <lb n="12"/>il <persName ref="#maestro_elementare">maestro</persName> portarlo per esempio. Un giorno <mod change="#strato-1"><add place="above">di novembre</add></mod> io mi piccai
+                    <lb n="13"/>da ostinato, il <persName ref="#maestro_elementare">maestro</persName> <mod change="#strato-0"><del rend="strikethrough">lo stesso</del></mod> si piccò da ostinato; lui a volermi 
                     <lb n="14"/>fare imparare, io <mod change="#strato-0">
                         <subst><del rend="strikethrough" seq="2">
                                 <add place="above">a</add>
@@ -795,7 +820,7 @@
                     <lb n="15"/>tutti i casi per filo e per segno, io a ripeterli errati, 
                     <mod change="#strato-1"><add place="above">lui, a portarmi per modello <subst><del rend="strikethrough">l'altro</del><add place="inline"> il compagno</add></subst>,
                             <note resp="ST" n="2" type="critical">L’articolo «l’», che concorda con il primitivo «altro» non è cassato da Tuscano, ma è da intendersi tale. </note> io a dire che facea meglio di lui.</add></mod> Il gioco durò
-                    <lb n="16"/>poco che il maestro annoiato <mod change="#strato-0"><add place="above">severamente mi sgridò </add></mod>
+                    <lb n="16"/>poco che il <persName ref="#maestro_elementare">maestro</persName> annoiato <mod change="#strato-0"><add place="above">severamente mi sgridò </add></mod>
                     mi fece alzare ed era per licenziarmi,
                     <lb n="17"/><mod change="#strato-0"><add place="above">con una sfilza di “asino; ciuco; somaro; scapato; duro”</add></mod>, quando io, in un atto d’ira
                     <mod change="#strato-0"><del rend="strikethrough">e d'invidia</del></mod> <note n="3" resp="#ST" type="critical">La congiunzione «e», seppur non cassata, è da intendersi tale</note>
@@ -835,11 +860,11 @@
                     <lb n="5"/>poloso, severo, veritiero, ch’apriva <mod change="#strato-0"><del rend="strikethrough">le mend</del></mod>
                     <!-- Meglio?
                          <mod change="#strato-0"><subst><del rend="strikethrough">le mend</del><add place="inline">le mie</add></subst></mod> -->le mie bricconate alla
-                    <lb n="6"/>mamma e piansi. <mod change="#strato-0">
+                    <lb n="6"/><persName ref="#Anna_Riedi">mamma</persName> e piansi. <mod change="#strato-0">
                         <subst><del rend="strikethrough">Dopo</del><add place="inline">Giunta</add></subst></mod> l’ora solita tornai a casa, 
                     <mod change="#strato-0"><del rend="strikethrough">indifferente</del></mod> 
                     <lb n="7"/>mal celando con l’indifferenza quello ch’io avevo sof-
-                    <lb n="8"/>ferto e soffriva nell’animo; corsi alla mia stanzina, mi cadde 
+                    <lb n="8"/>ferto e soffriva nell'animo; corsi alla mia stanzina, mi cadde 
                     <mod change="#strato-0"><subst><del rend="strikethrough">l'</del>
                             <add place="above">sott’</add></subst></mod>occhio 
                     <lb n="9"/>quel <mod change="#strato-0">libr<subst>
@@ -875,7 +900,7 @@
                         <del rend="strikethrough">mi</del>
                     </mod> fui avvisato da mia sorella e amorosamente
                     <lb n="13"/>rimproverato di una certa insubordinazione commessa a scuola,
-                    <lb n="14"/>per la quale la <persName ref="Anna_Riedi">mamma</persName>, secondo il solito, m’avrebbe tolto una pietanza
+                    <lb n="14"/>per la quale la <persName ref="#Anna_Riedi">mamma</persName>, secondo il solito, m’avrebbe tolto una pietanza
                     <lb n="15"/>a cena. Io mi portai allora come un uomo uso
                     <lb n="16"/>a stare senza cena 
                     <mod change="#strato-0"><add place="above">o poco meno</add></mod>, senza adirarsi con 
@@ -910,7 +935,7 @@
                     <lb n="2"/>come d’un delitto, 
                     <mod change="#strato-0">
                         <subst><del rend="strikethrough">contro</del><add place="inline">in specie </add></subst>
-                    </mod> per avere addolorato la <persName ref="Anna_Riedi">mamma</persName>, alla quale fin da’ primi anni mi sentiva fortemente 
+                    </mod> per avere addolorato la <persName ref="#Anna_Riedi">mamma</persName>, alla quale fin da’ primi anni mi sentiva fortemente 
                     <mod change="#strato-0"><subst><del rend="strikethrough">attratto dall’affetto </del>
                             <add place="below">avvinto</add></subst></mod>
                     <lb n="3"/>da un affetto ch’io credo, massime oggi, raro; forse, son quasi
@@ -1430,7 +1455,7 @@
                         <lb n="3"/>rimbalzo a <mod change="#strato-1">
                             <del rend="strikethrough">ve</del></mod> non veder di buon occhio né me, né quello
                         <lb n="4"/>che sapevo fare. Spesso piansi, <mod change="#strato-1"><add place="above">spesso</add></mod> disperai, spesso sospi
-                        <lb n="5"/>rai le carezze della <persName ref="Anna_Riedi">mamma</persName>, spesso mi pentii d’aver
+                        <lb n="5"/>rai le carezze della <persName ref="#Anna_Riedi">mamma</persName>, spesso mi pentii d’aver
                         <lb n="6"/>
                         <mod change="#strato-1"><subst><del rend="strikethrough">preso</del>
                                 <add place="inline">vestito</add></subst></mod> quell’abito, o meglio d’essermi messi sotto
@@ -1502,7 +1527,7 @@
                                     <del rend="strikethrough">mia</del>
                                     <lb n="3"/>
                                     <add place="above">mia cara</add>
-                                    <persName ref="Anna_Riedi">mamma</persName>
+                                    <persName ref="#Anna_Riedi">mamma</persName>
                                 </add>
                             </subst>
                             
@@ -1531,7 +1556,7 @@
                              
                              <add place="inline"><del rend="strikethrough" seq="5">mia </del>
                              <lb n="3"/><add place="above" seq="6">
-                             la mia cara</add> <persName ref="Anna_Riedi">mamma</persName></add></subst>-->
+                             la mia cara</add> <persName ref="#Anna_Riedi">mamma</persName></add></subst>-->
                          mi mise in mano un librettino scollegato,
                         <lb n="4"/>che conteneva 4 tragedie dell’<persName ref="#Alfieri">Alfieri</persName>. 
                         
