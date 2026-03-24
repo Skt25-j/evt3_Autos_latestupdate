@@ -75,6 +75,12 @@
                             <p>1893-1966. Scrittore pientino autore di Autos.</p>
                         </note>
                     </person>
+                    <person xml:id="Raffaella_Tuscano">
+                        <persName>Raffaella Tuscano</persName>
+                        <note>
+                            <p>Sorella maggiore dello scrittore Stefano Tuscano.</p> <!-- Perchè non Giuseppina o Rosa, la minore? Stando a ciò che dice Tuscano a 7r1, la sorella lo rimprovera del comportamento a scuola; difficile, dunque, che si tratti della sorella minore, ma più probabile che si riferisca a quella maggiore-->
+                        </note>
+                    </person>
                     <person xml:id="Olindo_Tuscano">
                         <persName>Olindo Tuscano</persName>
                         <note>
@@ -87,10 +93,22 @@
                             <p>Padre e madre di Stefano Tuscano.</p>
                         </note>
                     </person>
-                    <person xml:id="maestro_elementare">
-                        <persName>maestro elementare</persName>
+                    <person xml:id="maestro_Buoni">
+                        <persName>maestro Buoni</persName>
                         <note>
-                            <p>Il maestro di Tuscano durante l'istruzione elementare; non è stato per ora identificato.</p>
+                            <p>Il maestro di Tuscano durante l'istruzione elementare, identificato come Buoni.</p>
+                        </note>
+                    </person>
+                    <person xml:id="Don_Salvatore_Benocci">
+                        <persName>Salvatore Benocci</persName>
+                        <note>
+                            <p>Zio prete di Stefano Tuscano, Canonico della cattedrale di Pienza, che avvia l'Autore ai primi studi.</p>
+                        </note>
+                    </person>
+                    <person xml:id="Rettore_Seminario">
+                        <persName>Rettore del Seminario</persName>
+                        <note>
+                            <p>Rettore del Seminario Vescovile di San Francesco in Pienza.</p>
                         </note>
                     </person>
                     <person xml:id="Alfieri">
@@ -129,8 +147,10 @@
                 <listRelation>
                     <relation name="madre" active="#Anna_Riedi" passive="#Stefano_Tuscano" />
                     <relation name="padre" active="#Olindo_Tuscano" passive="#Stefano_Tuscano" />
-                    <relation name="maestro" active="#maestro_elementare" passive="#Stefano_Tuscano" />
+                    <relation name="maestro" active="#maestro_Buoni" passive="#Stefano_Tuscano" />
                     <relation name="genitori" active="#genitori" passive="#Stefano_Tuscano" />
+                    <relation name="sorella maggiore" active="#Raffaella_Tuscano" passive="#Stefano_Tuscano" />
+                    <relation name="zio Canonico" active="#Don_Salvatore_Benocci" passive="#Stefano_Tuscano" />
                 </listRelation>
                 <listEvent>
                     <event xml:id="Tentato_suicidio">
@@ -146,6 +166,34 @@
                         <ref target="https://it.wikisource.org/...">Testo online</ref>
                     </bibl>
                 </listBibl>
+                <listPlace>
+                    <place xml:id="Monte_Amiata">
+                        <settlement type="località">Monte Amiata</settlement>
+                        <placeName>Monte Amiata</placeName>
+                        <district type="comune">Siena</district>
+                    </place>
+                    <place xml:id="Orcia">
+                        <settlement type="fiume">Orcia</settlement>
+                        <placeName>Orcia</placeName>
+                        <district type="comune">Siena</district>
+                    </place>
+                    <place xml:id="Val_d'Orcia">
+                        <settlement type="località">Val d'Orcia</settlement>
+                        <placeName>Val d'Orcia</placeName>
+                        <district type="comune">Siena</district>
+                    </place>
+                    <place xml:id="Cetona">
+                        <settlement type="comune">Cetona</settlement>
+                        <placeName>Cetona</placeName>
+                        <district type="comune">Siena</district>
+                    </place>
+                    <place xml:id="Seminario_Vescovile">
+                        <settlement type="comune">Pienza</settlement>
+                        <placeName>Seminario Vescovile di San Francecso</placeName>
+                        <district type="comune">Pienza</district>
+                        <p>Il convento di S. Francesco fu soppresso nel 1653 da mons. Giovanni Spennanzi, vescovo di Pienza, con l'intenzione di erigervi un seminario vescovile, secondo le disposizioni del Concilio di Trento, ma morì prima che potesse essere aperto. La vacanza di 6 anni della sede vescovile di Pienza e le pressioni della cittadinanza fecero sì il progetto venisse accantonato e che papa Alessandro III nel 1659 facesse ritornare nel convento i frati, dove rimasero fino al 1788, quando con decreto vescovile del 2 novembre il convento fu nuovamente soppresso. Fu così che nel 1792 fu decretata l'istituzione in tali locali del Seminario. Per aumentarne il patrimonio gli furono subito assegnati i fondi del convento soppresso di Radicofani e alcune rendite del piccolo Seminario di Chiusi, che fu a questo unito. Successivamente furono aggiunte le rendite di un podere acquistato a tale scopo dal vescovo Giacinto Pippi e dal 1825 l'assegnazione dell' 1% di tutti i benefici ecclesiastici vacanti.</p>
+                    </place>
+                </listPlace>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -737,7 +785,7 @@
                 <pb n="6r1" facs="6r.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-2"><add>6</add></mod></fw>
                 <p rend="indent">
-                    <lb n="1"/>quando il <persName ref="#maestro_elementare">maestro</persName> o la <persName ref="#Anna_Riedi">mamma</persName> m’aveva <mod change="#strato-0">
+                    <lb n="1"/>quando il <persName ref="#maestro_Buoni">maestro</persName> o la <persName ref="#Anna_Riedi">mamma</persName> m’aveva <mod change="#strato-0">
                         <subst><del rend="strikethrough">bro</del>
                             <add place="inline">rimproverato</add></subst></mod> la condotta,
                     <lb n="2"/>e il mio <mod change="#strato-0">
@@ -768,7 +816,7 @@
                     apprendevo<mod change="#strato-1"><add place="above">, non ho detto,</add></mod> 
                     i principi di lingua latina da<mod change="#strato-0"><del rend="strikethrough">l</del></mod> quel
                     <lb n="5"/>caro <mod change="#strato-0"><subst><del rend="strikethrough">amico</del>
-                            <add place="above"><persName ref="#maestro_elementare">maestro</persName></add></subst></mod> sopra nominato, il quale, tra le altre cose, aveva fatto un <mod change="#strato-0">
+                            <add place="above"><persName ref="#maestro_Buoni">maestro</persName></add></subst></mod> sopra nominato, il quale, tra le altre cose, aveva fatto un <mod change="#strato-0">
                         <del rend="strikethrough">i</del>
                     </mod> libret-
                     <lb n="6"/>tino appositamente per tenere giorno per gior<mod change="#strato-0">
@@ -802,8 +850,8 @@
                          <del rend="strikethrough">sentivo anche lui riportare</del>
                          <add place="above">poi</add></subst></del>
                          <add place="above">insomma</add></subst>-->
-                    <lb n="12"/>il <persName ref="#maestro_elementare">maestro</persName> portarlo per esempio. Un giorno <mod change="#strato-1"><add place="above">di novembre</add></mod> io mi piccai
-                    <lb n="13"/>da ostinato, il <persName ref="#maestro_elementare">maestro</persName> <mod change="#strato-0"><del rend="strikethrough">lo stesso</del></mod> si piccò da ostinato; lui a volermi 
+                    <lb n="12"/>il <persName ref="#maestro_Buoni">maestro</persName> portarlo per esempio. Un giorno <mod change="#strato-1"><add place="above">di novembre</add></mod> io mi piccai
+                    <lb n="13"/>da ostinato, il <persName ref="#maestro_Buoni">maestro</persName> <mod change="#strato-0"><del rend="strikethrough">lo stesso</del></mod> si piccò da ostinato; lui a volermi 
                     <lb n="14"/>fare imparare, io <mod change="#strato-0">
                         <subst><del rend="strikethrough" seq="2">
                                 <add place="above">a</add>
@@ -820,7 +868,7 @@
                     <lb n="15"/>tutti i casi per filo e per segno, io a ripeterli errati, 
                     <mod change="#strato-1"><add place="above">lui, a portarmi per modello <subst><del rend="strikethrough">l'altro</del><add place="inline"> il compagno</add></subst>,
                             <note resp="ST" n="2" type="critical">L’articolo «l’», che concorda con il primitivo «altro» non è cassato da Tuscano, ma è da intendersi tale. </note> io a dire che facea meglio di lui.</add></mod> Il gioco durò
-                    <lb n="16"/>poco che il <persName ref="#maestro_elementare">maestro</persName> annoiato <mod change="#strato-0"><add place="above">severamente mi sgridò </add></mod>
+                    <lb n="16"/>poco che il <persName ref="#maestro_Buoni">maestro</persName> annoiato <mod change="#strato-0"><add place="above">severamente mi sgridò </add></mod>
                     mi fece alzare ed era per licenziarmi,
                     <lb n="17"/><mod change="#strato-0"><add place="above">con una sfilza di “asino; ciuco; somaro; scapato; duro”</add></mod>, quando io, in un atto d’ira
                     <mod change="#strato-0"><del rend="strikethrough">e d'invidia</del></mod> <note n="3" resp="#ST" type="critical">La congiunzione «e», seppur non cassata, è da intendersi tale</note>
@@ -898,9 +946,9 @@
                     <lb n="12"/>All’ora della cena 
                     <mod change="#strato-0">
                         <del rend="strikethrough">mi</del>
-                    </mod> fui avvisato da mia sorella e amorosamente
+                    </mod> fui avvisato da mia <persName ref="#Raffaella_Tuscano">sorella</persName> e amorosamente
                     <lb n="13"/>rimproverato di una certa insubordinazione commessa a scuola,
-                    <lb n="14"/>per la quale la <persName ref="#Anna_Riedi">mamma</persName>, secondo il solito, m’avrebbe tolto una pietanza
+                    <lb n="14"/>per la quale la <persName ref="#Anna_Riedi">mamma</persName>, secondo il solito, m'avrebbe tolto una pietanza
                     <lb n="15"/>a cena. Io mi portai allora come un uomo uso
                     <lb n="16"/>a stare senza cena 
                     <mod change="#strato-0"><add place="above">o poco meno</add></mod>, senza adirarsi con 
@@ -916,7 +964,7 @@
                             <add place="superimposed">broncio</add></subst></mod> come un 
                     <mod change="#strato-0"><subst><del rend="overwritten">uomo</del>
                             <add place="superimposed">omino</add></subst></mod>
-                    <lb n="18"/>di 10 anni offeso nel più tenero, nel più caro; ma il maestro ch’era
+                    <lb n="18"/>di 10 anni offeso nel più tenero, nel più caro; ma il <persName ref="#maestro_Buoni">maestro</persName> ch’era
                     <lb n="19"/>buonissimo e sapeva conoscere <mod change="#strato-0">
                         <subst><del rend="strikethrough">la</del>
                             <add place="inline">l’</add></subst></mod>indole degli scolari e anche la 
@@ -957,8 +1005,8 @@
                 </note>
                 <p rend="indent">
                     <lb n="1"/>Verso l’aprile dell’anno 1904 mi ricordo di aver fatto un sonetto 
-                    <lb n="2"/>alla <mod change="#strato-0"> <subst><del rend="strikethrough">val</del><add place="inline">mia valle</add></subst>
-                    </mod> d’Orcia, il quale <mod change="#strato-0">
+                    <lb n="2"/>alla <placeName ref="#Val_d'Orcia"><mod change="#strato-0"> <subst><del rend="strikethrough">val</del><add place="inline">mia valle</add></subst>
+                    </mod> d’Orcia</placeName>, il quale <mod change="#strato-0">
                         <subst><del rend="strikethrough">non potè</del>
                             <add place="inline">andò</add></subst></mod> sperso 
                     <app><lem varSeq="2"><mod change="#strato-1"><add place="above">e del quale <del rend="strikethrough">ho</del>or ultimamente</add> non 
@@ -1005,16 +1053,16 @@
                      <del rend="overwritten">di qualche verso</del></subst></add>
                      </subst></mod></rdg> --> 
                 
-                <lb n="4"/><lg n="1"><l n="1">Sotto il Monte Amiata io l’Orcia vedo</l>
+                <lb n="4"/><lg n="1"><l n="1">Sotto il <placeName ref="#Monte_Amiata">Monte Amiata</placeName> io l’<placeName ref="#Orcia">Orcia</placeName> vedo</l>
                     <lb n="5"/><l n="2">che si distende come un serpe bianco;</l>
-                    <lb n="6"/><l n="3">prima nascer da Cet<mod change="#strato-0"><del rend="overwritten">e</del>
-                            <add place="superimposed">o</add></mod>na
+                    <lb n="6"/><l n="3">prima nascer da <placeName ref="#Cetona">Cet<mod change="#strato-0"><del rend="overwritten">e</del>
+                            <add place="superimposed">o</add></mod>na</placeName>
                         <mod change="#strato-12"><add place="inline">,</add></mod> quando siedo</l>
                     <lb n="7"/><l n="4">nella ringhiera presso la sera stanco.</l>
                 </lg>
                 <lb n="8"/><ab>......................</ab>
                 <lg n="2">
-                    <lb n="9"/><l n="5">Orcia<mod change="#strato-12"><add place="inline">,</add></mod> ti dico che mi sa mill’anni,</l>
+                    <lb n="9"/><l n="5"><placeName ref="#Orcia">Orcia</placeName><mod change="#strato-12"><add place="inline">,</add></mod> ti dico che mi sa mill’anni,</l>
                     <lb n="10"/><l n="6">di crescere e doventare qualche cosa</l> 
                     <lb n="11"/><l n="7">e poi morire anche di vent’anni.</l>
                 </lg>
@@ -1046,7 +1094,7 @@
                 <p rend="indent">
                     <lb n="2"/>
                     <mod change="#strato-0">
-                        <subst><del rend="strikethrough">Mio zio</del>
+                        <subst><del rend="strikethrough">Mio <persName ref="#Don_Salvatore_Benocci">zio</persName></del>
                             <add place="inline">In</add></subst></mod> questo frattempo avvenne un fatto importante 
                     <mod change="#strato-0"><subst><del rend="strikethrough">della</del>
                             <add place="above">alla</add></subst></mod>
@@ -1078,23 +1126,23 @@
                          <substJoin target="#del_privatamente #add_comeesterni #del_in #add_nel"/>
                     -->
                     
-                    <lb n="7"/>Seminario Vescovile; ma in quell’anno appunto essendo venuta
+                    <lb n="7"/><placeName ref="#Seminario_Vescovile">Seminario Vescovile</placeName>; ma in quell’anno appunto essendo venuta
                     <lb n="8"/>una circolare contro quest’uso, <mod change="#strato-0">
                         <subst><del rend="strikethrough">furon</del><add place="above">mi</add>
                             <add place="inline">fu</add></subst></mod> chiusa ogni via d’istruzione;
-                    <lb n="9"/>e mio zio, vendendomi buono e inclinato, come tutti i bambini, 
+                    <lb n="9"/>e mio <persName ref="#Don_Salvatore_Benocci">zio</persName>, vendendomi buono e inclinato, come tutti i bambini, 
                     <lb n="10"/>a far gli altari, cantar laudi e cose religiose, frequentar la chiesa,
-                    <lb n="11"/>non esitò a domandarmi se io stessi volentieri in Seminario. Io che
+                    <lb n="11"/>non esitò a domandarmi se io stessi volentieri in <placeName ref="#Seminario_Vescovile">Seminario</placeName>. Io che
                     <lb n="12"/>non sapevo che cosa era il mondo, fingendomi un avvenire felice 
                     <mod change="#strato-1"><add place="above">e un acquisto di stima, </add></mod>e
                     <lb n="13"/>sembrandomi una cosa onorevole,
-                    <mod><del rend="strikethrough">esser messo in Seminario</del></mod> <note n="3" resp="#ST">Difficile attribuzione cronologica</note>vi accon-
+                    <mod><del rend="strikethrough">esser messo in <placeName ref="#Seminario_Vescovile">Seminario</placeName></del></mod> <note n="3" resp="#ST">Difficile attribuzione cronologica</note>vi accon-
                     <lb n="14"/>sentii e la sera del 31 ottobre 
-                    <mod change="#strato-0"><add place="above">1904</add></mod> fui presentato da mio zio al Rettore
+                    <mod change="#strato-0"><add place="above">1904</add></mod> fui presentato da mio <persName ref="#Don_Salvatore_Benocci">zio</persName> al <persName ref="#Rettore_Seminario">Rettore</persName>
                     <lb n="15"/>e la mattina dei Santi, fui con mille preci e cerimonie vesti-
                     <lb n="16"/>to a pretonzolo. Di tutto questo ne godevano molto in
                     <mod change="#strato-0"><del rend="strikethrough"> mia </del></mod>famiglia 
-                    <lb n="17"/>e anche B<mod change="#strato-0"><add place="above">u</add></mod>oni, che in quell’anno stesso 
+                    <lb n="17"/>e anche <persName ref="#maestro_Buoni">B<mod change="#strato-0"><add place="above">u</add></mod>oni</persName>, che in quell’anno stesso 
                     <mod change="#strato-0">
                         <subst>
                             <del rend="strikethrough">rientrò</del>
@@ -1113,7 +1161,7 @@
                          <add place="above">ad</add></subst></del>
                          <add place="above">il posto di</add> </subst>-->
                          
-                 Vicerettore dello stesso Seminario: tanto che ri-
+                 <persName ref="#maestro_Buoni">Vicerettore</persName> dello stesso <placeName ref="#Seminario_Vescovile">Seminario</placeName>: tanto che ri-
                     <lb n="19"/>masi sempre sotto lo sguardo dell’unico maestro di cui io serbi grata me-
                     <lb n="20"/>moria, e <mod change="#strato-4"><add place="above">che</add></mod> reputi uomo di senno.
                 </p>
@@ -1131,7 +1179,7 @@
                                 <add place="inline">poetica</add></subst></mod>, ma così non fu. Nell’Antologia Ita-
                         <lb n="3"/>liana del Santoni che adopravamo allora <mod change="#strato-1">
                             <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del>
-                                <add place="superimposed">in</add></subst></mod> 1a Ginnasiale,
+                                <add place="superimposed">in</add></subst></mod> 1<hi rend="apice">a</hi> Ginnasiale,
                         <lb n="4"/>lessi e gustai con nuovo piacere le famose stanze del
                         <lb n="5"/>Poliziano sulla [Dolcezza della vita campestre] (Quant’è
                         <lb n="6"/>più dolce, quant’è più sicura etc) talché non potei stare 
@@ -3778,9 +3826,9 @@
                     <rdg varSeq="1"><mod change="#strato-8"><mod change="#strato-8"><del rend="strikethrough" seq="2">Però</del> <subst seq="1"><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
                         <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a Quinta ginnasiale e poi</corr></choice> Conversione.</mod></rdg>        
                         </app></mod></p>
-                <p rend="indent"><mod change="#strato-8"><lb n="6"/><del rend="strikethrough">Fu</del><add place="above">Nel febbraio di</add> quell’anno 1909, il sedicesimo di mia
+                <p rend="indent"><mod change="#strato-8"><lb n="6"/><del rend="strikethrough"><mod change="#strato-8"><subst><del rend="strikethrough">Fu</del><add place="above">Nel febbraio di</add></subst></mod> quell’anno 1909, il sedicesimo di mia
                         <lb n="7"/>età, avvenne il fatto più importante della
-                        <lb n="8"/>mia giovinezza.</mod> <mod change="#strato-9"><add place="inline">Tolsi l'abito talare</add></mod></p>
+                        <lb n="8"/>mia giovinezza.</del></mod> <mod change="#strato-9"><add place="inline">Tolsi l'abito talare</add></mod></p>
                 <p rend="indent"><mod change="#strato-8"><lb n="9"/><choice><sic><hi rend="apice">(1)</hi>Scuola del Borghi a quinta ginnasiale e poi</sic><corr/></choice></mod></p>
             </div>
         </body>
