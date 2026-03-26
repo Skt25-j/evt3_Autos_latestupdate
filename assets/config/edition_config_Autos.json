@@ -61,7 +61,7 @@
       "namedEntityType": "event"
     },
     "entries": {
-  "enable": true,
+  "enable": false,
   "defaultLabel": "Opere",
   "listSelector": "listBibl",
   "namedEntityType": "doc",
@@ -86,7 +86,7 @@
           "enable": false
         },
         {
-          "value": "placeName,geogName",
+          "value": "placeName",
           "label": "places",
           "color": "#A5D6A7",
           "enable": true

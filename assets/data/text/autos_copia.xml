@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="#http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="#http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Prova a mettere questo nel tei all:
      <?xml version="1.0" encoding="UTF-8"?>
@@ -111,17 +111,35 @@
                             <p>Rettore del Seminario Vescovile di San Francesco in Pienza.</p>
                         </note>
                     </person>
-                    <person xml:id="Alfieri">
+                    <person xml:id="Vittorio_Alfieri">
                         <persName>Vittorio Alfieri</persName>
                         <note>
                             <p>Asti, 1749 – Firenze, 1803. Celebre drammaturgo, poeta e scrittore italiano, 
                                 massimo esponente del tragico nel Settecento.</p>
                         </note>
                     </person>
-                    <person xml:id="Finzi">
+                    <person xml:id="Agnolo_Poliziano">
+                        <persName>Agnolo Poliziano</persName>
+                        <note>
+                            <p>Montepulciano, 1454 - Firenze, 1494. Poeta fiorentino, celebre autore delle Stanze per la Giostra di Giuliano de' Medici</p>
+                        </note>
+                    </person>
+                    <person xml:id="Giuseppe_Finzi">
                         <persName>Giuseppe Finzi</persName>
                         <note>
                             <p>Autore di testi scolastici</p>
+                        </note>
+                    </person>
+                    <person xml:id="Luigi_Santoni">
+                        <persName>Luigi Santoni</persName>
+                        <note>
+                            <p>Cancelliere della Curia Arcivescovile di Firenze, pubblicò vari libri di carettere sacro negli anni 40 e 50 dell'Ottocento</p>
+                        </note>
+                    </person>
+                    <person xml:id="Giacomo_Zanella">
+                        <persName>Giacomo Zanella</persName>
+                        <note>
+                            <p>Chiampo, 1820 - Cavazzale di Monticello Conte Otto, 1888. Presbitero, poeta e traduttore; istrutture di Fogazzaro e Rettore dell'Università di Padova tra il 1871-1872.</p>
                         </note>
                     </person>
                     <person xml:id="Anna_Riedi">
@@ -130,12 +148,18 @@
                             <p>Madre di Stefano Tuscano, proviene da una famiglia benestante caduta in miseria, per via dei debiti di gioco del padre; trova impiego presso la Fattoria dell'Amorosa di Sinalunga</p>
                         </note>
                     </person>
-                    <person xml:id="Foscolo">
+                    <person xml:id="Ugo_Foscolo">
                         <persName>
                             Ugo Foscolo
                         </persName>
                         <note>
-                            <p>1778–1827. Poeta, scrittore e patriota italiano di origine greca, esponente del neoclassicismo e del preromanticismo.</p></note>
+                            <p>Zante, 1778– Londra 1827. Poeta, scrittore e patriota italiano di origine greca, esponente del neoclassicismo e del preromanticismo.</p></note>
+                    </person>
+                    <person xml:id="Torquato_Tasso">
+                        <persName>
+                           Torquato Tasso
+                        </persName>
+                        <note><p>Sorrento 1544 - Roma, 1595. Celebre autore italiano</p></note>
                     </person>
                     <person xml:id="Luigia_Pallavicini">
                         <persName>Luigia Pallavicini</persName>
@@ -149,21 +173,42 @@
                     <relation name="padre" active="#Olindo_Tuscano" passive="#Stefano_Tuscano" />
                     <relation name="maestro" active="#maestro_Buoni" passive="#Stefano_Tuscano" />
                     <relation name="genitori" active="#genitori" passive="#Stefano_Tuscano" />
-                    <relation name="sorella maggiore" active="#Raffaella_Tuscano" passive="#Stefano_Tuscano" />
-                    <relation name="zio Canonico" active="#Don_Salvatore_Benocci" passive="#Stefano_Tuscano" />
+                    <relation name="sorella_maggiore" active="#Raffaella_Tuscano" passive="#Stefano_Tuscano" />
+                    <relation name="zio_Canonico" active="#Don_Salvatore_Benocci" passive="#Stefano_Tuscano" />
                 </listRelation>
                 <listEvent>
                     <event xml:id="Tentato_suicidio">
                         <eventName>Tentato suicidio</eventName>
                     </event>
                 </listEvent>
-                <listBibl xml:id="Opere_citate">
+                <listBibl>
                     <head>Opere citate</head>
-                    <bibl xml:id="OdePallavicini">
-                        <author>Ugo Foscolo</author>, 
+                    <bibl xml:id="OdePallavicini" >
+                        <author><persName ref="#Ugo_Foscolo">Ugo Foscolo</persName></author>, 
                         <title level="a">Ode a Luigia Pallavicini</title> 
                         (<date when="1800">1800</date>). 
                         <ref target="https://it.wikisource.org/...">Testo online</ref>
+                    </bibl>
+                    <bibl xml:id="Nuova_Antologia">
+                        <author><persName ref="#Luigi_Santoni">Luigi Santoni</persName></author>, 
+                        <title level="a">Nuova Antologia</title> 
+                        (<date when="1800">18??</date>). 
+                    </bibl>
+                    <bibl xml:id="Stanze_Giostra">
+                        <author><persName ref="#Agnolo_Poliziano"></persName></author>, 
+                        <title level="a">Stanze per la giostra di Giuliano de' Medici</title> 
+                        (<date when="1800">1475</date>). 
+                        <ref target="https://preserver.beic.it/delivery/DeliveryManagerServlet?dps_pid=IE7065334">Testo online</ref>
+                    </bibl>
+                    <bibl xml:id="Ospizi_Marini">
+                        <author><persName ref="#Giacomo_Zanella">Giacomo Zanella</persName></author>
+                        <title level="a">Ospizi Marini</title>   
+                        (<date when="1800">1869</date>).
+                    </bibl>
+                    <bibl xml:id="Gerusalemme_Liberata">
+                        <author><persName ref="#Torquato_Tasso">Torquato Tasso</persName></author>
+                        <title level="a">Gerusalemme Liberata</title>   
+                        (<date when="1800">1581</date>).
                     </bibl>
                 </listBibl>
                 <listPlace>
@@ -177,7 +222,7 @@
                         <placeName>Orcia</placeName>
                         <district type="comune">Siena</district>
                     </place>
-                    <place xml:id="Val_d'Orcia">
+                    <place xml:id="Val_dOrcia">
                         <settlement type="località">Val d'Orcia</settlement>
                         <placeName>Val d'Orcia</placeName>
                         <district type="comune">Siena</district>
@@ -191,7 +236,7 @@
                         <settlement type="comune">Pienza</settlement>
                         <placeName>Seminario Vescovile di San Francecso</placeName>
                         <district type="comune">Pienza</district>
-                        <p>Il convento di S. Francesco fu soppresso nel 1653 da mons. Giovanni Spennanzi, vescovo di Pienza, con l'intenzione di erigervi un seminario vescovile, secondo le disposizioni del Concilio di Trento, ma morì prima che potesse essere aperto. La vacanza di 6 anni della sede vescovile di Pienza e le pressioni della cittadinanza fecero sì il progetto venisse accantonato e che papa Alessandro III nel 1659 facesse ritornare nel convento i frati, dove rimasero fino al 1788, quando con decreto vescovile del 2 novembre il convento fu nuovamente soppresso. Fu così che nel 1792 fu decretata l'istituzione in tali locali del Seminario. Per aumentarne il patrimonio gli furono subito assegnati i fondi del convento soppresso di Radicofani e alcune rendite del piccolo Seminario di Chiusi, che fu a questo unito. Successivamente furono aggiunte le rendite di un podere acquistato a tale scopo dal vescovo Giacinto Pippi e dal 1825 l'assegnazione dell' 1% di tutti i benefici ecclesiastici vacanti.</p>
+                        <desc>Il convento di S. Francesco fu soppresso nel 1653 da mons. Giovanni Spennanzi, vescovo di Pienza, con l'intenzione di erigervi un seminario vescovile, secondo le disposizioni del Concilio di Trento, ma morì prima che potesse essere aperto. La vacanza di 6 anni della sede vescovile di Pienza e le pressioni della cittadinanza fecero sì il progetto venisse accantonato e che papa Alessandro III nel 1659 facesse ritornare nel convento i frati, dove rimasero fino al 1788, quando con decreto vescovile del 2 novembre il convento fu nuovamente soppresso. Fu così che nel 1792 fu decretata l'istituzione in tali locali del Seminario. Per aumentarne il patrimonio gli furono subito assegnati i fondi del convento soppresso di Radicofani e alcune rendite del piccolo Seminario di Chiusi, che fu a questo unito. Successivamente furono aggiunte le rendite di un podere acquistato a tale scopo dal vescovo Giacinto Pippi e dal 1825 l'assegnazione dell' 1% di tutti i benefici ecclesiastici vacanti.</desc>
                     </place>
                 </listPlace>
             </sourceDesc>
@@ -673,7 +718,7 @@
                     </mod>tenendo
                     <lb n="3"/>per esempio l’<title>
                         <ref target="#OdePallavicini"
-                             type="biblio">Ode</ref></title> del <persName ref="#Foscolo">Foscolo</persName> <!-- Usare quote così da crerae la fonte? Ma è giusto come approccio? si può defnire quote--> a 
+                             type="biblio">Ode</ref></title> del <persName ref="#Ugo_Foscolo">Foscolo</persName> <!-- Usare quote così da crerae la fonte? Ma è giusto come approccio? si può defnire quote--> a 
                     <persName ref="#Luigia_Pallavicini">Luigia Pallavicini</persName>,
                     <lb n="4"/>trovata in un librettino<mod change="#strato-0">
                         <del rend="strikethrough">tutto</del>
@@ -1176,13 +1221,15 @@
                         <lb n="1"/>Il cambiamento di vita pareva che mi avesse spenta la 
                         <lb n="2"/>passione 
                         <mod change="#strato-1"><subst><del rend="strikethrough">de</del>
-                                <add place="inline">poetica</add></subst></mod>, ma così non fu. Nell’Antologia Ita-
-                        <lb n="3"/>liana del Santoni che adopravamo allora <mod change="#strato-1">
+                                <add place="inline">poetica</add></subst></mod>, ma così non fu. Nell’<title><ref target="#Nuova_Antologia"
+                             type="biblio">Antologia Ita-
+                        <lb n="3"/>liana</ref></title> del <persName ref="#Luigi_Santoni">Santoni</persName> che adopravamo allora <mod change="#strato-1">
                             <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del>
                                 <add place="superimposed">in</add></subst></mod> 1<hi rend="apice">a</hi> Ginnasiale,
-                        <lb n="4"/>lessi e gustai con nuovo piacere le famose stanze del
-                        <lb n="5"/>Poliziano sulla [Dolcezza della vita campestre] (Quant’è
-                        <lb n="6"/>più dolce, quant’è più sicura etc) talché non potei stare 
+                        <lb n="4"/>lessi e gustai con nuovo piacere le famose <title><ref target="#Stanze_Giostra"
+                             type="biblio">stanze</ref></title>del
+                        <lb n="5"/><persName ref="#Agnolo_Poliziano">Poliziano</persName> sulla [Dolcezza della vita campestre] (<quote>Quant’è
+                        <lb n="6"/>più dolce, quant’è più sicura </quote>etc) talché non potei stare 
                         <mod change="#strato-1"><del rend="overwritten" xml:id="del_di2">di</del>
                             <add place="superimposed" xml:id="add_a">a</add>
                             <del rend="strikethrough" xml:id="del_imp">imp</del>
@@ -1193,9 +1240,9 @@
                         <lb n="9"/>nulla, ma trovandoci a un tempo un che di bello.</mod>
                 </p>
                 <p rend="indent" >
-                    <mod change="#strato-1"> <lb n="10"/>Gli ospizi marini dello Zanella; e soprattutto mi piacquero
-                        <lb n="11"/>le 8 prime ottave del canto 3 della Gerusalemme Libera-
-                        <lb n="12"/>ta. Dolcissim
+                    <mod change="#strato-1"> <lb n="10"/>Gli <title><ref target="#Ospizi_Marini">ospizi marini</ref></title> dello <persName ref="#Giacomo_Zanella">Zanella</persName>; e soprattutto mi piacquero
+                        <lb n="11"/>le 8 prime ottave del canto 3 della <title><ref target="#Gerusalemme_Liberata">Gerusalemme Libera-
+                        <lb n="12"/>ta</ref></title>. Dolcissim
                         <mod change="#strato-1"><subst><del rend="overwritten">a</del>
                                 <add place="superimposed">e</add></subst></mod> mi parvero la <hi rend="underline">
                             <mod change="#strato-1"><subst><del rend="overwritten">p</del>
@@ -1606,7 +1653,7 @@
                              <lb n="3"/><add place="above" seq="6">
                              la mia cara</add> <persName ref="#Anna_Riedi">mamma</persName></add></subst>-->
                          mi mise in mano un librettino scollegato,
-                        <lb n="4"/>che conteneva 4 tragedie dell’<persName ref="#Alfieri">Alfieri</persName>. 
+                        <lb n="4"/>che conteneva 4 tragedie dell’<persName ref="#Vittorio_Alfieri">Alfieri</persName>. 
                         
                         <mod change="#strato-1" >
                             <subst>
@@ -1939,7 +1986,7 @@
                                 <add place="inline">pochi<lb n="10"/>versi</add></subst></mod>
                         ch’avevo fatti erano fatti a orecchio. Nell’Antologie avevo
                         <lb n="11"/>trovato qualche regola metrica, ma non serviva. Un giorno
-                        <lb n="12"/>vidi nella scansia del mio prefetto un libro del <persName ref="#Finzi">Finzi </persName>intitolato “Arte del Di-
+                        <lb n="12"/>vidi nella scansia del mio prefetto un libro del <persName ref="#Giuseppe_Finzi">Finzi </persName>intitolato “Arte del Di-
                         <lb n="13"/>re”, ed io ghiotto più che mai mi ricordo d’averlo preso senza
                         <lb n="14"/>permesso, sicuro che il prefetto un po’ rustico, un po’ tangano
                         <lb n="15"/>me l’avrebbe negato, e m’avrebbe quel ch’era peggio umiliato dicendo-
@@ -1979,7 +2026,7 @@
                             <lb n="8"/><l n="4">dei tuoi nemici non un cupo suono</l>
                             <lb n="9"/><l n="5">rende a le regie stanze.</l></mod></lg></sp>
                 <ab rend="indent"><mod change="#strato-4">
-                        <add place="margin">Ci si sente l’<persName ref="#Alfieri">Alfieri</persName></add>
+                        <add place="margin">Ci si sente l’<persName ref="#Vittorio_Alfieri">Alfieri</persName></add>
                     </mod><lb/></ab>
                 
                 <p rend="indent"><mod change="#strato-2"><lb n="11"/>Quindi nello svolgersi delle scene sono da mostrarsi i seguenti versi
@@ -1994,7 +2041,7 @@
                             <lb n="16"/><l n="4">mie serberà fra le sacrate mura;</l>
                             <lb n="17"/><l n="5">e dei posteri al cor che quella tomba</l><mod change="#strato-4">
                                 <add place="margin">
-                                    <persName ref="#Foscolo">Foscolo</persName></add>
+                                    <persName ref="#Ugo_Foscolo">Foscolo</persName></add>
                             </mod> 
                             <lb n="18"/><l n="6">di silenzio profonda e di virtude</l> 
                             <lb n="19"/><l n="7">magnanima vedranno sacro ricordo</l>
@@ -3116,7 +3163,8 @@
                                     </subst>
                                 </add>
                             </subst>
-                            ridavano
+                            ri-
+                            <lb n="8"/>davano
                             <add place="above" seq="2">saporitamente</add>
                         </mod> <!-- <add place="above" xml:id="add_ampia">ampia</add> giardiniera <del rend="strikethrough" xml:id="del_grande">grande</del> <substJoin target="#add_ampia #del_grande" seq="1"/> dove <subst seq="1"><del rend="strikethrough"><subst><del rend="strikethrough">alcuni</del><add place="above">molti</add></subst></del> <add place="above">alcuni</add></subst> <add place="above" seq="1">dei più</add> piccoli<del rend="strikethrough" seq="1">ssimi</del> <subst><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">Seminaristi</del> <add place="above">colleghi di viaggio</add></subst></del> <add place="above">colleghi di viaggio e di <subst><del rend="strikethrough"><gap unit="char" quantity="2"/></del><add place="above">strada</add></subst></add></subst> ri-
                              <lb n="8"/>davano <add place="above">saporitamente</add>-->
