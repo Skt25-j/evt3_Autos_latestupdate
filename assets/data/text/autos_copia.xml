@@ -111,6 +111,12 @@
                             <p>Rettore del Seminario Vescovile di San Francesco in Pienza.</p>
                         </note>
                     </person>
+                    <person xml:id="Prefetto_Seminario">
+                        <persName>Prefetto del Seminario</persName>
+                        <note>
+                            <p>Prefetto del Seminario Vescovile di San Francesco in Pienza.</p>
+                        </note>
+                    </person>
                     <person xml:id="Vittorio_Alfieri">
                         <persName>Vittorio Alfieri</persName>
                         <note>
@@ -142,6 +148,10 @@
                             <p>Chiampo, 1820 - Cavazzale di Monticello Conte Otto, 1888. Presbitero, poeta e traduttore; istrutture di Fogazzaro e Rettore dell'Università di Padova tra il 1871-1872.</p>
                         </note>
                     </person>
+                    <person xml:id="Giannina_Milli">
+                        <persName>Giannina Milli</persName>
+                        <note><p>Teramo, 1825 - Firenze, 1888. Scrittrice, poetessa e educatrice italiana. </p></note>
+                    </person>
                     <person xml:id="Anna_Riedi">
                         <persName>Anna Riendi</persName>
                         <note>
@@ -157,7 +167,7 @@
                     </person>
                     <person xml:id="Torquato_Tasso">
                         <persName>
-                           Torquato Tasso
+                            Torquato Tasso
                         </persName>
                         <note><p>Sorrento 1544 - Roma, 1595. Celebre autore italiano</p></note>
                     </person>
@@ -166,6 +176,15 @@
                         <note>
                             <p>1772-1841. Nobildonna italiana a cui Ugo Foscolo dedicò l'Ode citata.</p>
                         </note>
+                    </person>
+                    <person xml:id="Enrico_Salvadori">
+                        <persName>Enrico Salvadori</persName>
+                    </person>
+                    <person xml:id="Virginio_Prinzivalli">
+                        <persName>Virginio Prinzivalli</persName>
+                    </person>
+                    <person xml:id="Alessandro_Manzoni">
+                        <persName>Alessandro Manzoni</persName>
                     </person>
                 </listPerson>
                 <listRelation>
@@ -181,36 +200,6 @@
                         <eventName>Tentato suicidio</eventName>
                     </event>
                 </listEvent>
-                <listBibl>
-                    <head>Opere citate</head>
-                    <bibl xml:id="OdePallavicini" >
-                        <author><persName ref="#Ugo_Foscolo">Ugo Foscolo</persName></author>, 
-                        <title level="a">Ode a Luigia Pallavicini</title> 
-                        (<date when="1800">1800</date>). 
-                        <ref target="https://it.wikisource.org/...">Testo online</ref>
-                    </bibl>
-                    <bibl xml:id="Nuova_Antologia">
-                        <author><persName ref="#Luigi_Santoni">Luigi Santoni</persName></author>, 
-                        <title level="a">Nuova Antologia</title> 
-                        (<date when="1800">18??</date>). 
-                    </bibl>
-                    <bibl xml:id="Stanze_Giostra">
-                        <author><persName ref="#Agnolo_Poliziano"></persName></author>, 
-                        <title level="a">Stanze per la giostra di Giuliano de' Medici</title> 
-                        (<date when="1800">1475</date>). 
-                        <ref target="https://preserver.beic.it/delivery/DeliveryManagerServlet?dps_pid=IE7065334">Testo online</ref>
-                    </bibl>
-                    <bibl xml:id="Ospizi_Marini">
-                        <author><persName ref="#Giacomo_Zanella">Giacomo Zanella</persName></author>
-                        <title level="a">Ospizi Marini</title>   
-                        (<date when="1800">1869</date>).
-                    </bibl>
-                    <bibl xml:id="Gerusalemme_Liberata">
-                        <author><persName ref="#Torquato_Tasso">Torquato Tasso</persName></author>
-                        <title level="a">Gerusalemme Liberata</title>   
-                        (<date when="1800">1581</date>).
-                    </bibl>
-                </listBibl>
                 <listPlace>
                     <place xml:id="Monte_Amiata">
                         <settlement type="località">Monte Amiata</settlement>
@@ -238,6 +227,12 @@
                         <district type="comune">Pienza</district>
                         <desc>Il convento di S. Francesco fu soppresso nel 1653 da mons. Giovanni Spennanzi, vescovo di Pienza, con l'intenzione di erigervi un seminario vescovile, secondo le disposizioni del Concilio di Trento, ma morì prima che potesse essere aperto. La vacanza di 6 anni della sede vescovile di Pienza e le pressioni della cittadinanza fecero sì il progetto venisse accantonato e che papa Alessandro III nel 1659 facesse ritornare nel convento i frati, dove rimasero fino al 1788, quando con decreto vescovile del 2 novembre il convento fu nuovamente soppresso. Fu così che nel 1792 fu decretata l'istituzione in tali locali del Seminario. Per aumentarne il patrimonio gli furono subito assegnati i fondi del convento soppresso di Radicofani e alcune rendite del piccolo Seminario di Chiusi, che fu a questo unito. Successivamente furono aggiunte le rendite di un podere acquistato a tale scopo dal vescovo Giacinto Pippi e dal 1825 l'assegnazione dell' 1% di tutti i benefici ecclesiastici vacanti.</desc>
                     </place>
+                    <place xml:id="Monastero_S.Anna">
+                        <settlement type="comune">Pienza</settlement>
+                        <placeName>Monastero di S. Anna</placeName>
+                        <district type="comune">Pienza</district>
+                        <desc>Il monastero di S. Anna fu fondato nel XV secolo e rappresenta un importante centro religioso e culturale della zona. Si ricorda per i suoi affreschi di Antonio Bazzi.</desc>
+                    </place>
                 </listPlace>
             </sourceDesc>
         </fileDesc>
@@ -245,18 +240,18 @@
             <creation corresp="#Autos" resp="#ST">
                 <listChange ordered="true">
                     <change xml:id="strato-0">Penna A <p>penna nera con cui scrive il testo di Autos da 1r1 a 10r1 – esclusi i versi –</p></change>
-                    <change xml:id="strato-1">Penna A.1 <p>penna nera con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
-                    <change xml:id="strato-2">Penna B <p>penna nera con cui scrive a partire da 17r1 fino a 7r2 – esclusi i versi –; con questa penna e con questo tipo di scrittura Tuscano ha anche prodotto alcune correzioni nelle parti precedenti e inserito i numeri in alto a destra sui recti dei due quaderni fino a 7r2 – corretti successivamente a lapis –.</p></change>
-                    <change xml:id="strato-3">Penna C <p>penna nera con cui l’autore compila i versi a partire 18v1 fino a 6v2 e, successivamente, i recti di 7r2 e di 8r2.</p></change>
-                    <change xml:id="strato-4">Lapis D <p>lapis utilizzato per l’inserimento dei numeri di pagina sui versi scritti successivamente rispetto ai recti e la correzione del numero su quest’ultimi a partire da 18v1 fino a 7r2; a questi, si aggiungono correzioni e postille sporadiche.</p></change>
-                    <change xml:id="strato-5">Penna E <p>penna nera con cui scrive i recti a partire da metà 8r2, per la precisione dall’inizio del paragrafo Montalcino, fino a 11r2; ne è prova il repentino cambio di grafia.Con il medesimo inchiostro inserisce i numeri di pagina sui recti a partire da 8r2, i quali non vengono più corretti fino alla conclusione del quaderno.</p></change>
-                    <change xml:id="strato-6">Penna F <p>penna nera con cui l’autore termina di scrivere i recti del secondo quaderno, fatta eccezione per le parti conclusive a penna: va da 12r2 a fine di 22r2.</p></change>
-                    <change xml:id="strato-7">Penna G  <p>penna nera con cui viene scritto l’appunto slegato presenta a 16v2 e 17v2, datato agosto 1911</p> </change>
-                    <change xml:id="strato-8">Penna H <p>penna di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</p> </change>
-                    <change xml:id="strato-9">Lapis I <p>lapis con cui apporta vari interventi nel secondo quaderno</p></change>
-                    <change xml:id="strato-10">Matita L <p>matita di colore blu con cui apporta alcuni interventi</p></change>
-                    <change xml:id="strato-11">Matita M <p>matita di colore rosso con cui apporta alcuni interventi</p></change>
-                    <change xml:id="strato-12">Penna N <p>penna di colore blu, per intensità dell’inchiostro sensibilmente diversa dalla precedente penna H, con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </p></change>
+                    <change xml:id="strato-1">Penna B <p>penna nera con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
+                    <change xml:id="strato-2">Penna C <p>penna nera con cui scrive a partire da 17r1 fino a 7r2 – esclusi i versi –; con questa penna e con questo tipo di scrittura Tuscano ha anche prodotto alcune correzioni nelle parti precedenti e inserito i numeri in alto a destra sui recti dei due quaderni fino a 7r2 – corretti successivamente a lapis –.</p></change>
+                    <change xml:id="strato-3">Penna D <p>penna nera con cui l’autore compila i versi a partire 18v1 fino a 6v2 e, successivamente, i recti di 7r2 e di 8r2.</p></change>
+                    <change xml:id="strato-4">Lapis E <p>lapis utilizzato per l’inserimento dei numeri di pagina sui versi scritti successivamente rispetto ai recti e la correzione del numero su quest’ultimi a partire da 18v1 fino a 7r2; a questi, si aggiungono correzioni e postille sporadiche.</p></change>
+                    <change xml:id="strato-5">Penna F <p>penna nera con cui scrive i recti a partire da metà 8r2, per la precisione dall’inizio del paragrafo Montalcino, fino a 11r2; ne è prova il repentino cambio di grafia.Con il medesimo inchiostro inserisce i numeri di pagina sui recti a partire da 8r2, i quali non vengono più corretti fino alla conclusione del quaderno.</p></change>
+                    <change xml:id="strato-6">Penna G <p>penna nera con cui l’autore termina di scrivere i recti del secondo quaderno, fatta eccezione per le parti conclusive a penna: va da 12r2 a fine di 22r2.</p></change>
+                    <change xml:id="strato-7">Penna H  <p>penna nera con cui viene scritto l’appunto slegato presenta a 16v2 e 17v2, datato agosto 1911</p> </change>
+                    <change xml:id="strato-8">Penna I <p>penna di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</p> </change>
+                    <change xml:id="strato-9">Lapis L <p>lapis con cui apporta vari interventi nel secondo quaderno</p></change>
+                    <change xml:id="strato-10">Matita M <p>matita di colore blu con cui apporta alcuni interventi</p></change>
+                    <change xml:id="strato-11">Matita N <p>matita di colore rosso con cui apporta alcuni interventi</p></change>
+                    <change xml:id="strato-12">Penna O <p>penna di colore blu, per intensità dell’inchiostro sensibilmente diversa dalla precedente penna H, con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </p></change>
                     <change xml:id="strato-X">Lapis X <p>lapis con una mina molto scura, utilizzato soltanto per alcune cassature a 24r2.</p></change>
                     <change xml:id="strato-Y">Penna Y <p>penna di colore nero scuro, non tendente al marrone come le altre, che interviene in pochi e circoscritti punti del testo, di difficile collocabilità rispetto alla cronologia degli interventi.</p></change>
                 </listChange>
@@ -326,7 +321,112 @@
         <graphic n="23v2-24r2" width="1820px" height="1440px" url="23v2-24r2.jpg"></graphic> <!--Nelle immagini doppie manca per ora: 6v2-7r2; 17v2-18r2; 18v2-19r2; 19v2-20r2-->
     </facsimile> <!-- Problema dello sdoppiamento della navbar: probabilmente dipende dal changeView attivo-->
     <text n="Autos_1" xml:id="Autos_1">
-        <front> <!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
+        <front> <listBibl>
+                <head>Opere citate</head>
+                <bibl xml:id="OdePallavicini" >
+                    <author><persName ref="#Ugo_Foscolo">Ugo Foscolo</persName></author>, 
+                    <title level="a">Ode a Luigia Pallavicini</title> 
+                    (<date when="1800">1800</date>). 
+                    <ref target="https://it.wikisource.org/...">Testo online</ref>
+                </bibl>
+                <bibl xml:id="Nuova_Antologia">
+                    <author><persName ref="#Luigi_Santoni">Luigi Santoni</persName></author>, 
+                    <title level="a">Nuova Antologia</title> 
+                    (<date>18??</date>). 
+                </bibl>
+                <bibl xml:id="Stanze_Giostra">
+                    <author><persName ref="#Agnolo_Poliziano"></persName></author>, 
+                    <title level="a">Stanze per la giostra di Giuliano de' Medici</title> 
+                    (<date when="1475">1475</date>). 
+                    <ref target="https://preserver.beic.it/delivery/DeliveryManagerServlet?dps_pid=IE7065334">Testo online</ref>
+                </bibl>
+                <bibl xml:id="Ospizi_Marini">
+                    <author><persName ref="#Giacomo_Zanella">Giacomo Zanella</persName></author>
+                    <title level="a">Ospizi Marini</title>   
+                    (<date when="1869">1869</date>).
+                </bibl>
+                <bibl xml:id="Gerusalemme_Liberata">
+                    <author><persName ref="#Torquato_Tasso">Torquato Tasso</persName></author>
+                    <title level="a">Gerusalemme Liberata</title>   
+                    (<date when="1581">1581</date>).
+                </bibl>
+                <bibl xml:id="Ave_Maria_della_Sera">
+                    <author><persName ref="#Giannina_Milli">Giannina_Milli</persName></author>
+                    <title level="a">L'Ave Maria della Sera</title>
+                    <note><p>L'autore probailmete ricorda male il titolo del testo poetico e riporta il titolo errato - e non attestato - La Preghiera della Sera (<date when="1858">1858</date>). </p></note>
+                </bibl>
+                <bibl xml:id="Esule">
+                    <author>Ignoto</author>
+                    <title level="a">L'Esule</title>
+                </bibl>
+                <bibl xml:id="Antologia_Letteraria">
+                    <author><persName ref="#Enrico_Salvadori">Enrico Salvadori</persName> e <persName ref="#Virginio_Prinzivalli"></persName></author>
+                    <title level="a">Antologia letteraria educativa per le scuole secondarie classiche, tecniche e normali</title>
+                    <pubPlace>Rome</pubPlace>,
+                    <publisher>Desclee, Lefebvre &amp; C.</publisher>,
+                    <date when="1896">1896</date>
+                </bibl>
+                <bibl xml:id="Saul">
+                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <title level="a">Il Saul</title>
+                    <date when="1782">1782</date>
+                </bibl>
+                <bibl xml:id="Mirra">
+                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <title level="a">Mirra</title>
+                    <date when="1789">1789</date>
+                </bibl>
+                <bibl xml:id="Maria_Stuarda">
+                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <title level="a">Maria Stuarda</title>
+                    <date when="1778">1778</date>
+                </bibl>
+                <bibl xml:id="Merope">
+                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <title level="a">Maria Stuarda</title>
+                    <date when="1782">1782</date>
+                </bibl>
+                <bibl xml:id="Congiura_Pazzi">
+                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <title level="a">La congiura de' Pazzi</title>
+                    <date when="1777">1777</date>-<date when="1783">1783</date>
+                </bibl>
+                <bibl xml:id="Daniello">
+                    <author><persName ref="#Stefano_Tuscano">Stefano Tuscano</persName></author>
+                    <title level="a">Daniello o Trionfo dell'Innocenza</title>
+                    <date when="1777">1905</date>-<date when="1783">1907</date>
+                    <note><p>Tragedia giovanile di Tuscano</p></note>
+                </bibl>
+                <bibl xml:id="Bibbia">
+                </bibl>
+                <bibl xml:id="Arte_del_Dire">
+                    <author><persName ref="#Giusppe_Finzi">Giuseppe Finzi</persName></author>
+                    <title level="a">L'Arte del Dire</title>
+                    <note><p>Non è stata rintracciata un'opera propriamente intitolata <hi>L'arte del Dire</hi>, ma di <persName ref="#Giusppe_Finzi">Finzi</persName> è noto un testo ginnasiale dal titolo <hi>Stilistica</hi>.<lb/>
+                        <hi>L'arte del Dire</hi> risulterebbe, invece, essere un'opera del Corrado, oppure di Ferrari.
+                    <lb/> Sarebbe, insomma, un lapsus dell'Autore.    </p></note>
+                </bibl>
+                <bibl xml:id="Adelchi">
+                    <author><persName ref="#Alessandro_Manzoni">Alessandro Manzoni</persName></author>
+                    <title level="a">Adelchi</title>
+                    <date when="1822">1822</date>
+                </bibl>
+                <bibl xml:id="Promessi_Sposi">
+                    <author><persName ref="#Alessandro_Manzoni">Alessandro Manzoni</persName></author>
+                    <title level="a">I Promessi Sposi</title>
+                    <date when="1827">1840</date>
+                </bibl>
+            </listBibl><!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
+            
+            <castList xml:id="Personaggi_Daniello"><castItem>
+                    <role xml:id="Daniello_per">Daniello</role>
+                    <role xml:id="Dario">Dario</role>
+                    <role xml:id="Corrado">Corrado</role>
+                    <role xml:id="Flaviano">Flaviano</role>
+                    <role xml:id="Gerardo">Gerardo</role>
+                    <role xml:id="Leopoldo">Leopoldo</role>
+                </castItem> 
+            </castList>    
         </front>
         <body>
             <!-- Uso di subst per le varianti non paradigmatiche, quelle che non presentano le fasi, le immediate; uso di app per le varianti paradigmatiche (o tardive) o avvenute in un momento diverso
@@ -1051,7 +1151,7 @@
                 <p rend="indent">
                     <lb n="1"/>Verso l’aprile dell’anno 1904 mi ricordo di aver fatto un sonetto 
                     <lb n="2"/>alla <placeName ref="#Val_d'Orcia"><mod change="#strato-0"> <subst><del rend="strikethrough">val</del><add place="inline">mia valle</add></subst>
-                    </mod> d’Orcia</placeName>, il quale <mod change="#strato-0">
+                        </mod> d’Orcia</placeName>, il quale <mod change="#strato-0">
                         <subst><del rend="strikethrough">non potè</del>
                             <add place="inline">andò</add></subst></mod> sperso 
                     <app><lem varSeq="2"><mod change="#strato-1"><add place="above">e del quale <del rend="strikethrough">ho</del>or ultimamente</add> non 
@@ -1101,7 +1201,7 @@
                 <lb n="4"/><lg n="1"><l n="1">Sotto il <placeName ref="#Monte_Amiata">Monte Amiata</placeName> io l’<placeName ref="#Orcia">Orcia</placeName> vedo</l>
                     <lb n="5"/><l n="2">che si distende come un serpe bianco;</l>
                     <lb n="6"/><l n="3">prima nascer da <placeName ref="#Cetona">Cet<mod change="#strato-0"><del rend="overwritten">e</del>
-                            <add place="superimposed">o</add></mod>na</placeName>
+                                <add place="superimposed">o</add></mod>na</placeName>
                         <mod change="#strato-12"><add place="inline">,</add></mod> quando siedo</l>
                     <lb n="7"/><l n="4">nella ringhiera presso la sera stanco.</l>
                 </lg>
@@ -1131,7 +1231,7 @@
             <div type="page">
                 <pb n="10r1" facs="10r.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-2"><add>11</add></mod></fw>
-                <lb n="1"/><ab rend="align-center"><mod change="#strato-1"><add>In Seminario 1<subst><del rend="overwritten">3</del><add place="superimposed">2</add></subst> e 1<subst><del rend="overwritten">5</del><add place="superimposed">3</add></subst>
+                <lb n="1"/><ab rend="align-center"><mod change="#strato-1"><add>In <placeName ref="#Seminario_Vescovile">Seminario</placeName> 1<subst><del rend="overwritten">3</del><add place="superimposed">2</add></subst> e 1<subst><del rend="overwritten">5</del><add place="superimposed">3</add></subst>
                             <gap unit="char" quantity="2"/>14           1905-06-07</add></mod> <note n="1" resp="#ST" type="critical">Questa sorta di titolo di paragrafo si pensa che debba essere messo in relazione con
                         «La mia fanciullezza. 10 e 11 anni», indicazione presente a 1r1: sono, infatti, 
                         simmetrici per costruzione e sono stati inseriti da Tuscano ricavando dello 
@@ -1205,8 +1305,8 @@
                          <subst seq="1"><del rend="strikethrough">come</del>
                          <add place="above">ad</add></subst></del>
                          <add place="above">il posto di</add> </subst>-->
-                         
-                 <persName ref="#maestro_Buoni">Vicerettore</persName> dello stesso <placeName ref="#Seminario_Vescovile">Seminario</placeName>: tanto che ri-
+                    
+                    <persName ref="#maestro_Buoni">Vicerettore</persName> dello stesso <placeName ref="#Seminario_Vescovile">Seminario</placeName>: tanto che ri-
                     <lb n="19"/>masi sempre sotto lo sguardo dell’unico maestro di cui io serbi grata me-
                     <lb n="20"/>moria, e <mod change="#strato-4"><add place="above">che</add></mod> reputi uomo di senno.
                 </p>
@@ -1222,14 +1322,14 @@
                         <lb n="2"/>passione 
                         <mod change="#strato-1"><subst><del rend="strikethrough">de</del>
                                 <add place="inline">poetica</add></subst></mod>, ma così non fu. Nell’<title><ref target="#Nuova_Antologia"
-                             type="biblio">Antologia Ita-
-                        <lb n="3"/>liana</ref></title> del <persName ref="#Luigi_Santoni">Santoni</persName> che adopravamo allora <mod change="#strato-1">
+                                                                                                              type="biblio">Antologia Ita-
+                                <lb n="3"/>liana</ref></title> del <persName ref="#Luigi_Santoni">Santoni</persName> che adopravamo allora <mod change="#strato-1">
                             <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del>
                                 <add place="superimposed">in</add></subst></mod> 1<hi rend="apice">a</hi> Ginnasiale,
                         <lb n="4"/>lessi e gustai con nuovo piacere le famose <title><ref target="#Stanze_Giostra"
-                             type="biblio">stanze</ref></title>del
+                                                                                              type="biblio">stanze</ref></title>del
                         <lb n="5"/><persName ref="#Agnolo_Poliziano">Poliziano</persName> sulla [Dolcezza della vita campestre] (<quote>Quant’è
-                        <lb n="6"/>più dolce, quant’è più sicura </quote>etc) talché non potei stare 
+                            <lb n="6"/>più dolce, quant’è più sicura </quote>etc) talché non potei stare 
                         <mod change="#strato-1"><del rend="overwritten" xml:id="del_di2">di</del>
                             <add place="superimposed" xml:id="add_a">a</add>
                             <del rend="strikethrough" xml:id="del_imp">imp</del>
@@ -1242,14 +1342,14 @@
                 <p rend="indent" >
                     <mod change="#strato-1"> <lb n="10"/>Gli <title><ref target="#Ospizi_Marini">ospizi marini</ref></title> dello <persName ref="#Giacomo_Zanella">Zanella</persName>; e soprattutto mi piacquero
                         <lb n="11"/>le 8 prime ottave del canto 3 della <title><ref target="#Gerusalemme_Liberata">Gerusalemme Libera-
-                        <lb n="12"/>ta</ref></title>. Dolcissim
+                                <lb n="12"/>ta</ref></title>. Dolcissim
                         <mod change="#strato-1"><subst><del rend="overwritten">a</del>
-                                <add place="superimposed">e</add></subst></mod> mi parvero la <hi rend="underline">
-                            <mod change="#strato-1"><subst><del rend="overwritten">p</del>
-                                    <add place="superimposed">P</add></subst></mod>reghiera della</hi>
-                        <lb n="13"/><hi rend="underline">sera</hi> della Milli e 
+                                <add place="superimposed">e</add></subst></mod> mi parvero la <title><ref target="#Ave_Maria_della_Sera"><hi rend="underline">
+                                    <mod change="#strato-1"><subst><del rend="overwritten">p</del>
+                                            <add place="superimposed">P</add></subst></mod>reghiera della</hi>
+                                <lb n="13"/><hi rend="underline">sera</hi></ref></title> della <persName ref="#Giannina_Milli">Milli</persName> e 
                         <mod change="#strato-1"><subst><del rend="strikethrough">la</del>
-                                <add place="inline">l’</add></subst></mod><hi rend="underline"><hi rend="italic">Esule</hi></hi> della ...</mod>
+                                <add place="inline">l’</add></subst></mod><hi rend="underline"><title><ref target="#Esule">Esule</ref></title></hi> della ...</mod>
                 </p>
                 <p rend="indent">
                     <mod change="#strato-1"><lb n="14"/>Le Antologie furono per me sempre una passione,
@@ -1283,7 +1383,7 @@
                                     </corr>
                                 </choice> compiti,</add></mod> imparai la lezione per le scale 
                         <mod change="#strato-1">
-                            <del rend="strikethrough">del Seminario</del></mod>,
+                            <del rend="strikethrough">del <placeName ref="#Seminario_Vescovile">Seminario</placeName></del></mod>,
                         <lb n="5"/>approfittando della 
                         <mod change="#strato-1"><del rend="strikethrough" xml:id="del_tena" seq="2">
                                 <subst seq="1"><add place="above">tena</add><del rend="strikethrough">buona</del></subst>
@@ -1316,10 +1416,10 @@
                         Molte <mod change="#strato-1">
                             <add place="above">altre</add>
                         </mod> 
-                        volte servendo la Messa al Rettore 
+                        volte servendo la Messa al <persName ref="#Rettore_Seminario">Rettore</persName> 
                         <mod change="#strato-1"><subst><del rend="overwritten">mi successe</del>
-                                <add place="superimposed">davanti a tutti</add></subst></mod>
-                        <lb n="12"/>il Seminario mi successe di distrarmi e di non rispondere
+                                <add place="superimposed">davanti a tutto</add></subst></mod>
+                        <lb n="12"/>il <placeName ref="#Seminario_Vescovile">Seminario</placeName> mi successe di distrarmi e di non rispondere
                         <lb n="13"/>ai versetti, di portare l’ampolle col piattino, quando 
                         <lb n="14"/>quest’ultimo non ci voleva, di dire «Amen» dopo un
                         <lb n="15"/>minuto, di non voltare il Messale a tempo, d’inciam-
@@ -1327,8 +1427,8 @@
                         <lb n="17"/>tutto quello che non dimostrava un ragazzo attento,
                         <lb n="18"/>col capo a posto e adatto per le cerimonie della Chiesa.
                         <lb n="19"/>Tal che 
-                        <choice><sic>il prefetto e il Rettore</sic>
-                            <corr resp="#ST">il prefetto, il Rettore e </corr></choice>
+                        <choice><sic>il <persName ref="#Prefetto_Seminario">prefetto</persName> e il <persName ref="#Rettore_Seminario">Rettore</persName></sic>
+                            <corr resp="#ST">il <persName ref="#Prefetto_Seminario">prefetto</persName>, il <persName ref="#Rettore_Seminario">Rettore</persName> e </corr></choice>
                         <mod change="#strato-1"><add place="above">il maestro</add></mod> vedendo ch’io non mi correggeva
                         <lb n="20"/>o che crescendo mi <choice>
                             <sic/> 
@@ -1393,7 +1493,7 @@
                         <app><lem varSeq="2"><mod change="#strato-12">liberar<subst><del rend="overwritten">mene</del><add place="superimposed">e</add></subst></mod></lem>
                             <rdg varSeq="1">liberar<mod change="#strato-1">mene</mod></rdg>    
                         </app>. I miei superiori
-                        <mod change="#strato-1"><add place="above" xml:id="add_eccetto_Buoni">, eccetto Buoni,</add> co-
+                        <mod change="#strato-1"><add place="above" xml:id="add_eccetto_Buoni">, eccetto <persName ref="#maestro_Buoni">Buoni</persName>,</add> co-
                             <lb n="10"/>minciarono a credermi maligno
                             <del rend="strikethrough" xml:id="del_eccetto">eccetto</del>
                             <substJoin target="#del_eccetto #add_eccetto_Buoni"/></mod>
@@ -1413,14 +1513,14 @@
                             </add>
                             <substJoin target="#del_modello #add_esempio #del_atutti #add_dalquale"/>
                         </mod> <!-- <mod change="#strato-1">
-                            <subst seq="1"><del rend="strikethrough">modello</del>
-                                <add place="above">esempio</add></subst>
-                            <lb/> <subst seq="1"><del rend="strikethrough">a tutti</del>
-                                <add place="inline" seq="1">
-                                    <lb n="12"/>dal quale
-                                    <add place="above" seq="2">tutti</add>
-                                    imparassero</add></subst></mod> non è meglio substJoin per la contemporaneità?-->
-                        ciò che non era esemplare.
+                             <subst seq="1"><del rend="strikethrough">modello</del>
+                             <add place="above">esempio</add></subst>
+                             <lb/> <subst seq="1"><del rend="strikethrough">a tutti</del>
+                             <add place="inline" seq="1">
+                             <lb n="12"/>dal quale
+                             <add place="above" seq="2">tutti</add>
+                             imparassero</add></subst></mod> non è meglio substJoin per la contemporaneità?-->
+                         ciò che non era esemplare.
                         <lb n="13"/>Essi 
                         <mod change="#strato-1">
                             <subst>
@@ -1498,7 +1598,7 @@
                         <lb n="8"/>pagnia. 
                         <mod change="#strato-1"><subst><del rend="strikethrough">Il g</del>
                                 <add place="inline">Durante</add> </subst></mod>il giorno nello studio co-
-                        <lb n="9"/>mune il prefetto andava dicendo che non studiavo
+                        <lb n="9"/>mune il <persName ref="#Prefetto_Seminario">prefetto</persName> andava dicendo che non studiavo
                         <mod change="#strato-1"><subst><del rend="overwritten">: <lb/> e</del>
                                 <add place="superimposed">.
                                     <lb n="10"/>E</add></subst></mod> aveva ragione: io studiavo quando lui non
@@ -1549,7 +1649,7 @@
                         <lb n="2"/>dia e l’ira contro taluno di questi, che venne così per
                         <lb n="3"/>rimbalzo a <mod change="#strato-1">
                             <del rend="strikethrough">ve</del></mod> non veder di buon occhio né me, né quello
-                        <lb n="4"/>che sapevo fare. Spesso piansi, <mod change="#strato-1"><add place="above">spesso</add></mod> disperai, spesso sospi
+                        <lb n="4"/>che sapevo fare. Spesso piansi, <mod change="#strato-1"><add place="above">spesso</add></mod> disperai, spesso sospi-
                         <lb n="5"/>rai le carezze della <persName ref="#Anna_Riedi">mamma</persName>, spesso mi pentii d’aver
                         <lb n="6"/>
                         <mod change="#strato-1"><subst><del rend="strikethrough">preso</del>
@@ -1574,14 +1674,14 @@
                         <mod change="#strato-1">
                             <add place="above" seq="1">Nel maggio di quell’anno 1905</add> 
                             <subst seq="1"><del rend="overwritten">M</del>
-                                <add place="superimposed">m</add></subst></mod>i capitò tra mano l’Antologia che 
+                                <add place="superimposed">m</add></subst></mod>i capitò tra mano l’<title><ref target="#Antologia_Letteraria">Antologia</ref></title> che 
                         <mod change="#strato-1">
                             <add place="above">allora</add>
                         </mod> si usava a 2<hi rend="apice">a</hi> e 3<hi rend="apice">a</hi>
-                        <lb n="14"/>Ginnasiale, del Prinzivalli e Salvadori; la lessi e vi gustai
+                        <lb n="14"/>Ginnasiale, del <persName ref="#Virginio_Prinzivalli">Prinzivalli</persName> e <persName ref="#Enrico_Salvadori">Salvadori</persName>; la lessi e vi gustai
                         <lb n="15"/><mod change="#strato-1">
                             <add place="above">immensamente </add>
-                        </mod>quella scena tragica dell’atto 3<hi rend="apice">o</hi> del Saul Alfieriano.
+                        </mod>quella scena tragica dell’atto 3<hi rend="apice">o</hi> del <title><ref target="#Saul">Saul</ref></title> <persName ref="#Vittorio_Alfieri">Alfieriano</persName>.
                         <lb n="16"/>Lo lessi molte volte e quantunque non ci dovessi capir
                         <lb n="17"/>tanto, mi ricordo d'averci sentito un che di fiero, d'audace
                         <lb n="18"/>e a un tempo di dolce,
@@ -1667,14 +1767,14 @@
                             </subst>
                         </mod> sem-
                         <lb n="5"/>brò una felicità; lo presi e in tre giorni lo scorsi tutto.
-                        <lb n="6"/>Delle quattro tragedie, Maria Stuarda, Mirra, Merope,
-                        <lb n="7"/>Congiura de’ Pazzi, 
+                        <lb n="6"/>Delle quattro tragedie, <title><ref target="Maria_Stuarda">Maria Stuarda</ref></title>, <title><ref target="#Mirra">Mirra</ref></title>, <title><ref target="#Merope">Merope</ref></title>,
+                        <lb n="7"/><title><ref target="#Congiura_Pazzi">Congiura de’ Pazzi</ref></title>, 
                         <mod change="#strato-1"><subst><del rend="strikethrough">mi piacque</del>
-                                <add place="inline">preferii </add></subst></mod>Mirra e
+                                <add place="inline">preferii </add></subst></mod><title><ref target="#Mirra">Mirra</ref></title> e
                         <lb n="8"/>su quella il 
                         <mod change="#strato-1"><subst><del rend="strikethrough">prossi</del>
                                 <add place="inline">venturo</add></subst></mod> novembre <mod change="#strato-1">
-                            <add place="above">già tornato in Seminario</add></mod> architettai
+                            <add place="above">già tornato in <placeName ref="#Seminario_Vescovile">Seminario</placeName></add></mod> architettai
                         <mod change="#strato-1"><del rend="strikethrough">
                                 <add place="above">e composi</add>
                             </del></mod>
@@ -1761,13 +1861,13 @@
                                 </mod></rdg> </app> e a’ miei circostanti. Il titolo
                         <lb n="18"/>
                         <mod change="#strato-1"><subst><del rend="strikethrough">era</del>
-                                <add place="inline">fu</add></subst></mod> prima il Trionfo dell’Innocenza, quindi Daniello
+                                <add place="inline">fu</add></subst></mod> prima il <title><ref target="#Daniello">Trionfo dell’Innocenza</ref></title>, quindi <title><ref target="#Daniello">Daniello</ref></title>
                         <lb n="19"/>
                         <mod change="#strato-1"><subst><del rend="strikethrough">nella f</del>
                                 <add place="above">(profeta nelle fosse di leoni)</add></subst></mod>. Il tema era storico e io 
                         <mod change="#strato-1"><subst><del rend="strikethrough">l'</del>
                                 <add place="above">n’</add></subst></mod>avevo letto <mod change="#strato-1"><add place="above">uno squarcio</add></mod> in un foglio
-                        <lb n="20"/>sperso della Bibbia, e nella mia piccola Storia 
+                        <lb n="20"/>sperso della <title><ref target="#Bibbia">Bibbia</ref></title>, e nella mia piccola Storia 
                         <mod change="#strato-1"><subst><del rend="strikethrough">Sto</del>
                                 <add place="inline">Sacra</add></subst></mod>.</mod>
                 </p>
@@ -1916,7 +2016,7 @@
                         <mod change="#strato-2"><subst><del rend="overwritten">r</del>
                                 <add place="superimposed">v</add></subst></mod>ari; uno dei quali era
                         <lb n="2"/>questo:</mod></p>
-                <ab rend="indent"><mod change="#strato-2"><lb n="3"/>Dario:</mod></ab><sp><lg><mod change="#strato-2">
+                <sp who="#Dario"><speaker><mod change="#strato-2"><lb n="3"/>Dario:</mod></speaker><lg><mod change="#strato-2">
                             <l n="1">Sorgi, Daniele; la fortuna arride</l>
                             <lb n="4"/><l n="2">a te benigna;</l>
                             <lb n="5"/><l n="3">e dal suo trono eccelso il divo nume</l>
@@ -1933,7 +2033,7 @@
                             <lb n="11"/><l n="9">d<mod change="#strato-2"><subst><del rend="overwritten">ono</del><add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></mod></lg></sp>
                 
                 <p rend="indent"><mod change="#strato-2"><lb n="12"/>un altro era questo:</mod></p> 
-                <ab rend="indent"><mod change="#strato-2"><lb n="3"/>Dario:</mod></ab> <sp><lg><mod change="#strato-2"><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
+                <sp who="#Dario"><speaker><mod change="#strato-2"><lb n="3"/>Dario:</mod></speaker><lg><mod change="#strato-2"><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
                             <lb n="14"/><l n="2">sorgi, Daniele; la fortuna arride</l>
                             <lb n="15"/><l n="3">a te benigna; e già mi par che lieta</l>
                             <lb n="16"/><l n="4">con dive mani un regio serto al crine</l>
@@ -1986,12 +2086,12 @@
                                 <add place="inline">pochi<lb n="10"/>versi</add></subst></mod>
                         ch’avevo fatti erano fatti a orecchio. Nell’Antologie avevo
                         <lb n="11"/>trovato qualche regola metrica, ma non serviva. Un giorno
-                        <lb n="12"/>vidi nella scansia del mio prefetto un libro del <persName ref="#Giuseppe_Finzi">Finzi </persName>intitolato “Arte del Di-
-                        <lb n="13"/>re”, ed io ghiotto più che mai mi ricordo d’averlo preso senza
+                        <lb n="12"/>vidi nella scansia del mio prefetto un libro del <persName ref="#Giuseppe_Finzi">Finzi </persName>intitolato “<title><ref target="#Arte_del_Dire">Arte del Di-
+                        <lb n="13"/>re</ref></title>”, ed io ghiotto più che mai mi ricordo d’averlo preso senza
                         <lb n="14"/>permesso, sicuro che il prefetto un po’ rustico, un po’ tangano
                         <lb n="15"/>me l’avrebbe negato, e m’avrebbe quel ch’era peggio umiliato dicendo-
                         <lb n="16"/>mi: «Ancora non è roba pe’ tuoi denti». Lo tenni tre giorni e per
-                        <lb n="17"/>buona fortuna il caro mio prefetto non se n’accorse. Quello studio <mod change="#strato-3"><add place="above">benché</add></mod> ra-
+                        <lb n="17"/>buona fortuna il caro mio <persName ref="#Prefetto_Seminario">prefetto</persName> non se n’accorse. Quello studio <mod change="#strato-3"><add place="above">benché</add></mod> ra-
                         <lb n="18"/>pido <mod change="#strato-3"><add place="above">e clandestino</add></mod> bastò a farmi comprendere <mod change="#strato-3">
                             <subst><del rend="strikethrough">il numero delle sillabe</del>
                                 <add place="above">in che consistesse il verso,<del rend="strikethrough">o contare</del></add></subst></mod> il
@@ -2017,8 +2117,8 @@
                 <p rend="indent"> <mod change="#strato-2"><lb n="4"/>un 
                         <del rend="strikethrough">'</del>
                         altro era questo:</mod></p>
-                <ab rend="indent"><mod change="#strato-2">Dario:</mod></ab>
-                <sp><lg><mod change="#strato-2"><lb n="5"/><l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#strato-2">
+                <sp who="#Dario"><speaker><mod change="#strato-2"><lb n="5"/>Dario:</mod></speaker><lg><mod change="#strato-2">
+                                <l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#strato-2">
                                     <subst><del rend="overwritten">e</del>
                                         <add place="superimposed">i</add></subst></mod></l>
                             <lb n="6"/><l n="2">fantasime, non ombre insidiatrici</l>
@@ -2035,7 +2135,7 @@
                             <del rend="strikethrough">dipinto quasi filosofo</del>
                         </mod>
                     </mod></p>
-                <sp><lg><mod change="#strato-2"><lb n="13"/><l n="1" rend="align-center">Ormai</l>
+                <sp who="#Dario"><lg><mod change="#strato-2"><lb n="13"/><l n="1" rend="align-center">Ormai</l>
                             <lb n="14"/><l n="2">non lungi è l’ora in cui piegherò il capo</l>
                             <lb n="15"/><l n="3">sotto l’avello, che pur degno l’ossa</l>
                             <lb n="16"/><l n="4">mie serberà fra le sacrate mura;</l>
@@ -2097,9 +2197,9 @@
                                     <del rend="strikethrough">stupenda</del>
                                 </mod></lem>
                             <rdg varSeq="1"><mod change="#strato-3">stupenda</mod></rdg>    
-                        </app> villa <mod change="#strato-3">
+                        </app> <placeName ref="#Monastero_S.Anna">villa <mod change="#strato-3">
                             <subst><del rend="strikethrough">di S</del>
-                                <add place="inline">Vescovile</add></subst></mod> di S. Anna; e
+                                <add place="inline">Vescovile</add></subst></mod> di S. Anna</placeName>; e
                         <lb n="15"/>la credetti allora stabile.
                         Ma nel Gennaio seguente 1907 
                         <lb n="16"/>rileggendola <mod change="#strato-3"><del rend="strikethrough">d</del></mod> e giudicandola, venni alla conclusione
@@ -2123,28 +2223,28 @@
                 
                 <p rend="indent"><mod change="#strato-2"><lb n="1"/>E più sotto alcuni versi destinati a Daniele dipinto sem-
                         <lb n="2"/>pre come mansueto e mesto a un tempo, sembrano emulare alcuni
-                        <lb n="3"/>altri <mod change="#strato-2"><subst><del rend="strikethrough">del</del><add place="inline">tanto</add></subst></mod> <!-- che debba mettere solo del?--> più perfetti dell’Edmengarda di Manzoni; e dire
-                        <lb n="4"/>che allora io non sapeva neppure che il Manzoni<choice resp="#ST"><sic>l</sic><corr/></choice> aveva scritto
-                        <lb n="5"/><mod change="#strato-2"><subst><del rend="strikethrough">non molto altro che non fossero</del><add place="above">anche tragedie oltre</add></subst></mod> i Promessi Sposi. E mi ricordo
-                        <lb n="6"/>che quando per la prima volta lessi quei versi del gran Romanzie-
-                        <lb n="7"/>re mi fecero un caso strano quasi che il sommo scrittore si
+                        <lb n="3"/>altri <mod change="#strato-2"><subst><del rend="strikethrough">del</del><add place="inline">tanto</add></subst></mod> <!-- che debba mettere solo del?--> più perfetti dell’<title><ref target="#Adelchi">Edmengarda</ref></title> di <persName ref="#Alessandro_Manzoni">Manzoni</persName>; e dire
+                        <lb n="4"/>che allora io non sapeva neppure che il <persName ref="#Alessandro_Manzoni">Manzoni</persName><choice resp="#ST"><sic>l</sic><corr/></choice> aveva scritto
+                        <lb n="5"/><mod change="#strato-2"><subst><del rend="strikethrough">non molto altro che non fossero</del><add place="above">anche tragedie oltre</add></subst></mod> i <title><ref target="#Promessi_Sposi">Promessi Sposi</ref></title>. E mi ricordo
+                        <lb n="6"/>che quando per la prima volta lessi quei versi del gran <persName ref="#Alessandro_Manzoni">Romanzie-
+                        <lb n="7"/>re</persName> mi fecero un caso strano quasi che il sommo scrittore si
                         <lb n="8"/>(che anacronismi!) si fosse ricordato dei miei <mod change="#strato-2">(scritti <subst><del rend="strikethrough">a</del><add place="above">in età di</add></subst> 12 o 13 anni<subst><del rend="strikethrough">)</del>
                                 <lb n="9"/><add place="inline">e quasi un secolo dopo.)</add></subst></mod>
                     </mod>
                 </p>
-                <ab rend="indent">
-                    <mod change="#strato-2"><lb n="10"/>Dan.:</mod></ab> <sp><lg><mod change="#strato-2"><l n="1">Perché sì truci</l>
+                <sp who="#Daniello_per"><speaker><mod change="#strato-2"><lb n="10"/>Dan:</mod></speaker><lg><mod change="#strato-2">
+                            <l n="1">Perché sì truci</l>
                             <lb n="11"/><l n="2">pensieri, o Sir? Non vedi come il cielo</l>
                             <lb n="12"/><l n="3">apre maestoso il vasto manto e come</l>
                             <lb n="13"/><l n="4">natura esulta e a te sorride?</l></mod></lg></sp>
                 
                 <p rend="indent"><mod change="#strato-2"><lb n="14"/>E più sotto da notarsi l’agilità <mod change="#strato-2"><subst><del rend="overwritten">d</del><add place="superimposed">n</add></subst></mod>ella forma di questi:</mod></p>
-                <sp><lg><mod change="#strato-2"><lb n="15"/><l n="1">Come innocente la colomba al cielo</l>
+                <sp who="#Daniello_per"><lg><mod change="#strato-2"><lb n="15"/><l n="1">Come innocente la colomba al cielo</l>
                             <lb n="16"/><l n="2">spicca da terra l’anelante volo</l>
                             <lb n="17"/><l n="3">tale alle stelle volerà mia prece</l>
                             <lb n="18"/><l n="4">fervida e grata.</l></mod></lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="19"/>E questi in bocca d<mod change="#strato-2"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> Dario:</mod></p>
-                <sp><lg><mod change="#strato-2"><lb n="20"/><l n="1">Ma la potenza lor troppo è crudele</l>
+                <sp who="#Dario"><lg><mod change="#strato-2"><lb n="20"/><l n="1">Ma la potenza lor troppo è crudele</l>
                             <lb n="21"/><l n="2"><hi rend="underline">ad ogni orrendo crimine assuefatta!</hi></l></mod></lg></sp>
                 
                 
@@ -2196,12 +2296,12 @@
                                 </del>
                                 <add place="inline" seq="2">:</add>
                             </subst></mod></mod><note n="1" resp="#ST">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
-                <sp><lg><mod change="#strato-2"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
+                <sp who="#Corrado"><lg><mod change="#strato-2"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
                             <lb n="4"/><l n="2">piegar della plebaglia il fido cuore</l>
                             <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></mod></lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="6"/>Impreciso il significato di quel <hi rend="underline">fido</hi>. Ancora nella 3a scena il Re
                         <lb n="7"/>minaccia morte a Corrado se mancherà al patto:</mod></p>
-                <sp><lg><mod change="#strato-2"><lb n="8"/><l n="1">Sul palco il capo</l>
+                <sp who="#Dario"><lg><mod change="#strato-2"><lb n="8"/><l n="1">Sul palco il capo</l>
                             <lb n="9"/><l n="2">a te cadrà se a me fedel non resti;</l>
                             <lb n="10"/><l n="3">evitar non potrai la giusta pena</l>
                             <lb n="11"/><l n="4">se macchiarti oserai di tal misfatto.</l></mod></lg></sp>
@@ -2214,7 +2314,7 @@
                         <lb n="16"/>sua pietà con parole amorose e che quantunque poco bene
                         <lb n="17"/>espresse nascondono gentili sentimenti <choice resp="#ST"><sic>ed</sic><corr/></choice><mod change="#strato-2"><subst><del rend="strikethrough">esprimono</del><add place="above">e volevano almeno esprimere</add></subst></mod> l’amore
                         <lb n="18"/>paterno.</mod></p>
-                <sp><lg><mod change="#strato-2"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
+                <sp who="#Flaviano"><lg><mod change="#strato-2"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
                             <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></mod></lg></sp>
                 
             </div>
@@ -2228,9 +2328,9 @@
                 <p rend="indent"><mod change="#strato-3"><lb n="5"/>La passione di scrivere era così forte <mod change="#strato-3">che<del rend="strikethrough" seq="2"><add place="above" seq="1">mi</add></del> tolse ogni <del rend="strikethrough" seq="2">solo</del> vigore</mod> agli
                         <lb n="6"/>altri studi. Ne l’ore di studio comune scrivevo i versi, come fossero
                         <lb n="7"/>prosa, facendo la lettera iniziale maiuscola, per non essere scoperto
-                        <lb n="8"/>dal prefetto che <mod change="#strato-3">me <subst><add place="above">ne</add><del rend="strikethrough">l'</del></subst> avrebbe tosto <subst><del rend="strikethrough">proibito</del><add place="above">punito</add></subst> come <add place="above">d'</add>un delitto <del rend="strikethrough">de-<lb/>gno d'ergastolo</del></mod>
+                        <lb n="8"/>dal <persName ref="#Prefetto_Seminario">prefetto</persName> che <mod change="#strato-3">me <subst><add place="above">ne</add><del rend="strikethrough">l'</del></subst> avrebbe tosto <subst><del rend="strikethrough">proibito</del><add place="above">punito</add></subst> come <add place="above">d'</add>un delitto <del rend="strikethrough">de-<lb/>gno d'ergastolo</del></mod>
                         <lb n="9"/>, e <mod change="#strato-3"><subst><del rend="strikethrough">d</del><add place="inline">per</add></subst></mod> <mod change="#strato-3"><add place="above">non</add></mod> essere veduto dai compagni i quali
-                        <lb n="10"/>avrebbero potuto riferire al prefetto. Quindi una barca di libri
+                        <lb n="10"/>avrebbero potuto riferire al <persName ref="#Prefetto_Seminario">prefetto</persName>. Quindi una barca di libri
                         <lb n="11"/>studiavo che coprissero il mio operato <mod change="#strato-3"> <del rend="overwritten" xml:id="del_punto">.</del>
                             <add place="superimposed" xml:id="add_virgola">,</add>
                             <subst>
@@ -2277,7 +2377,7 @@
                     <mod change="#strato-2"><lb n="13"/> E nella 4<hi rend="apice">a</hi> scena notevole è il pensiero espresso da un satrapo nemico
                         <lb n="14"/> del profeta di nome Gerardo:</mod>
                 </p>
-                <sp><lg>
+                <sp who="#Gerardo"><lg>
                         <mod change="#strato-2"><lb n="15"/><l n="1">E maggior duolo apporta a un cuore afflitto</l>
                             <lb n="16"/><l n="2">veder vicina la sua meta e indarno</l>
                             <lb n="17"/><l n="3">sperar di giungervi assetato e stanco.</l>
@@ -2286,7 +2386,7 @@
                 <p rend="indent">
                     <mod change="#strato-2"><lb n="18"/>Più sotto il compagno di Gerardo, Leopoldo:</mod>
                 </p>
-                <sp><lg>
+                <sp who="#Leopoldo"><lg>
                         <mod change="#strato-2">
                             <lb n="19"/><l n="1">E d’amistade</l>
                             <lb n="20"/><l n="2">non si strinsero in noi tenaci nodi?</l>
@@ -2298,7 +2398,7 @@
                 <fw place="top_left" type="pageNum"><mod change="#strato-4"><add><hi rend="underline">28</hi></add></mod></fw>
                 <p rend="indent"><mod change="#strato-3">
                         <lb n="1"/>studiassi di sembrare attento alle lezioni del maestro e agli
-                        <lb n="2"/>ammonimenti del prefetto, io non vi riusciva.
+                        <lb n="2"/>ammonimenti del <persName ref="#Prefetto_Seminario">prefetto</persName>, io non vi riusciva.
                     </mod></p>
                 <p rend="indent"><mod change="#strato-3">
                         <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <choice><sic>curioso<mod change="#strato-4"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-4"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#UT">superiore curioso</corr></choice>
@@ -3755,7 +3855,7 @@
                                     <lb n="13"/>cagione di tutte le mie scapataggini, di
                                     <lb n="14"/>tutte le mie svogliatezze:</add>
                             </subst></mod>vivevo <mod change="#strato-6"><subst><del rend="strikethrough">una condi</del>
-                        <lb n="15"/><add place="inline">una vita</add></subst></mod> troppo <mod change="#strato-8"><add place="above">scomposta, troppo</add></mod> anormale per un ragazzo del-
+                                <lb n="15"/><add place="inline">una vita</add></subst></mod> troppo <mod change="#strato-8"><add place="above">scomposta, troppo</add></mod> anormale per un ragazzo del-
                         <lb n="16"/>le mie in<mod change="#strato-6"><subst><del rend="overwritten">d</del><add place="superimposed">cl</add></subst></mod>inazioni, talché lo svolgimento di esse
                         <lb n="17"/>fu disviato, scorretto ed erroneo.</mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="18"/>Sentivo nel<mod change="#strato-6"><subst><del rend="overwritten">ll'</del><add place="superimposed">mio</add></subst></mod> interno che avrei potuto far di più,
@@ -3769,32 +3869,32 @@
                 <pb n="22r2" facs="22r2.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-8"><add>64</add></mod></fw>
                 <p rend="indent"><mod change="#strato-6"><lb n="1"/><app><lem varSeq="2"><mod change="#strato-9"><hi rend="underline">tutto quello che doveva <app><lem varSeq="2"><mod change="#strato-8"><subst><del rend="strikethrough">far credere ai maestri</del><add place="above">cadere sotto giudizio</add></subst></mod></lem>
-                            <rdg></rdg>
-                            <rdg varSeq="1"><mod change="#strato-6">far credere ai maestri</mod></rdg>    
-                        </app>.</hi></mod></lem>
-                        <rdg varSeq="1">tutto quello che doveva <app><lem varSeq="2"><mod change="#strato-8"><subst><del rend="strikethrough">far credere ai maestri</del><add place="above">cadere sotto giudizio</add></subst></mod></lem>
-                            <rdg></rdg>
-                            <rdg varSeq="1"><mod change="#strato-6">far credere ai maestri</mod></rdg>    
-                        </app>.</rdg>    
+                                            <rdg></rdg>
+                                            <rdg varSeq="1"><mod change="#strato-6">far credere ai maestri</mod></rdg>    
+                                        </app>.</hi></mod></lem>
+                            <rdg varSeq="1">tutto quello che doveva <app><lem varSeq="2"><mod change="#strato-8"><subst><del rend="strikethrough">far credere ai maestri</del><add place="above">cadere sotto giudizio</add></subst></mod></lem>
+                                    <rdg></rdg>
+                                    <rdg varSeq="1"><mod change="#strato-6">far credere ai maestri</mod></rdg>    
+                                </app>.</rdg>    
                         </app></mod></p> <!-- Codifica complessa-->
                 <p rend="indent"><mod change="#strato-6"><lb n="2"/>Mi ricordo <mod change="#strato-6"><add place="above">che</add></mod> una volta <mod change="#strato-6">f<del rend="overwritten" xml:id="del_eci">eci</del><add place="superimposed" xml:id="add_atti">atti</add>
                             <del rend="strikethrough" xml:id="del_una">una</del>
                             <add place="inline" xml:id="add_alcuni">alcuni</add>
-                        <substJoin target="#del_feci #add_atti #del_una #add_alcuni"/>    
+                            <substJoin target="#del_feci #add_atti #del_una #add_alcuni"/>    
                         </mod> versi nel
                         <lb n="3"/>metro di Courmayeur Carducciana per
                         <mod change="#strato-6"><subst>
-                            <del rend="strikethrough" seq="1">il g</del>
-                            <del rend="strikethrough" seq="2">
-                                <add place="inline">il giorno</add>
-                            </del><lb n="4"/>
-                            <add place="inline" seq="2">la Prima Comunione</add>
-                        </subst></mod> d’un mio collega, li portai
+                                <del rend="strikethrough" seq="1">il g</del>
+                                <del rend="strikethrough" seq="2">
+                                    <add place="inline">il giorno</add>
+                                </del><lb n="4"/>
+                                <add place="inline" seq="2">la Prima Comunione</add>
+                            </subst></mod> d’un mio collega, li portai
                         <lb n="5"/>a far vedere al dotto Borghi con la speranza di sentir-
                         <lb n="6"/>mi lodare.</mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="7"/>Invece <mod change="#strato-6"><del rend="strikethrough" xml:id="del_conobbi">conobbi che</del> il <add place="above">dotto</add> maestro <add place="above" xml:id="add_nelsuo">nel suo grande gusto</add> <del rend="strikethrough" xml:id="del_uso">uso ai verbi di 
-                        <lb n="8"/>quel grande</del>
-                        <substJoin target="#del_conobbi #add_nelsuo #del_uso"/></mod>
+                                <lb n="8"/>quel grande</del>
+                            <substJoin target="#del_conobbi #add_nelsuo #del_uso"/></mod>
                         e nella sua vasta conoscenza, finì per
                         <lb n="9"/>compatirmi <mod change="#strato-6"><subst><del rend="strikethrough">e per</del> <add place="inline">e per</add></subst></mod> dichiararmi inetto. </mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="10"/>Io un po’ scoraggiato, <mod change="#strato-6"><subst><del rend="strikethrough">un po'</del> <add place="inline">molto</add></subst></mod> superbo, presi
@@ -3802,19 +3902,19 @@
                         <lb n="12"/>non fossi tanto convinto.</mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="13"/>Poveretto me! che razza di versi eran quelli! che
                         <lb n="14"/><add place="above">brutto</add> concetto si <mod change="#strato-6"><add place="above" xml:id="add_sarebbe">sarebbe</add> f<del rend="overwritten" xml:id="del_aceva">aceva</del><add place="superimposed" xml:id="add_atto1">atto</add>
-                        <substJoin target="#del_aceva #add_atto1"/>
+                            <substJoin target="#del_aceva #add_atto1"/>
                         </mod> di me chi<mod change="#strato-6"><add place="below">unque</add></mod> avesse letto quei versi!</mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="15"/>Pochi giorni dopo<mod change="#strato-6"><del rend="strikethrough">averli offerti all'amico</del></mod>, li
                         <lb n="16"/>rilessi e mi parvero immensamente brutti; richiesi <mod change="#strato-6"><add place="above">con buone scuse</add></mod> la copia all’amico e li strappai sul-
                         <lb n="17"/>l’istante. <app><lem varSeq="2"><mod change="#strato-11"><hi rend="underline">Il disordine che avevo nell'animo
-                        <lb n="18"/>si manifestava anche sull<mod change="#strato-6"><subst><del rend="overwritten"></del><add place="superimposed">a</add></subst></mod> penna!</hi></mod></lem>
-                        <rdg varSeq="1"><mod change="#strato-6">Il disordine che avevo nell'animo
-                        <lb n="19"/>si manifestava anche sull<mod change="#strato-6"><subst><del rend="overwritten"></del><add place="superimposed">a</add></subst></mod> penna!</mod></rdg>    
+                                        <lb n="18"/>si manifestava anche sull<mod change="#strato-6"><subst><del rend="overwritten"></del><add place="superimposed">a</add></subst></mod> penna!</hi></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-6">Il disordine che avevo nell'animo
+                                    <lb n="19"/>si manifestava anche sull<mod change="#strato-6"><subst><del rend="overwritten"></del><add place="superimposed">a</add></subst></mod> penna!</mod></rdg>    
                         </app></mod></p>
                 <p rend="indent"><mod change="#strato-6"><lb n="20"/>In quell’anno <mod change="#strato-8"><add place="above">o nell’anno di poi</add></mod> scrissi<app>
                             <lem varSeq="2"><mod change="#strato-8"><del rend="strikethrough">poi</del></mod></lem>
                             <rdg varSeq="1"><mod change="#strato-6">poi</mod></rdg>
-                </app><mod change="#strato-8">, molte altre poesie</mod></mod></p>
+                        </app><mod change="#strato-8">, molte altre poesie</mod></mod></p>
             </div>
             <div type="page">
                 <pb n="22v2" facs="22v2.jpg"/>
@@ -3836,7 +3936,7 @@
                         <lb n="7"/>anche da questa mostra non potei ricavarne elogi,
                         <lb n="8"/>tanto meno che in conseguenza del cambio fatto
                         <lb n="9"/>io venivo <mod change="#strato-8"><subst><del rend="strikethrough">come</del> <add place="inline">anche</add></subst></mod> come minore d’anni e di<mod change="#strato-8"><subst><del rend="strikethrough">dotto</del> 
-                        <lb n="10"/><add place="inline">esercizio</add></subst></mod>, a <app><lem varSeq="2"><mod change="#strato-9"><subst><del rend="strikethrough">soffrirne</del> <add place="above">subirne</add></subst></mod></lem>
+                                <lb n="10"/><add place="inline">esercizio</add></subst></mod>, a <app><lem varSeq="2"><mod change="#strato-9"><subst><del rend="strikethrough">soffrirne</del> <add place="above">subirne</add></subst></mod></lem>
                             <rdg varSeq="1"><mod change="#strato-8">soffrirne</mod></rdg>
                         </app> del discredito <app><lem varSeq="2"><mod change="#strato-9"><subst><del rend="strikethrough">e della</del> <add place="above">per</add></subst></mod></lem>
                             <rdg varSeq="1"><mod change="#strato-8">e della</mod></rdg>
@@ -3867,16 +3967,16 @@
                                 <del rend="strikethrough" seq="1">voleva <del rend="strikethrough" xml:id="del_fare">fare</del>
                                     <substJoin target="#del_fare #add_essere" seq="1"/>        
                                 </del>
-                                    <del rend="strikethrough" seq="2"><add place="above" xml:id="add_essere">essere</add></del>
-                                </subst> non solo <subst><del rend="strikethrough">al</del><add place="above">a</add></subst> giudice, ma anche a <del rend="strikethrough">l'</del> indovino. <del rend="strikethrough">(vero vate!)</del></mod>
-                        <lb n="4"/><app><lem varSeq="2"><mod change="#strato-9"><del rend="strikethrough"><mod change="#strato-8"><del rend="strikethrough">Però</del> <subst><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
-                        <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a quinta ginnasiale e poi</corr></choice> Conversione.</del></mod></lem>
-                    <rdg varSeq="1"><mod change="#strato-8"><mod change="#strato-8"><del rend="strikethrough" seq="2">Però</del> <subst seq="1"><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
-                        <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a Quinta ginnasiale e poi</corr></choice> Conversione.</mod></rdg>        
+                                <del rend="strikethrough" seq="2"><add place="above" xml:id="add_essere">essere</add></del>
+                            </subst> non solo <subst><del rend="strikethrough">al</del><add place="above">a</add></subst> giudice, ma anche a <del rend="strikethrough">l'</del> indovino. <del rend="strikethrough">(vero vate!)</del></mod>
+                        <lb n="4"/><app><lem varSeq="2"><mod change="#strato-X"><del rend="strikethrough"><mod change="#strato-8"><del rend="strikethrough">Però</del> <subst><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
+                                        <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a quinta ginnasiale e poi</corr></choice> Conversione.</del></mod></lem>
+                            <rdg varSeq="1"><mod change="#strato-8"><mod change="#strato-8"><del rend="strikethrough" seq="2">Però</del> <subst seq="1"><del rend="strikethrough">f</del><add place="inline">F</add></subst>u</mod> più indovino Brandano senz'essere
+                                    <lb n="5"/>poeta. <choice><sic><hi rend="apice">(1)</hi></sic><corr>Scuola del Borghi a Quinta ginnasiale e poi</corr></choice> Conversione.</mod></rdg>        
                         </app></mod></p>
                 <p rend="indent"><mod change="#strato-8"><lb n="6"/><del rend="strikethrough"><mod change="#strato-8"><subst><del rend="strikethrough">Fu</del><add place="above">Nel febbraio di</add></subst></mod> quell’anno 1909, il sedicesimo di mia
-                        <lb n="7"/>età, avvenne il fatto più importante della
-                        <lb n="8"/>mia giovinezza.</del></mod> <mod change="#strato-9"><add place="inline">Tolsi l'abito talare</add></mod></p>
+                            <lb n="7"/>età, avvenne il fatto più importante della
+                            <lb n="8"/>mia giovinezza.</del></mod> <mod change="#strato-9"><add place="inline">Tolsi l'abito talare</add></mod></p>
                 <p rend="indent"><mod change="#strato-8"><lb n="9"/><choice><sic><hi rend="apice">(1)</hi>Scuola del Borghi a quinta ginnasiale e poi</sic><corr/></choice></mod></p>
             </div>
         </body>
