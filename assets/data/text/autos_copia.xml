@@ -2421,11 +2421,11 @@
                                 <add place="inline" seq="3">I superiori</add>
                             </subst>
                             
-                            <!-- <subst><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In</del> <add place="inline">I sup</add></subst></del> <add place="inline">talchè</add></subst></del> <add place="inline">I superiori</add></subst>--> </mod> e i miei di casa
+                            <!-- <subst><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In</del> <add place="inline">I sup</add></subst></del> <add place="inline">talchè</add></subst></del> <add place="inline">I superiori</add></subst>--> </mod> e <persName ref="#genitori">i miei</persName> di casa
                         <lb n="12"/>si meravigliavano dei miei <mod change="#strato-8"><add place="above">scarsi</add></mod> <!-- lapis non si capisce quando usato--> successi e mi persero <mod change="#strato-3"><del rend="strikethrough">un po'</del></mod>
                         <lb n="13"/>la stima di fanciullo amante dello studio; questi a
                         <lb n="14"/>rimproverarmi <mod change="#strato-3"><subst><del rend="strikethrough">i sacri</del><add place="inline">come</add></subst></mod> male ricompensavo i sacrifici dello
-                        <lb n="15"/>zio che mi manteneva a quegli studi, quelli a minacciarmi
+                        <lb n="15"/><persName ref="#Don_Salvatore_Benocci">zio</persName> che mi manteneva a quegli studi, quelli a minacciarmi
                         <lb n="16"/>castighi o meglio a coprirmi di castighi.
                     </mod></p>
                 <p rend="indent"><mod change="#strato-3">
@@ -2439,20 +2439,20 @@
                 <pb n="23r1" facs="23r.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-2">2</mod><app><lem varSeq="2"><mod change="#strato-4"><del rend="overwritten">6</del><add place="superimposed">9</add></mod></lem><rdg varSeq="1"><mod change="#strato-2">6</mod></rdg></app></fw>
                 <p rend="indent"><mod change="#strato-2"><lb n="1"/>Nella stessa scena Gerardo dice a Leopoldo:</mod></p>
-                <lg><mod change="#strato-2">
+                <sp who="#Gerardo"><lg><mod change="#strato-2">
                         <lb n="2"/><l n="1">E se pazzo timore non adombri</l>
                         <lb n="3"/><l n="2">le labbra e il core ancor più apertamente</l>
                         <lb n="4"/><l n="3">parlar saprò come più aperto il campo</l>
                         <lb n="5"/><l n="4">all’ira.</l>
-                    </mod></lg> 
+                    </mod></lg> </sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="6"/>A cui risponde l’altro:</mod></p>
-                <sp><lg><mod change="#strato-2">
+                <sp who="#Leopoldo"><lg><mod change="#strato-2">
                             <lb n="7"/><l n="1">E in cor s'accende</l>
                             <lb n="8"/><l n="2">del rancore la vampa assai più ardente</l>
                             <lb n="9"/><l n="3">quando il nemico innanzi a noi trionfa.</l>
                         </mod></lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="10"/>Gerardo..........</mod></p>
-                <sp><lg><mod change="#strato-2">
+                <sp who="#Gerardo"><lg><mod change="#strato-2">
                             <lb n="11"/><l n="1">......E presto</l>
                             <lb n="12"/><l n="2">verrà quell’ora in cui cadrà <app><lem varSeq="2"><mod change="#strato-4"><hi rend="underline">sommerso</hi></mod></lem>
                                     <rdg varSeq="1"><mod change="#strato-2">sommerso</mod></rdg>    
@@ -2460,7 +2460,7 @@
                             <lb n="13"/><l n="3">nel sangue di sue vene.</l>
                         </mod></lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="14"/>Nella 6<hi rend="apice">a</hi> scena il Re rimprovera i malvagi satrapi:</mod></p>
-                <sp><lg><mod change="#strato-2">
+                <sp who="#Dario"><lg><mod change="#strato-2">
                             <lb n="15"/><l n="1">......Invidia</l>
                             <lb n="16"/><l n="2">nei vostri cor malaugurato seme</l>
                             <lb n="17"/><l n="3">por non dovea…</l>
@@ -2483,12 +2483,12 @@
                     </mod></p>
                 <p rend="indent"><mod change="#strato-3"><lb n="7"/>Tale condizione <mod change="#strato-3"><subst><del rend="strikethrough">er</del><add place="inline">mi</add></subst></mod> rendeva mal accetto ai <mod change="#strato-3"><subst><del rend="strikethrough">superiori</del><add place="above">prefetti</add></subst></mod>
                         <lb n="8"/>i quali mi fecero avvezzare al sile<del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">nzio</add> come alla preghiera;
-                        <lb n="9"/>molte volte il prefetto ammoniva,<mod change="#strato-3"><del rend="strikethrough">qual per buona fortuna</del></mod>
+                        <lb n="9"/>molte volte il <persName ref="#Prefetto_Seminario">prefetto</persName> ammoniva,<mod change="#strato-3"><del rend="strikethrough">qual per buona fortuna</del></mod>
                         <lb n="10"/>qualche altro compagno e <mod change="#strato-3"><del rend="strikethrough"><add place="above">tali</add></del></mod> aggiungeva talora una postilla
                         <lb n="11"/>a un articolo del Regolamento Generale:<mod change="#strato-3"><subst seq="1"><del rend="strikethrough">ed io arrivava<lb/>in fondo </del>
                                 <lb n="12"/><add place="inline">ed io il giorno <add place="above" seq="2">dopo ero punito in quella postilla</add> potevo in coscienza</add></subst></mod> assicurare che
                         <lb n="13"/>non lo sapeva e non avevo sentito nulla: pensavo ad altro!
-                        <lb n="14"/>Talora per ordine del Rettore si <mod change="#strato-3"><add place="above">doveva</add> muta<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst></mod> o al Refettorio
+                        <lb n="14"/>Talora per ordine del <persName ref="#Rettore_Seminario">Rettore</persName> si <mod change="#strato-3"><add place="above">doveva</add> muta<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst></mod> o al Refettorio
                         <lb n="15"/>o in Cappella; <mod change="#strato-3"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">ed</add></subst></mod> io andavo sempre al luogo solito: pensavo ad
                         <lb n="16"/>altro! Dicendo le preci <mod change="#strato-3"><subst><del rend="strikethrough">imb</del><add place="inline">sbagliavo</add></subst></mod> il Credo con l’Atto di
                         <lb n="17"/>fede<choice resp="#ST"><sic>:</sic><corr/></choice><mod change="#strato-3"><del rend="strikethrough">pensavo a altro</del></mod>! Commetteva insomma più
@@ -2507,9 +2507,11 @@
                     <mod change="#strato-2">
                         <lb n="3"/>E breve l’ultima scena:</mod>
                 </p>    
-                <lb/><ab rend="indent"><mod change="#strato-2"><lb n="4"/>Flav.:</mod></ab> <sp><lg><mod change="#strato-2"><l n="1">E di nuovo suonar sento tal voci?...</l>
+                <lb/><sp who="#Flaviano"><speaker><mod change="#strato-2"><lb n="4"/>Flav.:</mod></speaker><lg><mod change="#strato-2">
+                                <l n="1">E di nuovo suonar sento tal voci?...</l>
                             <lb n="5"/><l n="2">donde t’aggiri, o figlio mio?</l></mod></lg></sp>
-                <lb/><ab rend="indent"><mod change="#strato-2"><lb n="6"/>Ger.:</mod></ab><sp><lg><mod change="#strato-2"><l n="1">:......Flaviano,</l>
+                <lb/><sp who="#Gerardo"><speaker><mod change="#strato-2"><lb n="6"/>Ger.</mod></speaker><lg><mod change="#strato-2">
+                                <l n="1">:......Flaviano,</l>
                             <lb n="7"/><l n="2">indarno credi di goderti un giorno</l>
                             <lb n="8"/><l n="3">il figlio tuo. Spento ha l’amor paterno</l>
                             <lb n="9"/><l n="4">delle regie coron soverchio affetto.</l>
@@ -2517,10 +2519,10 @@
                 <ab rend="margin"><mod change="#strato-3"><lb n="10"/>Totale 156 versi</mod></ab> <!-- necessario metamark per la linea?-->
                 <p rend="indent"><mod change="#strato-2"><lb n="11"/>Nel secondo atto Leopoldo afferma:</mod></p>
                 
-                <sp><lg><mod change="#strato-2"><lb n="12"/><l n="1">Daniel non <mod change="#strato-2"><subst><del rend="overwritten">sorrà</del><add place="superimposed">sarà</add></subst></mod> Sire</l>
+                <sp who="#Leopoldo"><lg><mod change="#strato-2"><lb n="12"/><l n="1">Daniel non <mod change="#strato-2"><subst><del rend="overwritten">sorrà</del><add place="superimposed">sarà</add></subst></mod> Sire</l>
                             <lb n="13"/><l n="2">finché il Sol piomberà su’ nostri campi.</l></mod></lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="14"/>e più sotto furibondo minaccia:</mod></p>
-                <sp><lg><mod change="#strato-2"><lb n="15"/><l n="1">Ah! sì l'avrai quel serto</l>
+                <sp who="#Leopoldo"><lg><mod change="#strato-2"><lb n="15"/><l n="1">Ah! sì l'avrai quel serto</l>
                             <lb n="16"/><l n="2">di cui desiri un dì la testa ornarti;</l>
                             <lb n="17"/><l n="3">l'avrai, l'avrai; ma non per te, lo giuro;</l>
                             <lb n="18"/><l n="4">che in tua man traditrice stretto appena</l>
@@ -2570,18 +2572,18 @@
             <div type="page">
                 <pb n="25r1" facs="25r.jpg"/>
                 <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-4"><del rend="overwritten">26</del><add place="superimposed">33</add></mod></lem><rdg varSeq="1"><mod change="#strato-2">26</mod></rdg></app></fw>
-                <sp><lg>
+                <sp who="#Daniello_per"><lg>
                         <mod change="#strato-2"><lb n="1"/><l n="1">Io pago non sarò finché atterrati</l>
                             <lb n="2"/><l n="2">non li veda ambidue morti a’ miei piedi.</l>
                         </mod>
                     </lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="3"/>e ancora:</mod></p>
-                <sp><lg>
+                <sp who="#Daniello_per"><lg>
                         <mod change="#strato-2"><lb n="4"/><l n="1">Dal busto mozzerò l’altero capo.</l>
                         </mod>
                     </lg></sp>
                 <p rend="indent"><mod change="#strato-2"><lb n="5"/>e più sotto:</mod></p>
-                <sp><lg>
+                <sp who="#Daniello_per"><lg>
                         <mod change="#strato-2"><lb n="6"/><l n="1">Quando pomposo a illuminar la terra</l>
                             <lb n="7"/><l n="2">l<mod change="#strato-2"><subst><del rend="#strikethrough">a</del><add place="inline">’</add></subst></mod>astro maggiore appar sull’orizzonte,</l>
                             <lb n="8"/><l n="3">e quando ardente i nostri campi fiede,</l>
