@@ -5,7 +5,7 @@
   "availableEditionLevels": [
     {
       "id": "diplomatic",
-      "label": "diplomatica",
+      "label": "diplomatica-interpretativa",
       "enable": true,
       "hidden": false
     },
@@ -66,6 +66,12 @@
   "listSelector": "listBibl",
   "namedEntityType": "doc",
   "labelProperty": "title" 
+},
+  "roles": {
+  "enable": true,
+  "defaultLabel": "Personaggi tragedia",
+  "listSelector": "lcastList",
+  "namedEntityType": "role" 
 }
   },
   "showLists": true,
@@ -114,6 +120,12 @@
           "label": "Opere",
           "color": "#ce93d8",
           "enable": true
+        },
+        {
+          "value": "roleName",
+          "label": "roles",
+          "enable": true,
+          "color": "#66BB6A"
         }
       ],
       "enable": true
@@ -122,17 +134,12 @@
       "label": "Other",
       "items": [
         {
-          "value": "rolename",
-          "label": "roles",
-          "enable": true
-        },
-        {
           "value": "measure",
           "label": "measures",
           "enable": true
         }
       ],
-      "enable": false
+      "enable": true
     }
   ],
   "notSignificantVariants": [
