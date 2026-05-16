@@ -239,19 +239,19 @@
         <profileDesc>
             <creation corresp="#Autos" resp="#ST">
                 <listChange ordered="true">
-                    <change xml:id="strato-0"> strato-A <p>penna nera con cui scrive il testo di Autos da 1r1 a 10r1 – esclusi i versi –</p></change>
-                    <change xml:id="strato-1"> strato-B <p>penna nera con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
-                    <change xml:id="strato-2"> strato-C <p>penna nera con cui scrive a partire da 17r1 fino a 7r2 – esclusi i versi –; con questa penna e con questo tipo di scrittura Tuscano ha anche prodotto alcune correzioni nelle parti precedenti e inserito i numeri in alto a destra sui recti dei due quaderni fino a 7r2 – corretti successivamente a lapis –.</p></change>
-                    <change xml:id="strato-3"> strato-D <p>penna nera con cui l’autore compila i versi a partire 18v1 fino a 6v2 e, successivamente, i recti di 7r2 e di 8r2.</p></change>
-                    <change xml:id="strato-4"> strato-E <p>lapis utilizzato per l’inserimento dei numeri di pagina sui versi scritti successivamente rispetto ai recti e la correzione del numero su quest’ultimi a partire da 18v1 fino a 7r2; a questi, si aggiungono correzioni e postille sporadiche.</p></change>
-                    <change xml:id="strato-5"> strato-F <p>penna nera con cui scrive i recti a partire da metà 8r2, per la precisione dall’inizio del paragrafo Montalcino, fino a 11r2; ne è prova il repentino cambio di grafia.Con il medesimo inchiostro inserisce i numeri di pagina sui recti a partire da 8r2, i quali non vengono più corretti fino alla conclusione del quaderno.</p></change>
-                    <change xml:id="strato-6"> strato-G <p>penna nera con cui l’autore termina di scrivere i recti del secondo quaderno, fatta eccezione per le parti conclusive a penna: va da 12r2 a fine di 22r2.</p></change>
-                    <change xml:id="strato-7"> strato-H  <p>penna nera con cui viene scritto l’appunto slegato presenta a 16v2 e 17v2, datato agosto 1911</p> </change>
-                    <change xml:id="strato-8"> strato-I <p>penna di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</p> </change>
+                    <change xml:id="strato-0"> Fase-A <p>penna nera con cui scrive il testo di Autos da 1r1 a 10r1 – esclusi i versi –</p></change>
+                    <change xml:id="strato-1"> Fase-B <p>penna nera con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
+                    <change xml:id="strato-2"> Fase-C <p>penna nera con cui scrive a partire da 17r1 fino a 7r2 – esclusi i versi –; con questa penna e con questo tipo di scrittura Tuscano ha anche prodotto alcune correzioni nelle parti precedenti e inserito i numeri in alto a destra sui recti dei due quaderni fino a 7r2 – corretti successivamente a lapis –.</p></change>
+                    <change xml:id="strato-3"> Fase-D <p>penna nera con cui l’autore compila i versi a partire 18v1 fino a 6v2 e, successivamente, i recti di 7r2 e di 8r2.</p></change>
+                    <change xml:id="strato-4"> Strato-E <p>lapis utilizzato per l’inserimento dei numeri di pagina sui versi scritti successivamente rispetto ai recti e la correzione del numero su quest’ultimi a partire da 18v1 fino a 7r2; a questi, si aggiungono correzioni e postille sporadiche.</p></change>
+                    <change xml:id="strato-5"> Fase-F <p>penna nera con cui scrive i recti a partire da metà 8r2, per la precisione dall’inizio del paragrafo Montalcino, fino a 11r2; ne è prova il repentino cambio di grafia.Con il medesimo inchiostro inserisce i numeri di pagina sui recti a partire da 8r2, i quali non vengono più corretti fino alla conclusione del quaderno.</p></change>
+                    <change xml:id="strato-6"> Fase-G <p>penna nera con cui l’autore termina di scrivere i recti del secondo quaderno, fatta eccezione per le parti conclusive a penna: va da 12r2 a fine di 22r2.</p></change>
+                    <change xml:id="strato-7"> Fase-H  <p>penna nera con cui viene scritto l’appunto slegato presenta a 16v2 e 17v2, datato agosto 1911</p> </change>
+                    <change xml:id="strato-8"> Fase-I <p>penna di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</p> </change>
                     <change xml:id="strato-9"> strato-L <p>lapis con cui apporta vari interventi nel secondo quaderno</p></change>
                     <change xml:id="strato-10"> strato-M <p>matita di colore blu con cui apporta alcuni interventi</p></change>
                     <change xml:id="strato-11"> strato-N <p>matita di colore rosso con cui apporta alcuni interventi</p></change>
-                    <change xml:id="strato-12"> strato-O <p>penna di colore blu, per intensità dell’inchiostro sensibilmente diversa dalla precedente penna H, con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </p></change>
+                    <change xml:id="strato-12"> Fase-O <p>penna di colore blu, per intensità dell’inchiostro sensibilmente diversa dalla precedente penna H, con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </p></change>
                     <change xml:id="strato-X"> strato-X <p>lapis con una mina molto scura, utilizzato soltanto per alcune cassature a 24r2.</p></change>
                     <change xml:id="strato-Y"> strato-Y <p>penna di colore nero scuro, non tendente al marrone come le altre, che interviene in pochi e circoscritti punti del testo, di difficile collocabilità rispetto alla cronologia degli interventi.</p></change>
                 </listChange>
