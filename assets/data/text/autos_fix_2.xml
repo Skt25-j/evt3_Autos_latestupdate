@@ -42,7 +42,7 @@
                             Scritti tra il 1910 e il 1911 - ma rimaneggiati anche negli anni succcessivi - si profilano come documenti fondamentali per ricostruire la biografia e il corpus dello scrittore pientino. </summary>
                         <textLang xml:lang="it">Italiano</textLang>
                         <msItem>
-                            <author ref="#Stefano_Tuscano">Stefano Tuscano</author>
+                            <author ref="#TUS">Stefano Tuscano</author>
                             <title>Autos</title>
                         </msItem>
                     </msContents>
@@ -186,16 +186,16 @@
                     </person>
                 </listPerson>
                 <listRelation>
-                    <relation name="madre" active="#Anna_Riedi" passive="#Stefano_Tuscano"/>
-                    <relation name="padre" active="#Olindo_Tuscano" passive="#Stefano_Tuscano"/>
-                    <relation name="maestro" active="#maestro_Buoni" passive="#Stefano_Tuscano"/>
-                    <relation name="genitori" active="#genitori" passive="#Stefano_Tuscano"/>
-                    <relation name="sorella_maggiore" active="#Raffaella_Tuscano" passive="#Stefano_Tuscano"/>
-                    <relation name="zio_Canonico" active="#Don_Salvatore_Benocci" passive="#Stefano_Tuscano"/>
+                    <relation name="madre" active="#Anna_Riedi" passive="#TUS"/>
+                    <relation name="padre" active="#Olindo_Tuscano" passive="#TUS"/>
+                    <relation name="maestro" active="#maestro_Buoni" passive="#TUS"/>
+                    <relation name="genitori" active="#genitori" passive="#TUS"/>
+                    <relation name="sorella_maggiore" active="#Raffaella_Tuscano" passive="#TUS"/>
+                    <relation name="zio_Canonico" active="#Don_Salvatore_Benocci" passive="#TUS"/>
                 </listRelation>
                 <listEvent>
                     <event xml:id="Tentato_suicidio">
-                        <eventName>Tentato suicidio</eventName>
+                        <label>Tentato suicidio</label>
                     </event>
                 </listEvent>
                 <listPlace>
@@ -319,8 +319,8 @@
         <graphic n="23v2-24r2" width="1820px" height="1440px" url="23v2-24r2.jpg"/> <!--Nelle immagini doppie manca per ora: 6v2-7r2; 17v2-18r2; 18v2-19r2; 19v2-20r2-->
     </facsimile> <!-- Problema dello sdoppiamento della navbar: probabilmente dipende dal changeView attivo-->
     <standOff>
+        <note>Le carte 18v1-26v1 (fine primo quaderno) e 1v2-2v2 (secondo quaderno) contengono i "versi" vergati da Tuscano nella posizione in cui si trovano nel manoscritto, ma nella sequenza di lettura ricostruita vanno collocate come blocco unico dopo la fine della fase-C a 7r2 (Quaderno2_7r) e prima della parte di fase-D sulla stessa carta. Le carte 3v2 e 4v2, e la parte di fase-D di 7r2, contengono ciascuna un'inserzione corposa segnalata dall'autore con un segno di richiamo fisico nel manoscritto (metamark, non semplice ipotesi editoriale come per il resto della sequenza): il testo riprende da 3v2, prosegue a metà di 4v2 (dal paragrafo "In quanto a le letture..."), poi 5v2, 6v2, la prima parte di fase-D di 7r2 (dal paragrafo "a fila, le lettere del Leopardi..." fino a "...riuscire agli studi obbligatorii"), per poi tornare alle righe mancanti di 3v2 ("Nel terzo anno..."), di 4v2 ("scrissi altre poesie..."), e infine alla parte finale di fase-D di 7r2 ("In quell'anno...Giosuè"), già segnalata dall'autore con il metamark di chiusura "(.)". Per questo, 3v2, 4v2 e la parte di fase-D di 7r2 sono state ciascuna suddivise in due div-pagina distinte con un pb virtuale.</note>
         <listTranspose>
-            <desc>Le carte 18v1-26v1 (fine primo quaderno) e 1v2-2v2 (secondo quaderno) contengono i "versi" vergati da Tuscano nella posizione in cui si trovano nel manoscritto, ma nella sequenza di lettura ricostruita vanno collocate come blocco unico dopo la fine della fase-C a 7r2 (Quaderno2_7r) e prima della parte di fase-D sulla stessa carta. Le carte 3v2 e 4v2, e la parte di fase-D di 7r2, contengono ciascuna un'inserzione corposa segnalata dall'autore con un segno di richiamo fisico nel manoscritto (metamark, non semplice ipotesi editoriale come per il resto della sequenza): il testo riprende da 3v2, prosegue a metà di 4v2 (dal paragrafo "In quanto a le letture..."), poi 5v2, 6v2, la prima parte di fase-D di 7r2 (dal paragrafo "a fila, le lettere del Leopardi..." fino a "...riuscire agli studi obbligatorii"), per poi tornare alle righe mancanti di 3v2 ("Nel terzo anno..."), di 4v2 ("scrissi altre poesie..."), e infine alla parte finale di fase-D di 7r2 ("In quell'anno...Giosuè"), già segnalata dall'autore con il metamark di chiusura "(.)". Per questo, 3v2, 4v2 e la parte di fase-D di 7r2 sono state ciascuna suddivise in due div-pagina distinte con un pb virtuale.</desc>
             <transpose resp="#TAV" cert="medium">
                 <ptr target="#Quaderno2_7r"/>
                 <ptr target="#Quaderno1_18v"/>
@@ -441,7 +441,7 @@
                     <date when="1777">1777</date>-<date when="1783">1783</date>
                 </bibl>
                 <bibl xml:id="Daniello">
-                    <author><persName ref="#Stefano_Tuscano">Stefano Tuscano</persName></author>
+                    <author><persName ref="#TUS">Stefano Tuscano</persName></author>
                     <title level="a">Daniello o Trionfo dell'Innocenza</title>
                     <date when="1777">1905</date>-<date when="1783">1907</date>
                     <note><p>Tragedia giovanile di Tuscano</p></note>
@@ -449,9 +449,9 @@
                 <bibl xml:id="Bibbia">
                 </bibl>
                 <bibl xml:id="Arte_del_Dire">
-                    <author><persName ref="#Giusppe_Finzi">Giuseppe Finzi</persName></author>
+                    <author><persName ref="#Giuseppe_Finzi">Giuseppe Finzi</persName></author>
                     <title level="a">L'Arte del Dire</title>
-                    <note><p>Non è stata rintracciata un'opera propriamente intitolata <hi>L'arte del Dire</hi>, ma di <persName ref="#Giusppe_Finzi">Finzi</persName> è noto un testo ginnasiale dal titolo <hi>Stilistica</hi>.<lb/>
+                    <note><p>Non è stata rintracciata un'opera propriamente intitolata <hi>L'arte del Dire</hi>, ma di <persName ref="#Giuseppe_Finzi">Finzi</persName> è noto un testo ginnasiale dal titolo <hi>Stilistica</hi>.<lb/>
                             <hi>L'arte del Dire</hi> risulterebbe, invece, essere un'opera del Corrado, oppure di Ferrari.
                             <lb/> Sarebbe, insomma, un lapsus dell'Autore.    </p></note>
                 </bibl>
@@ -615,8 +615,8 @@
                                 <lb n="8"/>S’io mi fossi corretto dai vizî
                                 <lb n="9"/>d’allora, oggi sarei forse più
                                 <lb n="10"/>fortunato. Forse?!.
-                                <lb n="11"/><add rend="indent-center"><persName ref="#Stefano_Tuscano">Tuscano</persName></add> <!-- Poco ortodosso-->
-                                <lb n="12"/><eventName ref="#Tentato_suicidio">1921</eventName></mod></p></note> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
+                                <lb n="11"/><add rend="indent-center"><persName ref="#TUS">Tuscano</persName></add> <!-- Poco ortodosso-->
+                                <lb n="12"/><name ref="#Tentato_suicidio" type="event">1921</name></mod></p></note> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
                     </div>
                     
                     
@@ -1316,7 +1316,7 @@
                         </note>
                         <p rend="indent">
                             <lb n="1"/>Verso l’aprile dell’anno 1904 mi ricordo di aver fatto un sonetto 
-                            <lb n="2"/>alla <placeName ref="#Val_d'Orcia"><mod change="#fase-A"> <subst> <del rend="strikethrough">val</del> <add place="inline">mia valle</add></subst>
+                            <lb n="2"/>alla <placeName ref="#Val_dOrcia"><mod change="#fase-A"> <subst> <del rend="strikethrough">val</del> <add place="inline">mia valle</add></subst>
                                 </mod> d’Orcia</placeName>, il quale <mod change="#fase-A">
                                 <subst><del rend="strikethrough">non potè</del>
                                     <add place="inline">andò</add></subst></mod> sperso 
@@ -4150,7 +4150,7 @@
                         <p rend="indent"><mod change="#fase-G"><lb n="2"/>Mi ricordo <mod change="#fase-G"><add place="above">che</add></mod> una volta <mod change="#fase-G">f<del rend="overwritten" xml:id="del_eci">eci</del><add place="superimposed" xml:id="add_atti">atti</add>
                                     <del rend="strikethrough" xml:id="del_una">una</del>
                                     <add place="inline" xml:id="add_alcuni">alcuni</add>
-                                    <substJoin target="#del_feci #add_atti #del_una #add_alcuni"/>    
+                                    <substJoin target="#del_eci #add_atti #del_una #add_alcuni"/>    
                                 </mod> versi nel
                                 <lb n="3"/>metro di Courmayeur Carducciana per
                                 <mod change="#fase-G"><subst>
