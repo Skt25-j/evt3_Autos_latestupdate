@@ -321,7 +321,7 @@
     <standOff>
         <listTranspose>
             <desc>Le carte 18v1-26v1 (fine primo quaderno) e 1v2-2v2 (secondo quaderno) contengono i "versi" vergati da Tuscano nella posizione in cui si trovano nel manoscritto, ma nella sequenza di lettura ricostruita vanno collocate come blocco unico dopo la fine della fase-C a 7r2 (Quaderno2_7r) e prima della parte di fase-D sulla stessa carta. Le carte 3v2 e 4v2, e la parte di fase-D di 7r2, contengono ciascuna un'inserzione corposa segnalata dall'autore con un segno di richiamo fisico nel manoscritto (metamark, non semplice ipotesi editoriale come per il resto della sequenza): il testo riprende da 3v2, prosegue a metà di 4v2 (dal paragrafo "In quanto a le letture..."), poi 5v2, 6v2, la prima parte di fase-D di 7r2 (dal paragrafo "a fila, le lettere del Leopardi..." fino a "...riuscire agli studi obbligatorii"), per poi tornare alle righe mancanti di 3v2 ("Nel terzo anno..."), di 4v2 ("scrissi altre poesie..."), e infine alla parte finale di fase-D di 7r2 ("In quell'anno...Giosuè"), già segnalata dall'autore con il metamark di chiusura "(.)". Per questo, 3v2, 4v2 e la parte di fase-D di 7r2 sono state ciascuna suddivise in due div-pagina distinte con un pb virtuale.</desc>
-            <transpose resp="#ST" cert="medium">
+            <transpose resp="#TAV" cert="medium">
                 <ptr target="#Quaderno2_7r"/>
                 <ptr target="#Quaderno1_18v"/>
                 <ptr target="#Quaderno1_19v"/>
@@ -343,7 +343,7 @@
                 <ptr target="#Quaderno2_4v"/>
                 <ptr target="#Quaderno2_7r_faseD2"/>
             </transpose>
-            <transpose resp="#ST" cert="medium">
+            <transpose resp="#TAV" cert="medium">
                 <ptr target="#Quaderno2_24r"/>
                 <ptr target="#Quaderno2_16v"/>
                 <ptr target="#Quaderno2_17v"/>
@@ -416,27 +416,27 @@
                     <date when="1896">1896</date>
                 </bibl>
                 <bibl xml:id="Saul">
-                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
                     <title level="a">Il Saul</title>
                     <date when="1782">1782</date>
                 </bibl>
                 <bibl xml:id="Mirra">
-                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
                     <title level="a">Mirra</title>
                     <date when="1789">1789</date>
                 </bibl>
                 <bibl xml:id="Maria_Stuarda">
-                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
                     <title level="a">Maria Stuarda</title>
                     <date when="1778">1778</date>
                 </bibl>
                 <bibl xml:id="Merope">
-                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
                     <title level="a">Maria Stuarda</title>
                     <date when="1782">1782</date>
                 </bibl>
                 <bibl xml:id="Congiura_Pazzi">
-                    <author><persName ref="#Vittorio_ALfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
                     <title level="a">La congiura de' Pazzi</title>
                     <date when="1777">1777</date>-<date when="1783">1783</date>
                 </bibl>
@@ -1473,7 +1473,7 @@
                                  <add place="above">il posto di</add> </subst>-->
                             
                             <persName ref="#maestro_Buoni">Vicerettore</persName> dello stesso <placeName ref="#Seminario_Vescovile">Seminario</placeName>: tanto che ri-
-                            <lb n="19"/>masi sempre sotto lo sguardo dell’unico maestro di cui io serbi grata <mod change="#A"><del rend="strikethrough">la</del></mod> me-
+                            <lb n="19"/>masi sempre sotto lo sguardo dell’unico maestro di cui io serbi grata <mod change="#fase-A"><del rend="strikethrough">la</del></mod> me-
                             <lb n="20"/>moria, e <mod change="#strato-E"><add place="above">che</add></mod> reputi uomo di senno.
                         </p>
                     </div>
@@ -2922,11 +2922,10 @@
                         <p rend="indent"><mod change="#fase-C"><lb n="14"/>Più sotto la mia penna prevaricò in espressioni insignifi-
                                 <lb n="15"/>cative e inopportune, forse per reminiscenze dell’Iliade male
                                 <lb n="16"/>appropriate.</mod></p>
-                        <sp><lg>
-                                <mod change="#fase-C"><lb n="17"/><mod change="#fase-C"><subst><del rend="#strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod> <!-- Non sono molto certa della posizione di questo add..-->
+                        <sp><lg change="#fase-C">
+                                <lb n="17"/><l n="1"><mod change="#fase-C"><subst><del rend="strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline">D’ira, di lena, di coraggio e forza</add></subst></mod></l> <!-- Non sono molto certa della posizione di questo add..-->
                                     <lb n="19"/><l n="2">armiamo i polsi; e i brandi arditi e i scudi</l>
                                     <lb n="20"/><l n="3">vibriam diretti e <mod change="#fase-C"><subst><del rend="overwritten">g</del><add place="superimposed">l’</add></subst></mod>egide e gli elmetti</l>
-                                </mod>
                             </lg></sp>
                     </div>
                     <div type="page">
@@ -3460,11 +3459,11 @@
                                     <lb n="3"/><l n="4">faran di voi.</l>
                                 </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="4"/>e più sotto <mod change="#fase-C"><subst><del rend="strikethrough">incredibile</del> <add place="inline">ammirabile</add></subst></mod> per quell’età la forma <mod change="#fase-N"><add place="above">e il concetto</add></mod> di questi:</mod></p>
-                        <sp><lg><mod change="#fase-C">
-                                    <lb n="5"/><l n="1">In tale stato un Sire? </l> <hi rend="underline" change="#strato-E">Oh ingrato scettro
-                                        <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
-                                        <lb n="7"/><l n="3">che ti provò.</l></hi>
-                                </mod></lg></sp><ab rend="indent"><note resp="#TUS"><mod change="#strato-E">
+                        <sp><lg change="#fase-C">
+                                    <lb n="5"/><l n="1">In tale stato un Sire? <hi rend="underline" change="#strato-E">Oh ingrato scettro</hi></l>
+                                        <lb n="6"/><l n="2"><hi rend="underline" change="#strato-E">ognun ti brama, ma si pente ognuno</hi></l>
+                                        <lb n="7"/><l n="3"><hi rend="underline" change="#strato-E">che ti provò.</hi></l>
+                                </lg></sp><ab rend="indent"><note resp="#TUS"><mod change="#strato-E">
                                 <add place="margin">bene</add>
                             </mod></note><lb/></ab>
                     </div>
