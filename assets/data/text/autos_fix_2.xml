@@ -353,17 +353,17 @@
                 <ptr target="#Quaderno2_7v"/>
                 <ptr target="#Quaderno2_20v"/>
             </transpose>
-            <transpose resp="#UT" cert="high">
+            <transpose resp="#TUS" cert="high">
                 <!-- A 12r1/12v1, il brano "Molte volte m'avvenne..." di 12v1 va letto tra "...testa ferma e intelligente" (fine della prima parte di 12r1) e "Molte altre volte servendo la Messa..." (ripresa di 12r1).-->
                 <ptr target="#Quaderno1_12r"/>
                 <ptr target="#Quaderno1_12v"/>
                 <ptr target="#Quaderno1_12r_b"/>
             </transpose>
-            <!-- <transpose resp="#UT" cert="high">
+            <!-- <transpose resp="#TUS" cert="high">
                  <ptr target="#seg_ingenuamente"/>
                  <ptr target="#seg_credetti"/>
                  </transpose> Non funziona con i seg per questo è stat usata choice pe rle singole parole -->
-            <transpose resp="#UT" cert="high">
+            <transpose resp="#TUS" cert="high">
                 <ptr target="#Quaderno2_15r_intanto"/>
                 <ptr target="#Quaderno2_15r_ciò"/>
             </transpose>
@@ -1640,7 +1640,7 @@
                          <mod change="#fase-B"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del>
                          <add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                          Quando si scrive qualcosa sopra qualcos'altro si usa del rend overwritten e place su add superimposed. Vedi ⚓︎12.3.4.7 Instant Corrections nella TEI
-                         <lb n="11"/><mod change="#fase-B"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark><choice resp="#UT"><sic/><corr><add place="opposite" copyOf="#testo_aggiunta_12v"> Molte volte <subst><add place="inline">m’avvenne</add>
+                         <lb n="11"/><mod change="#fase-B"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark><choice resp="#TAV"><sic/><corr><add place="opposite" copyOf="#testo_aggiunta_12v"> Molte volte <subst><add place="inline">m’avvenne</add>
                          <del rend="strikethrough">andare</del></subst>
                          non far le lezioni perché
                          <lb/>non vi pensavo, perché mi sembrava giovedì ed era venerdì; 
@@ -1783,7 +1783,7 @@
                                         <add place="inline">superiori</add></subst></mod>, 
                                 <mod change="#fase-B"><del rend="strikethrough">mi</del></mod>
                                 da cui mi
-                                <choice resp="#UT">
+                                <choice resp="#TAV">
                                     <sic>
                                         <subst seq="1">
                                             <del rend="strikethrough">f</del>
@@ -1812,7 +1812,7 @@
                                      </subst>ingenuamente <add place="above">1</add></sic>
                                      <corr>ingenuamente credetti</corr>   
                                      </choice> 
-                                     <choice resp="#UT">
+                                     <choice resp="#TAV">
                                      <sic>
                                      <subst seq="1">
                                      <del rend="strikethrough">f</del>
@@ -2577,7 +2577,7 @@
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add><hi rend="underline">24</hi></add></mod></fw>
                         <p rend="indent">
                             <mod change="#fase-D"><lb n="1"/>ricordo che la superbia s’era moltiplicata per 14 e la mia fede invece
-                                <lb n="2"/><choice resp="#UT">
+                                <lb n="2"/><choice resp="#TAV">
                                     <sic>
                                         infelicemente 
                                         <metamark function="transposition" place="above"><hi rend="apice">2</hi></metamark>
@@ -2726,7 +2726,7 @@
                                 <lb n="2"/>ammonimenti del <persName ref="#Prefetto_Seminario">prefetto</persName>, io non vi riusciva.
                             </mod></p>
                         <p rend="indent"><mod change="#fase-D">
-                                <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#UT">superiore curioso</corr></choice>
+                                <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#TAV">superiore curioso</corr></choice>
                                 <lb n="4"/>era arrivato a frugare su’ miei cassetti e scoprire gli arcani
                                 <lb n="5"/>gelosi, e ridere sulle mie baggianate. E <mod change="#fase-D">n<del rend="overwritten">i</del><add place="superimposed">e</add>l</mod> veder tanto scritto,
                                 <lb n="6"/>tanto <mod change="#fase-D">lavoro <subst seq="1"><del rend="strikethrough">avrà il</del><add place="inline">quel</add></subst> superiore avrà naturalmente concluso:<subst seq="2"><del rend="strikethrough">«per
@@ -3084,7 +3084,7 @@
                         <sp><lg change="#fase-C">
                                     <lb n="6"/><l n="1">Ah! sol quel Dio</l>
                                     <lb n="7"/><l n="2">che mi creò, quel Dio che immenso siede</l>
-                                    <lb n="8"/><l n="3"><choice resp="#UT"><sic>tra|i</sic><corr>tra i</corr></choice> serafini che gli fan corteggio,</l>
+                                    <lb n="8"/><l n="3"><choice resp="#TAV"><sic>tra|i</sic><corr>tra i</corr></choice> serafini che gli fan corteggio,</l>
                                     <lb n="9"/><l n="4">quel Dio, ripeto, sol quel Dio una voce</l>
                                     <lb n="10"/><l n="5">di conforto mi dà.</l>
                             </lg></sp>
@@ -3359,7 +3359,7 @@
                         <pb n="5v2" xml:id="Quaderno2_5v" facs="5v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>46</add></mod></fw>
                         <p rend="indent"><mod change="#fase-D"><lb n="1"/>Foscoliano, del quale ne misi a memoria il primo squarcio
-                                <lb n="2"/>fino a <choice resp="#UT"><sic>Sol|chi</sic><corr>Sol chi</corr></choice> <choice resp="#ST"><sic/><corr>non</corr></choice> lascia etc. e il secondo da <hi rend="underline">Pur nuova legge</hi> a
+                                <lb n="2"/>fino a <choice resp="#TAV"><sic>Sol|chi</sic><corr>Sol chi</corr></choice> <choice resp="#ST"><sic/><corr>non</corr></choice> lascia etc. e il secondo da <hi rend="underline">Pur nuova legge</hi> a
                                 <lb n="3"/><mod change="#fase-D"><subst><del rend="strikethrough"><choice resp="#ST"><sic>Diero l'</sic><corr>Dier alle</corr></choice>umane belve esser piet</del> <add place="inline"><hi rend="underline">Dal dì che nozze</hi></add></subst></mod>. A egregie cose etc
                                 <lb n="4"/>non lo volli imparare perché lo sapevano tutti e mi era
                                 <lb n="5"/>diventato noioso senza <mod change="#fase-D"><add place="above">neppure</add></mod> averlo letto. Però dalla descrizione
