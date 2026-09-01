@@ -184,7 +184,6 @@
                     <person xml:id="Alessandro_Manzoni">
                         <persName>Alessandro Manzoni</persName>
                     </person>
-                </listPerson>
                 <listRelation>
                     <relation name="madre" active="#Anna_Riedi" passive="#TUS"/>
                     <relation name="padre" active="#Olindo_Tuscano" passive="#TUS"/>
@@ -193,6 +192,7 @@
                     <relation name="sorella_maggiore" active="#Raffaella_Tuscano" passive="#TUS"/>
                     <relation name="zio_Canonico" active="#Don_Salvatore_Benocci" passive="#TUS"/>
                 </listRelation>
+                </listPerson>
                 <listEvent>
                     <event xml:id="Tentato_suicidio">
                         <label>Tentato suicidio</label>
@@ -235,7 +235,7 @@
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <creation corresp="#Autos" resp="#ST">
+            <creation corresp="#Autos" resp="#TAV">
                 <listChange ordered="true">
                     <change xml:id="fase-A"> Fase-A <p>penna  con inchiostro  nero con cui scrive il testo di Autos da 1r1 a 10r1 – esclusi i versi –</p></change>
                     <change xml:id="fase-B"> Fase-B <p>penna con inchiostro  nero con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
@@ -527,7 +527,7 @@
                                 </rdg>
                             </app> <!-- La scelta di app è in questo caso coerente: si tratta di una variante paradigmatica; ciò che resta sacrificato è la visione in diplomatica-interpretativa-->
                             <lb/>
-                         <note n="1" resp="#TAV">La cancellature sono ribatite con il lapis - E</note>
+                         <note n="1" resp="#TAV" type="critical">La cancellature sono ribatite con il lapis - E</note>
                            <!--  <mod change="#fase-A">
                                 <subst>
                                     <del rend="strikethrough">
@@ -635,7 +635,7 @@
                                     <rdg varSeq="1"><mod change="#fase-C">1</mod></rdg>
                                 </app> App non corretto perchè sono due livelli distinti-->
                              </fw>
-                            <lb n="3"/><ab rend="align-center"><title>La mia fanciullezza.</title><mod change="#fase-B" type="reuse"><add> 1<subst><del rend="overwritten">1</del><add place="superimposed">0</add></subst> e 1<subst><del rend="overwritten">2</del><add place="superimposed">1</add></subst> anni.</add></mod></ab>
+                            <lb n="3"/><seg rend="align-center"><title>La mia fanciullezza.</title><mod change="#fase-B" type="reuse"><add> 1<subst><del rend="overwritten">1</del><add place="superimposed">0</add></subst> e 1<subst><del rend="overwritten">2</del><add place="superimposed">1</add></subst> anni.</add></mod></seg>
                         </ab><lb/> <!-- Ha senso mettere title per indicare questo titoletto del paragrafo?-->
                         <p rend="indent">
                             <lb n="4"/>Benché la memoria mi presenti chiaramente al pensiero la mia vita bam-
@@ -669,7 +669,7 @@
                                  <substJoin target="#change1 #change2"/>
                                  </mod>
                                  Con substjoin, però, la correzione si visualizza solo nello fase-C e si perde la diacronia dell'intervento.
-                            --><choice resp="#ST"><sic>comincierò</sic><corr resp="#ST">comincerò</corr></choice>
+                            --><choice resp="#TAV"><sic>comincierò</sic><corr resp="#TAV">comincerò</corr></choice>
                             <mod change="#fase-A"><add place="above">tuttavia</add></mod>
                             ad esaminare e ad esporre i fatti <lb n="6"/> e i sentimenti 
                             <app>
@@ -998,7 +998,7 @@
                                 <lb/><l n="11">Di <mod change="#fase-A"><subst><del rend="overwritten"><gap quantity="2" unit="char"/></del>
                                             <add place="superimposed"><hi rend="underline">lupo</hi></add>
                                         </subst></mod>parevano</l>
-                                <lb/><l n="12">gli occhi <mod change="#fase-A"><add place="above">rossi e</add></mod><note n="1" type="critical" resp="#ST">L’autore inserisce in interlinea superiore, oltre all’aggettivo, la congiunzione «e», non cassandola in riga; onde evitare la ripetizione, non è stata riportata a testo e considerata soppressa.</note> la mano.</l></lg>
+                                <lb/><l n="12">gli occhi <mod change="#fase-A"><add place="above">rossi e</add></mod><note n="1" type="critical" resp="#TAV">L’autore inserisce in interlinea superiore, oltre all’aggettivo, la congiunzione «e», non cassandola in riga; onde evitare la ripetizione, non è stata riportata a testo e considerata soppressa.</note> la mano.</l></lg>
                             <lb/><lb/>
                             <lg n="3"><l n="13">Voleva gridar “mamma”</l>
                                 <lb/><l n="14">ma non ebbi coraggio</l>
@@ -1169,14 +1169,14 @@
                                      <del rend="strikethrough">a p</del>
                                      </subst></del>
                                      <add place="inline">a volere</add></subst> -->
-                             </mod> <note type="critical" n="1" resp="#ST">La prima «a» non viene, in realtà, cassata da Tuscano, ma è da considerarsi tale.</note> e a non potere imparare; lui a ripetermi
+                             </mod> <note type="critical" n="1" resp="#TAV">La prima «a» non viene, in realtà, cassata da Tuscano, ma è da considerarsi tale.</note> e a non potere imparare; lui a ripetermi
                             <lb n="15"/>tutti i casi per filo e per segno, io a ripeterli errati, 
                             <mod change="#fase-B"><add place="above">lui, a portarmi per modello <subst><del rend="strikethrough">l'altro</del><add place="inline"> il compagno</add></subst>,
                                     <note resp="ST" n="2" type="critical">L’articolo «l’», che concorda con il primitivo «altro» non è cassato da Tuscano, ma è da intendersi tale. </note> io a dire che facea meglio di lui.</add></mod> Il gioco durò
                             <lb n="16"/>poco che il <persName ref="#maestro_Buoni">maestro</persName> annoiato <mod change="#fase-A"><add place="above">severamente mi sgridò </add></mod>
                             mi fece alzare ed era per licenziarmi,
                             <lb n="17"/><mod change="#fase-A"><add place="above">con una sfilza di “asino; ciuco; somaro; scapato; duro”</add></mod>, quando io, in un atto d’ira
-                            <mod change="#fase-A"><del rend="strikethrough">e d'invidia</del></mod> <note n="3" resp="#ST" type="critical">La congiunzione «e», seppur non cassata, è da intendersi tale</note>
+                            <mod change="#fase-A"><del rend="strikethrough">e d'invidia</del></mod> <note n="3" resp="#TAV" type="critical">La congiunzione «e», seppur non cassata, è da intendersi tale</note>
                             gridai <mod change="#fase-A"><add place="above">forte</add></mod> piangendo e fre-
                             <lb n="18"/>mendo: «<hi rend="underline">Se non so rosa-rosae so fare altre</hi>……» Qui mi fu chiusa
                             <lb n="19"/>la <mod change="#fase-A">
@@ -1246,7 +1246,7 @@
                                      <add place="inline">compresi</add>
                                      </subst></del><add><add place="above">mi parve di </add>comprendere
                                      </add></subst>-->
-                             </mod><note resp="#ST" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
+                             </mod><note resp="#TAV" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
                             quella mia baggianata e
                             che la 
                             <lb n="11"/>mia consolazione <mod change="#fase-B"><add place="above">ne la vita</add></mod> era riposta là (per quel momento su 
@@ -1290,7 +1290,7 @@
                         <fw place="top_right" type="pageNum"><mod change="#fase-C"><add>8</add></mod></fw>
                         <p rend="indent">
                             <lb n="1"/>Due o tre giorni dopo ripensando al fatto ne 
-                            <choice resp="#ST"><sic>sentii</sic><corr>senti</corr></choice> rimorso
+                            <choice resp="#TAV"><sic>sentii</sic><corr>senti</corr></choice> rimorso
                             <lb n="2"/>come d’un delitto, 
                             <mod change="#fase-A">
                                 <subst><del rend="strikethrough">contro</del><add place="inline">in specie </add></subst>
@@ -1300,18 +1300,18 @@
                             <lb n="3"/>da un affetto ch’io credo, massime oggi, raro; forse, son quasi
                             <lb n="4"/>certo, per la straordinaria bontà, per la rara amabilità di lei
                             <mod change="#fase-A"><del rend="strikethrough">più che</del></mod>
-                            <gap reason="deleted" extent="half_page" unit="pages" resp="Tuscano"/><note type="critical" n="1" resp="#ST">
+                            <gap reason="deleted" extent="half_page" unit="pages" resp="#TUS"/><note type="critical" n="1" resp="#TAV">
                                 La carta è stata tagliata - verosimilmente con delle forbici data la natura del taglio.
                             </note>
                         </p>
                     </div>
                     <div type="page">
                         <pb n="8v1" xml:id="Quaderno1_8v" type="blank"/>
-                        <gap reason="deleted" extent="1" unit="pages" resp="Tuscano"/>
+                        <gap reason="deleted" extent="1" unit="pages" resp="#TUS"/>
                     </div>
                     <div type="page">
                         <pb n="9r1" xml:id="Quaderno1_9r" facs="9r.jpg"/>
-                        <gap reason="deleted" extent="half_page" unit="pages" resp="Tuscano"/><note type="critical" n="1" resp="#ST">
+                        <gap reason="deleted" extent="half_page" unit="pages" resp="#TUS"/><note type="critical" n="1" resp="#TAV">
                             La carta è stata tagliata - verosimilmente con delle forbici data la natura del taglio.
                         </note>
                         <p rend="indent">
@@ -1393,12 +1393,12 @@
                     <div type="page">
                         <pb n="9v1" xml:id="Quaderno1_9v" facs="9v.jpg" type="blank"/>
                     </div>
-                    <div><gap reason="deleted" extent="2" unit="pages" resp="Tuscano"/></div>
+                    <div><gap reason="deleted" extent="2" unit="pages" resp="#TUS"/></div>
                     <div type="page">
                         <pb n="10r1" xml:id="Quaderno1_10r" facs="10r.jpg"/>
                         <fw place="top_right" type="pageNum"><mod change="#fase-C"><add>11</add></mod></fw>
                         <lb n="1"/><ab rend="align-center"><mod change="#fase-B"><add>In <placeName ref="#Seminario_Vescovile">Seminario</placeName> 1<subst><del rend="overwritten">3</del><add place="superimposed">2</add></subst> e 1<subst><del rend="overwritten">5</del><add place="superimposed">3</add></subst>
-                                    <gap unit="char" quantity="2"/>14           1905-06-07</add></mod> <note n="1" resp="#ST" type="critical">Questa sorta di titolo di paragrafo si pensa che debba essere messo in relazione con
+                                    <gap unit="char" quantity="2"/>14           1905-06-07</add></mod> <note n="1" resp="#TAV" type="critical">Questa sorta di titolo di paragrafo si pensa che debba essere messo in relazione con
                                 «La mia fanciullezza. 10 e 11 anni», indicazione presente a 1r1: sono, infatti, 
                                 simmetrici per costruzione e sono stati inseriti da Tuscano ricavando dello 
                                 spazio nella pagina già scritta.</note></ab>
@@ -1428,7 +1428,7 @@
                                     <add place="above">come esterni,</add> 
                                     <del rend="overwritten">in</del>
                                     <add place="superimposed">nel</add></subst>
-                            </mod> <note n="2" resp="#ST">Difficile attribuzione cronologica</note>
+                            </mod> <note n="2" resp="#TAV" type="critical">Difficile attribuzione cronologica</note>
                             <!-- 
                                  <del rend="strikethrough" xml:id="del_privatamente">privatamente</del>
                                  <add place="above" xml:id="add_comeesterni">come esterni,</add>
@@ -1447,7 +1447,7 @@
                             <lb n="12"/>non sapevo che cosa era il mondo, fingendomi un avvenire felice 
                             <mod change="#fase-B"><add place="above">e un acquisto di stima, </add></mod>e
                             <lb n="13"/>sembrandomi una cosa onorevole,
-                            <mod><del rend="strikethrough">esser messo in <placeName ref="#Seminario_Vescovile">Seminario</placeName></del></mod> <note n="3" resp="#ST">Difficile attribuzione cronologica</note>vi accon-
+                            <mod><del rend="strikethrough">esser messo in <placeName ref="#Seminario_Vescovile">Seminario</placeName></del></mod> <note n="3" resp="#TAV" type="critical">Difficile attribuzione cronologica</note>vi accon-
                             <lb n="14"/>sentii e la sera del 31 ottobre 
                             <mod change="#fase-A"><add place="above">1904</add></mod> fui presentato da mio <persName ref="#Don_Salvatore_Benocci">zio</persName> al <persName ref="#Rettore_Seminario">Rettore</persName>
                             <lb n="15"/>e la mattina dei Santi, fui con mille preci e cerimonie vesti-
@@ -1543,7 +1543,7 @@
                                 <mod change="#fase-B">
                                     <add place="above">giunsi all’ora di scuola senza aver fatto <choice>
                                             <sic/> 
-                                            <corr resp="#ST">
+                                            <corr resp="#TAV">
                                                 <supplied reason="omitted">i</supplied>
                                             </corr>
                                         </choice> compiti,</add></mod> imparai la lezione per le scale 
@@ -1589,11 +1589,11 @@
                                 <lb n="18"/>col capo a posto e adatto per le cerimonie della Chiesa.
                                 <lb n="19"/>Tal che 
                                 <choice><sic>il <persName ref="#Prefetto_Seminario">prefetto</persName> e il <persName ref="#Rettore_Seminario">Rettore</persName></sic>
-                                    <corr resp="#ST">il <persName ref="#Prefetto_Seminario">prefetto</persName>, il <persName ref="#Rettore_Seminario">Rettore</persName> e </corr></choice>
+                                    <corr resp="#TAV">il <persName ref="#Prefetto_Seminario">prefetto</persName>, il <persName ref="#Rettore_Seminario">Rettore</persName> e </corr></choice>
                                 <mod change="#fase-B"><add place="above">il maestro</add></mod> vedendo ch’io non mi correggeva
                                 <lb n="20"/>o che crescendo mi <choice>
                                     <sic/> 
-                                    <corr resp="#ST">
+                                    <corr resp="#TAV">
                                         <supplied reason="omitted">non</supplied>
                                     </corr>
                                 </choice> scresceva la scapataggine, non potevano
@@ -1959,10 +1959,10 @@
                                 <lb n="18"/>e a un tempo di dolce,
                                 <app>
                                     <lem varSeq="3"><mod change="#strato-I">
-                                            <del rend="strikethrough">di <unclear reason="cancellatura" cert="high" resp="#ST">bellino</unclear></del>
+                                            <del rend="strikethrough">di <unclear reason="cancellatura" cert="high" resp="#TAV">bellino</unclear></del>
                                         </mod></lem>
                                     <rdg varSeq="2"><mod change="#strato-E">
-                                            <del rend="strikethrough">di <unclear reason="cancellatura" cert="high" resp="#ST">bellino</unclear></del>
+                                            <del rend="strikethrough">di <unclear reason="cancellatura" cert="high" resp="#TAV">bellino</unclear></del>
                                         </mod></rdg>
                                     <rdg varSeq="1"><mod change="#fase-B">di bellino</mod></rdg>
                                 </app> <!-- Sempre mantendo l'idea che correzioni avvenute in uno strato diverso dal corrente si codifichino tramite app -->
@@ -2020,7 +2020,7 @@
                                      
                                      </mod>-->
                                 
-                                <note n="1" resp="#ST" type="critical">
+                                <note n="1" resp="#TAV" type="critical">
                                     La catena correttoria vede diversi stadi intermedi, prima dell’approdo all’ultima lezione:
                                     inizialmente Tuscano decide per «non frucai tutte le librerie», poi corretta in «non frucai tutte le casse di libri vecchi»,
                                     con variazione del complemento e mantenimento della parte iniziale.
@@ -2102,7 +2102,7 @@
                                         <add place="above" seq="1">con due copie diverse del primo <del rend="strikethrough" seq="2">e variato</del></add></subst></mod>.
                                 <lb n="13"/>(La feci certo come la poteva fare <choice>
                                     <sic>un'ingegno</sic>
-                                    <corr resp="#ST">un ingegno</corr></choice> di 
+                                    <corr resp="#TAV">un ingegno</corr></choice> di 
                                 <mod change="#fase-B"><add place="inline">12 <lb n="14"/>e</add> 1<subst><del rend="overwritten">2</del><add place="superimposed">3</add></subst></mod> anni.) 
                                 <mod change="#fase-B">
                                     <subst>
@@ -2188,7 +2188,7 @@
                                 <lb n="13"/>per mostrare quello che dava a bene sperare sul
                                 <lb n="14"/>mio avvenire, <app><lem varSeq="2"><mod change="#fase-C"><retrace>su la mia</retrace></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-B">su la mia</mod></rdg>    
-                                </app><note n="1" resp="#ST" type="critical">Sintagma ripassato con la penna - B dello fase-B. Da questo momento Tuscano scrive solo con la penna - B.</note> vita.</mod>
+                                </app><note n="1" resp="#TAV" type="critical">Sintagma ripassato con la penna - B dello fase-B. Da questo momento Tuscano scrive solo con la penna - B.</note> vita.</mod>
                         </p>
                         <p rend="indent">
                             <mod change="#fase-C">
@@ -2530,7 +2530,7 @@
                                 <lb n="18"/>nemico (che in quel caso era piuttosto l’età) e deciso di <mod change="#fase-D"><subst><del rend="strikethrough">f</del> 
                                         <add place="inline">ricominciar-
                                             <lb n="19"/>la</add></subst></mod> <choice><sic><mod change="#strato-E"><add place="above">ex</add></mod></sic>
-                                    <corr resp="#ST"/>    
+                                    <corr resp="#TAV"/>    
                                 </choice><hi rend="underline">funditus</hi> e convinto che fosse l’ultima volta.</mod>
                         </p>
                         <p rend="indent">
@@ -2547,7 +2547,7 @@
                         <p rend="indent"><mod change="#fase-C"><lb n="1"/>E più sotto alcuni versi destinati a Daniele dipinto sem-
                                 <lb n="2"/>pre come mansueto e mesto a un tempo, sembrano emulare alcuni
                                 <lb n="3"/>altri <mod change="#fase-C"><subst><del rend="strikethrough">del</del> <add place="inline">tanto</add></subst></mod> <!-- che debba mettere solo del?--> più perfetti dell’<title><ref target="#Adelchi">Edmengarda</ref></title> di <persName ref="#Alessandro_Manzoni">Manzoni</persName>; e dire
-                                <lb n="4"/>che allora io non sapeva neppure che il <persName ref="#Alessandro_Manzoni">Manzoni</persName><choice resp="#ST"><sic>l</sic><corr/></choice> aveva scritto
+                                <lb n="4"/>che allora io non sapeva neppure che il <persName ref="#Alessandro_Manzoni">Manzoni</persName><choice resp="#TAV"><sic>l</sic><corr/></choice> aveva scritto
                                 <lb n="5"/><mod change="#fase-C"><subst><del rend="strikethrough">non molto altro che non fossero</del><add place="above">anche tragedie oltre</add></subst></mod> i <title><ref target="#Promessi_Sposi">Promessi Sposi</ref></title>. E mi ricordo
                                 <lb n="6"/>che quando per la prima volta lessi quei versi del gran <persName ref="#Alessandro_Manzoni">Romanzie-
                                     <lb n="7"/>re</persName> mi fecero un caso strano quasi che il sommo scrittore si
@@ -2622,7 +2622,7 @@
                                             <add place="inline">a<del rend="strikethrough">l</del> Dario</add>
                                         </del>
                                         <add place="inline" seq="2">:</add>
-                                    </subst></mod></mod><note n="1" resp="#ST">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
+                                    </subst></mod></mod><note n="1" resp="#TAV" type="critical">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
                         <sp who="#Corrado"><lg change="#fase-C"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
                                     <lb n="4"/><l n="2">piegar della plebaglia il fido cuore</l>
                                     <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></lg></sp>
@@ -2635,10 +2635,10 @@
                         <p rend="indent"><mod change="#fase-C"><lb n="12"/><mod change="#fase-C"><subst><del rend="strikethrough">Il</del><add place="inline">Figurati</add></subst></mod>, o lettore, la <hi rend="underline" change="#strato-E">ghigliottina 500 anni avanti</hi>  
                                 
                                 <lb n="13"/>Cristo e perdona insieme ai miei tredici anni.</mod></p>
-                        <p rend="indent"><mod change="#fase-C"><lb n="14"/><mod change="#fase-C"><add place="above">Flaviano,</add></mod> <choice resp="#ST"><sic>Il</sic><corr>il</corr></choice> padre del profeta <mod change="#fase-C"><subst><del rend="strikethrough">credeva</del><add place="above">che</add></subst></mod> per inganni dei satrapi nemici
+                        <p rend="indent"><mod change="#fase-C"><lb n="14"/><mod change="#fase-C"><add place="above">Flaviano,</add></mod> <choice resp="#TAV"><sic>Il</sic><corr>il</corr></choice> padre del profeta <mod change="#fase-C"><subst><del rend="strikethrough">credeva</del><add place="above">che</add></subst></mod> per inganni dei satrapi nemici
                                 <lb n="15"/>d<mod change="#fase-C"><subst><del rend="overwritten">el</del><add place="superimposed">i</add></subst></mod> suo figlio credeva Daniele ingrato <mod change="#fase-C"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del><add place="superimposed">a</add></subst></mod>l padre invoca la
                                 <lb n="16"/>sua pietà con parole amorose e che quantunque poco bene
-                                <lb n="17"/>espresse nascondono gentili sentimenti <choice resp="#ST"><sic>ed</sic><corr/></choice><mod change="#fase-C"><subst><del rend="strikethrough">esprimono</del><add place="above">e volevano almeno esprimere</add></subst></mod> l’amore
+                                <lb n="17"/>espresse nascondono gentili sentimenti <choice resp="#TAV"><sic>ed</sic><corr/></choice><mod change="#fase-C"><subst><del rend="strikethrough">esprimono</del><add place="above">e volevano almeno esprimere</add></subst></mod> l’amore
                                 <lb n="18"/>paterno.</mod></p>
                         <sp who="#Flaviano"><lg change="#fase-C"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
                                     <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></lg></sp>
@@ -2678,7 +2678,7 @@
                                             <lb n="16"/>giungeva</add></subst></mod> e correggeva. Quante volte non ho io trasformato
                                 <lb n="17"/>la mia nuda e <mod change="#fase-D"><subst><del rend="strikethrough">solinga</del><add place="inline">solitaria</add></subst></mod> cella in un <mod change="#fase-D"><add place="above">mio</add></mod> palco teatrale
                                 <lb n="18"/>esposto agli sguardi di migliaia di persone, figurate attonite
-                                <lb n="19"/>e plaudenti, e<choice resp="#ST"><sic>|</sic><corr> </corr></choice>quante in quel silenzio <mod change="#fase-D"><subst><del rend="strikethrough">mi p</del><add place="inline">sognai</add></subst></mod> di sentire battimani.</mod></p>
+                                <lb n="19"/>e plaudenti, e<choice resp="#TAV"><sic>|</sic><corr> </corr></choice>quante in quel silenzio <mod change="#fase-D"><subst><del rend="strikethrough">mi p</del><add place="inline">sognai</add></subst></mod> di sentire battimani.</mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="20"/>Nonostante <mod change="#fase-D"><subst><del rend="strikethrough">i mi</del><add place="inline"><subst><del rend="overwritten">ei</del><add place="superimposed">g</add></subst>li</add></subst></mod> sforzi di tener celati i miei getti, nonostante</mod></p>
                     </div>
                     <div type="page">
@@ -2816,9 +2816,9 @@
                                 <lb n="14"/>Talora per ordine del <persName ref="#Rettore_Seminario">Rettore</persName> si <mod change="#fase-D"><add place="above">doveva</add> muta<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst></mod> o al Refettorio
                                 <lb n="15"/>o in Cappella; <mod change="#fase-D"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">ed</add></subst></mod> io andavo sempre al luogo solito: pensavo ad
                                 <lb n="16"/>altro! Dicendo le preci <mod change="#fase-D"><subst><del rend="strikethrough">imb</del><add place="inline">sbagliavo</add></subst></mod> il Credo con l’Atto di
-                                <lb n="17"/>fede<choice resp="#ST"><sic>:</sic><corr/></choice><mod change="#fase-D"><del rend="strikethrough">pensavo a altro</del></mod>! Commetteva insomma più
+                                <lb n="17"/>fede<choice resp="#TAV"><sic>:</sic><corr/></choice><mod change="#fase-D"><del rend="strikethrough">pensavo a altro</del></mod>! Commetteva insomma più
                                 <lb n="18"/>mancanze possibil<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> senza malizia e perfidia di animo,
-                                <lb n="19"/>per il solo motivo d’essere <mod change="#fase-D"><subst seq="1"><del rend="strikethrough">scapa</del> <add place="inline">sbadato</add></subst> e <del rend="strikethrough" xml:id="del_superbo">superbo</del> <choice resp="#ST"><sic>e</sic><corr/></choice><add place="inline" xml:id="add_noncurante">noncurante</add><substJoin seq="2" target="#del_superbo #add_noncurante"/></mod>.
+                                <lb n="19"/>per il solo motivo d’essere <mod change="#fase-D"><subst seq="1"><del rend="strikethrough">scapa</del> <add place="inline">sbadato</add></subst> e <del rend="strikethrough" xml:id="del_superbo">superbo</del> <choice resp="#TAV"><sic>e</sic><corr/></choice><add place="inline" xml:id="add_noncurante">noncurante</add><substJoin seq="2" target="#del_superbo #add_noncurante"/></mod>.
                                 <lb n="20"/>Stare in silenzio era per me usuale come andare al refettorio,</mod></p>
                     </div>
                     <div type="page">
@@ -2971,10 +2971,10 @@
                                     <lb n="14"/><l n="4">di perdon spererete il dolce grido</l>
                                 </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="15"/>Nella 5<hi rend="apice">a</hi>, Gerardo predice al Re tempi migliori.</mod></p>
-                        <sp><lg change="#fase-C"><lb n="16"/><l n="1"><choice resp="#ST"><sic>Un olezzante</sic><corr>Un’olezzante</corr></choice></l>
+                        <sp><lg change="#fase-C"><lb n="16"/><l n="1"><choice resp="#TAV"><sic>Un olezzante</sic><corr>Un’olezzante</corr></choice></l>
                                     <lb n="17"/><l n="2">pace pel regno spanderassi; estinte</l>
                                     <lb n="18"/><l n="3"> si vedranno l’invidie e dei paesi</l>
-                                    <lb n="19"/><l n="4">l’ardenti parti e le <choice resp="#ST"><sic>minaccie</sic><corr>minacce</corr></choice> e l’ira;</l>
+                                    <lb n="19"/><l n="4">l’ardenti parti e le <choice resp="#TAV"><sic>minaccie</sic><corr>minacce</corr></choice> e l’ira;</l>
                                     <lb n="20"/><l n="5">dei nemici la fiamma estinguerassi</l>
                                 </lg></sp>
                     </div>
@@ -2983,7 +2983,7 @@
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>36</add></mod></fw>
                         <p rend="indent"><mod change="#fase-D"><lb n="1"/>il giorno che compivo 16 anni. Dubitavo ed ero <mod change="#fase-D"><subst><del rend="strikethrough">tra</del> <add place="inline">nato</add></subst></mod> e cresciu-
                                 <lb n="2"/>to tra le tonache e gli altari, <mod change="#fase-D"><subst><del rend="strikethrough">di</del> <add place="inline">era</add></subst></mod> indisciplinato ed ero
-                                <lb n="3"/><mod change="#fase-D"><subst><del rend="strikethrough">all</del> <add place="inline">educato</add></subst></mod> dalla disciplina e dal rigare: questo, a <choice resp="#ST"><sic>paree</sic> <corr>parere</corr></choice> mio,
+                                <lb n="3"/><mod change="#fase-D"><subst><del rend="strikethrough">all</del> <add place="inline">educato</add></subst></mod> dalla disciplina e dal rigare: questo, a <choice resp="#TAV"><sic>paree</sic> <corr>parere</corr></choice> mio,
                                 <lb n="4"/>mi dava a conoscere il mio fiero spirito che <mod change="#fase-D"><subst><del rend="strikethrough">si</del> <add place="inline">voleva</add></subst></mod>
                                 <lb n="5"/>in qualche modo segnalar<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">si</add></subst></mod>, <mod change="#fase-D"><add place="above">elevarsi</add></mod> e che non volendo essere pari,
                                 <lb n="6"/>uguale agli altri sceglieva un mezzo falso ed erroneo
@@ -3150,7 +3150,7 @@
                                         <add place="inline" seq="3">Era passato</add>
                                     </subst></mod> <!--  <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">f</del> <add place="inline">coraggioso</add></subst> e <subst seq="1"><del rend="strikethrough">anch</del> <add place="inline">non</add></subst> biosgnoso di</del><add place="inline">. Era</add></subst></mod> -->
                                 
-                                <lb n="19"/>alla 3<hi rend="apice">a</hi> Ginnasiale e anelavo <mod change="#fase-D"><subst><del rend="overwritten">al</del><add place="superimposed">il</add></subst></mod> momento <choice resp="#ST"><sic/><corr>che</corr></choice> <mod change="#fase-D"><subst><del rend="strikethrough">di</del> <add place="above">finissero le vacanze, per</add></subst></mod> potere studiare il Tasso,
+                                <lb n="19"/>alla 3<hi rend="apice">a</hi> Ginnasiale e anelavo <mod change="#fase-D"><subst><del rend="overwritten">al</del><add place="superimposed">il</add></subst></mod> momento <choice resp="#TAV"><sic/><corr>che</corr></choice> <mod change="#fase-D"><subst><del rend="strikethrough">di</del> <add place="above">finissero le vacanze, per</add></subst></mod> potere studiare il Tasso,
                                 <lb n="20"/>che avevo già letto, e in <mod change="#fase-D"><add place="above">rara</add></mod> parte gustato.</mod></p>
                     </div>
                     <div type="page">
@@ -3193,7 +3193,7 @@
                         <ab rend="align-center"><mod change="#fase-D"><add place="above">– Altre poesie fino al 1908 – <del rend="strikethrough">durante gli anni coevi del Danielo</del></add></mod></ab>
                         <p rend="indent"><mod change="#fase-D"><lb n="7"/>Dirò invece che <mod change="#fase-D"><subst><del rend="strikethrough">nei o</del> <add place="inline">i</add></subst></mod> due anni, in cui fu scritto Daniello
                                 <lb n="8"/>il profeta non furono <mod change="#fase-D"><subst><del rend="strikethrough"><gap quantity="2" unit="char"/></del><add place="superimposed">as</add></subst></mod>solutamente occupati per questa
-                                <lb n="9"/>tragedia, la quale da sola poteva ben in quell’età occuparli<choice resp="#ST"><sic>:</sic><corr>.</corr></choice>
+                                <lb n="9"/>tragedia, la quale da sola poteva ben in quell’età occuparli<choice resp="#TAV"><sic>:</sic><corr>.</corr></choice>
                                 <lb n="10"/>Prima del novembre 1905 avevo <mod change="#fase-D"><subst><del rend="strikethrough">scritto</del> <add place="above">combinato</add></subst></mod> un quaderno di carte,
                                 <lb n="11"/>a protocollo <mod change="#fase-D"><subst><del rend="strikethrough">pieno di</del> <add place="above">con</add></subst></mod> poesie di vari metri, <mod change="fase-D"><add place="above">del</add></mod>le quali ognuna
                                 <lb n="12"/><mod change="#fase-D"><add place="above">dovevano</add> esprime<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst> <subst><del rend="strikethrough">un</del> <add place="above">il</add></subst></mod> concetto d’un versetto del <mod change="#fase-D"><subst><del rend="strikethrough">p</del><add place="superimposed">P</add></subst></mod>ater noster e del-
@@ -3202,7 +3202,7 @@
                                 <lb n="15"/>che l’Agosto, dell’Anno dopo 190<mod change="#fase-D"><subst><del rend="overwritten">5</del><add place="superimposed">6</add></subst></mod> lo gittai <app> <lem varSeq="2"><mod change="#strato-E"><del rend="strikethrough">per la latrina</del></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-D">per la latrina</mod></rdg>    
                                 </app>.</mod></p>
-                        <p rend="indnet"><mod change="#fase-D"><lb n="16"/><subst><del rend="overwritten">Un</del><add place="superimposed">Due</add></subst> vers<choice resp="#ST"><sic>o</sic><corr>i</corr></choice> sol<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst> mi <subst><del rend="overwritten">è</del><add place="superimposed">sono</add></subst> rimast<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst> a caso impress<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst>.</mod></p>
+                        <p rend="indnet"><mod change="#fase-D"><lb n="16"/><subst><del rend="overwritten">Un</del><add place="superimposed">Due</add></subst> vers<choice resp="#TAV"><sic>o</sic><corr>i</corr></choice> sol<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst> mi <subst><del rend="overwritten">è</del><add place="superimposed">sono</add></subst> rimast<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst> a caso impress<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst>.</mod></p>
                         <lg change="#fase-D"><lb n="17"/><l n="1">Dal mondo novo che Colombo scorse</l>
                                 <lb n="18"/><l n="2">all’ultima del mondo Irlanda fredda.</l></lg>
                         <p rend="indnet"><mod change="#fase-D"><lb n="19"/>altri versi non m’è possibile risovvenirli. Sul maggio
@@ -3263,7 +3263,7 @@
                                  </mod> dire che avanti di leggerla io <mod change="#fase-D"><subst><del rend="strikethrough">cr</del> <add place="inline">speravo</add></subst></mod> un felice successo!
                                 <lb n="14"/>Altre poesie ne scrissi e ne strappai, tra le quali una poesia alla
                                 <lb n="15"/>Madonna di Pompei fatta vedere a un Sottoprefetto, che mi criticò
-                                <lb n="16"/>una stranezza e <mod change="#fase-D"><add place="above">un’</add></mod>inconvenienza. <choice resp="#ST"><sic>(1)</sic><corr/></choice></mod></p>
+                                <lb n="16"/>una stranezza e <mod change="#fase-D"><add place="above">un’</add></mod>inconvenienza. <choice resp="#TAV"><sic>(1)</sic><corr/></choice></mod></p>
                     </div>
                     <div type="page">
                         <pb n="3v2b" xml:id="Quaderno2_3v_b" facs="3v2.jpg"/>
@@ -3319,7 +3319,7 @@
                     </div>
                     <div type="page">
                         <pb n="4v2b" xml:id="Quaderno2_4v_letture" facs="4v2.jpg"/>
-                        <p rend="indent"><mod change="#fase-D"><lb n="9"/><choice resp="#ST"><sic>(1)</sic><corr/></choice>In quanto a<mod change="#fase-D"><del rend="strikethrough">l</del></mod>le letture in quell’anno di 2° Ginnasiale
+                        <p rend="indent"><mod change="#fase-D"><lb n="9"/><choice resp="#TAV"><sic>(1)</sic><corr/></choice>In quanto a<mod change="#fase-D"><del rend="strikethrough">l</del></mod>le letture in quell’anno di 2° Ginnasiale
                                 <lb n="10"/>non ne feci poche. A scuola leggemmo il Primo Volume 
                                 <lb n="11"/>delle Vite dei Pittori – Scultori – Architetti per Giorgio Vasari
                                 <lb n="12"/>ed io godevo sentire certe particolarità di quei sommi
@@ -3359,8 +3359,8 @@
                         <pb n="5v2" xml:id="Quaderno2_5v" facs="5v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>46</add></mod></fw>
                         <p rend="indent"><mod change="#fase-D"><lb n="1"/>Foscoliano, del quale ne misi a memoria il primo squarcio
-                                <lb n="2"/>fino a <choice resp="#TAV"><sic>Sol|chi</sic><corr>Sol chi</corr></choice> <choice resp="#ST"><sic/><corr>non</corr></choice> lascia etc. e il secondo da <hi rend="underline">Pur nuova legge</hi> a
-                                <lb n="3"/><mod change="#fase-D"><subst><del rend="strikethrough"><choice resp="#ST"><sic>Diero l'</sic><corr>Dier alle</corr></choice>umane belve esser piet</del> <add place="inline"><hi rend="underline">Dal dì che nozze</hi></add></subst></mod>. A egregie cose etc
+                                <lb n="2"/>fino a <choice resp="#TAV"><sic>Sol|chi</sic><corr>Sol chi</corr></choice> <choice resp="#TAV"><sic/><corr>non</corr></choice> lascia etc. e il secondo da <hi rend="underline">Pur nuova legge</hi> a
+                                <lb n="3"/><mod change="#fase-D"><subst><del rend="strikethrough"><choice resp="#TAV"><sic>Diero l'</sic><corr>Dier alle</corr></choice>umane belve esser piet</del> <add place="inline"><hi rend="underline">Dal dì che nozze</hi></add></subst></mod>. A egregie cose etc
                                 <lb n="4"/>non lo volli imparare perché lo sapevano tutti e mi era
                                 <lb n="5"/>diventato noioso senza <mod change="#fase-D"><add place="above">neppure</add></mod> averlo letto. Però dalla descrizione
                                 <lb n="6"/>dell’Alfieri, lo sapeva già fino al – Felice te, che il regno etc.
@@ -3473,7 +3473,7 @@
                         <p rend="indent"><mod change="#fase-D"><lb n="8"/>
                                 <lb n="9"/><lb n="10"/>a fila, le lettere del Leopardi e del Giusti, il Cuore e i
                                 <lb n="11"/>Bozzetti di De Amicis, il <mod change="#fase-D"><subst><del rend="strikethrough">Ma</del> <add place="inline">Fieramosca</add></subst></mod> del D’Azeglio,
-                                <lb n="12"/>il Marco Visconti del Grossi; <mod change="#fase-D"><del rend="strikethrough">la Fabiola</del></mod><choice resp="#ST"><sic>;</sic><corr/></choice> i Ricordi di
+                                <lb n="12"/>il Marco Visconti del Grossi; <mod change="#fase-D"><del rend="strikethrough">la Fabiola</del></mod><choice resp="#TAV"><sic>;</sic><corr/></choice> i Ricordi di
                                 <lb n="13"/>Dupré, alcune Commedie del Goldoni. <mod change="#fase-D"><add place="above">L’antologie del Bruni, del Mondi,</add> <subst><del rend="strikethrough">di</del> <add place="inline">del</add></subst> Martini <del rend="strikethrough">Fior da Fiore</del></mod>.</mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="14"/>Il lettore <mod change="#fase-D"><subst><del rend="strikethrough">vedrà</del> <add place="inline">giudicherà</add></subst></mod> se con tutte queste letture volontarie
                                 <lb n="15"/>poteva avanzarmi gran tempo per ben riuscire agli studi
@@ -3481,7 +3481,7 @@
                     </div>
                     <div type="page">
                         <pb n="7r2c" xml:id="Quaderno2_7r_faseD2" facs="7r2.jpg"/>
-                        <p><mod change="#fase-D"><lb n="17"/><metamark target="#testo_aggiunta_7r2" rend="superimposed">(.)</metamark>In quell’anno <mod change="#fase-D"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
+                        <p><mod change="#fase-D"><lb n="17"/><metamark rend="superimposed">(.)</metamark>In quell’anno <mod change="#fase-D"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
                                 <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
                                 <lb n="19"/>noscenza delle sue opere. Anzi <mod change="fase-D"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
                                     <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</mod></p>
@@ -3657,12 +3657,12 @@
                                 <lb n="7"/>nostra pazienza per veder se usciva (dai suoi limiti) <mod change="#fase-F"><add place="above">con qualche terno d'accidenti o meglio con qualche <subst><del rend="strikethrough">tombol</del> <add place="inline">cinquina</add></subst></add></mod>. In quanto a questo
                                 <lb n="8"/>particolare però <mod change="#fase-F"><subst><del rend="strikethrough">n</del> <add place="inline">è</add></subst></mod> scusabile, perché l’aveva comune con molti o qua-
                                 <lb n="9"/>si tutti i professori o insegnanti <mod change="#fase-F"><subst seq="2"><del rend="strikethrough"><add place="below" seq="1">e</add></del><add place="above">e</add></subst></mod> non solo di quell’Istituto, <mod change="#fase-F"><subst><del rend="strikethrough">ma di tutti</del> <add place="above">ma di molti altri</add></subst></mod>.</mod></p>
-                        <p rend="indent"><mod change="#fase-F"><lb n="10"/>Il Vicedirettore era <choice resp="#ST"><sic>deficente</sic><corr>deficiente</corr></choice> di <mod change="#fase-F"><subst><del rend="strikethrough">carne</del> <add place="inline">tutta</add></subst></mod> quella carne che il Rettore
+                        <p rend="indent"><mod change="#fase-F"><lb n="10"/>Il Vicedirettore era <choice resp="#TAV"><sic>deficente</sic><corr>deficiente</corr></choice> di <mod change="#fase-F"><subst><del rend="strikethrough">carne</del> <add place="inline">tutta</add></subst></mod> quella carne che il Rettore
                                 <lb n="11"/>aveva di più, <mod change="#fase-F"><add place="above">mentre avea di più quel<subst><add place="inline">l’</add><del rend="strikethrough">ceri</del> <add place="inline">intelligenza</add></subst> e quella dottrina che al Rettore mancavano.</add></mod> <mod change="#fase-F"><subst><del rend="strikethrough">Un</del> <add place="inline">Uomo</add></subst></mod> serio, <mod change="#fase-F"><subst><del rend="strikethrough">magro</del> <add place="inline">asciutto</add></subst></mod> di viso <mod change="#fase-F"><subst><del rend="#overwritten"><gap unit="char" quantity="1"/> <gap unit="char" quantity="2"/></del> <add place="superimposed">e di</add></subst></mod> persona, <mod change="#fase-F"><add place="above">non bello,</add></mod> dall’andare
                                 <lb n="12"/>pensoso <mod change="#fase-F"><add place="above">e grave,</add></mod> pazzo di libri in specie di letteratura, amante d’assiduità, <mod change="#fase-F"><del rend="strikethrough">di</del></mod>
                                 <lb n="13"/>lavoro, di costumi intemerato, di sentimenti alt<mod change="#fase-F"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst><add place="inline">ro</add></mod>, persona ama-
                                 <lb n="14"/>bilissima, veneranda, <mod change="#fase-F"><subst><del rend="strikethrough">mamma</del> <add place="inline">aveva</add></subst></mod> un solo difetto <mod change="#fase-F"><subst><del rend="overwritten">:</del><add place="superimposed">o</add></subst> <add place="above"> meglio un sol male:</add></mod> soffriva di nervosismo.</mod></p>
-                        <p rend="indent"><mod change="#fase-F"><lb n="15"/><mod change="#fase-F"><subst><del rend="strikethrough">E freq</del> <add place="inline">E</add></subst></mod> <choice resp="#ST"><sic>non'ostanti</sic><corr>non ostanti</corr></choice> queste grandi virtù, l’unico suo difetto valse a render-
+                        <p rend="indent"><mod change="#fase-F"><lb n="15"/><mod change="#fase-F"><subst><del rend="strikethrough">E freq</del> <add place="inline">E</add></subst></mod> <choice resp="#TAV"><sic>non'ostanti</sic><corr>non ostanti</corr></choice> queste grandi virtù, l’unico suo difetto valse a render-
                                 <lb n="16"/>melo quasi odioso, e farmi disparire in lui tutti quelle doti; e risultare suo quel
                                 <lb n="17"/>mancare involontario<mod change="#fase-F"><subst><add place="inline">.</add> <del rend="strikethrough">e</del></subst></mod></mod></p>
                         <p rend="indent"><mod change="#fase-F"><lb n="18"/>In conclusione tra un superiore e l’altro esisteva la più perfetta
@@ -3746,7 +3746,7 @@
                                                 <lb n="10"/>non me ne vergognava!</mod></rdg>    
                                     </app>
                                 </metamark></mod></p>
-                        <p rend="indent"><mod change="#fase-G"><lb n="11"/>In tale condizion<choice resp="#ST"><sic>e</sic><corr>i</corr></choice> ognuno può comprendere con
+                        <p rend="indent"><mod change="#fase-G"><lb n="11"/>In tale condizion<choice resp="#TAV"><sic>e</sic><corr>i</corr></choice> ognuno può comprendere con
                                 <lb n="12"/>che <mod change="#fase-G"><subst><del rend="strikethrough">atten</del> <add place="inline">volontà</add></subst></mod> e attenzione ascoltassi quelle
                                 <lb n="13"/><mod change="#fase-G"><subst><del rend="strikethrough">discussioni</del> <add place="above">lezioni</add></subst></mod> apologetiche, che non si confacevano
                                 <lb n="14"/>con le mie <mod change="#fase-G"><add place="above">interne</add></mod> convinzioni, e che mettevano nel mio
@@ -3754,7 +3754,7 @@
                                 <lb n="16"/>qualche volta mi <mod change="#fase-G"><subst><del rend="strikethrough">facevano</del> <add place="above">avrebbero fatto</add></subst></mod> chinare la testa se io
                                 <lb n="17"/>non fossi stato tanto somaro e caparbio da dire: «<hi rend="underline">Sarà
                                     <lb n="18"/>vero, ma io non l’ascolto</hi>». La scuola d’apologia era
-                                <lb n="19"/>per me un<choice resp="#ST"><sic/><corr>'</corr></choice>ora di tempo per leggere saporitamente
+                                <lb n="19"/>per me un<choice resp="#TAV"><sic/><corr>'</corr></choice>ora di tempo per leggere saporitamente
                                 <lb n="20"/>le Canzoni del melanconico Leopardi, ch’io aveva in un</mod></p>
                     </div>
                     <div type="page">
@@ -3831,7 +3831,7 @@
                                                 <del rend="strikethrough">le due</del>
                                                 <add place="above">la</add>
                                             </subst> 
-                                            stupend<choice resp="#ST"><sic>e</sic><corr>a</corr></choice> traduzion
+                                            stupend<choice resp="#TAV"><sic>e</sic><corr>a</corr></choice> traduzion
                                             <subst seq="3">
                                                 <del rend="overwritten">i</del>
                                                 <add place="superimposed">e</add>
@@ -3852,7 +3852,7 @@
                         <p rend="indent"><mod change="#fase-G"><lb n="3"/>Io nel mio studio particolare giunsi a formarmi
                                 <lb n="4"/><mod change="#fase-G"><subst><del rend="strikethrough">p</del> <add place="inline">una</add></subst></mod> <mod change="#fase-G"><add place="above">speciale</add></mod> predilezione per Dante, per Foscolo, per Carduc-
                                 <lb n="5"/>ci, per Leopardi. <hi rend="underline" change="#strato-L">In questi quattro io trovava me stesso.</hi>
-                                <lb n="6"/>Lessi con disgusto la <choice resp="#ST"><sic>Basvilliana</sic><corr>Bassvilliana</corr></choice> e mi sembrò
+                                <lb n="6"/>Lessi con disgusto la <choice resp="#TAV"><sic>Basvilliana</sic><corr>Bassvilliana</corr></choice> e mi sembrò
                                 <lb n="7"/>una sciocca e servile imitazione dantesca; i quattro
                                 <lb n="8"/>sonetti di Giuda mi <mod change="#fase-G"><subst><del rend="strikethrough">dettero</del> <add place="inline">rimasero</add></subst></mod> così antipa-
                                 <lb n="9"/>tici <mod change="#fase-G"><subst><del rend="strikethrough">che</del> <add place="inline">da</add></subst></mod> proibirmi di leggere tutto quello che era
@@ -3922,13 +3922,13 @@
                                 <lb n="17"/>scuola, talché, come negli anni <mod change="#fase-G"><subst><del rend="overwritten">pas</del><add place="superimposed">ore</add></subst></mod>cedenti non
                                 <lb n="18"/>mi seppi guadagnare, né la stima né l’affetto dei
                                 <lb n="19"/>maestri. <mod change="#fase-G">Ne<subst><del rend="overwritten">i</del><add place="superimposed">gli</add></subst> <subst><del rend="strikethrough">tem</del> <add place="inline">svolgimenti</add></subst></mod> dei temi italiani
-                                <lb n="20"/>dati dal maestr<choice resp="#ST"><sic>i</sic><corr>o</corr></choice> io era affatto un <mod change="#fase-G"><subst><del rend="strikethrough">animale</del> <add place="inline">somaro</add></subst></mod>;</mod></p>
+                                <lb n="20"/>dati dal maestr<choice resp="#TAV"><sic>i</sic><corr>o</corr></choice> io era affatto un <mod change="#fase-G"><subst><del rend="strikethrough">animale</del> <add place="inline">somaro</add></subst></mod>;</mod></p>
                     </div>
                     <div type="page">
                         <pb n="17v2" xml:id="Quaderno2_17v" facs="17v2.jpg"/>
                         <p rend="indent"><mod change="#fase-H"><lb/><mod change="#fase-H">Quel<del rend="strikethrough">la</del> <subst><del rend="strikethrough">solitudine</del><add place="above">grande spazio, azzurro e silenzioso</add></subst></mod> mi <app><lem varSeq="2"><mod change="#fase-N">sembra<add place="inline">va</add></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-H">sembra</mod></rdg>    
-                                </app> popolat<choice resp="#ST"><sic>a</sic><corr>o</corr></choice> di mille persone che a gran voce con-
+                                </app> popolat<choice resp="#TAV"><sic>a</sic><corr>o</corr></choice> di mille persone che a gran voce con-
                                 <lb/>corde <app><lem varSeq="2"><mod change="#fase-N">gridassero</mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-H">gridano</mod></rdg>    
                                 </app>. Il dolore, la solitudine, la contemplazione de l’infinito sono la
@@ -3940,7 +3940,7 @@
                         <p rend="indent"><mod change="#fase-H"><lb/>La voglia di presto morire mi spariva del tutto, o questo era l’unico mezzo
                                 <lb/>per annientarla. Dal pessimismo più spinto io mi elevavo al
                                 <app>
-                                    <lem varSeq="2"><mod change="#fase-H"><hi rend="underline" change="#strato-I">al misticismo più alto, dalla cupa tristezza dell'ateo all<choice resp="#ST"><sic>'</sic><corr>a</corr></choice><mod change="#strato-O"><subst><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></subst></mod> più pura d’un santo.</hi></mod></lem>
+                                    <lem varSeq="2"><mod change="#fase-H"><hi rend="underline" change="#strato-I">al misticismo più alto, dalla cupa tristezza dell'ateo all<choice resp="#TAV"><sic>'</sic><corr>a</corr></choice><mod change="#strato-O"><subst><del rend="strikethrough"><gap unit="char" quantity="3"/></del><add place="above">gioia</add></subst></mod> più pura d’un santo.</hi></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-H">al misticismo più alto, dalla cupa tristezza <mod change="#fase-H"><subst><del rend="strikethrough">di</del> <add place="inline">dell’</add></subst></mod>ateo all'<gap unit="char" quantity="3"/>più pura d’un santo.</mod></rdg>
                                 </app>
                                 <!-- <app><lem varSeq="2"><mod change="#strato-I"><hi rend="underline">misticismo più alto,
@@ -4046,11 +4046,11 @@
                                 <lb n="4"/>ne l’immaginare che avrebbero detto di me: «Povero carce-
                                 <lb n="5"/>rato!» <mod change="#fase-G"><subst><del rend="strikethrough">Sp</del> <add place="inline">E</add></subst></mod> se in specie erano fanciulle io vi faceva
                                 <lb n="6"/>sogni per un’ora. <mod change="#fase-G"><del rend="strikethrough">Assordate le orecchie da’ gridi <add place="above">odiosi</add> dei
-                                        <lb n="7"/>colleghi in ricreazione</del></mod> <choice resp="#ST"><sic>io</sic> <corr>Io</corr></choice> <mod change="#fase-G"><subst><del rend="strikethrough">pen</del> <add place="inline">trovava</add></subst></mod> pace nel
+                                        <lb n="7"/>colleghi in ricreazione</del></mod> <choice resp="#TAV"><sic>io</sic> <corr>Io</corr></choice> <mod change="#fase-G"><subst><del rend="strikethrough">pen</del> <add place="inline">trovava</add></subst></mod> pace nel
                                 <lb n="8"/>pensare che quella <mod change="#fase-G"><subst><del rend="strikethrough">fanciulla</del> <add place="above">bella creatura</add></subst></mod>, che passava avrebbe com-
-                                <lb n="9"/>pianto il mio stato, <mod change="#fase-G"><add place="above">che quando mi fosse dato di poterle parlare</add></mod><choice resp="#ST"><sic/><corr>,</corr></choice> avrebbe corrisposto al mio amore,
+                                <lb n="9"/>pianto il mio stato, <mod change="#fase-G"><add place="above">che quando mi fosse dato di poterle parlare</add></mod><choice resp="#TAV"><sic/><corr>,</corr></choice> avrebbe corrisposto al mio amore,
                                 <lb n="10"/>avremmo insieme goduti <mod change="#fase-G"><subst><del rend="strikethrough">tutti</del> <add place="inline">i piaceri</add></subst></mod> <mod change="#fase-G"><subst><del rend="strikethrough">che</del> <add place="inline">de la</add></subst></mod> natura,
-                                <lb n="11"/>avremmo trascorsi giorni di paradiso; essa era un<choice resp="#ST"><sic/><corr>'</corr></choice>
+                                <lb n="11"/>avremmo trascorsi giorni di paradiso; essa era un<choice resp="#TAV"><sic/><corr>'</corr></choice>
                                 <lb n="12"/>immagine di quella che mi stava nel cuore e ch’io
                                 <lb n="13"/>aveva lasciata lontano, nella mia patria, dove
                                 <lb n="14"/>era la mia famiglia! <mod change="#fase-G"><subst><del rend="strikethrough">che m'avrebbe adorato e non
@@ -4102,7 +4102,7 @@
                                      <add place="above" seq="2"><lb n="2"/>tornava</add>
                                      </subst></mod>
                                      tra i miei neri compagni</mod>-->
-                                <lb n="3"/>tornavo alla rabbia <choice resp="#ST"><sic>alla</sic><corr>all'</corr></choice><mod change="#fase-G"><subst>
+                                <lb n="3"/>tornavo alla rabbia <choice resp="#TAV"><sic>alla</sic><corr>all'</corr></choice><mod change="#fase-G"><subst>
                                         <del rend="strikethrough" seq="1"> desider</del>
                                         <del rend="strikethrough" seq="2">
                                             <add place="inline">dispregiata</add>
@@ -4199,7 +4199,7 @@
                         <fw place="top_right" type="pageNum"><mod change="#fase-N">65</mod></fw>
                         <p rend="indent"><mod change="#fase-N"><lb n="1"/>di cui <app><lem varSeq="2"><mod change="#strato-O"><del rend="strikethrough">ne</del></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-N">ne</mod></rdg>
-                                </app>riporterò qui le migliori. (V. Quaderni Natale <choice resp="#ST"><sic>Infanzi</sic><corr>Infanzia</corr></choice>)
+                                </app>riporterò qui le migliori. (V. Quaderni Natale <choice resp="#TAV"><sic>Infanzi</sic><corr>Infanzia</corr></choice>)
                                 <lb n="2"/></mod></p>
                         <p rend="indent"><mod change="#fase-N"><lb n="3"/>Tutte queste l’avevo <mod change="#fase-N"><subst><del rend="strikethrough">riuni</del> <add place="inline">raccolte</add></subst></mod> in due quaderni,
                                 <lb n="4"/>che io tenevo con la massima cura e nascosti come tesori<app><lem varSeq="2"><mod change="#strato-O"><del rend="strikethrough">d'oro</del></mod></lem>
