@@ -2914,7 +2914,7 @@
                         <p rend="indent"><mod change="#fase-C"><lb n="5"/>e più sotto:</mod></p>
                         <sp who="#Daniello_per"><lg>
                                 <mod change="#fase-C"><lb n="6"/><l n="1">Quando pomposo a illuminar la terra</l>
-                                    <lb n="7"/><l n="2">l<mod change="#fase-C"><subst><del rend="#strikethrough">a</del><add place="inline">’</add></subst></mod>astro maggiore appar sull’orizzonte,</l>
+                                    <lb n="7"/><l n="2">l<mod change="#fase-C"><subst><del rend="strikethrough">a</del><add place="inline">’</add></subst></mod>astro maggiore appar sull’orizzonte,</l>
                                     <lb n="8"/><l n="3">e quando ardente i nostri campi fiede,</l>
                                     <lb n="9"/><l n="4">e quando scende sul dorato letto</l>
                                     <lb n="10"/><l n="5">la stessa luce a salutar le genti etc…..</l>
@@ -2927,7 +2927,7 @@
                                 <lb n="15"/>cative e inopportune, forse per reminiscenze dell’Iliade male
                                 <lb n="16"/>appropriate.</mod></p>
                         <sp><lg>
-                                <mod change="#fase-C"><lb n="17"/><mod change="#fase-C"><subst><del rend="#strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod> <!-- Non sono molto certa della posizione di questo add..-->
+                                <mod change="#fase-C"><lb n="17"/><mod change="#fase-C"><subst><del rend="strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod> <!-- Non sono molto certa della posizione di questo add..-->
                                     <lb n="19"/><l n="2">armiamo i polsi; e i brandi arditi e i scudi</l>
                                     <lb n="20"/><l n="3">vibriam diretti e <mod change="#fase-C"><subst><del rend="overwritten">g</del><add place="superimposed">l’</add></subst></mod>egide e gli elmetti</l>
                                 </mod>
@@ -3501,7 +3501,7 @@
                         <p rend="indent"><mod change="#fase-D">
                                 <lb n="1"/>Quel giorno 7 Febbraio al refettorio Boni <mod change="#fase-D"><subst><del rend="strikethrough">disse</del> <add place="inline">annunziò</add></subst></mod>
                                 <lb n="2"/>addolorato la <mod change="#fase-D"><subst><del rend="strikethrough">fatale</del> <add place="inline">morte</add></subst></mod> di tanto uomo. Gli altri <mod change="#fase-D"><add place="above">maggiori</add></mod> che
-                                <lb n="3"/>ci avevano sentiti parlare e che forse <mod change="#fase-D"> <subst><del rend="strikethreough">lo</del> <add place="above">un po’ ne</add></subst></mod> conoscevano <mod change="#fase-D"><subst><del rend="strikethrough">come</del> <add place="above">le opere e
+                                <lb n="3"/>ci avevano sentiti parlare e che forse <mod change="#fase-D"> <subst><del rend="strikethrough">lo</del> <add place="above">un po’ ne</add></subst></mod> conoscevano <mod change="#fase-D"><subst><del rend="strikethrough">come</del> <add place="above">le opere e
                                             <lb n="4"/>lo stimavano</add></subst></mod> un grand’uomo se ne dolsero e tutti restarono cheti. Io in
                                 <lb n="5"/>quel silenzio <mod change="#fase-D"><add place="above">mi</add></mod> <hi rend="underline" change="#strato-I">lasciai uscir di bocca un “Bene!”, del quale tutti
                                     <lb n="6"/>si meravigliarono,</hi>
@@ -3663,7 +3663,7 @@
                                 <lb n="8"/>particolare però <mod change="#fase-F"><subst><del rend="strikethrough">n</del> <add place="inline">è</add></subst></mod> scusabile, perché l’aveva comune con molti o qua-
                                 <lb n="9"/>si tutti i professori o insegnanti <mod change="#fase-F"><subst seq="2"><del rend="strikethrough"><add place="below" seq="1">e</add></del><add place="above">e</add></subst></mod> non solo di quell’Istituto, <mod change="#fase-F"><subst><del rend="strikethrough">ma di tutti</del> <add place="above">ma di molti altri</add></subst></mod>.</mod></p>
                         <p rend="indent"><mod change="#fase-F"><lb n="10"/>Il Vicedirettore era <choice resp="#TAV"><sic>deficente</sic><corr>deficiente</corr></choice> di <mod change="#fase-F"><subst><del rend="strikethrough">carne</del> <add place="inline">tutta</add></subst></mod> quella carne che il Rettore
-                                <lb n="11"/>aveva di più, <mod change="#fase-F"><add place="above">mentre avea di più quel<subst><add place="inline">l’</add><del rend="strikethrough">ceri</del> <add place="inline">intelligenza</add></subst> e quella dottrina che al Rettore mancavano.</add></mod> <mod change="#fase-F"><subst><del rend="strikethrough">Un</del> <add place="inline">Uomo</add></subst></mod> serio, <mod change="#fase-F"><subst><del rend="strikethrough">magro</del> <add place="inline">asciutto</add></subst></mod> di viso <mod change="#fase-F"><subst><del rend="#overwritten"><gap unit="char" quantity="1"/> <gap unit="char" quantity="2"/></del> <add place="superimposed">e di</add></subst></mod> persona, <mod change="#fase-F"><add place="above">non bello,</add></mod> dall’andare
+                                <lb n="11"/>aveva di più, <mod change="#fase-F"><add place="above">mentre avea di più quel<subst><add place="inline">l’</add><del rend="strikethrough">ceri</del> <add place="inline">intelligenza</add></subst> e quella dottrina che al Rettore mancavano.</add></mod> <mod change="#fase-F"><subst><del rend="strikethrough">Un</del> <add place="inline">Uomo</add></subst></mod> serio, <mod change="#fase-F"><subst><del rend="strikethrough">magro</del> <add place="inline">asciutto</add></subst></mod> di viso <mod change="#fase-F"><subst><del rend="overwritten"><gap unit="char" quantity="1"/> <gap unit="char" quantity="2"/></del> <add place="superimposed">e di</add></subst></mod> persona, <mod change="#fase-F"><add place="above">non bello,</add></mod> dall’andare
                                 <lb n="12"/>pensoso <mod change="#fase-F"><add place="above">e grave,</add></mod> pazzo di libri in specie di letteratura, amante d’assiduità, <mod change="#fase-F"><del rend="strikethrough">di</del></mod>
                                 <lb n="13"/>lavoro, di costumi intemerato, di sentimenti alt<mod change="#fase-F"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst><add place="inline">ro</add></mod>, persona ama-
                                 <lb n="14"/>bilissima, veneranda, <mod change="#fase-F"><subst><del rend="strikethrough">mamma</del> <add place="inline">aveva</add></subst></mod> un solo difetto <mod change="#fase-F"><subst><del rend="overwritten">:</del><add place="superimposed">o</add></subst> <add place="above"> meglio un sol male:</add></mod> soffriva di nervosismo.</mod></p>
@@ -4119,7 +4119,7 @@
                                     <lb n="5"/>mi la vita.</hi></mod></p>
                         <p rend="indent"><mod change="#fase-G"><lb n="6"/>Infelice! e avevo 15 anni! Quale fiore di maggio
                                 <lb n="7"/>perduto, quale fuoco acceso per la distruzione de la
-                                <lb n="8"/><mod change="#fase-G"><subst><del rend="#strikethrough">pace, de la tranquillità</del> <add place="inline">giovinezza!</add></subst></mod></mod></p>
+                                <lb n="8"/><mod change="#fase-G"><subst><del rend="strikethrough">pace, de la tranquillità</del> <add place="inline">giovinezza!</add></subst></mod></mod></p>
                         <p rend="indent"><mod change="#fase-G">
                                 <mod change="#fase-G"><subst seq="2">
                                         <del rend="strikethrough seq-transient" seq="2" n="1"><lb n="9"/>Questo stato terribile che io solea tenere represso
