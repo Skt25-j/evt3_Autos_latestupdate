@@ -1028,18 +1028,18 @@
                             <lb/><l n="24">e della testa umana.</l>
                         </lg>
                         <lb/>
-                        <delSpan spanTo="#autos_delspan_1" rend="strikethrough" change="#strato-X"/>
-                        <lg>
-                                
+                        
+                        <lg><mod change="#strato-X">
+                                <del rend="strikethrough">
                                     <lb/><l>E piansi disperato</l>
                                     <lb/><l>sembrandomi infinite</l>
                                     <lb/><l>l’ore che tutto colorato</l>
                                     <lb/><l>è di nero e scolpite</l>
                                     <lb/><l>sono più le paure</l>
                                     <lb/><l>che non sono sicure.</l>
-                                 
-                            </lg>
-                        <anchor xml:id="autos_delspan_1"/>
+                                </del> 
+                            </mod></lg>
+                        
                         <lb/><lb/>
                         <lg n="4"><l n="25">Mi credei infelice</l>
                             <lb/><l n="26">quando invece l’aurora</l>
@@ -2340,7 +2340,7 @@
                                 <mod change="#fase-C"><subst><del rend="overwritten">r</del>
                                         <add place="superimposed">v</add></subst></mod>ari; uno dei quali era
                                 <lb n="2"/>questo:</mod></p>
-                        <sp who="#Dario"><speaker><mod change="#fase-C"><lb n="3"/>Dario:</mod></speaker><lg change="#fase-C">
+                        <sp who="#Dario"><speaker><mod change="#fase-C"><lb n="3"/>Dario:</mod></speaker><lg><mod change="#fase-C">
                                     <l n="1">Sorgi, Daniele; la fortuna arride</l>
                                     <lb n="4"/><l n="2">a te benigna;</l>
                                     <lb n="5"/><l n="3">e dal suo trono eccelso il divo nume</l>
@@ -2354,10 +2354,10 @@
                                         </app> spirto.</l>
                                     <lb n="9"/><l n="7">Ne l’alma tu<mod change="#fase-C"><subst><del rend="overwritten">r</del><add place="superimposed">a</add></subst></mod>più fulgida degli altri</l>
                                     <lb n="10"/><l n="8">si compiace l’Eterno e a te un sorriso</l>
-                                    <lb n="11"/><l n="9">d<mod change="#fase-C"><subst><del rend="overwritten">ono</del><add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></lg></sp>
+                                    <lb n="11"/><l n="9">d<mod change="#fase-C"><subst><del rend="overwritten">ono</del><add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></mod></lg></sp>
                         
                         <p rend="indent"><mod change="#fase-C"><lb n="12"/>un altro era questo:</mod></p> 
-                        <sp who="#Dario"><speaker><mod change="#fase-C"><lb n="3"/>Dario:</mod></speaker><lg change="#fase-C"><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
+                        <sp who="#Dario"><speaker><mod change="#fase-C"><lb n="3"/>Dario:</mod></speaker><lg><mod change="#fase-C"><l n="1">Sorgi, o sorriso degli eterni labbri,</l>
                                     <lb n="14"/><l n="2">sorgi, Daniele; la fortuna arride</l>
                                     <lb n="15"/><l n="3">a te benigna; e già mi par che lieta</l>
                                     <lb n="16"/><l n="4">con dive mani un regio serto al crine</l>
@@ -2366,7 +2366,7 @@
                                     <lb n="18"/><l n="6">Da’ vasti campi degli eccelsi cieli</l>
                                     <lb n="19"/><l n="7">ti guarda Dio com’<mod change="#fase-C"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del>
                                                 <add place="superimposed">uom</add></subst></mod> la sua pupilla.</l>
-                                    <lb n="20"/><l n="8">Grande ti fè l’onnipotente mano</l></lg></sp>
+                                    <lb n="20"/><l n="8">Grande ti fè l’onnipotente mano</l></mod></lg></sp>
                         
                         <!-- é il varSeq che fa nascere i problemi legati allo 12121 nella visualizzazione della sequenza delle correzioni-->
                         
@@ -2437,21 +2437,21 @@
                                 <rdg varSeq="1"><mod change="#fase-C">20</mod></rdg>
                             </app></fw>
                         
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="1"/><l n="9">e dagli eletti suoi recinti un’alma</l>
                                     <lb n="2"/><l n="10">grande ti trasse e per le tue virtudi</l>
-                                    <lb n="3"/><l n="11">ti rendi quasi Sol fra lucidi astri.</l></lg> </sp>
+                                    <lb n="3"/><l n="11">ti rendi quasi Sol fra lucidi astri.</l></mod></lg> </sp>
                         <p rend="indent"> <mod change="#fase-C"><lb n="4"/>un 
                                 <del rend="strikethrough">'</del>
                                 altro era questo:</mod></p>
-                        <sp who="#Dario"><speaker><mod change="#fase-C"><lb n="5"/>Dario:</mod></speaker><lg change="#fase-C">
+                        <sp who="#Dario"><speaker><mod change="#fase-C"><lb n="5"/>Dario:</mod></speaker><lg><mod change="#fase-C">
                                     <l n="1">Deh! vieni, inclito vate; omai non trist<mod change="#fase-C">
                                             <subst><del rend="overwritten">e</del>
                                                 <add place="superimposed">i</add></subst></mod></l>
                                     <lb n="6"/><l n="2">fantasime, non ombre insidiatrici</l>
                                     <lb n="7"/><l n="3">vagano  per quest’aure e l’ira iniqua</l>
                                     <lb n="8"/><l n="4">dei tuoi nemici non un cupo suono</l>
-                                    <lb n="9"/><l n="5">rende a le regie stanze.</l></lg></sp>
+                                    <lb n="9"/><l n="5">rende a le regie stanze.</l></mod></lg></sp>
                        <note resp="#TUS"> <ab rend="indent"><mod change="#strato-E">
                                 <add place="margin">Ci si sente l’<persName ref="#Vittorio_Alfieri">Alfieri</persName></add>
                             </mod><lb/></ab></note>
@@ -2462,7 +2462,7 @@
                                     <del rend="strikethrough">dipinto quasi filosofo</del>
                                 </mod>
                             </mod></p>
-                        <sp who="#Dario"><lg change="#fase-C"><lb n="13"/><l n="1" rend="align-center">Ormai</l>
+                        <sp who="#Dario"><lg><mod change="#fase-C"><lb n="13"/><l n="1" rend="align-center">Ormai</l>
                                     <lb n="14"/><l n="2">non lungi è l’ora in cui piegherò il capo</l>
                                     <lb n="15"/><l n="3">sotto l’avello, che pur degno l’ossa</l>
                                     <lb n="16"/><l n="4">mie serberà fra le sacrate mura;</l>
@@ -2472,7 +2472,7 @@
                                     </mod> </note>
                                     <lb n="18"/><l n="6">di silenzio profonda e di virtude</l> 
                                     <lb n="19"/><l n="7">magnanima vedranno sacro ricordo</l>
-                                    <lb n="20"/><l n="8">sarà quel marmo.</l></lg></sp>
+                                    <lb n="20"/><l n="8">sarà quel marmo.</l></mod></lg></sp>
                     </div>
                     <div type="page">
                         <pb n="19v1" xml:id="Quaderno1_19v" facs="19v.jpg"/>
@@ -2559,20 +2559,20 @@
                                         <lb n="9"/><add place="inline">e quasi un secolo dopo.)</add></subst></mod>
                             </mod>
                         </p>
-                        <sp who="#Daniello_per"><speaker><mod change="#fase-C"><lb n="10"/>Dan:</mod></speaker><lg change="#fase-C">
+                        <sp who="#Daniello_per"><speaker><mod change="#fase-C"><lb n="10"/>Dan:</mod></speaker><lg><mod change="#fase-C">
                                     <l n="1">Perché sì truci</l>
                                     <lb n="11"/><l n="2">pensieri, o Sir? Non vedi come il cielo</l>
                                     <lb n="12"/><l n="3">apre maestoso il vasto manto e come</l>
-                                    <lb n="13"/><l n="4">natura esulta e a te sorride?</l></lg></sp>
+                                    <lb n="13"/><l n="4">natura esulta e a te sorride?</l></mod></lg></sp>
                         
                         <p rend="indent"><mod change="#fase-C"><lb n="14"/>E più sotto da notarsi l’agilità <mod change="#fase-C"><subst><del rend="overwritten">d</del><add place="superimposed">n</add></subst></mod>ella forma di questi:</mod></p>
-                        <sp who="#Daniello_per"><lg change="#fase-C"><lb n="15"/><l n="1">Come innocente la colomba al cielo</l>
+                        <sp who="#Daniello_per"><lg><mod change="#fase-C"><lb n="15"/><l n="1">Come innocente la colomba al cielo</l>
                                     <lb n="16"/><l n="2">spicca da terra l’anelante volo</l>
                                     <lb n="17"/><l n="3">tale alle stelle volerà mia prece</l>
-                                    <lb n="18"/><l n="4">fervida e grata.</l></lg></sp>
+                                    <lb n="18"/><l n="4">fervida e grata.</l></mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="19"/>E questi in bocca d<mod change="#fase-C"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> Dario:</mod></p>
-                        <sp who="#Dario"><lg change="#fase-C"><lb n="20"/><l n="1">Ma la potenza lor troppo è crudele</l>
-                                    <lb n="21"/><l n="2"><hi rend="underline">ad ogni orrendo crimine assuefatta!</hi></l></lg></sp>
+                        <sp who="#Dario"><lg><mod change="#fase-C"><lb n="20"/><l n="1">Ma la potenza lor troppo è crudele</l>
+                                    <lb n="21"/><l n="2"><hi rend="underline">ad ogni orrendo crimine assuefatta!</hi></l></mod></lg></sp>
                         
                         
                     </div>
@@ -2627,15 +2627,15 @@
                                         </del>
                                         <add place="inline" seq="2">:</add>
                                     </subst></mod></mod><note n="1" resp="#TAV" type="critical">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
-                        <sp who="#Corrado"><lg change="#fase-C"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
+                        <sp who="#Corrado"><lg><mod change="#fase-C"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
                                     <lb n="4"/><l n="2">piegar della plebaglia il fido cuore</l>
-                                    <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></lg></sp>
+                                    <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="6"/>Impreciso il significato di quel <hi rend="underline">fido</hi>. Ancora nella 3a scena il Re
                                 <lb n="7"/>minaccia morte a Corrado se mancherà al patto:</mod></p>
-                        <sp who="#Dario"><lg change="#fase-C"><lb n="8"/><l n="1">Sul palco il capo</l>
+                        <sp who="#Dario"><lg><mod change="#fase-C"><lb n="8"/><l n="1">Sul palco il capo</l>
                                     <lb n="9"/><l n="2">a te cadrà se a me fedel non resti;</l>
                                     <lb n="10"/><l n="3">evitar non potrai la giusta pena</l>
-                                    <lb n="11"/><l n="4">se macchiarti oserai di tal misfatto.</l></lg></sp>
+                                    <lb n="11"/><l n="4">se macchiarti oserai di tal misfatto.</l></mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="12"/><mod change="#fase-C"><subst><del rend="strikethrough">Il</del><add place="inline">Figurati</add></subst></mod>, o lettore, la <hi rend="underline" change="#strato-E">ghigliottina 500 anni avanti</hi>  
                                 
                                 <lb n="13"/>Cristo e perdona insieme ai miei tredici anni.</mod></p>
@@ -2644,8 +2644,8 @@
                                 <lb n="16"/>sua pietà con parole amorose e che quantunque poco bene
                                 <lb n="17"/>espresse nascondono gentili sentimenti <choice resp="#TAV"><sic>ed</sic><corr/></choice><mod change="#fase-C"><subst><del rend="strikethrough">esprimono</del><add place="above">e volevano almeno esprimere</add></subst></mod> l’amore
                                 <lb n="18"/>paterno.</mod></p>
-                        <sp who="#Flaviano"><lg change="#fase-C"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
-                                    <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></lg></sp>
+                        <sp who="#Flaviano"><lg><mod change="#fase-C"><lb n="19"/><l n="1">Oh! quali voci?... Mio Daniele!... forse</l>
+                                    <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></mod></lg></sp>
                         
                     </div>
                     <div type="page">
@@ -2688,8 +2688,8 @@
                     <div type="page">
                         <pb n="22r1" xml:id="Quaderno1_22r" facs="22r.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><subst><del rend="overwritten">23</del><add place="superimposed">27</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-C">23</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C">
-                                 <lb n="1"/><l n="3">il tuo inse<mod change="#fase-C"><subst><del rend="overwritten"><gap unit="char" quantity="1"/></del><add place="superimposed">n</add></subst></mod>sato passo e ascolta il padre</l>
+                        <sp><lg>
+                                <mod change="#fase-C"> <lb n="1"/><l n="3">il tuo inse<mod change="#fase-C"><subst><del rend="overwritten"><gap unit="char" quantity="1"/></del><add place="superimposed">n</add></subst></mod>sato passo e ascolta il padre</l>
                                     <lb n="2"/><l n="4">che tanto t’ama!... Osa guardarmi in volto!...</l>
                                     <lb n="3"/><l n="5">Del genitor la voce a te non giunge?</l>
                                     <lb n="4"/><l n="6">Quai scellerate mura a me divide</l>
@@ -2701,25 +2701,25 @@
                                     <lb n="10"/><l n="12">dei loro sensi più goder non ponno</l>
                                     <lb n="11"/><l n="13">poiché l’amor gli è tolto… Ah ch’io ti segua!...</l>
                                     <lb n="12"/>    
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent">
                             <mod change="#fase-C"><lb n="13"/> E nella 4<hi rend="apice">a</hi> scena notevole è il pensiero espresso da un satrapo nemico
                                 <lb n="14"/> del profeta di nome Gerardo:</mod>
                         </p>
-                        <sp who="#Gerardo"><lg change="#fase-C">
-                                <lb n="15"/><l n="1">E maggior duolo apporta a un cuore afflitto</l>
+                        <sp who="#Gerardo"><lg>
+                                <mod change="#fase-C"><lb n="15"/><l n="1">E maggior duolo apporta a un cuore afflitto</l>
                                     <lb n="16"/><l n="2">veder vicina la sua meta e indarno</l>
                                     <lb n="17"/><l n="3">sperar di giungervi assetato e stanco.</l>
-                                
+                                </mod>
                             </lg></sp>
                         <p rend="indent">
                             <mod change="#fase-C"><lb n="18"/>Più sotto il compagno di Gerardo, Leopoldo:</mod>
                         </p>
-                        <sp who="#Leopoldo"><lg change="#fase-C">
-                                
+                        <sp who="#Leopoldo"><lg>
+                                <mod change="#fase-C">
                                     <lb n="19"/><l n="1">E d’amistade</l>
                                     <lb n="20"/><l n="2">non si strinsero in noi tenaci nodi?</l>
-                                
+                                </mod>
                             </lg></sp>
                     </div>
                     <div type="page">
@@ -2768,26 +2768,26 @@
                         <pb n="23r1" xml:id="Quaderno1_23r" facs="23r.jpg"/>
                         <fw place="top_right" type="pageNum"><mod change="#fase-C">2</mod><app><lem varSeq="2"><mod change="#strato-E"><del rend="overwritten">4</del><add place="superimposed">9</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">6</mod></rdg></app></fw>
                         <p rend="indent"><mod change="#fase-C"><lb n="1"/>Nella stessa scena Gerardo dice a Leopoldo:</mod></p>
-                        <sp who="#Gerardo"><lg change="#fase-C">
+                        <sp who="#Gerardo"><lg><mod change="#fase-C">
                                     <lb n="2"/><l n="1">E se pazzo timore non adombri</l>
                                     <lb n="3"/><l n="2">le labbra e il core ancor più apertamente</l>
                                     <lb n="4"/><l n="3">parlar saprò come più aperto il campo</l>
                                     <lb n="5"/><l n="4">all’ira.</l>
-                                </lg> </sp>
+                                </mod></lg> </sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="6"/>A cui risponde l’altro:</mod></p>
-                        <sp who="#Leopoldo"><lg change="#fase-C">
+                        <sp who="#Leopoldo"><lg><mod change="#fase-C">
                                     <lb n="7"/><l n="1">E in cor s'accende</l>
                                     <lb n="8"/><l n="2">del rancore la vampa assai più ardente</l>
                                     <lb n="9"/><l n="3">quando il nemico innanzi a noi trionfa.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="10"/>Gerardo..........</mod></p>
-                        <sp who="#Gerardo"><lg change="#fase-C">
+                        <sp who="#Gerardo"><lg><mod change="#fase-C">
                                     <lb n="11"/><l n="1">......E presto</l>
                                     <lb n="12"/><l n="2">verrà quell’ora in cui cadrà <hi rend="underline" change="#strato-E">sommerso</hi></l>
                                     <lb n="13"/><l n="3">nel sangue di sue vene.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="14"/>Nella 6<hi rend="apice">a</hi> scena il Re rimprovera i malvagi satrapi:</mod></p>
-                        <sp who="#Dario"><lg change="#fase-C">
+                        <sp who="#Dario"><lg><mod change="#fase-C">
                                     <lb n="15"/><l n="1">......Invidia</l>
                                     <lb n="16"/><l n="2">nei vostri cor malaugurato seme</l>
                                     <lb n="17"/><l n="3">por non dovea…</l>
@@ -2795,7 +2795,7 @@
                                     <lb n="19"/>.......
                                     <lb n="20"/><l n="5">Degno è di lode chi lo spirto <mod change="#fase-C"><del rend="strikethrough">d'</del></mod>adorno</l>
                                     <lb n="21"/><l n="6">d’amore ha per chi l’odia</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                     </div>
                     <div type="page">
                         <pb n="23v1" xml:id="Quaderno1_23v" facs="23v.jpg"/>
@@ -2828,34 +2828,34 @@
                     <div type="page">
                         <pb n="24r1" xml:id="Quaderno1_24r" facs="24r.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><del rend="strikethrough">25</del><add place="inline">31</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">25</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="1"/><l n="1">.........L’alterigia in volto</l>
-                                    <lb n="2"/><l n="2">ardenti cuori mi dipinse e d’ira.</l>
+                                    <lb n="2"/><l n="2">ardenti cuori mi dipinse e d’ira.</l></mod>
                             </lg></sp>    
                         <p rend="indent">
                             <mod change="#fase-C">
                                 <lb n="3"/>E breve l’ultima scena:</mod>
                         </p>    
-                        <lb/><sp who="#Flaviano"><speaker><mod change="#fase-C"><lb n="4"/>Flav.:</mod></speaker><lg change="#fase-C">
+                        <lb/><sp who="#Flaviano"><speaker><mod change="#fase-C"><lb n="4"/>Flav.:</mod></speaker><lg><mod change="#fase-C">
                                     <l n="1">E di nuovo suonar sento tal voci?...</l>
-                                    <lb n="5"/><l n="2">donde t’aggiri, o figlio mio?</l></lg></sp>
-                        <lb/><sp who="#Gerardo"><speaker><mod change="#fase-C"><lb n="6"/>Ger.</mod></speaker><lg change="#fase-C">
+                                    <lb n="5"/><l n="2">donde t’aggiri, o figlio mio?</l></mod></lg></sp>
+                        <lb/><sp who="#Gerardo"><speaker><mod change="#fase-C"><lb n="6"/>Ger.</mod></speaker><lg><mod change="#fase-C">
                                     <l n="1">:......Flaviano,</l>
                                     <lb n="7"/><l n="2">indarno credi di goderti un giorno</l>
                                     <lb n="8"/><l n="3">il figlio tuo. Spento ha l’amor paterno</l>
                                     <lb n="9"/><l n="4">delle regie coron soverchio affetto.</l>
-                                </lg></sp><lb/>
+                                </mod></lg></sp><lb/>
                         <note resp="#TUS"><ab rend="margin"><mod change="#fase-D"><lb n="10"/>Totale 156 versi</mod></ab></note> <!-- necessario metamark per la linea?-->
                         <p rend="indent"><mod change="#fase-C"><lb n="11"/>Nel secondo atto Leopoldo afferma:</mod></p>
                         
-                        <sp who="#Leopoldo"><lg change="#fase-C"><lb n="12"/><l n="1">Daniel non <mod change="#fase-C"><subst><del rend="overwritten">sorrà</del><add place="superimposed">sarà</add></subst></mod> Sire</l>
-                                    <lb n="13"/><l n="2">finché il Sol piomberà su’ nostri campi.</l></lg></sp>
+                        <sp who="#Leopoldo"><lg><mod change="#fase-C"><lb n="12"/><l n="1">Daniel non <mod change="#fase-C"><subst><del rend="overwritten">sorrà</del><add place="superimposed">sarà</add></subst></mod> Sire</l>
+                                    <lb n="13"/><l n="2">finché il Sol piomberà su’ nostri campi.</l></mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="14"/>e più sotto furibondo minaccia:</mod></p>
-                        <sp who="#Leopoldo"><lg change="#fase-C"><lb n="15"/><l n="1">Ah! sì l'avrai quel serto</l>
+                        <sp who="#Leopoldo"><lg><mod change="#fase-C"><lb n="15"/><l n="1">Ah! sì l'avrai quel serto</l>
                                     <lb n="16"/><l n="2">di cui desiri un dì la testa ornarti;</l>
                                     <lb n="17"/><l n="3">l'avrai, l'avrai; ma non per te, lo giuro;</l>
                                     <lb n="18"/><l n="4">che in tua man traditrice stretto appena</l>
-                                    <lb n="19"/><l n="5">morrai sul soglio e cederai quel trono.</l></lg></sp>
+                                    <lb n="19"/><l n="5">morrai sul soglio e cederai quel trono.</l></mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="20"/>e qui l’altro pure inasprisce:</mod></p>
                     </div>
                     <div type="page">
@@ -2901,19 +2901,19 @@
                     <div type="page">
                         <pb n="25r1" xml:id="Quaderno1_25r" facs="25r.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><del rend="overwritten">26</del><add place="superimposed">33</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">26</mod></rdg></app></fw>
-                        <sp who="#Daniello_per"><lg change="#fase-C">
-                                <lb n="1"/><l n="1">Io pago non sarò finché atterrati</l>
+                        <sp who="#Daniello_per"><lg>
+                                <mod change="#fase-C"><lb n="1"/><l n="1">Io pago non sarò finché atterrati</l>
                                     <lb n="2"/><l n="2">non li veda ambidue morti a’ miei piedi.</l>
-                                
+                                </mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="3"/>e ancora:</mod></p>
-                        <sp who="#Daniello_per"><lg change="#fase-C">
-                                <lb n="4"/><l n="1">Dal busto mozzerò l’altero capo.</l>
-                                
+                        <sp who="#Daniello_per"><lg>
+                                <mod change="#fase-C"><lb n="4"/><l n="1">Dal busto mozzerò l’altero capo.</l>
+                                </mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="5"/>e più sotto:</mod></p>
-                        <sp who="#Daniello_per"><lg change="#fase-C">
-                                <lb n="6"/><l n="1">Quando pomposo a illuminar la terra</l>
+                        <sp who="#Daniello_per"><lg>
+                                <mod change="#fase-C"><lb n="6"/><l n="1">Quando pomposo a illuminar la terra</l>
                                     <lb n="7"/><l n="2">l<mod change="#fase-C"><subst><del rend="#strikethrough">a</del><add place="inline">’</add></subst></mod>astro maggiore appar sull’orizzonte,</l>
                                     <lb n="8"/><l n="3">e quando ardente i nostri campi fiede,</l>
                                     <lb n="9"/><l n="4">e quando scende sul dorato letto</l>
@@ -2921,15 +2921,16 @@
                                     <lb n="11"/>........
                                     <lb n="12"/><l n="6">E il recidivo <mod change="#fase-C">de<add place="inline">l</add>l<add place="inline">e</add></mod> fere belve</l>
                                     <lb n="13"/><l n="7">nell’oscura si getti orrida fossa.</l>
-                                
+                                </mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="14"/>Più sotto la mia penna prevaricò in espressioni insignifi-
                                 <lb n="15"/>cative e inopportune, forse per reminiscenze dell’Iliade male
                                 <lb n="16"/>appropriate.</mod></p>
-                        <sp><lg change="#fase-C">
-                                <lb n="17"/><l n="1"><mod change="#fase-C"><subst><del rend="strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline">D’ira, di lena, di coraggio e forza</add></subst></mod></l> <!-- Non sono molto certa della posizione di questo add..-->
+                        <sp><lg>
+                                <mod change="#fase-C"><lb n="17"/><mod change="#fase-C"><subst><del rend="#strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod> <!-- Non sono molto certa della posizione di questo add..-->
                                     <lb n="19"/><l n="2">armiamo i polsi; e i brandi arditi e i scudi</l>
                                     <lb n="20"/><l n="3">vibriam diretti e <mod change="#fase-C"><subst><del rend="overwritten">g</del><add place="superimposed">l’</add></subst></mod>egide e gli elmetti</l>
+                                </mod>
                             </lg></sp>
                     </div>
                     <div type="page">
@@ -2958,29 +2959,29 @@
                     <div type="page">
                         <pb n="26r1" xml:id="Quaderno1_26r" facs="26r.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">35</add> <del rend="strikethrough">27</del></mod></lem><rdg varSeq="1"><mod change="#fase-C">27</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C"><lb n="1"/><l n="1">e l’infule indossiamo e le corazze;</l>
+                        <sp><lg><mod change="#fase-C"><lb n="1"/><l n="1">e l’infule indossiamo e le corazze;</l>
                                     <lb n="2"/><l n="2">e colla rabbia in sen, della vendetta </l>
                                     <lb n="3"/><l n="3">col grido acerbo nell'enfiate labbia </l>
                                     <lb n="4"/><l n="4">ripetiamo: la morte o la vittoria!</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="5"/>Quali bestialità!  E dire che allora questi versi mi consola-
                                 <lb n="6"/>vano e mi parevano eco dei sentimenti ch’io nutrivo allora,
                                 <lb n="7"/>che confacessero all’indole mia irrequieta, e all’animo mio
                                 <lb n="8"/>inasprito!</mod></p>
                         <p rend="indent"><mod change="#fase-C"><lb n="9"/>Nella 3<hi rend="apice">a</hi> scena Corrado dice:</mod></p>
-                        <sp><lg change="#fase-C"><lb n="10"/><l n="1">Chi non è giusto</l>
+                        <sp><lg><mod change="#fase-C"><lb n="10"/><l n="1">Chi non è giusto</l>
                                     <lb n="11"/><l n="2">esser non può co’ suoi colleghi unito.</l>
                                     <lb n="12"/>..........
                                     <lb n="13"/><l n="3">Un dì delusi rimarrete e indarno</l>
                                     <lb n="14"/><l n="4">di perdon spererete il dolce grido</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="15"/>Nella 5<hi rend="apice">a</hi>, Gerardo predice al Re tempi migliori.</mod></p>
-                        <sp><lg change="#fase-C"><lb n="16"/><l n="1"><choice resp="#TAV"><sic>Un olezzante</sic><corr>Un’olezzante</corr></choice></l>
+                        <sp><lg><mod change="#fase-C"><lb n="16"/><l n="1"><choice resp="#TAV"><sic>Un olezzante</sic><corr>Un’olezzante</corr></choice></l>
                                     <lb n="17"/><l n="2">pace pel regno spanderassi; estinte</l>
                                     <lb n="18"/><l n="3"> si vedranno l’invidie e dei paesi</l>
                                     <lb n="19"/><l n="4">l’ardenti parti e le <choice resp="#TAV"><sic>minaccie</sic><corr>minacce</corr></choice> e l’ira;</l>
                                     <lb n="20"/><l n="5">dei nemici la fiamma estinguerassi</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                     </div>
                     <div type="page">
                         <pb n="26v1" xml:id="Quaderno1_26v" facs="26v.jpg"/>
@@ -3078,33 +3079,33 @@
                     <div type="page">
                         <pb n="1r2" xml:id="Quaderno2_1r" facs="1r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">37</add> <del rend="strikethrough">28</del></mod></lem><rdg varSeq="1"><mod change="#fase-C">28</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="1"/><l n="6">de l’implacabil odio; e le discordie</l>
                                     <lb n="2"/><l n="7">fuggir vedransi dalle nostre terre.</l>
                                     <lb n="3"/><l n="8">Tu regnerai con pace e niuna guerra</l>
-                                    <lb n="4"/><l n="9">a vastare verrà tuo immenso regno.</l>
+                                    <lb n="4"/><l n="9">a vastare verrà tuo immenso regno.</l></mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="5"/>Nella 7<hi rend="apice">a</hi> scena Daniele:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="6"/><l n="1">Ah! sol quel Dio</l>
                                     <lb n="7"/><l n="2">che mi creò, quel Dio che immenso siede</l>
                                     <lb n="8"/><l n="3"><choice resp="#TAV"><sic>tra|i</sic><corr>tra i</corr></choice> serafini che gli fan corteggio,</l>
                                     <lb n="9"/><l n="4">quel Dio, ripeto, sol quel Dio una voce</l>
-                                    <lb n="10"/><l n="5">di conforto mi dà.</l>
+                                    <lb n="10"/><l n="5">di conforto mi dà.</l></mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="11"/>e poi profetando:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="12"/><l n="1">....Menome germe in questo</l>
                                     <lb n="13"/><l n="2">regno della mia fede ascoso presto</l>
-                                    <lb n="14"/><l n="3">d’altrui potenza <mod change="#fase-C"><subst><del rend="overwritten">mo</del><add place="superimposed">pe</add></subst></mod>rirà.</l>
+                                    <lb n="14"/><l n="3">d’altrui potenza <mod change="#fase-C"><subst><del rend="overwritten">mo</del><add place="superimposed">pe</add></subst></mod>rirà.</l></mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="15"/>e Corrado nell’ultima scena:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="16"/><l n="1">Ah! che di loro</l>
                                     <lb n="17"/><l n="2">l’odio assetato nel mio cor non filtri</l>
                                     <lb n="18"/><l n="3">.....Ah! Dio,</l>
                                     <lb n="19"/><l n="4">con la tua luce illumina il mio cuore</l>
-                                    <lb n="20"/><l n="5">che palpit<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> per te suoi dolci spiri.</l>
+                                    <lb n="20"/><l n="5">che palpit<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> per te suoi dolci spiri.</l></mod>
                             </lg></sp><note resp="#TUS"> <ab rend="margin"><mod change="#fase-D">Totale 246</mod></ab></note>
                     </div>
                     <div type="page">
@@ -3161,7 +3162,7 @@
                         <pb n="2r2" xml:id="Quaderno2_2r" facs="2r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"> <del rend="strikethrough">29</del> <add place="inline">39</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">29</mod></rdg></app></fw>
                         <p rend="indent"><mod change="#fase-C"><lb n="1"/>Atto 3<hi rend="apice">o</hi></mod></p>
-                        <ab><mod change="#fase-C"><lb n="2"/>Leopoldo:</mod></ab> <sp><lg change="#fase-C"><l n="1">Giunta è quell’ora, o mio Gerardo, in cui</l>
+                        <ab><mod change="#fase-C"><lb n="2"/>Leopoldo:</mod></ab> <sp><lg><mod change="#fase-C"><l n="1">Giunta è quell’ora, o mio Gerardo, in cui</l>
                                     <lb n="3"/><l n="2">la nostra impresa dee compiersi. Ancora </l>
                                     <lb n="4"/><l n="3">sull’orizzonte non è giunto il Sole,</l>
                                     <lb n="5"/><l n="4">e alcune stelle nell’immenso cielo</l>
@@ -3171,9 +3172,9 @@
                                     <lb n="9"/><l n="8">tra i boscherecci abeti.</l>
                                     <lb n="10"/><l n="9">..... Or come dardo fere</l>
                                     <lb n="11"/><l n="10">adesso il raggio del nascente Sole.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="12"/>Preghiera di Daniele mattutina:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="13"/><l n="1">Grazie giungono a <mod change="#fase-C"><subst><del rend="overwritten">t</del><add place="superimposed">T</add></subst></mod>e poiché del pianto</l>
                                     <lb n="14"/><l n="2">mi molcesti le stille, o Sommo Dio;</l>
                                     <lb n="15"/><l n="3">e di crudi dolor dal peso affranto</l>
@@ -3182,7 +3183,7 @@
                                     <lb n="18"/><l n="6">né in questo regno pongasi in oblio,</l>
                                     <lb n="19"/><l n="7">ma il trionfo benigno a lei concedi</l>
                                     <lb n="20"/><l n="8">tu che tutto concedi e tutto vedi.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                     </div>
                     <div type="page">
                         <pb n="2v2" xml:id="Quaderno2_2v" facs="2v2.jpg"/>
@@ -3207,8 +3208,8 @@
                                     <rdg varSeq="1"><mod change="#fase-D">per la latrina</mod></rdg>    
                                 </app>.</mod></p>
                         <p rend="indnet"><mod change="#fase-D"><lb n="16"/><subst><del rend="overwritten">Un</del><add place="superimposed">Due</add></subst> vers<choice resp="#TAV"><sic>o</sic><corr>i</corr></choice> sol<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst> mi <subst><del rend="overwritten">è</del><add place="superimposed">sono</add></subst> rimast<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst> a caso impress<subst><del rend="overwritten">o</del><add place="superimposed">i</add></subst>.</mod></p>
-                        <lg change="#fase-D"><lb n="17"/><l n="1">Dal mondo novo che Colombo scorse</l>
-                                <lb n="18"/><l n="2">all’ultima del mondo Irlanda fredda.</l></lg>
+                        <lg><mod change="#fase-D"><lb n="17"/><l n="1">Dal mondo novo che Colombo scorse</l>
+                                <lb n="18"/><l n="2">all’ultima del mondo Irlanda fredda.</l></mod></lg>
                         <p rend="indnet"><mod change="#fase-D"><lb n="19"/>altri versi non m’è possibile risovvenirli. Sul maggio
                                 <lb n="20"/><mod change="#fase-D"><subst><del rend="overwritten">il Giugno <gap quantity="3" unit="char"/></del><add place="superimposed">del 1905 aveva</add></subst></mod> già fatto un Sonetto e presentato a Boni sulle</mod></p>
                     </div>
@@ -3217,7 +3218,7 @@
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">41</add> <del rend="strikethrough">30</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">30</mod></rdg></app></fw>
                         <p rend="indent"><mod change="#fase-C"><lb n="1"/>Dopo la condanna di Daniele a morir <mod change="#fase-C"><subst><del rend="overwritten">t</del><add place="superimposed">n</add></subst></mod>ella fossa dei leoni Corra-
                                 <lb n="2"/>do cade<mod change="#fase-C"><add place="below">va</add></mod> in deliquio e dice<mod change="#fase-C"><retrace>v</retrace></mod>a <mod change="#fase-C"><subst><del rend="strikethrough">questa</del> <add place="inline">queste</add></subst></mod> stanze di senari:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="3"/><l n="1">All’antro più oscuro</l>
                                     <lb n="4"/><l n="2">rivolge il suo passo</l>
                                     <lb n="5"/><l n="3">chi prima sicuro</l>
@@ -3237,7 +3238,7 @@
                                     <lb n="19"/><l n="17">Si schiude l’entrata…</l>
                                     <lb n="20"/><l n="18">orribili stridi</l>
                                     
-                                </lg></sp>
+                                </mod></lg></sp>
                     </div>
                     <div type="page">
                         <pb n="3v2" xml:id="Quaderno2_3v" facs="3v2.jpg"/>
@@ -3279,26 +3280,26 @@
                     <div type="page">
                         <pb n="4r2" xml:id="Quaderno2_4r" facs="4r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">43</add> <del rend="strikethrough">31</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">31</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="1"/><l n="1">per l’aria turbata</l>
                                     <lb n="2"/><l n="2">da tanta malvagia</l>
                                     <lb n="3"/><l n="3">risuonava. Son gridi</l>
                                     <lb n="4"/><l n="4">di belve che in bragia</l>
                                     <lb n="5"/><l n="5">accendon pupille</l>
                                     <lb n="6"/><l n="6">d’ardenti scintille. etc.</l>
-                                
+                                </mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="7"/>e Dario pure vaneggiando in delirio:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="8"/><l n="1">.... Cedi</l>
                                     <lb n="9"/><l n="2">a me la spada e dalla fronte togli</l>
                                     <lb n="10"/><l n="3">quel diadema non tuo...cedi lo scettro...</l>
                                     <lb n="11"/><l n="4">e da quel soglio di cui indegno sei</l>
                                     <lb n="12"/><l n="6">discendi, o traditore...</l>
-                                
+                                </mod>
                             </lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="13"/>Allora Corrado rinvenuto parla a Dario sempre svenuto:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="14"/><l n="1">Il tuo fedel Corrado</l>
                                     <lb n="15"/><l n="2">io son; temer non vuoi</l>
                                     <lb n="16"/><l n="3">o figlio degli eroi,</l>
@@ -3306,7 +3307,7 @@
                                     <lb n="18"/><l n="5">a consolarti vegno</l>
                                     <lb n="19"/><l n="6">con quant’amor che a me gli dei daran.</l>
                                     <lb n="20"/><l n="7">Che dell’amor il pegno</l>
-                                
+                                </mod>
                             </lg></sp>
                     </div>
                     <div type="page">
@@ -3339,7 +3340,7 @@
                     <div type="page">
                         <pb n="5r2" xml:id="Quaderno2_5r" facs="5r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">45</add> <del rend="strikethrough">32</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">32</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="1"/><l n="1">dei nostri cor non pera,</l> 
                                     <lb n="2"/><l n="2">è questa la preghiera</l>
                                     <lb n="3"/><l n="3">che grata porsi al ciel,</l>
@@ -3357,7 +3358,7 @@
                                     <lb n="15"/><l n="15">per premio del suo amor,</l>
                                     <lb n="16"/><l n="16">lo salverà dal morso</l>
                                     <lb n="17"/><l n="17">di sì feroci belve il suo Signor.</l>
-                                </lg></sp>    <!-- Ci sarebbe da inserire la spirale con il metamark-->
+                                </mod></lg></sp>    <!-- Ci sarebbe da inserire la spirale con il metamark-->
                     </div>
                     <div type="page">
                         <pb n="5v2" xml:id="Quaderno2_5v" facs="5v2.jpg"/>
@@ -3396,7 +3397,7 @@
                         <pb n="6r2" xml:id="Quaderno2_6r" facs="6r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">47</add> <del rend="strikethrough">33</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">33</mod></rdg></app></fw>
                         <p rend="indent"><mod change="#fase-C"><lb n="1"/>Nell’atto 4 Gerardo dice a <mod change="#fase-C"><subst><del rend="strikethrough">Corr</del> <add place="inline">Leopoldo</add></subst></mod></mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="2"/><l n="1">...Il Sir non è crudele</l> 
                                     <lb n="3"/><l n="2">quanto tu credi. E se nutrisse in petto</l>
                                     <lb n="4"/><l n="3">adesso <mod change="#fase-C"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del> <add place="superimposed">un</add></subst></mod> cuore che non nutriva dianzi,</l>
@@ -3406,25 +3407,25 @@
                                     <lb n="8"/><l n="7">e tanto a noi traboccherà lo sdegno</l> 
                                     <lb n="9"/><l n="8">ch’atti saremo a trucidare il Sire</l>
                                     <lb n="10"/><l n="9">quando ne fosse urgente</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="11"/>e poi:...</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="12"/><l n="1">Scaccia tali viltà dalla tua mente;</l> 
                                     <lb n="13"/><l n="2">noi vinceremo me lo dice il cielo.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="14"/>Nella 2 sce<mod change="#fase-C"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del> <add place="superimposed">na</add></subst></mod> Leopoldo a Corrado:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="15"/><l n="1">Chi eccitò, <hi rend="underline" change="#strato-E">chi giurò, chi non mantenne</hi></l> 
                                     <lb n="16"/><l n="2">deve perir!</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="17"/><mod change="#fase-C"><subst><del rend="strikethrough">Chiud</del> <add place="inline">Corrado</add></subst></mod> morendo erompe in una bella espressione:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="18"/><l n="1">Chiudimi gli occhi, Amor, con la tue dita.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="19"/>Nella 9<hi rend="apice">a</hi> scena Dario imperios<mod change="#fase-C"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> ragiona:</mod></p>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="20"/><l n="1">Gittast<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">e</add></subst></mod> il vate nella <mod change="#fase-C"><subst><del rend="overwritten">c</del><add place="superimposed">f</add></subst>o<subst><del rend="overwritten">n</del><add place="superimposed">ss</add></subst>a</mod> ed egli</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                     </div>
                     <div type="page">
                         <pb n="6v2" xml:id="Quaderno2_6v" facs="6v2.jpg"/>
@@ -3456,18 +3457,18 @@
                     <div type="page">
                         <pb n="7r2" xml:id="Quaderno2_7r" facs="7r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">49</add> <del rend="strikethrough">34</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">34</mod></rdg></app></fw>
-                        <sp><lg change="#fase-C">
+                        <sp><lg><mod change="#fase-C">
                                     <lb n="1"/><l n="2">fra voi fu sempre com’<hi rend="underline" change="#strato-E"> <choice resp="ST"><corr>agnel</corr><sic>agnol</sic></choice> tra i lupi.</hi> <!-- Formalmente manca, sia qui che dopo, l'# per far puntare il change; tuttavia, in questo modo, nella visualizzazione changes vedo correttamente soltanto la sottolineatura grigia, come dovrebbe essere, e non tutta la parola. Ci si potrebbe interrogare se questa non sia una possibilità da sfruttare, anche se non corretta a livello formale, ma che possa giocare a nostro favore per la visualizzazione-->
                                     </l> 
                                     <lb n="2"/><l n="3">Or le medesme belve acerbo scempio</l>
                                     <lb n="3"/><l n="4">faran di voi.</l>
-                                </lg></sp>
+                                </mod></lg></sp>
                         <p rend="indent"><mod change="#fase-C"><lb n="4"/>e più sotto <mod change="#fase-C"><subst><del rend="strikethrough">incredibile</del> <add place="inline">ammirabile</add></subst></mod> per quell’età la forma <mod change="#fase-N"><add place="above">e il concetto</add></mod> di questi:</mod></p>
-                        <sp><lg change="#fase-C">
-                                    <lb n="5"/><l n="1">In tale stato un Sire? <hi rend="underline" change="#strato-E">Oh ingrato scettro</hi></l>
-                                        <lb n="6"/><l n="2"><hi rend="underline" change="#strato-E">ognun ti brama, ma si pente ognuno</hi></l>
-                                        <lb n="7"/><l n="3"><hi rend="underline" change="#strato-E">che ti provò.</hi></l>
-                                </lg></sp><ab rend="indent"><note resp="#TUS"><mod change="#strato-E">
+                        <sp><lg><mod change="#fase-C">
+                                    <lb n="5"/><l n="1">In tale stato un Sire? </l> <hi rend="underline" change="#strato-E">Oh ingrato scettro
+                                        <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
+                                        <lb n="7"/><l n="3">che ti provò.</l></hi>
+                                </mod></lg></sp><ab rend="indent"><note resp="#TUS"><mod change="#strato-E">
                                 <add place="margin">bene</add>
                             </mod></note><lb/></ab>
                     </div>
