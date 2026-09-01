@@ -370,7 +370,8 @@
         </listTranspose>
     </standOff>
     <text xml:id="Autos">
-        <front> <listBibl>
+        <front> <div type="biblCompleta">
+                <listBibl>
                 <head>Opere citate</head>
                 <bibl xml:id="OdePallavicini">
                     <author><persName ref="#Ugo_Foscolo">Ugo Foscolo</persName></author>, 
@@ -465,9 +466,11 @@
                     <title level="a">I Promessi Sposi</title>
                     <date when="1827">1840</date>
                 </bibl>
-            </listBibl><!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
+            </listBibl>
+            </div><!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
             
-            <castList xml:id="Personaggi_Daniello"><castItem>
+            <div type="castList">
+                <castList xml:id="Personaggi_Daniello"><castItem>
                     <role xml:id="Daniello_per">Daniello</role>
                     <role xml:id="Dario">Dario</role>
                     <role xml:id="Corrado">Corrado</role>
@@ -475,7 +478,8 @@
                     <role xml:id="Gerardo">Gerardo</role>
                     <role xml:id="Leopoldo">Leopoldo</role>
                 </castItem> 
-            </castList>    
+            </castList>
+            </div>    
         </front>
         <group><text n="Autos_1" xml:id="Autos_1"> <!-- é stato aggiunto il tag group per indicare Autos come formazione di due mss. Adesso le informazione della listBibl e del cast sono nel front del text che racchiude autos1 e autos2-->
                 
@@ -758,7 +762,7 @@
                                         <subst><del rend="strikethrough">legg</del> <add place="inline">ad esigere</add></subst> la risposta alle mie domande, alle <lb n="18"/> mie scappellate.</mod>
                                     
                                 </rdg>
-                            </app><note type="critical">La cassatura in lapis, anche se non copre l'intera porzione, è da intendersi totale</note>
+                            </app><note type="critical" resp="#TAV">La cassatura in lapis, anche se non copre l'intera porzione, è da intendersi totale</note>
                         </p>
                         <p rend="indent"> <lb n="19"/> Frequentavo già la prima ginnasiale privatamente da <lb n="20"/> un caro prete, che <mod change="#fase-A"><subst><add place="above">io ho tenuto</add> <del rend="strikethrough">poi mi è stato</del></subst></mod>
                             sempre tra le persone più care.<lb n="21"/> Non nego di aver avuto intelligenza, ma neppure di avermi essa <lb n="22"/> procurato e
