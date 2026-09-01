@@ -2300,7 +2300,7 @@
                                      
                                      
                                      
-                                     <subst><del rend="strikethrough">  Ora che è iniziato lo fase-C è mod change="fase-C" che va sempre messo all'inizio del paragrafo, si deve comunque ripetere il mod anche rispetto alle modifiche circostritte perchè altrimenti non si isola la lezione interessata da variante
+                                     <subst><del rend="strikethrough">  Ora che è iniziato lo fase-C è mod change="#fase-C" che va sempre messo all'inizio del paragrafo, si deve comunque ripetere il mod anche rispetto alle modifiche circostritte perchè altrimenti non si isola la lezione interessata da variante
                                      <subst seq="2"><del rend="overwritten">I</del>
                                      <add place="superimposed">De</add></subst>l primo atto
                                      <subst seq="2"><del rend="strikethrough">era fatto due volte </del>
@@ -2322,7 +2322,7 @@
                                      <add place="above" xml:id="add_tutti">tutti</add> <add place="above">3 atti;<lb n="18"/> tantoché non mi rimangono</add></subst>
                                      <substJoin target="#del_quat #add_tutti"/>   --> 
                                  che la terza copia 
-                                <mod change="fase-C"><subst><del rend="strikethrough">dei</del>
+                                <mod change="#fase-C"><subst><del rend="strikethrough">dei</del>
                                         <add place="inline">di</add></subst></mod> 4 atti e
                                 <lb n="19"/> del primo atto ripetuto.
                                 <lb n="20"/> 
@@ -3200,7 +3200,7 @@
                                 <lb n="8"/>il profeta non furono <mod change="#fase-D"><subst><del rend="strikethrough"><gap quantity="2" unit="char"/></del><add place="superimposed">as</add></subst></mod>solutamente occupati per questa
                                 <lb n="9"/>tragedia, la quale da sola poteva ben in quell’età occuparli<choice resp="#TAV"><sic>:</sic><corr>.</corr></choice>
                                 <lb n="10"/>Prima del novembre 1905 avevo <mod change="#fase-D"><subst><del rend="strikethrough">scritto</del> <add place="above">combinato</add></subst></mod> un quaderno di carte,
-                                <lb n="11"/>a protocollo <mod change="#fase-D"><subst><del rend="strikethrough">pieno di</del> <add place="above">con</add></subst></mod> poesie di vari metri, <mod change="fase-D"><add place="above">del</add></mod>le quali ognuna
+                                <lb n="11"/>a protocollo <mod change="#fase-D"><subst><del rend="strikethrough">pieno di</del> <add place="above">con</add></subst></mod> poesie di vari metri, <mod change="#fase-D"><add place="above">del</add></mod>le quali ognuna
                                 <lb n="12"/><mod change="#fase-D"><add place="above">dovevano</add> esprime<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst> <subst><del rend="strikethrough">un</del> <add place="above">il</add></subst></mod> concetto d’un versetto del <mod change="#fase-D"><subst><del rend="strikethrough">p</del><add place="superimposed">P</add></subst></mod>ater noster e del-
                                 <lb n="13"/>l’Ave Maria. Di questo lavoretto che occupò molto tempo e
                                 <lb n="14"/>non era breve non me ne rimane alcun ricordo; è certo però
@@ -3488,7 +3488,7 @@
                         <pb n="7r2c" xml:id="Quaderno2_7r_faseD2" facs="7r2.jpg"/>
                         <p><mod change="#fase-D"><lb n="17"/><metamark rend="superimposed">(.)</metamark>In quell’anno <mod change="#fase-D"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
                                 <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
-                                <lb n="19"/>noscenza delle sue opere. Anzi <mod change="fase-D"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
+                                <lb n="19"/>noscenza delle sue opere. Anzi <mod change="#fase-D"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
                                     <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</mod></p>
                     </div>
                     <div type="page">
@@ -3861,7 +3861,7 @@
                                 <lb n="7"/>una sciocca e servile imitazione dantesca; i quattro
                                 <lb n="8"/>sonetti di Giuda mi <mod change="#fase-G"><subst><del rend="strikethrough">dettero</del> <add place="inline">rimasero</add></subst></mod> così antipa-
                                 <lb n="9"/>tici <mod change="#fase-G"><subst><del rend="strikethrough">che</del> <add place="inline">da</add></subst></mod> proibirmi di leggere tutto quello che era
-                                <lb n="10"/>del Monti. Mi piacque il Parini ne le odi, ma non <mod change="fase-G"><subst><del rend="strikethrough">altri</del> <add place="above">fui</add></subst>
+                                <lb n="10"/>del Monti. Mi piacque il Parini ne le odi, ma non <mod change="#fase-G"><subst><del rend="strikethrough">altri</del> <add place="above">fui</add></subst>
                                     <lb n="11"/><del rend="strikethrough"><add place="above">più</add></del></mod> predisposto ad amarlo, e lo lasciai in un canto non
                                 <lb n="12"/>come cosa non degna, ma come non voluta conoscere.
                                 <lb n="13"/>Del Manzoni ammirai (e chi non potrebbe ammirare?) 
@@ -4097,7 +4097,7 @@
                                             <del rend="strikethrough" seq="2">
                                                 <add place="above">da</add>
                                             </del>
-                                            <add place="above" seq="2"><lb n="2"/><hi rend="underline" change="strato-I">tornava</hi></add>
+                                            <add place="above" seq="2"><lb n="2"/><hi rend="underline" change="#strato-I">tornava</hi></add>
                                         </subst></mod>
                                     <hi rend="underline" change="#strato-I">tra i miei neri compagn</hi>i</mod>, sotto la disciplina; <!-- O dentro il lem mi conviene ripetere il rdg cosiì <mod change="#fase-G"><mod change="#fase-G"><subst>
                                      <del rend="strikethrough" seq="1">da la mia</del>
