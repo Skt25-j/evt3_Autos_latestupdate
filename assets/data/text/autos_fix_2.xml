@@ -1236,7 +1236,7 @@
                                     <add place="superimposed" seq="2">re</add></subst>
                             </mod> quella mia baggianata e
                             <app>
-                                <lem varSeq="3"><mod change="#fase-A"><add place="above" seq="2">mi parve di</add> <subst><del rend="strikethrough" seq="1">risolsi</del><add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del><add place="superimposed" seq="3" rend="seq-transient" n="2">ndere</add></subst></add></subst></mod></lem>
+                                <lem varSeq="3"><mod change="#fase-A"><add place="above">mi parve di</add> <subst><del rend="strikethrough">risolsi</del><add place="inline">compre<subst><del rend="overwritten">si</del><add place="superimposed">ndere</add></subst></add></subst></mod></lem>
                                 <rdg varSeq="2"><mod change="#fase-A">compresi</mod></rdg>
                                 <rdg varSeq="1"><mod change="#fase-A">risolsi</mod></rdg>
                              </app>
@@ -3007,8 +3007,7 @@
                                 <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
                                 <lb n="14"/>l’andava raramente e penosamente soffocando, e più  
                                 <lb n="15"/>spesso
-                                <app>
-<lem varSeq="3"><mod change="#fase-D">
+                                <mod change="#fase-D">
                                     <subst>
                                         <del rend="strikethrough" seq="1">spe</del>
                                         <add place="inline" seq="1">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add>
@@ -3038,10 +3037,6 @@
                                         </subst>n</del><add place="superimposed" xml:id="add_p">.</add>
                                     <substJoin target="#del_2p #add_p" seq="3"/>
                                 </mod>
-</lem>
-<rdg varSeq="2"><mod change="#fase-D">disferrandola a solo nella mia camera; talora trascesi ad atti che anche a me stesso sembrarono con ragione da pazzo: un</mod></rdg>
-<rdg varSeq="1"><mod change="#fase-D">disferrandola a solo nella mia camera. Talora sembrarono con ragione atti da pazzo. Un</mod></rdg>
-</app>
                                 
                                 
                                 <!-- <mod change="#fase-D"><subst seq="1"><del rend="strikethrough">spe</del> <add place="inline">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add></subst><add place="above" xml:id="add_frenandola">frenandola</add><substJoin target="#del_ferrandola #add_frenandola" seq="3"/> a solo nella mia camera<subst seq="2"><del rend="overwritten">. T</del><add place="superimposed">; t</add></subst>alora
