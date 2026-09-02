@@ -779,17 +779,16 @@
                         <fw place="top_right" type="pageNum"><mod change="#fase-B"><add>2</add></mod></fw>
                         <p rend="indent"><lb n="1"/>orgoglioso, che crebbe sempre più col crescere di essa, che divenne un<lb n="2"/> albero robusto e arduo a
                             sradicarsi quando <mod change="#fase-A"><subst><del rend="strikethrough">intelligen</del> <add place="inline">essa</add></subst></mod> e <lb n="3"/>l’ingegno
-                            <mod change="#fase-A">
-                                <subst>
-                                    <del rend="strikethrough">
-                                        fruttificarono qualche 
-                                        <add place="above" seq="1">buon</add> 
-                                        frutto
-                                    </del>
-                                    <add place="inline" seq="2">generarono</add>
-                                </subst>
-                            </mod>
-                             <!-- L'uso di app in questo caso è legittimo? <app>
+                            <app>
+                                <lem varSeq="3"><mod change="#fase-A"><del rend="strikethrough">fruttificarono qualche <add place="above">buon</add> frutto</del> <add place="inline">generarono</add></mod></lem>
+                                <rdg varSeq="2"><mod change="#fase-A">fruttificarono qualche <add place="above">buon</add> frutto</mod></rdg>
+                                <rdg varSeq="1"><mod change="#fase-A">fruttificarono qualche frutto</mod></rdg>
+                            </app>
+                            <!-- Versione precedente (mod senza app), conservata:
+                            <mod change="#fase-A"><subst><del rend="strikethrough">fruttificarono qualche <add place="above" seq="1">buon</add> frutto</del><add place="inline" seq="2">generarono</add></subst></mod>
+                            -->
+                            <!-- Nota: promosso ad app perche' i tre stadi (1: "fruttificarono qualche frutto"; 2: aggiunta di "buon"; 3: cassatura e sostituzione con "generarono") hanno interesse autonomo e vanno resi navigabili. -->
+                             <!-- (Bozza precedente dell'ipotesi app, ora realizzata sopra) L'uso di app in questo caso è legittimo? <app>
                                 <lem varSeq="3"><mod change="#fase-A"><del rend="strikethrough">fruttificarono qualche <add place="above">buon</add> frutto</del> <add place="inline">generarono</add></mod></lem>
                                 <rdg varSeq="2"><mod change="#fase-A">fruttificarono qualche <add place="above">buon</add> frutto</mod></rdg>
                                 <rdg varSeq="1"><mod change="#fase-A">fruttificarono qualche frutto</mod></rdg>
