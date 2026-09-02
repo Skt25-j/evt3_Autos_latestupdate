@@ -2996,9 +2996,7 @@
                                 <lb n="5"/>in qualche modo segnalar<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">si</add></subst></mod>, <mod change="#fase-D"><add place="above">elevarsi</add></mod> e che non volendo essere pari,
                                 <lb n="6"/>uguale agli altri sceglieva un mezzo falso ed erroneo
                                 <lb n="7"/><mod change="#fase-D"><add place="above">tanto</add></mod> per dire: «io <mod change="#fase-D"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst></mod>voi».</mod></p>
-                        <p rend="indent"><!-- Promosso ad app: il <lem varSeq=3> conserva integralmente il mod originale (versione senza app); gli <rdg> sono gli stati d'autore precedenti, ricostruiti dall'apparato. -->
-<app>
-<lem varSeq="3"><mod change="#fase-D"><lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
+                        <p rend="indent"><mod change="#fase-D"><lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
                                 <lb n="9"/>di punizioni e che ho descritto, germogliò un<mod change="#fase-D"><subst><del rend="strikethrough">'</del><add place="inline">o</add></subst></mod>altro non
                                 <lb n="10"/>migliore e fu l’ira. Il caratter<mod change="#fase-D"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst></mod> fiero, <mod change="#fase-D">
                                     <subst>
@@ -3016,7 +3014,8 @@
                                 <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
                                 <lb n="14"/>l’andava raramente e penosamente soffocando, e più  
                                 <lb n="15"/>spesso
-                                <mod change="#fase-D">
+                                <app>
+<lem varSeq="3"><mod change="#fase-D">
                                     <subst>
                                         <del rend="strikethrough" seq="1">spe</del>
                                         <add place="inline" seq="1">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add>
@@ -3046,6 +3045,10 @@
                                         </subst>n</del><add place="superimposed" xml:id="add_p">.</add>
                                     <substJoin target="#del_2p #add_p" seq="3"/>
                                 </mod>
+</lem>
+<rdg varSeq="2"><mod change="#fase-D">disferrandola a solo nella mia camera; talora trascesi ad atti che anche a me stesso sembrarono con ragione da pazzo: un</mod></rdg>
+<rdg varSeq="1"><mod change="#fase-D">disferrandola a solo nella mia camera. Talora sembrarono con ragione atti da pazzo. Un</mod></rdg>
+</app>
                                 
                                 
                                 <!-- <mod change="#fase-D"><subst seq="1"><del rend="strikethrough">spe</del> <add place="inline">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add></subst><add place="above" xml:id="add_frenandola">frenandola</add><substJoin target="#del_ferrandola #add_frenandola" seq="3"/> a solo nella mia camera<subst seq="2"><del rend="overwritten">. T</del><add place="superimposed">; t</add></subst>alora
@@ -3053,11 +3056,7 @@
                                      
                                      
                                      
-                 </mod>
-</lem>
-<rdg varSeq="2"><mod change="#fase-D">disferrandola a solo nella mia camera; talora trascesi ad atti che anche a me stesso sembrarono con ragione da pazzo: un</mod></rdg>
-<rdg varSeq="1"><mod change="#fase-D">disferrandola a solo nella mia camera. Talora sembrarono con ragione atti da pazzo. Un</mod></rdg>
-</app></p>
+                 </mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="17"/>Una volta per essere stato messo in silenzio per due giorni
                                 <lb n="18"/>dal Rettore, senza pietanza, senza boccino al Refettorio per cagione
                                 <lb n="19"/>non sembratami giusta e certamente non adeguata, mi
