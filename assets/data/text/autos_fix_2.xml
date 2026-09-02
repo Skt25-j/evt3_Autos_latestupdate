@@ -1235,21 +1235,14 @@
                                     <del rend="overwritten" seq="2">vo</del>
                                     <add place="superimposed" seq="2">re</add></subst>
                             </mod> quella mia baggianata e
-                            <mod change="#fase-A"><add place="above" seq="2">mi parve di</add>
-                                <subst>
-                                    <del rend="strikethrough" seq="1">risolsi</del>
-                                    <add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del>
-                                            <add place="superimposed" seq="3" rend="seq-transient" n="2">ndere</add></subst>
-                                    </add>
-                                </subst> <!-- l'1 che si visualizza alla fine dipende dal seq1 all'inizio dell'add di compresi-->
-                                
-                                <!--  <subst seq="2"><del>
-                                     <subst seq="1">
-                                     <del rend="strikethrough">risolsi</del>
-                                     <add place="inline">compresi</add>
-                                     </subst></del><add><add place="above">mi parve di </add>comprendere
-                                     </add></subst>-->
-                             </mod><note resp="#TAV" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
+                            <app>
+                                <lem varSeq="3"><mod change="#fase-A"><add place="above" seq="2">mi parve di</add> <subst><del rend="strikethrough" seq="1">risolsi</del><add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del><add place="superimposed" seq="3" rend="seq-transient" n="2">ndere</add></subst></add></subst></mod></lem>
+                                <rdg varSeq="2"><mod change="#fase-A">compresi</mod></rdg>
+                                <rdg varSeq="1"><mod change="#fase-A">risolsi</mod></rdg>
+                             </app>
+                             <!-- Versione precedente (mod senza app), conservata (rimossi i commenti di lavoro perche' non annidabili):
+                             <mod change="#fase-A"><add place="above" seq="2">mi parve di</add><subst><del rend="strikethrough" seq="1">risolsi</del><add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del><add place="superimposed" seq="3" rend="seq-transient" n="2">ndere</add></subst></add></subst></mod>
+                             --><note resp="#TAV" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
                             quella mia baggianata e
                             che la 
                             <lb n="11"/>mia consolazione <mod change="#fase-B"><add place="above">ne la vita</add></mod> era riposta là (per quel momento su 
@@ -1553,12 +1546,14 @@
                                 <mod change="#fase-B">
                                     <del rend="strikethrough">del <placeName ref="#Seminario_Vescovile">Seminario</placeName></del></mod>,
                                 <lb n="5"/>approfittando della 
-                                <mod change="#fase-B"><del rend="strikethrough" xml:id="del_tena" seq="2">
-                                        <subst seq="1"><add place="above">tena</add><del rend="strikethrough">buona</del></subst>
-                                        e </del>facile
-                                    <add place="inline" xml:id="add_e_tenace" seq="2"> e tenace</add>
-                                    <substJoin target="#del_tena #add_e_tenace"/>    
-                                </mod>
+                                <app>
+                                    <lem varSeq="3"><mod change="#fase-B"><del rend="strikethrough" xml:id="del_tena">tena e </del>facile <add place="inline" xml:id="add_e_tenace"> e tenace</add><substJoin target="#del_tena #add_e_tenace"/></mod></lem>
+                                    <rdg varSeq="2"><mod change="#fase-B">tena e facile</mod></rdg>
+                                    <rdg varSeq="1"><mod change="#fase-B">buona e facile</mod></rdg>
+                                </app>
+                                <!-- Versione precedente (mod senza app), conservata:
+                                <mod change="#fase-B"><del rend="strikethrough" xml:id="del_tena" seq="2"><subst seq="1"><add place="above">tena</add><del rend="strikethrough">buona</del></subst> e </del>facile <add place="inline" xml:id="add_e_tenace" seq="2"> e tenace</add><substJoin target="#del_tena #add_e_tenace"/></mod>
+                                -->
                                 
                                 memoria.
                                 <lb n="6"/>
@@ -2821,7 +2816,9 @@
                                 <lb n="16"/>altro! Dicendo le preci <mod change="#fase-D"><subst><del rend="strikethrough">imb</del><add place="inline">sbagliavo</add></subst></mod> il Credo con l’Atto di
                                 <lb n="17"/>fede<choice resp="#TAV"><sic>:</sic><corr/></choice><mod change="#fase-D"><del rend="strikethrough">pensavo a altro</del></mod>! Commetteva insomma più
                                 <lb n="18"/>mancanze possibil<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> senza malizia e perfidia di animo,
-                                <lb n="19"/>per il solo motivo d’essere <mod change="#fase-D"><subst seq="1"><del rend="strikethrough">scapa</del> <add place="inline">sbadato</add></subst> e <del rend="strikethrough" xml:id="del_superbo">superbo</del> <choice resp="#TAV"><sic>e</sic><corr/></choice><add place="inline" xml:id="add_noncurante">noncurante</add><substJoin seq="2" target="#del_superbo #add_noncurante"/></mod>.
+                                <lb n="19"/>per il solo motivo d’essere <app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">scapa</del> <add place="inline">sbadato</add></subst> e <del rend="strikethrough" xml:id="del_superbo">superbo</del> <choice resp="#TAV"><sic>e</sic><corr/></choice><add place="inline" xml:id="add_noncurante">noncurante</add><substJoin target="#del_superbo #add_noncurante"/></mod></lem><rdg varSeq="1"><mod change="#fase-D">scapa e superbo</mod></rdg></app><!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-D"><subst seq="1"><del rend="strikethrough">scapa</del> <add place="inline">sbadato</add></subst> e <del rend="strikethrough" xml:id="del_superbo">superbo</del> <choice resp="#TAV"><sic>e</sic><corr/></choice><add place="inline" xml:id="add_noncurante">noncurante</add><substJoin seq="2" target="#del_superbo #add_noncurante"/></mod>
+-->.
                                 <lb n="20"/>Stare in silenzio era per me usuale come andare al refettorio,</mod></p>
                     </div>
                     <div type="page">
