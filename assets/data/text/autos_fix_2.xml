@@ -2189,138 +2189,42 @@
                                 </app><note n="1" resp="#TAV" type="critical">Sintagma ripassato con la penna - B dello fase-B. Da questo momento Tuscano scrive solo con la penna - B.</note> vita.</mod>
                         </p>
                         <p rend="indent">
-                            <mod change="#fase-C">
-                                <mod change="#fase-C"><lb n="15"/>
-                                    <subst><del rend="strikethrough seq-transient" seq="4" n="1"><subst>
-                                                <del rend="overwritten seq-transient" seq="3" n="1">I</del><add place="superimposed" seq="3">De</add></subst>l primo atto <subst><del seq="3" rend="strikethrough seq-transient" n="1">era fatto due volte</del><add seq="3" place="above">ne conservo due copie</add></subst> quasi sempre conform<subst><del rend="overwritten seq-transient" seq="3" n="1">e</del><lb n="16"/>
-                                                <add place="superimposed" seq="3">i</add></subst>
-                                            <subst><del rend="strikethrough" seq="2"><subst><del rend="strikethrough" seq="1"> e  <subst><del rend="overwritten" seq="3">i</del><add place="superimposed" seq="3">de</add></subst>l principio una volta cominciava</del>
-                                                        <add place="inline" seq="1">con la prima scena <lb n="17"/> ripetuta più
-                                                            volte e sempre diversamente</add></subst></del>
-                                                <add place="inline" seq="2">, e <subst><del rend="overwritten" seq="3">il</del><add place="superimposed" seq="3">del</add></subst> principio <del rend="strikethrough" seq="3">ha</del> tre o quattro <subst><del rend="strikethrough" seq="3">forme</del><add place="inline" seq="3">copie diverse</add></subst></add></subst></del>
-                                        <add seq="4"> I primi versi della prima e seconda edizione</add> <add seq="4" place="inline">andarono spersi insie-<lb n="18"/>me a <del rend="strikethrough" seq="4">quat</del><add place="above" seq="4">tutti</add> 3 atti</add></subst>
-                                    <del rend="strikethrough seq-transient" seq="4" n="1">Il primo verso ora ritrovo </del>
-                                    <add place="above" seq="4">; tantoché non mi rimangono</add>
+                            <app>
+                                <lem varSeq="4"><mod change="fase-C">
+                                        <subst><del rend="strikethrough">Del primo atto ne conservo due copie quasi sempre conformi e del principio tre o quattro copie diverse</del>
+                                        <add place="above">I primi versi della prima e seconda edizione</add><add place="inline">andarono spersi insieme a
+                                                <subst><del rend="strikethrough">quat</del>
+                                                <add place="above">tutti</add></subst> 3 atti;</add></subst>
+                                        <subst><del rend="strikethrough">Il primo verso ora ritrovo</del>
+                                        <add place="above">tantoché non mi rimangono</add></subst>
                                 </mod>
-                                
-                                
-                                
-                                <!-- <mod change="#fase-C"><lb n="15"/>
-                                     <del xml:id="del_seg" rend="strikethrough"><subst seq="3"><del rend="overwritten">I</del>
-                                     <add place="superimposed">De</add></subst>l primo atto <subst seq="3"><del rend="strikethrough">era fatto due volte </del>
-                                     <add place="above">ne conservo due copie</add></subst>quasi sempre conform<subst seq="3"><del rend="overwritten">e</del>
-                                     <add place="superimposed">i</add></subst>
-                                     <lb n="16"/> <subst>
-                                     <del rend="strikethrough" seq="1">e <subst seq="3"><del rend="overwritten">i</del>
-                                     <add place="superimposed">de</add></subst>l principio una volta cominciava</del>
-                                     <del rend="strikethrough" seq="2">
-                                     <add place="inline" seq="1">con la prima scena
-                                     <lb n="17"/>ripetuta più volte e sempre diversamente</add>
-                                     </del>
-                                     <add place="above" seq="2">e il principio <del rend="strikethrough" xml:id="del_ha">ha</del> tre o quattro <del rend="strikethrough" xml:id="del_forme">forme</del> <add place="inline" xml:id="add_copie">copie diverse</add> </add>
-                                     </subst> <substJoin target="#del_ha #del_forme #add_copie" seq="3"/>
-                                     <lb n="18"/>Il primo verso ora ritrovo</del>
-                                     <add place="above" xml:id="add_seg"><lb n="17"/>I primi versi della prima <add place="above">e seconda</add> edizione andarono spersi insie-
-                                     <lb/>me a <del rend="strikethrough">quat</del><add place="above">tutti</add> 3 atti;
-                                     <lb n="18"/>tantoché non mi rimangono  
-                                     </add> <substJoin target="#del_seg #add_seg" seq="4"/></mod>
-                                     <del xml:id="del_seg" rend="strikethrough"><subst seq="3"><del rend="overwritten">I</del>
-                                     <add place="superimposed">De</add></subst>l primo atto <subst seq="3"><del rend="strikethrough">era fatto due volte </del>
-                                     <add place="above">ne conservo due copie</add></subst>quasi sempre conform<subst seq="3"><del rend="overwritten">e</del>
-                                     <add place="superimposed">i</add></subst>
-                                     <lb n="16"/> <del rend="strikethrough" seq="1">con la prima scena <lb n="17"/>ripetuta più volte e sempre diversamente</del>
-                                     <add place="above" seq="1">e il principio <del rend="strikethrough" xml:id="del_ha">ha</del> tre o quattro <del rend="strikethrough" xml:id="del_forme">forme</del> <add place="inline" xml:id="add_copie">copie diverse</add> </add>
-                                     <substJoin target="#del_ha #del_forme #add_copie" seq="3"/>
-                                     <lb n="18"/>Il primo verso ora ritrovo</del>
-                                     <add place="above" xml:id="add_seg"><lb n="17"/>I primi versi della prima <add place="above">e seconda</add> edizione andarono spersi insie-
-                                     <lb/>me a <del rend="strikethrough">quat</del><add place="above">tutti</add> 3 atti;
-                                     <lb n="18"/>tantoché non mi rimangono  
-                                     </add> <substJoin target="#del_seg #add_seg" seq="4"/>
-                                     <subst>
-                                     <del rend="strikethrough" seq="1">Il primo atto era fatto due volte quasi sempre conforme
-                                     <subst>
-                                     <del rend="strikethrough">e il principio una volta cominciava</del>
-                                     <add place="inline">con la prima scena 
-                                     <lb n="16"/>ripetuta più volte e sempre diversamente</add>
-                                     </subst>
-                                     <lb n="17"/>Il primo verso ora ritrovo
-                                     </del>
-                                     <del rend="strikethrough" seq="2">
-                                     <add place="above">e il principio ha tre o quattro forme</add>
-                                     <lb n="17"/>Il primo verso ora ritrovo
-                                     </del>
-                                     <del rend="strikethrough" seq="3">
-                                     <add place="above">
-                                     <subst>
-                                     <del rend="overwritten">I</del>
-                                     <add place="superimposed">De</add>
-                                     </subst>l primo atto
-                                     <subst>
-                                     <del rend="strikethrough">era fatto due volte</del>
-                                     <add place="superimposed">ne conservo due copie</add>
-                                     </subst>
-                                     quasi sempre conform
-                                     <subst>
-                                     <del rend="overwritten">e</del>
-                                     <add place="superimposed">i</add>
-                                     </subst>
-                                     e 
-                                     <subst>
-                                     <del rend="overwritten">i</del>
-                                     <add place="superimposed">de</add>
-                                     </subst>l principio
-                                     <del rend="strikethrough">ha</del>
-                                     tre o quattro
-                                     <subst>
-                                     <del rend="strikethrough">forme</del>
-                                     <add place="inline">copie diverse</add>
-                                     </subst>
-                                     </add>
-                                     <lb n="17"/>Il primo verso ora ritrovo
-                                     </del>
-                                     <add place="above" seq="3">I primi versi della prima
-                                     <add place="above">e seconda</add>
-                                     edizione andarono spersi insie-
-                                     <lb n="16"/>me a
-                                     <subst>
-                                     <del rend="strikethrough" xml:id="del_quat">quat</del>
-                                     <add place="above" xml:id="add_tutti">tutti</add>
-                                     </subst>
-                                     3 atti;
-                                     <lb n="18"/>tantoché non mi rimangono
-                                     </add>
-                                     </subst>
-                                     
-                                     
-                                     
-                                     
-                                     <subst><del rend="strikethrough">  Ora che è iniziato lo fase-C è mod change="#fase-C" che va sempre messo all'inizio del paragrafo, si deve comunque ripetere il mod anche rispetto alle modifiche circostritte perchè altrimenti non si isola la lezione interessata da variante
-                                     <subst seq="2"><del rend="overwritten">I</del>
-                                     <add place="superimposed">De</add></subst>l primo atto
-                                     <subst seq="2"><del rend="strikethrough">era fatto due volte </del>
-                                     <add place="above">ne conservo due copie</add></subst>
-                                     quasi sempre conform
-                                     <subst seq="1"><del rend="strikethrough"><subst><del rend="overwritten">e</del>
-                                     <add place="superimposed">i</add></subst><lb n="15"/>
-                                     <subst seq="1"><del rend="strikethrough">e il principio una volta cominciava </del><add place="inline">con la prima scena <lb n="16"/> ripetuta più volte e sempre diversamente</add></subst></del>
-                                     <add place="below"> e <subst seq="2"><del rend="overwritten">i</del>
-                                     <add place="superimposed">de</add></subst>l principio <del rend="strikethrough" seq="2">ha</del> tre o quattro 
-                                     <subst seq="2">
-                                     <del rend="strikethrough">forme</del>
-                                     <add place="inline">copie diverse</add> </subst>   
-                                     </add></subst>
-                                     . <lb n="17"/> Il primo verso ora ritrovo </del>
-                                     <add place="above">I primi versi della prima <add place="above">e seconda</add> edizione andarono spersi insie-
-                                     <lb n="16"/>me a</add>
-                                     <del rend="strikethrough" xml:id="del_quat">quat</del>
-                                     <add place="above" xml:id="add_tutti">tutti</add> <add place="above">3 atti;<lb n="18"/> tantoché non mi rimangono</add></subst>
-                                     <substJoin target="#del_quat #add_tutti"/>   --> 
-                                 che la terza copia 
-                                <mod change="#fase-C"><subst><del rend="strikethrough">dei</del>
-                                        <add place="inline">di</add></subst></mod> 4 atti e
-                                <lb n="19"/> del primo atto ripetuto.
-                                <lb n="20"/> 
-                            </mod>
+                                </lem>
+                                <rdg varSeq="3">
+                                    <mod change="#fase-C">
+                                        <subst><del rend="overwritten">I</del>
+                                        <add place="superimposed">De</add></subst>l primo atto
+                                        <subst><del rend="strikethrough">era fatto due volte</del>
+                                        <add place="above">ne conservo due copie</add></subst> quasi sempre conform
+                                        <subst><del rend="overwritten">i</del>
+                                        <add place="superimposed">e</add></subst> e <subst><del rend="overwritten">i</del>
+                                        <add place="superimposed">de</add></subst>l principio tre o quattro
+                                        <subst><del rend="strikethrough">forme</del>
+                                        <add place="inline">copie diverse</add></subst>. <lb/> Il primo verso ora ritrovo
+                                    </mod>
+                                </rdg>
+                                <rdg varSeq="2"><mod change="#fase-C">Il primo atto era fatto due volte quasi sempre conforme
+                                    <subst><del rend="strikethrough">con la prima scena ripetuta più
+                                    volte e sempre diversamente</del>
+                                    <add place="above">, e il principio ha tre o quattro forme</add></subst>
+                                    <lb/> Il primo verso ora ritrovo</mod>
+                                </rdg>
+                                <rdg varSeq="1">
+                                    <mod change="#fase-C">Il primo atto era fatto due volte quasi sempre
+                                    <subst><del rend="strikethrough"> e il principio una volta cominciava</del>
+                                    <add place="inline">conforme con la prima scena ripetuta più
+                                    volte e sempre diversamente</add></subst> <lb/> Il primo verso ora ritrovo</mod>
+                                </rdg>
+                               </app>
                         </p>
                     </div>
                     <div type="page">
@@ -2989,62 +2893,37 @@
                                 <lb n="5"/>in qualche modo segnalar<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">si</add></subst></mod>, <mod change="#fase-D"><add place="above">elevarsi</add></mod> e che non volendo essere pari,
                                 <lb n="6"/>uguale agli altri sceglieva un mezzo falso ed erroneo
                                 <lb n="7"/><mod change="#fase-D"><add place="above">tanto</add></mod> per dire: «io <mod change="#fase-D"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>voi».</mod></p>
-                        <p rend="indent"><mod change="#fase-D"><lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
-                                <lb n="9"/>di punizioni e che ho descritto, germogliò un<mod change="#fase-D"><subst><del rend="strikethrough">'</del><add place="inline">o</add></subst></mod>altro non
-                                <lb n="10"/>migliore e fu l’ira. Il caratter<mod change="#fase-D"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst></mod> fiero, <mod change="#fase-D">
-                                    <subst>
-                                        <del rend="strikethrough" seq="1">a</del>
-                                        <del rend="strikethrough" seq="2">
-                                            <add place="inline" seq="1">stuzzicato</add>
-                                        </del>
-                                        <add place="inline" seq="2">
-                                            <lb n="11"/>provocato,
-                                        </add>
-                                    </subst> <!--  <subst seq="1"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">a</del> <add place="inline">stuzzicato</add></subst></del>
-                                         <lb n="11"/><add place="inline">provocato,</add></subst>-->
-                                 </mod> divenne irascibilissimo e fece come la piaga
-                                <lb n="12"/>molto stuzzicata. La rabbia <mod change="#fase-D"><del rend="strikethrough">nonché l'ira</del></mod>eccedeva per nulla
-                                <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
-                                <lb n="14"/>l’andava raramente e penosamente soffocando, e più  
-                                <lb n="15"/>spesso
-                                <mod change="#fase-D">
-                                    <subst>
-                                        <del rend="strikethrough" seq="1">spe</del>
-                                        <add place="inline" seq="1">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add>
-                                    </subst>
-                                    <add place="above" xml:id="add_frenandola">frenandola</add>
-                                    <substJoin target="#del_ferrandola #add_frenandola" seq="3"/>
-                                    a solo nella mia camera
-                                    <subst seq="2">
-                                        <del rend="overwritten">. T</del>
-                                        <add place="superimposed">; t</add>
-                                    </subst>alora
-                                    <lb n="16"/>
-                                    <del rend="strikethrough" xml:id="del_venni">
-                                        <add place="above">venni ad</add>
-                                    </del>
-                                    <add place="above" xml:id="add_trascesi">trascesi ad atti che</add>
-                                    <substJoin target="#del_venni #add_trascesi" seq="2"/>
-                                    <add place="above" seq="2">anche a me stesso</add>
-                                    sembraro<subst seq="1">
-                                        <del rend="overwritten">mi</del>
-                                        <add place="superimposed">no</add>
-                                    </subst> con ragione
-                                    <del rend="strikethrough" seq="2">atti</del>
-                                    da pazzo<del rend="overwritten" xml:id="del_2p">:</del><del rend="strikethrough" seq="2"><subst seq="2">
-                                            <del rend="overwritten">U</del>
-                                            <add place="superimposed">u</add>
-                                        </subst>n</del><add place="superimposed" xml:id="add_p">.</add>
-                                    <substJoin target="#del_2p #add_p" seq="3"/>
-                                </mod>
-                                
-                                
-                                <!-- <mod change="#fase-D"><subst seq="1"><del rend="strikethrough">spe</del> <add place="inline">dis<del rend="strikethrough" xml:id="del_ferrandola">ferrandola</del></add></subst><add place="above" xml:id="add_frenandola">frenandola</add><substJoin target="#del_ferrandola #add_frenandola" seq="3"/> a solo nella mia camera<subst seq="2"><del rend="overwritten">. T</del><add place="superimposed">; t</add></subst>alora
-                                     <lb n="16"/><add place="above" seq="3">anche a me stesso</add> <subst seq="2"><del rend="strikethrough"><add place="above">venni ad</add></del> <add place="above">trascesi ad atti che</add></subst> sembraro<subst seq="1"><del rend="overwritten">mi</del><add place="superimposed">no</add></subst> con ragione <del rend="strikethrough" seq="2">atti</del> da pazzo<del rend="overwritten" xml:id="del_2p">:</del> <del rend="strikethrough" seq="3"><subst seq="2"><del rend="overwritten">U</del><add place="superimposed">u</add></subst>n</del> <add place="superimposed" xml:id="add_p">.</add><substJoin target="#del_2p #add_p" seq="3"/></mod> -->
-                                     
-                                     
-                                     
-                 </mod></p>
+                        <p rend="indent"><app>
+                                    <lem varSeq="3"><mod change="#fase-D">di
+                                            <subst><del rend="strikethrough">sferrandola</del>
+                                                <add place="above">sfrenandola</add>
+                                            </subst> a solo nella mia camera; talora <lb n="16"/> trascesi ad atti che anche a me stesso sembrrono con ragione da pazzo.
+                                        </mod>
+                                </lem>
+                                    <rdg varSeq="2">
+                                        <mod change="#fase-D">
+                                            disferrandola a solo nella mia camera
+                                            <subst><del rend="overwritten">.</del>
+                                            <add place="superimposed">;</add></subst>
+                                            <subst><del rend="overwritten">T</del>
+                                            <add place="superimposed">t</add></subst>alora<lb n="16"/>
+                                        </mod>
+                                        <add place="above"><subst><del rend="strikethrough">venni ad</del>
+                                        <add place="inline">trascesi atti che</add></subst></add>
+                                        <add place="inline">anche a me stesso</add> sembrarono con ragione da pazzo <subst><del rend="overwritten">.</del>
+                                            <add place="superimposed">:</add></subst>
+                                        <subst><del rend="overwritten">U</del>
+                                            <add place="superimposed">n</add></subst>n
+                                    </rdg>
+                                   <rdg varSeq="1">
+                                        <mod change="#fase-D"><subst>
+                                                <del rend="strikethrough">spe</del>
+                                                <add place="inline">disferrandola</add></subst> a solo nella mia camera. Talora <lb n="16"/> sembraro
+                                            <subst><del rend="overwritten">mi</del>
+                                            <add place="superimposed">no</add></subst> con ragione atti da pazzo. Un
+                                        </mod>
+                                   </rdg>
+                                </app></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="17"/>Una volta per essere stato messo in silenzio per due giorni
                                 <lb n="18"/>dal Rettore, senza pietanza, senza boccino al Refettorio per cagione
                                 <lb n="19"/>non sembratami giusta e certamente non adeguata, mi
