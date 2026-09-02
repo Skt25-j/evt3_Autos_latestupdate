@@ -2189,9 +2189,7 @@
                                 </app><note n="1" resp="#TAV" type="critical">Sintagma ripassato con la penna - B dello fase-B. Da questo momento Tuscano scrive solo con la penna - B.</note> vita.</mod>
                         </p>
                         <p rend="indent">
-                            <!-- Promosso ad app: il <lem varSeq=4> conserva integralmente il mod originale (versione senza app); gli <rdg> sono gli stati d'autore precedenti, ricostruiti dall'apparato. -->
-<app>
-<lem varSeq="4"><mod change="#fase-C">
+                            <mod change="#fase-C">
                                 <mod change="#fase-C"><lb n="15"/>
                                     <subst><del rend="strikethrough seq-transient" seq="4" n="1"><subst>
                                                 <del rend="overwritten seq-transient" seq="3" n="1">I</del><add place="superimposed" seq="3">De</add></subst>l primo atto <subst><del seq="3" rend="strikethrough seq-transient" n="1">era fatto due volte</del><add seq="3" place="above">ne conservo due copie</add></subst> quasi sempre conform<subst><del rend="overwritten seq-transient" seq="3" n="1">e</del><lb n="16"/>
@@ -2323,11 +2321,6 @@
                                 <lb n="19"/> del primo atto ripetuto.
                                 <lb n="20"/> 
                             </mod>
-</lem>
-<rdg varSeq="3"><mod change="#fase-C">Del primo atto ne conservo due copie quasi sempre conformi, e del principio tre o quattro copie diverse. Il primo verso ora ritrovo</mod></rdg>
-<rdg varSeq="2"><mod change="#fase-C">Il primo atto era fatto due volte quasi sempre conforme, e il principio ha tre o quattro forme. Il primo verso ora ritrovo</mod></rdg>
-<rdg varSeq="1"><mod change="#fase-C">Il primo atto era fatto due volte quasi sempre conforme con la prima scena ripetuta più volte e sempre diversamente. Il primo verso ora ritrovo</mod></rdg>
-</app>
                         </p>
                     </div>
                     <div type="page">
