@@ -942,7 +942,7 @@
                                 <subst><add place="inline">tale</add>
                                     <del><gap quantity="3" unit="char"/></del></subst></mod>
                             <note resp="editor" n="1" type="critical">di incerta interpretazione</note>
-                            paura che <mod change="#fase-A"><subst><add place="above"> tremai <lb n="15"/> continuamente fino all'alba</add> <del rend="strikethrough">mi <lb n="15"/> lasciò un'impressione</del></subst></mod>. <note resp="editor" n="2" type="critical">La parola "alba", pur facendo parte dela variante, è scritta in riga</note>
+                            paura che <mod change="#fase-A"><subst><add place="above"> tremai <lb n="15"/> continuamente fino all'alba</add> <del rend="strikethrough">mi <lb n="15"/> lasciò un'impressione</del></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>. <note resp="editor" n="2" type="critical">La parola "alba", pur facendo parte dela variante, è scritta in riga</note>
                             Quella luce
                             <mod change="#fase-A">
                                 <del rend="strikethrough" seq="2">
@@ -1072,7 +1072,7 @@
                             <lb n="15"/><mod change="#fase-A"><subst><del rend="strikethrough">Dopo fatta</del>
                                     <add place="inline"><subst><del rend="overwritten">m</del><add place="superimposed">M</add></subst>i
                                     </add>
-                                </subst> </mod>ricordo d’averla letta più volte con soddisfazione, ma<lb n="16"/>non ebbi però il coraggio di farla leggere ad altri; la misi in buona
+                                </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> </mod>ricordo d’averla letta più volte con soddisfazione, ma<lb n="16"/>non ebbi però il coraggio di farla leggere ad altri; la misi in buona
                             <lb n="17"/>copia (come sapevo scrivere allora) in un <mod change="#fase-A">
                                 <subst><del rend="overwritten"><gap quantity="2" unit="char"/></del>
                                     <add place="superimposed">foglio</add></subst></mod> elegante e la nascosi fra <mod change="#fase-A">
@@ -1106,7 +1106,7 @@
                                     <del rend="strikethrough" seq="2"><add place="inline">Frequentando</add></del>
                                     <del rend="strikethrough" seq="3"><add place="inline">Mi</add></del>
                                     <add place="inline" seq="3">Già</add>
-                                </subst>
+                                </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. -->
                             </mod>
                             <!-- <mod change="#fase-A">
                                  <subst><del rend="strikethrough">
@@ -1146,7 +1146,7 @@
                             <mod change="#strato-E"><add place="above">lo</add></mod> era)
                             <lb n="11"/>lo sentiva declinar<mod change="#fase-A"><del rend="strikethrough">e</del></mod> franco
                             <mod change="#fase-A"><subst><del rend="strikethrough">da essere come uno studente</del>
-                                    <add place="above">da sembrare un</add></subst></mod> latinista, sentivo
+                                    <add place="above">da sembrare un</add></subst> <!-- Non promosso ad app: senza interesse autonomo; la lezione precedente non ha interesse critico autonomo. --></mod> latinista, sentivo
                             <mod change="#fase-A">
                                 <subst>
                                     <del rend="strikethrough" seq="1">anche costui riportare</del>
@@ -1315,7 +1315,7 @@
                             <lb n="2"/>alla <placeName ref="#Val_dOrcia"><mod change="#fase-A"> <subst> <del rend="strikethrough">val</del> <add place="inline">mia valle</add></subst>
                                 </mod> d’Orcia</placeName>, il quale <mod change="#fase-A">
                                 <subst><del rend="strikethrough">non potè</del>
-                                    <add place="inline">andò</add></subst></mod> sperso 
+                                    <add place="inline">andò</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> sperso 
                             <app><lem varSeq="2"><mod change="#fase-B"><add place="above">e del quale <del rend="strikethrough">ho</del> or ultimamente</add> non 
                                         <subst><del rend="strikethrough seq-transient" n="A.1">mi ricordo</del><add place="above" seq="1"> 
                                                 <lb n="3"/>ho potuto ritrovare tra i miei fogli antichi non oltre</add></subst> che la prima quartina e 
@@ -1379,7 +1379,7 @@
                                     <add place="inline">simile</add></subst></mod> specie non ho potuto trovare tra i miei antichi 
                             <lb n="13"/>fogliacci <mod change="#fase-A"><subst>
                                     <del rend="strikethrough">se non quando si giunge</del>
-                                    <add place="inline">fino</add></subst></mod> che non si arrivi <mod change="#fase-A">
+                                    <add place="inline">fino</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> che non si arrivi <mod change="#fase-A">
                                 <add place="inline">al</add>l’<add place="below">anno</add> 1905, 
                                 <subst>
                                     <del rend="overwritten">12</del><add place="superimposed">dodicesimo</add></subst> 
@@ -1423,7 +1423,7 @@
                                 <subst><del rend="strikethrough">privatamente</del>
                                     <add place="above">come esterni,</add> 
                                     <del rend="overwritten">in</del>
-                                    <add place="superimposed">nel</add></subst>
+                                    <add place="superimposed">nel</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. -->
                             </mod> <note n="2" resp="#TAV" type="critical">Difficile attribuzione cronologica</note>
                             <!-- 
                                  <del rend="strikethrough" xml:id="del_privatamente">privatamente</del>
@@ -1577,7 +1577,7 @@
                                 <mod change="#fase-B"><add place="above">Molte altre</add></mod>
                                 volte servendo la Messa al <persName ref="#Rettore_Seminario">Rettore</persName> 
                                 <mod change="#fase-B"><subst><del rend="overwritten">mi successe</del>
-                                        <add place="superimposed">davanti a tutto</add></subst></mod>
+                                        <add place="superimposed">davanti a tutto</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>
                                 <lb n="12"/>il <placeName ref="#Seminario_Vescovile">Seminario</placeName> mi successe di distrarmi e di non rispondere
                                 <lb n="13"/>ai versetti, di portare l’ampolle col piattino, quando 
                                 <lb n="14"/>quest’ultimo non ci voleva, di dire «Amen» dopo un
@@ -1729,7 +1729,7 @@
                                 <lb n="6"/>mia indole, 
                                 <mod change="#fase-B">
                                     <subst><del rend="strikethrough">il pericoloso e brusco</del>
-                                        <add place="inline">del</add></subst></mod> mio carattere. Co-
+                                        <add place="inline">del</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> mio carattere. Co-
                                 <lb n="7"/>minciai a far lo scapato quasi appositamente, e mi infil-
                                 <lb n="8"/>trai così in questo difetto che 
                                 <mod change="#fase-B"><del rend="strikethrough">dopo</del></mod>
@@ -1745,7 +1745,7 @@
                                 e a castigarmi
                                 <lb n="11"/>più che gli altri 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">per essere ese</del>
-                                        <add place="inline">affinché</add></subst></mod> io fossi un 
+                                        <add place="inline">affinché</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> io fossi un 
                                 <mod change="#fase-B">
                                     <del rend="strikethrough" xml:id="del_modello" seq="1">modello</del>
                                     <add place="above" xml:id="add_esempio" seq="1">esempio</add>
@@ -1918,7 +1918,7 @@
                         <fw place="top_right" type="pageNum"><mod change="#fase-C"><add>16</add></mod></fw>
                         <p rend="indent"><mod change="#fase-B"><lb n="1"/>più buoni e assennati, 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">mi fomentò</del>
-                                        <add place="inline">mi fomentò </add></subst></mod> <note n="1" resp="ST" type="critical">Lezione rispristinata</note>l’invi-
+                                        <add place="inline">mi fomentò </add></subst> <!-- Non promosso ad app: dittografia, currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> <note n="1" resp="ST" type="critical">Lezione rispristinata</note>l’invi-
                                 <lb n="2"/>dia e l’ira contro taluno di questi, che venne così per
                                 <lb n="3"/>rimbalzo a <mod change="#fase-B">
                                     <del rend="strikethrough">ve</del></mod> non veder di buon occhio né me, né quello
@@ -2062,7 +2062,7 @@
                                 <lb n="6"/>Delle quattro tragedie, <title><ref target="Maria_Stuarda">Maria Stuarda</ref></title>, <title><ref target="#Mirra">Mirra</ref></title>, <title><ref target="#Merope">Merope</ref></title>,
                                 <lb n="7"/><title><ref target="#Congiura_Pazzi">Congiura de’ Pazzi</ref></title>, 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">mi piacque</del>
-                                        <add place="inline">preferii </add></subst></mod><title><ref target="#Mirra">Mirra</ref></title> e
+                                        <add place="inline">preferii </add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod><title><ref target="#Mirra">Mirra</ref></title> e
                                 <lb n="8"/>su quella il 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">prossi</del>
                                         <add place="inline">venturo</add></subst></mod> novembre <mod change="#fase-B">
@@ -2111,7 +2111,7 @@
                                         <add place="inline" seq="2">
                                             <lb n="15"/>Questa tragedia
                                         </add>
-                                    </subst></mod> nella mia intenzione doveva essere <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">I nomi erano moderni  </del>
+                                    </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> nella mia intenzione doveva essere <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">I nomi erano moderni  </del>
                                      <add place="inline">Il titolo</add></subst></del>
                                      <add place="inline"><lb n="15"/>Questa tragedia</add></subst>-->
                                 <lb n="16"/>allegorica
@@ -2156,7 +2156,7 @@
                                         <add place="inline">fu</add></subst></mod> prima il <title><ref target="#Daniello">Trionfo dell’Innocenza</ref></title>, quindi <title><ref target="#Daniello">Daniello</ref></title>
                                 <lb n="19"/>
                                 <mod change="#fase-B"><subst><del rend="strikethrough">nella f</del>
-                                        <add place="above">(profeta nelle fosse di leoni)</add></subst></mod>. Il tema era storico e io 
+                                        <add place="above">(profeta nelle fosse di leoni)</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>. Il tema era storico e io 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">l'</del>
                                         <add place="above">n’</add></subst></mod>avevo letto <mod change="#fase-B"><add place="above">uno squarcio</add></mod> in un foglio
                                 <lb n="20"/>sperso della <title><ref target="#Bibbia">Bibbia</ref></title>, e nella mia piccola Storia 
@@ -2483,7 +2483,7 @@
                                 della mia tragedia trovai tuttavia molti versi
                                 <lb n="2"/>zoppicanti, ma nella seconda <mod change="#fase-D">
                                     <subst><del rend="strikethrough">e nella p</del>
-                                        <add place="inline">son</add></subst></mod> sicuro che non ve n’era
+                                        <add place="inline">son</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> sicuro che non ve n’era
                                 <lb n="3"/>uno che non tornasse. Nella terza ogni savio lettore può dire se
                                 <lb n="4"/>avevo imparato a versificare o no.</mod>
                         </p>
@@ -2492,7 +2492,7 @@
                                 <lb n="6"/>primo d’Aprile gittai per la latrina coll’idea di <mod change="#fase-D">cominciare
                                     <lb n="7"/><subst><add place="above">da capo</add>
                                         <del rend="strikethrough">una tragedia</del>    
-                                    </subst> nuov<subst><del rend="overwritten">a</del><add place="superimposed">o</add>   
+                                    </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> nuov<subst><del rend="overwritten">a</del><add place="superimposed">o</add>   
                                     </subst> <add place="above">e migliore il mio lavoro coll’idea di</add>
                                     <subst>
                                         <del rend="strikethrough">da dedicarsi</del>
@@ -2546,7 +2546,7 @@
                                 <lb n="2"/>pre come mansueto e mesto a un tempo, sembrano emulare alcuni
                                 <lb n="3"/>altri <mod change="#fase-C"><subst><del rend="strikethrough">del</del> <add place="inline">tanto</add></subst></mod> <!-- che debba mettere solo del?--> più perfetti dell’<title><ref target="#Adelchi">Edmengarda</ref></title> di <persName ref="#Alessandro_Manzoni">Manzoni</persName>; e dire
                                 <lb n="4"/>che allora io non sapeva neppure che il <persName ref="#Alessandro_Manzoni">Manzoni</persName><choice resp="#TAV"><sic>l</sic><corr/></choice> aveva scritto
-                                <lb n="5"/><mod change="#fase-C"><subst><del rend="strikethrough">non molto altro che non fossero</del><add place="above">anche tragedie oltre</add></subst></mod> i <title><ref target="#Promessi_Sposi">Promessi Sposi</ref></title>. E mi ricordo
+                                <lb n="5"/><mod change="#fase-C"><subst><del rend="strikethrough">non molto altro che non fossero</del><add place="above">anche tragedie oltre</add></subst> <!-- Non promosso ad app: senza interesse autonomo; la lezione precedente non ha interesse critico autonomo. --></mod> i <title><ref target="#Promessi_Sposi">Promessi Sposi</ref></title>. E mi ricordo
                                 <lb n="6"/>che quando per la prima volta lessi quei versi del gran <persName ref="#Alessandro_Manzoni">Romanzie-
                                     <lb n="7"/>re</persName> mi fecero un caso strano quasi che il sommo scrittore si
                                 <lb n="8"/>(che anacronismi!) si fosse ricordato dei miei <mod change="#fase-C">(scritti <subst><del rend="strikethrough">a</del><add place="above">in età di</add></subst> 12 o 13 anni<subst><del rend="strikethrough">)</del>
@@ -2600,8 +2600,8 @@
                                 <lb n="10"/>parso onorevole e glorioso, mi parve allora noioso a leggersi, in-
                                 <lb n="11"/>degno di mostra. Da prima non mi andava tanto questo
                                 <lb n="12"/>sfratto, sembrandomi poco giudizioso gittare al vento ciò
-                                <lb n="13"/>che era stato fatica <mod change="#fase-D"><subst><del rend="strikethrough">di tanto tempo</del><add place="inline">di 2 anni</add></subst></mod>, perdita di tanto
-                                <lb n="14"/>tempo; <mod change="#fase-D"><subst><del rend="strikethrough">e acquisto di disp</del><add place="inline">ma</add></subst></mod> poi il sentimento domi-
+                                <lb n="13"/>che era stato fatica <mod change="#fase-D"><subst><del rend="strikethrough">di tanto tempo</del><add place="inline">di 2 anni</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>, perdita di tanto
+                                <lb n="14"/>tempo; <mod change="#fase-D"><subst><del rend="strikethrough">e acquisto di disp</del><add place="inline">ma</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> poi il sentimento domi-
                                 <lb n="15"/>nante di superbia sottentrò e mi fece notare (e non me
                                 <lb n="16"/>l’aspettavo) che <mod change="#fase-D"><subst><del rend="strikethrough">se io</del><add place="inline">quel</add></subst></mod> dispregiare, quel non piacere quegli
                                 <lb n="17"/>scritti quantunque prima adorati, denotava un avverti-
@@ -2620,7 +2620,7 @@
                                             <add place="inline">a<del rend="strikethrough">l</del> Dario</add>
                                         </del>
                                         <add place="inline" seq="2">:</add>
-                                    </subst></mod></mod><note n="1" resp="#TAV" type="critical">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
+                                    </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod></mod><note n="1" resp="#TAV" type="critical">lezione intermedia "diceva a Dario"</note></p> <!-- Come la rendo qui la lezione intermedia?? -->
                         <sp who="#Corrado"><lg><mod change="#fase-C"><lb n="3"/><l n="1" rend="align-center">È facil cosa</l>
                                     <lb n="4"/><l n="2">piegar della plebaglia il fido cuore</l>
                                     <lb n="5"/><l n="3">ma dei potenti è dura cosa.</l></mod></lg></sp>
@@ -2664,7 +2664,7 @@
                                             <add place="inline" seq="1">Sembr</add>
                                         </del>
                                         <add place="inline" seq="2"> quasi</add>
-                                    </subst>
+                                    </subst> <!-- Non promosso ad app: per coerenza con gli altri casi, currenti calamo; la lezione precedente non ha interesse critico autonomo. -->
                                     <substJoin target="#del_punto #add_virgola" seq="2"/>
                                 </mod>
                                 <!-- <subst seq="2"><del rend="overwritten">.</del><add place="superimposed">,</add><del><subst seq="1"><del rend="strikethrough">In q</del> <add place="inline">Sembr</add></subst></del> <add place="inline"> quasi</add></subst>-->
@@ -2727,9 +2727,9 @@
                                 <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#TAV">superiore curioso</corr></choice>
                                 <lb n="4"/>era arrivato a frugare su’ miei cassetti e scoprire gli arcani
                                 <lb n="5"/>gelosi, e ridere sulle mie baggianate. E <mod change="#fase-D">n<del rend="overwritten">i</del><add place="superimposed">e</add>l</mod> veder tanto scritto,
-                                <lb n="6"/>tanto <mod change="#fase-D">lavoro <subst seq="1"><del rend="strikethrough">avrà il</del><add place="inline">quel</add></subst> superiore avrà naturalmente concluso:<subst seq="2"><del rend="strikethrough">«per
+                                <lb n="6"/>tanto <mod change="#fase-D">lavoro <subst seq="1"><del rend="strikethrough">avrà il</del><add place="inline">quel</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> superiore avrà naturalmente concluso:<subst seq="2"><del rend="strikethrough">«per
                                             <lb n="7"/>fa i versi perde molto tempo e <add place="above">a</add>studiare per il scuola non ci pensa </del>
-                                        <lb n="8"/><add place="inline">«com’è possibile che sia attento alla scuola?».</add></subst></mod> E dietro
+                                        <lb n="8"/><add place="inline">«com’è possibile che sia attento alla scuola?».</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> E dietro
                                 <lb n="9"/>questa conclusione<mod change="#fase-D"><add place="above">, ora comprendo,</add></mod> mi si faceva spesso ammonimenti
                                 <lb n="10"/>severi sullo studio, e il maestro mi dava miseri punti nella
                                 <lb n="11"/>cartella bimestrale. <mod change="#fase-D">
@@ -2742,18 +2742,18 @@
                                             <add place="inline" seq="2">talchè</add>
                                         </del>
                                         <add place="inline" seq="3">I superiori</add>
-                                    </subst>
+                                    </subst> <!-- Non promosso ad app: per coerenza, currenti calamo; la lezione precedente non ha interesse critico autonomo. -->
                                     
                                     <!-- <subst><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In</del> <add place="inline">I sup</add></subst></del> <add place="inline">talchè</add></subst></del> <add place="inline">I superiori</add></subst>--> </mod> e <persName ref="#genitori">i miei</persName> di casa
                                 <lb n="12"/>si meravigliavano dei miei <mod change="#strato-O"><add place="above">scarsi</add></mod> <!-- lapis non si capisce quando usato--> successi e mi persero <mod change="#fase-D"><del rend="strikethrough">un po'</del></mod>
                                 <lb n="13"/>la stima di fanciullo amante dello studio; questi a
-                                <lb n="14"/>rimproverarmi <mod change="#fase-D"><subst><del rend="strikethrough">i sacri</del><add place="inline">come</add></subst></mod> male ricompensavo i sacrifici dello
+                                <lb n="14"/>rimproverarmi <mod change="#fase-D"><subst><del rend="strikethrough">i sacri</del><add place="inline">come</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> male ricompensavo i sacrifici dello
                                 <lb n="15"/><persName ref="#Don_Salvatore_Benocci">zio</persName> che mi manteneva a quegli studi, quelli a minacciarmi
                                 <lb n="16"/>castighi o meglio a coprirmi di castighi.
                             </mod></p>
                         <p rend="indent"><mod change="#fase-D">
                                 <lb n="17"/>Ma oltre lo studio erano <mod change="#fase-D"><add place="above">al solito</add></mod> causa di punizioni le mie scapa-
-                                <lb n="18"/>taggini<mod change="#fase-D"><subst><del rend="overwritten">.</del><add place="superimposed">,</add><del rend="strikethrough">Il pensare</del><add place="inline">le quali</add></subst></mod> invece di scemare aumentavano.
+                                <lb n="18"/>taggini<mod change="#fase-D"><subst><del rend="overwritten">.</del><add place="superimposed">,</add><del rend="strikethrough">Il pensare</del><add place="inline">le quali</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> invece di scemare aumentavano.
                                 <lb n="19"/>Il lavoro poetico che avevo tra mane mi <mod change="#fase-D"><subst><del rend="strikethrough">to</del><add place="inline">assimilava</add></subst></mod> tutte
                                 <lb n="20"/>l’energie, mi rubava ogni altra cura, mi toglieva anche il
                             </mod></p>
@@ -2875,8 +2875,8 @@
                                 <lb n="8"/>rendeva alla mia immaginazione fanciulla <mod change="#fase-D"><add place="above">tale</add></mod> un’idea triste
                                 <lb n="9"/>di odio e persecuzione, che io cominciai ad amare sempre
                                 <lb n="10"/>più tenacemente i miei libri e i miei versi, <mod change="#fase-D"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">ad</add></subst></mod> abbracciar-
-                                <lb n="11"/>mi <mod change="#fase-D">a<del rend="strikethrough">d</del> <subst><del rend="strikethrough">essi</del><add place="above">questi</add></subst></mod> con la risoluzione di vincere o morire <mod change="#fase-D"><subst><del rend="strikethrough">con essi</del><add place="above">con loro</add></subst></mod>, con
-                                <lb n="12"/>la consolazione di <mod change="#fase-D"><subst><del rend="strikethrough">essere essi causa</del><add place="above">riconoscerli causa e</add></subst></mod> compagni delle mie
+                                <lb n="11"/>mi <mod change="#fase-D">a<del rend="strikethrough">d</del> <subst><del rend="strikethrough">essi</del><add place="above">questi</add></subst></mod> con la risoluzione di vincere o morire <mod change="#fase-D"><subst><del rend="strikethrough">con essi</del><add place="above">con loro</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>, con
+                                <lb n="12"/>la consolazione di <mod change="#fase-D"><subst><del rend="strikethrough">essere essi causa</del><add place="above">riconoscerli causa e</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> compagni delle mie
                                 <lb n="13"/>scaramucce e afflizioni. Invece che abbandonare quello
                                 <lb n="14"/>studio volontario, causa di tutti i miei mali, lo feci
                                 <lb n="15"/>più profondo, più assiduo; invece di <mod change="#fase-D">
@@ -2886,7 +2886,7 @@
                                             <add place="inline">studiare</add>
                                         </del>
                                         <add place="above" seq="2">guardare</add>
-                                    </subst> <!-- <subst><del rend="strikethrough"><subst><del rend="strikethrough">g</del> <add place="inline">studiare</add></subst></del><add place="above">guardare</add></subst>-->
+                                    </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> <!-- <subst><del rend="strikethrough"><subst><del rend="strikethrough">g</del> <add place="inline">studiare</add></subst></del><add place="above">guardare</add></subst>-->
                                 </mod> d’essere
                                 <lb n="16"/>attento e non mancare alla disciplina, moltiplicai la mia
                                 <lb n="17"/>sbadataggine e le mie mancanze. Io fui chiamato incorreggibi-
@@ -2949,7 +2949,7 @@
                                 <lb n="16"/>amato, e <mod change="#fase-D"><subst><del rend="strikethrough">d</del> <add place="inline">rispettato</add></subst></mod>, ubbidito. Qualche volta fui punito
                                 <lb n="17"/>anche da lui, ma ciò non <mod change="#fase-D"><add place="above">mi</add></mod> toglieva l’affetto, e anzi me lo
                                 <lb n="18"/>accresceva.</mod></p>
-                        <p rend="indent"><mod change="#fase-D"><lb n="19"/><mod change="#fase-D"><subst><del rend="strikethrough">In quell'</del><add place="inline">Nell’anno</add> <add place="above">mio</add></subst></mod> 14<hi rend="apice">o</hi> di età cominciai a dubitare sulla fede
+                        <p rend="indent"><mod change="#fase-D"><lb n="19"/><mod change="#fase-D"><subst><del rend="strikethrough">In quell'</del><add place="inline">Nell’anno</add> <add place="above">mio</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> 14<hi rend="apice">o</hi> di età cominciai a dubitare sulla fede
                                 <lb n="20"/>e questo dubbio mi perseguitò crescendo fino al 28 febbraio 1909,</mod></p>
                     </div>
                     <div type="page">
@@ -2988,7 +2988,7 @@
                                 <lb n="4"/>mi dava a conoscere il mio fiero spirito che <mod change="#fase-D"><subst><del rend="strikethrough">si</del> <add place="inline">voleva</add></subst></mod>
                                 <lb n="5"/>in qualche modo segnalar<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">si</add></subst></mod>, <mod change="#fase-D"><add place="above">elevarsi</add></mod> e che non volendo essere pari,
                                 <lb n="6"/>uguale agli altri sceglieva un mezzo falso ed erroneo
-                                <lb n="7"/><mod change="#fase-D"><add place="above">tanto</add></mod> per dire: «io <mod change="#fase-D"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst></mod>voi».</mod></p>
+                                <lb n="7"/><mod change="#fase-D"><add place="above">tanto</add></mod> per dire: «io <mod change="#fase-D"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>voi».</mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
                                 <lb n="9"/>di punizioni e che ho descritto, germogliò un<mod change="#fase-D"><subst><del rend="strikethrough">'</del><add place="inline">o</add></subst></mod>altro non
                                 <lb n="10"/>migliore e fu l’ira. Il caratter<mod change="#fase-D"><subst><del rend="overwritten">o</del><add place="superimposed">e</add></subst></mod> fiero, <mod change="#fase-D">
