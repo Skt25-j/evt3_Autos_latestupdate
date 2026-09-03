@@ -61,7 +61,7 @@
       "namedEntityType": "event"
     },
     "entries": {
-  "enable": false,
+  "enable": true,
   "defaultLabel": "Opere",
   "listSelector": "listBibl",
   "namedEntityType": "doc",
@@ -193,23 +193,23 @@
   "showChangeLayerMarkerInText": true,
   "changeSequenceView": {
     "showVarSeqAttr": false,
-    "showSeqAttr": true,
+    "showSeqAttr": false,
     "layerColors": {
-      "strato-0": "#E67E22",
-      "strato-1": "#D35400",
-      "strato-2": "#E91E63",
-      "strato-3": "#C2185B",
-      "strato-4": "#9E9B9B",
-      "strato-5": "#9C27B0",
-      "strato-6": "#7B1FA2",
-      "strato-7": "#512DA8",
-      "strato-8": "#260F8B",
-      "strato-9": "#9B9B9B",
-      "strato-10": "#2404B5",
-      "strato-11": "#BB1515",
-      "strato-12":"#080277",
-      "strato-X": "#0097A7",
-      "strato-Y": "#00796B"
+      "fase-A": "#E67E22",
+      "fase-B": "#D35400",
+      "fase-C": "#F06292",
+      "fase-D": "#880E4F",
+      "strato-E": "#9E9B9B",
+      "fase-F": "#9C27B0",
+      "fase-G": "#7B1FA2",
+      "fase-H": "#512DA8",
+      "strato-I": "#2404B5",
+      "strato-L": "#BB1515",
+      "strato-M":"#080277",
+      "strato-O": "#9B9B9B",
+      "fase-N": "#260F8B",
+      "strato-P": "#6E6A6A",
+      "strato-X": "#00796B"
       
     }
   },

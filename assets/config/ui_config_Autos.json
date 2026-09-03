@@ -96,7 +96,7 @@
 	"thumbnailsButton": true,
 	"viscollButton": false,
 	"mainFontFamily": "Junicode, Times, serif",
-	"mainFontSize": "1.1rem",
+	"mainFontSize": "1.3rem",
 	"secondaryFontFamily": "Junicode, Times, serif",
 	"secondaryFontSize": "0.8rem",
 	"theme": "modern",

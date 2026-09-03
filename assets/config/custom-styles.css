@@ -15,6 +15,21 @@
 *[rend="underline"] {
     text-decoration: underline !important;
 }
+evt-generic-element.hi[change="#fase-A"] { text-decoration-color: #E67E22 !important; }
+evt-generic-element.hi[change="#fase-B"] { text-decoration-color: #D35400 !important; }
+evt-generic-element.hi[change="#fase-C"] { text-decoration-color: #F06292 !important; }
+evt-generic-element.hi[change="#fase-D"] { text-decoration-color: #880E4F !important; }
+evt-generic-element.hi[change="#strato-E"] { text-decoration-color: #9E9B9B !important; }
+evt-generic-element.hi[change="#fase-F"] { text-decoration-color: #9C27B0 !important; }
+evt-generic-element.hi[change="#fase-G"] { text-decoration-color: #7B1FA2 !important; }
+evt-generic-element.hi[change="#fase-H"] { text-decoration-color: #512DA8 !important; }
+evt-generic-element.hi[change="#strato-I"] { text-decoration-color: #2404B5 !important; }
+evt-generic-element.hi[change="#strato-L"] { text-decoration-color: #BB1515 !important; }
+evt-generic-element.hi[change="#strato-M"] { text-decoration-color: #080277 !important; }
+evt-generic-element.hi[change="#strato-O"] { text-decoration-color: #9B9B9B !important; }
+evt-generic-element.hi[change="#fase-N"] { text-decoration-color: #260F8B !important; }
+evt-generic-element.hi[change="#strato-P"] { text-decoration-color: #6E6A6A !important; }
+evt-generic-element.hi[change="#strato-X"] { text-decoration-color: #00796B !important; }
 
 *[rend="italic"] {
     font-style: italic;
@@ -83,29 +98,30 @@ evt-addition evt-note {
 
 
 
-evt-mod[change="#strato-4"] * {
+evt-mod[change="#strato-E"] * {
     color: rgb(93, 91, 91) !important;
 }
-evt-mod[change="#strato-9"] * {
+evt-mod[change="#strato-O"] * {
     color: rgb(90, 92, 90);
     
 }
-evt-mod[change="#strato-8"] * {
+
+evt-mod[change="#fase-N"] * {
     color: rgb(38, 15, 139) !important;
 }
 
-evt-mod[change="#strato-10"] * {
+evt-mod[change="#strato-I"] * {
     color: rgb(36, 4, 181) !important;
 }
 
-evt-mod[change="#strato-11"] * {
+evt-mod[change="#strato-L"] * {
     color: #bb1515;
     
 }
 
 
 /* Regola definitiva per il contenitore principale del cambiamento */
-evt-mod[change="#strato-12"] * {
+evt-mod[change="#strato-M"] * {
     color: rgb(68, 62, 179) !important;
 }
 
@@ -179,7 +195,7 @@ evt-content-viewer.lem .readingSeparator,
 
 /* 1. ATTIVAZIONE GENERALE */
 /* Mostriamo il cerchio a tutti gli elementi metamark strato 10 */
-.metamark[change="#strato-10"], 
+.metamark[change="#strato-I"], 
 evt-generic-element[rend="circled"] {
     display: inline-block !important; 
     border: 2px solid rgb(36, 4, 181) !important;
@@ -204,23 +220,23 @@ evt-generic-element:has([data-edition="interpretative"]),
 }
 
 /* 3. PROTEZIONE COLORI */
-.metamark[change="#strato-10"] * {
+.metamark[change="#strato-I"] * {
     color: black !important;
 }
 
-/* Eccezione: l'aggiunta dello strato 10 deve restare blu */
-[change="#strato-10"] [change="#strato-10"] {
+/* Eccezione: l'aggiunta dello strato L deve restare blu */
+[change="#strato-I"] [change="#strato-I"] {
     color: rgb(36, 4, 181) !important;
 }
 /* Eccezione: le aggiunte dello strato 10 devono restare blu */
-.metamark[change="#strato-10"] [change="#strato-10"],
-[change="#strato-10"] [change="#strato-10"] {
+.metamark[change="#strato-I"] [change="#strato-I"],
+[change="#strato-I"] [change="#strato-I"] {
     color: rgb(36, 4, 181) !important;
 }
 
 /* Eccezione per le aggiunte dello strato 10: devono restare blu */
-[change="#strato-10"] [change="#strato-10"],
-.metamark[change="#strato-10"] [change="#strato-10"] {
+[change="#strato-I"] [change="#strato-I"],
+.metamark[change="#strato-I"] [change="#strato-I"] {
     color: rgb(36, 4, 181) !important;
 }
  /* Esempio di dichiarazione CSS */
@@ -247,7 +263,7 @@ span[style*="background-color: rgb(36, 4, 181)"] {
     color: black !important; /* O il colore che preferisci */
 }
 /* Mostriamo il cerchio a tutti gli elementi metamark strato 11 */
-.metamark[change="#strato-11"], 
+.metamark[change="#strato-L"], 
 evt-generic-element[rend="square"] {
     display: inline-block !important; 
     border: 2px solid rgb(181, 4, 4) !important;
@@ -272,24 +288,109 @@ evt-generic-element:has([data-edition="interpretative"]),
 }
 
 /* 3. PROTEZIONE COLORI */
-.metamark[change="#strato-11"] * {
+.metamark[change="#strato-L"] * {
     color: black !important;
 }
 
 /* Eccezione: l'aggiunta dello strato 11 deve restare blu */
-[change="#strato-11"] [change="#strato-11"] {
+[change="#strato-L"] [change="#strato-L"] {
     color: rgb(181, 4, 4) !important;
 }
 /* Eccezione: le aggiunte dello strato 11 devono restare blu */
-.metamark[change="#strato-11"] [change="#strato-11"],
-[change="#strato-11"] [change="#strato-11"] {
+.metamark[change="#strato-L"] [change="#strato-L"],
+[change="#strato-L"] [change="#strato-L"] {
     color: rgb(181, 4, 4) !important;
 }
 
 /* Eccezione per le aggiunte dello strato 11: devono restare blu */
-[change="#strato-11"] [change="#strato-11"],
-.metamark[change="#strato-11"] [change="#strato-11"] {
+[change="#strato-L"] [change="#strato-L"],
+.metamark[change="#strato-L"] [change="#strato-L"] {
     color: rgb(181, 4, 4) !important;
 }
 
+
+/* ============================================================
+   PANNELLO "CORRECTION SEQUENCE": letture in linea, ordine
+   cronologico (dalla più antica alla più recente), numero e
+   freccia davanti a ciascuna, numero @seq sui singoli interventi
+   ============================================================ */
+
+/* Le letture diventano flessibili e vanno a capo solo quando serve,
+   invece di stare una sotto l'altra */
+.row > .col {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.row > .col > .d-flex.align-items-center {
+    display: flex !important;
+}
+
+/* Di default ogni elemento dentro .col (es. la parentesi quadra di
+   chiusura dell'apparato) resta all'ultimo posto, il riordino sotto
+   non lo tocca */
+.row > .col > * {
+    order: 999;
+}
+
+/* Riordino dalla più antica (varSeq=1, scritta per ultima nel codice
+   XML) alla più recente, con numero e freccia davanti a ciascuna */
+.row > .col > .d-flex.align-items-center:nth-last-child(1) { order: 1; }
+.row > .col > .d-flex.align-items-center:nth-last-child(1)::before { content: "1 "; }
+
+.row > .col > .d-flex.align-items-center:nth-last-child(2) { order: 2; }
+.row > .col > .d-flex.align-items-center:nth-last-child(2)::before { content: "→ 2 "; }
+
+.row > .col > .d-flex.align-items-center:nth-last-child(3) { order: 3; }
+.row > .col > .d-flex.align-items-center:nth-last-child(3)::before { content: "→ 3 "; }
+
+.row > .col > .d-flex.align-items-center:nth-last-child(4) { order: 4; }
+.row > .col > .d-flex.align-items-center:nth-last-child(4)::before { content: "→ 4 "; }
+
+.row > .col > .d-flex.align-items-center:nth-last-child(5) { order: 5; }
+.row > .col > .d-flex.align-items-center:nth-last-child(5)::before { content: "→ 5 "; }
+
+.row > .col > .d-flex.align-items-center:nth-last-child(6) { order: 6; }
+.row > .col > .d-flex.align-items-center:nth-last-child(6)::before { content: "→ 6 "; }
+
+.row > .col > .d-flex.align-items-center::before {
+    vertical-align: super;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.app-detail-content [seq]:not([n]):not([data-n])::after {
+    content: "[" attr(seq) "]";
+    vertical-align: super;
+    font-size: 0.6em;
+    font-weight: bold;
+    color: #555;
+    margin-left: 0.1em;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.app-detail-content evt-deletion[n]::after,
+.app-detail-content evt-addition[n]::after {
+    content: "[" attr(n) "\2192" attr(seq) "]" !important;
+    vertical-align: super;
+    font-size: 0.6em;
+    font-weight: bold;
+    color: #555;
+    margin-left: 0.1em;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.app-detail-content evt-deletion[data-n]::after,
+.app-detail-content evt-addition[data-n]::after {
+    content: "[" attr(data-n) "\2192" attr(seq) "]" !important;
+    vertical-align: super;
+    font-size: 0.6em;
+    font-weight: bold;
+    color: #555;
+    margin-left: 0.1em;
+    text-decoration: none !important;
+    display: inline-block;
+}
 

@@ -346,8 +346,40 @@
                 <ptr target="#Quaderno2_24r"/>
                 <ptr target="#Quaderno2_16v"/>
                 <ptr target="#Quaderno2_17v"/>
+                <ptr target="#Quaderno1_1v"/>
+                <ptr target="#Quaderno1_2v"/>
+                <ptr target="#Quaderno1_3v"/>
+                <ptr target="#Quaderno1_4v"/>
+                <ptr target="#Quaderno1_5v"/>
+                <ptr target="#Quaderno1_6v"/>
+                <ptr target="#Quaderno1_7v"/>
+                <ptr target="#Quaderno1_8v"/>
+                <ptr target="#Quaderno1_9v"/>
+                <ptr target="#Quaderno1_10v"/>
+                <ptr target="#Quaderno1_11v"/>
+                <ptr target="#Quaderno1_13v"/>
+                <ptr target="#Quaderno1_14v"/>
+                <ptr target="#Quaderno1_15v"/>
+                <ptr target="#Quaderno1_16v"/>
+                <ptr target="#Quaderno1_17v"/>
+                <ptr target="#Quaderno1_27r"/>
+                <ptr target="#Quaderno2_Cop_r2"/>
+                <ptr target="#Quaderno2_Cop_v2"/>
+                <ptr target="#Quaderno2_7v"/>
+                <ptr target="#Quaderno2_8v"/>
+                <ptr target="#Quaderno2_9v"/>
+                <ptr target="#Quaderno2_10v"/>
+                <ptr target="#Quaderno2_11v"/>
+                <ptr target="#Quaderno2_13v"/>
+                <ptr target="#Quaderno2_14v"/>
+                <ptr target="#Quaderno2_15v"/>
+                <ptr target="#Quaderno2_18v"/>
+                <ptr target="#Quaderno2_19v"/>
+                <ptr target="#Quaderno2_20v"/>
+                <ptr target="#Quaderno2_21v"/>
+                <ptr target="#Quaderno2_22v"/>
+                <ptr target="#Quaderno2_23v"/>
             </transpose>
-            
         </listTranspose>
     </standOff>
     <text xml:id="Autos">
@@ -2766,7 +2798,7 @@
                                 <lb n="20"/>ricordo aver portato <mod change="#fase-D"><add place="above">con uno strattone</add></mod> il letto <mod change="#fase-D"><subst><del rend="strikethrough">a met</del> <add place="inline">in mezzo</add></subst></mod> alla camera e</mod></p>
                     </div>
                     <div type="page">
-                        <pb n="27r1" facs="27r.jpg"/>
+                        <pb n="27r1" xml:id="Quaderno1_27r" facs="27r.jpg"/>
                     </div>
                 </body>
                 <back>
@@ -2775,7 +2807,7 @@
             <text n="Autos_2" xml:id="Autos_2">
                 <body>
                     <div type="page">
-                        <pb n="Cop_r2" facs="Cop_r2.jpg"/>
+                        <pb n="Cop_r2" xml:id="Quaderno2_Cop_r2" facs="Cop_r2.jpg"/>
                         <fw place="top_right"><mod change="#fase-C"><add>1911</add></mod></fw>
                         <ab rend="align-center">
                             <mod change="#strato-E"><del rend="strikethrough">Tuscano</del></mod>
