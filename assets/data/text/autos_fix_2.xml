@@ -1236,8 +1236,10 @@
                                     <add place="superimposed" seq="2">re</add></subst>
                             </mod> quella mia baggianata e
                             <app>
-                                <lem varSeq="3"><mod change="#fase-A"><add place="above">mi parve di</add> <subst><del rend="strikethrough">risolsi</del><add place="inline">compre<subst><del rend="overwritten">si</del><add place="superimposed">ndere</add></subst></add></subst></mod></lem>
-                                <rdg varSeq="2"><mod change="#fase-A">compresi</mod></rdg>
+                                <lem varSeq="3"><mod change="#fase-A"><add place="above">mi parve di</add> <add place="inline">compre<subst><del rend="overwritten">si</del><add place="superimposed">ndere</add></subst></add></mod></lem>
+                                <rdg varSeq="2"><mod change="#fase-A">
+                                        <subst><del rend="strikethrough">risolsi</del>
+                                        <add place="inline">compresi</add></subst></mod></rdg>
                                 <rdg varSeq="1"><mod change="#fase-A">risolsi</mod></rdg>
                              </app>
                              <!-- Versione precedente (mod senza app), conservata (rimossi i commenti di lavoro perche' non annidabili):
