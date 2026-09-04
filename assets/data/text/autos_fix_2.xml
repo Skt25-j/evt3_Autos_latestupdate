@@ -864,7 +864,10 @@
                         </p>
                         <p rend="indent"><lb n="6"/>Ma crebbe molto il germoglio di questo cattivo ed esagera-<lb n="7"/>to concetto di me stesso, dal giorno in cui
                             scrissi i primi<lb n="8"/>versi,
-                            <mod change="#fase-A"><subst><del rend="strikethrough">con l’idea di voler fare una poesia</del> <add place="inline">ispirati</add></subst></mod>
+                            <app><lem varSeq="2"><mod change="#fase-A"><subst><del rend="strikethrough">con l’idea di voler fare una poesia</del> <add place="inline">ispirati</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-A">con l’idea di voler fare una poesia</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-A"><subst><del rend="strikethrough">con l’idea di voler fare una poesia</del> <add place="inline">ispirati</add></subst></mod>
+-->
                             senza premedi-<lb n="9"/>tazione dalla paura notturna.
                         </p>
                         <p rend="indent">
@@ -1147,12 +1150,15 @@
                             <lb n="11"/>lo sentiva declinar<mod change="#fase-A"><del rend="strikethrough">e</del></mod> franco
                             <mod change="#fase-A"><subst><del rend="strikethrough">da essere come uno studente</del>
                                     <add place="above">da sembrare un</add></subst> <!-- Non promosso ad app: senza interesse autonomo; la lezione precedente non ha interesse critico autonomo. --></mod> latinista, sentivo
-                            <mod change="#fase-A">
+                            <app><lem varSeq="3"><mod change="#fase-A"><subst><del rend="strikethrough"><add place="above">poi</add></del><add place="above">insomma</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-A"><subst><del rend="strikethrough">anche costui riportare</del><add place="above">poi</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-A">anche costui riportare</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-A">
                                 <subst>
                                     <del rend="strikethrough" seq="1">anche costui riportare</del>
                                     <del rend="strikethrough" seq="2"><add place="above">poi</add></del>
                                     <add place="above" seq="2">insomma</add>
                                 </subst></mod>
+-->
                             <!-- 
                                  <subst seq="2"><del rend="strikethrough"><subst seq="1">
                                  <del rend="strikethrough">sentivo anche lui riportare</del>
@@ -1197,13 +1203,16 @@
                         <p rend="indent">
                             <lb n="1"/>ni le lagrime che sentivo vicine, risolsi<mod change="#fase-A"><add place="above"> di non andare più a scuola,</add></mod> di non dire nulla a casa 
                             <lb n="2"/>se mi domandassero la cagione del mio 
-                            <mod change="#fase-A">
+                            <app><lem varSeq="3"><mod change="#fase-A"><subst><del rend="strikethrough"><add place="inline">presto</add></del><add place="above">sollecito</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-A"><subst><del rend="strikethrough">ratto</del><add place="inline">presto</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-A">ratto</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-A">
                                 <subst><del rend="strikethrough" seq="1"> ratto </del>
                                     <del rend="strikethrough" seq="2">
                                         <add place="inline">presto</add>
                                     </del>
                                     <add place="above" seq="3">sollecito</add></subst>
-                            </mod> 
+                            </mod>
+--> 
                             <!-- Quello sopra rispecchia esattemnete l'esempio TEI <subst seq="2">
                                  <del rend="strikethrough">
                                  <subst seq="1"><del rend="strikethrough">ratto</del>
@@ -1458,12 +1467,15 @@
                                     <add place="above">occupò </add></subst></mod>
                             nuovamente dopo un 
                             <lb n="18"/>anno di vacanza,
-                            <mod change="#fase-A">
+                            <app><lem varSeq="3"><mod change="#fase-A"><subst><del rend="strikethrough"><add place="above">ad</add></del><add place="above">il posto di</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-A"><subst><del rend="strikethrough">come</del><add place="above">ad</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-A">come</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-A">
                                 <subst>
                                     <del rend="strikethrough" seq="1">come</del>
                                     <del rend="strikethrough" seq="2"><add place="above">ad</add></del>
                                     <add place="above" seq="2">il posto di</add>
                                 </subst></mod>
+-->
                             <!-- 
                                  <subst seq="2"><del>
                                  <subst seq="1"><del rend="strikethrough">come</del>
@@ -1879,7 +1891,9 @@
                                 <mod change="#fase-B"><subst><del rend="overwritten">vo</del>
                                         <add place="superimposed">ss</add></subst></mod>i <mod change="#fase-B">
                                     <del rend="strikethrough">di fu</del></mod> maestri, 
-                                <mod change="#fase-B">
+                                <app><lem varSeq="3"><mod change="#fase-B"><subst><del rend="strikethrough"><add place="above">a criticare</add></del><add place="inline">a dirigere e a giudicare.</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-B"><subst><del rend="strikethrough">dirigenti e sentenziosi</del><add place="above">a criticare</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-B">dirigenti e sentenziosi</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-B">
                                     <subst>
                                         <del rend="strikethrough" seq="1">dirigenti e sentenziosi</del>
                                         <del rend="strikethrough" seq="2">
@@ -1888,6 +1902,7 @@
                                         <add place="inline" seq="2">a dirigere e a giudicare.</add>
                                     </subst>
                                 </mod>
+-->
                                 <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">dirigenti</del>
                                      <add place="above">a criticare</add></subst> e senteziosi</del>
                                      <add place="inline">a dirigere e
@@ -2080,26 +2095,35 @@
                                 <mod change="#fase-B"><subst><del rend="strikethrough">tre</del>
                                         <add place="above">quasi due</add></subst></mod> anni, dal novembre 1905
                                 <lb n="10"/>al giugno 1907; l
-                                <mod change="#fase-B"><subst><del rend="strikethrough">a feci</del>
-                                        <add place="above">’incominciai</add> </subst></mod>tre volte arrivando fin al terzo
+                                <app><lem varSeq="2"><mod change="#fase-B"><subst><del rend="strikethrough">a feci</del> <add place="above">’incominciai</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-B">a feci</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-B"><subst><del rend="strikethrough">a feci</del>
+                                        <add place="above">’incominciai</add> </subst></mod>
+-->tre volte arrivando fin al terzo
                                 <lb n="11"/>atto; ora non 
                                 <mod change="#fase-B"><del rend="strikethrough">mi</del></mod>
                                 ho potuto ritrovare che 
                                 <lb n="12"/>
-                                <mod change="#fase-B">
+                                <app><lem varSeq="4"><mod change="#fase-B"><subst><del rend="strikethrough"><add place="inline">uno</add></del><add place="inline">quattro</add></subst></mod></lem><rdg varSeq="3"><mod change="#fase-B"><subst><del rend="strikethrough"><add place="inline">il primo</add></del><add place="inline">uno</add></subst></mod></rdg><rdg varSeq="2"><mod change="#fase-B"><subst><del rend="strikethrough">due</del><add place="inline">il primo</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-B">due</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-B">
                                     <subst>
                                         <del rend="strikethrough" seq="1">due</del>
                                         <del rend="strikethrough" seq="2"><add place="inline" seq="1">il primo</add></del>
                                         <del rend="strikethrough" seq="3"><add place="inline" seq="2">uno</add></del>
                                         <add place="inline" seq="3">quattro</add>
-                                    </subst></mod> <!--  <subst seq="3"><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">due</del>
+                                    </subst></mod>
+--> <!--  <subst seq="3"><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">due</del>
                                      <add place="inline">il primo<lb/></add></subst></del>
                                      <add place="inline">uno</add></subst></del>
                                      <add place="inline">quattro</add></subst>-->atti; 
-                                <mod change="#fase-B">
+                                <app><lem varSeq="2"><mod change="#fase-B"><subst><del rend="strikethrough">col primo ripetuto due v</del><add place="above">con due copie diverse del primo <del rend="strikethrough">e variato</del></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-B">col primo ripetuto due v</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-B">
                                     <subst>
                                         <del rend="strikethrough" seq="1">col primo ripetuto due v</del>
-                                        <add place="above" seq="1">con due copie diverse del primo <del rend="strikethrough" seq="2">e variato</del></add></subst></mod>.
+                                        <add place="above" seq="1">con due copie diverse del primo <del rend="strikethrough" seq="2">e variato</del></add></subst></mod>
+-->.
                                 <lb n="13"/>(La feci certo come la poteva fare <choice>
                                     <sic>un'ingegno</sic>
                                     <corr resp="#TAV">un ingegno</corr></choice> di 
@@ -2319,9 +2343,12 @@
                                 <lb n="15"/>me l’avrebbe negato, e m’avrebbe quel ch’era peggio umiliato dicendo-
                                 <lb n="16"/>mi: «Ancora non è roba pe’ tuoi denti». Lo tenni tre giorni e per
                                 <lb n="17"/>buona fortuna il caro mio <persName ref="#Prefetto_Seminario">prefetto</persName> non se n’accorse. Quello studio <mod change="#fase-D"><add place="above">benché</add></mod> ra-
-                                <lb n="18"/>pido <mod change="#fase-D"><add place="above">e clandestino</add></mod> bastò a farmi comprendere <mod change="#fase-D">
+                                <lb n="18"/>pido <mod change="#fase-D"><add place="above">e clandestino</add></mod> bastò a farmi comprendere <app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">il numero delle sillabe</del><add place="above">in che consistesse il verso,<del rend="strikethrough">o contare</del></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-D">il numero delle sillabe</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-D">
                                     <subst><del rend="strikethrough">il numero delle sillabe</del>
-                                        <add place="above">in che consistesse il verso,<del rend="strikethrough">o contare</del></add></subst></mod> il
+                                        <add place="above">in che consistesse il verso,<del rend="strikethrough">o contare</del></add></subst></mod>
+--> il
                                 <lb n="19"/>ritmo, e gli accenti, e le sillabe e in poco tempo con poco esercizio
                                 <lb n="20"/>riuscii a formarmi un verso che stava bene su piedi (o meglio sulle sillabe).
                                 
@@ -2400,10 +2427,13 @@
                                         <del rend="strikethrough">una tragedia</del>    
                                     </subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> nuov<subst><del rend="overwritten">a</del><add place="superimposed">o</add>   
                                     </subst> <add place="above">e migliore il mio lavoro coll’idea di</add>
-                                    <subst>
+                                    <app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">da dedicarsi</del><add place="inline">finir<subst><del rend="overwritten">si</del><add place="superimposed">lo</add></subst></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-D">da dedicarsi</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough">da dedicarsi</del>
                                         <add place="inline">finir<subst><del rend="overwritten">si</del><add place="superimposed">lo</add></subst></add>
-                                    </subst>il 30 Giugno per
+                                    </subst>
+-->il 30 Giugno per
                                     <lb n="8"/>poterl<subst><del rend="overwritten">a</del><add place="superimposed">o</add>  
                                     </subst></mod> dedicare a un lauto mio amico che in quel giorno <mod change="#fase-D"><add place="above">avrebbe </add>festeggia-
                                     <lb n="9"/><subst><del rend="overwritten">va</del>
@@ -2714,8 +2744,11 @@
                                 <lb n="8"/>quali mi fecero avvezzare al sile<del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">nzio</add> come alla preghiera;
                                 <lb n="9"/>molte volte il <persName ref="#Prefetto_Seminario">prefetto</persName> ammoniva,<mod change="#fase-D"><del rend="strikethrough">qual per buona fortuna</del></mod>
                                 <lb n="10"/>qualche altro compagno e <mod change="#fase-D"><del rend="strikethrough"><add place="above">tali</add></del></mod> aggiungeva talora una postilla
-                                <lb n="11"/>a un articolo del Regolamento Generale:<mod change="#fase-D"><subst><del rend="strikethrough" seq="1">ed io arrivava<lb/>in fondo </del>
-                                        <lb n="12"/><add place="inline" seq="1">ed io il giorno <add place="above" seq="2">dopo ero punito in quella postilla</add> potevo in coscienza</add></subst></mod> assicurare che
+                                <lb n="11"/>a un articolo del Regolamento Generale:<app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">ed io arrivava<lb/>in fondo </del><lb n="12"/><add place="inline">ed io il giorno <add place="above">dopo ero punito in quella postilla</add> potevo in coscienza</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-D">ed io arrivava<lb/>in fondo </mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-D"><subst><del rend="strikethrough" seq="1">ed io arrivava<lb/>in fondo </del>
+                                        <lb n="12"/><add place="inline" seq="1">ed io il giorno <add place="above" seq="2">dopo ero punito in quella postilla</add> potevo in coscienza</add></subst></mod>
+--> assicurare che
                                 <lb n="13"/>non lo sapeva e non avevo sentito nulla: pensavo ad altro!
                                 <lb n="14"/>Talora per ordine del <persName ref="#Rettore_Seminario">Rettore</persName> si <mod change="#fase-D"><add place="above">doveva</add> muta<subst><del rend="overwritten">va</del><add place="superimposed">re</add></subst></mod> o al Refettorio
                                 <lb n="15"/>o in Cappella; <mod change="#fase-D"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">ed</add></subst></mod> io andavo sempre al luogo solito: pensavo ad
@@ -2829,7 +2862,10 @@
                                 <lb n="15"/>cative e inopportune, forse per reminiscenze dell’Iliade male
                                 <lb n="16"/>appropriate.</mod></p>
                         <sp><lg>
-                                <mod change="#fase-C"><lb n="17"/><mod change="#fase-C"><subst><del rend="strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod> <!-- Non sono molto certa della posizione di questo add..-->
+                                <mod change="#fase-C"><lb n="17"/><app><lem varSeq="2"><mod change="#fase-C"><subst><del rend="strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-C">D’ira e di lena e di</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-C"><subst><del rend="strikethrough">D’ira e di lena e di</del><lb n="18"/><add place="inline"><l n="1">D’ira, di lena, di coraggio e forza</l></add></subst></mod>
+--> <!-- Non sono molto certa della posizione di questo add..-->
                                     <lb n="19"/><l n="2">armiamo i polsi; e i brandi arditi e i scudi</l>
                                     <lb n="20"/><l n="3">vibriam diretti e <mod change="#fase-C"><subst><del rend="overwritten">g</del><add place="superimposed">l’</add></subst></mod>egide e gli elmetti</l>
                                 </mod>
