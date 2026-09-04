@@ -1704,9 +1704,9 @@
                                 <lb n="2"/>di merito per incoraggiamento, che avevano 
                                 <mod change="#fase-B">
                                     <add place="above">per</add></mod> gli altri sti-
-                                <lb n="3"/>mati come <app ana="#altVariant">
+                                <lb n="3"/>mati come <app>
                                     <lem varSeq="2"><mod change="#strato-E"><add place="above">ragazzi</add></mod></lem>
-                                    <rdg varSeq="1"><mod change="#fase-B">uominini</mod>
+                                    <rdg varSeq="1" ana="#altVariant"><mod change="#fase-B">uominini</mod>
                                     </rdg>
                                 </app>
                                 <!-- Varianti alternative
@@ -2380,9 +2380,9 @@
                         <p rend="indent">
                             <mod change="#fase-D">
                                 <lb n="1"/>Nella prima 
-                                <app ana="#altVariant">
+                                <app>
                                     <lem varSeq="1"><mod change="#fase-D">edizione</mod></lem>
-                                    <rdg varSeq="2"><mod change="#strato-I">
+                                    <rdg varSeq="2" ana="#altVariant"><mod change="#strato-I">
                                             <add place="above">versione</add>
                                         </mod></rdg>
                                 </app>
