@@ -1995,7 +1995,46 @@
                         <fw place="top_right" type="pageNum"><mod change="#fase-C"><add>17</add></mod></fw>
                         <p rend="indent">
                             <mod change="#fase-B"><lb n="1"/>Tornato a casa nel mese di vacanza, 
-                                <mod change="#fase-B">
+                                <app>
+                                    <lem varSeq="6"><mod change="#fase-B">
+                                            <subst><del rend="strikethrough">la mia <lb n="2"/> mamma</del>
+                                            <add place="above">la mia cara</add><add place="inline">mamma</add></subst>
+                                        </mod> <note resp="#TAV" type="critical">Il <hi rend="italic">la</hi> della quinta lezione è soprascritto al <hi rend="italic">non</hi> della prima: l’A. deve aver deciso, poi, di
+cancellare l’articolo isolato dall’aggettivo possessivo e inserire in interlinea superiore, per maggiore
+chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
+
+                                    </lem>
+                                    <rdg varSeq="5"><mod change="#fase-B">
+                                            <add place="above">la</add>
+                                            mia <lb n="2"/> mamma
+                                        </mod>
+
+                                    </rdg>
+                                    <rdg varSeq="4"><mod change="#fase-B">
+                                            <subst><del rend="strikethrough">ebbi la fortuna</del>
+                                            <add place="inline">mia <lb n="2"/> mamma</add></subst>
+                                        </mod>
+                                    </rdg>
+                                    <rdg varSeq="3">
+<mod change="#fase-B">
+                                            <subst><del rend="strikethrough">non frucai tutte le casse di libri antichi</del>
+                                            <add place="inline">ebbi la fortuna</add></subst>
+</mod>
+                                    </rdg>
+                                    <rdg varSeq="2"><mod change="#fase-B">
+                                            non frucai tutte
+                                            <subst><del rend="strikethrough">le librerie</del>
+                                            <add place="inline">le casse
+                                            di libri antichi </add>  </subst>
+                                    </mod>
+                                    </rdg>
+                                    <rdg varSeq="1"> <mod change="#fase-B">
+                                            non frucai tutte le librerie
+                                    </mod>
+                                    </rdg>
+                                </app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-B">
                                     <del rend="strikethrough" seq="6">
                                         <subst>
                                             <del rend="overwritten" seq="5">non</del>
@@ -2015,6 +2054,7 @@
                                     <add place="above" seq="6">la mia cara</add>
                                     <add place="inline" seq="4"><persName ref="#Anna_Riedi">mamma</persName></add>
                                 </mod>
+-->
                                 <!--  <mod change="#fase-B">
                                      <subst><del seq="3">non</del>
                                      <del rend="strikethrough" seq="1">frucai tutte le librerie</del>
