@@ -3402,8 +3402,11 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="2"/>11<hi rend="apice">o</hi> del Purg. imparai tutto il Canto 23° del Paradiso e il <mod change="#fase-D"><subst><del rend="strikethrough">21
                                             <lb n="3"/> del Purgatorio</del><add place="inline">2<hi rend="apice">o</hi> dell’Inferno</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. -->; e ne <mod change="#fase-D"><subst><del rend="strikethrough">pre</del> <add place="inline">sentii</add></subst></mod> un affetto
-                                <lb n="4"/>grande e attraente. Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place="inline">-</add>
-                                    <lb n="5"/><subst><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod> la traduzione de l’Iliade del Monti
+                                <lb n="4"/>grande e attraente. <mod change="#fase-D"><subst><add place="inline">Quell’Ottobre mi capitò e mi piacque immensa-</add><lb n="5"/><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod>
+<!-- Versione precedente, conservata:
+Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place="inline">-</add>
+                                    <lb n="5"/><subst><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod>
+--> la traduzione de l’Iliade del Monti
                                 <lb n="6"/>e la lessi tutta: Boni mi disse che non ci avrei capito nulla, così
                                 <lb n="7"/><mod change="#fase-D"><del rend="strikethrough">però</del></mod>non fù, <mod change="#fase-D"><subst><del rend="strikethrough">chè</del> <add place="inline">perchè</add></subst></mod> se non capii l’immensità del poema, sen-
                                 <lb n="8"/>tii almeno (mi parve) quanto il Monti sia più ammira-
@@ -3519,7 +3522,13 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="5"/>insieme e la vita. <mod change="#fase-F"><subst><del rend="strikethrough">Da <del rend="strikethrough">l</del> la famiglia era già tre anni che vivevo
                                             <lb n="6"/>lontano</del> <add place="inline">Mi ricordo</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. --> che il viaggio fu assai mesto quantunque fossi
-                                <lb n="7"/> in una <mod change="#fase-F">
+                                <lb n="7"/> <app>
+<lem varSeq="3"><mod change="#fase-F">in una ampia giardiniera dove alcuni piccoli <subst><del rend="strikethrough"><add place="above">colleghi di viaggio</add></del><add place="above">colleghi di viaggio e di <subst><del rend="strikethrough"><gap unit="char" quantity="2"/></del><add place="inline">strada</add></subst></add></subst>ri<lb n="8"/>devano saporitamente</mod></lem>
+<rdg varSeq="2"><mod change="#fase-F">in una <add place="above" xml:id="add_ampia">ampia</add> giardiniera <del rend="strikethrough" xml:id="del_grande">grande</del> <substJoin target="#add_ampia #del_grande"/> dove <subst><del rend="strikethrough">alcuni</del><del rend="strikethrough"><add place="above">molti</add></del><add place="above">alcuni</add></subst> <add place="above">dei più</add> piccoli<del rend="strikethrough">ssimi</del> <subst><add place="above">colleghi di viaggio</add> <del rend="strikethrough">Seminaristi</del></subst> ri<lb n="8"/>devano <add place="above">saporitamente</add></mod></rdg>
+<rdg varSeq="1"><mod change="#fase-F">in una giardiniera grande dove alcuni piccolissimi Seminaristi ri<lb n="8"/>devano</mod></rdg>
+</app>
+<!-- Versione precedente (mod senza app), conservata:
+in una <mod change="#fase-F">
                                     in una 
                                     <add place="above" xml:id="add_ampia" seq="2">ampia</add>
                                     giardiniera
@@ -3550,7 +3559,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     ri-
                                     <lb n="8"/>davano
                                     <add place="above" seq="2">saporitamente</add>
-                                </mod> <!-- <add place="above" xml:id="add_ampia">ampia</add> giardiniera <del rend="strikethrough" xml:id="del_grande">grande</del> <substJoin target="#add_ampia #del_grande" seq="1"/> dove <subst seq="1"><del rend="strikethrough"><subst><del rend="strikethrough">alcuni</del><add place="above">molti</add></subst></del> <add place="above">alcuni</add></subst> <add place="above" seq="1">dei più</add> piccoli<del rend="strikethrough" seq="1">ssimi</del> <subst><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">Seminaristi</del> <add place="above">colleghi di viaggio</add></subst></del> <add place="above">colleghi di viaggio e di <subst><del rend="strikethrough"><gap unit="char" quantity="2"/></del><add place="above">strada</add></subst></add></subst> ri-
+                                </mod>
+--> <!-- <add place="above" xml:id="add_ampia">ampia</add> giardiniera <del rend="strikethrough" xml:id="del_grande">grande</del> <substJoin target="#add_ampia #del_grande" seq="1"/> dove <subst seq="1"><del rend="strikethrough"><subst><del rend="strikethrough">alcuni</del><add place="above">molti</add></subst></del> <add place="above">alcuni</add></subst> <add place="above" seq="1">dei più</add> piccoli<del rend="strikethrough" seq="1">ssimi</del> <subst><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">Seminaristi</del> <add place="above">colleghi di viaggio</add></subst></del> <add place="above">colleghi di viaggio e di <subst><del rend="strikethrough"><gap unit="char" quantity="2"/></del><add place="above">strada</add></subst></add></subst> ri-
                                      <lb n="8"/>davano <add place="above">saporitamente</add>-->
                                      
                              a<mod change="#fase-F"><del rend="strikethrough">l</del></mod> le spalle <mod change="#fase-F"><subst><del rend="strikethrough">a</del> <add place="inline">di</add></subst></mod> un altro assai barbagianni che mostrava
