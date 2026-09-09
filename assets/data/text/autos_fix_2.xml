@@ -3076,10 +3076,13 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="9"/>ogni male. <mod change="#fase-D"><subst><del rend="strikethrough">La col</del> <add place="inline">Ora</add></subst></mod> con la mente lucida vedo che <mod change="#fase-D"><subst><del rend="strikethrough">neppure</del> <add place="inline">non solo</add></subst></mod>
                                 <lb n="10"/>quei prefetti vestiti di nero, ma ogni altro secolare e ateo avrebbero
                                 <lb n="11"/>fatto lo stesso. La disciplina era comune ed io rimaneva davanti
-                                <lb n="12"/>a lei come il ramo secco al vento, <mod change="#fase-D">
+                                <lb n="12"/>a lei come il ramo secco al vento, <app><lem varSeq="3"><mod change="#fase-D">il quale piuttosto si rompe che piegarsi.</mod></lem><rdg varSeq="2"><mod change="#fase-D">il quale tutte le erbe piega <add place="above">e non rompe</add>, ma rompe <add place="above">e non piega</add> il ramo secco</mod></rdg><rdg varSeq="1"><mod change="#fase-D"><subst><del rend="strikethrough">che non</del> <add place="inline">il quale</add></subst> tutte le erbe piega, ma rompe il ramo secco</mod></rdg></app>
+<!-- Versione precedente (due mod senza app), conservata:
+<mod change="#fase-D">
                                     <subst><del rend="strikethrough">che non</del> <add place="inline">il quale</add></subst></mod> <mod change="#fase-D"><subst><del rend="strikethrough" seq="2">tutte le erbe pie-
                                             <lb/>ga <add place="above" seq="1">e non rompe</add>, ma rompe <add place="above" seq="1">e non piega</add> il ramo secco</del>
-                                        <lb n="13"/><add place="inline" seq="2">piuttosto si rompe che piegarsi.</add></subst></mod></mod></p>
+                                        <lb n="13"/><add place="inline" seq="2">piuttosto si rompe che piegarsi.</add></subst></mod>
+--></mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="14"/>Qualche moralista me l’attribuirà a cattiveria, ma io per questo non
                                 <lb n="15"/><app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">mi sentii cattivo</del><add place="inline"> me ne <subst><del rend="strikethrough">lagno</del> <add place="inline">dolgo</add></subst></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-D">mi sentii cattivo</mod></rdg></app>
 <!-- Versione precedente (mod senza app), conservata:
