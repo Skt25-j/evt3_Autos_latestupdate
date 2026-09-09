@@ -3076,11 +3076,17 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="10"/>quei prefetti vestiti di nero, ma ogni altro secolare e ateo avrebbero
                                 <lb n="11"/>fatto lo stesso. La disciplina era comune ed io rimaneva davanti
                                 <lb n="12"/>a lei come il ramo secco al vento, <mod change="#fase-D">
-                                    <subst><del rend="strikethrough">che non</del> <add place="inline">il quale</add></subst></mod> <mod change="#fase-D"><subst><del rend="strikethrough" seq="2">tutte le erbe pie-
+                                    <subst><del rend="strikethrough">che non</del> <add place="inline">il quale</add></subst></mod> <app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">tutte le erbe pie-<lb/>ga <add place="above">e non rompe</add>, ma rompe <add place="above">e non piega</add> il ramo secco</del><lb n="13"/><add place="inline">piuttosto si rompe che piegarsi.</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-D">tutte le erbe pie-<lb/>ga <add place="above">e non rompe</add>, ma rompe <add place="above">e non piega</add> il ramo secco</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-D"><subst><del rend="strikethrough" seq="2">tutte le erbe pie-
                                             <lb/>ga <add place="above" seq="1">e non rompe</add>, ma rompe <add place="above" seq="1">e non piega</add> il ramo secco</del>
-                                        <lb n="13"/><add place="inline" seq="2">piuttosto si rompe che piegarsi.</add></subst></mod></mod></p>
+                                        <lb n="13"/><add place="inline" seq="2">piuttosto si rompe che piegarsi.</add></subst></mod>
+--></mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="14"/>Qualche moralista me l’attribuirà a cattiveria, ma io per questo non
-                                <lb n="15"/><mod change="#fase-D"><subst><del rend="strikethrough" seq="1">mi sentii cattivo</del><add place="inline" seq="1"> me ne <subst><del rend="strikethrough" seq="2">lagno</del> <add place="inline" seq="2">dolgo</add></subst></add></subst></mod>.</mod></p>
+                                <lb n="15"/><app><lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">mi sentii cattivo</del><add place="inline"> me ne <subst><del rend="strikethrough">lagno</del> <add place="inline">dolgo</add></subst></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-D">mi sentii cattivo</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-D"><subst><del rend="strikethrough" seq="1">mi sentii cattivo</del><add place="inline" seq="1"> me ne <subst><del rend="strikethrough" seq="2">lagno</del> <add place="inline" seq="2">dolgo</add></subst></add></subst></mod>
+-->.</mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="16"/><mod change="#fase-D"><subst><del rend="strikethrough">Così p</del> <add place="inline">Tra</add></subst></mod> queste tempeste passai il 2<hi rend="apice">o</hi> anno di Semina-
                                 <lb n="17"/>rio, <mod change="#fase-D"><del rend="strikethrough">e</del> <subst><del rend="overwritten">l</del><add place="superimposed">m</add></subst></mod>olto <mod change="#fase-D">
                                     
@@ -3208,7 +3214,9 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="10"/>di quella misera parte; e mi balenava spesso tetramente nell’im-
                                 <lb n="11"/>maginazione un certo risolino sardonico di taluno e mi pareva
                                 <lb n="12"/> di udire ancora un commento lepido fatto da un presente. <mod change="#fase-D">
-                                    <subst>
+                                    <app><lem varSeq="3"><mod change="#fase-D"><subst><del rend="strikethrough"><lb n="13"/><add place="inline">Per</add></del><add place="inline">E</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">Poveri</del><lb n="13"/><add place="inline">Per</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-D">Poveri</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough" seq="1">Poveri</del>
                                         <del rend="strikethrough" seq="2">
                                             <lb n="13"/>
@@ -3216,6 +3224,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                         </del>
                                         <add place="inline" seq="2">E</add>
                                     </subst>
+-->
                                     <!-- <subst><del rend="strikethrough"><subst seq="1"><del rend="strikethrough" >Poveri</del>
                                          <lb n="13"/><add place="inline">Per</add></subst></del> <add place="inline">E</add></subst>-->
                                  </mod> dire che avanti di leggerla io <mod change="#fase-D"><subst><del rend="strikethrough">cr</del> <add place="inline">speravo</add></subst></mod> un felice successo!
@@ -3402,7 +3411,10 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="17"/>tradotta dal Pindemonte, e mi provai a leggere ma non
                                 <lb n="18"/>seguitai l’<mod change="#fase-D"><subst><del rend="strikethrough">Iliade</del> <add place="inline">Eneide</add></subst></mod> tradotta <mod change="#fase-D"><subst><del rend="overwritten">e</del> <add place="superimposed">dal</add></subst></mod> Caro; di più imparai
                                 <lb n="19"/>il Canto di Ugolino e lessi 6 o 7 tragedie dell’Alfieri, e molte Satire <mod change="#fase-D"><add place="below">del Giusti</add></mod>.
-                                <lb n="20"/><mod change="#fase-D"><subst><del rend="strikethrough">Nel totale a</del> <add place="inline">Di prosa</add></subst></mod> <mod change="#fase-D"><subst><del rend="strikethrough">avevo letto</del> <add place="above">lessi</add></subst></mod> i Promessi Sposi due volte</mod></p>
+                                <lb n="20"/><app><lem varSeq="3"><mod change="#fase-D">Di prosa <subst><del rend="strikethrough">avevo letto</del> <add place="above">lessi</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">Nel totale a</del> <add place="inline">Di prosa</add></subst> avevo letto</mod></rdg><rdg varSeq="1"><mod change="#fase-D">Nel totale a avevo letto</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-D"><subst><del rend="strikethrough">Nel totale a</del> <add place="inline">Di prosa</add></subst></mod> <mod change="#fase-D"><subst><del rend="strikethrough">avevo letto</del> <add place="above">lessi</add></subst></mod>
+--> i Promessi Sposi due volte</mod></p>
                         
                         <!-- qui ci va il testo a fila, le lettere del Leopardi e del Giusti, il Cuore e i Bozzetti di De Amicis, il Fieramosca del D’Azeglio, il Marco Visconti del Grossi; i Ricordi di Dupré, alcune Commedie del Goldoni. L’antologie del Bruni, del Mondi, del Martini.-->
                         
@@ -3537,13 +3549,16 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="12"/>e notte e che m’avevano portato <mod change="#fase-F"><add place="above">nel cuore</add></mod> la guerra e la pace<mod change="#fase-F"><subst><add place="inline">.</add><del rend="strikethrough">a un tempo</del></subst></mod> Oltre
                                 <lb n="13"/>essere mesto <mod change="#fase-F"><add place="above">il viaggio</add></mod> mi parve anche <mod change="#fase-F"><subst><del rend="strikethrough">no</del> <add place="inline">lungo</add></subst></mod> e noioso. <mod change="#fase-F"><subst><del rend="strikethrough">Final</del> <add place="inline">Giunto</add></subst></mod> al Seminario,
                                 <lb n="14"/><mod change="#fase-F"><del rend="strikethrough">di bella entratura e di grande effetto,</del></mod> vidi con <mod change="#fase-F">
-                                    <subst>
+                                    <app><lem varSeq="3"><mod change="#fase-F"><subst><del rend="strikethrough"><add place="inline">dispi</add></del><add place="inline">gioia</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-F"><subst><del rend="strikethrough">gioia</del><add place="inline">dispi</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-F">gioia</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough" seq="1">gioia</del>
                                         <del rend="strikethrough" seq="2">
                                             <add place="inline">dispi</add>
                                         </del>
                                         <add place="inline" seq="2">gioia</add>
                                     </subst>
+-->
                                     <!--    <subst><del rend="strikethrough"><subst><del rend="strikethrough">gioia</del> <add place="inline">dispi</add></subst></del> <add place="inline">gioia</add></subst>-->
                                 </mod> i nuovi
                                 <lb n="15"/>superiori, dai quali mi speravo un apprezzamento felice de<mod change="#fase-F"><del rend="strikethrough">l</del></mod> le mie incli-
@@ -3608,9 +3623,15 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         <fw place="top_right" type="pageNum"><mod change="#fase-F">53</mod></fw>
                         <p rend="indent"><mod change="#fase-F"><lb n="1"/>pediniera. Delle torpediniere anzi <mod change="#fase-F"><subst><del rend="strikethrough">fu amatissimo</del> <add place="above">era esageratamente entusiasta</add></subst></mod>, e di esse<mod change="#fase-F"><del rend="strikethrough">re</del></mod> più
                                 <lb n="2"/>volte <mod change="#fase-F"><subst><del rend="strikethrough">ci</del> <add place="inline">e</add></subst></mod> a lungo ci parlò, con la convinzione di <mod change="#fase-F"><del rend="strikethrough">non</del> <subst><del rend="overwritten">raccontarne</del> <add place="superimposed">parlarne</add></subst></mod>
-                                <lb n="3"/>per la 1<hi rend="apice">a</hi> volta (<mod change="#fase-F"><subst><del rend="strikethrough" seq="1">anche buona</del> <add place="above" seq="1"><del rend="strikethrough" seq="2">per la sua</del> tenace</add></subst></mod> memoria!) e <mod change="#fase-F"><add place="above">con l'intenzione di</add> mostra<subst><del rend="overwritten">ndoci</del><add place="superimposed">rci</add></subst> <subst><del rend="strikethrough">uno di quei</del><add place="above">i bei</add></subst></mod> frutti
+                                <lb n="3"/>per la 1<hi rend="apice">a</hi> volta (<app><lem varSeq="2"><mod change="#fase-F"><subst><del rend="strikethrough">anche buona</del> <add place="above"><del rend="strikethrough">per la sua</del> tenace</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-F">anche buona</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-F"><subst><del rend="strikethrough" seq="1">anche buona</del> <add place="above" seq="1"><del rend="strikethrough" seq="2">per la sua</del> tenace</add></subst></mod>
+--> memoria!) e <mod change="#fase-F"><add place="above">con l'intenzione di</add> mostra<subst><del rend="overwritten">ndoci</del><add place="superimposed">rci</add></subst> <subst><del rend="strikethrough">uno di quei</del><add place="above">i bei</add></subst></mod> frutti
                                 <lb n="4"/>ch'aveva colto da' suoi grandi e lunghi viaggi. I punti di merit<mod change="#fase-F"><subst><del rend="overwritten">i</del> <add place="superimposed">o</add></subst></mod>
-                                <lb n="5"/>poi io credo, e tutti gli scolari <mod change="#fase-F"><subst><del rend="strikethrough">erano concordi</del> <add place="above">d'allora <del rend="strikethrough" xml:id="del_era">era</del> <add place="above" xml:id="add_lo">lo</add> credono</add></subst> <substJoin target="#del_era #add_lo"/></mod>, che le sognasse la notte e
+                                <lb n="5"/>poi io credo, e tutti gli scolari <app><lem varSeq="2"><mod change="#fase-F"><subst><del rend="strikethrough">erano concordi</del> <add place="above">d'allora <del rend="strikethrough" xml:id="del_era">era</del> <add place="above" xml:id="add_lo">lo</add> credono</add></subst> <substJoin target="#del_era #add_lo"/></mod></lem><rdg varSeq="1"><mod change="#fase-F">erano concordi</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-F"><subst><del rend="strikethrough">erano concordi</del> <add place="above">d'allora <del rend="strikethrough" xml:id="del_era">era</del> <add place="above" xml:id="add_lo">lo</add> credono</add></subst> <substJoin target="#del_era #add_lo"/></mod>
+-->, che le sognasse la notte e
                                 <lb n="6"/>che la mattina invece di metterli <mod change="#fase-F"><subst><del rend="overwritten">a</del> <add place="superimposed">al</add></subst></mod> lotto, l<mod change="#fase-F"><subst><del rend="overwritten">o</del> <add place="superimposed">i</add></subst></mod> mettesse a prova de<mod change="#fase-F"><del rend="strikethrough">l</del></mod> la
                                 <lb n="7"/>nostra pazienza per veder se usciva (dai suoi limiti) <mod change="#fase-F"><add place="above">con qualche terno d'accidenti o meglio con qualche <subst><del rend="strikethrough">tombol</del> <add place="inline">cinquina</add></subst></add></mod>. In quanto a questo
                                 <lb n="8"/>particolare però <mod change="#fase-F"><subst><del rend="strikethrough">n</del> <add place="inline">è</add></subst></mod> scusabile, perché l’aveva comune con molti o qua-
@@ -3625,11 +3646,14 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="17"/>mancare involontario<mod change="#fase-F"><subst><add place="inline">.</add> <del rend="strikethrough">e</del></subst></mod></mod></p>
                         <p rend="indent"><mod change="#fase-F"><lb n="18"/>In conclusione tra un superiore e l’altro esisteva la più perfetta
                                 <lb n="19"/>antitesi, e l’uno in tutto e per tutto poteva <mod change="#fase-F">
-                                    <subst>
+                                    <app><lem varSeq="3"><mod change="#fase-F"><subst><del rend="strikethrough"><add place="inline">stare</add></del><add place="inline">essere</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-F"><subst><del rend="strikethrough">anda</del><add place="inline">stare</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-F">anda</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough" seq="1">anda</del>
                                         <del rend="strikethrough" seq="2"><add place="inline">stare</add></del>
                                         <add place="inline" seq="2">essere</add>
-                                    </subst> <!-- 
+                                    </subst>
+--> <!-- 
                                          <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">anda</del> <add place="inline">stare</add></subst></del> <add place="inline">essere</add></subst>-->
                                  </mod> antipo-
                                 <lb n="20"/>de a l’altro.</mod></p> 
@@ -3655,7 +3679,10 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="7"/>gico era severo, spesso tollerante; amava molto gli scola-
                                 <lb n="8"/>ri diligenti a godeva <mod change="#fase-G"><del rend="strikethrough">quando s'accorgeva</del></mod> a un compito
                                 <lb n="9"/>ben fatto; nei punti di merito era spesso trascurato
-                                <lb n="10"/>e qualche volta ingiusto. <mod change="#fase-G"><subst><del seq="1" rend="strikethrough">Di essere</del> <add place="inline">Era <subst><del rend="strikethrough" seq="2">esperto</del> <add place="above" seq="2">versato</add></subst></add></subst></mod> ne la mu-
+                                <lb n="10"/>e qualche volta ingiusto. <app><lem varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">Di essere</del> <add place="inline">Era <subst><del rend="strikethrough">esperto</del> <add place="above">versato</add></subst></add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-G">Di essere</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-G"><subst><del seq="1" rend="strikethrough">Di essere</del> <add place="inline">Era <subst><del rend="strikethrough" seq="2">esperto</del> <add place="above" seq="2">versato</add></subst></add></subst></mod>
+--> ne la mu-
                                 <lb n="11"/>sica e aveva una voce <mod change="#fase-G"><add place="above">d’</add></mod>angelo.</mod></p>
                         <p rend="indent"><mod change="#fase-G"><lb n="12"/>Ebbi a <mod change="#fase-G"><subst><del rend="strikethrough">scuola</del> <add place="above">maestro</add></subst></mod> di Francese e di Religione il <choice>
                                     <abbr>Canco</abbr>
@@ -3675,11 +3702,14 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         <p rend="indent"><mod change="#fase-G"><lb n="1"/>L’Apologia era del Ballerini, scritta con arte e con scienza,
                                 <lb n="2"/>facile e divertente ai volenterosi, noiosa e difficile agli
                                 <lb n="3"/>indifferenti. <mod change="#fase-G">
-                                    <subst>
+                                    <app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="above">Tra questi</add></del><add place="above">Allora</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">In quella</del><add place="above">Tra questi</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G">In quella</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough" seq="1">In quella</del>
                                         <del rend="strikethrough" seq="2"><add place="above">Tra questi</add></del>
                                         <add place="above" seq="2">Allora</add>
-                                    </subst> <!-- 
+                                    </subst>
+--> <!-- 
                                          <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In quella</del> <add place="above">Tra questi</add></subst></del> <add place="above">Allora</add></subst>-->
                                      appunto <add place="above" seq="3">io</add></mod> era tra questi ultimi.</mod></p> <!-- appunto è in tutte le lezioni, dovrei dirlo-->
                     </div>
@@ -3977,13 +4007,16 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         <p rend="indent"><mod change="#fase-G"><lb n="13"/>Il Rettore era un baggiano; il prefetto era tollerante.
                                 <lb n="14"/><mod change="#fase-G"><subst><del rend="strikethrough">Io</del> <add place="inline">Avevo</add></subst></mod> per camera una celletta proprio simpatica;
                                 <lb n="15"/>grande, pulita, <mod change="#fase-G"><add place="above">con la finestra inferriata,</add></mod> rispondeva <mod change="#fase-G">
-                                    <subst>
+                                    <app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="inline">dentro</add></del><add place="above">in</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">sopra</del><add place="inline">dentro</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G">sopra</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough" seq="1">sopra</del>
                                         <del rend="strikethrough" seq="2">
                                             <add place="inline">dentro</add>
                                         </del>
                                         <add place="above" seq="2">in</add>
                                     </subst>
+-->
                                     <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">sopra</del> <add place="inline">dentro</add></subst></del> <add place="above">in</add></subst>-->
                                 </mod> un <mod change="#fase-G"><subst><del rend="strikethrough">colon
                                             <lb n="16"/>-no</del> <add place="inline">cortile</add></subst></mod> <mod change="#fase-G"><subst><del rend="strikethrough">fatto</del> <add place="inline">a</add></subst></mod> colonne e <mod change="#fase-G"><subst><del rend="strikethrough">con nel mezzo</del> <add place="inline">con dentro</add></subst></mod>
@@ -4037,13 +4070,16 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         <pb n="21r2" xml:id="Quaderno2_21r" facs="21r2.jpg"/>
                         <note resp="#TUS"><ab><mod change="#strato-O">Importante per la psicanalisi</mod></ab></note> <fw place="top_right" type="pageNum"><mod change="#fase-G">63</mod></fw>
                         <p rend="indent"><mod change="#fase-G"><lb n="1"/>mi <mod change="#fase-G">
-                                    <subst>
+                                    <app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="above">ritrovava</add></del><add place="above">traeva</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">trovavo</del><add place="above">ritrovava</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G">trovavo</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<subst>
                                         <del rend="strikethrough" seq="1">trovavo</del>
                                         <del rend="strikethrough" seq="2">
                                             <add place="above">ritrovava</add>
                                         </del>
                                         <add place="above" seq="2">traeva</add>
                                     </subst>
+-->
                                     <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">trovavo</del> <add place="above">ritrovava</add></subst></del> <add place="inline">traeva</add></subst>-->
                                 </mod> in un modo così diverso,<mod change="#fase-G"><mod change="#fase-G"><subst>
                                             <del rend="strikethrough" seq="1">da la mia</del>
@@ -4060,13 +4096,16 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                      <add place="above" seq="2"><lb n="2"/>tornava</add>
                                      </subst></mod>
                                      tra i miei neri compagni</mod>-->
-                                <lb n="3"/>tornavo alla rabbia <choice resp="#TAV"><sic>alla</sic><corr>all'</corr></choice><mod change="#fase-G"><subst>
+                                <lb n="3"/>tornavo alla rabbia <choice resp="#TAV"><sic>alla</sic><corr>all'</corr></choice><app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="inline">dispregiata</add></del><add place="inline"><lb n="2"/>improperii</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough"> desider</del><add place="inline">dispregiata</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G"> desider</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-G"><subst>
                                         <del rend="strikethrough" seq="1"> desider</del>
                                         <del rend="strikethrough" seq="2">
                                             <add place="inline">dispregiata</add>
                                         </del>
                                         <add place="inline" seq="2"><lb n="2"/>improperii</add>
                                     </subst></mod>
+-->
                                 <lb n="4"/>del mio stato, e alcuna volta 
                                 <hi rend="underline" change="#strato-O">a la tentazione di toglier-
                                     <lb n="5"/>mi la vita.</hi></mod></p>
@@ -4111,13 +4150,16 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <substJoin target="#del_eci #add_atti #del_una #add_alcuni"/>    
                                 </mod> versi nel
                                 <lb n="3"/>metro di Courmayeur Carducciana per
-                                <mod change="#fase-G"><subst>
+                                <app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="inline">il giorno</add></del><lb n="4"/><add place="inline">la Prima Comunione</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">il g</del><add place="inline">il giorno</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G">il g</mod></rdg></app>
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-G"><subst>
                                         <del rend="strikethrough" seq="1">il g</del>
                                         <del rend="strikethrough" seq="2">
                                             <add place="inline">il giorno</add>
                                         </del><lb n="4"/>
                                         <add place="inline" seq="2">la Prima Comunione</add>
-                                    </subst></mod> d’un mio collega, li portai
+                                    </subst></mod>
+--> d’un mio collega, li portai
                                 <lb n="5"/>a far vedere al dotto Borghi con la speranza di sentir-
                                 <lb n="6"/>mi lodare.</mod></p>
                         <p rend="indent"><mod change="#fase-G"><lb n="7"/>Invece <mod change="#fase-G"><del rend="strikethrough" xml:id="del_conobbi">conobbi che</del> il <add place="above">dotto</add> maestro <add place="above" xml:id="add_nelsuo">nel suo grande gusto</add> <del rend="strikethrough" xml:id="del_uso">uso ai verbi di 
