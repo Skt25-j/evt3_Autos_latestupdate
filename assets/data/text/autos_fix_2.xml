@@ -4162,7 +4162,13 @@ in una <mod change="#fase-F">
                                 <lb n="8"/><mod change="#fase-G"><subst><del rend="strikethrough">pace, de la tranquillità</del> <add place="inline">giovinezza!</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. --></mod></p>
                         <p rend="indent"><mod change="#fase-G">
-                                <mod change="#fase-G"><subst seq="2">
+                                <app>
+<lem varSeq="3"><mod change="#fase-G"><subst> <del rend="strikethrough"><lb n="9"/> Questo stato terribile che io solea tenere represso <lb n="10"/>  e nascosto <lb n="11"/>rompeva dal profondo del mio animo risposte ardi-<lb n="12"/>te al prefetto</del> <add place="inline">Quest’orribile stato interno </add></subst></mod></lem>
+<rdg varSeq="2"><mod change="#fase-G"><lb n="9"/> Questo stato terribile che io solea tenere represso <lb n="10"/>e nascosto <subst><del rend="strikethrough">mi rendeva scontro <gap unit="char" quantity="3"/>coi compagni <lb n="11"/>spesso </del> <add place="inline"> rompeva dal profondo del mio animo risposte ardi-<lb n="12"/>te al prefetto </add></subst></mod></rdg>
+<rdg varSeq="1"><mod change="#fase-G"><lb n="9"/> Questo stato terribile che io solea tenere represso <lb n="10"/>e nascosto mi rendeva scontro <gap unit="char" quantity="3"/>coi compagni <lb n="11"/>spesso </mod></rdg>
+</app> era <lb n="13"/>la cagione di tutte le mie scapataggini, di <lb n="14"/>tutte le mie svogliatezze: 
+<!-- Versione precedente (mod senza app), conservata:
+<mod change="#fase-G"><subst seq="2">
                                         <del rend="strikethrough seq-transient" seq="2" n="1"><lb n="9"/>Questo stato terribile che io solea tenere represso
                                             <lb n="10"/>e nascosto
                                             <subst seq="1"><del rend="strikethrough" seq="1"> mi rendeva sconstro <gap unit="char" quantity="3"/>coi compagni
@@ -4172,8 +4178,9 @@ in una <mod change="#fase-F">
                                                     <lb n="12"/>te al prefetto</add></subst></del>
                                         <add place="inline" seq="2">Quest’orribile stato interno era la
                                             <lb n="13"/>cagione di tutte le mie scapataggini, di
-                                            <lb n="14"/>tutte le mie svogliatezze:</add> <!--Non si vede l'esterno, il problema è che non si capisce cosa sostituisce rompeva -->
-                                    </subst></mod>vivevo <mod change="#fase-G"><subst><del rend="strikethrough">una condi</del>
+                                            <lb n="14"/>tutte le mie svogliatezze:</add> 
+                                    </subst></mod>
+-->vivevo <mod change="#fase-G"><subst><del rend="strikethrough">una condi</del>
                                         <lb n="15"/><add place="inline">una vita</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. --> troppo <mod change="#fase-N"><add place="above">scomposta, troppo</add></mod> anormale per un ragazzo del-
                                 <lb n="16"/>le mie in<mod change="#fase-G"><subst><del rend="overwritten">d</del><add place="superimposed">cl</add></subst></mod>inazioni, talché lo svolgimento di esse
