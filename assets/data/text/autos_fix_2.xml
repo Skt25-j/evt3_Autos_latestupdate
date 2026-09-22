@@ -606,7 +606,7 @@
                     <div type="page" xml:id="Copertina_interno">
                         
                         <pb n="interno_Copertina" facs="Cp_v.jpg"/>
-                       <note resp="#TUS"> <p rend="indent"><mod change="#strato-M">
+                       <p><mod change="#strato-M"><note resp="#TUS"> <p rend="indent"><mod change="#strato-M">
                                 <lb n="1"/>Queste pagine ingenue conten-
                                 <lb n="2"/>gono profonde verità. Dopo
                                 <lb n="3"/>quasi vent’anni, rileggendole,
@@ -620,7 +620,7 @@
                                 <lb n="9"/>d’allora, oggi sarei forse più
                                 <lb n="10"/>fortunato. Forse?!.
                                 <lb n="11"/><add rend="indent-center"><persName ref="#TUS">Tuscano</persName></add> <!-- Poco ortodosso-->
-                                <lb n="12"/><name ref="#Tentato_suicidio" type="event">1921</name></mod></p></note> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
+                                <lb n="12"/><name ref="#Tentato_suicidio" type="event">1921</name></mod></p></note></mod></p> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
                     </div>
                     
                     
