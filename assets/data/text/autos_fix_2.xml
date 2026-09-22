@@ -606,7 +606,8 @@
                     <div type="page" xml:id="Copertina_interno">
                         
                         <pb n="interno_Copertina" facs="Cp_v.jpg"/>
-                       <note resp="#TUS"> <p rend="indent"><mod change="#strato-M">
+                       <!-- Questo blocco (dedica dell'autore sull'interno di copertina) dovrebbe essere una nota d'autore (resp="#TUS"), ma non e' chiaro come codificarla/renderla: e' l'unico contenuto della pagina e una <note> qui non verrebbe resa da EVT. Lasciato come testo. -->
+                       <p rend="indent"><mod change="#strato-M">
                                 <lb n="1"/>Queste pagine ingenue conten-
                                 <lb n="2"/>gono profonde verità. Dopo
                                 <lb n="3"/>quasi vent’anni, rileggendole,
@@ -620,7 +621,7 @@
                                 <lb n="9"/>d’allora, oggi sarei forse più
                                 <lb n="10"/>fortunato. Forse?!.
                                 <lb n="11"/><add rend="indent-center"><persName ref="#TUS">Tuscano</persName></add> <!-- Poco ortodosso-->
-                                <lb n="12"/><name ref="#Tentato_suicidio" type="event">1921</name></mod></p></note> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
+                                <lb n="12"/><name ref="#Tentato_suicidio" type="event">1921</name></mod></p> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
                     </div>
                     
                     
@@ -632,7 +633,7 @@
                             <lb n="2"/> <mod change="#strato-E"><add rend="indent-center">1910</add></mod>
                             <lb/>
                             <fw place="top_right" type="pageNum"><mod change="#fase-C">1</mod>
-                                <note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note>
+                                <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#strato-E"><note resp="#TUS"><hi rend="underline">Non ti fermare!</hi></note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note>
 
                                 <!-- <app>
                                     <lem varSeq="2"><note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note></lem>
@@ -1859,7 +1860,7 @@
                         <p rend="indent">
                             <mod change="#fase-B"><metamark function="grouping" rend="circled" change="#strato-I"><lb n="1"/>Avevo 12 o 13 anni, ma il cuore l’avevo anche allora,
                                     <lb n="2"/>e protervo, 
-                                    <note resp="#TUS" rend="soloCritica"><mod change="#strato-M">
+                                    <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#strato-M"><note resp="#TUS"><add place="inline">?</add></note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><mod change="#strato-M">
                                         <add place="inline">?</add>
                                     </mod></note> l’anima 
                                     <mod change="#fase-B">
@@ -2419,7 +2420,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="7"/><l n="3">vagano  per quest’aure e l’ira iniqua</l>
                                     <lb n="8"/><l n="4">dei tuoi nemici non un cupo suono</l>
                                     <lb n="9"/><l n="5">rende a le regie stanze.</l></mod></lg></sp>
-                       <note resp="#TUS" rend="soloCritica"> <ab rend="indent"><mod change="#strato-E">
+                       <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#strato-E"><note resp="#TUS"><add place="margin">Ci si sente l’<persName ref="#Vittorio_Alfieri">Alfieri</persName></add></note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"> <ab rend="indent"><mod change="#strato-E">
                                 <add place="margin">Ci si sente l’<persName ref="#Vittorio_Alfieri">Alfieri</persName></add>
                             </mod><lb/></ab></note>
                         
@@ -2818,7 +2819,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="8"/><l n="3">il figlio tuo. Spento ha l’amor paterno</l>
                                     <lb n="9"/><l n="4">delle regie coron soverchio affetto.</l>
                                 </mod></lg></sp><lb/>
-                        <note resp="#TUS" rend="soloCritica"><ab rend="margin"><mod change="#fase-D"><lb n="10"/>Totale 156 versi</mod></ab></note> <!-- necessario metamark per la linea?-->
+                        <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#fase-D"><note resp="#TUS"><lb n="10"/>Totale 156 versi</note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><ab rend="margin"><mod change="#fase-D"><lb n="10"/>Totale 156 versi</mod></ab></note> <!-- necessario metamark per la linea?-->
                         <p rend="indent"><mod change="#fase-C"><lb n="11"/>Nel secondo atto Leopoldo afferma:</mod></p>
                         
                         <sp who="#Leopoldo"><lg><mod change="#fase-C"><lb n="12"/><l n="1">Daniel non <mod change="#fase-C"><subst><del rend="overwritten">sorrà</del><add place="superimposed">sarà</add></subst></mod> Sire</l>
@@ -3057,7 +3058,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="18"/><l n="3">.....Ah! Dio,</l>
                                     <lb n="19"/><l n="4">con la tua luce illumina il mio cuore</l>
                                     <lb n="20"/><l n="5">che palpit<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> per te suoi dolci spiri.</l></mod>
-                            </lg></sp><note resp="#TUS" rend="soloCritica"> <ab rend="margin"><mod change="#fase-D">Totale 246</mod></ab></note>
+                            </lg></sp><!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#fase-D"><note resp="#TUS">Totale 246</note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"> <ab rend="margin"><mod change="#fase-D">Totale 246</mod></ab></note>
                     </div>
                     <div type="page">
                         <pb n="1v2" xml:id="Quaderno2_1v" facs="1v2.jpg"/>
@@ -3441,7 +3442,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                     <lb n="5"/><l n="1">In tale stato un Sire? </l> <hi rend="underline" change="#strato-E">Oh ingrato scettro
                                         <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
                                         <lb n="7"/><l n="3">che ti provò.</l></hi>
-                                </mod></lg></sp><ab rend="indent"><note resp="#TUS" rend="soloCritica"><mod change="#strato-E">
+                                </mod></lg></sp><ab rend="indent"><!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#strato-E"><note resp="#TUS"><add place="margin">bene</add></note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><mod change="#strato-E">
                                 <add place="margin">bene</add>
                             </mod></note><lb/></ab>
                     </div>
@@ -4100,7 +4101,7 @@ in una <mod change="#fase-F">
                     </div>
                     <div type="page">
                         <pb n="20v2" xml:id="Quaderno2_20v" facs="20v2.jpg"/>
-                        <note resp="#TUS" rend="soloCritica"><p rend="indent"><mod change="#strato-L">
+                        <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <p rend="indent"><mod change="#strato-L"><note resp="#TUS"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</note></mod></p> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><p rend="indent"><mod change="#strato-L">
                                 <lb/><choice>
                                     <abbr>N</abbr>
                                     <expan>Nota</expan>
@@ -4114,7 +4115,7 @@ in una <mod change="#fase-F">
                     </div>
                     <div type="page">
                         <pb n="21r2" xml:id="Quaderno2_21r" facs="21r2.jpg"/>
-                        <note resp="#TUS" rend="soloCritica"><ab><mod change="#strato-O">Importante per la psicanalisi</mod></ab></note> <fw place="top_right" type="pageNum"><mod change="#fase-G">63</mod></fw>
+                        <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <ab><mod change="#strato-O"><note resp="#TUS">Importante per la psicanalisi</note></mod></ab> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><ab><mod change="#strato-O">Importante per la psicanalisi</mod></ab></note> <fw place="top_right" type="pageNum"><mod change="#fase-G">63</mod></fw>
                         <p rend="indent"><mod change="#fase-G"><lb n="1"/>mi <mod change="#fase-G">
                                     <app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="above">ritrovava</add></del><add place="above">traeva</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">trovavo</del><add place="above">ritrovava</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G">trovavo</mod></rdg></app>
 <!-- Versione precedente (mod senza app), conservata:
