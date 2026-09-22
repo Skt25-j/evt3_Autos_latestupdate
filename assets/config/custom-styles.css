@@ -394,3 +394,7 @@ evt-generic-element:has([data-edition="interpretative"]),
     display: inline-block;
 }
 
+
+/* nota autoriale (resp="#TUS"): visibile SOLO nella vista critica */
+html[data-el="diplomatic"] evt-note[rend="soloCritica"],
+html[data-el="changesView"] evt-note[rend="soloCritica"] { display: none !important; }

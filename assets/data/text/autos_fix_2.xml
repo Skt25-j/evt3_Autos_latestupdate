@@ -606,7 +606,7 @@
                     <div type="page" xml:id="Copertina_interno">
                         
                         <pb n="interno_Copertina" facs="Cp_v.jpg"/>
-                       <note resp="#TUS"> <p rend="indent"><mod change="#strato-M">
+                       <note resp="#TUS" rend="soloCritica"> <p rend="indent"><mod change="#strato-M">
                                 <lb n="1"/>Queste pagine ingenue conten-
                                 <lb n="2"/>gono profonde verità. Dopo
                                 <lb n="3"/>quasi vent’anni, rileggendole,
@@ -632,10 +632,10 @@
                             <lb n="2"/> <mod change="#strato-E"><add rend="indent-center">1910</add></mod>
                             <lb/>
                             <fw place="top_right" type="pageNum"><mod change="#fase-C">1</mod>
-                                <note resp="#TUS"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note>
+                                <note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note>
 
                                 <!-- <app>
-                                    <lem varSeq="2"><note resp="#TUS"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note></lem>
+                                    <lem varSeq="2"><note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note></lem>
                                     <rdg varSeq="1"><mod change="#fase-C">1</mod></rdg>
                                 </app> App non corretto perchè sono due livelli distinti-->
                              </fw>
@@ -1859,7 +1859,7 @@
                         <p rend="indent">
                             <mod change="#fase-B"><metamark function="grouping" rend="circled" change="#strato-I"><lb n="1"/>Avevo 12 o 13 anni, ma il cuore l’avevo anche allora,
                                     <lb n="2"/>e protervo, 
-                                    <note resp="#TUS"><mod change="#strato-M">
+                                    <note resp="#TUS" rend="soloCritica"><mod change="#strato-M">
                                         <add place="inline">?</add>
                                     </mod></note> l’anima 
                                     <mod change="#fase-B">
@@ -2419,7 +2419,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="7"/><l n="3">vagano  per quest’aure e l’ira iniqua</l>
                                     <lb n="8"/><l n="4">dei tuoi nemici non un cupo suono</l>
                                     <lb n="9"/><l n="5">rende a le regie stanze.</l></mod></lg></sp>
-                       <note resp="#TUS"> <ab rend="indent"><mod change="#strato-E">
+                       <note resp="#TUS" rend="soloCritica"> <ab rend="indent"><mod change="#strato-E">
                                 <add place="margin">Ci si sente l’<persName ref="#Vittorio_Alfieri">Alfieri</persName></add>
                             </mod><lb/></ab></note>
                         
@@ -2433,7 +2433,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="14"/><l n="2">non lungi è l’ora in cui piegherò il capo</l>
                                     <lb n="15"/><l n="3">sotto l’avello, che pur degno l’ossa</l>
                                     <lb n="16"/><l n="4">mie serberà fra le sacrate mura;</l>
-                                    <lb n="17"/><l n="5">e dei posteri al cor che quella tomba</l><note resp="#TUS"><mod change="#strato-E">
+                                    <lb n="17"/><l n="5">e dei posteri al cor che quella tomba</l><note resp="#TUS" rend="soloCritica"><mod change="#strato-E">
                                         <add place="margin">
                                             <persName ref="#Ugo_Foscolo">Foscolo</persName></add>
                                     </mod> </note>
@@ -2664,7 +2664,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="3"/><l n="5">Del genitor la voce a te non giunge?</l>
                                     <lb n="4"/><l n="6">Quai scellerate mura a me divide</l>
                                     <lb n="5"/><l n="7">di te la vista?... Oh la tua dolce voce</l>
-                                    <lb n="6"/><l n="8">a me l’orecchie <hi rend="underline" change="#strato-E">più giammai</hi> percuote?...</l><note resp="#TUS"><mod change="#strato-E"><add place="margin">? ridi</add></mod></note>
+                                    <lb n="6"/><l n="8">a me l’orecchie <hi rend="underline" change="#strato-E">più giammai</hi> percuote?...</l><note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><add place="margin">? ridi</add></mod></note>
                                     <lb n="7"/><l n="9"><mod change="#fase-C"><subst><del rend="overwritten">q</del><add place="superimposed">Q</add></subst></mod>uell’orecchie che udiro i <mod change="#fase-C"><subst><del rend="overwritten">miei</del><add place="superimposed">tuoi</add></subst></mod> discorsi </l>
                                     <lb n="8"/><l n="10">infantili; quegli <mod change="#fase-C"><add place="above">occhi</add></mod> che miraro</l>
                                     <lb n="9"/><l n="11">le tue manine giunte in prece al cielo,</l>
@@ -2778,7 +2778,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="3"/>e dentro me declamavo qualche squarcio; andavamo a spasso,
                                 <lb n="4"/>a letto, a studio, <mod change="#fase-D"><add place="inline">qu<subst><del rend="overwritten">i</del><add place="superimposed">e</add></subst>l</add></mod> pensiero sopravveniva sempre ed io re-
                                 <lb n="5"/>stava <mod change="#fase-D"><del rend="strikethrough" seq="2">così sempre sullo stesso t<add place="above" seq="1">u</add>ono</del></mod>in mezzo agli altri come
-                                <lb n="6"/>se fossi solo, solo come se fossi in mezzo agli altri <note resp="#TUS"><mod change="#strato-O"><add place="top">sia dopo 20 anni</add></mod></note> <!-- Chiedere di questo addition top; va messo nel editorial-cofig ma non so come-->
+                                <lb n="6"/>se fossi solo, solo come se fossi in mezzo agli altri <note resp="#TUS" rend="soloCritica"><mod change="#strato-O"><add place="top">sia dopo 20 anni</add></mod></note> <!-- Chiedere di questo addition top; va messo nel editorial-cofig ma non so come-->
                             </mod></p>
                         <p rend="indent"><mod change="#fase-D"><lb n="7"/>Tale condizione <mod change="#fase-D"><subst><del rend="strikethrough">er</del><add place="inline">mi</add></subst></mod> rendeva mal accetto ai <mod change="#fase-D"><subst><del rend="strikethrough">superiori</del><add place="above">prefetti i</add></subst></mod>
                                 <lb n="8"/>quali mi fecero avvezzare al sile<del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">nzio</add> come alla preghiera;
@@ -2820,7 +2820,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="8"/><l n="3">il figlio tuo. Spento ha l’amor paterno</l>
                                     <lb n="9"/><l n="4">delle regie coron soverchio affetto.</l>
                                 </mod></lg></sp><lb/>
-                        <note resp="#TUS"><ab rend="margin"><mod change="#fase-D"><lb n="10"/>Totale 156 versi</mod></ab></note> <!-- necessario metamark per la linea?-->
+                        <note resp="#TUS" rend="soloCritica"><ab rend="margin"><mod change="#fase-D"><lb n="10"/>Totale 156 versi</mod></ab></note> <!-- necessario metamark per la linea?-->
                         <p rend="indent"><mod change="#fase-C"><lb n="11"/>Nel secondo atto Leopoldo afferma:</mod></p>
                         
                         <sp who="#Leopoldo"><lg><mod change="#fase-C"><lb n="12"/><l n="1">Daniel non <mod change="#fase-C"><subst><del rend="overwritten">sorrà</del><add place="superimposed">sarà</add></subst></mod> Sire</l>
@@ -3059,7 +3059,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="18"/><l n="3">.....Ah! Dio,</l>
                                     <lb n="19"/><l n="4">con la tua luce illumina il mio cuore</l>
                                     <lb n="20"/><l n="5">che palpit<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> per te suoi dolci spiri.</l></mod>
-                            </lg></sp><note resp="#TUS"> <ab rend="margin"><mod change="#fase-D">Totale 246</mod></ab></note>
+                            </lg></sp><note resp="#TUS" rend="soloCritica"> <ab rend="margin"><mod change="#fase-D">Totale 246</mod></ab></note>
                     </div>
                     <div type="page">
                         <pb n="1v2" xml:id="Quaderno2_1v" facs="1v2.jpg"/>
@@ -3443,7 +3443,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                     <lb n="5"/><l n="1">In tale stato un Sire? </l> <hi rend="underline" change="#strato-E">Oh ingrato scettro
                                         <lb n="6"/><l n="2">ognun ti brama, ma si pente ognuno</l>
                                         <lb n="7"/><l n="3">che ti provò.</l></hi>
-                                </mod></lg></sp><ab rend="indent"><note resp="#TUS"><mod change="#strato-E">
+                                </mod></lg></sp><ab rend="indent"><note resp="#TUS" rend="soloCritica"><mod change="#strato-E">
                                 <add place="margin">bene</add>
                             </mod></note><lb/></ab>
                     </div>
@@ -4102,7 +4102,7 @@ in una <mod change="#fase-F">
                     </div>
                     <div type="page">
                         <pb n="20v2" xml:id="Quaderno2_20v" facs="20v2.jpg"/>
-                        <note resp="#TUS"><p rend="indent"><mod change="#strato-L">
+                        <note resp="#TUS" rend="soloCritica"><p rend="indent"><mod change="#strato-L">
                                 <lb/><choice>
                                     <abbr>N</abbr>
                                     <expan>Nota</expan>
@@ -4116,7 +4116,7 @@ in una <mod change="#fase-F">
                     </div>
                     <div type="page">
                         <pb n="21r2" xml:id="Quaderno2_21r" facs="21r2.jpg"/>
-                        <note resp="#TUS"><ab><mod change="#strato-O">Importante per la psicanalisi</mod></ab></note> <fw place="top_right" type="pageNum"><mod change="#fase-G">63</mod></fw>
+                        <note resp="#TUS" rend="soloCritica"><ab><mod change="#strato-O">Importante per la psicanalisi</mod></ab></note> <fw place="top_right" type="pageNum"><mod change="#fase-G">63</mod></fw>
                         <p rend="indent"><mod change="#fase-G"><lb n="1"/>mi <mod change="#fase-G">
                                     <app><lem varSeq="3"><mod change="#fase-G"><subst><del rend="strikethrough"><add place="above">ritrovava</add></del><add place="above">traeva</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-G"><subst><del rend="strikethrough">trovavo</del><add place="above">ritrovava</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-G">trovavo</mod></rdg></app>
 <!-- Versione precedente (mod senza app), conservata:
