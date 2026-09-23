@@ -402,3 +402,106 @@ html[data-el="changesView"] evt-note[rend="soloCritica"] { display: none !import
 /* gemello-testo: NON in critica (solo diplomatica/changes) */
 html[data-el="interpretative"] [rend~="soloDiplomatica"],
 html[data-el="interpretative"] [data-rend~="soloDiplomatica"] { display: none !important; }
+
+/* ============================================================= */
+/* CHANGE su blocco (p / div / ab): fase senza pannello apparato */
+/* Il @change su <p>/<div>/<ab> -> data-change nel DOM (NON apre  */
+/* la finestra di apparato, che resta solo sui <mod> reali).      */
+/* view-hook: data-el = vista, data-layer = fase selezionata (lr) */
+/* ============================================================= */
+
+/* --- colorazione per fase (solo changesView), come i mod --- */
+html[data-el="changesView"] [data-change="#fase-A"] {
+    text-decoration: underline;
+    text-decoration-color: #E67E22;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-B"] {
+    text-decoration: underline;
+    text-decoration-color: #D35400;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-C"] {
+    text-decoration: underline;
+    text-decoration-color: #F06292;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-D"] {
+    text-decoration: underline;
+    text-decoration-color: #880E4F;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-E"] {
+    text-decoration: underline;
+    text-decoration-color: #9E9B9B;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-F"] {
+    text-decoration: underline;
+    text-decoration-color: #9C27B0;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-G"] {
+    text-decoration: underline;
+    text-decoration-color: #7B1FA2;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-H"] {
+    text-decoration: underline;
+    text-decoration-color: #512DA8;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-I"] {
+    text-decoration: underline;
+    text-decoration-color: #2404B5;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-L"] {
+    text-decoration: underline;
+    text-decoration-color: #BB1515;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-M"] {
+    text-decoration: underline;
+    text-decoration-color: #080277;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#fase-N"] {
+    text-decoration: underline;
+    text-decoration-color: #260F8B;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-O"] {
+    text-decoration: underline;
+    text-decoration-color: #9B9B9B;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-P"] {
+    text-decoration: underline;
+    text-decoration-color: #6E6A6A;
+    text-underline-offset: 2px;
+}
+html[data-el="changesView"] [data-change="#strato-X"] {
+    text-decoration: underline;
+    text-decoration-color: #00796B;
+    text-underline-offset: 2px;
+}
+
+/* --- filtro per fase (solo changesView): un blocco appare solo  */
+/*     dalla propria fase in poi, come la logica dei mod EVT.      */
+/*     data-layer = fase selezionata; si nasconde ogni blocco la   */
+/*     cui fase viene DOPO quella selezionata nell'ordine TEI.     */
+html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-B"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-C"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-D"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-E"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-F"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-G"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-A"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-B"] [data-change="#fase-C"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#fase-D"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-E"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#fase-F"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#fase-G"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-B"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-C"] [data-change="#fase-D"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-E"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#fase-F"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#fase-G"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-C"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-E"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#fase-F"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#fase-G"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-D"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="strato-E"] [data-change="#fase-F"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#fase-G"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="strato-E"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-F"] [data-change="#fase-G"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-F"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-G"] [data-change="#fase-H"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-G"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-H"] [data-change="#strato-I"], html[data-el="changesView"][data-layer="fase-H"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="fase-H"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="fase-H"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="fase-H"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-H"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-H"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="strato-I"] [data-change="#strato-L"], html[data-el="changesView"][data-layer="strato-I"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="strato-I"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="strato-I"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="strato-I"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="strato-I"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="strato-L"] [data-change="#strato-M"], html[data-el="changesView"][data-layer="strato-L"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="strato-L"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="strato-L"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="strato-L"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="strato-M"] [data-change="#fase-N"], html[data-el="changesView"][data-layer="strato-M"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="strato-M"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="strato-M"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="fase-N"] [data-change="#strato-O"], html[data-el="changesView"][data-layer="fase-N"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="fase-N"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="strato-O"] [data-change="#strato-P"], html[data-el="changesView"][data-layer="strato-O"] [data-change="#strato-X"] { display: none !important; }
+html[data-el="changesView"][data-layer="strato-P"] [data-change="#strato-X"] { display: none !important; }

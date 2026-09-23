@@ -10,5 +10,5 @@
   <evt-root></evt-root>
 <script src="runtime.js" type="module"></script><script src="polyfills.js" type="module"></script><script src="scripts.js" defer></script><script src="main.js" type="module"></script>
 
-<script>(function(){function s(){var m=(location.hash||"").match(/[?&]el=([^&]+)/);document.documentElement.setAttribute("data-el",m?decodeURIComponent(m[1]):"");}window.addEventListener("hashchange",s);setInterval(s,400);s();})();</script>
+<script>(function(){function g(k){var m=(location.hash||"").match(new RegExp("[?&]"+k+"=([^&]+)"));return m?decodeURIComponent(m[1]):"";}function s(){var d=document.documentElement;d.setAttribute("data-el",g("el"));d.setAttribute("data-layer",g("lr"));}window.addEventListener("hashchange",s);setInterval(s,400);s();})();</script>
 </body></html>
