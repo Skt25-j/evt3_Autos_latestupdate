@@ -607,12 +607,12 @@
                         
                         <pb n="interno_Copertina" facs="Cp_v.jpg"/>
                        <!-- Questo blocco (dedica dell'autore sull'interno di copertina) dovrebbe essere una nota d'autore (resp="#TUS"), ma non e' chiaro come codificarla/renderla: e' l'unico contenuto della pagina e una <note> qui non verrebbe resa da EVT. Lasciato come testo. -->
-                       <p rend="indent"><mod change="#strato-M">
+                       <p rend="indent" change="#strato-M">
                                 <lb n="1"/>Queste pagine ingenue conten-
                                 <lb n="2"/>gono profonde verità. Dopo
                                 <lb n="3"/>quasi vent’anni, rileggendole,
                                 <lb n="4"/>riconosco me stesso d’allora,
-                                <lb n="5"/>quasi eguale a quello d’oggi.</mod></p>
+                                <lb n="5"/>quasi eguale a quello d’oggi.</p>
                         <p rend="indent"><mod change="#strato-M"><lb n="6"/><mod change="#strato-M">Qua<subst><del rend="overwritten">nt'</del><add place="superimposed">le</add>
                                     </subst>
                                 </mod> insegnamento
