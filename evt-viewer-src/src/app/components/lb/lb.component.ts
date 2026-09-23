@@ -32,9 +32,12 @@ export class LbComponent {
         switch (this.editionLevel) {
           case 'diplomatic':
           case 'interpretative':
+          case 'changesView':
             return this.textFlow === 'verses' ? false : hasLines;
           case 'critical':
             return this.textFlow === 'prose';
+          default:
+            return this.textFlow === 'verses' ? false : hasLines;
         }
       }),
     );
