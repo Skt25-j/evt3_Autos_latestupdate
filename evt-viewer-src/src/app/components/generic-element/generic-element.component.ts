@@ -15,22 +15,20 @@ export interface GenericElementComponent extends EditionlevelSusceptible, Highli
 @register(GenericElement)
 export class GenericElementComponent implements OnInit, OnDestroy {
   @Input() data: GenericElement;
-  @Input() selectedLayer: string;
+  // The content viewer passes the current layer under the key `selLayer`.
+  @Input() selLayer: string;
 
-  // Layer filtering for @change on block elements (div, ab, seg): same behaviour
-  // as <mod> in changesView (content shown only from its change layer onward) but
-  // without opening the apparatus window.
+  // Layer filtering for @change on block elements (div, ab, seg): same as <mod>
+  // in changesView without opening the apparatus window. Order once from
+  // currentChanges$; current layer from the selectedLayer input (live).
   public orderedLayers: string[] = [];
-  public currentLayer: string;
   private layerSub: Subscription;
 
   constructor(public evtStatusService: EVTStatusService) {}
 
   ngOnInit() {
-    if (!this.data?.attributes?.change) { return; }
-    this.layerSub = this.evtStatusService.currentChanges$.subscribe(({ selectedLayer, layerOrder }) => {
+    this.layerSub = this.evtStatusService.currentChanges$.subscribe(({ layerOrder }) => {
       this.orderedLayers = layerOrder || [];
-      this.currentLayer = selectedLayer ?? (this.orderedLayers.length ? this.orderedLayers[this.orderedLayers.length - 1] : undefined);
     });
   }
 
@@ -47,10 +45,9 @@ export class GenericElementComponent implements OnInit, OnDestroy {
   layerHidden(): boolean {
     const change = this.data?.attributes?.change;
     if (this.editionLevel !== 'changesView' || !change) { return false; }
-    if (this.orderedLayers.length > 0) {
-      return this.getLayerIndex(this.currentLayer) < this.getLayerIndex(change);
-    }
+    if (this.orderedLayers.length === 0) { return false; }
+    const current = this.selLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
 
-    return false;
+    return this.getLayerIndex(current) < this.getLayerIndex(change);
   }
 }

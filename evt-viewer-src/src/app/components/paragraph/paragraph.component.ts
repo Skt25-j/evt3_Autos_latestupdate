@@ -17,22 +17,22 @@ export interface ParagraphComponent extends EditionlevelSusceptible, Highlightab
 @register(Paragraph)
 export class ParagraphComponent implements OnInit, OnDestroy {
   @Input() data: Paragraph;
-  @Input() selectedLayer: string;
+  // Current layer selected in changesView. The content viewer passes it under the
+  // key `selLayer` (not `selectedLayer`), and it updates live on selection.
+  @Input() selLayer: string;
 
   // Layer filtering for @change on block elements (p): same behaviour as <mod>
-  // in changesView (content shown only from its change layer onward) but without
-  // opening the apparatus window.
+  // in changesView (content shown only from its change layer onward) without
+  // opening the apparatus window. The layer order comes once from currentChanges$;
+  // the *current* layer comes from the selectedLayer input (like mod uses this.selectedLayer).
   public orderedLayers: string[] = [];
-  public currentLayer: string;
   private layerSub: Subscription;
 
   constructor(public evtStatusService: EVTStatusService) {}
 
   ngOnInit() {
-    if (!this.data?.attributes?.change) { return; }
-    this.layerSub = this.evtStatusService.currentChanges$.subscribe(({ selectedLayer, layerOrder }) => {
+    this.layerSub = this.evtStatusService.currentChanges$.subscribe(({ layerOrder }) => {
       this.orderedLayers = layerOrder || [];
-      this.currentLayer = selectedLayer ?? (this.orderedLayers.length ? this.orderedLayers[this.orderedLayers.length - 1] : undefined);
     });
   }
 
@@ -49,10 +49,9 @@ export class ParagraphComponent implements OnInit, OnDestroy {
   layerHidden(): boolean {
     const change = this.data?.attributes?.change;
     if (this.editionLevel !== 'changesView' || !change) { return false; }
-    if (this.orderedLayers.length > 0) {
-      return this.getLayerIndex(this.currentLayer) < this.getLayerIndex(change);
-    }
+    if (this.orderedLayers.length === 0) { return false; }
+    const current = this.selLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
 
-    return false;
+    return this.getLayerIndex(current) < this.getLayerIndex(change);
   }
 }
