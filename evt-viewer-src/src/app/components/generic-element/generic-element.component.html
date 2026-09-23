@@ -1,0 +1,5 @@
+<ng-container *ngIf="!layerHidden()">
+	<evt-content-viewer class="genericElement {{data.class}}" [evtHtmlAttributes]="data?.attributes"
+		*ngFor="let el of data.content" [content]="el" [editionLevel]="editionLevel" [itemsToHighlight]="itemsToHighlight"
+		[evtHighlight]="highlightData" [textFlow]="textFlow" [withDeletions]="withDeletions" [selectedLayer]="selectedLayer"></evt-content-viewer>
+</ng-container>
