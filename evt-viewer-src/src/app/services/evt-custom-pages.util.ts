@@ -68,6 +68,59 @@ export function evtFindNearestPage(targetId: string, pages: Page[], doc: Documen
   }
 }
 
+// --- helpers for block-level transposition on parsed content (recursive, ---
+// --- immutable "copy-on-write" along the path so shared cache is untouched) ---
+function evtElemId(el: any): string | undefined {
+  return el && el.attributes ? el.attributes.id : undefined;
+}
+
+function evtContainsId(content: any[], id: string): boolean {
+  for (const el of content || []) {
+    if (!el) { continue; }
+    if (evtElemId(el) === id) { return true; }
+    if (Array.isArray(el.content) && evtContainsId(el.content, id)) { return true; }
+  }
+
+  return false;
+}
+
+function evtRemoveById(content: any[], id: string): { content: any[]; removed: any } {
+  let removed: any = null;
+  const out: any[] = [];
+  for (const el of content || []) {
+    if (!removed && el && evtElemId(el) === id) { removed = el; continue; }
+    if (!removed && el && Array.isArray(el.content) && evtContainsId(el.content, id)) {
+      const r = evtRemoveById(el.content, id);
+      removed = r.removed;
+      out.push({ ...el, content: r.content });
+    } else {
+      out.push(el);
+    }
+  }
+
+  return { content: out, removed };
+}
+
+function evtInsertAfterId(content: any[], id: string, block: any): { content: any[]; done: boolean } {
+  let done = false;
+  const out: any[] = [];
+  for (const el of content || []) {
+    if (!done && el && evtElemId(el) === id) {
+      out.push(el);
+      out.push(block);
+      done = true;
+    } else if (!done && el && Array.isArray(el.content) && evtContainsId(el.content, id)) {
+      const r = evtInsertAfterId(el.content, id, block);
+      out.push({ ...el, content: r.content });
+      done = r.done;
+    } else {
+      out.push(el);
+    }
+  }
+
+  return { content: out, done };
+}
+
 export function evtApplyTranspositions(pages: Page[], doc: Document | null): Page[] {
   try {
     if (!doc) { return pages; }
@@ -75,27 +128,49 @@ export function evtApplyTranspositions(pages: Page[], doc: Document | null): Pag
     if (!so) { return pages; }
     const trs = Array.from(so.querySelectorAll('transpose'));
     if (!trs.length) { return pages; }
-    const idOf = (el: any) => (el && el.getAttribute ? (el.getAttribute('xml:id') || '') : '');
-    const idxOf = (id: string) => {
-      const direct = pages.findIndex((p) => p.id === id);
-      if (direct !== -1) { return direct; }
 
-      return pages.findIndex((p) => {
-        const oc = (p.originalContent as any[]) || [];
+    const pageIdx = (id: string) => pages.findIndex((p) => p.id === id);
+    const pageContainingBlock = (id: string) =>
+      pages.findIndex((p) => evtContainsId(p.parsedContent as any[], id));
 
-        return oc.some((el) => el && el.nodeType === 1 &&
-          (idOf(el) === id || (el.querySelector && el.querySelector(`[*|id='${id}']`))));
-      });
-    };
     trs.forEach((tr) => {
       const ids = Array.from(tr.querySelectorAll('ptr')).map((p) => (p.getAttribute('target') || '').replace('#', ''));
       for (let k = 0; k < ids.length - 1; k++) {
-        const bi = idxOf(ids[k]);
-        const ai = idxOf(ids[k + 1]);
-        if (bi === -1 || ai === -1 || ai === bi + 1) { continue; }
-        const moved = pages.splice(ai, 1)[0];
-        const nbi = idxOf(ids[k]);
-        pages.splice(nbi + 1, 0, moved);
+        const idA = ids[k];
+        const idB = ids[k + 1];
+        const paA = pageIdx(idA);
+        const paB = pageIdx(idB);
+
+        // Both targets are pages (<pb>): reorder the page array (as before).
+        if (paA !== -1 && paB !== -1) {
+          if (paB === paA + 1) { continue; }
+          const moved = pages.splice(paB, 1)[0];
+          const nbi = pageIdx(idA);
+          pages.splice(nbi + 1, 0, moved);
+          continue;
+        }
+
+        // Block-level: relocate block B right after element A (block or page),
+        // possibly across pages, at any nesting depth.
+        const piB = pageContainingBlock(idB);
+        if (piB === -1) { continue; }
+        const piAblock = pageContainingBlock(idA);
+        const piApage = pageIdx(idA);
+        if (piAblock === -1 && piApage === -1) { continue; }
+
+        const rem = evtRemoveById(pages[piB].parsedContent as any[], idB);
+        if (!rem.removed) { continue; }
+        pages[piB] = { ...pages[piB], parsedContent: rem.content } as Page;
+
+        if (piAblock !== -1) {
+          const ins = evtInsertAfterId(pages[piAblock].parsedContent as any[], idA, rem.removed);
+          pages[piAblock] = { ...pages[piAblock], parsedContent: ins.content } as Page;
+        } else {
+          pages[piApage] = {
+            ...pages[piApage],
+            parsedContent: [...((pages[piApage].parsedContent as any[]) || []), rem.removed],
+          } as Page;
+        }
       }
     });
   } catch (err) {

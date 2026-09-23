@@ -34,7 +34,11 @@ Nota: `src/assets/data` (i dati dell'edizione) NON è incluso qui; i dati reali 
 3. **Pipeline pagine personalizzato** (`services/evt-custom-pages.util.ts` +
    `services/evt-model.service.ts`, `panels/text-panel/text-panel.component.ts`,
    `services/evt-status.service.ts`):
-   - riordino pagine da `<standOff><transpose><ptr>` (listTranspose);
+   - riordino da `<standOff><transpose><ptr>` (listTranspose): se il `<ptr>` punta
+     a una `<pb>` riordina le pagine; se punta a un blocco con `xml:id` (p, div,
+     ab, seg…) sposta quel blocco nel flusso di lettura subito dopo l'elemento
+     precedente del transpose, anche in una pagina diversa (relocazione ricorsiva
+     e immutabile del contenuto parsato);
    - pagine con `<pb type="blank"/>` nascoste nella vista critica (`interpretative`);
    - fallback di navigazione alla pagina più vicina (`__evtFindNearestPage`).
    Queste erano in precedenza iniettate nel bundle compilato; ora sono in sorgente.
