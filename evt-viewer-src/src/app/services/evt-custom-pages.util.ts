@@ -43,6 +43,33 @@ export function evtFilterBlankPages(pages: Page[], doc: Document | null): Page[]
   }
 }
 
+/**
+ * Filtro pagine per fase di scrittura (usato in changesView).
+ * Tiene solo le carte scritte FINO al livello selezionato (cumulativo,
+ * per indice in layerOrder). Vale sia per fasi sia per strati. Una carta
+ * senza writingChange (@change sul <pb>) e' sempre inclusa.
+ * Se non c'e' un livello selezionato (o layerOrder vuoto) restituisce tutte.
+ */
+export function evtFilterByWritingPhase(pages: Page[], selectedLayer: string, layerOrder: string[]): Page[] {
+  try {
+    if (!selectedLayer || !layerOrder || !layerOrder.length) { return pages; }
+    const clean = (l: string) => (l || '').replace('#', '');
+    const selIdx = layerOrder.indexOf(clean(selectedLayer));
+    if (selIdx === -1) { return pages; }
+
+    return pages.filter((p) => {
+      if (!p.writingChange) { return true; }
+      const pIdx = layerOrder.indexOf(clean(p.writingChange));
+
+      return pIdx === -1 || pIdx <= selIdx;
+    });
+  } catch (err) {
+    console.error('evt custom writing-phase filter error', err);
+
+    return pages;
+  }
+}
+
 export function evtFindNearestPage(targetId: string, pages: Page[], doc: Document | null): Page {
   try {
     if (!doc || !pages || !pages.length) { return pages && pages[0]; }

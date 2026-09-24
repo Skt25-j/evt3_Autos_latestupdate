@@ -110,26 +110,29 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - Verifica beta: se la beta gestisce già il riordino pagine con immagini allineate, salta.
   Riguarda qualunque riordino di pagine (anche `ptr`→`pb`), non solo `ptr`→`div`.
 
-### 11. [FEAT] Selettore pagine con "ghosting" per fase (Task 2)
-- File: `components/page-selector/page-selector.component.{ts,html}`,
+### 11. [FEAT] Filtro pagine per fase in changesView (Task 2)
+- File: `panels/text-panel/text-panel.component.ts`, `services/evt-custom-pages.util.ts`,
   `services/xml-parsers/structure-xml-parser.service.ts`, `models/evt-models.ts`
-  + dati: `@change="#fase-X"` sui `<pb>` in `assets/data/text/autos_fix_2.xml`.
-- Cosa: **solo nella vista "changes" (changesView)**, nel selettore delle pagine le
-  carte non ancora scritte al **livello** selezionato restano **disabilitate/ingrigite**
-  (ghosting), in modo **cumulativo**
-  (fase-C ⇒ disponibili A+B+C…). Criterio: cumulativo puro sull'indice in `layerOrder`,
-  valido sia per le **fasi** sia per gli **strati** (es. una carta `@change="#strato-E"`
-  compare solo da strato-E in poi). Una carta senza `@change` è sempre disponibile.
-- Come: il parser legge `pb.getAttribute('change')` in `Page.writingChange`;
-  `page-selector` costruisce `displayPages$` = `combineLatest([pages$, updateLayer$,
-  currentChanges$])` e marca `disabled` quando l'indice di scrittura della carta è
-  MAGGIORE dell'indice del livello selezionato (in `layerOrder`). ng-select (v8)
-  disabilita e ingrigisce gli item con `disabled:true` (né mouse né tastiera).
-- Dati: la fase di scrittura è sul `<pb>` (unità diplomatica) come `@change`; una carta
-  a cavallo di due fasi va marcata con la PRIMA. ~25 carte "di margine" (bianche,
-  varianti, copertine q2) sono lasciate senza `@change` = sempre disponibili, da rifinire.
-- Verifica beta: se il page-selector cambia, riportare `displayPages$`/`disabled`;
-  se `updateLayer$`/`currentChanges$.layerOrder` cambiano nome, adeguare.
+  + dati: `@change="#fase-X"`/`"#strato-Y"` sui `<pb>` in `assets/data/text/autos_fix_2.xml`.
+- Cosa: **solo nella vista "changes" (changesView)** le carte non ancora scritte al
+  **livello** selezionato **non compaiono** (filtro cumulativo per indice in `layerOrder`,
+  valido per fasi e strati; una carta senza `@change` è sempre presente). Il filtro è
+  applicato su `pages$` (globale), quindi vale in modo coerente per selettore a tendina,
+  **slider di pagina** e **frecce** della nav-bar, miniature e testo renderizzato.
+  In diplomatica e critica NON si applica.
+- Perche' non "ghosting" nel solo selettore: la nav-bar ha uno `ngx-slider` continuo per
+  indice; non essendo "ingrigibile" a tratti, l'unico modo coerente e' ridurre `pages$`.
+- Come: il parser legge `pb.getAttribute('change')` in `Page.writingChange`; in
+  `text-panel.currentStatus$` (che gia' pubblica `evtPagesOverride$`) si aggiunge, per
+  `editionLevelID === 'changesView'`, `evtFilterByWritingPhase(pages, selectedLayer,
+  layerOrder)` (da `evt-custom-pages.util.ts`); il currentStatus$ ora dipende anche da
+  `evtStatus.updateLayer$` e `evtModelService.changeData$` (per `layerOrder`).
+  `page-selector` resta quello originale (usa `pages$` gia' filtrato).
+- Dati: la fase/strato di scrittura è sul `<pb>` come `@change`; una carta a cavallo di
+  due livelli va marcata col PRIMO. Alcune carte di margine (bianche, `27r1`, copertine q2)
+  sono lasciate senza `@change` = sempre presenti.
+- Verifica beta: se cambia la pipeline pagine o i nomi `updateLayer$`/`changeData$.layerOrder`,
+  adeguare; il filtro vive nell'override di `text-panel`, non nel `page-selector`.
 
 ---
 

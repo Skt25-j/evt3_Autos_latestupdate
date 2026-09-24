@@ -1,12 +1,12 @@
 import { Component, ElementRef, Input, Output, ViewChild } from '@angular/core';
 import { BehaviorSubject, combineLatest, merge, Observable, Subject } from 'rxjs';
-import { delay, distinctUntilChanged, filter, map, shareReplay, tap, withLatestFrom } from 'rxjs/operators';
+import { delay, distinctUntilChanged, filter, map, shareReplay, startWith, tap, withLatestFrom } from 'rxjs/operators';
 import { AppConfig, EditionLevel, EditionLevelType, TextFlow } from '../../app.config';
 import { EntitiesSelectItem } from '../../components/entities-select/entities-select.component';
 import { Page } from '../../models/evt-models';
 import { EVTModelService } from '../../services/evt-model.service';
 import { EVTStatusService } from '../../services/evt-status.service';
-import { evtApplyTranspositions, evtFilterBlankPages, evtGetOwnerDoc, evtPagesOverride$ } from '../../services/evt-custom-pages.util';
+import { evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtPagesOverride$ } from '../../services/evt-custom-pages.util';
 import { EvtIconInfo } from '../../ui-components/icon/icon.component';
 
 @Component({
@@ -119,16 +119,25 @@ export class TextPanelComponent {
     this.currentPage$,
     this.currentEdLevel$,
     this.evtStatus.currentViewMode$,
+    this.evtStatus.updateLayer$.pipe(startWith(undefined as string)),
+    this.evtModelService.changeData$.pipe(startWith(undefined)),
   ]).pipe(
     delay(0),
     filter(([pages, currentPage, editionLevel, currentViewMode]) => !!pages && !!currentPage && !!editionLevel && !!currentViewMode),
-    map(([pages, currentPage, editionLevel, currentViewMode]) => {
-      // Custom: in the critical view ('interpretative') apply transpositions and
-      // hide blank pages, publishing the result as the global page override.
+    map(([pages, currentPage, editionLevel, currentViewMode, selectedLayer, changeData]) => {
+      // Custom page override pubblicato come pages$ globale:
+      //  - vista critica ('interpretative'): trasposizioni + pagine bianche nascoste;
+      //  - vista 'changesView': filtro cumulativo per fase/strato (le carte scritte
+      //    dopo il livello selezionato non compaiono, cosi' slider/frecce/tendina/
+      //    miniature e testo restano coerenti).
       const doc = evtGetOwnerDoc(pages);
-      const override = this.editionLevelID === 'interpretative'
-        ? evtFilterBlankPages(evtApplyTranspositions(pages.slice(), doc), doc)
-        : null;
+      let override: typeof pages | null = null;
+      if (this.editionLevelID === 'interpretative') {
+        override = evtFilterBlankPages(evtApplyTranspositions(pages.slice(), doc), doc);
+      } else if (this.editionLevelID === 'changesView') {
+        const layerOrder: string[] = (changeData && (changeData as any).layerOrder) || [];
+        override = evtFilterByWritingPhase(pages, selectedLayer, layerOrder);
+      }
       evtPagesOverride$.next(override);
 
       return { pages: override || pages, currentPage, editionLevel, currentViewMode };
