@@ -428,3 +428,17 @@ html[data-el="changesView"] [data-change="#fase-N"] { color: #260F8B; }
 html[data-el="changesView"] [data-change="#strato-O"] { color: #9B9B9B; }
 html[data-el="changesView"] [data-change="#strato-P"] { color: #6E6A6A; }
 html[data-el="changesView"] [data-change="#strato-X"] { color: #00796B; }
+
+/* ============================================================= */
+/* Vista interpretative ("critica") PULITA: solo l'ultima stesura  */
+/* - niente quadre editoriali (pre/post)                          */
+/* - niente cancellazioni (testo finale)                          */
+/* - niente sfondo verde delle aggiunte (verde resta in diplomatica) */
+/* Restano: choice, note, titoli in corsivo.                      */
+/* ============================================================= */
+html[data-el="interpretative"] .pre,
+html[data-el="interpretative"] .post { display: none !important; }
+html[data-el="interpretative"] evt-deletion,
+html[data-el="interpretative"] .deletion { display: none !important; }
+html[data-el="interpretative"] .add,
+html[data-el="interpretative"] evt-addition { background-color: transparent !important; }
