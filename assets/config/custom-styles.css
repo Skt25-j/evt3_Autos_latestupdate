@@ -413,21 +413,15 @@ html[data-el="interpretative"] [data-rend~="soloDiplomatica"] { display: none !i
 /* ============================================================= */
 
 /* --- colore per fase (solo changesView), SENZA sottolineatura --- */
-html[data-el="changesView"] [data-change="#fase-A"] { color: #E67E22; }
-html[data-el="changesView"] [data-change="#fase-B"] { color: #D35400; }
-html[data-el="changesView"] [data-change="#fase-C"] { color: #F06292; }
-html[data-el="changesView"] [data-change="#fase-D"] { color: #880E4F; }
+/* Testo NERO di default; solo queste fasi mantengono il colore:      */
+/* strato-E, strato-I, strato-L, strato-M, fase-N, strato-O, strato-P. */
 html[data-el="changesView"] [data-change="#strato-E"] { color: #9E9B9B; }
-html[data-el="changesView"] [data-change="#fase-F"] { color: #9C27B0; }
-html[data-el="changesView"] [data-change="#fase-G"] { color: #7B1FA2; }
-html[data-el="changesView"] [data-change="#fase-H"] { color: #512DA8; }
 html[data-el="changesView"] [data-change="#strato-I"] { color: #2404B5; }
 html[data-el="changesView"] [data-change="#strato-L"] { color: #BB1515; }
 html[data-el="changesView"] [data-change="#strato-M"] { color: #080277; }
 html[data-el="changesView"] [data-change="#fase-N"] { color: #260F8B; }
 html[data-el="changesView"] [data-change="#strato-O"] { color: #9B9B9B; }
 html[data-el="changesView"] [data-change="#strato-P"] { color: #6E6A6A; }
-html[data-el="changesView"] [data-change="#strato-X"] { color: #00796B; }
 
 /* ============================================================= */
 /* Vista interpretative ("critica") PULITA: solo l'ultima stesura  */
