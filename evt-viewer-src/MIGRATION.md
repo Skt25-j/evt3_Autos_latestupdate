@@ -19,7 +19,7 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 
 ## Elenco modifiche
 
-### 1. [FEAT] Filtro-per-fase su blocchi `p/div/ab/seg` + formattazione inline condizionata
+### 1. [FEAT] Filtro-per-fase su blocchi `p/div/ab/seg/lg` + formattazione inline condizionata
 - File: `components/paragraph/paragraph.component.{ts,html}`, `components/generic-element/generic-element.component.{ts,html}`, `assets/config/custom-styles.css`
 - Cosa (blocchi): in `changesView`, un **blocco** con `@change` (`p` = paragraph; `div/ab/seg`
   = generic-element, whitelist `FILTERABLE_BLOCKS`) si mostra solo dalla sua fase in poi
