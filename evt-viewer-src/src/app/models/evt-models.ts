@@ -55,6 +55,9 @@ export interface Page {
     parsedContent: Array<ParseResult<GenericElement>>;
     url: string;
     facsUrl: string;
+    // Fase di scrittura della carta (es. '#fase-D'), letta da @change sul <pb>.
+    // Usata dal page-selector per il "ghosting" per fase. Opzionale.
+    writingChange?: string;
 }
 
 export interface ChangeLayerData {

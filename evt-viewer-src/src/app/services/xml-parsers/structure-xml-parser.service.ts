@@ -66,6 +66,7 @@ export class StructureXmlParserService {
       parsedContent: this.parsePageContent(doc, originalContent),
       url: this.getPageUrl(getID(pb, 'page')),
       facsUrl: this.getPageUrl((pb.getAttribute('facs') || getID(pb, 'page')).split('#').slice(-1)[0]),
+      writingChange: pb.getAttribute('change') || undefined,
     };
   }
 
