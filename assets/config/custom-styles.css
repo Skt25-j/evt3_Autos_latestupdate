@@ -436,6 +436,9 @@ html[data-el="interpretative"] evt-deletion,
 html[data-el="interpretative"] .deletion { display: none !important; }
 html[data-el="interpretative"] .add,
 html[data-el="interpretative"] evt-addition { background-color: transparent !important; }
+/* niente sfondo verde nemmeno sui <mod> (subst/app) in interpretative */
+html[data-el="interpretative"] .mod,
+html[data-el="interpretative"] evt-mod .mod { background-color: transparent !important; }
 
 /* Formattazione inline legata alla fase (es. <hi rend="underline" change=...>): */
 /* il testo resta visibile, ma la formattazione compare solo dalla sua fase in poi. */
