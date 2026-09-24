@@ -114,15 +114,16 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - File: `components/page-selector/page-selector.component.{ts,html}`,
   `services/xml-parsers/structure-xml-parser.service.ts`, `models/evt-models.ts`
   + dati: `@change="#fase-X"` sui `<pb>` in `assets/data/text/autos_fix_2.xml`.
-- Cosa: nel selettore delle pagine, le carte non ancora scritte nella **fase**
-  selezionata restano **disabilitate/ingrigite** (ghosting), in modo **cumulativo**
-  (fase-C ⇒ disponibili A+B+C…). Vale SOLO per le fasi (`fase-*`); con uno **strato**
-  (`strato-*`) non si disabilita nulla. Una carta senza `@change` è sempre disponibile.
+- Cosa: nel selettore delle pagine, le carte non ancora scritte al **livello**
+  selezionato restano **disabilitate/ingrigite** (ghosting), in modo **cumulativo**
+  (fase-C ⇒ disponibili A+B+C…). Criterio: cumulativo puro sull'indice in `layerOrder`,
+  valido sia per le **fasi** sia per gli **strati** (es. una carta `@change="#strato-E"`
+  compare solo da strato-E in poi). Una carta senza `@change` è sempre disponibile.
 - Come: il parser legge `pb.getAttribute('change')` in `Page.writingChange`;
   `page-selector` costruisce `displayPages$` = `combineLatest([pages$, updateLayer$,
-  currentChanges$])` e marca `disabled` quando la fase di scrittura della carta viene
-  DOPO la fase selezionata (indice in `layerOrder`). ng-select (v8) disabilita e
-  ingrigisce gli item con `disabled:true` (né mouse né tastiera).
+  currentChanges$])` e marca `disabled` quando l'indice di scrittura della carta è
+  MAGGIORE dell'indice del livello selezionato (in `layerOrder`). ng-select (v8)
+  disabilita e ingrigisce gli item con `disabled:true` (né mouse né tastiera).
 - Dati: la fase di scrittura è sul `<pb>` (unità diplomatica) come `@change`; una carta
   a cavallo di due fasi va marcata con la PRIMA. ~25 carte "di margine" (bianche,
   varianti, copertine q2) sono lasciate senza `@change` = sempre disponibili, da rifinire.

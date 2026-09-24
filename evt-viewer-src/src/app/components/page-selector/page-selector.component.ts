@@ -23,10 +23,13 @@ interface PageOption extends Page {
 export class PageSelectorComponent {
   public pages$ = this.evtModelService.pages$;
 
-  // Selettore con "ghosting" per fase: una carta con @change="#fase-X" (letto sul
-  // <pb> in writingChange) resta disabilitata finche' la fase selezionata non
-  // raggiunge X (cumulativo). Il filtro agisce SOLO quando e' selezionata una
-  // fase; con uno strato (strato-*) non si disabilita nulla.
+  // Selettore con "ghosting" cumulativo per fase/strato: una carta con
+  // @change="#fase-X" o "#strato-Y" (letto sul <pb> in writingChange) resta
+  // disabilitata finche' il livello selezionato non raggiunge quel livello
+  // nell'ordine cronologico (layerOrder). Criterio cumulativo puro sull'indice:
+  // disponibile se indice(selezionato) >= indice(scrittura della carta). Vale sia
+  // per le fasi sia per gli strati (es. 7v2 solo da strato-E, 20v2 da strato-L).
+  // Le carte senza @change sono sempre disponibili.
   public displayPages$ = combineLatest([
     this.pages$,
     this.evtStatus.updateLayer$.pipe(startWith(undefined as string)),
@@ -35,19 +38,15 @@ export class PageSelectorComponent {
     map(([pages, selectedLayer, changes]) => {
       const layerOrder: string[] = (changes && changes.layerOrder) || [];
       const clean = (l: string) => (l || '').replace('#', '');
-      const isFase = (l: string) => clean(l).startsWith('fase-');
       const idxOf = (l: string) => layerOrder.indexOf(clean(l));
 
-      const selIsFase = isFase(selectedLayer);
       const selIdx = idxOf(selectedLayer);
 
       return pages.map((p, i) => {
         let disabled = false;
-        // disabilita solo se: e' selezionata una fase, la carta ha una fase di
-        // scrittura (fase-*), e quella fase viene DOPO la fase selezionata.
-        if (selIsFase && selIdx !== -1 && p.writingChange && isFase(p.writingChange)) {
+        if (selIdx !== -1 && p.writingChange) {
           const pIdx = idxOf(p.writingChange);
-          disabled = pIdx !== -1 && pIdx > selIdx;
+          disabled = pIdx !== -1 && pIdx > selIdx; // carta scritta DOPO il livello selezionato
         }
 
         return { ...p, num: i + 1, disabled } as PageOption;

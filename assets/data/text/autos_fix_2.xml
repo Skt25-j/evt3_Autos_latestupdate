@@ -3224,7 +3224,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="16"/>una stranezza e <mod change="#fase-D"><add place="above">un’</add></mod>inconvenienza. <choice resp="#TAV"><sic>(1)</sic><corr/></choice></p>
                     </div>
                     <div type="page" xml:id="Quaderno2_3v_b">
-                        <pb n="3v2b" facs="3v2.jpg"/>
+                        <pb n="3v2b" facs="3v2.jpg" change="#fase-D"/>
                         <p rend="indent" change="#fase-D"><lb n="17"/>Nel terzo anno di Seminario, in cui compî la terza edizione,
                                 <lb n="18"/>1907, la battaglia interna e i contrasti disciplinari si fecero
                                 <lb n="19"/>un po’ più lievi, <mod change="#fase-D"><subst><del rend="overwritten">non</del> <add place="superimposed">ma</add></subst></mod> non che si chetassero affatto. Io non diventai
@@ -3273,7 +3273,7 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="8"/></p>
                     </div>
                     <div type="page" xml:id="Quaderno2_4v_letture">
-                        <pb n="4v2b" facs="4v2.jpg"/>
+                        <pb n="4v2b" facs="4v2.jpg" change="#fase-D"/>
                         <p rend="indent" change="#fase-D"><lb n="9"/><choice resp="#TAV"><sic>(1)</sic><corr/></choice>In quanto a<mod change="#fase-D"><del rend="strikethrough">l</del></mod>le letture in quell’anno di 2° Ginnasiale
                                 <lb n="10"/>non ne feci poche. A scuola leggemmo il Primo Volume 
                                 <lb n="11"/>delle Vite dei Pittori – Scultori – Architetti per Giorgio Vasari
@@ -3431,7 +3431,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                             </mod></note><mod change="#strato-E" rend="soloDiplomatica"><add place="margin">bene</add></mod><lb/></ab>
                     </div>
                     <div type="page" xml:id="Quaderno2_7r_faseD">
-                        <pb n="7r2" facs="7r2.jpg"/>
+                        <pb n="7r2" facs="7r2.jpg" change="#fase-D"/>
                         
                         <p rend="indent" change="#fase-D"><lb n="8"/>
                                 <lb n="9"/><lb n="10"/>a fila, le lettere del Leopardi e del Giusti, il Cuore e i
@@ -3443,14 +3443,14 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 <lb n="16"/>obbligatorii.</p>
                     </div>
                     <div type="page" xml:id="Quaderno2_7r_faseD2">
-                        <pb n="7r2c" facs="7r2.jpg"/>
+                        <pb n="7r2c" facs="7r2.jpg" change="#fase-D"/>
                         <p change="#fase-D"><lb n="17"/><metamark rend="superimposed">(.)</metamark>In quell’anno <mod change="#fase-D"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
                                 <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
                                 <lb n="19"/>noscenza delle sue opere. Anzi <mod change="#fase-D"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
                                     <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</p>
                     </div>
                     <div type="page" xml:id="Quaderno2_7v">
-                        <pb n="7v2" facs="7v2.jpg"/>
+                        <pb n="7v2" facs="7v2.jpg" change="#strato-E"/>
                         <ab change="#strato-E">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>"</ab>
                     </div>
                     <div type="page">
@@ -3716,7 +3716,7 @@ in una <mod change="#fase-F">
                                 <lb n="20"/>con ragione o senza, le <mod change="#fase-G"><subst><del rend="strikethrough">teorie</del> <add place="above">dottrine</add></subst></mod> che ci andava in<mod change="#fase-G"><subst><del rend="overwritten">n</del><add place="superimposed">se</add></subst></mod>gnando.</p>
                     </div>
                     <div type="page">
-                        <pb n="12v2" xml:id="Quaderno2_12v" facs="12v2.jpg"/>
+                        <pb n="12v2" xml:id="Quaderno2_12v" facs="12v2.jpg" change="#fase-G"/>
                         <p rend="indent" change="#fase-G"><lb n="1"/>L’Apologia era del Ballerini, scritta con arte e con scienza,
                                 <lb n="2"/>facile e divertente ai volenterosi, noiosa e difficile agli
                                 <lb n="3"/>indifferenti. <mod change="#fase-G">
@@ -3794,7 +3794,7 @@ in una <mod change="#fase-F">
                                 <lb n="20"/>non interrogarmi più, <mod change="#fase-G"><subst><del rend="strikethrough">per</del> <add place="inline">aspettandomi</add></subst></mod> a fare i conti</p>
                     </div>
                     <div type="page">
-                        <pb n="14v2" xml:id="Quaderno2_14v" facs="14v2.jpg" type="blank"/>
+                        <pb n="14v2" xml:id="Quaderno2_14v" facs="14v2.jpg" type="blank" change="#fase-G"/>
                         <p rend="indent" change="#fase-G"><lb n="4"/><del rend="strikethrough">Int</del></p>
                     </div>
                     <div type="page">
@@ -3806,14 +3806,14 @@ in una <mod change="#fase-F">
                             </p>
                     </div>
                     <div type="page" xml:id="Quaderno2_15r_ciò">
-                        <pb n="15r2b" facs="15r2.jpg"/>
+                        <pb n="15r2b" facs="15r2.jpg" change="#fase-G"/>
                         <p rend="indent" change="#fase-G"><hi rend="apice">(1)</hi>Di tutto ciò <app><lem varSeq="2"><mod change="#strato-O">m<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> <del rend="strikethrough">ne</del></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-G">me ne</mod></rdg>
                                 </app> rallegrai allora, ora me ne dolgo
                                 <lb n="5"/>e riconosco la mia spensieratezza e stravaganza.</p>
                     </div>
                     <div type="page" xml:id="Quaderno2_15r_intanto">
-                        <pb n="15r2c" facs="15r2.jpg"/>
+                        <pb n="15r2c" facs="15r2.jpg" change="#fase-G"/>
                         <p rend="indent" change="#fase-G"><hi rend="apice">(1)</hi>Intanto io avevo imparato con immenso piacere “A Silvia”
                                 <lb n="7"/>“La vita solitaria” “Le ricordanze” “Amore e morte” e letto ripetu-
                                 <lb n="8"/>tamente “La Ginestra” che mi piaceva oltremodo <mod change="#fase-G"><add place="above">e dato uno sguardo a’ tutte le altre</add></mod>. <mod change="#fase-G"><del rend="strikethrough">Da</del> <subst><del rend="overwritten">t</del><add place="superimposed">T</add></subst>utto
@@ -3824,7 +3824,7 @@ in una <mod change="#fase-F">
                                 <lb n="13"/>dava da Firenze a Settignano.</p>
                     </div>
                     <div type="page">
-                        <pb n="15r2d" xml:id="Quaderno2_15r_dopo" facs="15r2.jpg"/>
+                        <pb n="15r2d" xml:id="Quaderno2_15r_dopo" facs="15r2.jpg" change="#fase-G"/>
                         <p rend="indnet" change="#fase-G"><lb n="14"/>Oltre il Leopardi, m’era assi facile <mod change="#fase-G"><subst><del rend="strikethrough">il</del> <add place="inline">il</add></subst></mod> Foscolo e in
                                 <lb n="15"/>quell’anno stesso giunsi a impararne <mod change="#fase-G"><subst><del rend="strikethrough">a mena dito</del> <add place="above">da capo a fondo</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. -->
@@ -4084,7 +4084,7 @@ in una <mod change="#fase-F">
                                 <lb n="20"/>campanello fratesco, rompeva <mod change="#fase-G"><subst><del rend="strikethrough">i</del> <add place="inline">la</add></subst></mod> mia estasi,</p>
                     </div>
                     <div type="page" xml:id="Quaderno2_20v">
-                        <pb n="20v2" facs="20v2.jpg"/>
+                        <pb n="20v2" facs="20v2.jpg" change="#strato-L"/>
                         <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <p rend="indent"><mod change="#strato-L"><note resp="#TUS"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</note></mod></p> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><p rend="indent" change="#strato-L">
                                 <lb/><choice>
                                     <abbr>N</abbr>
