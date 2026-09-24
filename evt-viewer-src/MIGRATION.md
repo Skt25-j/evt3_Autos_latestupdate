@@ -114,8 +114,9 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - File: `components/page-selector/page-selector.component.{ts,html}`,
   `services/xml-parsers/structure-xml-parser.service.ts`, `models/evt-models.ts`
   + dati: `@change="#fase-X"` sui `<pb>` in `assets/data/text/autos_fix_2.xml`.
-- Cosa: nel selettore delle pagine, le carte non ancora scritte al **livello**
-  selezionato restano **disabilitate/ingrigite** (ghosting), in modo **cumulativo**
+- Cosa: **solo nella vista "changes" (changesView)**, nel selettore delle pagine le
+  carte non ancora scritte al **livello** selezionato restano **disabilitate/ingrigite**
+  (ghosting), in modo **cumulativo**
   (fase-C ⇒ disponibili A+B+C…). Criterio: cumulativo puro sull'indice in `layerOrder`,
   valido sia per le **fasi** sia per gli **strati** (es. una carta `@change="#strato-E"`
   compare solo da strato-E in poi). Una carta senza `@change` è sempre disponibile.

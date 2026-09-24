@@ -2,6 +2,7 @@ import { Component, Input, Output } from '@angular/core';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { distinctUntilChanged, filter, map, startWith } from 'rxjs/operators';
 
+import { EditionLevelType } from '../../app.config';
 import { Page } from '../../models/evt-models';
 import { EVTModelService } from '../../services/evt-model.service';
 import { EVTStatusService } from '../../services/evt-status.service';
@@ -34,17 +35,22 @@ export class PageSelectorComponent {
     this.pages$,
     this.evtStatus.updateLayer$.pipe(startWith(undefined as string)),
     this.evtStatus.currentChanges$.pipe(startWith(undefined)),
+    this.evtStatus.currentEditionLevels$.pipe(startWith([] as EditionLevelType[])),
   ]).pipe(
-    map(([pages, selectedLayer, changes]) => {
+    map(([pages, selectedLayer, changes, editionLevels]) => {
       const layerOrder: string[] = (changes && changes.layerOrder) || [];
       const clean = (l: string) => (l || '').replace('#', '');
       const idxOf = (l: string) => layerOrder.indexOf(clean(l));
 
+      // Il ghosting per fase/strato agisce SOLO nella vista "changes"
+      // (changesView): in diplomatica e in critica il selettore mostra tutte le
+      // carte, sempre disponibili.
+      const inChanges = (editionLevels && editionLevels[0]) === 'changesView';
       const selIdx = idxOf(selectedLayer);
 
       return pages.map((p, i) => {
         let disabled = false;
-        if (selIdx !== -1 && p.writingChange) {
+        if (inChanges && selIdx !== -1 && p.writingChange) {
           const pIdx = idxOf(p.writingChange);
           disabled = pIdx !== -1 && pIdx > selIdx; // carta scritta DOPO il livello selezionato
         }
