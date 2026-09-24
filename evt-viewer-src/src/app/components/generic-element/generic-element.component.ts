@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { GenericElement } from '../../models/evt-models';
 import { register } from '../../services/component-register.service';
@@ -52,6 +52,20 @@ export class GenericElementComponent implements OnInit, OnDestroy {
     const change = this.data?.attributes?.change;
     if (this.editionLevel !== 'changesView' || !change) { return false; }
     if (!GenericElementComponent.FILTERABLE_BLOCKS.includes(this.data?.class)) { return false; }
+    if (this.orderedLayers.length === 0) { return false; }
+    const current = this.selLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
+
+    return this.getLayerIndex(current) < this.getLayerIndex(change);
+  }
+
+  // Inline formatting (e.g. <hi rend="underline"> with @change): the text stays
+  // visible, but the formatting must appear only from its change phase onward.
+  // This class is added while that phase has not been reached yet; the CSS then
+  // neutralizes the formatting (see custom-styles.css).
+  @HostBinding('class.evt-change-pending') get changePending(): boolean {
+    const change = this.data?.attributes?.change;
+    if (this.editionLevel !== 'changesView' || !change) { return false; }
+    if (GenericElementComponent.FILTERABLE_BLOCKS.includes(this.data?.class)) { return false; }
     if (this.orderedLayers.length === 0) { return false; }
     const current = this.selLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
 

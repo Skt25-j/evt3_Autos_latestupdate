@@ -442,3 +442,13 @@ html[data-el="interpretative"] evt-deletion,
 html[data-el="interpretative"] .deletion { display: none !important; }
 html[data-el="interpretative"] .add,
 html[data-el="interpretative"] evt-addition { background-color: transparent !important; }
+
+/* Formattazione inline legata alla fase (es. <hi rend="underline" change=...>): */
+/* il testo resta visibile, ma la formattazione compare solo dalla sua fase in poi. */
+/* Prima di quella fase l'host ha la classe evt-change-pending e la neutralizziamo.  */
+html[data-el="changesView"] evt-generic-element.evt-change-pending {
+    text-decoration: none !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    background-color: transparent !important;
+}
