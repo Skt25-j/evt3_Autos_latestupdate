@@ -771,8 +771,8 @@
                             
                         </p>
                     </div> 
-                    <div type="page">
-                        <pb n="1v1" xml:id="Quaderno1_1v" facs="1v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_1v">
+                        <pb n="1v1" facs="1v.jpg"/>
                         <p rend="indent"><mod change="#fase-C"><add place="margin-left"><hi rend="underline">Corrigendo</hi></add></mod></p>
                     </div>
                     <div type="page">
@@ -1542,8 +1542,8 @@
                         <pb n="11v1" xml:id="Quaderno1_11v" facs="11v.jpg" type="blank"/>
                     </div>
                     
-                    <div type="page">
-                        <pb n="12r1" xml:id="Quaderno1_12r" facs="12r.jpg"/>
+                    <div type="page" xml:id="Quaderno1_12r">
+                        <pb n="12r1" facs="12r.jpg"/>
                         <fw place="top_right" type="pageNum"><mod change="#fase-C"><add>13</add></mod></fw>
                         <p rend="indent" change="#fase-B">
                                 <lb n="1"/>scapato, disattento, svogliato. I miei superiori si lamen-
@@ -1585,8 +1585,8 @@
                                         <add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                             </p>
                     </div>
-                    <div type="page">
-                        <pb n="12r1b" xml:id="Quaderno1_12r_b" facs="12r.jpg"/>
+                    <div type="page" xml:id="Quaderno1_12r_b">
+                        <pb n="12r1b" facs="12r.jpg"/>
                         <p rend="indent" change="#fase-B">
                                 <metamark function="transposition" target="#Quaderno1_12v" place="above">(1)</metamark>
                                 <mod change="#fase-B"><add place="above">Molte altre</add></mod>
@@ -1685,8 +1685,8 @@
                          </choice> scresceva la scapataggine, non potevano</mod> 
                          </p>
                          </div> -->
-                    <div type="page">
-                        <pb n="12v1" xml:id="Quaderno1_12v" facs="12v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_12v">
+                        <pb n="12v1" facs="12v.jpg"/>
                         <p rend="indent" change="#fase-B">
                                 <lb n="1"/><metamark function="transposition" target="#Quaderno1_12r_b" place="above">(1)</metamark>Molte volte <mod change="#fase-B"><subst><add place="inline">m'avvenne</add>
                                         <del rend="strikethrough">andare</del></subst></mod>
@@ -2336,8 +2336,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         <!-- é il varSeq che fa nascere i problemi legati allo 12121 nella visualizzazione della sequenza delle correzioni-->
                         
                     </div>
-                    <div type="page">
-                        <pb n="18v1" xml:id="Quaderno1_18v" facs="18v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_18v">
+                        <pb n="18v1" facs="18v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>20</add></mod></fw>
                         <p rend="indent" change="#fase-D">
                             
@@ -2436,8 +2436,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="19"/><l n="7">magnanima vedranno sacro ricordo</l>
                                     <lb n="20"/><l n="8">sarà quel marmo.</l><note resp="#TUS" rend="soloCritica" change="#strato-E"><add place="margin"><persName ref="#Ugo_Foscolo">Foscolo</persName></add></note><mod change="#strato-E" rend="soloDiplomatica"><add place="margin"><persName ref="#Ugo_Foscolo">Foscolo</persName></add></mod></lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="19v1" xml:id="Quaderno1_19v" facs="19v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_19v">
+                        <pb n="19v1" facs="19v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>22</add></mod></fw>
                         <p rend="indent" change="#fase-D">
                                 <lb n="1"/>Nella prima 
@@ -2537,8 +2537,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         
                         
                     </div>
-                    <div type="page">
-                        <pb n="20v1" xml:id="Quaderno1_20v" facs="20v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_20v">
+                        <pb n="20v1" facs="20v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add><hi rend="underline">24</hi></add></mod></fw>
                         <p rend="indent" change="#fase-D">
                             <lb n="1"/>ricordo che la superbia s’era moltiplicata per 14 e la mia fede invece
@@ -2608,8 +2608,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="2">sei tu qui presso? Ove t’aggiri?... Ferma</l></lg></sp>
                         
                     </div>
-                    <div type="page">
-                        <pb n="21v1" xml:id="Quaderno1_21v" facs="21v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_21v">
+                        <pb n="21v1" facs="21v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add><hi rend="underline">26</hi></add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>arte fanciulla e dei vaneggiamenti giovanili.</p>
                         <p rend="indent" change="#fase-D"><lb n="2"/>Ma ohimè! quello che per due anni, fu per me
@@ -2681,8 +2681,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="2">non si strinsero in noi tenaci nodi?</l>
                             </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="22v1" xml:id="Quaderno1_22v" facs="22v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_22v">
+                        <pb n="22v1" facs="22v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add><hi rend="underline">28</hi></add></mod></fw>
                         <p rend="indent" change="#fase-D">
                                 <lb n="1"/>studiassi di sembrare attento alle lezioni del maestro e agli
@@ -2756,8 +2756,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="21"/><l n="6">d’amore ha per chi l’odia</l>
                                 </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="23v1" xml:id="Quaderno1_23v" facs="23v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_23v">
+                        <pb n="23v1" facs="23v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>30</add></mod></fw>
                         <p rend="indent" change="#fase-D">
                                 <lb n="1"/>pensiero del dovere. Saltavo e pensavo a qualche scena, reci-
@@ -2822,8 +2822,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="19"/><l n="5">morrai sul soglio e cederai quel trono.</l></lg></sp>
                         <p rend="indent" change="#fase-C"><lb n="20"/>e qui l’altro pure inasprisce:</p>
                     </div>
-                    <div type="page">
-                        <pb n="24v1" xml:id="Quaderno1_24v" facs="24v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_24v">
+                        <pb n="24v1" facs="24v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>32</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>e questa <mod change="#fase-D"><subst><del rend="strikethrough">l</del> <add place="inline">spessità</add></subst></mod> di punizioni urtò il mio <mod change="#fase-D"><add place="above">forte</add></mod> carattere, che dovetò
                                 <lb n="2"/>bilioso, collerico, dispettoso, invece di piegarlo a moderatezza e
@@ -2899,8 +2899,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 
                             </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="25v1" xml:id="Quaderno1_25v" facs="25v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_25v">
+                        <pb n="25v1" facs="25v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>34</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>Quante volte dissi fra me: «se i miei superiori non fossero
                                 <lb n="2"/>stati preti, io potevo mostrare i miei getti ed esser onorato
@@ -2949,8 +2949,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="5">dei nemici la fiamma estinguerassi</l>
                             </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="26v1" xml:id="Quaderno1_26v" facs="26v.jpg"/>
+                    <div type="page" xml:id="Quaderno1_26v">
+                        <pb n="26v1" facs="26v.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>36</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>il giorno che compivo 16 anni. Dubitavo ed ero <mod change="#fase-D"><subst><del rend="strikethrough">tra</del> <add place="inline">nato</add></subst></mod> e cresciu-
                                 <lb n="2"/>to tra le tonache e gli altari, <mod change="#fase-D"><subst><del rend="strikethrough">di</del> <add place="inline">era</add></subst></mod> indisciplinato ed ero
@@ -3003,8 +3003,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
             </text>
             <text n="Autos_2" xml:id="Autos_2">
                 <body>
-                    <div type="page">
-                        <pb n="Cop_r2" xml:id="Quaderno2_Cop_r" facs="Cop_r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_Cop_r">
+                        <pb n="Cop_r2" facs="Cop_r2.jpg"/>
                         <fw place="top_right"><mod change="#fase-C"><add>1911</add></mod></fw>
                         <ab rend="align-center">
                             <mod change="#strato-E"><del rend="strikethrough">Tuscano</del></mod>
@@ -3013,8 +3013,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                         </ab>
                         <fw place="margin_right"><mod change="#strato-E"><add>1911</add></mod></fw>
                     </div>
-                    <div type="page">
-                        <pb n="Cop_v2" xml:id="Quaderno2_Cop_v2" facs="Cop_v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_Cop_v2">
+                        <pb n="Cop_v2" facs="Cop_v2.jpg"/>
                     </div>
                     <div type="page">
                         <pb n="1r2" xml:id="Quaderno2_1r" facs="1r2.jpg"/>
@@ -3048,8 +3048,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="5">che palpit<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> per te suoi dolci spiri.</l>
                             </lg></sp><!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#fase-D"><note resp="#TUS">Totale 246</note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"> <ab rend="margin"><mod change="#fase-D">Totale 246</mod></ab></note><ab rend="margin soloDiplomatica"><mod change="#fase-D">Totale 246</mod></ab>
                     </div>
-                    <div type="page">
-                        <pb n="1v2" xml:id="Quaderno2_1v" facs="1v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_1v">
+                        <pb n="1v2" facs="1v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>38</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>aver strappato un quaderno intero di compita, e fattolo a <mod change="#fase-D"><subst><del rend="strikethrough">pe</del>
                                         <lb n="2"/><add place="inline">frantumi</add></subst></mod>, fremendo e imprecando; un’altra volta per una
@@ -3133,8 +3133,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="8">tu che tutto concedi e tutto vedi.</l>
                                 </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="2v2" xml:id="Quaderno2_2v" facs="2v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_2v">
+                        <pb n="2v2" facs="2v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>40</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>Tra queste tempeste <mod change="#fase-D"><subst><del rend="strikethrough">era</del> <add place="inline">cresceva</add></subst></mod> <mod change="#fase-D"><add place="above">la seconda edizione</add> <subst><del rend="overwritten">i</del><add place="superimposed">de</add></subst>l</mod> mio Daniello profeta.</p>
                         <p rend="indent" change="#fase-D"><lb n="2"/>In quelle vacanze 1906 cominciò a distrarmi il
@@ -3190,8 +3190,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     
                                 </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="3v2" xml:id="Quaderno2_3v" facs="3v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_3v">
+                        <pb n="3v2" facs="3v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>42</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>Suore di Carità nell’occasione che una mia sorella abbracciava
                                 <lb n="2"/>quello stato. Il 1° di Gennaio 1906 feci una poesia in lode
@@ -3223,8 +3223,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="15"/>Madonna di Pompei fatta vedere a un Sottoprefetto, che mi criticò
                                 <lb n="16"/>una stranezza e <mod change="#fase-D"><add place="above">un’</add></mod>inconvenienza. <choice resp="#TAV"><sic>(1)</sic><corr/></choice></p>
                     </div>
-                    <div type="page">
-                        <pb n="3v2b" xml:id="Quaderno2_3v_b" facs="3v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_3v_b">
+                        <pb n="3v2b" facs="3v2.jpg"/>
                         <p rend="indent" change="#fase-D"><lb n="17"/>Nel terzo anno di Seminario, in cui compî la terza edizione,
                                 <lb n="18"/>1907, la battaglia interna e i contrasti disciplinari si fecero
                                 <lb n="19"/>un po’ più lievi, <mod change="#fase-D"><subst><del rend="overwritten">non</del> <add place="superimposed">ma</add></subst></mod> non che si chetassero affatto. Io non diventai
@@ -3260,8 +3260,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="7">Che dell’amor il pegno</l>
                             </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="4v2" xml:id="Quaderno2_4v" facs="4v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_4v">
+                        <pb n="4v2" facs="4v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>45</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/><mod change="#fase-D"><subst><del rend="strikethrough">ne</del> <add place="inline">scrissi</add></subst></mod> altre poesie come una a S. Alfonso dei Liguori,
                                 <lb n="2"/>che mi fu lo<mod change="#fase-D"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del><add place="superimposed">d</add></subst></mod>ata dai prefetti (cosa che non me l’aspettavo);
@@ -3272,8 +3272,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                 <lb n="7"/>senari, dietro lo schema degli Ospizi Marini dello Zanella.
                                 <lb n="8"/></p>
                     </div>
-                    <div type="page">
-                        <pb n="4v2b" xml:id="Quaderno2_4v_letture" facs="4v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_4v_letture">
+                        <pb n="4v2b" facs="4v2.jpg"/>
                         <p rend="indent" change="#fase-D"><lb n="9"/><choice resp="#TAV"><sic>(1)</sic><corr/></choice>In quanto a<mod change="#fase-D"><del rend="strikethrough">l</del></mod>le letture in quell’anno di 2° Ginnasiale
                                 <lb n="10"/>non ne feci poche. A scuola leggemmo il Primo Volume 
                                 <lb n="11"/>delle Vite dei Pittori – Scultori – Architetti per Giorgio Vasari
@@ -3310,8 +3310,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="17"/><l n="17">di sì feroci belve il suo Signor.</l>
                                 </lg></sp>    <!-- Ci sarebbe da inserire la spirale con il metamark-->
                     </div>
-                    <div type="page">
-                        <pb n="5v2" xml:id="Quaderno2_5v" facs="5v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_5v">
+                        <pb n="5v2" facs="5v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>46</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>Foscoliano, del quale ne misi a memoria il primo squarcio
                                 <lb n="2"/>fino a <choice resp="#TAV"><sic>Sol|chi</sic><corr>Sol chi</corr></choice> <choice resp="#TAV"><sic/><corr>non</corr></choice> lascia etc. e il secondo da <hi rend="underline">Pur nuova legge</hi> a
@@ -3377,8 +3377,8 @@ chiarezza, l’intero sintagma <hi rend="italic">la mia cara</hi></note>
                                     <lb n="20"/><l n="1">Gittast<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">e</add></subst></mod> il vate nella <mod change="#fase-C"><subst><del rend="overwritten">c</del><add place="superimposed">f</add></subst>o<subst><del rend="overwritten">n</del><add place="superimposed">ss</add></subst>a</mod> ed egli</l>
                                 </lg></sp>
                     </div>
-                    <div type="page">
-                        <pb n="6v2" xml:id="Quaderno2_6v" facs="6v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_6v">
+                        <pb n="6v2" facs="6v2.jpg"/>
                         <fw place="top_left" type="pageNum"><mod change="#strato-E"><add>48</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>il poema; imparai il Pater Noster <mod change="#fase-D"><subst><del rend="strikethrough">tutto versi</del> <add place="inline">poetizzato</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. --> nel Canto
@@ -3412,8 +3412,8 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                         <!-- qui ci va il testo a fila, le lettere del Leopardi e del Giusti, il Cuore e i Bozzetti di De Amicis, il Fieramosca del D’Azeglio, il Marco Visconti del Grossi; i Ricordi di Dupré, alcune Commedie del Goldoni. L’antologie del Bruni, del Mondi, del Martini.-->
                         
                     </div>
-                    <div type="page">
-                        <pb n="7r2" xml:id="Quaderno2_7r" facs="7r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_7r">
+                        <pb n="7r2" facs="7r2.jpg"/>
                         <fw place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">49</add> <del rend="strikethrough">34</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">34</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg>
                                     <lb n="1"/><l n="2">fra voi fu sempre com’<hi rend="underline" change="#strato-E"> <choice resp="ST"><corr>agnel</corr><sic>agnol</sic></choice> tra i lupi.</hi> <!-- Formalmente manca, sia qui che dopo, l'# per far puntare il change; tuttavia, in questo modo, nella visualizzazione changes vedo correttamente soltanto la sottolineatura grigia, come dovrebbe essere, e non tutta la parola. Ci si potrebbe interrogare se questa non sia una possibilità da sfruttare, anche se non corretta a livello formale, ma che possa giocare a nostro favore per la visualizzazione-->
@@ -3430,8 +3430,8 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 <add place="margin">bene</add>
                             </mod></note><mod change="#strato-E" rend="soloDiplomatica"><add place="margin">bene</add></mod><lb/></ab>
                     </div>
-                    <div type="page">
-                        <pb n="7r2" xml:id="Quaderno2_7r_faseD" facs="7r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_7r_faseD">
+                        <pb n="7r2" facs="7r2.jpg"/>
                         
                         <p rend="indent" change="#fase-D"><lb n="8"/>
                                 <lb n="9"/><lb n="10"/>a fila, le lettere del Leopardi e del Giusti, il Cuore e i
@@ -3442,15 +3442,15 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 <lb n="15"/>poteva avanzarmi gran tempo per ben riuscire agli studi
                                 <lb n="16"/>obbligatorii.</p>
                     </div>
-                    <div type="page">
-                        <pb n="7r2c" xml:id="Quaderno2_7r_faseD2" facs="7r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_7r_faseD2">
+                        <pb n="7r2c" facs="7r2.jpg"/>
                         <p change="#fase-D"><lb n="17"/><metamark rend="superimposed">(.)</metamark>In quell’anno <mod change="#fase-D"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
                                 <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co-
                                 <lb n="19"/>noscenza delle sue opere. Anzi <mod change="#fase-D"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
                                     <lb n="20"/><del rend="strikethrough" xml:id="del_mi1">mi rammentò Boni</del><substJoin target="#del_mi1 #add_ricordo1"/></mod> intorno alla morte di Giosue.</p>
                     </div>
-                    <div type="page">
-                        <pb n="7v2" xml:id="Quaderno2_7v" facs="7v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_7v">
+                        <pb n="7v2" facs="7v2.jpg"/>
                         <ab change="#strato-E">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>"</ab>
                     </div>
                     <div type="page">
@@ -3805,15 +3805,15 @@ in una <mod change="#fase-F">
                                 <lb n="3"/>e dicevo, <hi rend="underline" change="#strato-I">e che avessi avuto del mattoide per la testa.</hi>
                             </p>
                     </div>
-                    <div type="page">
-                        <pb n="15r2b" xml:id="Quaderno2_15r_ciò" facs="15r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_15r_ciò">
+                        <pb n="15r2b" facs="15r2.jpg"/>
                         <p rend="indent" change="#fase-G"><hi rend="apice">(1)</hi>Di tutto ciò <app><lem varSeq="2"><mod change="#strato-O">m<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> <del rend="strikethrough">ne</del></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-G">me ne</mod></rdg>
                                 </app> rallegrai allora, ora me ne dolgo
                                 <lb n="5"/>e riconosco la mia spensieratezza e stravaganza.</p>
                     </div>
-                    <div type="page">
-                        <pb n="15r2c" xml:id="Quaderno2_15r_intanto" facs="15r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_15r_intanto">
+                        <pb n="15r2c" facs="15r2.jpg"/>
                         <p rend="indent" change="#fase-G"><hi rend="apice">(1)</hi>Intanto io avevo imparato con immenso piacere “A Silvia”
                                 <lb n="7"/>“La vita solitaria” “Le ricordanze” “Amore e morte” e letto ripetu-
                                 <lb n="8"/>tamente “La Ginestra” che mi piaceva oltremodo <mod change="#fase-G"><add place="above">e dato uno sguardo a’ tutte le altre</add></mod>. <mod change="#fase-G"><del rend="strikethrough">Da</del> <subst><del rend="overwritten">t</del><add place="superimposed">T</add></subst>utto
@@ -3878,8 +3878,8 @@ in una <mod change="#fase-F">
                         <p rend="indent" change="#fase-G"><lb n="19"/>Io era innamorato, appassionato, perduto per questi
                                 <lb n="20"/>quattro, e nei miei giudizi ero erroneamente parziale</p>
                     </div>
-                    <div type="page">
-                        <pb n="16v2" xml:id="Quaderno2_16v" facs="16v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_16v">
+                        <pb n="16v2" facs="16v2.jpg"/>
                         <p rend="indent" change="#fase-H"><lb/>Nota – Va all’anno 1911 – </p>
                         <p rend="indent" change="#fase-H"><lb/>Agitato da sì forti passioni, uscivo di casa, <mod change="#fase-H"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del><add place="superimposed">fuggivo</add></subst> <subst><del rend="overwritten">di</del><add place="superimposed">la</add></subst> <subst><del rend="overwritten"><gap unit="char" quantity="4"/></del><add place="superimposed">gente</add></subst></mod> clamorosa
                                 <lb/>prendevo la strada più solitaria, e mi gettavo su l’erba del primo prato che
@@ -3937,8 +3937,8 @@ in una <mod change="#fase-F">
                                 <lb n="19"/>maestri. <mod change="#fase-G">Ne<subst><del rend="overwritten">i</del><add place="superimposed">gli</add></subst> <subst><del rend="strikethrough">tem</del> <add place="inline">svolgimenti</add></subst></mod> dei temi italiani
                                 <lb n="20"/>dati dal maestr<choice resp="#TAV"><sic>i</sic><corr>o</corr></choice> io era affatto un <mod change="#fase-G"><subst><del rend="strikethrough">animale</del> <add place="inline">somaro</add></subst></mod>;</p>
                     </div>
-                    <div type="page">
-                        <pb n="17v2" xml:id="Quaderno2_17v" facs="17v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_17v">
+                        <pb n="17v2" facs="17v2.jpg"/>
                         <p rend="indent" change="#fase-H"><lb/><mod change="#fase-H">Quel<del rend="strikethrough">la</del> <subst><del rend="strikethrough">solitudine</del><add place="above">grande spazio, azzurro e silenzioso</add></subst></mod> mi <app><lem varSeq="2"><mod change="#fase-N">sembra<add place="inline">va</add></mod></lem>
                                     <rdg varSeq="1"><mod change="#fase-H">sembra</mod></rdg>    
                                 </app> popolat<choice resp="#TAV"><sic>a</sic><corr>o</corr></choice> di mille persone che a gran voce con-
@@ -4083,8 +4083,8 @@ in una <mod change="#fase-F">
                                         <lb n="19"/>gloria, in un mondo</del></mod> quando <mod change="#fase-G"><subst><del rend="overwritten">con</del><add place="superimposed">un</add></subst></mod> tocco odioso di
                                 <lb n="20"/>campanello fratesco, rompeva <mod change="#fase-G"><subst><del rend="strikethrough">i</del> <add place="inline">la</add></subst></mod> mia estasi,</p>
                     </div>
-                    <div type="page">
-                        <pb n="20v2" xml:id="Quaderno2_20v" facs="20v2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_20v">
+                        <pb n="20v2" facs="20v2.jpg"/>
                         <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <p rend="indent"><mod change="#strato-L"><note resp="#TUS"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</note></mod></p> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><p rend="indent" change="#strato-L">
                                 <lb/><choice>
                                     <abbr>N</abbr>
@@ -4303,8 +4303,8 @@ in una <mod change="#fase-F">
                     <div type="page">
                         <pb n="23v2" xml:id="Quaderno2_23v" facs="23v2.jpg" type="blank"/>
                     </div>
-                    <div type="page">
-                        <pb n="24r2" xml:id="Quaderno2_24r" facs="24r2.jpg"/>
+                    <div type="page" xml:id="Quaderno2_24r">
+                        <pb n="24r2" facs="24r2.jpg"/>
                         <fw place="top_right" type="pageNum"><mod change="#fase-N">66</mod></fw>
                         <p rend="indent" change="#fase-N"><lb n="1"/>Tutti i canti che da quell’età fino a vent’anni composi
                                 <lb n="2"/>pare che non diano ragione <mod change="#fase-N"><subst><del rend="strikethrough">al poeta</del><add place="above">al mio superiore</add></subst>

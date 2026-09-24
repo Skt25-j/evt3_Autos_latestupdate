@@ -129,7 +129,38 @@ export function evtApplyTranspositions(pages: Page[], doc: Document | null): Pag
     const trs = Array.from(so.querySelectorAll('transpose'));
     if (!trs.length) { return pages; }
 
-    const pageIdx = (id: string) => pages.findIndex((p) => p.id === id);
+    // Doc-order snapshot: never reordered, so allPbs[i] <-> pagesOrig[i] holds
+    // for the whole run and page resolution stays correct across transpositions.
+    const pagesOrig = pages.slice();
+    const allPbs = Array.from(doc.querySelectorAll('pb'));
+
+    // Resolve a <ptr> target to a *page* (Page object, stable under reordering).
+    // Accepts three encodings:
+    //   1. target on the <pb> itself           -> that page (legacy behaviour)
+    //   2. target on an element WRAPPING a <pb> -> the page of the wrapped <pb>
+    //      (e.g. <div type="page" xml:id="...">: the transposition is expressed
+    //       on a *critical* unit, the <div>, instead of the *diplomatic* <pb>).
+    //   3. anything else                        -> null (it is an inner content
+    //      block, handled by the block-relocation branch below).
+    const resolvePage = (id: string): Page | null => {
+      let p = pagesOrig.find((pg) => pg.id === id);
+      if (p) { return p; }
+      const el = doc.querySelector(`[*|id='${id}']`);
+      if (!el) { return null; }
+      const pb = (el.tagName && el.tagName.toLowerCase() === 'pb') ? el : el.querySelector('pb');
+      if (!pb) { return null; }
+      const pbId = pb.getAttribute('xml:id');
+      if (pbId) {
+        p = pagesOrig.find((pg) => pg.id === pbId);
+        if (p) { return p; }
+      }
+      // <pb> has no own xml:id: map by document order (parser builds one page per pb).
+      const idx = allPbs.indexOf(pb as Element);
+      if (idx !== -1 && idx < pagesOrig.length) { return pagesOrig[idx]; }
+
+      return null;
+    };
+
     const pageContainingBlock = (id: string) =>
       pages.findIndex((p) => evtContainsId(p.parsedContent as any[], id));
 
@@ -138,24 +169,26 @@ export function evtApplyTranspositions(pages: Page[], doc: Document | null): Pag
       for (let k = 0; k < ids.length - 1; k++) {
         const idA = ids[k];
         const idB = ids[k + 1];
-        const paA = pageIdx(idA);
-        const paB = pageIdx(idB);
+        const pgA = resolvePage(idA);
+        const pgB = resolvePage(idB);
 
-        // Both targets are pages (<pb>): reorder the page array (as before).
-        if (paA !== -1 && paB !== -1) {
-          if (paB === paA + 1) { continue; }
-          const moved = pages.splice(paB, 1)[0];
-          const nbi = pageIdx(idA);
-          pages.splice(nbi + 1, 0, moved);
+        // Both targets are pages (<pb> or a <div>/element wrapping a <pb>):
+        // reorder the page array using object identity (robust to prior moves).
+        if (pgA && pgB) {
+          const ib = pages.indexOf(pgB);
+          const ia = pages.indexOf(pgA);
+          if (ib === -1 || ia === -1 || ib === ia + 1) { continue; }
+          pages.splice(ib, 1);
+          pages.splice(pages.indexOf(pgA) + 1, 0, pgB);
           continue;
         }
 
-        // Block-level: relocate block B right after element A (block or page),
-        // possibly across pages, at any nesting depth.
+        // Block-level: relocate content block B right after element A (block or
+        // page), possibly across pages, at any nesting depth.
         const piB = pageContainingBlock(idB);
         if (piB === -1) { continue; }
         const piAblock = pageContainingBlock(idA);
-        const piApage = pageIdx(idA);
+        const piApage = pgA ? pages.indexOf(pgA) : -1;
         if (piAblock === -1 && piApage === -1) { continue; }
 
         const rem = evtRemoveById(pages[piB].parsedContent as any[], idB);

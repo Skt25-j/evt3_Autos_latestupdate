@@ -70,10 +70,16 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   - `panels/text-panel/text-panel.component.ts`: in `currentStatus$` (vista critica =
     `interpretative`) calcola l'override = transpose + filtro pagine bianche, e lo pubblica in `evtPagesOverride$`.
   - `services/evt-status.service.ts`: `currentPage$` usa `evtFindNearestPage` come fallback.
-- Funzioni: `evtApplyTranspositions` (riordino **pagine** se `<ptr>`→`<pb>`, **relocazione
-  blocchi** ricorsiva/immutabile se `<ptr>`→blocco con xml:id, anche cross-page),
-  `evtFilterBlankPages` (nasconde `<pb type="blank"/>` in critica), `evtFindNearestPage`,
-  `evtGetOwnerDoc`, `evtPagesOverride$`.
+- Funzioni: `evtApplyTranspositions` (riordino **pagine** se `<ptr>`→`<pb>` **oppure**
+  `<ptr>`→elemento che *avvolge* un `<pb>`, tipicamente `<div type="page" xml:id="...">`;
+  **relocazione blocchi** ricorsiva/immutabile se `<ptr>`→blocco di contenuto con xml:id,
+  anche cross-page), `evtFilterBlankPages` (nasconde `<pb type="blank"/>` in critica),
+  `evtFindNearestPage`, `evtGetOwnerDoc`, `evtPagesOverride$`.
+- `<ptr>`→`<div>`-pagina: motivazione editoriale = il `<pb>` è dato **diplomatico**, la
+  trasposizione è fatto **critico**, quindi il `<ptr>` punta al `<div type="page">` (unità
+  critica) e non al `<pb>`. Risoluzione basata sull'identità degli oggetti `Page` (robusta
+  anche con più `<transpose>` a catena); il `<pb>` può restare senza `xml:id` (l'id pagina
+  viene comunque generato da `getID`). Retro-compatibile con `<ptr>`→`<pb>`.
 - Nota: applicato solo in vista critica; la diplomatica resta con ordine originale.
 
 ### 8. [FEAT] Marcatore di fase come lettera
