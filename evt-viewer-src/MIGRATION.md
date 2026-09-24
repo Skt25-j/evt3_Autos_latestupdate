@@ -19,14 +19,21 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 
 ## Elenco modifiche
 
-### 1. [FEAT] Filtro-per-fase su blocchi `p/div/ab/seg`
-- File: `components/paragraph/paragraph.component.{ts,html}`, `components/generic-element/generic-element.component.{ts,html}`
-- Cosa: in `changesView`, un elemento con `@change` si mostra solo dalla sua fase in poi
-  (come i `<mod>`), senza aprire l'apparato. La fase corrente arriva dall'`@Input selLayer`
-  (NON `selectedLayer`: è il nome che il content-viewer passa davvero); l'ordine fasi da
+### 1. [FEAT] Filtro-per-fase su blocchi `p/div/ab/seg` + formattazione inline condizionata
+- File: `components/paragraph/paragraph.component.{ts,html}`, `components/generic-element/generic-element.component.{ts,html}`, `assets/config/custom-styles.css`
+- Cosa (blocchi): in `changesView`, un **blocco** con `@change` (`p` = paragraph; `div/ab/seg`
+  = generic-element, whitelist `FILTERABLE_BLOCKS`) si mostra solo dalla sua fase in poi
+  (come i `<mod>`), senza aprire l'apparato. Fase corrente dall'`@Input selLayer` (NON
+  `selectedLayer`: è il nome che il content-viewer passa davvero); ordine fasi da
   `EVTStatusService.currentChanges$`; logica in `layerHidden()`.
-- Verifica beta: guarda come il content-viewer nomina l'input della fase (cerca `selLayer`)
-  e se paragraph/generic-element lo leggono. Se il nome è cambiato, adegua.
+- Cosa (inline): un elemento **inline** con `@change` (tipico `<hi rend="underline" change>`)
+  NON viene nascosto (il testo era scritto prima); ma la sua **formattazione** compare solo
+  dalla fase del change in poi. GenericElement aggiunge la classe host `evt-change-pending`
+  (getter `changePending`) finché la fase selezionata precede quella del change, e il CSS in
+  `custom-styles.css` (`html[data-el="changesView"] evt-generic-element.evt-change-pending`)
+  azzera sottolineatura/grassetto/corsivo/sfondo.
+- Verifica beta: come il content-viewer nomina l'input della fase (cerca `selLayer`) e se
+  paragraph/generic-element lo leggono. Se il nome è cambiato, adegua.
 
 ### 2. [BUG] `buildChangeList`: ordine fasi vuoto con un solo `<listChange>`
 - File: `services/xml-parsers/mod-parser.service.ts`
