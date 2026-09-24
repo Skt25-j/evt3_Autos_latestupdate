@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DisplayGrid, GridsterConfig, GridsterItem, GridType } from 'angular-gridster2';
-import { distinctUntilChanged, map, shareReplay, withLatestFrom } from 'rxjs/operators';
+import { combineLatest } from 'rxjs';
+import { distinctUntilChanged, map, shareReplay } from 'rxjs/operators';
 import { AppConfig, EditionLevel } from '../../app.config';
 import { Page, XMLImagesValues } from '../../models/evt-models';
 import { ViewerSource } from '../../models/evt-polymorphic-models';
@@ -32,8 +33,8 @@ export class DocumentalMixedComponent implements OnInit {
   public imagePanelItem: GridsterItem = { cols: 1, rows: 1, y: 0, x: 0 };
   public textPanelItem: GridsterItem = { cols: 1, rows: 1, y: 0, x: 1 };
 
-  public imageViewer$ = this.evtModelService.surfaces$.pipe(
-    withLatestFrom(this.evtModelService.pages$),
+  // combineLatest: le immagini si ricostruiscono quando pages$ cambia ordine.
+  public imageViewer$ = combineLatest([this.evtModelService.surfaces$, this.evtModelService.pages$]).pipe(
     map(([surface, pages]) => {
       const editionImages = AppConfig.evtSettings.files.editionImagesSource;
       for (const key of Object.keys(editionImages)) {

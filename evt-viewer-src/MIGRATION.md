@@ -92,6 +92,24 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   visibilità note `soloCritica`/`soloDiplomatica`.
 - Questi vivono nell'edizione, non nel sorgente EVT: si riusano tali e quali.
 
+### 10. [BUG] Sincronizzazione immagine↔testo con pagine riordinate
+- File: `view-modes/image-text/image-text.component.ts`,
+  `view-modes/image-image/image-image.component.ts`,
+  `view-modes/documental-mixed/documental-mixed.component.ts`,
+  `panels/image-panel/image-panel.component.ts`
+- Sintomo: con la trasposizione delle pagine (override su `pages$`) il testo si
+  riordina ma le **immagini no** → da un certo punto foto e testo non corrispondono più.
+- Causa: `imageViewer$` era `surfaces$.pipe(withLatestFrom(pages$), …)`: emette solo
+  quando emette `surfaces$` (una volta), fotografando `pages$` nell'ordine ORIGINALE e
+  non reagendo più al riordino. L'OSD costruisce le tiles da lì, ma sceglie la tile per
+  **indice** su `pages$` riordinato → disallineamento.
+- Fix: `imageViewer$ = combineLatest([surfaces$, pages$]).pipe(map(...))` (reattivo al
+  riordino) in tutte le viste con immagini; e `pageNumber$` dell'`image-panel` da
+  `currentPageId$.pipe(withLatestFrom(pages$))` a `combineLatest([currentPageId$, pages$])`
+  così l'indice si ricalcola al riordino, non solo alla navigazione.
+- Verifica beta: se la beta gestisce già il riordino pagine con immagini allineate, salta.
+  Riguarda qualunque riordino di pagine (anche `ptr`→`pb`), non solo `ptr`→`div`.
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)
@@ -103,7 +121,10 @@ In `changesView`:
 
 In vista **critica** (`interpretative`):
 - **Pagine bianche**: le pagine `<pb type="blank"/>` non compaiono.
-- **Transpose pagine**: l'ordine pagine segue i `<transpose>` con `<ptr>`→`<pb>`.
+- **Transpose pagine**: l'ordine pagine segue i `<transpose>` con `<ptr>`→`<pb>`
+  **oppure** `<ptr>`→`<div type="page">` (id sul div, unità critica).
+- **Immagine↔testo**: selezionando una pagina trasposta, l'immagine mostrata è quella
+  della pagina (es. testo `18v1` → foto `18v.jpg`), sia in imageText che image-image.
 - **Transpose blocchi**: un blocco con `xml:id` puntato da `<ptr>` viene rilocato subito
   dopo l'elemento precedente del transpose, anche su un'altra pagina; in **diplomatica**
   l'ordine resta originale.

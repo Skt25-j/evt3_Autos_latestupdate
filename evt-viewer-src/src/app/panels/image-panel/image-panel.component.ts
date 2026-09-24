@@ -42,8 +42,10 @@ export class ImagePanelComponent implements OnDestroy, AfterViewInit{
     map((p) => p?.id),
   );
   updatePageNumber$ = new Subject<number>();
-  pageNumber$ = this.currentPageId$.pipe(
-    withLatestFrom(this.evtModelService.pages$),
+  // combineLatest (non withLatestFrom): l'indice di pagina si ricalcola anche
+  // quando pages$ cambia ordine (trasposizioni), non solo alla navigazione, così
+  // l'immagine mostrata resta allineata alla pagina corrente.
+  pageNumber$ = combineLatest([this.currentPageId$, this.evtModelService.pages$]).pipe(
     map(([pageId, pages]) => pages.findIndex((page) => page.id === pageId)),
   );
 

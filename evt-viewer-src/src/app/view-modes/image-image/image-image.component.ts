@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DisplayGrid, GridsterConfig, GridsterItem, GridType } from 'angular-gridster2';
-import { map, shareReplay, withLatestFrom } from 'rxjs/operators';
+import { combineLatest } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
 import { AppConfig } from '../../app.config';
 import { Page, XMLImagesValues } from '../../models/evt-models';
 import { ViewerSource } from '../../models/evt-polymorphic-models';
@@ -31,8 +32,8 @@ export class ImageImageComponent {
     },
   };
   public imagePanelItem: GridsterItem[] = [{ cols: 1, rows: 1, y: 0, x: 0 },{ cols: 1, rows: 1, y: 0, x: 1 }];
-  public imageViewer$ = this.evtModelService.surfaces$.pipe(
-    withLatestFrom(this.evtModelService.pages$),
+  // combineLatest: le immagini si ricostruiscono quando pages$ cambia ordine.
+  public imageViewer$ = combineLatest([this.evtModelService.surfaces$, this.evtModelService.pages$]).pipe(
     map(([surface, pages]) => {
       const editionImages = AppConfig.evtSettings.files.editionImagesSource;
       console.log(editionImages);
