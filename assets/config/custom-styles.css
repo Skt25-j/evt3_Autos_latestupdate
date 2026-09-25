@@ -449,3 +449,8 @@ html[data-el="changesView"] evt-generic-element.evt-change-pending {
     font-style: normal !important;
     background-color: transparent !important;
 }
+
+/* Vista critica: nessun evidenziatore giallo sui lemmi d'apparato (<app>) */
+html[data-el="interpretative"] evt-reading.app-entry-lem,
+html[data-el="interpretative"] .app-entry-lem.highlight,
+html[data-el="interpretative"] .app-entry-lem { background-color: transparent !important; }
