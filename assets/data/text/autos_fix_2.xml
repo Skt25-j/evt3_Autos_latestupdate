@@ -1032,16 +1032,27 @@
                         </lg>
                         <lb/>
                         
-                        <lg><mod change="#strato-X">
+                        <app><lem varSeq="2"><mod change="#strato-X">
                                 <del rend="strikethrough">
-                                    <lb/><l>E piansi disperato</l>
+                                    <lg><lb/><l>E piansi disperato</l>
                                     <lb/><l>sembrandomi infinite</l>
                                     <lb/><l>l’ore che tutto colorato</l>
                                     <lb/><l>è di nero e scolpite</l>
                                     <lb/><l>sono più le paure</l>
-                                    <lb/><l>che non sono sicure.</l>
+                                    <lb/><l>che non sono sicure.</l></lg>
                                 </del> 
-                            </mod></lg>
+                            </mod></lem>
+                        <rdg varSeq="1">
+                                <mod change="#fase-A">
+                                    <lg><lb/><l>E piansi disperato</l>
+                                    <lb/><l>sembrandomi infinite</l>
+                                    <lb/><l>l’ore che tutto colorato</l>
+                                    <lb/><l>è di nero e scolpite</l>
+                                    <lb/><l>sono più le paure</l>
+                                    <lb/><l>che non sono sicure.</l></lg>
+                                </mod>
+                        </rdg>    
+                        </app>
                         
                         <lb/><lb/>
                         <lg n="4"><l n="25">Mi credei infelice</l>
