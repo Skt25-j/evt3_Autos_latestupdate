@@ -605,7 +605,7 @@
                     </div>
                     <div type="page" xml:id="Copertina_interno">
                         
-                        <pb n="interno_Copertina" facs="Cp_v.jpg" change="#fase-A"/>
+                        <pb n="interno_Copertina" facs="Cp_v.jpg" change="#strato-M"/>
                        <!-- Questo blocco (dedica dell'autore sull'interno di copertina) dovrebbe essere una nota d'autore (resp="#TUS"), ma non e' chiaro come codificarla/renderla: e' l'unico contenuto della pagina e una <note> qui non verrebbe resa da EVT. Lasciato come testo. -->
                        <p rend="indent" change="#strato-M">
                                 <lb n="1"/>Queste pagine ingenue conten-

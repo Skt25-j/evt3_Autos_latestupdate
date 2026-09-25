@@ -114,20 +114,24 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - File: `panels/text-panel/text-panel.component.ts`, `services/evt-custom-pages.util.ts`,
   `services/xml-parsers/structure-xml-parser.service.ts`, `models/evt-models.ts`
   + dati: `@change="#fase-X"`/`"#strato-Y"` sui `<pb>` in `assets/data/text/autos_fix_2.xml`.
-- Cosa: **solo nella vista "changes" (changesView)** le carte non ancora scritte al
-  **livello** selezionato **non compaiono** (filtro cumulativo per indice in `layerOrder`,
-  valido per fasi e strati; una carta senza `@change` è sempre presente). Il filtro è
-  applicato su `pages$` (globale), quindi vale in modo coerente per selettore a tendina,
-  **slider di pagina** e **frecce** della nav-bar, miniature e testo renderizzato.
-  In diplomatica e critica NON si applica.
-- Perche' non "ghosting" nel solo selettore: la nav-bar ha uno `ngx-slider` continuo per
-  indice; non essendo "ingrigibile" a tratti, l'unico modo coerente e' ridurre `pages$`.
+- Cosa: **solo nella vista "changes" (changesView)**, comportamento ibrido cumulativo
+  (per indice in `layerOrder`, valido per fasi e strati; carta senza `@change` = sempre
+  presente):
+  - **navigazione** (slider di pagina, frecce, miniature, testo renderizzato): le carte
+    scritte dopo il livello selezionato **non compaiono** — filtro su `pages$` (globale);
+  - **selettore a tendina**: mostra **tutte** le carte da `rawPages$`, **ingrigendo e
+    disabilitando** (ghosting) quelle future — colpo d'occhio completo ma non selezionabili.
+  In diplomatica e critica NON si applica (tendina = `pages$`, nessun ghosting).
+- Perche' l'ibrido: la nav-bar ha uno `ngx-slider` continuo per indice, non "ingrigibile"
+  a tratti → per la navigazione l'unico modo coerente e' ridurre `pages$`; la tendina
+  invece puo' mostrare tutto col ghosting (ng-select disabilita gli item `disabled:true`).
 - Come: il parser legge `pb.getAttribute('change')` in `Page.writingChange`; in
   `text-panel.currentStatus$` (che gia' pubblica `evtPagesOverride$`) si aggiunge, per
   `editionLevelID === 'changesView'`, `evtFilterByWritingPhase(pages, selectedLayer,
-  layerOrder)` (da `evt-custom-pages.util.ts`); il currentStatus$ ora dipende anche da
-  `evtStatus.updateLayer$` e `evtModelService.changeData$` (per `layerOrder`).
-  `page-selector` resta quello originale (usa `pages$` gia' filtrato).
+  layerOrder)` (da `evt-custom-pages.util.ts`); currentStatus$ dipende anche da
+  `evtStatus.updateLayer$` e `evtModelService.changeData$`. Il `page-selector` costruisce
+  `displayPages$` da `rawPages$` + `currentEditionLevels$` marcando `disabled` per le
+  carte future (solo in changesView).
 - Dati: la fase/strato di scrittura è sul `<pb>` come `@change`; una carta a cavallo di
   due livelli va marcata col PRIMO. Alcune carte di margine (bianche, `27r1`, copertine q2)
   sono lasciate senza `@change` = sempre presenti.
