@@ -50,6 +50,8 @@ export class DocumentalMixedComponent implements OnInit {
         },
       };
     }),
+    // evita ricostruzioni inutili dell'OSD: riemette solo se le immagini cambiano davvero
+    distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
   );
 
   public currentEditionLevel$ = this.evtStatusService.currentStatus$.pipe(

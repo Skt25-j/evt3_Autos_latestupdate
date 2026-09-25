@@ -114,6 +114,9 @@ export class TextPanelComponent {
     distinctUntilChanged(),
   );
 
+  // chiave dell'ultimo override pubblicato (per evitare push ripetuti)
+  private _lastOverrideKey: string;
+
   public currentStatus$ = combineLatest([
     this.evtModelService.rawPages$,
     this.currentPage$,
@@ -145,7 +148,14 @@ export class TextPanelComponent {
         // stessa pagina fisica in un'unica pagina, in ordine documentario.
         override = evtMergePagesByFacs(pages);
       }
-      evtPagesOverride$.next(override);
+      // Pubblica l'override SOLO se la sequenza di pagine (o l'edizione) e' cambiata,
+      // per evitare emissioni ripetute di pages$ che ricostruiscono OSD/pannelli
+      // (scatti e reflow) senza motivo.
+      const overrideKey = this.editionLevelID + '|' + (override ? override.map((p) => p.id).join(',') : '@raw');
+      if (overrideKey !== this._lastOverrideKey) {
+        this._lastOverrideKey = overrideKey;
+        evtPagesOverride$.next(override);
+      }
 
       return { pages: override || pages, currentPage, editionLevel, currentViewMode };
     }),

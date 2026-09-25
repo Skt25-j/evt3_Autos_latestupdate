@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DisplayGrid, GridsterConfig, GridsterItem, GridType } from 'angular-gridster2';
 import { combineLatest } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { distinctUntilChanged, map, shareReplay } from 'rxjs/operators';
 import { AppConfig, EditionLevel } from '../../app.config';
 import { Page, XMLImagesValues } from '../../models/evt-models';
 import { ViewerSource } from '../../models/evt-polymorphic-models';
@@ -52,6 +52,8 @@ export class ImageTextComponent {
         },
       };
     }),
+    // evita ricostruzioni inutili dell'OSD: riemette solo se le immagini cambiano davvero
+    distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
   );
 
   public currentPageID$ = this.evtStatusService.currentStatus$.pipe(
