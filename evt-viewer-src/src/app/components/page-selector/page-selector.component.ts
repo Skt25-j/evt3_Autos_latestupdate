@@ -71,8 +71,11 @@ export class PageSelectorComponent {
 
   selectedPage$ = new BehaviorSubject<string>(undefined);
 
+  // NB: cerca nella lista EFFETTIVA (pages$, gia' fusa/filtrata), non in rawPages$,
+  // cosi' la pagina selezionata e' quella FUSA (contenuto completo) e non la prima
+  // porzione (che mostrerebbe solo il primo pezzo di testo).
   @Output() selectionChange = combineLatest([
-    this.evtModelService.rawPages$,
+    this.pages$,
     this.selectedPage$.pipe(distinctUntilChanged()),
   ]).pipe(
     filter(([pages, pageID]) => !!pageID && !!pages && pages.length > 0),
