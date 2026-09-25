@@ -157,7 +157,19 @@ export class TextPanelComponent {
         evtPagesOverride$.next(override);
       }
 
-      return { pages: override || pages, currentPage, editionLevel, currentViewMode };
+      // Ri-risolvi la pagina corrente NELLA lista effettiva (override): al cambio di
+      // edizione l'oggetto currentPage resta quello vecchio (es. la porzione di
+      // critica) e verrebbe renderizzato al posto della pagina fusa. Risolviamo per
+      // id, poi per @facs (stessa pagina fisica), altrimenti si tiene com'e'.
+      const pagesOut = override || pages;
+      let resolvedCurrent = currentPage;
+      if (pagesOut && currentPage) {
+        resolvedCurrent = pagesOut.find((p) => p.id === currentPage.id)
+          || (currentPage.facs ? pagesOut.find((p) => p.facs === currentPage.facs) : undefined)
+          || currentPage;
+      }
+
+      return { pages: pagesOut, currentPage: resolvedCurrent, editionLevel, currentViewMode };
     }),
     distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
     shareReplay(1),
