@@ -138,6 +138,27 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - Verifica beta: se cambia la pipeline pagine o i nomi `updateLayer$`/`changeData$.layerOrder`,
   adeguare; il filtro vive nell'override di `text-panel`, non nel `page-selector`.
 
+### 12. [FEAT] Pagine "spezzate" in porzioni: unitarie in diplomatica/changes, dislocate in critica
+- File: `services/evt-custom-pages.util.ts` (`evtMergePagesByFacs`),
+  `panels/text-panel/text-panel.component.ts`, `components/page-selector/page-selector.component.ts`.
+- Contesto encoding: alcune pagine fisiche sono codificate come PIU' `<div type="page">`
+  consecutivi (porzioni), ognuno col suo `<pb>` che punta alla STESSA immagine `@facs`
+  (es. 7r2 = 3 porzioni facs=7r2.jpg; 3v2, 4v2, 15r2 ecc.). Le trasposizioni puntano
+  alle singole porzioni (div), che in critica vengono dislocate secondo l'ordine critico.
+- Problema: in diplomatica/changes quelle porzioni comparivano come pagine separate
+  (pagina non unitaria, ripetuta).
+- Soluzione: `evtMergePagesByFacs(pages, layerOrder?)` fonde porzioni CONSECUTIVE con lo
+  stesso `@facs` reale (le bianche senza immagine non si fondono) concatenandone il
+  contenuto in ordine documentario; la pagina fusa eredita id/label/facs della prima e
+  `writingChange` = fase piu' antica. Applicata in `text-panel.currentStatus$` per
+  **diplomatic** (solo merge) e **changesView** (filtro-fase POI merge), e nel
+  **page-selector** (tendina) per changesView. In **interpretative (critica)** NON si
+  fonde: le porzioni restano separate per essere dislocate dalle trasposizioni.
+- Risultato: diplomatica/changes mostrano la pagina unitaria una sola volta (ordine
+  diplomatico); critica mostra le porzioni dislocate (anche tra pagine).
+- Verifica beta: se cambia la pipeline pagine, riportare merge/filtro/transpose negli
+  override per livello d'edizione.
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)

@@ -70,6 +70,54 @@ export function evtFilterByWritingPhase(pages: Page[], selectedLayer: string, la
   }
 }
 
+/**
+ * Fonde le "porzioni" di una stessa pagina fisica in un'unica pagina.
+ * Criterio: pagine CONSECUTIVE con lo stesso @facs (stessa immagine, reale, non
+ * il default 'page'/vuoto -> le bianche senza immagine non si fondono).
+ * Il contenuto viene concatenato in ordine documentario (= ordine diplomatico).
+ * La pagina fusa eredita id/label/facs della PRIMA porzione; writingChange =
+ * la fase piu' antica tra le porzioni (per il ghosting del selettore in changes).
+ * Usata in diplomatica e changesView (NON in critica, dove le porzioni restano
+ * separate per essere dislocate dalle trasposizioni).
+ */
+export function evtMergePagesByFacs(pages: Page[], layerOrder?: string[]): Page[] {
+  try {
+    const isRealFacs = (f: string) => !!f && f !== 'page' && /\./.test(f);
+    const clean = (l: string) => (l || '').replace('#', '');
+    const earlier = (a?: string, b?: string) => {
+      if (!a) { return b; }
+      if (!b) { return a; }
+      if (!layerOrder || !layerOrder.length) { return a; }
+      const ia = layerOrder.indexOf(clean(a));
+      const ib = layerOrder.indexOf(clean(b));
+      if (ia === -1) { return b; }
+      if (ib === -1) { return a; }
+
+      return ia <= ib ? a : b;
+    };
+    const out: Page[] = [];
+    for (const p of pages || []) {
+      const last = out[out.length - 1];
+      if (last && isRealFacs(p.facs) && p.facs === last.facs) {
+        out[out.length - 1] = {
+          ...last,
+          parsedContent: [...((last.parsedContent as any[]) || []), ...((p.parsedContent as any[]) || [])],
+          originalContent: [...((last.originalContent as any[]) || []), ...((p.originalContent as any[]) || [])],
+          writingChange: earlier(last.writingChange, p.writingChange),
+        } as Page;
+      } else {
+        out.push({ ...p });
+      }
+    }
+
+    return out;
+  } catch (err) {
+    console.error('evt merge-pages-by-facs error', err);
+
+    return pages;
+  }
+}
+
 export function evtFindNearestPage(targetId: string, pages: Page[], doc: Document | null): Page {
   try {
     if (!doc || !pages || !pages.length) { return pages && pages[0]; }

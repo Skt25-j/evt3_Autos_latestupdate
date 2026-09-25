@@ -6,7 +6,7 @@ import { EntitiesSelectItem } from '../../components/entities-select/entities-se
 import { Page } from '../../models/evt-models';
 import { EVTModelService } from '../../services/evt-model.service';
 import { EVTStatusService } from '../../services/evt-status.service';
-import { evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtPagesOverride$ } from '../../services/evt-custom-pages.util';
+import { evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtMergePagesByFacs, evtPagesOverride$ } from '../../services/evt-custom-pages.util';
 import { EvtIconInfo } from '../../ui-components/icon/icon.component';
 
 @Component({
@@ -133,10 +133,17 @@ export class TextPanelComponent {
       const doc = evtGetOwnerDoc(pages);
       let override: typeof pages | null = null;
       if (this.editionLevelID === 'interpretative') {
+        // critica: trasposizioni + pagine bianche nascoste (porzioni dislocate).
         override = evtFilterBlankPages(evtApplyTranspositions(pages.slice(), doc), doc);
       } else if (this.editionLevelID === 'changesView') {
+        // changes: filtro per fase, poi le porzioni della stessa pagina fisica
+        // (stesso @facs) vengono riunite in un'unica pagina (ordine documentario).
         const layerOrder: string[] = (changeData && (changeData as any).layerOrder) || [];
-        override = evtFilterByWritingPhase(pages, selectedLayer, layerOrder);
+        override = evtMergePagesByFacs(evtFilterByWritingPhase(pages, selectedLayer, layerOrder), layerOrder);
+      } else if (this.editionLevelID === 'diplomatic') {
+        // diplomatica: nessuna trasposizione; solo riunione delle porzioni della
+        // stessa pagina fisica in un'unica pagina, in ordine documentario.
+        override = evtMergePagesByFacs(pages);
       }
       evtPagesOverride$.next(override);
 

@@ -4,6 +4,7 @@ import { distinctUntilChanged, filter, map, startWith } from 'rxjs/operators';
 
 import { EditionLevelType } from '../../app.config';
 import { Page } from '../../models/evt-models';
+import { evtMergePagesByFacs } from '../../services/evt-custom-pages.util';
 import { EVTModelService } from '../../services/evt-model.service';
 import { EVTStatusService } from '../../services/evt-status.service';
 
@@ -44,11 +45,15 @@ export class PageSelectorComponent {
       const idxOf = (l: string) => layerOrder.indexOf(clean(l));
       const selIdx = idxOf(selectedLayer);
 
-      return rawPages.map((p, i) => {
+      // porzioni della stessa pagina fisica fuse in una sola voce (come nel testo);
+      // writingChange della pagina fusa = fase piu' antica -> ghosting corretto.
+      const merged = evtMergePagesByFacs(rawPages, layerOrder);
+
+      return merged.map((p, i) => {
         let disabled = false;
         if (selIdx !== -1 && p.writingChange) {
           const pIdx = idxOf(p.writingChange);
-          disabled = pIdx !== -1 && pIdx > selIdx; // carta scritta DOPO il livello selezionato
+          disabled = pIdx !== -1 && pIdx > selIdx; // pagina scritta DOPO il livello selezionato
         }
 
         return { ...p, num: i + 1, disabled } as PageOption;
