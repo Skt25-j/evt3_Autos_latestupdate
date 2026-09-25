@@ -49,7 +49,7 @@ export class TextSourcesComponent implements OnInit {
       maxCols: 2,
       maxRows: 1,
       draggable: {
-        enabled: true,
+        enabled: false,
         ignoreContent: true,
         dragHandleClass: 'panel-header',
       },

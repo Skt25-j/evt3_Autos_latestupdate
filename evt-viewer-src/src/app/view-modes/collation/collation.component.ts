@@ -38,7 +38,7 @@ export class CollationComponent {
     margin: 0,
     maxRows: 1,
     draggable: {
-      enabled: true,
+      enabled: false,
       ignoreContent: true,
       dragHandleClass: 'panel-header',
     },
