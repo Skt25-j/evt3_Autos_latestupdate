@@ -12,7 +12,8 @@
     </ng-container>
     <span>] </span>
 </span>
-<span class="app-entry-reading" *ngFor="let el of significantRdg">
+<span class="app-entry-reading" *ngFor="let el of significantRdg; let i = index">
+    <span class="app-var-sep" *ngIf="i > 0"> &#8594; </span>
     <evt-reading *ngIf="el.content.length !== 0" [data]="el" [selectedLayer]="selectedLayer"></evt-reading>
     <span class="font-italic" *ngIf="el.content.length === 0">omit.</span>
     <!-- TODO: handle lacunastart and lacunaend -->

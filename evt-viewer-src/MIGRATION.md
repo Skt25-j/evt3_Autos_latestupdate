@@ -169,6 +169,13 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   (il mod eredita il varSeq del genitore lem/rdg). Cosi' il box mostra la sequenza
   genetica 1,2,3...
 
+### 14. [FEAT] Riga alta del box apparato: varianti per @varSeq + separatore
+- File: `components/apparatus-entry/apparatus-entry-readings/apparatus-entry-readings.component.{ts,html}`.
+- Cosa: nella riga "lemma] varianti" del box d'apparato, le varianti sono ora ordinate
+  per `@varSeq` crescente (sequenza genetica: dalla piu' antica alla piu' recente) e
+  separate da una freccia " -> " (es. "sollecito] ratto -> presto"), come nelle edizioni
+  critiche. Prima erano in ordine di documento.
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)

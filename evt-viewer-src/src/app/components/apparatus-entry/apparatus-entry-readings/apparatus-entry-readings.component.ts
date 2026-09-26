@@ -28,7 +28,19 @@ export class ApparatusEntryReadingsComponent {
   }
 
   get significantRdg(): Reading[] {
-    return this.data.readings.filter((rdg) => rdg?.significant);
+    // Ordina le varianti per @varSeq crescente (sequenza genetica: dalla piu'
+    // antica alla piu' recente), cosi' l'apparato mostra "lemma] var1 -> var2 ...".
+    return this.data.readings
+      .filter((rdg) => rdg?.significant)
+      .slice()
+      .sort((a, b) => {
+        const va = a.varSeq; const vb = b.varSeq;
+        if (isNaN(va) && isNaN(vb)) { return 0; }
+        if (isNaN(va)) { return 1; }
+        if (isNaN(vb)) { return -1; }
+
+        return va - vb;
+      });
   }
 
   getWits$(witID: string): Observable<string[]> {
