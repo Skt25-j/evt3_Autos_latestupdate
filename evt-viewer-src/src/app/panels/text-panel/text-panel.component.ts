@@ -136,8 +136,12 @@ export class TextPanelComponent {
       const doc = evtGetOwnerDoc(pages);
       let override: typeof pages | null = null;
       if (this.editionLevelID === 'interpretative') {
-        // critica: trasposizioni + pagine bianche nascoste (porzioni dislocate).
-        override = evtFilterBlankPages(evtApplyTranspositions(pages.slice(), doc), doc);
+        // critica: trasposizioni + pagine bianche nascoste; poi si rifondono le
+        // porzioni della stessa carta rimaste ADIACENTI dopo il riordino (es. 15r2,
+        // riordinata solo al suo interno) in un'unica pagina, in ordine critico.
+        // Le porzioni dislocate lontano (es. 7r2, 3v2, 4v2) NON sono consecutive,
+        // quindi restano separate e sparse come devono.
+        override = evtMergePagesByFacs(evtFilterBlankPages(evtApplyTranspositions(pages.slice(), doc), doc));
       } else if (this.editionLevelID === 'changesView') {
         // changes: filtro per fase, poi le porzioni della stessa pagina fisica
         // (stesso @facs) vengono riunite in un'unica pagina (ordine documentario).
