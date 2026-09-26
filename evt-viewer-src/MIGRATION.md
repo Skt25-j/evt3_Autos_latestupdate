@@ -211,15 +211,19 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   contenuto in un `<del rend="strikethrough">`, la linea del barrato del `<del>` viene
   disegnata alla baseline del `<del>` e passa poco SOTTO il testo sollevato dell'add,
   dando l'aspetto di una sottolineatura.
-- Fix: per un add-above (o `sup`) figlio di un elemento `strikethrough` riportiamo l'add a
-  `vertical-align: baseline` e `font-size: inherit`, cosi' la linea del barrato attraversa
-  le lettere dell'add come una vera cancellatura (l'add-above era stato aggiunto e poi
-  cancellato). Gli add-above NON dentro un barrato restano sollevati come prima.
-- Nota importante: la direttiva delle convenzioni editoriali applica `vertical-align: super`
-  come **stile inline** sull'elemento; uno stile inline batte una regola CSS esterna, percio'
-  la correzione usa `!important` (baseline/font-size) per prevalere. Vale in diplomatica,
-  changes e nel box d'apparato (in critica le delezioni sono comunque nascoste).
-- Verifica: diplomatica, 14r1: "a criticare" mostra il barrato che passa sulle lettere.
+- Requisito: l'add-above deve RESTARE sollevato (place=above indica che era scritto sopra
+  il rigo: un'informazione filologica), quindi NON si puo' azzerare il `vertical-align`.
+- Fix: per un add-above (o `sup`) figlio di un elemento `strikethrough` l'add diventa
+  `display: inline-block` + `position: relative` (l'inline-block isola l'elemento dalla
+  propagazione del `text-decoration` del `<del>`, cosi' la linea del barrato del genitore
+  non gli passa piu' sotto), gli si toglie il `text-decoration` proprio, e si disegna un
+  barrato PROPRIO centrato sulle sue lettere con uno pseudo-elemento `::after`
+  (`border-top` a `top:50%`). Cosi' l'add resta sollevato E appare correttamente cancellato.
+- Nota: `vertical-align: super` e il font ridotto arrivano come **stile inline** dalla
+  direttiva delle convenzioni editoriali; li lasciamo intatti (non serve toccarli), agiamo
+  solo su display/position/decoration e sullo pseudo-elemento.
+- Verifica: diplomatica e box (changes), 14r1: "a criticare" resta sollevato e ha il
+  barrato che passa sulle sue lettere (non piu' una finta sottolineatura).
 
 ---
 
