@@ -135,6 +135,16 @@ export class AppParser extends EmptyParser implements Parser<XMLElement> {
             }
         }));
 
+        // Ordina i mod per @varSeq (la sequenza genetica indicata su lem/rdg): il box
+        // dell'apparato deve mostrarli nell'ordine 1,2,3..., non nell'ordine del
+        // documento. varSeq del mod eredita quello del genitore (lem/rdg).
+        changes.sort((a, b) => {
+            const va = parseInt(a['varSeq'], 10);
+            const vb = parseInt(b['varSeq'], 10);
+
+            return (isNaN(va) ? 0 : va) - (isNaN(vb) ? 0 : vb);
+        });
+
         return changes;
     }
 }

@@ -159,6 +159,16 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - Verifica beta: se cambia la pipeline pagine, riportare merge/filtro/transpose negli
   override per livello d'edizione.
 
+### 13. [BUG] Box dell'apparato: letture non ordinate per @varSeq
+- File: `services/xml-parsers/app-parser.ts` (`orderChanges`).
+- Sintomo: nel box che si apre cliccando un `<app>` (mod-group), le letture di uno
+  stesso apparato comparivano nell'ordine del documento invece che per `@varSeq`
+  (evidente con piu' letture nella stessa fase). L'elenco inline era gia' corretto
+  (usa `orderedReadings`, ordinato per varSeq); il box invece usa `changes`.
+- Fix: `orderChanges` ora ordina i `changes` (i `<mod>` delle letture) per `@varSeq`
+  (il mod eredita il varSeq del genitore lem/rdg). Cosi' il box mostra la sequenza
+  genetica 1,2,3...
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)
