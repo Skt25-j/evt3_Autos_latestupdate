@@ -17,8 +17,8 @@
 *[rend="strikethrough"] .add[data-place="sup"],
 *[data-rend="strikethrough"] .add[data-place="above"],
 *[data-rend="strikethrough"] .add[data-place="sup"] {
-    vertical-align: baseline;
-    font-size: inherit;
+    vertical-align: baseline !important;
+    font-size: inherit !important;
 }
 
 *[rend="overwritten"] {

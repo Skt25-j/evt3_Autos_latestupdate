@@ -215,6 +215,10 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   `vertical-align: baseline` e `font-size: inherit`, cosi' la linea del barrato attraversa
   le lettere dell'add come una vera cancellatura (l'add-above era stato aggiunto e poi
   cancellato). Gli add-above NON dentro un barrato restano sollevati come prima.
+- Nota importante: la direttiva delle convenzioni editoriali applica `vertical-align: super`
+  come **stile inline** sull'elemento; uno stile inline batte una regola CSS esterna, percio'
+  la correzione usa `!important` (baseline/font-size) per prevalere. Vale in diplomatica,
+  changes e nel box d'apparato (in critica le delezioni sono comunque nascoste).
 - Verifica: diplomatica, 14r1: "a criticare" mostra il barrato che passa sulle lettere.
 
 ---
