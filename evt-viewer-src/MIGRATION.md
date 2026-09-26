@@ -176,6 +176,25 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   separate da una freccia " -> " (es. "sollecito] ratto -> presto"), come nelle edizioni
   critiche. Prima erano in ordine di documento.
 
+### 15. [BUG] `mod-sequence`: `@varSeq` ripetuto all'infinito con `showVarSeqAttr: true`
+- File: `components/mod/mod-sequence/mod-sequence.component.html`.
+- Config: `assets/config/edition_config_Autos.json` → `changeSequenceView.showVarSeqAttr`
+  e `showSeqAttr` portati a `true`.
+- Sintomo: attivando `showVarSeqAttr` il box mostrava il numero di `@varSeq` ripetuto
+  una volta per ogni layer (es. "1 2 1 2 1 2 ..." all'infinito, tanti giri quanti i 15
+  layer del `<listChange>`).
+- Causa: lo `<span class="mod-varSeq">` era dentro il doppio `*ngFor`
+  (`orderedLayer` × `mod`) ma **fuori** dal `*ngIf` che filtra il mod sul layer corrente
+  (`mod.changeLayer === orderedLayer`), quindi veniva stampato ad ogni iterazione di layer,
+  anche quando il mod non apparteneva a quel layer. C'era inoltre un `<ng-container>`
+  (tag di apertura invece di chiusura) che sbilanciava il template.
+- Fix: spostato lo `<span class="mod-varSeq" *ngIf="showVarSeqAttr && mod?.varSeq">` dentro
+  il blocco `*ngIf` del match layer, e corretto il tag di chiusura. Ora ogni `@varSeq`
+  compare una sola volta accanto al proprio mod.
+- Verifica: in `changesView`, apri il box di un app con più `<mod varSeq>` (es. 10r1,
+  "come/comead/adil posto di"): mostra `1 fase-A: come`, `2 fase-A: comead`,
+  `3 fase-A: adil posto di` (ogni numero una sola volta, ordine per `@varSeq`).
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)

@@ -192,8 +192,8 @@
   "startingFromDefinitiveLayer": false,
   "showChangeLayerMarkerInText": true,
   "changeSequenceView": {
-    "showVarSeqAttr": false,
-    "showSeqAttr": false,
+    "showVarSeqAttr": true,
+    "showSeqAttr": true,
     "layerColors": {
       "fase-A": "#E67E22",
       "fase-B": "#D35400",
