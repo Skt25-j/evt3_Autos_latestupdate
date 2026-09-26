@@ -21,3 +21,10 @@
         <span *ngFor="let wit of getWits$(witID) | async" class="font-italic app-wit"> {{ wit }} </span>
     </ng-container>
 </span>
+<!-- Chiusura del processo genetico: la lezione a testo (T). Compare in fondo alla catena
+     "lemma] var1 -> var2" solo quando c'e' almeno una variante significativa, per rendere
+     esplicito che il processo culmina nel testo (come nelle edizioni critiche). -->
+<span class="app-entry-reading app-text-final" *ngIf="significantRdg.length > 0">
+    <span class="app-var-sep"> &#8594; </span>
+    <span class="app-text-siglum" title="lezione a testo">T</span>
+</span>

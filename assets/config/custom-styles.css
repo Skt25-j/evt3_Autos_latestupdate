@@ -8,6 +8,19 @@
     display: inline;
 }
 
+/* <add place="above"> dentro un <del rend="strikethrough">: normalmente l'add e'
+   sollevato (vertical-align:super), percio' la linea del barrato del <del> non passa
+   sulle sue lettere ma poco sotto e sembra una sottolineatura. Quando l'add e' dentro
+   un del barrato lo riportiamo a baseline (dimensione piena): cosi' il barrato del
+   <del> attraversa le lettere dell'add come un vero segno di cancellazione. */
+*[rend="strikethrough"] .add[data-place="above"],
+*[rend="strikethrough"] .add[data-place="sup"],
+*[data-rend="strikethrough"] .add[data-place="above"],
+*[data-rend="strikethrough"] .add[data-place="sup"] {
+    vertical-align: baseline;
+    font-size: inherit;
+}
+
 *[rend="overwritten"] {
     font-weight: bold;
 }

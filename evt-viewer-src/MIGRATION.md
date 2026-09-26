@@ -195,6 +195,28 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   "come/comead/adil posto di"): mostra `1 fase-A: come`, `2 fase-A: comead`,
   `3 fase-A: adil posto di` (ogni numero una sola volta, ordine per `@varSeq`).
 
+### 16. [FEAT] Riga alta del box apparato: T (lezione a testo) in fondo alla catena
+- File: `components/apparatus-entry/apparatus-entry-readings/apparatus-entry-readings.component.html`.
+- Cosa: la catena "lemma] var1 -> var2" ora termina con "-> T", dove T e' la lezione a
+  testo (il testo definitivo in cui culmina il processo genetico), come da uso delle
+  edizioni critiche. La T compare solo quando c'e' almeno una variante significativa.
+- Verifica: vista critica, box di un app (es. 14r1): la riga alta mostra
+  "a dirigere e a giudicare.] dirigenti e sentenziosi -> a criticare -> T".
+
+### 17. [Edizione, non-EVT / CSS] Falsa sottolineatura su `<add place="above">` dentro un `<del rend="strikethrough">`
+- File: `assets/config/custom-styles.css`.
+- Sintomo: alcuni `<add place="above">` (es. "a criticare" a 14r1) sembravano
+  sottolineati pur non essendolo.
+- Causa: l'add-above e' reso sollevato (`vertical-align: super`, font ridotto). Quando e'
+  contenuto in un `<del rend="strikethrough">`, la linea del barrato del `<del>` viene
+  disegnata alla baseline del `<del>` e passa poco SOTTO il testo sollevato dell'add,
+  dando l'aspetto di una sottolineatura.
+- Fix: per un add-above (o `sup`) figlio di un elemento `strikethrough` riportiamo l'add a
+  `vertical-align: baseline` e `font-size: inherit`, cosi' la linea del barrato attraversa
+  le lettere dell'add come una vera cancellatura (l'add-above era stato aggiunto e poi
+  cancellato). Gli add-above NON dentro un barrato restano sollevati come prima.
+- Verifica: diplomatica, 14r1: "a criticare" mostra il barrato che passa sulle lettere.
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)
