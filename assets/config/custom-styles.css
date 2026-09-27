@@ -17,11 +17,19 @@
     cursor: default !important;
 }
 
-/* Riga alta del box d'apparato ("lemma] var -> var -> T"): e' una catena compatta,
-   quindi gli <lb/> (resi come <br>) dentro le letture non vanno mostrati: spezzavano la
-   riga e lasciavano la freccia "->" orfana in alto (es. app di copertina, "Wstefano").
-   Sopprimiamo i <br> solo in questa riga (non nel testo ne' nella corrSeq). */
-.app-detail-readings br { display: none; }
+/* Box d'apparato (sia la riga alta "lemma] var -> var -> T" sia la Correction sequence
+   in basso): gli <lb/> del manoscritto non vanno mostrati nel box, perche' spezzano la
+   catena/le voci e lasciano numeri di riga sparsi (es. "17", app di copertina "Wstefano").
+   L'<lb/> e' reso come <span class="lb"><br><span class="lineN">n</span></span>, quindi
+   nascondiamo l'intero .lb (a-capo + numero di riga) SOLO dentro il box; i <br>
+   strutturali del corrSeq (fuori da .lb) restano, cosi' le fasi restano separate.
+   Non tocca il testo corrente ne' le immagini.
+   NB: una regola dell'edizione (span.lb[data-n]) forza display:inline !important sui
+   numeri di riga; per prevalere dentro il box serve piu' specificita' + !important. */
+evt-apparatus-entry-detail span.lb,
+evt-apparatus-entry-detail span.lb[data-n],
+evt-mod-group .source-container span.lb,
+evt-mod-group .source-container span.lb[data-n] { display: none !important; }
 
 *[rend="strikethrough"] {
     text-decoration: line-through;

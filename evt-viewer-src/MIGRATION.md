@@ -249,9 +249,23 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - Causa: la riga alta e' una catena compatta "lemma] var -> var -> T", ma le letture
   contenevano `<lb/>` (resi come `<br>`) che mandavano a capo il termine e lasciavano la
   freccia orfana sulla riga precedente.
-- Fix: `.app-detail-readings br { display: none; }` — i `<br>` vengono soppressi SOLO nella
-  riga alta del box (non nel testo corrente ne' nella "Correction sequence").
-- Verifica: vista critica, esterno_Copertina, apri l'app: la riga alta sta su una riga sola.
+- Fix (esteso a tutto il box, riga alta E Correction sequence): l'`<lb/>` e' reso come
+  `<span class="lb"><br><span class="lineN">n</span></span>`; nascondiamo l'intero `.lb`
+  (a-capo + numero di riga) DENTRO il box. I `<br>` "strutturali" del corrSeq (fuori da
+  `.lb`, che separano le voci `1 fase-…`, `2 fase-…`) restano, quindi le fasi restano su
+  righe distinte. Selettore usato:
+  `evt-apparatus-entry-detail span.lb, evt-apparatus-entry-detail span.lb[data-n],
+   evt-mod-group .source-container span.lb, evt-mod-group .source-container span.lb[data-n]
+   { display:none !important; }`.
+  Serve `!important` + `[data-n]` per battere una regola d'edizione
+  (`span.lb[data-n]{display:inline !important}`, righe ~186, che tiene visibili i numeri
+  di riga nel testo corrente); nel testo corrente gli `<lb/>` restano visibili come prima.
+- Attenzione (lezione appresa): un commento CSS chiuso due volte (`*/ … */`) fa scartare
+  dal browser la regola che segue, pur restando presente nel file (il fetch la mostra ma
+  il CSSOM no). Tenere i commenti con un solo `/* … */`.
+- Verifica: vista critica, esterno_Copertina e 16r1: nel box né la riga alta né la
+  Correction sequence mostrano a-capo/numeri di riga da `<lb/>`; le voci del corrSeq
+  restano separate.
 
 ---
 
