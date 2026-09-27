@@ -3,6 +3,26 @@
     text-align: center;
 }
 
+/* Ghosting delle pagine future nella tendina (changesView): le opzioni disabilitate
+   devono apparire grigio chiaro. Il tema EVT ([data-theme=...]) imposta color:#263238
+   sulle .ng-option con la stessa specificita' della regola "disabled" di ng-select; in
+   Chrome la regola-tema (che include il selettore :host-context) resta valida e vince,
+   quindi le disabilitate restano scure; in Safari :host-context invalida l'intera regola
+   e vince il grigio di ng-select. Forziamo il grigio con !important e un selettore
+   semplice, valido in tutti i browser (Chrome incluso). */
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-disabled,
+.ng-select .ng-dropdown-panel-items .ng-option.ng-option-disabled {
+    color: #b3b3b3 !important;
+    opacity: 0.6 !important;
+    cursor: default !important;
+}
+
+/* Riga alta del box d'apparato ("lemma] var -> var -> T"): e' una catena compatta,
+   quindi gli <lb/> (resi come <br>) dentro le letture non vanno mostrati: spezzavano la
+   riga e lasciavano la freccia "->" orfana in alto (es. app di copertina, "Wstefano").
+   Sopprimiamo i <br> solo in questa riga (non nel testo ne' nella corrSeq). */
+.app-detail-readings br { display: none; }
+
 *[rend="strikethrough"] {
     text-decoration: line-through;
     display: inline;

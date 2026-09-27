@@ -225,6 +225,34 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
 - Verifica: diplomatica e box (changes), 14r1: "a criticare" resta sollevato e ha il
   barrato che passa sulle sue lettere (non piu' una finta sottolineatura).
 
+### 18. [Edizione/CSS, cross-browser] Ghosting delle pagine future non grigio su Chrome
+- File: `assets/config/custom-styles.css`.
+- Sintomo: nella tendina pagine di `changesView`, le carte di fase futura (disabilitate)
+  apparivano **grigio chiaro su Safari ma NON su Chrome** (su Chrome restavano scure, pur
+  non selezionabili).
+- Causa: il tema EVT (`[data-theme=modern]`) imposta `color:#263238` sulle `.ng-option`
+  con una regola che include il selettore `:host-context(...)`. Chrome (Blink) considera
+  valida quella regola (con la stessa specificita' della regola "disabled" di ng-select ma
+  piu' in basso nel file → vince), quindi le disabilitate restano scure; Safari (WebKit)
+  considera `:host-context` sconosciuto e **scarta l'intera regola** → vince il grigio
+  `#ccc` di ng-select. Da qui la differenza tra browser.
+- Fix: regola con `!important` e selettore semplice (senza `:host-context`), valida ovunque:
+  `.ng-option.ng-option-disabled { color:#b3b3b3 !important; opacity:.6 !important; }`.
+- Verifica: Chrome, changesView, seleziona una fase anteriore → nella tendina le carte
+  future sono grigio chiaro (come su Safari) e non selezionabili.
+
+### 19. [Edizione/CSS] Freccia "->" orfana nella riga alta del box (app con `<lb/>` interni)
+- File: `assets/config/custom-styles.css`.
+- Sintomo: nel box di un app le cui letture contengono `<lb/>` (es. app di copertina,
+  "Autopsicologia -> (Autologia) -> Wstefano -> -Autos-"), la freccia "->" prima di
+  "Wstefano" galleggiava in alto, staccata.
+- Causa: la riga alta e' una catena compatta "lemma] var -> var -> T", ma le letture
+  contenevano `<lb/>` (resi come `<br>`) che mandavano a capo il termine e lasciavano la
+  freccia orfana sulla riga precedente.
+- Fix: `.app-detail-readings br { display: none; }` — i `<br>` vengono soppressi SOLO nella
+  riga alta del box (non nel testo corrente ne' nella "Correction sequence").
+- Verifica: vista critica, esterno_Copertina, apri l'app: la riga alta sta su una riga sola.
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)
