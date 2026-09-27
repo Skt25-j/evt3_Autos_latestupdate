@@ -709,7 +709,7 @@
                             o che forse tutti hanno era<lb n="12"/>però in me
                             <app><lem varSeq="2"><mod change="#fase-B">
                                         <subst>
-                                            <del rend="strikethrough seq-transient" seq="1" n="A.1">eccellente per grado d'intensità</del>
+                                            <del rend="strikethrough" seq="1" n="A.1">eccellente per grado d'intensità</del>
                                             <add place="above" seq="1">oltre
                                                 <subst>
                                                     <del rend="strikethrough" seq="2"> l'uso </del>
@@ -878,11 +878,11 @@
                                     <mod change="#fase-B">
                                         <add place="above" seq="2">negli ultimi </add>
                                         <subst>
-                                            <del rend="strikethrough seq-transient" seq="2" n="A.1">di ottobre </del> 
+                                            <del rend="strikethrough" seq="2" n="A.1">di ottobre </del> 
                                             <add place="above" seq="2">d'ottobre </add>
                                         </subst>
                                         <add place="above" seq="1">
-                                            <del rend="strikethrough seq-transient" seq="3" n="A.1">o novembre</del> del 1903
+                                            <del rend="strikethrough" seq="3" n="A.1">o novembre</del> del 1903
                                         </add>
                                     </mod>
                                 </lem>
@@ -1264,7 +1264,7 @@
                                 <rdg varSeq="1"><mod change="#fase-A">risolsi</mod></rdg>
                              </app>
                              <!-- Versione precedente (mod senza app), conservata (rimossi i commenti di lavoro perche' non annidabili):
-                             <mod change="#fase-A"><add place="above" seq="2">mi parve di</add><subst><del rend="strikethrough" seq="1">risolsi</del><add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del><add place="superimposed" seq="3" rend="seq-transient" n="2">ndere</add></subst></add></subst></mod>
+                             <mod change="#fase-A"><add place="above" seq="2">mi parve di</add><subst><del rend="strikethrough" seq="1">risolsi</del><add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del><add place="superimposed" seq="3" n="2">ndere</add></subst></add></subst></mod>
                              --><note resp="#TAV" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
                             quella mia baggianata e
                             che la 
@@ -1339,7 +1339,9 @@
                                 </mod> d’Orcia</placeName>, il quale <mod change="#fase-A">
                                 <subst><del rend="strikethrough">non potè</del>
                                     <add place="inline">andò</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> sperso 
-                            <app><lem varSeq="2"><mod change="#fase-B"><add place="above">e del quale <del rend="strikethrough">ho</del> or ultimamente</add> non 
+                            <!-- Codifica CON seq-transient di questo app (9r1), conservata come riferimento
+     (i barrati avevano rend="strikethrough seq-transient" / "overwritten seq-transient"):
+<app><lem varSeq="2"><mod change="#fase-B"><add place="above">e del quale <del rend="strikethrough">ho</del> or ultimamente</add> non 
                                         <subst><del rend="strikethrough seq-transient" n="A.1">mi ricordo</del><add place="above" seq="1"> 
                                                 <lb n="3"/>ho potuto ritrovare tra i miei fogli antichi non oltre</add></subst> che la prima quartina e 
                                         <subst><del rend="strikethrough seq-transient" n="A.2">del</del><add place="inline" seq="1">l’</add></subst>ultima terzina.</mod></lem>
@@ -1355,6 +1357,39 @@
                                             <add place="inline" seq="1">che
                                                 <subst>
                                                     <del rend="overwritten seq-transient" seq="2" n="1">di qualche verso</del>
+                                                    <add place="superimposed" seq="2">
+                                                        <subst>
+                                                            <del rend="overwritten" seq="2">di</del>
+                                                            <add place="superimposed" seq="2">della</add>
+                                                        </subst>
+                                                        <subst>
+                                                            <del rend="overwritten" seq="2">qualche</del>
+                                                            <add place="superimposed" seq="2">prima</add>
+                                                        </subst>
+                                                        quartina e dell'ultima terzina.
+                                                    </add>
+                                                </subst>
+                                            </add>
+                                        </subst>
+                                    </mod>
+                                </rdg> </app>
+                            -->
+                            <app><lem varSeq="2"><mod change="#fase-B"><add place="above">e del quale <del rend="strikethrough">ho</del> or ultimamente</add> non 
+                                        <subst><del rend="strikethrough" n="A.1">mi ricordo</del><add place="above" seq="1"> 
+                                                <lb n="3"/>ho potuto ritrovare tra i miei fogli antichi non oltre</add></subst> che la prima quartina e 
+                                        <subst><del rend="strikethrough" n="A.2">del</del><add place="inline" seq="1">l’</add></subst>ultima terzina.</mod></lem>
+                                <rdg varSeq="1">
+                                    <mod change="#fase-A">
+                                        <subst>
+                                            <del rend="overwritten" seq="1">:</del>
+                                            <add place="superimposed" seq="1">e</add>
+                                        </subst>
+                                        non mi ricordo
+                                        <subst>
+                                            <del rend="strikethrough" seq="1">che</del>
+                                            <add place="inline" seq="1">che
+                                                <subst>
+                                                    <del rend="overwritten" seq="2" n="1">di qualche verso</del>
                                                     <add place="superimposed" seq="2">
                                                         <subst>
                                                             <del rend="overwritten" seq="2">di</del>
@@ -3625,7 +3660,7 @@ in una <mod change="#fase-F">
                                         <del rend="strikethrough" seq="1">molto fitti ne' suoi discorsi</del>
                                         <del rend="strikethrough" seq="2"><add place="above">i colleghi</add></del>
                                         <add place="above" seq="2">i miei colleghi : «<subst>
-                                                <del rend="strikethrough seq-transient" seq="3" n="1">Beh</del>
+                                                <del rend="strikethrough" seq="3" n="1">Beh</del>
                                                 <add place="above" seq="3">Boff!</add>  </subst>   
                                         </add>
                                     </subst> <!-- <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">molto fitti ne’ suoi discorsi</del> <add place="above">i colleghi</add></subst></del> <add place="above">i miei colleghi : «<del rend="strikethrough" xml:id="del_Beh">Beh</del> </add></subst>
@@ -4196,7 +4231,7 @@ in una <mod change="#fase-F">
                             
                            
                                 <mod change="#fase-G"><subst seq="2">
-                                        <del rend="strikethrough seq-transient" seq="2" n="1"><lb n="9"/>Questo stato terribile che io solea tenere represso
+                                        <del rend="strikethrough" seq="2" n="1"><lb n="9"/>Questo stato terribile che io solea tenere represso
                                             <lb n="10"/>e nascosto
                                             <subst seq="1"><del rend="strikethrough" seq="1"> mi rendeva sconstro <gap unit="char" quantity="3"/>coi compagni
                                                     <lb n="11"/>spesso
