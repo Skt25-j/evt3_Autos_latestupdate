@@ -509,3 +509,11 @@ html[data-el="changesView"] evt-generic-element.evt-change-pending {
 html[data-el="interpretative"] evt-reading.app-entry-lem,
 html[data-el="interpretative"] .app-entry-lem.highlight,
 html[data-el="interpretative"] .app-entry-lem { background-color: transparent !important; }
+
+/* Accento colore del pop-up delle note, coerente con l'iconcina: BLU per le note
+   critiche/editoriali (curatore), VIOLA per quelle d'autore (#TUS). Il popover e'
+   appeso al <body>, quindi la regola sta qui (globale), non nello scss del componente. */
+.evt-note-popover.critical { border-color: rgb(24,70,155) !important; }
+.evt-note-popover.critical .popover-body { border-left: 4px solid rgb(24,70,155); }
+.evt-note-popover.comment { border-color: rgb(87,14,105) !important; }
+.evt-note-popover.comment .popover-body { border-left: 4px solid rgb(87,14,105); }

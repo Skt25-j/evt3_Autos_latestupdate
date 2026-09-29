@@ -633,7 +633,7 @@
                             <lb n="2"/> <mod change="#strato-E"><add rend="indent-center">1910</add></mod>
                             <lb/>
                             <fw place="top_right" type="pageNum"><mod change="#fase-C">1</mod>
-                                <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <mod change="#strato-E"><note resp="#TUS"><hi rend="underline">Non ti fermare!</hi></note></mod> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note><mod change="#strato-E" rend="soloDiplomatica"><hi rend="underline">Non ti fermare!</hi></mod>
+                                <!-- Nota d'autore di strato-E. Il @change sta direttamente sulla <note> (filtro-fase in changesView gestito da note.component). In diplomatica/changes il testo e' reso dal <mod rend="soloDiplomatica"> qui sotto; il popup della nota compare solo in critica (soloCritica). NB: una <note> dentro un <mod> non verrebbe resa da EVT nelle viste di lettura, per questo il change va sulla <note>, non su un <mod> attorno. --><note resp="#TUS" rend="soloCritica" change="#strato-E"><hi rend="underline">Non ti fermare!</hi></note><mod change="#strato-E" rend="soloDiplomatica"><hi rend="underline">Non ti fermare!</hi></mod>
 
                                 <!-- <app>
                                     <lem varSeq="2"><note resp="#TUS" rend="soloCritica"><mod change="#strato-E"><hi rend="underline">Non ti fermare!</hi></mod></note></lem>

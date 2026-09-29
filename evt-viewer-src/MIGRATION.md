@@ -267,6 +267,28 @@ Legenda tipo: **[BUG]** correzione di un difetto EVT (probabilmente già risolta
   Correction sequence mostrano a-capo/numeri di riga da `<lb/>`; le voci del corrSeq
   restano separate.
 
+### 20. [FEAT] Filtro-per-fase su `@change` nelle `<note>`
+- File: `components/note/note.component.{ts,html}`.
+- Cosa: una `<note change="#fase-X">` ora è filtrata per fase in `changesView` esattamente
+  come i `<mod>` e i blocchi `div/ab/seg/lg` (voce 1): compare solo dalla sua fase in poi.
+  Prima il componente `note` riceveva `selectedLayer`/`selLayer` ma ignorava `@change`.
+- Come: `note.component` inietta `EVTStatusService`, prende l'ordine fasi da
+  `currentChanges$`, e con `layerHidden()` nasconde la nota quando la fase corrente precede
+  quella del `@change` (solo in changesView, solo se la nota ha `@change`; le note senza
+  `@change` restano invariate). La fase corrente si legge da `selLayer` (nome con cui il
+  content-viewer la passa nel testo corrente) con fallback su `selectedLayer`. Nel template
+  la nota è avvolta in `*ngIf="!layerHidden()"`. Il modello `Note` porta già
+  `attributes.change` (NoteParser).
+- Motivo filologico: mette il `@change` direttamente sulla `<note>` (che appartiene a quella
+  fase), evitando i ripieghi `<note><mod>` (inversione) o `<mod><note>` (che EVT non rende
+  nelle viste di lettura).
+- Pilota: `interno_Copertina`/fw a inizio 1r1, nota "Non ti fermare!" (strato-E): la `<note>`
+  porta ora `change="#strato-E"`; il testo in diplomatica/changes resta reso da un
+  `<mod rend="soloDiplomatica">` gemello, il popup nota resta `rend="soloCritica"` (solo critica).
+- Verifica beta: se la beta ha una vera vista genetica che filtra anche le note, adottarla;
+  altrimenti riportare `layerHidden()` in `note.component` (controllare il nome dell'input
+  fase, `selLayer`).
+
 ---
 
 ## Verifiche (da rieseguire dopo il port)
