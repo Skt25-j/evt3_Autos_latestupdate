@@ -3501,7 +3501,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                     </div>
                     <div type="page" xml:id="Quaderno2_7v">
                         <pb n="7v2" facs="7v2.jpg" change="#strato-E"/>
-                        <ab change="#strato-E">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>"</ab>
+                        <ab change="#strato-E" rend="soloDiplomatica">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>"</ab>
                     </div>
                     <div type="page">
                         <pb n="8r2" xml:id="Quaderno2_8r" facs="8r2.jpg" change="#fase-D"/>
@@ -3512,7 +3512,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 <lb n="3"/>ci avevano sentiti parlare e che forse <mod change="#fase-D"> <subst><del rend="strikethrough">lo</del> <add place="above">un po’ ne</add></subst></mod> conoscevano <mod change="#fase-D"><subst><del rend="strikethrough">come</del> <add place="above">le opere e
                                             <lb n="4"/>lo stimavano</add></subst></mod> un grand’uomo se ne dolsero e tutti restarono cheti. Io in
                                 <lb n="5"/>quel silenzio <mod change="#fase-D"><add place="above">mi</add></mod> <hi rend="underline" change="#strato-I">lasciai uscir di bocca un “Bene!”, del quale tutti
-                                    <lb n="6"/>si meravigliarono,</hi>
+                                    <lb n="6"/>si meravigliarono,</hi> <note rend="soloCritica" resp="#TUS" change="#strato-E">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>"<note type="critical" resp="#TAV">Si trova a 7v2</note></note>
                                 e Boni non lasciò di rimproverarmi.
                                 <lb n="7"/>Io non lo seppi allora ed ora pure non ne posso dire il <hi rend="underline" change="#strato-E">per-
                                     <lb n="8"/>ché!</hi> Solo dirò che diss<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> allora un<mod change="#fase-D"><del rend="strikethrough">'</del></mod>errore. <!-- <app><lem varSeq="2"><mod change="#strato-E">un<del rend="strikethrough">'</del>errore</mod></lem>
@@ -4134,17 +4134,7 @@ in una <mod change="#fase-F">
                     </div>
                     <div type="page" xml:id="Quaderno2_20v">
                         <pb n="20v2" facs="20v2.jpg" change="#strato-L"/>
-                        <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <p rend="indent"><mod change="#strato-L"><note resp="#TUS"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</note></mod></p> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><p rend="indent" change="#strato-L">
-                                <lb/><choice>
-                                    <abbr>N</abbr>
-                                    <expan>Nota</expan>
-                                </choice>
-                                <lb/>A 28 anni il
-                                <lb/>tentativo fu
-                                <lb/>reale!
-                                <lb/>W. Giovanni Ferraio
-                                <lb/>il Salvatore.
-                            </p></note><p rend="indent soloDiplomatica"><mod change="#strato-L"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</mod></p>
+                        <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <p rend="indent"><mod change="#strato-L"><note resp="#TUS"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</note></mod></p> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><p rend="indent soloDiplomatica"><mod change="#strato-L"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</mod></p>
                     </div>
                     <div type="page">
                         <pb n="21r2" xml:id="Quaderno2_21r" facs="21r2.jpg" change="#fase-G"/>
@@ -4188,7 +4178,17 @@ in una <mod change="#fase-F">
 -->
                                 <lb n="4"/>del mio stato, e alcuna volta 
                                 <hi rend="underline" change="#strato-O">a la tentazione di toglier-
-                                    <lb n="5"/>mi la vita.</hi></p>
+                                    <lb n="5"/>mi la vita.</hi></p><note resp="#TUS" rend="soloCritica"><p rend="indent" change="#strato-L">
+                                <lb/><choice>
+                                    <abbr>N</abbr>
+                                    <expan>Nota</expan>
+                                </choice>
+                                <lb/>A 28 anni il
+                                <lb/>tentativo fu
+                                <lb/>reale!
+                                <lb/>W. Giovanni Ferraio
+                                <lb/>il Salvatore.
+                            </p><note resp="#TAV" type="critical">Si trova a 20v2</note></note>
                         <p rend="indent" change="#fase-G"><lb n="6"/>Infelice! e avevo 15 anni! Quale fiore di maggio
                                 <lb n="7"/>perduto, quale fuoco acceso per la distruzione de la
                                 <lb n="8"/><mod change="#fase-G"><subst><del rend="strikethrough">pace, de la tranquillità</del> <add place="inline">giovinezza!</add></subst></mod>
