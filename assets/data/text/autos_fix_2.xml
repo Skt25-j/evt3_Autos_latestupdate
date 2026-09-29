@@ -773,7 +773,7 @@
                     </div> 
                     <div type="page" xml:id="Quaderno1_1v">
                         <pb n="1v1" facs="1v.jpg" change="#fase-A"/>
-                        <p rend="indent"><mod change="#fase-C"><add place="margin-left"><hi rend="underline">Corrigendo</hi></add></mod></p>
+                        <p rend="indent soloDiplomatica"><mod change="#fase-C"><add place="margin-left"><hi rend="underline">Corrigendo</hi></add></mod></p>
                     </div>
                     <div type="page">
                         <pb n="2r1" xml:id="Quaderno1_2r" facs="2r.jpg" change="#fase-A"/>
