@@ -359,10 +359,13 @@
                 <ptr target="#Quaderno1_12v"/>
                 <ptr target="#Quaderno1_12r_b"/>
             </transpose>
-            <!-- <transpose resp="#TUS" cert="high">
-                 <ptr target="#seg_ingenuamente"/>
-                 <ptr target="#seg_credetti"/>
-                 </transpose> Non funziona con i seg per questo è stat usata choice pe rle singole parole -->
+            <!-- ingenuamente/credetti: trasposizione d'autore (apici 1/2). Ora resa a livello di
+                 <seg> (in precedenza si era ripiegato su <choice>, quando il transpose sui seg non
+                 era ancora supportato dal software). ptr nell'ordine voluto: ingenuamente -> credetti. -->
+            <transpose>
+                <ptr target="#seg_ingenuamente"/>
+                <ptr target="#seg_credetti"/>
+            </transpose>
             <transpose resp="#TUS" cert="high">
                 <ptr target="#Quaderno2_15r_intanto"/>
                 <ptr target="#Quaderno2_15r_ciò"/>
@@ -1848,18 +1851,9 @@
                                         <add place="inline">superiori</add></subst></mod>, 
                                 <mod change="#fase-B"><del rend="strikethrough">mi</del></mod>
                                 da cui mi
-                                <choice resp="#TAV">
-                                    <sic>
-                                        <subst seq="1">
-                                            <del rend="strikethrough">f</del>
-                                            <add place="inline">credetti</add>
-                                        </subst>
-                                        <metamark function="transposition" place="above"><hi rend="apice">2</hi></metamark>
-                                        ingenuamente 
-                                        <metamark function="transposition" place="above"><hi rend="apice">1</hi></metamark>
-                                    </sic>
-                                    <corr>ingenuamente credetti</corr>
-                                </choice>
+<!-- codifica precedente (choice/sic-corr, riordino attribuito a #TAV; ma gli apici 1/2 sono d'autore: e' una trasposizione, non un emendamento):
+                                <choice resp="#TAV"><sic><subst seq="1"><del rend="strikethrough">f</del><add place="inline">credetti</add></subst><metamark function="transposition" place="above"><hi rend="apice">2</hi></metamark> ingenuamente <metamark function="transposition" place="above"><hi rend="apice">1</hi></metamark></sic><corr>ingenuamente credetti</corr></choice> -->
+                                <seg xml:id="seg_credetti"><subst seq="1"><del rend="strikethrough">f</del><add place="inline">credetti</add></subst><metamark function="transposition" place="above" rend="soloDiplomatica"><hi rend="apice">2</hi></metamark> </seg><seg xml:id="seg_ingenuamente">ingenuamente<metamark function="transposition" place="above" rend="soloDiplomatica"><hi rend="apice">1</hi></metamark> </seg>
                                 
                                 <!-- <app>
                                      <lem><mod change="#fase-A">ingenuamente <subst seq="1"><del rend="strikethrough">f</del>
@@ -2745,7 +2739,7 @@
                                 <lb n="2"/>ammonimenti del <persName ref="#Prefetto_Seminario">prefetto</persName>, io non vi riusciva.
                             </p>
                         <p rend="indent" change="#fase-D">
-                                <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <!-- codifica precedente (choice/sic-corr; il riordino era attribuito all'editore #TAV, ma i numeri 1/2 sono d'autore [strato-E]: e' una trasposizione, non un emendamento): <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#TAV">superiore curioso</corr></choice> --><seg xml:id="curioso_22v1">curioso<metamark function="transposition" place="above" rend="soloDiplomatica" change="#strato-E"><hi rend="apice">2</hi></metamark></seg> <seg xml:id="superiore_22v1">superiore<metamark function="transposition" place="above" rend="soloDiplomatica" change="#strato-E"><hi rend="apice">1</hi></metamark></seg>
+                                <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <!-- codifica precedente (choice/sic-corr; il riordino era attribuito all'editore #TAV, ma i numeri 1/2 sono d'autore [strato-E]: e' una trasposizione, non un emendamento): <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#TAV">superiore curioso</corr></choice> --><seg xml:id="curioso_22v1">curioso<metamark function="transposition" place="above" rend="soloDiplomatica" change="#strato-E"><hi rend="apice">2</hi></metamark> </seg><seg xml:id="superiore_22v1">superiore<metamark function="transposition" place="above" rend="soloDiplomatica" change="#strato-E"><hi rend="apice">1</hi></metamark> </seg>
                                 <lb n="4"/>era arrivato a frugare su’ miei cassetti e scoprire gli arcani
                                 <lb n="5"/>gelosi, e ridere sulle mie baggianate. E <mod change="#fase-D">n<del rend="overwritten">i</del><add place="superimposed">e</add>l</mod> veder tanto scritto,
                                 <lb n="6"/>tanto <mod change="#fase-D">lavoro <subst seq="1"><del rend="strikethrough">avrà il</del><add place="inline">quel</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> superiore avrà naturalmente concluso:<subst seq="2"><del rend="strikethrough">«per
