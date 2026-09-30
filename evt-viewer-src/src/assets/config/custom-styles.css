@@ -450,13 +450,29 @@ evt-generic-element:has([data-edition="interpretative"]),
 }
 
 
-/* nota autoriale (resp="#TUS"): visibile SOLO nella vista critica */
+/* contenuti soloCritica (note autoriali resp="#TUS" e relativi wrapper):
+   visibili SOLO nella vista critica. Simmetrico alla regola soloDiplomatica:
+   copre sia evt-note[rend] sia gli elementi con rend/data-rend ~= soloCritica. */
 html[data-el="diplomatic"] evt-note[rend="soloCritica"],
-html[data-el="changesView"] evt-note[rend="soloCritica"] { display: none !important; }
+html[data-el="changesView"] evt-note[rend="soloCritica"],
+html[data-el="diplomatic"] [rend~="soloCritica"],
+html[data-el="changesView"] [rend~="soloCritica"],
+html[data-el="diplomatic"] [data-rend~="soloCritica"],
+html[data-el="changesView"] [data-rend~="soloCritica"] { display: none !important; }
 
 /* gemello-testo: NON in critica (solo diplomatica/changes) */
 html[data-el="interpretative"] [rend~="soloDiplomatica"],
 html[data-el="interpretative"] [data-rend~="soloDiplomatica"] { display: none !important; }
+
+/* [Autos] Spazio fra le due porzioni trasposte d'autore (ingenuamente/credetti a
+   13r, superiore/curioso a 22v). Lo spazio in coda ai <seg> nel TEI viene collassato
+   in fase di rendering (nodo di testo di soli spazi fra elementi inline), cosi' in
+   critica le parole risultavano attaccate ("ingenuamentecredetti"). Reintroduciamo
+   uno spazio con ::after per questi seg specifici, in tutte le viste. */
+#seg_ingenuamente::after,
+#seg_credetti::after,
+#superiore_22v1::after,
+#curioso_22v1::after { content: " "; white-space: pre-wrap; }
 
 /* ============================================================= */
 /* CHANGE su blocco (p / div / ab / lg / l): fase senza apparato  */
