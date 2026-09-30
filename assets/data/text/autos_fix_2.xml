@@ -359,16 +359,16 @@
                 <ptr target="#Quaderno1_12v"/>
                 <ptr target="#Quaderno1_12r_b"/>
             </transpose>
+            <transpose resp="#TUS" cert="high">
+                <ptr target="#Quaderno2_15r_intanto"/>
+                <ptr target="#Quaderno2_15r_ciò"/>
+            </transpose>
             <!-- ingenuamente/credetti: trasposizione d'autore (apici 1/2). Ora resa a livello di
                  <seg> (in precedenza si era ripiegato su <choice>, quando il transpose sui seg non
                  era ancora supportato dal software). ptr nell'ordine voluto: ingenuamente -> credetti. -->
             <transpose>
                 <ptr target="#seg_ingenuamente"/>
                 <ptr target="#seg_credetti"/>
-            </transpose>
-            <transpose resp="#TUS" cert="high">
-                <ptr target="#Quaderno2_15r_intanto"/>
-                <ptr target="#Quaderno2_15r_ciò"/>
             </transpose>
             <!-- 22v1: trasposizione d'autore "superiore/curioso" (numeri 1/2 di strato-E);
                  ptr nell'ordine voluto. NB: resp/cert omessi perche' tei-vbd.rng non li ammette su <transpose>. -->
