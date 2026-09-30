@@ -1,9 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 
 import { VersesGroup } from '../../models/evt-models';
 import { register } from '../../services/component-register.service';
 import { EVTModelService } from '../../services/evt-model.service';
+import { EVTStatusService } from '../../services/evt-status.service';
 import { EditionlevelSusceptible, Highlightable, ShowDeletionsSusceptible, TextFlowSusceptible } from '../components-mixins';
 
 export interface VersesGroupComponent extends EditionlevelSusceptible, Highlightable, ShowDeletionsSusceptible, TextFlowSusceptible { }
@@ -14,9 +16,13 @@ export interface VersesGroupComponent extends EditionlevelSusceptible, Highlight
   styleUrls: ['./verses-group.component.scss'],
 })
 @register(VersesGroup)
-export class VersesGroupComponent {
+export class VersesGroupComponent implements OnInit, OnDestroy {
   @Input() data: VersesGroup;
   @Input() selectedLayer: string;
+
+  // [Autos] Filtro-per-fase su @change del <lg> in changesView (come p/div/ab).
+  public orderedLayers: string[] = [];
+  private layerSub: Subscription;
 
   get displayBlock$() {
     return this.evtModelService.lines$.pipe(
@@ -38,7 +44,33 @@ export class VersesGroupComponent {
 
   constructor(
     private evtModelService: EVTModelService,
+    public evtStatusService: EVTStatusService,
   ) {
+  }
+
+  ngOnInit() {
+    this.layerSub = this.evtStatusService.currentChanges$.subscribe(({ layerOrder }) => {
+      this.orderedLayers = layerOrder || [];
+    });
+  }
+
+  ngOnDestroy() {
+    this.layerSub?.unsubscribe();
+  }
+
+  getLayerIndex(layer: string): number {
+    if (layer) { return this.orderedLayers.indexOf(layer.replace('#', '')); }
+
+    return 0;
+  }
+
+  layerHidden(): boolean {
+    const change = this.data?.attributes?.change;
+    if (this.editionLevel !== 'changesView' || !change) { return false; }
+    if (this.orderedLayers.length === 0) { return false; }
+    const current = this.selectedLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
+
+    return this.getLayerIndex(current) < this.getLayerIndex(change);
   }
 
 }
