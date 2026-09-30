@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 import { BehaviorSubject, combineLatest, merge, Observable, Subject, timer } from 'rxjs';
-import { distinctUntilChanged, filter, first, map, mergeMap, shareReplay, switchMap, withLatestFrom } from 'rxjs/operators';
+import { distinctUntilChanged, filter, first, map, mergeMap, shareReplay, startWith, switchMap, withLatestFrom } from 'rxjs/operators';
 
 import { AppConfig, EditionLevel, EditionLevelType } from '../app.config';
 import { ChangeLayerData, Page, ViewMode } from '../models/evt-models';
 import { EVTModelService } from './evt-model.service';
+import { evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtMergePagesByFacs, evtPagesOverride$ } from './evt-custom-pages.util';
 import { deepSearch } from '../utils/dom-utils';
 import { EditionSource } from './named-entities.service';
 
@@ -194,6 +195,35 @@ export class EVTStatusService {
         private route: ActivatedRoute,
         private appConfig: AppConfig,
     ) {
+        // [Autos] Override centralizzato delle pagine (qui, servizio sempre attivo, invece che in
+        // text-panel: cosi' vale per TUTTE le viste). Trasforma rawPages$ in base al livello:
+        //   interpretative (critica) = trasposizioni + pagine bianche nascoste + fusione porzioni;
+        //   changesView              = filtro-per-fase cumulativo + fusione porzioni;
+        //   diplomatic               = solo fusione porzioni della stessa carta.
+        // Pubblica su evtPagesOverride$, che alimenta evtModelService.pages$.
+        combineLatest([
+            this.evtModelService.rawPages$,
+            this.currentEditionLevels$.pipe(startWith([] as EditionLevelType[])),
+            this.currentChanges$.pipe(startWith({ list: [], layerOrder: [], selectedLayer: undefined } as ChangeLayerData)),
+        ]).subscribe(([raw, levels, changes]) => {
+            try {
+                const level = (Array.isArray(levels) ? levels[0] : levels) as string;
+                const doc = evtGetOwnerDoc(raw);
+                const selectedLayer = changes?.selectedLayer;
+                const layerOrder = changes?.layerOrder || [];
+                let override: Page[] | null = null;
+                if (level === 'interpretative') {
+                    override = evtMergePagesByFacs(evtFilterBlankPages(evtApplyTranspositions(raw.slice(), doc), doc));
+                } else if (level === 'changesView') {
+                    override = evtMergePagesByFacs(evtFilterByWritingPhase(raw, selectedLayer, layerOrder), layerOrder);
+                } else if (level === 'diplomatic') {
+                    override = evtMergePagesByFacs(raw);
+                }
+                evtPagesOverride$.next(override);
+            } catch (e) {
+                evtPagesOverride$.next(null); // in caso di errore si usa rawPages$
+            }
+        });
         combineLatest([
             this.appConfig.fileConfigUrl$,
             this.currentStatus$

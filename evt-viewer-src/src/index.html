@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/config/custom-styles.css">
+  <!-- [Autos] Riflette la vista (el) e la fase (lr) dall'URL su <html data-el/data-layer>,
+       cosi' il CSS dell'edizione puo' pilotare soloCritica/soloDiplomatica e i colori per fase. -->
+  <script>(function(){function g(k){var m=(location.hash||"").match(new RegExp("[?&]"+k+"=([^&]+)"));return m?decodeURIComponent(m[1]):"";}function s(){var d=document.documentElement;d.setAttribute("data-el",g("el"));d.setAttribute("data-layer",g("lr"));}window.addEventListener("hashchange",s);setInterval(s,400);s();})();</script>
 </head>
 <body>
   <evt-root></evt-root>
