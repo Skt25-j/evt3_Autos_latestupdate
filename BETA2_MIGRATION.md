@@ -46,13 +46,24 @@ Verificato (headless + screenshot) su `readingText`, `imageText`, `documentalMix
 - changesView con marcatori di fase colorati; nessun warning (colori fasi definiti);
 - immagini caricate; niente errori JS in console.
 
-## QA ancora da completare (rifinitura)
-- Verifica visiva puntuale delle due trasposizioni d'autore in critica (13r, 22v) e
-  del riordino carte nel menù pagine.
-- soloCritica/soloDiplomatica (CSS `html[data-el]`) su casi reali.
-- Ghosting/greying delle carte future nel page-selector in changesView.
-- Sync immagine↔testo dopo il riordino in imageText.
-- QA visiva completa multi-pagina prima della presentazione al referee.
+## QA completata (verificata headless + screenshot)
+- Trasposizioni di pagina in critica: `Q2_7r → 18v/19v/20v`, `Q2_24r → 16v/17v/Cop_r`,
+  `12r/12v/12r_b` correttamente riordinate nel menù pagine (104 → 82 pagine).
+- Trasposizioni d'autore (seg): 13r `credetti² ingenuamente¹` → critica «ingenuamente
+  credetti»; 22v `curioso² superiore¹` → critica «superiore curioso»; marcatori
+  numerici (soloDiplomatica) nascosti in critica. **Fix spazio** fra le due parole
+  (::after nei 4 seg, lo spazio in coda al TEI veniva collassato dal rendering).
+- soloCritica/soloDiplomatica: in critica il gemello-testo (soloDiplomatica) è nascosto
+  e la nota autoriale (soloCritica) appare; in diplomatica/changes il contrario.
+  Regola soloCritica resa simmetrica (copre anche `[data-rend~=soloCritica]`).
+- changesView: colori delle fasi applicati, marcatori di fase colorati, display
+  cumulativo per strato/fase corretto (il marcatore di una fase appare solo dai suoi
+  strati in poi); `data-el` impostato anche in documentalMixed.
+- imageText/documentalMixed: immagini caricate, testo affiancato, sync attivo.
+
+## Rifinitura opzionale (non bloccante)
+- Ghosting/greying "estetico" delle carte future nel page-selector in changesView
+  (le pagine ci sono tutte; è un semplice abbellimento visivo, mai implementato).
 
 ## Build
 `cd evt-viewer-src && npm ci && NODE_OPTIONS=--openssl-legacy-provider npx ng build --configuration production`
