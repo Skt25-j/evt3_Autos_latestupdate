@@ -1,6 +1,4 @@
 import { ChangeDetectionStrategy, Component, Input, TemplateRef } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { ApparatusEntry, Reading } from 'src/app/models/evt-models';
 import { register } from 'src/app/services/component-register.service';
 import { EVTModelService } from 'src/app/services/evt-model.service';
@@ -20,16 +18,14 @@ export class ApparatusEntryReadingsComponent {
   @Input() template: TemplateRef<any>;
   @Input() selectedLayer: string;
 
-  groups$ = this.evtModelService.groups$;
-
   constructor(
     public evtModelService: EVTModelService,
   ) {
   }
 
-  get significantRdg(): Reading[] {
-    // Ordina le varianti per @varSeq crescente (sequenza genetica: dalla piu'
-    // antica alla piu' recente), cosi' l'apparato mostra "lemma] var1 -> var2 ...".
+  get significantReading(): Reading[] {
+    // [Autos] Ordina le varianti per @varSeq crescente (sequenza genetica: dalla piu'
+    // antica alla piu' recente), cosi' la riga alta mostra "lemma] var1 -> var2 ...".
     return this.data.readings
       .filter((rdg) => rdg?.significant)
       .slice()
@@ -43,10 +39,10 @@ export class ApparatusEntryReadingsComponent {
       });
   }
 
-  getWits$(witID: string): Observable<string[]> {
-    return this.groups$.pipe(
-      map((groups) => groups.filter((g) => g.id === witID).map((g) => g.witnesses).reduce((x, y) => ([ ...x, ...y ]), [])),
-      map((groupWits) => groupWits.length > 0 ? groupWits : [witID]),
-    );
-  }
+  // getWits$(witID: string): Observable<string[]> {
+  //   return this.groups$.pipe(
+  //     map((groups) => groups.filter((g) => g.id === witID).map((g) => g.witnesses).reduce((x, y) => ([ ...x, ...y ]), [])),
+  //     map((groupWits) => groupWits.length > 0 ? groupWits : [witID]),
+  //   );
+  // }
 }

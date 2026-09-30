@@ -20,7 +20,7 @@ export class TextTextComponent implements OnInit, OnDestroy {
     maxCols: 2,
     maxRows: 1,
     draggable: {
-      enabled: false,
+      enabled: true,
       ignoreContent: true,
       dragHandleClass: 'panel-header',
     },

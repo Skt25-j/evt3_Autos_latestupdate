@@ -41,7 +41,7 @@ export class TextVersionsComponent {
     margin: 0,
     maxRows: 1,
     draggable: {
-      enabled: false,
+      enabled: true,
       ignoreContent: true,
       dragHandleClass: 'panel-header',
     },

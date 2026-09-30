@@ -1,19 +1,9 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, HostListener, Input, Output } from '@angular/core';
 import { BehaviorSubject, combineLatest } from 'rxjs';
-import { distinctUntilChanged, filter, map, startWith } from 'rxjs/operators';
+import { distinctUntilChanged, filter, map, take } from 'rxjs/operators';
 
-import { EditionLevelType } from '../../app.config';
-import { Page } from '../../models/evt-models';
-import { evtMergePagesByFacs } from '../../services/evt-custom-pages.util';
 import { EVTModelService } from '../../services/evt-model.service';
-import { EVTStatusService } from '../../services/evt-status.service';
-
-// Copia di Page per la vista del selettore: num = numero progressivo (posizione
-// nel documento), disabled = "ghosting" (ingrigita e non cliccabile).
-interface PageOption extends Page {
-  num: number;
-  disabled: boolean;
-}
+import { getEventKeyCode } from 'src/app/utils/js-utils';
 
 @Component({
   selector: 'evt-page-selector',
@@ -22,44 +12,6 @@ interface PageOption extends Page {
 })
 export class PageSelectorComponent {
   public pages$ = this.evtModelService.pages$;
-
-  // In changesView la tendina mostra TUTTE le carte (da rawPages$), ingrigendo e
-  // disabilitando (ghosting) quelle scritte DOPO il livello selezionato: cosi' si
-  // vede il colpo d'occhio completo ma non si possono selezionare. La navigazione
-  // (slider/frecce/testo) resta invece limitata a pages$, gia' filtrato a monte.
-  // In diplomatica/critica la tendina usa pages$ com'e', senza ghosting.
-  public displayPages$ = combineLatest([
-    this.evtModelService.rawPages$,
-    this.pages$,
-    this.evtStatus.updateLayer$.pipe(startWith(undefined as string)),
-    this.evtModelService.changeData$.pipe(startWith(undefined)),
-    this.evtStatus.currentEditionLevels$.pipe(startWith([] as EditionLevelType[])),
-  ]).pipe(
-    map(([rawPages, pages, selectedLayer, changeData, editionLevels]) => {
-      const inChanges = (editionLevels && editionLevels[0]) === 'changesView';
-      if (!inChanges) {
-        return pages.map((p, i) => ({ ...p, num: i + 1, disabled: false } as PageOption));
-      }
-      const layerOrder: string[] = (changeData && (changeData as any).layerOrder) || [];
-      const clean = (l: string) => (l || '').replace('#', '');
-      const idxOf = (l: string) => layerOrder.indexOf(clean(l));
-      const selIdx = idxOf(selectedLayer);
-
-      // porzioni della stessa pagina fisica fuse in una sola voce (come nel testo);
-      // writingChange della pagina fusa = fase piu' antica -> ghosting corretto.
-      const merged = evtMergePagesByFacs(rawPages, layerOrder);
-
-      return merged.map((p, i) => {
-        let disabled = false;
-        if (selIdx !== -1 && p.writingChange) {
-          const pIdx = idxOf(p.writingChange);
-          disabled = pIdx !== -1 && pIdx > selIdx; // pagina scritta DOPO il livello selezionato
-        }
-
-        return { ...p, num: i + 1, disabled } as PageOption;
-      });
-    }),
-  );
 
   // tslint:disable-next-line: variable-name
   private _pageID: string;
@@ -71,9 +23,6 @@ export class PageSelectorComponent {
 
   selectedPage$ = new BehaviorSubject<string>(undefined);
 
-  // NB: cerca nella lista EFFETTIVA (pages$, gia' fusa/filtrata), non in rawPages$,
-  // cosi' la pagina selezionata e' quella FUSA (contenuto completo) e non la prima
-  // porzione (che mostrerebbe solo il primo pezzo di testo).
   @Output() selectionChange = combineLatest([
     this.pages$,
     this.selectedPage$.pipe(distinctUntilChanged()),
@@ -82,9 +31,31 @@ export class PageSelectorComponent {
     map(([pages, pageID]) => pages.find((p) => p.id === pageID)),
   );
 
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(e: KeyboardEvent) {
+    this.pages$.pipe(take(1)).subscribe((pageList) => {
+      const pageIndex = pageList.findIndex((pg) => (pg.id === this.selectedPage$.getValue()));
+      if (pageIndex !== undefined) {
+        switch (getEventKeyCode(e)) {
+        case "ArrowLeft":
+          if (pageList[pageIndex-1] !== undefined && pageList[pageIndex-1].id) {
+            this.pageID = pageList[pageIndex-1].id;
+          }
+          break;
+        case "ArrowRight":
+          if (pageList[pageIndex+1] !== undefined && pageList[pageIndex+1].id) {
+            this.pageID = pageList[pageIndex+1].id;
+          }
+          break;
+        }
+      }
+    });
+    // some views have more than one page-selector (es: text-image)
+    e.stopImmediatePropagation();
+  }
+
   constructor(
     private evtModelService: EVTModelService,
-    private evtStatus: EVTStatusService,
   ) {
   }
 

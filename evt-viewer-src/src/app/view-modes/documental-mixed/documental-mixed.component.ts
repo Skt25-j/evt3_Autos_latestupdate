@@ -1,10 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DisplayGrid, GridsterConfig, GridsterItem, GridType } from 'angular-gridster2';
-import { combineLatest } from 'rxjs';
 import { distinctUntilChanged, map, shareReplay } from 'rxjs/operators';
 import { AppConfig, EditionLevel } from '../../app.config';
-import { Page, XMLImagesValues } from '../../models/evt-models';
-import { ViewerSource } from '../../models/evt-polymorphic-models';
+import { Page } from '../../models/evt-models';
 import { EVTModelService } from '../../services/evt-model.service';
 import { EVTStatusService } from '../../services/evt-status.service';
 
@@ -25,6 +23,7 @@ export class DocumentalMixedComponent implements OnInit {
       enabled: false,
       //ignoreContent: true,
       dragHandleClass: 'panel-header',
+      ignoreContentClass: 'no-drag'
     },
     resizable: {
       enabled: false,
@@ -32,28 +31,7 @@ export class DocumentalMixedComponent implements OnInit {
   };
   public imagePanelItem: GridsterItem = { cols: 1, rows: 1, y: 0, x: 0 };
   public textPanelItem: GridsterItem = { cols: 1, rows: 1, y: 0, x: 1 };
-
-  // combineLatest: le immagini si ricostruiscono quando pages$ cambia ordine.
-  public imageViewer$ = combineLatest([this.evtModelService.surfaces$, this.evtModelService.pages$]).pipe(
-    map(([surface, pages]) => {
-      const editionImages = AppConfig.evtSettings.files.editionImagesSource;
-      for (const key of Object.keys(editionImages)) {
-        if (editionImages[key].enable) {
-          return ViewerSource.getDataType(key, surface);
-        }
-      }
-
-      return {
-        type: 'default',
-        value: {
-          xmlImages: pages.map((page) => ({ url: page.facsUrl })) as XMLImagesValues[],
-        },
-      };
-    }),
-    // evita ricostruzioni inutili dell'OSD: riemette solo se le immagini cambiano davvero
-    distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
-  );
-
+  public imageViewer$ = this.evtModelService.imageViewer$;
   public currentEditionLevel$ = this.evtStatusService.currentStatus$.pipe(
     map(({ editionLevels }) => editionLevels[0]),
     shareReplay(1),
@@ -72,7 +50,7 @@ export class DocumentalMixedComponent implements OnInit {
   public lastLayer$ = this.evtStatusService.currentChanges$.pipe(
     distinctUntilChanged(),
     map(({ layerOrder }) => (AppConfig.evtSettings.edition.startingFromDefinitiveLayer) ?
-      layerOrder[layerOrder.length-1] : ((layerOrder.length > 0) ? layerOrder[0] : null)),
+      layerOrder[layerOrder.length - 1] : ((layerOrder.length > 0) ? layerOrder[0] : null)),
   );
 
   changePage(selectedPage: Page) {
