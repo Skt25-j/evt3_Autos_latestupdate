@@ -144,6 +144,9 @@ export class EVTStatusService {
         this.currentApparatus$,
         this.currentCorresp$,
     ]).pipe(
+        // [Autos] guard: non elaborare finche' non c'e' un viewMode valido (evita
+        // "Cannot read properties of undefined (reading 'id')" in alcune viste/tempistiche).
+        filter(([viewMode]) => !!viewMode),
         distinctUntilChanged((x, y) => JSON.stringify(x) === JSON.stringify(y)),
         shareReplay(1),
         map(([
