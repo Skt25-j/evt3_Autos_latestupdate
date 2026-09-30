@@ -245,22 +245,34 @@ edition:
   showSeparatorBetweenChanges: true
   # Indicate which layer of the change sequence has to be selected when the documental view is opened:
   # with true the last one (the definitive layer) is shown, with false the first one (the original layer).
-  startingFromDefinitiveLayer: true
+  startingFromDefinitiveLayer: false
   # Indicate whether to show the change layer marker in the text
   showChangeLayerMarkerInText: true
 
   changeSequenceView:
     # Indicate whether to show the VarSeq attribute value in the change sequence view
-    showVarSeqAttr: false
+    showVarSeqAttr: true
     # Indicate whether to show the Seq attribute value in the change sequence view
-    showSeqAttr: false
+    showSeqAttr: true
+    # [Autos] Colori delle fasi/strati redazionali (portati dall'edizione originale
+    # su EVT 3 vecchio fork). Ogni @change="#fase-X/#strato-Y" e' colorato di conseguenza
+    # nella changesView e nei marcatori in linea; senza queste voci EVT usa il nero.
     layerColors:
-      strato-0: "#d4a03b"
-      strato-1: "#d99102"
-      strato-2: "#ac7301"
-      strato-3: "#855801"
-      strato-4: "#5f3f01"
-      strato-5: "#352400"
+      fase-A: "#E67E22"
+      fase-B: "#D35400"
+      fase-C: "#F06292"
+      fase-D: "#880E4F"
+      strato-E: "#9E9B9B"
+      fase-F: "#9C27B0"
+      fase-G: "#7B1FA2"
+      fase-H: "#512DA8"
+      strato-I: "#2404B5"
+      strato-L: "#BB1515"
+      strato-M: "#080277"
+      strato-O: "#9B9B9B"
+      fase-N: "#260F8B"
+      strato-P: "#6E6A6A"
+      strato-X: "#00796B"
 
   # Critical edition view is multi page unless you se this to false. This is a performance-wise option.
   multiPageEngineForCriticalEdition: false
@@ -294,25 +306,25 @@ ui:
       iconSet: fas
       id: imageImage
       label: Image-Image
-      enable: false
+      enable: true
 
     - icon: image
       iconSet: fas
       id: imageOnly
       label: Image only
-      enable: false
+      enable: true
 
     - icon: txt
       iconSet: evt
       id: readingText
       label: Reading Text
-      enable: false
+      enable: true
 
     - icon: imgTxt
       iconSet: evt
       id: imageText
       label: Image Text
-      enable: false
+      enable: true
 
     - icon: txtTxt
       iconSet: evt

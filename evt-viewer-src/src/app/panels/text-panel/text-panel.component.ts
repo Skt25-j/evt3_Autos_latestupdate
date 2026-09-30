@@ -102,6 +102,21 @@ export class TextPanelComponent implements OnDestroy {
     if (e && this.showDeletions === undefined) {
       this.showDeletions = false;
     }
+    // [Autos] Popola il livello di rendering direttamente dall'Input (che riflette
+    // lo stato autorevole dell'app: URL `el` o scelta utente gia' propagata dal
+    // servizio). Nello stock currentEdLevel$ era alimentato SOLO dall'evento
+    // selectionChange del selettore: da quando il selettore emette solo sui click
+    // reali (per rompere l'anello di retroazione sul livello), quell'evento non
+    // parte piu' al boot e il pannello restava vuoto. Qui il rendering non dipende
+    // piu' dal "rimbalzo" del selettore. Non alimentiamo editionLevelChange da qui
+    // (vedi userEdLevel$), cosi' la sincronizzazione dell'Input non ripubblica il
+    // livello verso updateEditionLevels$.
+    if (e) {
+      const obj = (AppConfig.evtSettings.edition.availableEditionLevels || []).find((l) => l.id === e);
+      if (obj) {
+        this.currentEdLevel$.next(obj);
+      }
+    }
   }
   public get editionLevelID() {
     return this._edLevel;
@@ -111,7 +126,11 @@ export class TextPanelComponent implements OnDestroy {
   public currentEdLevelId$ = this.currentEdLevel$.pipe(
     map((e) => e?.id),
   );
-  @Output() editionLevelChange: Observable<EditionLevel> = this.currentEdLevel$.pipe(
+  // [Autos] Solo i cambi di livello iniziati dall'utente dal selettore: alimentano
+  // l'output editionLevelChange (-> updateEditionLevels$). Separato da currentEdLevel$
+  // per evitare che la sincronizzazione dell'Input rimbalzi e resetti il livello.
+  public userEdLevel$ = new Subject<EditionLevel>();
+  @Output() editionLevelChange: Observable<EditionLevel> = this.userEdLevel$.pipe(
     filter((e) => !!e),
     distinctUntilChanged(),
   );
@@ -212,6 +231,13 @@ export class TextPanelComponent implements OnDestroy {
 
   updateSelectedLayer(layer: string) {
     this.selectedLayer = layer;
+  }
+
+  // [Autos] Cambio livello iniziato dall'utente dal selettore: aggiorna subito il
+  // rendering e propaga verso l'esterno (updateEditionLevels$ tramite editionLevelChange).
+  onUserEditionLevel(e: EditionLevel) {
+    this.currentEdLevel$.next(e);
+    this.userEdLevel$.next(e);
   }
 
   onPanelClicked(e: MouseEvent) {

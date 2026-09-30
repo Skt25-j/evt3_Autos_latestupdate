@@ -12,7 +12,7 @@
             [active]="secondaryContent === 'info'"></evt-button>
         <evt-edition-selector></evt-edition-selector>
         <evt-page-selector [pageID]="pageID" (selectionChange)="updatePage$.next($event)"></evt-page-selector>
-        <evt-edition-level-selector [class.hidden]="hideEditionLevelSelector" [editionLevelID]="editionLevelID" (selectionChange)="currentEdLevel$.next($event)"></evt-edition-level-selector>
+        <evt-edition-level-selector [class.hidden]="hideEditionLevelSelector" [editionLevelID]="editionLevelID" (selectionChange)="onUserEditionLevel($event)"></evt-edition-level-selector>
         <evt-change-layer-selector [class.hidden]="!(showChangeLayerSelector)" [selLayer]="selLayer" (layerChange)="updateSelectedLayer($event)"></evt-change-layer-selector>
     </div>
     <div content evtAnnotator #mainContent>
