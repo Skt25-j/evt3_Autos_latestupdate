@@ -367,6 +367,12 @@
                 <ptr target="#Quaderno2_15r_intanto"/>
                 <ptr target="#Quaderno2_15r_ciò"/>
             </transpose>
+            <!-- 22v1: trasposizione d'autore "superiore/curioso" (numeri 1/2 di strato-E);
+                 ptr nell'ordine voluto. NB: resp/cert omessi perche' tei-vbd.rng non li ammette su <transpose>. -->
+            <transpose>
+                <ptr target="#superiore_22v1"/>
+                <ptr target="#curioso_22v1"/>
+            </transpose>
         </listTranspose>
     </standOff>
     <text xml:id="Autos">
@@ -2739,7 +2745,7 @@
                                 <lb n="2"/>ammonimenti del <persName ref="#Prefetto_Seminario">prefetto</persName>, io non vi riusciva.
                             </p>
                         <p rend="indent" change="#fase-D">
-                                <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#TAV">superiore curioso</corr></choice>
+                                <lb n="3"/>Seppi e non mi accorsi che alcuna volta qualche <!-- codifica precedente (choice/sic-corr; il riordino era attribuito all'editore #TAV, ma i numeri 1/2 sono d'autore [strato-E]: e' una trasposizione, non un emendamento): <choice><sic>curioso<mod change="#strato-E"><add place="above"><hi rend="apice">2</hi></add></mod> superiore<mod change="#strato-E"><add place="above"><hi rend="apice">1</hi></add></mod></sic><corr resp="#TAV">superiore curioso</corr></choice> --><seg xml:id="curioso_22v1">curioso<metamark function="transposition" place="above" rend="soloDiplomatica" change="#strato-E"><hi rend="apice">2</hi></metamark></seg> <seg xml:id="superiore_22v1">superiore<metamark function="transposition" place="above" rend="soloDiplomatica" change="#strato-E"><hi rend="apice">1</hi></metamark></seg>
                                 <lb n="4"/>era arrivato a frugare su’ miei cassetti e scoprire gli arcani
                                 <lb n="5"/>gelosi, e ridere sulle mie baggianate. E <mod change="#fase-D">n<del rend="overwritten">i</del><add place="superimposed">e</add>l</mod> veder tanto scritto,
                                 <lb n="6"/>tanto <mod change="#fase-D">lavoro <subst seq="1"><del rend="strikethrough">avrà il</del><add place="inline">quel</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --> superiore avrà naturalmente concluso:<subst seq="2"><del rend="strikethrough">«per
