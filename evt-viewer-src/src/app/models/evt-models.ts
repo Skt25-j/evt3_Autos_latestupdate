@@ -84,6 +84,9 @@ export interface Page {
     url: string;
     facsUrl: string;
     isPartOfLacuna?: boolean;
+    // [Autos] fase/strato di scrittura della carta (@change sul <pb>), per il
+    // filtro-per-fase delle pagine in changesView.
+    writingChange?: string;
 }
 
 export interface ChangeLayerData {

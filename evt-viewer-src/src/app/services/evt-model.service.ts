@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, combineLatest, Observable } from 'rxjs';
 import { combineLatestWith, distinctUntilChanged, map, shareReplay, switchMap, withLatestFrom } from 'rxjs/operators';
+import { evtPagesOverride$ } from './evt-custom-pages.util';
 import {
   ChangeLayerData,
   EditionStructure,
@@ -88,8 +89,16 @@ export class EVTModelService {
     shareReplay(1),
   );
 
-  public readonly pages$: Observable<Page[]> = this.currentEditionStructure$.pipe(
+  public readonly rawPages$: Observable<Page[]> = this.currentEditionStructure$.pipe(
     map((source) => source.pages),
+    shareReplay(1),
+  );
+
+  // [Autos] pages$ = rawPages$ con l'eventuale override della pipeline custom
+  // (transpose/pagine bianche/fusione/filtro-fase) pubblicato da text-panel via
+  // evtPagesOverride$. Se non c'e' override, si usa la lista originale.
+  public readonly pages$: Observable<Page[]> = combineLatest([this.rawPages$, evtPagesOverride$]).pipe(
+    map(([orig, override]) => override || orig),
     shareReplay(1),
   );
 

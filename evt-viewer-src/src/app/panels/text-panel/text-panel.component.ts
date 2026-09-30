@@ -1,12 +1,13 @@
 import { Component, ElementRef, Input, OnDestroy, Output, ViewChild } from '@angular/core';
 import { BehaviorSubject, combineLatest, merge, Observable, Subject, Subscription } from 'rxjs';
-import { delay, distinctUntilChanged, filter, map, shareReplay, skip, tap, withLatestFrom } from 'rxjs/operators';
+import { delay, distinctUntilChanged, filter, map, shareReplay, skip, startWith, tap, withLatestFrom } from 'rxjs/operators';
 import { EvtLinesHighlightService } from 'src/app/services/evt-lines-highlight.service';
 import { KeyboardService } from 'src/app/services/keyboard.service';
 import { StructureXmlParserService } from 'src/app/services/xml-parsers/structure-xml-parser.service';
 import { AppConfig, EditionLevel, EditionLevelType, TextFlow } from '../../app.config';
 import { EntitiesSelectItem } from '../../components/entities-select/entities-select.component';
 import { Page } from '../../models/evt-models';
+import { evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtMergePagesByFacs, evtPagesOverride$ } from '../../services/evt-custom-pages.util';
 import { EVTModelService } from '../../services/evt-model.service';
 import { EVTStatusService } from '../../services/evt-status.service';
 import { EvtIconInfo } from '../../ui-components/icon/icon.component';
@@ -116,15 +117,50 @@ export class TextPanelComponent implements OnDestroy {
     distinctUntilChanged(),
   );
 
+  // [Autos] chiave dell'ultimo override pubblicato (per evitare push ripetuti su pages$)
+  private _lastOverrideKey: string;
+
   public currentStatus$ = combineLatest([
-    this.evtModelService.pages$,
+    this.evtModelService.rawPages$,
     this.currentPage$,
     this.currentEdLevel$,
     this.evtStatusService.currentViewMode$,
+    this.evtStatusService.currentChanges$.pipe(startWith({ selectedLayer: undefined, layerOrder: [] } as any)),
   ]).pipe(
     delay(0),
     filter(([pages, currentPage, editionLevel, currentViewMode]) => !!pages && !!currentPage && !!editionLevel && !!currentViewMode),
-    map(([pages, currentPage, editionLevel, currentViewMode]) => ({ pages, currentPage, editionLevel, currentViewMode })),
+    map(([pages, currentPage, editionLevel, currentViewMode, changes]) => {
+      // [Autos] Pipeline pagine custom, pubblicata come override su evtPagesOverride$ (-> pages$):
+      //  - critica ('interpretative'): trasposizioni + pagine bianche nascoste + fusione porzioni adiacenti;
+      //  - 'changesView': filtro cumulativo per fase/strato + fusione porzioni (ordine documentario);
+      //  - 'diplomatic': solo fusione delle porzioni della stessa carta.
+      const selectedLayer: string = changes?.selectedLayer;
+      const layerOrder: string[] = changes?.layerOrder || [];
+      const doc = evtGetOwnerDoc(pages);
+      let override: Page[] | null = null;
+      if (this.editionLevelID === 'interpretative') {
+        override = evtMergePagesByFacs(evtFilterBlankPages(evtApplyTranspositions(pages.slice(), doc), doc));
+      } else if (this.editionLevelID === 'changesView') {
+        override = evtMergePagesByFacs(evtFilterByWritingPhase(pages, selectedLayer, layerOrder), layerOrder);
+      } else if (this.editionLevelID === 'diplomatic') {
+        override = evtMergePagesByFacs(pages);
+      }
+      const overrideKey = this.editionLevelID + '|' + (override ? override.map((p) => p.id).join(',') : '@raw');
+      if (overrideKey !== this._lastOverrideKey) {
+        this._lastOverrideKey = overrideKey;
+        evtPagesOverride$.next(override);
+      }
+      // Ri-risolvi la pagina corrente nella lista effettiva (override): per id, poi per @facs.
+      const pagesOut = override || pages;
+      let resolvedCurrent = currentPage;
+      if (pagesOut && currentPage) {
+        resolvedCurrent = pagesOut.find((p) => p.id === currentPage.id)
+          || (currentPage.facs ? pagesOut.find((p) => p.facs === currentPage.facs) : undefined)
+          || currentPage;
+      }
+
+      return { pages: pagesOut, currentPage: resolvedCurrent, editionLevel, currentViewMode };
+    }),
     distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
     shareReplay(1),
   );

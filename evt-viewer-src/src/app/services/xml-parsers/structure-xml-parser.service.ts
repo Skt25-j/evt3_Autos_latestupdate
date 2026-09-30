@@ -628,6 +628,7 @@ private async checkDepaErrors(source: HTMLElement) {
       parsedContent: this.parsePageContent(doc, originalContent, pb),
       url: this.getPageUrl(imagesSource, getID(pb, 'page')),
       facsUrl: this.getPageUrl(imagesSource, (pb.getAttribute('facs') || getID(pb, 'page')).split('#').slice(-1)[0]),
+      writingChange: pb.getAttribute('change') || undefined, // [Autos] fase/strato della carta
     };
   }
 
