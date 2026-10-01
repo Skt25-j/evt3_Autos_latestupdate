@@ -95,6 +95,9 @@ export class TextPanelComponent implements OnDestroy {
   // tslint:disable-next-line: variable-name
   private _edLevel: EditionLevelType;
   @Input() public set editionLevelID(e: EditionLevelType) {
+    // [Autos] livello precedente, per capire se questo e' un cambio reale (non il boot):
+    // in tal caso dopo il re-render dobbiamo ripristinare la posizione della pagina.
+    const prev = this._edLevel;
     this._edLevel = e;
     if (e && !this.textFlow) {
       this.textFlow = this.defaultTextFlow;
@@ -120,6 +123,13 @@ export class TextPanelComponent implements OnDestroy {
       if (obj) {
         this.currentEdLevel$.next(obj);
       }
+    }
+    // [Autos] Cambio livello REALE (non boot): il contenitore #mainContent e' statico,
+    // viene ricostruita solo la pagina interna, quindi ne' il setter ViewChild ne'
+    // currentPage$ (stessa pagina) riattivano lo scroll -> la vista "ripartiva
+    // dall'inizio". Ripristiniamo la posizione sulla pagina corrente dopo il re-render.
+    if (e && prev && prev !== e) {
+      this._restoreScrollAfterRender();
     }
   }
   public get editionLevelID() {
@@ -253,6 +263,18 @@ export class TextPanelComponent implements OnDestroy {
     if (!target.closest('evt-text')) {
       this.highlightService.clearHighlight();
     }
+  }
+
+  // [Autos] Dopo un cambio di livello il contenuto viene ricostruito in modo asincrono
+  // (currentStatus$ ha delay(0) + async pipe). Con due requestAnimationFrame lo scroll
+  // avviene dopo il paint, quando la nuova pagina e' gia' nel DOM, cosi' il passaggio
+  // (es. diplomatica->critica) resta sulla pagina corrente invece di ripartire in cima.
+  private _restoreScrollAfterRender() {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (this.pageID) {
+        this._scrollToPage(this.pageID);
+      }
+    }));
   }
 
   private _scrollToPage(pageId: string) {

@@ -36,10 +36,21 @@ export class NavBarComponent {
   );
 
   currentPageIndexStatic;
-  currentPageIndex$ = this.evtStatusService.currentPage$.pipe(
-    withLatestFrom(this.evtModelService.pages$),
-    filter((p) => !!p),
+  // [Autos] L'indice della pagina corrente deve ricalcolarsi quando cambia la pagina
+  // SIA quando cambia la lista pages$ (che varia col livello/fase tramite
+  // evtPagesOverride$). Nello stock era pilotato dalla sola currentPage$ con pages$
+  // in withLatestFrom (passivo): cambiando livello, pages$ cambiava ma la pagina no,
+  // quindi l'indice restava "vecchio" e lo slider in basso mostrava l'etichetta della
+  // pagina sbagliata (es. 6r1 -> 11r1) finche' non si scorreva. Con combineLatest si
+  // riallinea subito. Scartiamo l'indice -1 (pagina non ancora presente nella nuova
+  // lista) per non far saltare lo slider all'inizio durante la transizione.
+  currentPageIndex$ = combineLatest([
+    this.evtStatusService.currentPage$,
+    this.evtModelService.pages$,
+  ]).pipe(
+    filter(([page, pages]) => !!page && !!pages && pages.length > 0),
     map(([page, pages]) => pages.findIndex((p) => p.id === page.id)),
+    filter((i) => i >= 0),
     tap((i) => this.currentPageIndexStatic = i),
   );
 

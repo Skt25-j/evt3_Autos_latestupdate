@@ -356,6 +356,22 @@ evt-generic-element:has([data-edition="interpretative"]),
     text-indent: 0 !important; /* [Autos] annulla il text-indent ereditato dal paragrafo indentato: gonfiava il badge a ~51px spingendo la lettera a destra */
 }
 
+/* [Autos] I riquadri di dettaglio (mod-detail "Correction sequence" e apparato critico)
+   compaiono dentro il flusso del testo, quindi ereditavano il text-indent (~35px) del
+   paragrafo: la prima riga (icona orologio + testo) veniva spinta a destra lasciando
+   uno spazio bianco e disallineando le righe "fase-A: ...". Il text-indent si eredita,
+   quindi azzerarlo sul contenitore del box lo annulla per tutte le righe interne,
+   riportando il box all'allineamento a sinistra della versione precedente. */
+.source-container,
+.app-detail-container,
+.app-detail-content,
+.app-detail-tabs,
+evt-mod-sequence,
+evt-mod-detail,
+evt-critical-apparatus {
+    text-indent: 0 !important;
+}
+
 /* Assicura che anche se il background cambia, il testo resti bianco */
 span[style*="background-color: rgb(36, 4, 181)"] {
     color: white !important;
