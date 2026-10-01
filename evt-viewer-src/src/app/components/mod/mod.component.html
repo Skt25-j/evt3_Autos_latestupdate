@@ -8,11 +8,9 @@
     [evtEditorialConventionLayout]="editorialConventionData">
 
     <ng-container *ngIf="editionLevel === 'changesView' && showLayerMarkers">
-        <span *ngIf="data?.changeLayer" class="layerMarker" 
-            [hidden]="(isHidden(data) && !(alwaysShow))" 
-            [style.background-color]="changeLayerColor()">
-            {{getLayerLabel(data?.changeLayer)}}
-        </span>
+        <span *ngIf="data?.changeLayer" class="layerMarker"
+            [hidden]="(isHidden(data) && !(alwaysShow))"
+            [style.background-color]="changeLayerColor()">{{getLayerLabel(data?.changeLayer)}}</span>
     </ng-container>
 
     <ng-container *ngFor="let element of data.content">

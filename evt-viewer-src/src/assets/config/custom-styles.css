@@ -72,6 +72,7 @@ evt-text-panel .evt-exponent {
     display: inline-block;
     position: relative;
     text-decoration: none !important;
+    text-indent: 0 !important; /* [Autos] annulla il text-indent ereditato: senza, il box inline-block si allargava e il barrato (left:0;right:0) sporgeva a destra oltre la parola */
 }
 *[rend="strikethrough"] .add[data-place="above"]::after,
 *[rend="strikethrough"] .add[data-place="sup"]::after,
@@ -337,18 +338,22 @@ evt-generic-element:has([data-edition="interpretative"]),
     border: 1px solid #ffffff;     /* Opzionale: un sottile bordo bianco */
 }
 
-/* [Autos] Marcatore di fase (lettera) come piccolo badge compatto: senza questo il
-   riquadro ereditava la dimensione piena del testo (~17px) e risultava "troppo lungo".
-   Lettera piu' piccola, badge arrotondato e allineato, con un minimo di spaziatura. */
+/* [Autos] Marcatore di fase (lettera) come piccolo badge compatto. Senza questo il
+   riquadro ereditava la dimensione piena del testo (serif largo) e diventava un lungo
+   rettangolo. Font piccolo sans-serif, badge stretto e arrotondato, centrato. */
 .layerMarker {
     display: inline-block !important;
-    font-size: 0.68em !important;
-    line-height: 1.25 !important;
-    padding: 0 0.35em !important;
-    margin: 0 0.25em !important;
-    border-radius: 4px !important;
-    vertical-align: 0.15em !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.6em !important;
+    line-height: 1.4 !important;
+    min-width: 1.1em !important;
+    padding: 0.05em 0.3em !important;
+    margin: 0 0.3em !important;
+    border-radius: 3px !important;
+    text-align: center !important;
+    vertical-align: 0.2em !important;
     white-space: nowrap !important;
+    text-indent: 0 !important; /* [Autos] annulla il text-indent ereditato dal paragrafo indentato: gonfiava il badge a ~51px spingendo la lettera a destra */
 }
 
 /* Assicura che anche se il background cambia, il testo resti bianco */
