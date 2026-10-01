@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row" style="overflow-x: auto;">
                 <div class="col">
-                    <span class="fw-bold me-1">{{ data.exponent }}</span>
+                    <!-- Autos: rimosso l'apice numerico/progressivo dell'apparato, come gia' tolto dal testo. -->
                     <evt-reading class="info-rdg" *ngIf="this.showLemma; else criticalContent" [data]="data.lemma"
                         [editionLevel]="editionLevel"></evt-reading>
                     <ng-template #criticalContent>

@@ -20,8 +20,8 @@
                 <ng-container *ngFor="let mod of mods; index as i">
                     <ng-container *ngIf="mod.changeLayer?.replace('#','') === orderedLayer">
                         <span class="changeSeparator" *ngIf="changeSeparatorVisible"> < </span>
-                        [{{getLayerIndex(orderedLayer)}}] 
-                        <evt-mod 
+                        <!-- Autos: rimosso l'indice numerico progressivo in parentesi quadre; resta la lettera della fase. -->
+                        <evt-mod
                             [data]="mod"
                             [alwaysShown]="true"
                             [withDeletions]="true"
