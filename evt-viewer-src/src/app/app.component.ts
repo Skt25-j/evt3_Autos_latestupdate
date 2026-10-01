@@ -18,6 +18,9 @@ import { EVTStatusService } from './services/evt-status.service';
 export class AppComponent implements OnDestroy {
   @ViewChild('mainSpinner') mainSpinner: ElementRef;
   private subscriptions: Subscription[] = [];
+  // [Autos] gestione spinner "debounced" per i cambi vista (vedi costruttore)
+  private spinnerTimer: ReturnType<typeof setTimeout> | undefined;
+  private spinnerShown = false;
   public hasNavBar = AppConfig.evtSettings.ui.enableNavBar;
   public navbarOpened$ = new BehaviorSubject(this.hasNavBar && AppConfig.evtSettings.ui.initNavBarOpened);
 
@@ -50,15 +53,28 @@ export class AppComponent implements OnDestroy {
         this.hasNavBar = true;
       }
     });
+    // [Autos] Lo spinner a tutto schermo veniva mostrato a OGNI NavigationStart e
+    // nascosto al NavigationEnd. I passaggi tra viste sono navigazioni client-side
+    // quasi istantanee: mostrare+nascondere l'overlay scuro in pochi millisecondi
+    // produceva un "lampo" scuro a ogni cambio di visualizzazione (l'effetto scattoso),
+    // e per giunta non copriva nemmeno il parsing dei dati (che avviene dopo il
+    // NavigationEnd). Ora lo spinner parte solo se la navigazione supera una soglia:
+    // i cambi vista rapidi non lampeggiano piu', mentre un'eventuale navigazione
+    // lenta mostra ancora l'indicatore.
     this.router.events.subscribe((event) => {
       switch (true) {
         case event instanceof NavigationStart:
-          this.spinner.show();
+          if (this.spinnerTimer) { clearTimeout(this.spinnerTimer); }
+          this.spinnerTimer = setTimeout(() => {
+            this.spinnerShown = true;
+            this.spinner.show();
+          }, 250);
           break;
         case event instanceof NavigationEnd:
         case event instanceof NavigationCancel:
         case event instanceof NavigationError:
-          this.spinner.hide();
+          if (this.spinnerTimer) { clearTimeout(this.spinnerTimer); this.spinnerTimer = undefined; }
+          if (this.spinnerShown) { this.spinnerShown = false; this.spinner.hide(); }
           break;
         default:
           break;
