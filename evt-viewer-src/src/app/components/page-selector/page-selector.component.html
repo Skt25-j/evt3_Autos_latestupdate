@@ -1,6 +1,6 @@
 <ng-select
     class="me-1"
-    [items]="pages$ | async"
+    [items]="displayPages$ | async"
     bindLabel="label"
     bindValue="id"
     [clearable]="false"
@@ -13,6 +13,6 @@
         <evt-icon
             [iconInfo]="{icon: 'file-alt', additionalClasses: 'me-2'}"
             label-left></evt-icon>
-        {{ item.label | translate: {value: (pages$ | async).indexOf(item) + 1} }}
+        {{ item.label | translate: {value: item.num} }}
     </ng-template>
 </ng-select>

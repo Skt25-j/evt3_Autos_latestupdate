@@ -99,8 +99,12 @@ export class TextPanelComponent implements OnDestroy {
     if (e && !this.textFlow) {
       this.textFlow = this.defaultTextFlow;
     }
-    if (e && this.showDeletions === undefined) {
-      this.showDeletions = false;
+    // [Autos] Visibilita' predefinita delle cancellature per livello: in diplomatica
+    // e in changes i <del> si vedono (barrati, come scritti nel manoscritto); in critica
+    // no, perche' si legge la lezione finale. Si reimposta a ogni cambio di livello;
+    // l'utente puo' comunque usare il toggle "mostra/nascondi cancellature".
+    if (e) {
+      this.showDeletions = (e === 'diplomatic' || e === 'changesView');
     }
     // [Autos] Popola il livello di rendering direttamente dall'Input (che riflette
     // lo stato autorevole dell'app: URL `el` o scelta utente gia' propagata dal

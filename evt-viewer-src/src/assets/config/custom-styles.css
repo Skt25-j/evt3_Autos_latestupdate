@@ -36,6 +36,21 @@ evt-mod-group .source-container span.lb[data-n] { display: none !important; }
     display: inline;
 }
 
+/* [Autos] Cancellature nel testo diplomatico: sfondo rosso tenue (come nella versione
+   precedente), per evidenziarle. Mirato con data-edition="diplomatic", cosi' NON tocca
+   i <del> resi nell'apparato (che gira a editionLevel="critical"). */
+.del[data-edition="diplomatic"] {
+    background-color: #f9d6d6;
+}
+
+/* [Autos] Niente apici (numeri/lettere) sulle lezioni corrette nel testo di lettura:
+   nel vecchio fork non c'erano. La finestra di apparato si apre comunque cliccando la
+   lezione; l'apparato completo resta nel pannello "Critical Apparatus" a destra (che
+   non e' dentro evt-text-panel, quindi li' gli esponenti restano). */
+evt-text-panel .evt-exponent {
+    display: none !important;
+}
+
 /* <add place="above"> dentro un <del rend="strikethrough">: va tenuto SOLLEVATO
    (place=above => vertical-align:super, dallo stile inline delle convenzioni), ma la
    linea del barrato del <del> cadeva poco sotto e sembrava una sottolineatura.
@@ -223,8 +238,16 @@ evt-addition[rend="indent-center"] .evt-span {
 
 /* Se l'attributo è mappato come data-rend: */
 evt-lb[data-rend="my-indent"] ~ evt-text {
-    margin-left: 3em !important; 
+    margin-left: 3em !important;
 }
+
+/* [Autos] Paragrafi (e <ab>) con rend="indent": in beta2 l'attributo rend viene
+   reso come data-rend sull'elemento <p>, quindi serve una regola esplicita, altrimenti
+   il testo resta allineato a sinistra. Rientro della prima riga. */
+p[data-rend~="indent"],
+ab[data-rend~="indent"],
+evt-ab[data-rend~="indent"] p,
+evt-ab[data-rend~="indent"] { text-indent: 2em; }
 
 /* Posiziona l'elemento con place="right" all'estrema destra */
 evt-addition[place="right"] {

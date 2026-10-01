@@ -643,13 +643,20 @@ export class SubstParser extends GenericElemParser implements Parser<XMLElement>
     addParser = createParser(AdditionParser, this.genericParse);
 
     parse(xml: XMLElement): Subst {
+        // [Autos] Prendere il FIGLIO DIRETTO <add>/<del>, non un qualunque discendente.
+        // getElementsByTagName('add')[0] restituiva il primo <add> in profondita': in un
+        // subst annidato come <del><add>X</add></del><add>Y</add> catturava la X (dentro il
+        // <del>) invece della Y effettivamente a testo, mandando a testo la lezione
+        // cancellata (es. "a criticare" al posto di "a dirigere e a giudicare").
+        const directAdd = xml.querySelector(':scope > add') as XMLElement;
+        const directDel = xml.querySelector(':scope > del') as XMLElement;
         let parsing : Subst = {
             ...super.parse(xml),
             type: Subst,
-            add: this.addParser.parse(xml.getElementsByTagName('add')[0] as XMLElement),
-            del: this.delParser.parse(xml.getElementsByTagName('del')[0] as XMLElement)
+            add: directAdd ? this.addParser.parse(directAdd) : undefined,
+            del: directDel ? this.delParser.parse(directDel) : undefined,
         }
-        
+
         //parsing.after = parsing.content.filter((el) => (el['type']) && (el['type'] !== Deletion));
 
         return parsing;

@@ -21,18 +21,23 @@ export class LbComponent {
     return this.evtModelService.lines$.pipe(
       map((lines) => lines.length > 0),
       map((hasLines) => {
+        // [Autos] In critica (interpretative) il testo e' continuo: gli <lb> del
+        // manoscritto NON vanno resi come a-capo+numero di riga, ma restano inline
+        // (uno spazio). In diplomatica e changes, invece, le righe del ms si vedono.
+        if (this.editionLevel === 'interpretative') {
+          return false;
+        }
         // If line has no information about number or the ID line is shown as a block item, no matters what
         if (!this.data.attributes.id && !this.data.attributes.n) {
           return true;
         }
         // Otherwise:
-        // - in diplomatic and interpretative edition, if the text has at least one line,
+        // - in diplomatic and changesView edition, if the text has at least one line,
         // those are show as block items, unless current text flow is verses
         // - in critical edition lines are shown as block items, unless current text flow is prose
         switch (this.editionLevel) {
           case 'changesView':
           case 'diplomatic':
-          case 'interpretative':
             return this.textFlow === 'verses' ? false : hasLines;
           case 'critical':
             return this.textFlow !== 'prose';
