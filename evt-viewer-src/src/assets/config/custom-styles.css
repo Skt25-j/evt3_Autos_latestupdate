@@ -43,6 +43,14 @@ evt-mod-group .source-container span.lb[data-n] { display: none !important; }
     background-color: #f9d6d6;
 }
 
+/* [Autos] Spazio fra le porzioni (del/add) di una stessa <subst> con correzioni in
+   sequenza (piu' <del>): senza, nel box "correction sequence" le parole si attaccavano
+   (es. "alloraFrequentandoMi"). Un piccolo margine le separa, nel box e nel testo. */
+.subst .del,
+.subst .add,
+.source-container .del,
+.source-container .add { margin-right: 0.3em; }
+
 /* [Autos] Niente apici (numeri/lettere) sulle lezioni corrette nel testo di lettura:
    nel vecchio fork non c'erano. La finestra di apparato si apre comunque cliccando la
    lezione; l'apparato completo resta nel pannello "Critical Apparatus" a destra (che
