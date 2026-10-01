@@ -1275,7 +1275,6 @@
                              <!-- Versione precedente (mod senza app), conservata (rimossi i commenti di lavoro perche' non annidabili):
                              <mod change="#fase-A"><add place="above" seq="2">mi parve di</add><subst><del rend="strikethrough" seq="1">risolsi</del><add place="inline" seq="1">compre<subst><del rend="overwritten" seq="2">si</del><add place="superimposed" seq="3" n="2">ndere</add></subst></add></subst></mod>
                              --><note resp="#TAV" type="critical" n="1">La parola <mentioned>comprendere</mentioned> è ricavata da <mentioned>compresi</mentioned> mediante la sovrascrittura della desinenza.</note>
-                            quella mia baggianata e
                             che la 
                             <lb n="11"/>mia consolazione <mod change="#fase-B"><add place="above">ne la vita</add></mod> era riposta là (per quel momento su 
                             <app><lem varSeq="2"><mod change="#fase-B">
