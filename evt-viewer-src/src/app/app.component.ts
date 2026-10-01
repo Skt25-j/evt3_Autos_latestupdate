@@ -37,7 +37,12 @@ export class AppComponent implements OnDestroy {
   ) {
 
     this.evtStatusService.currentViewMode$.pipe().subscribe((view) => {
-      if (view !== undefined && view.id === 'synopticEdition') {
+      // [Autos] La barra di navigazione globale (in basso) va nascosta non solo in
+      // synopticEdition, ma anche in imageImage e imageOnly: quelle viste hanno gia'
+      // una barra di navigazione indipendente SOTTO OGNI immagine (indipendentNavBar),
+      // quindi la barra unica globale era un doppione.
+      const viewsWithoutGlobalNavBar = ['synopticEdition', 'imageImage', 'imageOnly'];
+      if (view !== undefined && viewsWithoutGlobalNavBar.includes(view.id)) {
         this.navbarOpened$.next(false);
         this.hasNavBar = false;
       } else {
