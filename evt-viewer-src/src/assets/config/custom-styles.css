@@ -459,7 +459,11 @@ evt-generic-element:has([data-edition="interpretative"]),
     font-weight: bold;
 }
 
-.app-detail-content [seq]:not([n]):not([data-n])::after {
+/* [Autos] Numero di sequenza (seq) mostrato SOLO sulle cancellature (evt-deletion):
+   la lezione finale (<add>) resta senza numero. Prima era su qualunque [seq], quindi
+   una <del> e l'<add> con lo stesso seq mostravano il numero due volte (es. "[3]" sdoppiato
+   su "Mi" e "Già"). Cosi' si ottiene "allora[1] Frequentando[2] Mi[3] Già". */
+.app-detail-content evt-deletion[seq]:not([n]):not([data-n])::after {
     content: "[" attr(seq) "]";
     vertical-align: super;
     font-size: 0.6em;
