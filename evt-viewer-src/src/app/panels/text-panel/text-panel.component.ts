@@ -99,7 +99,11 @@ export class TextPanelComponent implements OnDestroy {
     // in tal caso dopo il re-render dobbiamo ripristinare la posizione della pagina.
     const prev = this._edLevel;
     this._edLevel = e;
-    if (e && !this.textFlow) {
+    // [Autos] Il flusso testo (prose/verse) viene reimpostato al default del livello sia
+    // al boot sia a ogni CAMBIO di livello: cosi' entrando in critica si applica "verses"
+    // (i versi vanno a capo) e tornando in diplomatica "prose". Prima si impostava solo
+    // al boot (!this.textFlow), quindi il default per-livello non scattava cambiando vista.
+    if (e && (!this.textFlow || prev !== e)) {
       this.textFlow = this.defaultTextFlow;
     }
     // [Autos] Visibilita' predefinita delle cancellature per livello: in diplomatica
@@ -172,8 +176,13 @@ export class TextPanelComponent implements OnDestroy {
     if (!this.enableProseVersesToggler) {
       return undefined;
     }
-    if (this.editionLevelID === 'critical') {
-      return AppConfig.evtSettings.edition.defaultTextFlow || 'verses';
+    // [Autos] In critica (interpretative) e nella critical il default e' "verses" cosi' i
+    // versi (<l>) vanno a capo mentre la prosa resta prosa (in critica gli <lb> sono
+    // inline, quindi la prosa non viene spezzata). Non usiamo config.defaultTextFlow qui
+    // perche' e' "prose" e in critica vogliamo la vista mista con i versi. L'utente puo'
+    // comunque passare a "prose" col toggler. Le altre viste restano "prose" di default.
+    if (this.editionLevelID === 'critical' || this.editionLevelID === 'interpretative') {
+      return 'verses';
     }
 
     return AppConfig.evtSettings.edition.defaultTextFlow || 'prose';

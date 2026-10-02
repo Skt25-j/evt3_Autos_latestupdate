@@ -372,6 +372,12 @@ evt-critical-apparatus {
     text-indent: 0 !important;
 }
 
+/* [Autos] In vista "versi" (critica di default) nasconde gli <lb> (interruzioni di riga
+   del manoscritto) TRA un verso e l'altro dentro un <lg>: sono figli diretti del gruppo e,
+   resi inline con &nbsp;, creavano una riga vuota fra i versi (spaziatura doppia). I versi
+   vanno gia' a capo da soli (display:block). In diplomatica/prosa gli <lb> restano. */
+.verses-group.ed-verses > evt-content-viewer > evt-lb { display: none; }
+
 /* Assicura che anche se il background cambia, il testo resti bianco */
 span[style*="background-color: rgb(36, 4, 181)"] {
     color: white !important;

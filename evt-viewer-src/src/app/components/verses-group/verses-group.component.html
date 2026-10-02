@@ -1,5 +1,6 @@
 <span class="verses-group {{data.class}} {{data.groupType}}" [evtHtmlAttributes]="data.attributes"
 	[hidden]="layerHidden()"
+	[class.ed-verses]="textFlow === 'verses'"
 	[class.display-block]="displayBlock$ | async">
 	<span class="verses-group-num">{{data.n}}</span>
 	<evt-source-note *ngIf="data.source !== null || data.analogue !== null" [data]="data"></evt-source-note>
