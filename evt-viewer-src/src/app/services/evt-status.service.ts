@@ -75,6 +75,11 @@ export class EVTStatusService {
             this.route.queryParams.pipe(map((params: URLParams) => params.p)),
             this.updatePageId$,
         ).pipe(
+            // [Autos] Questo ramo ri-emette ANCHE quando cambia pages$ (lista filtrata
+            // per fase/livello): se la pagina richiesta non e' nella nuova lista (es. si
+            // passa a una fase in cui quella carta non esiste) si torna alla prima pagina.
+            // Cosi' il testo si aggiorna subito invece di restare "congelato" sulla pagina
+            // vecchia finche' non si scorre.
             mergeMap((id) => this.evtModelService.pages$.pipe(
                 map((pages) => !id ? pages[0] : pages.find((p) => p.id === id) || pages[0]),
             )),
@@ -117,6 +122,11 @@ export class EVTStatusService {
         this.updateCorresp$,
     );
 
+    // NB: currentChanges$ restituisce SEMPRE lo stesso oggetto changeData (mutato in
+    // place): alcuni consumatori (es. documental-mixed lastLayer$) usano
+    // distinctUntilChanged() sull'identita' dell'oggetto, quindi non va sostituito con
+    // emissioni di nuovi oggetti. La reattivita' alla fase selezionata e' gestita a
+    // valle aggiungendo updateLayer$ direttamente alla pipeline dell'override pagine.
     public currentChanges$ = merge(
         merge(
             //this.route.queryParams.pipe(map((params: URLParams) => params.lr ?? '')),
@@ -204,15 +214,21 @@ export class EVTStatusService {
         //   changesView              = filtro-per-fase cumulativo + fusione porzioni;
         //   diplomatic               = solo fusione porzioni della stessa carta.
         // Pubblica su evtPagesOverride$, che alimenta evtModelService.pages$.
+        // [Autos] updateLayer$ e' aggiunto come sorgente a se': cambiando fase la lista
+        // va rifiltrata subito. NON lo prendiamo da currentChanges$ perche' quello
+        // ri-emette solo all'arrivo di changeData$ (withLatestFrom), quindi una nuova
+        // fase non lo faceva scattare. La fase effettiva e' quella piu' recente tra
+        // updateLayer$ e changes.selectedLayer.
         combineLatest([
             this.evtModelService.rawPages$,
             this.currentEditionLevels$.pipe(startWith([] as EditionLevelType[])),
             this.currentChanges$.pipe(startWith({ list: [], layerOrder: [], selectedLayer: undefined } as ChangeLayerData)),
-        ]).subscribe(([raw, levels, changes]) => {
+            this.updateLayer$,
+        ]).subscribe(([raw, levels, changes, layerFromSelector]) => {
             try {
                 const level = (Array.isArray(levels) ? levels[0] : levels) as string;
                 const doc = evtGetOwnerDoc(raw);
-                const selectedLayer = changes?.selectedLayer;
+                const selectedLayer = layerFromSelector ?? changes?.selectedLayer;
                 const layerOrder = changes?.layerOrder || [];
                 let override: Page[] | null = null;
                 if (level === 'interpretative') {
@@ -223,6 +239,9 @@ export class EVTStatusService {
                     override = evtMergePagesByFacs(raw);
                 }
                 evtPagesOverride$.next(override);
+                // NB: quando la carta corrente non esiste piu' nella lista filtrata, la
+                // pagina viene aggiornata a monte da currentPage$ (torna alla prima carta)
+                // perche' quel ramo ri-emette al cambio di pages$.
             } catch (e) {
                 evtPagesOverride$.next(null); // in caso di errore si usa rawPages$
             }
