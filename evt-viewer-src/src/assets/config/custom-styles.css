@@ -378,6 +378,30 @@ evt-critical-apparatus {
    vanno gia' a capo da soli (display:block). In diplomatica/prosa gli <lb> restano. */
 .verses-group.ed-verses > evt-content-viewer > evt-lb { display: none; }
 
+/* [Autos] Copertina / frontespizio: dentro un <ab rend="align-center"> (blocco
+   strutturato, non prosa corrente) gli <lb> sono layout del titolo e devono andare a
+   capo ANCHE in critica (dove di norma gli <lb> sono inline per la lettura continua).
+   Forziamo il ritorno a capo rendendo a blocco il marcatore di riga in quei blocchi. */
+.ab[data-rend~="align-center"] { display: block; text-align: center; }
+.ab[data-rend~="align-center"] .lb { display: block !important; }
+
+/* [Autos] Box apparato: lemma e lezioni sulla STESSA riga ("lezione a testo] lezioni")
+   invece che su due righe separate. Le due .row (lemma / lezioni) e le loro colonne
+   diventano inline cosi' il testo scorre di seguito; il pin resta in alto a destra,
+   fuori dal flusso. Scoped a evt-apparatus-entry-detail per non toccare altri box. */
+evt-apparatus-entry-detail .app-detail-content > .container-fluid { position: relative; padding-right: 1.4rem; }
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row,
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row > .col,
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row > .col > .d-flex,
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row > .col > .d-flex > .info-rdg,
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row > .col > evt-reading,
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row > .col > span { display: inline !important; }
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row > .col-1 {
+    position: absolute; top: 0; right: 0; width: auto; padding: 0;
+}
+/* piccolo spazio dopo la parentesi quadra del lemma, prima delle lezioni */
+evt-apparatus-entry-detail .app-detail-content > .container-fluid > .row:first-child > .col > span:last-child { margin-right: 0.4em; }
+
 /* Assicura che anche se il background cambia, il testo resti bianco */
 span[style*="background-color: rgb(36, 4, 181)"] {
     color: white !important;
