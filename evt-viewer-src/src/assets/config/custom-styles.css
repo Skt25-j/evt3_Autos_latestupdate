@@ -596,11 +596,17 @@ html[data-el="interpretative"] .pre,
 html[data-el="interpretative"] .post { display: none !important; }
 html[data-el="interpretative"] evt-deletion,
 html[data-el="interpretative"] .deletion { display: none !important; }
-/* [Autos] ECCEZIONE: nel BOX di apparato le cancellature DEVONO restare visibili e
+/* [Autos] ECCEZIONE: nei BOX di dettaglio le cancellature DEVONO restare visibili e
    barrate anche in critica (resa genetica delle lezioni: "var1 barrata -> var2 -> T").
-   La regola sopra le nasconde nel testo; qui le ripristiniamo dentro l'apparato. */
+   La regola sopra le nasconde nel testo; qui le ripristiniamo dentro i riquadri.
+   Vale sia per il box di apparato (<app>) sia per il box del <mod>/<subst> che
+   compare cliccando una parola corretta (es. 10r1 "Allora" barrato -> "Fin'allora"). */
 html[data-el="interpretative"] evt-apparatus-entry-detail evt-deletion,
-html[data-el="interpretative"] evt-apparatus-entry-detail .deletion { display: inline !important; }
+html[data-el="interpretative"] evt-apparatus-entry-detail .deletion,
+html[data-el="interpretative"] evt-mod-detail evt-deletion,
+html[data-el="interpretative"] evt-mod-detail .deletion,
+html[data-el="interpretative"] evt-mod-sequence evt-deletion,
+html[data-el="interpretative"] evt-mod-sequence .deletion { display: inline !important; }
 html[data-el="interpretative"] .add,
 html[data-el="interpretative"] evt-addition { background-color: transparent !important; }
 /* niente sfondo verde nemmeno sui <mod> (subst/app) in interpretative */
