@@ -1,22 +1,30 @@
-<!-- [Autos] Catena genetica della voce di apparato: le varianti (<rdg>) in ordine
-     @varSeq CRESCENTE e, IN FONDO, la lezione a testo (il <lem>) scritta per esteso -
-     come fa EVT beta 2, senza la sigla "T". Separatore: freccia. I <del> restano
-     barrati (withDeletions) per mostrare le cancellature anche in critica. -->
-<span class="app-entry-reading" *ngFor="let reading of significantReading; let i = index">
-    <span class="app-var-sep" *ngIf="i > 0"> &#8594; </span>
-    <evt-reading *ngIf="reading.content.length !== 0" [data]="reading" [withDeletions]="true"
-        [editionLevel]="editionLevel" [selectedLayer]="selectedLayer"></evt-reading>
-    <span class="font-italic" *ngIf="reading.content.length === 0">omit.</span>
-</span>
-<!-- lezione a testo (lemma) in coda alla catena -->
-<span class="app-entry-reading app-text-final" *ngIf="data.lemma">
-    <span class="app-var-sep" *ngIf="significantReading.length > 0"> &#8594; </span>
-    <evt-reading *ngIf="data.nestedAppsIDs.length === 0" [data]="data.lemma" [withDeletions]="true"
+<!-- [Autos] Intestazione classica dell'apparato: la lezione a testo (il <lem>) seguita
+     da "]". Pulita, senza barrato: e' la lezione messa a testo. -->
+<span class="app-entry-reading app-entry-lemma" *ngIf="data.lemma">
+    <evt-reading *ngIf="data.nestedAppsIDs.length === 0" [data]="data.lemma" [withDeletions]="false"
         [editionLevel]="editionLevel" [selectedLayer]="selectedLayer"></evt-reading>
     <ng-container *ngIf="data.nestedAppsIDs.length > 0">
         <ng-container *ngTemplateOutlet="template context: { rdgHasCounter: rdgHasCounter }"></ng-container>
     </ng-container>
     <ng-container *ngIf="data.lemma.content.length > 0">
         <span *ngFor="let witID of data.lemma.witIDs" class="app-wit"> {{ witID }}</span>
+    </ng-container>
+    <span>] </span>
+</span>
+<!-- [Autos] Correzione in sequenza: le varianti (<rdg>) in ordine @varSeq CRESCENTE
+     (1, 2, 3) con i <del> barrati, e in coda la lezione a testo ricalcolata, scritta per
+     esteso (niente sigla "T"). Separatore: freccia. -->
+<span class="app-entry-reading" *ngFor="let reading of significantReading; let i = index">
+    <span class="app-var-sep" *ngIf="i > 0"> &#8594; </span>
+    <evt-reading *ngIf="reading.content.length !== 0" [data]="reading" [withDeletions]="true"
+        [editionLevel]="editionLevel" [selectedLayer]="selectedLayer"></evt-reading>
+    <span class="font-italic" *ngIf="reading.content.length === 0">omit.</span>
+</span>
+<span class="app-entry-reading app-text-final" *ngIf="data.lemma && significantReading.length > 0">
+    <span class="app-var-sep"> &#8594; </span>
+    <evt-reading *ngIf="data.nestedAppsIDs.length === 0" [data]="data.lemma" [withDeletions]="true"
+        [editionLevel]="editionLevel" [selectedLayer]="selectedLayer"></evt-reading>
+    <ng-container *ngIf="data.nestedAppsIDs.length > 0">
+        <ng-container *ngTemplateOutlet="template context: { rdgHasCounter: rdgHasCounter }"></ng-container>
     </ng-container>
 </span>
