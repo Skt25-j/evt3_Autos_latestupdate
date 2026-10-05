@@ -439,8 +439,12 @@ private async checkDepaErrors(source: HTMLElement) {
         if (app.lemma) {
           const from = app.lemma.id; // lemma exist so it will be the From element
           exponent = ApparatusEntryExponent.create(id, from, to, getExponentLabel(), app);
-          // the inline apparatus has a lemma so it must be rendered 
-          items[i] = app.lemma;
+          // [Autos] Teniamo l'INTERA voce <app> nel flusso (non il solo <lem>): cosi'
+          // apparatus-entry puo' renderla per vista -> in changesView mostra la variante
+          // giusta per fase (mod-group), nelle altre viste resta il lemma + apice + box.
+          // Serviva perche' con il solo <lem> (spesso di una fase successiva) in una fase
+          // precedente il testo spariva. L'apice e i dati del pannello restano invariati.
+          items[i] = app;
           items.splice(i + 1, 0, exponent);
         } else {
           const from = id; // the exponent itself as the To element, because there is no lemma to render

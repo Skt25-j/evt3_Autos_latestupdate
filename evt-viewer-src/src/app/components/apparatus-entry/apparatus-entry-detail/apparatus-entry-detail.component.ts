@@ -83,7 +83,9 @@ export class ApparatusEntryDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscriptions.unsubscribe();
+    // [Autos] null-safe: il box puo' essere distrutto prima che ngOnInit abbia
+    // impostato la subscription (es. create/destroy rapido al cambio vista).
+    this.subscriptions?.unsubscribe();
   }
 
   recoverNestedApps(app: ApparatusEntry) {

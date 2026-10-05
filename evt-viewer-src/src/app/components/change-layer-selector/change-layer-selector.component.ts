@@ -58,7 +58,7 @@ export class ChangeLayerSelectorComponent implements OnDestroy, OnInit {
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    this.subscription?.unsubscribe();
   }
 
 }
