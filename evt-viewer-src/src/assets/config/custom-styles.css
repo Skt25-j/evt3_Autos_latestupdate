@@ -343,7 +343,9 @@ evt-generic-element:has([data-edition="interpretative"]),
    rettangolo. Font piccolo sans-serif, badge stretto e arrotondato, centrato. */
 .layerMarker {
     display: inline-block !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    /* [Autos] stesso carattere del testo (Junicode), non piu' Arial: le lettere di
+       fase/strato devono essere coerenti con il resto del testo. */
+    font-family: inherit !important;
     font-size: 0.6em !important;
     line-height: 1.4 !important;
     min-width: 1.1em !important;
@@ -370,6 +372,18 @@ evt-mod-sequence,
 evt-mod-detail,
 evt-critical-apparatus {
     text-indent: 0 !important;
+}
+
+/* [Autos] Carattere dei riquadri di dettaglio (fasi/strati e apparato) uguale a quello
+   del testo (Junicode): per default questi box ereditavano il font di sistema (sans),
+   diverso dal testo. Qui li allineiamo al carattere dell'edizione. */
+.source-container,
+.app-detail-content,
+evt-mod-detail,
+evt-mod-sequence,
+evt-apparatus-entry-detail,
+evt-apparatus-entry-readings {
+    font-family: "Junicode", Times, serif !important;
 }
 
 /* [Autos] In vista "versi" (critica di default) nasconde gli <lb> (interruzioni di riga

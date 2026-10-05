@@ -1,4 +1,6 @@
-<span class="changeGroupSeparator" [hidden]="((!changeSeparatorVisible) || (isHidden(data) && !(alwaysShow)))"> > </span>
+<!-- [Autos] Dentro un <app> la freccia la gestisce mod-group (readingSeparator): qui la
+     sopprimiamo per non avere la doppia freccia ">>". Resta per i <mod> fuori da un app. -->
+<span class="changeGroupSeparator" [hidden]="((!changeSeparatorVisible) || (isHidden(data) && !(alwaysShow)) || (data?.insideApp && data.insideApp[0]))"> > </span>
 
 <span class="mod {{data.class}} pointer" title="mod"
     (click)="toggleOpened$.next()" 

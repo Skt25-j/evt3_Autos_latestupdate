@@ -1,11 +1,15 @@
 <!-- textflow -->
+<!-- [Autos] Le lezioni non visibili nella fase corrente vengono collassate del tutto
+     (hidden): altrimenti il loro wrapper lasciava una riga vuota (~18px l'una) e, con
+     piu' lezioni nascoste, un vistoso spazio bianco dopo la lezione della fase. -->
 <ng-container *ngFor="let orderedReading of orderedReadings; let i = index">
-    <span class="readingSeparator" *ngIf="changeSeparatorVisible && i !== 0"> > </span>
-    <evt-reading class="app-entry-rdg" [ngClass]="{'first-mod': (i === 0)}" 
-        [data]="orderedReading" 
-        [editionLevel]="editionLevelChange.asObservable() | async" 
-        [withDeletions]="withDeletions" 
-        [selectedLayer]="selectedLayer" 
+    <span class="readingSeparator" *ngIf="showReadingSeparator(i)"> > </span>
+    <evt-reading class="app-entry-rdg" [ngClass]="{'first-mod': (i === 0)}"
+        [hidden]="!isReadingVisible(orderedReading)"
+        [data]="orderedReading"
+        [editionLevel]="editionLevelChange.asObservable() | async"
+        [withDeletions]="withDeletions"
+        [selectedLayer]="selectedLayer"
         (click)="toggleModGroupEntryBox()">
     </evt-reading>
 </ng-container>
