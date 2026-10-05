@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 import { BehaviorSubject, combineLatest, merge, Observable, Subject, timer } from 'rxjs';
-import { distinctUntilChanged, filter, first, map, mergeMap, shareReplay, startWith, switchMap, withLatestFrom } from 'rxjs/operators';
+import { distinctUntilChanged, filter, first, map, mergeMap, shareReplay, skip, startWith, switchMap, withLatestFrom } from 'rxjs/operators';
 
 import { AppConfig, EditionLevel, EditionLevelType } from '../app.config';
 import { ChangeLayerData, Page, ViewMode } from '../models/evt-models';
@@ -245,6 +245,17 @@ export class EVTStatusService {
             } catch (e) {
                 evtPagesOverride$.next(null); // in caso di errore si usa rawPages$
             }
+        });
+        // [Autos] Al cambio di carta azzeriamo la selezione dell'apparato. Gli esponenti
+        // degli <app> si ripetono per pagina (a, b, c...): se l'esponente selezionato
+        // resta in memoria (e nell'URL ?app=), su ogni nuova carta il PRIMO box di
+        // apparato (esponente "a") si riaprirebbe da solo. skip(1): non tocchiamo il
+        // primo caricamento, cosi' un eventuale deep-link ?app= iniziale resta valido.
+        this.currentPage$.pipe(skip(1)).subscribe(() => {
+            // Azzeriamo sempre (anche se l'esponente arrivava dall'URL ?app=, non da un
+            // click): emettendo null su updateApparatus$ la selezione diventa nulla e la
+            // sincronizzazione status->URL rimuove ?app=, cosi' il box non si riapre.
+            this.updateApparatus$.next(null);
         });
         combineLatest([
             this.appConfig.fileConfigUrl$,
