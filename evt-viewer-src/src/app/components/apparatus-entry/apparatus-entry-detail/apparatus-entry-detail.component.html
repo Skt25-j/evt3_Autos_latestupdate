@@ -1,47 +1,15 @@
 <div class="card app-detail-container" [class.selected]="this.isSelected">
     <div class="card-body app-detail-content" [class.bg-white]="this.isSelected">
-        <div class="container-fluid">
-            <div class="row" style="overflow-x: auto;">
-                <div class="col">
-                    <!-- Autos: rimosso l'apice numerico/progressivo dell'apparato, come gia' tolto dal testo. -->
-                    <evt-reading class="info-rdg" *ngIf="this.showLemma; else criticalContent" [data]="data.lemma"
-                        [editionLevel]="editionLevel"></evt-reading>
-                    <ng-template #criticalContent>
-                        <span class="me-1" *ngFor="let content of data.criticalContent">
-                            <evt-content-viewer [content]="content" [editionLevel]="editionLevel"></evt-content-viewer>
-                        </span>
-                    </ng-template>
-                    <span>]</span>
-                </div>
-                <div class="col-1">
-                    <evt-pinner [item]="data" renderer="ApparatusEntryReadings" pinType="ApparatusEntry"></evt-pinner>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex align-items-center" *ngFor="let readingItem of readingItems">
-                        <div class="info-rdg pe-2 fw-semibold align-self-start">
-                            <evt-reading *ngIf="readingItem.reading.content.length !== 0" [data]="readingItem.reading"
-                                [withDeletions]="true" [editionLevel]="editionLevel"></evt-reading>
-                            <span *ngIf="readingItem.reading.content.length === 0" class="font-italic">{{ 'omit' |
-                                translate }}</span>
-                        </div>
-                        <span *ngIf="readingItem.reading.attributes.wit" class="d-block">
-                            <evt-witness-metadata
-                                [witnessMetadata]="readingItem.reading.attributes.wit"></evt-witness-metadata>
-                        </span>
-                        <span *ngIf="readingItem.reading.attributes.resp" class="d-flex align-items-start">
-                            <span class="info-label px-2 fw-bold">Resp:</span>
-                            <evt-witness-resp-metadata
-                                [ids]="readingItem.reading.attributes.resp"></evt-witness-resp-metadata>
-                        </span>
-                        <span *ngFor="let corresp of readingItem.reading.correspList.corresps" class="px-1 clickable"
-                            [title]="corresp.value" (click)="navigateToSynoptic(corresp)">
-                            {{ corresp.editionId }}
-                        </span>
-                    </div>
-                </div>
-            </div>
+        <!-- [Autos] Parte alta del box: riga di sintesi genetica "lemma] var1 -> var2 -> T",
+             ordinata per @varSeq CRESCENTE e con i <del> barrati (withDeletions), come nella
+             versione precedente / Nota al testo. Prima qui si usava readingItems, che
+             elencava le lezioni in ordine documentario (decrescente) e su righe separate,
+             senza barrato evidente. Il pin resta in alto a destra. -->
+        <div class="app-detail-synthesis">
+            <evt-apparatus-entry-readings [data]="data" [template]="nestedAppsReadingsTemplate"
+                [rdgHasCounter]="true" [editionLevel]="editionLevel" [selectedLayer]="selectedLayer">
+            </evt-apparatus-entry-readings>
+            <evt-pinner class="app-detail-pin" [item]="data" renderer="ApparatusEntryReadings" pinType="ApparatusEntry"></evt-pinner>
         </div>
         <!-- <span>
              <evt-apparatus-entry-readings class="app-detail-readings" [data]="data"

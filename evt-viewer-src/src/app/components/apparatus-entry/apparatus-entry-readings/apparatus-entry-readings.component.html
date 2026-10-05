@@ -1,31 +1,22 @@
-<span class="app-entry-reading" *ngIf="data.lemma">
-    <!--
-        It's necessary to handle both readings with and without nested apps, because nested apps inside app-entry-detail have different behaviour,
-        so we can't use apparatus-entry-component to render them.
-    -->
-    <evt-reading *ngIf="data.nestedAppsIDs.length === 0" [data]="data.lemma" [selectedLayer]="selectedLayer"></evt-reading>
+<!-- [Autos] Catena genetica della voce di apparato: le varianti (<rdg>) in ordine
+     @varSeq CRESCENTE e, IN FONDO, la lezione a testo (il <lem>) scritta per esteso -
+     come fa EVT beta 2, senza la sigla "T". Separatore: freccia. I <del> restano
+     barrati (withDeletions) per mostrare le cancellature anche in critica. -->
+<span class="app-entry-reading" *ngFor="let reading of significantReading; let i = index">
+    <span class="app-var-sep" *ngIf="i > 0"> &#8594; </span>
+    <evt-reading *ngIf="reading.content.length !== 0" [data]="reading" [withDeletions]="true"
+        [editionLevel]="editionLevel" [selectedLayer]="selectedLayer"></evt-reading>
+    <span class="font-italic" *ngIf="reading.content.length === 0">omit.</span>
+</span>
+<!-- lezione a testo (lemma) in coda alla catena -->
+<span class="app-entry-reading app-text-final" *ngIf="data.lemma">
+    <span class="app-var-sep" *ngIf="significantReading.length > 0"> &#8594; </span>
+    <evt-reading *ngIf="data.nestedAppsIDs.length === 0" [data]="data.lemma" [withDeletions]="true"
+        [editionLevel]="editionLevel" [selectedLayer]="selectedLayer"></evt-reading>
     <ng-container *ngIf="data.nestedAppsIDs.length > 0">
         <ng-container *ngTemplateOutlet="template context: { rdgHasCounter: rdgHasCounter }"></ng-container>
     </ng-container>
     <ng-container *ngIf="data.lemma.content.length > 0">
         <span *ngFor="let witID of data.lemma.witIDs" class="app-wit"> {{ witID }}</span>
     </ng-container>
-    <span>] </span>
-</span>
-<span class="app-entry-reading" *ngFor="let reading of significantReading; let i = index">
-    <!-- [Autos] separatore genetico fra le varianti -->
-    <span class="app-var-sep" *ngIf="i > 0"> &#8594; </span>
-    <evt-reading *ngIf="reading.content.length !== 0" [data]="reading" [selectedLayer]="selectedLayer"></evt-reading>
-    <span class="font-italic" *ngIf="reading.content.length === 0">omit.</span>
-    <!-- TODO: handle lacunastart and lacunaend -->
-
-    <!-- <ng-container *ngFor="let witID of el.witIDs">
-        <span *ngFor="let wit of getWits$(witID) | async" class="font-italic app-wit"> {{ wit }} </span>
-    </ng-container> -->
-</span>
-<!-- [Autos] Chiusura del processo genetico: la lezione a testo (T), in fondo alla catena
-     "lemma] var1 -> var2", quando c'e' almeno una variante significativa. -->
-<span class="app-entry-reading app-text-final" *ngIf="significantReading.length > 0">
-    <span class="app-var-sep"> &#8594; </span>
-    <span class="app-text-siglum" title="lezione a testo">T</span>
 </span>

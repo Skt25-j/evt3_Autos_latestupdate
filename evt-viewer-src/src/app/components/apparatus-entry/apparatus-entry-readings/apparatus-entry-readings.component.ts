@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, Input, TemplateRef } from '@angular
 import { ApparatusEntry, Reading } from 'src/app/models/evt-models';
 import { register } from 'src/app/services/component-register.service';
 import { EVTModelService } from 'src/app/services/evt-model.service';
+import { EditionLevelType } from 'src/app/app.config';
 
 @Component({
   selector: 'evt-apparatus-entry-readings',
@@ -14,6 +15,7 @@ import { EVTModelService } from 'src/app/services/evt-model.service';
 export class ApparatusEntryReadingsComponent {
   @Input() data: ApparatusEntry;
   @Input() rdgHasCounter: boolean;
+  @Input() editionLevel: EditionLevelType;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   @Input() template: TemplateRef<any>;
   @Input() selectedLayer: string;
