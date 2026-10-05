@@ -91,6 +91,16 @@ evt-text-panel .evt-exponent {
     font-weight: bold;
 }
 
+/* [Autos] Correzione "a sovrascrittura" (del rend=overwritten + add place=superimposed):
+   le parti vanno ATTACCATE (la nuova scritta sopra la vecchia). EVT mette su .del/.add
+   (e sui loro wrapper ndc-dynamic) un margine di 0.3em che creava spazi vuoti tra radice,
+   overwritten e superimposed (es. "mostra rono ndomi"). Azzeriamo il margine per questa
+   coppia, in changes e in diplomatica. */
+.del[data-rend="overwritten"], .add[data-place="superimposed"] { margin: 0 !important; }
+evt-substitution:has([data-rend="overwritten"]) .del,
+evt-substitution:has([data-rend="overwritten"]) .add,
+evt-substitution:has([data-rend="overwritten"]) ndc-dynamic { margin: 0 !important; }
+
 *[rend="underline"] {
     text-decoration: underline !important;
 }
