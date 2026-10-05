@@ -830,7 +830,7 @@
                             l’assiduità dello<lb n="8"/>studio, la regolarità nell’apprendere, imparando e scrivendo<lb n="9"/>in fretta e furia e
                             credendo di far sempre bene e sempre me<hi rend="soloDiplomatica">-</hi><lb n="10" rend="soloDiplomatica"/>glio degli altri. Per questo senso appunto non volevo<lb n="11"/>mai
                             avere sbagliato, fingevo d’aver saputo quella data<lb n="12"/>regola confessando d’aver errato per distrazione.
-                            <hi rend="underline">«Sca-</hi><lb n="13"/><hi rend="underline">pato sempre, duro mai</hi>» ho sempre detto.</p>
+                            <hi rend="underline">«Sca<hi rend="soloDiplomatica">-</hi></hi><lb n="13" rend="soloDiplomatica"/><hi rend="underline">pato sempre, duro mai</hi>» ho sempre detto.</p>
                         <p><lb n="14"/>E, come avviene a tutti i superbi,
                             <mod change="#fase-A"><add xml:id="add_mi" place="above">mi</add> avveniva <del rend="strikethrough" xml:id="del_a_me">a me</del>
                                 <substJoin target="#add_mi #del_a_me"/>
@@ -3320,7 +3320,7 @@
                                 <lb n="2"/>11<hi rend="apice">o</hi> del Purg. imparai tutto il Canto 23° del Paradiso e il <mod change="#fase-D"><subst><del rend="strikethrough">21
                                             <lb n="3"/> del Purgatorio</del><add place="inline">2<hi rend="apice">o</hi> dell’Inferno</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. -->; e ne <mod change="#fase-D"><subst><del rend="strikethrough">pre</del> <add place="inline">sentii</add></subst></mod> un affetto
-                                <lb n="4"/>grande e attraente. <mod change="#fase-D"><subst><add place="inline">Quell’Ottobre mi capitò e mi piacque immensa-</add><lb n="5"/><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod>
+                                <lb n="4"/>grande e attraente. <mod change="#fase-D"><subst><add place="inline">Quell’Ottobre mi capitò e mi piacque immensa<hi rend="soloDiplomatica">-</hi></add><lb n="5" rend="soloDiplomatica"/><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod>
 <!-- Versione precedente, conservata:
 Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place="inline">-</add>
                                     <lb n="5"/><subst><del rend="strikethrough">In quelle strofe</del><add place="inline">mente</add></subst></mod>
