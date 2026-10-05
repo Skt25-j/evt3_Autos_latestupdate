@@ -407,6 +407,25 @@ evt-apparatus-entry-readings {
    azzeriamo quel margine per evitare la sovrapposizione. */
 html[data-el="changesView"] .add[data-place="left"] { margin-left: 0 !important; }
 
+/* [Autos] Dentro i box di dettaglio (apparato / correzione) le aggiunte NON devono
+   essere sollevate o abbassate (place=above/below => super/sub) ne' trattate come
+   inline-block con barrato proprio: nel box la catena genetica deve stare tutta su una
+   riga (es. copertina "Autos": (Autologia)/Wstefano/-Autos- non piu' sfalsati). */
+evt-apparatus-entry-detail .add, evt-apparatus-entry-readings .add,
+evt-mod-detail .add, evt-mod-sequence .add, evt-mod-group .source-container .add,
+evt-apparatus-entry-detail evt-addition, evt-apparatus-entry-readings evt-addition,
+evt-mod-detail evt-addition, evt-mod-sequence evt-addition, evt-mod-group .source-container evt-addition {
+    vertical-align: baseline !important;
+    display: inline !important;
+    position: static !important;
+    float: none !important;
+    top: auto !important;
+    bottom: auto !important;
+}
+evt-apparatus-entry-detail .add::after, evt-apparatus-entry-readings .add::after,
+evt-mod-detail .add::after, evt-mod-sequence .add::after,
+evt-mod-group .source-container .add::after { content: none !important; }
+
 .ab[data-rend~="align-center"] { display: block; text-align: center; }
 .ab[data-rend~="align-center"] .lb { display: block !important; }
 /* [Autos] ...MA i box di dettaglio (apparato/mod) che si aprono DENTRO la copertina
