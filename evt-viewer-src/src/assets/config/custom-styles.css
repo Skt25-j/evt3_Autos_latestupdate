@@ -431,15 +431,21 @@ evt-mod-group .source-container .add::after { content: none !important; }
 /* [Autos] ...MA i box di dettaglio (apparato/mod) che si aprono DENTRO la copertina
    centrata non devono ereditare la centratura ne' gli <lb> a blocco: altrimenti la
    catena genetica va a capo disordinata (es. "-> (Autologia)" spinto in alto a destra).
-   Riportiamo i box ad allineamento a sinistra e <lb> inline. */
+   Riportiamo i box ad allineamento a sinistra. */
 evt-apparatus-entry-detail, evt-mod-detail, evt-mod-group .source-container,
 .app-detail-synthesis, .app-detail-content {
     text-align: left !important;
 }
+/* [Autos] Dentro i box di dettaglio gli <lb> vanno NASCOSTI (come fa la regola generale
+   dei box): in diplomatica l'<lb> produce un <br> che altrimenti spezza la catena del box
+   su piu' righe sfalsate. Serve ribadirlo qui con specificita' alta perche' la copertina
+   e' dentro <ab align-center> (dove di norma gli <lb> sono a blocco). */
 .ab[data-rend~="align-center"] evt-apparatus-entry-detail .lb,
 .ab[data-rend~="align-center"] evt-mod-detail .lb,
-.ab[data-rend~="align-center"] evt-mod-group .source-container .lb {
-    display: inline !important;
+.ab[data-rend~="align-center"] evt-mod-group .source-container .lb,
+evt-apparatus-entry-detail .lb, evt-apparatus-entry-readings .lb,
+evt-mod-detail .lb, evt-mod-sequence .lb, evt-mod-group .source-container .lb {
+    display: none !important;
 }
 
 /* [Autos] Box apparato: la parte alta e' la riga di sintesi genetica
