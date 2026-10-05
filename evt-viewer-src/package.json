@@ -3,6 +3,7 @@
   "version": "2.0.0-beta",
   "scripts": {
     "ng": "ng",
+    "postinstall": "node scripts/patch-gridster.js",
     "start": "ng serve --port=4205",
     "build": "ng build",
     "build:release": "sh build-release.sh",
