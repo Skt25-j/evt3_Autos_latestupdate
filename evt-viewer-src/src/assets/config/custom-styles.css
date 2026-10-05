@@ -396,8 +396,32 @@ evt-apparatus-entry-readings {
    strutturato, non prosa corrente) gli <lb> sono layout del titolo e devono andare a
    capo ANCHE in critica (dove di norma gli <lb> sono inline per la lettura continua).
    Forziamo il ritorno a capo rendendo a blocco il marcatore di riga in quei blocchi. */
+/* [Autos] Le frecce di separazione tra lezioni/mod sono inline-block ed ereditavano il
+   text-indent (~35px) del paragrafo indentato: la " > " veniva spinta a destra dentro il
+   suo riquadro, creando un vistoso spazio vuoto tra la lezione e la freccia. Azzeriamo. */
+.readingSeparator, .changeGroupSeparator, .changeSeparator { text-indent: 0 !important; }
+
+/* [Autos] In changesView l'<add place="left"> ha un margine sinistro negativo (resa
+   "a margine") che lo fa scivolare SOTTO il marcatore di fase: es. la "N" di
+   "Novembre" finiva sopra la "B". Qui il testo e' comunque inline col badge, quindi
+   azzeriamo quel margine per evitare la sovrapposizione. */
+html[data-el="changesView"] .add[data-place="left"] { margin-left: 0 !important; }
+
 .ab[data-rend~="align-center"] { display: block; text-align: center; }
 .ab[data-rend~="align-center"] .lb { display: block !important; }
+/* [Autos] ...MA i box di dettaglio (apparato/mod) che si aprono DENTRO la copertina
+   centrata non devono ereditare la centratura ne' gli <lb> a blocco: altrimenti la
+   catena genetica va a capo disordinata (es. "-> (Autologia)" spinto in alto a destra).
+   Riportiamo i box ad allineamento a sinistra e <lb> inline. */
+evt-apparatus-entry-detail, evt-mod-detail, evt-mod-group .source-container,
+.app-detail-synthesis, .app-detail-content {
+    text-align: left !important;
+}
+.ab[data-rend~="align-center"] evt-apparatus-entry-detail .lb,
+.ab[data-rend~="align-center"] evt-mod-detail .lb,
+.ab[data-rend~="align-center"] evt-mod-group .source-container .lb {
+    display: inline !important;
+}
 
 /* [Autos] Box apparato: la parte alta e' la riga di sintesi genetica
    (evt-apparatus-entry-readings) "lemma] var1 -> var2 -> T", che scorre inline su una
