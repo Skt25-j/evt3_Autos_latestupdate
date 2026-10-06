@@ -394,7 +394,7 @@
                     (<date>18??</date>). 
                 </bibl>
                 <bibl xml:id="Stanze_Giostra">
-                    <author><persName ref="#Agnolo_Poliziano"/></author>, 
+                    <author><persName ref="#Agnolo_Poliziano">Agnolo Poliziano</persName></author>, 
                     <title level="a">Stanze per la giostra di Giuliano de' Medici</title> 
                     (<date when="1475">1475</date>). 
                     <ref target="https://preserver.beic.it/delivery/DeliveryManagerServlet?dps_pid=IE7065334">Testo online</ref>
@@ -410,7 +410,7 @@
                     (<date when="1581">1581</date>).
                 </bibl>
                 <bibl xml:id="Ave_Maria_della_Sera">
-                    <author><persName ref="#Giannina_Milli">Giannina_Milli</persName></author>
+                    <author><persName ref="#Giannina_Milli">Giannina Milli</persName></author>
                     <title level="a">L'Ave Maria della Sera</title>
                     <note><p>L'autore probailmete ricorda male il titolo del testo poetico e riporta il titolo errato - e non attestato - La Preghiera della Sera (<date when="1858">1858</date>). </p></note>
                 </bibl>
@@ -419,34 +419,34 @@
                     <title level="a">L'Esule</title>
                 </bibl>
                 <bibl xml:id="Antologia_Letteraria">
-                    <author><persName ref="#Enrico_Salvadori">Enrico Salvadori</persName> e <persName ref="#Virginio_Prinzivalli"/></author>
+                    <author><persName ref="#Enrico_Salvadori">Enrico Salvadori</persName> e <persName ref="#Virginio_Prinzivalli">Virginio Prinzivalli</persName></author>
                     <title level="a">Antologia letteraria educativa per le scuole secondarie classiche, tecniche e normali</title>
                     <pubPlace>Rome</pubPlace>,
                     <publisher>Desclee, Lefebvre &amp; C.</publisher>,
                     <date when="1896">1896</date>
                 </bibl>
                 <bibl xml:id="Saul">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
                     <title level="a">Il Saul</title>
                     <date when="1782">1782</date>
                 </bibl>
                 <bibl xml:id="Mirra">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
                     <title level="a">Mirra</title>
                     <date when="1789">1789</date>
                 </bibl>
                 <bibl xml:id="Maria_Stuarda">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
                     <title level="a">Maria Stuarda</title>
                     <date when="1778">1778</date>
                 </bibl>
                 <bibl xml:id="Merope">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
                     <title level="a">Maria Stuarda</title>
                     <date when="1782">1782</date>
                 </bibl>
                 <bibl xml:id="Congiura_Pazzi">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio ALfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
                     <title level="a">La congiura de' Pazzi</title>
                     <date when="1777">1777</date>-<date when="1783">1783</date>
                 </bibl>
