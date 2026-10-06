@@ -2155,7 +2155,6 @@
                                                     <subst seq="2"><del rend="strikethrough">a' miei</del>
                                                         <add place="inline">a me</add></subst></add></subst>
                                         </mod></rdg> </app> e a’ miei circostanti. Il titolo
-                                <lb n="18"/>
                                 <mod change="#fase-B"><subst><del rend="strikethrough">era</del>
                                         <add place="inline">fu</add></subst></mod> prima il <title><ref target="#Daniello">Trionfo dell’Innocenza</ref></title>, quindi <title><ref target="#Daniello">Daniello</ref></title>
                                 <lb n="19"/>
@@ -2178,8 +2177,7 @@
                                 <lb n="3"/>la scena si svolgeva ora nella reggia, ora presso la
                                 <lb n="4"/>fossa; l’intreccio era ben fatto e anche troppo
                                 <mod change="#fase-B"><subst><del rend="strikethrough">sforzesc</del> 
-                                        <lb n="5"/><add place="inline">difficile</add></subst></mod> e complicato; il fatto era storico con aggiun
-                                <lb n="6"/>ta d’invenzioni e di ornamenti arbitrarii, che io
+                                        <lb n="5"/><add place="inline">difficile</add></subst></mod> e complicato; il fatto era storico con aggiun<hi rend="soloDiplomatica">-</hi><lb n="6" rend="soloDiplomatica"/>ta d’invenzioni e di ornamenti arbitrarii, che io
                                 <lb n="7"/>non starò a descrivere per la poca importanza che
                                 <lb n="8"/>hanno e per non essere noioso a chi ha la bontà
                                 <lb n="9"/>di leggermi. Solo qui riporterò i punti migliori
@@ -2225,7 +2223,8 @@
                                     <add place="inline">conforme con la prima scena ripetuta più
                                     volte e sempre diversamente</add></subst> <lb/> Il primo verso ora ritrovo</mod>
                                 </rdg>
-                               </app>
+                               </app> che la terza copia <mod change="#fase-C"><subst><del rend="strikethrough">dei</del><add place="inline">di</add></subst></mod> 4 atti e
+                            <lb n="19"/> del primo atto ripetuto
                         </p>
                     </div>
                     <div type="page">
