@@ -464,12 +464,14 @@ ui:
       id: chicago
       label: "Chicago (Author-Date)"
       enabled: true
+      # [Autos] Rimosso "publication" dalla lista: per le voci con un solo <title> EVT lo
+      # riempirebbe con lo stesso testo del titolo, mostrandolo due volte (una tra «» e una
+      # in chiaro). Luogo ed editore restano perche' hanno proprieta' proprie (pubPlace/publisher).
       propsOrder:
         - author
         - date
         - title
         - editor
-        - publication
         - pubPlace
         - publisher
         - doi
