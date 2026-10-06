@@ -49,6 +49,17 @@
                 <ng-template #noFront>
                     This edition has no <span class="fw-bold">front</span> content
                 </ng-template>
+
+                <!-- [Autos] Legenda delle fasi/strati di scrittura (colori della vista "changes"). -->
+                <div class="phase-legend" *ngIf="phaseLegend.length > 0">
+                    <h3 class="phase-legend-title">Fasi e strati di scrittura</h3>
+                    <ul class="phase-legend-list">
+                        <li *ngFor="let ph of phaseLegend" class="phase-legend-item">
+                            <span class="phase-legend-swatch" [style.background-color]="ph.color"></span>
+                            <span class="phase-legend-label">{{ ph.label }}</span>
+                        </li>
+                    </ul>
+                </div>
             </ng-container>
 
             <ng-container *ngSwitchCase="'search'">

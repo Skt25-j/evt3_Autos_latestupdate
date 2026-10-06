@@ -39,6 +39,20 @@ export class TextPanelComponent implements OnDestroy {
   }
   get selectedLayer() { return this.selLayer; }
 
+  // [Autos] Legenda delle fasi/strati per la sezione Info: coppie fase -> colore lette
+  // direttamente dalla configurazione (changeSequenceView.layerColors), cosi' restano
+  // allineate ai colori usati nella vista "changes" senza duplicare i valori.
+  get phaseLegend(): Array<{ id: string; color: string; label: string }> {
+    const colors = AppConfig.evtSettings?.edition?.changeSequenceView?.layerColors || {};
+
+    return Object.keys(colors).map((id) => ({
+      id,
+      color: colors[id],
+      // "fase-A" -> "Fase A", "strato-E" -> "Strato E"
+      label: id.replace('-', ' ').replace(/^\w/, (c) => c.toUpperCase()),
+    }));
+  }
+
   @Input() hideEditionLevelSelector: boolean;
 
   @Input() showChangeLayerSelector: boolean;

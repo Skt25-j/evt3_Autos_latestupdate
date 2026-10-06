@@ -718,3 +718,41 @@ html[data-el="interpretative"] .app-entry-lem { background-color: transparent !i
 .evt-note-popover.critical .popover-body { border-left: 4px solid rgb(24,70,155); }
 .evt-note-popover.comment { border-color: rgb(87,14,105) !important; }
 .evt-note-popover.comment .popover-body { border-left: 4px solid rgb(87,14,105); }
+
+/* [Autos] Legenda delle fasi/strati di scrittura nella sezione Info. */
+.phase-legend {
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    font-family: "Junicode", Times, serif;
+}
+.phase-legend-title {
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: 0 0 0.6rem 0;
+}
+.phase-legend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.2rem;
+}
+.phase-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-width: 7rem;
+}
+.phase-legend-swatch {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    flex: 0 0 auto;
+}
+.phase-legend-label {
+    line-height: 1.2;
+}
