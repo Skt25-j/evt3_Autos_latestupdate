@@ -383,34 +383,34 @@
                 <listBibl>
                 <head>Opere citate</head>
                 <bibl xml:id="OdePallavicini">
-                    <author><persName ref="#Ugo_Foscolo">Ugo Foscolo</persName></author>, 
+                    <author><persName ref="#Ugo_Foscolo">Foscolo, Ugo</persName></author>, 
                     <title level="a">Ode a Luigia Pallavicini</title> 
                     (<date when="1800">1800</date>). 
                     <ref target="https://it.wikisource.org/...">Testo online</ref>
                 </bibl>
                 <bibl xml:id="Nuova_Antologia">
-                    <author><persName ref="#Luigi_Santoni">Luigi Santoni</persName></author>, 
+                    <author><persName ref="#Luigi_Santoni">Santoni, Luigi</persName></author>, 
                     <title level="a">Nuova Antologia</title> 
                     (<date>18??</date>). 
                 </bibl>
                 <bibl xml:id="Stanze_Giostra">
-                    <author><persName ref="#Agnolo_Poliziano">Agnolo Poliziano</persName></author>, 
+                    <author><persName ref="#Agnolo_Poliziano">Poliziano, Agnolo</persName></author>, 
                     <title level="a">Stanze per la giostra di Giuliano de' Medici</title> 
                     (<date when="1475">1475</date>). 
                     <ref target="https://preserver.beic.it/delivery/DeliveryManagerServlet?dps_pid=IE7065334">Testo online</ref>
                 </bibl>
                 <bibl xml:id="Ospizi_Marini">
-                    <author><persName ref="#Giacomo_Zanella">Giacomo Zanella</persName></author>
+                    <author><persName ref="#Giacomo_Zanella">Zanella, Giacomo</persName></author>
                     <title level="a">Ospizi Marini</title>   
                     (<date when="1869">1869</date>).
                 </bibl>
                 <bibl xml:id="Gerusalemme_Liberata">
-                    <author><persName ref="#Torquato_Tasso">Torquato Tasso</persName></author>
+                    <author><persName ref="#Torquato_Tasso">Tasso, Torquato</persName></author>
                     <title level="a">Gerusalemme Liberata</title>   
                     (<date when="1581">1581</date>).
                 </bibl>
                 <bibl xml:id="Ave_Maria_della_Sera">
-                    <author><persName ref="#Giannina_Milli">Giannina Milli</persName></author>
+                    <author><persName ref="#Giannina_Milli">Milli, Giannina</persName></author>
                     <title level="a">L'Ave Maria della Sera</title>
                     <note><p>L'autore probailmete ricorda male il titolo del testo poetico e riporta il titolo errato - e non attestato - La Preghiera della Sera (<date when="1858">1858</date>). </p></note>
                 </bibl>
@@ -419,39 +419,39 @@
                     <title level="a">L'Esule</title>
                 </bibl>
                 <bibl xml:id="Antologia_Letteraria">
-                    <author><persName ref="#Enrico_Salvadori">Enrico Salvadori</persName> e <persName ref="#Virginio_Prinzivalli">Virginio Prinzivalli</persName></author>
+                    <author><persName ref="#Enrico_Salvadori">Salvadori, Enrico</persName> e <persName ref="#Virginio_Prinzivalli">Prinzivalli, Virginio</persName></author>
                     <title level="a">Antologia letteraria educativa per le scuole secondarie classiche, tecniche e normali</title>
                     <pubPlace>Rome</pubPlace>,
                     <publisher>Desclee, Lefebvre &amp; C.</publisher>,
                     <date when="1896">1896</date>
                 </bibl>
                 <bibl xml:id="Saul">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Alfieri, Vittorio</persName></author>
                     <title level="a">Il Saul</title>
                     <date when="1782">1782</date>
                 </bibl>
                 <bibl xml:id="Mirra">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Alfieri, Vittorio</persName></author>
                     <title level="a">Mirra</title>
                     <date when="1789">1789</date>
                 </bibl>
                 <bibl xml:id="Maria_Stuarda">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Alfieri, Vittorio</persName></author>
                     <title level="a">Maria Stuarda</title>
                     <date when="1778">1778</date>
                 </bibl>
                 <bibl xml:id="Merope">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Alfieri, Vittorio</persName></author>
                     <title level="a">Merope</title>
                     <date when="1782">1782</date>
                 </bibl>
                 <bibl xml:id="Congiura_Pazzi">
-                    <author><persName ref="#Vittorio_Alfieri">Vittorio Alfieri</persName></author>
+                    <author><persName ref="#Vittorio_Alfieri">Alfieri, Vittorio</persName></author>
                     <title level="a">La congiura de' Pazzi</title>
                     <date when="1777">1777</date>-<date when="1783">1783</date>
                 </bibl>
                 <bibl xml:id="Daniello">
-                    <author><persName ref="#TUS">Stefano Tuscano</persName></author>
+                    <author><persName ref="#TUS">Tuscano, Stefano</persName></author>
                     <title level="a">Daniello o Trionfo dell'Innocenza</title>
                     <date when="1777">1905</date>-<date when="1783">1907</date>
                     <note><p>Tragedia giovanile di Tuscano</p></note>
@@ -459,19 +459,19 @@
                 <bibl xml:id="Bibbia">
                 </bibl>
                 <bibl xml:id="Arte_del_Dire">
-                    <author><persName ref="#Giuseppe_Finzi">Giuseppe Finzi</persName></author>
+                    <author><persName ref="#Giuseppe_Finzi">Finzi, Giuseppe</persName></author>
                     <title level="a">L'Arte del Dire</title>
                     <note><p>Non è stata rintracciata un'opera propriamente intitolata <hi>L'arte del Dire</hi>, ma di <persName ref="#Giuseppe_Finzi">Finzi</persName> è noto un testo ginnasiale dal titolo <hi>Stilistica</hi>.<lb/>
                             <hi>L'arte del Dire</hi> risulterebbe, invece, essere un'opera del Corrado, oppure di Ferrari.
                             <lb/> Sarebbe, insomma, un lapsus dell'Autore.    </p></note>
                 </bibl>
                 <bibl xml:id="Adelchi">
-                    <author><persName ref="#Alessandro_Manzoni">Alessandro Manzoni</persName></author>
+                    <author><persName ref="#Alessandro_Manzoni">Manzoni, Alessandro</persName></author>
                     <title level="a">Adelchi</title>
                     <date when="1822">1822</date>
                 </bibl>
                 <bibl xml:id="Promessi_Sposi">
-                    <author><persName ref="#Alessandro_Manzoni">Alessandro Manzoni</persName></author>
+                    <author><persName ref="#Alessandro_Manzoni">Manzoni, Alessandro</persName></author>
                     <title level="a">I Promessi Sposi</title>
                     <date when="1827">1840</date>
                 </bibl>
