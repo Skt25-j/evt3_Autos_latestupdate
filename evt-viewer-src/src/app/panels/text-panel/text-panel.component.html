@@ -46,9 +46,9 @@
                 [content]="front">
                 </evt-content-viewer>
 
-                <ng-template #noFront>
-                    This edition has no <span class="fw-bold">front</span> content
-                </ng-template>
+                <!-- [Autos] Quando non c'e' contenuto <front> non mostriamo alcun messaggio:
+                     la scheda Info resta pulita con la sola legenda delle fasi/strati. -->
+                <ng-template #noFront></ng-template>
 
                 <!-- [Autos] Legenda delle fasi/strati di scrittura (colori della vista "changes"). -->
                 <div class="phase-legend" *ngIf="phaseLegend.length > 0">
