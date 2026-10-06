@@ -104,6 +104,16 @@ evt-substitution:has([data-rend="overwritten"]) ndc-dynamic { margin: 0 !importa
 *[rend="underline"] {
     text-decoration: underline !important;
 }
+
+/* [Autos] changesView: la sottolineatura di fase (su .mod-highlighted) cadeva anche
+   sugli SPAZI tra lezione vecchia e nuova, lasciando piccoli trattini staccati. Non
+   sottolineiamo gli spazi. NB: supportato da Safari/WebKit (il browser dell'utente);
+   su Chrome e' ignorato (innocuo). */
+.mod-highlighted {
+    text-decoration-skip-ink: auto;
+    -webkit-text-decoration-skip: spaces;
+    text-decoration-skip: spaces;
+}
 evt-generic-element.hi[change="#fase-A"] { text-decoration-color: #E67E22 !important; }
 evt-generic-element.hi[change="#fase-B"] { text-decoration-color: #D35400 !important; }
 evt-generic-element.hi[change="#fase-C"] { text-decoration-color: #F06292 !important; }
