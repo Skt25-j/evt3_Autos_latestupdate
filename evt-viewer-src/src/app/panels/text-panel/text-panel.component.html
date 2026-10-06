@@ -57,6 +57,8 @@
                         <li *ngFor="let ph of phaseLegend" class="phase-legend-item">
                             <span class="phase-legend-swatch" [style.background-color]="ph.color"></span>
                             <span class="phase-legend-label">{{ ph.label }}</span>
+                            <span class="phase-legend-pages" *ngIf="layerPages[ph.id]?.length">{{ layerPages[ph.id].join(', ') }}</span>
+                            <span class="phase-legend-pages phase-legend-pages--empty" *ngIf="!layerPages[ph.id]?.length">&mdash;</span>
                         </li>
                     </ul>
                 </div>

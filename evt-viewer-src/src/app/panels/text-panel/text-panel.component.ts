@@ -234,6 +234,11 @@ export class TextPanelComponent implements OnDestroy {
   front = this.structureService.parsedFront;
   private readonly hideSecondaryContentSub: Subscription;
 
+  // [Autos] Per ogni fase/strato, l'elenco delle pagine in cui compare (es. fase-A -> [1r1, 2r1, ...]).
+  // Calcolato a runtime dal documento XML, cosi' resta sempre coerente col testo anche dopo le modifiche.
+  layerPages: { [id: string]: string[] } = {};
+  private readonly layerPagesSub: Subscription;
+
   constructor(
     public evtModelService: EVTModelService,
     public evtStatusService: EVTStatusService,
@@ -247,6 +252,35 @@ export class TextPanelComponent implements OnDestroy {
         skip(1)
       )
     ).subscribe((_) => this.secondaryContent = null);
+
+    this.layerPagesSub = this.evtModelService.currentEditionData$.subscribe((data) => {
+      this.layerPages = this.computeLayerPages(data as unknown as Element);
+    });
+  }
+
+  // [Autos] Scorre il documento in ordine: tiene traccia della pagina corrente (dai <pb n="...">)
+  // e, per ogni elemento con attributo @change (es. <mod change="#fase-B">), registra quella pagina
+  // sotto la fase/strato indicata. Ritorna { 'fase-A': ['1r1', ...], ... } senza duplicati.
+  private computeLayerPages(root: Element | null): { [id: string]: string[] } {
+    const map: { [id: string]: string[] } = {};
+    if (!root || typeof root.querySelectorAll !== 'function') { return map; }
+    let currentPage = '';
+    Array.from(root.querySelectorAll('pb, [change]')).forEach((el: Element) => {
+      if (el.tagName && el.tagName.toLowerCase() === 'pb') {
+        currentPage = el.getAttribute('n') || currentPage;
+      }
+      const change = el.getAttribute('change');
+      if (change) {
+        change.split(/\s+/).forEach((raw) => {
+          const id = raw.replace(/^#/, '').trim();
+          if (!id || !currentPage) { return; }
+          if (!map[id]) { map[id] = []; }
+          if (map[id].indexOf(currentPage) === -1) { map[id].push(currentPage); }
+        });
+      }
+    });
+
+    return map;
   }
 
   toggleSecondaryContent(content: SecondaryContent) {
@@ -316,5 +350,6 @@ export class TextPanelComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.hideSecondaryContentSub.unsubscribe();
+    this.layerPagesSub?.unsubscribe();
   }
 }

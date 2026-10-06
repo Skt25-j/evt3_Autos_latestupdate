@@ -735,24 +735,34 @@ html[data-el="interpretative"] .app-entry-lem { background-color: transparent !i
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 1.2rem;
 }
 .phase-legend-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    min-width: 7rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+    line-height: 1.35;
 }
 .phase-legend-swatch {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 0.9em;
+    height: 0.9em;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     flex: 0 0 auto;
+    position: relative;
+    top: 0.1em;
 }
 .phase-legend-label {
-    line-height: 1.2;
+    flex: 0 0 auto;
+    min-width: 5rem;
+    font-weight: bold;
+}
+.phase-legend-pages {
+    flex: 1 1 auto;
+    font-size: 0.9em;
+    word-break: break-word;
+}
+.phase-legend-pages--empty {
+    opacity: 0.5;
 }
