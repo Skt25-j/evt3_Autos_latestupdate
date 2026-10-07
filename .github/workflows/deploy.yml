@@ -1,0 +1,63 @@
+name: Deploy EVT 3 (Autos) to GitHub Pages
+
+# Ad ogni push su main: ricompila l'edizione (sorgente in evt-viewer-src/)
+# e pubblica la build su GitHub Pages. Cosi' il sito si aggiorna da solo.
+# Richiede: Settings -> Pages -> Source = "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Una pubblicazione per volta; se ne parte una nuova, annulla quella in corso.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: evt-viewer-src/package-lock.json
+
+      - name: Install dependencies
+        working-directory: evt-viewer-src
+        run: npm ci
+
+      - name: Build (production)
+        working-directory: evt-viewer-src
+        run: npx ng build --configuration production
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+
+      - name: Disable Jekyll
+        run: touch evt-viewer-src/dist/evt-viewer-angular/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: evt-viewer-src/dist/evt-viewer-angular
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
