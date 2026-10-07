@@ -71,3 +71,63 @@ Verificato (headless + screenshot) su `readingText`, `imageText`, `documentalMix
 
 ## Validazione edizione (gate invariato)
 `xmllint --noout` + `jing` su `tei-vbd.rng`: baseline 58-59 errori, nessun tipo d'errore nuovo.
+
+## Rifiniture e correzioni QA (ottobre 2026)
+Interventi successivi, emersi dalla QA visiva. Per ciascuno il commit.
+
+### Apparato / correzioni (resa di subst/app)
+- **`<subst>` con `<del>`/`<add>` multipli** (correzioni in sequenza): EVT beta 2 di serie
+  mostrava **un solo del e un solo add** (`data.del`/`data.add`), perdendo gli altri; la
+  versione corretta (ciclo su `data.content`) era addirittura presente ma **commentata** nel
+  sorgente beta 2. Ripristinato il rendering di **tutti** i figli della subst. *(vera mancanza
+  di beta 2)* — `2090e46`, `d4f96f3`.
+- **Cancellature barrate (`<del rend="strikethrough">`) nel box del `<mod>/<subst>`** in
+  critica: ora compaiono — `37b95cb`.
+- **Testo che spariva nelle fasi precedenti in changesView**: l'`<app>` in linea teneva nel
+  flusso **solo il `<lem>`** (`items[i] = app.lemma`), spesso di una fase successiva; tenuta
+  l'intera voce `<app>` (`items[i] = app`) così la changesView mostra la variante giusta per
+  fase, le altre viste restano lemma+apice+box. *(estensione per la vista genetica, non un
+  difetto di EVT)* — `f3d1973`.
+- **Box d'apparato**: catena genetica ascendente per `@varSeq`, freccia « → » fra le varianti,
+  intestazione «lezione a testo]» (la sigla «T» finale è stata poi rimossa a favore della
+  lezione finale per esteso); font coerente (Junicode) nei box; niente **doppia freccia**;
+  niente spazio vuoto dopo la prima lezione; `<lb/>` nascosti nel box; box su una riga —
+  `d8af1cb`, `932d867`, `436e23f`, `0e63dc7`, `c9bb818`, `b3bd1bf`.
+- **Al cambio pagina il box non si riapre più da solo** (diplomatica) — `ab4680d`.
+
+### Resa del testo (diplomatica / changes / critica)
+- **Parole spezzate a fine riga**: trattino reso `soloDiplomatica` + `<lb>` `soloDiplomatica`
+  → in critica le righe spariscono e la parola **si ricompone** (gestiti anche i trattini
+  dentro `<hi>`/`<add>`, es. «Sca-pato») — `4e8bfe5`, `0e1c344`.
+- **`overwritten`/`superimposed`**: tolto lo spazio spurio (margine 0.3em di del/add) in
+  diplomatica/changes — `9580d4c`, `4e8bfe5`.
+- **Stanghette nere** da spazi barrati dentro i `<del>`: soppresse — `c9bb818`.
+- **Sottolineatura di fase in changes che toccava gli spazi** (trattini staccati): corretta —
+  `bfc09a4`.
+
+### Sezione Info
+- **Legenda delle fasi/strati**: aggiunta nella scheda Info, con colore (letto da
+  `changeSequenceView.layerColors`) **e l'elenco delle pagine** in cui ogni fase/strato
+  compare (calcolo a runtime dal documento) — `bc1f940`, `a93fdcd`.
+- **Messaggio «no front content» nascosto** quando non c'è contenuto `<front>` testuale —
+  `5e8edd2`.
+
+### Bibliografia (dati + stile)
+- Autori resi uniformi in forma **«Cognome, Nome»** (solo i `<persName>` dentro `<author>`) —
+  `35c1db6` (prima uniformati a «Nome Cognome» in `12b0471`).
+- **Titolo sdoppiato** nel box bibliografico: era lo stile *chicago* che stampava sia `title`
+  sia `publication` con lo stesso testo; rimosso `publication` da `propsOrder` dello stile —
+  `0425bd7`.
+- Correzioni dati: titolo «Merope» (era «Maria Stuarda»), `persName` vuoti completati, refusi
+  d'autore — `7a5f693`, `12b0471`; reintegro del testo omesso a c. 16v-17r — `797a326`.
+
+### Stabilità
+- **Crash di `angular-gridster2`** al cambio modalità di vista: fix permanente via
+  `scripts/patch-gridster.js` (postinstall, null-guard sul teardown) — `3b50d56`.
+
+### Note su EVT beta 2 (di serie vs nostre estensioni)
+- Il raddoppio del titolo in bibliografia e la perdita dei del/add multipli nelle `<subst>`
+  sono **limiti/scelte di EVT beta 2**, non errori di codifica dell'edizione.
+- La freccia « → » nel box è **nostra aggiunta** (nel beta 2 di serie non c'è: solo «lemma]»).
+- `items[i] = app` è un'**estensione** per la changesView; il comportamento di serie
+  (solo lemma nel flusso) è corretto per le edizioni critiche classiche (es. campioni Saba/Lucullus).
