@@ -2885,7 +2885,7 @@
                                 <lb n="20"/>ricordo aver portato <mod change="#fase-D"><add place="above">con uno strattone</add></mod> il letto <mod change="#fase-D"><subst><del rend="strikethrough">a met</del> <add place="inline">in mezzo</add></subst></mod> alla camera e</p>
                     </div>
                     <div type="page">
-                        <pb n="27r1" facs="27r.jpg"/>
+                        <pb n="27r1" xml:id="Quaderno1_27r" facs="27r.jpg" type="blank"/>
                     </div>
                 </body>
                 <back>
