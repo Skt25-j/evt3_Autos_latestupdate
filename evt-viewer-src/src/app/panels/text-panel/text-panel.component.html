@@ -40,15 +40,12 @@
         <ng-container [ngSwitch]="secondaryContent">
 
             <ng-container *ngSwitchCase="'info'">
-                <evt-content-viewer
-                *ngIf="front; else noFront"
-                [mouseCapture]="true"
-                [content]="front">
-                </evt-content-viewer>
-
-                <!-- [Autos] Quando non c'e' contenuto <front> non mostriamo alcun messaggio:
-                     la scheda Info resta pulita con la sola legenda delle fasi/strati. -->
-                <ng-template #noFront></ng-template>
+                <!-- [Autos] Nella scheda Info mostriamo SOLO la legenda delle fasi/strati.
+                     Il contenuto <front> (che per questa edizione contiene la bibliografia)
+                     NON va reso qui: la bibliografia ha la sua sede in "Project Info" ->
+                     "Bibliografia". Renderlo qui faceva comparire la bibliografia tutta di
+                     seguito alla PRIMA apertura della scheda, salvo sparire dopo un reload,
+                     per via di quando veniva valutato parsedFront. -->
 
                 <!-- [Autos] Legenda delle fasi/strati di scrittura (colori della vista "changes"). -->
                 <div class="phase-legend" *ngIf="phaseLegend.length > 0">
