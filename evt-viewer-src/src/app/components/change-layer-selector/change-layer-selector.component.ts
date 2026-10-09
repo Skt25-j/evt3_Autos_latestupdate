@@ -15,7 +15,8 @@ export class ChangeLayerSelectorComponent implements OnDestroy, OnInit {
   private subscription: Subscription;
 
   public selectedLayer: string;
-  public changeLayers: Array<{id: string; value: string}>;
+  // [Autos] uncertain = change proveniente da un listChange NON ordinato (ordine incerto)
+  public changeLayers: Array<{id: string; value: string; uncertain?: boolean}>;
 
   @Input() set selLayer(l: string) {
     if (l) {
@@ -37,6 +38,9 @@ export class ChangeLayerSelectorComponent implements OnDestroy, OnInit {
     // eslint-disable-next-line prefer-const
     let layerItems = [];
     data?.layerOrder.forEach((layer) => layerItems.push({ id: layer, value: layer }));
+    // [Autos] In coda, le change dei listChange NON ordinati (fuori dalla sequenza
+    // cumulativa): mostrate comunque, marcate "ordine incerto" nel template.
+    (data?.unorderedLayers || []).forEach((layer) => layerItems.push({ id: layer, value: layer, uncertain: true }));
     this.changeLayers = layerItems;
   }
 

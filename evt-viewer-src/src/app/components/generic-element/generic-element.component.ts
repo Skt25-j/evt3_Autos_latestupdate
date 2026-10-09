@@ -52,9 +52,20 @@ export class GenericElementComponent implements OnInit, OnDestroy {
     if (this.editionLevel !== 'changesView' || !change) { return false; }
     if (!GenericElementComponent.FILTERABLE_BLOCKS.includes(this.data?.class)) { return false; }
     if (this.orderedLayers.length === 0) { return false; }
-    const current = this.selectedLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
+    const current = this.effectiveCurrentLayer();
 
     return this.getLayerIndex(current) < this.getLayerIndex(change);
+  }
+
+  // [Autos] Fase corrente per il confronto cumulativo. Se la fase selezionata NON e' nella
+  // sequenza ordinata (es. uno strato "ordine incerto" da un listChange non ordinato),
+  // usiamo l'ultima fase ordinata: cosi' selezionarla mostra il testo finale completo
+  // invece di nasconderlo (lo strato non ha una posizione nella sequenza).
+  private effectiveCurrentLayer(): string {
+    const sel = this.selectedLayer;
+    const inOrder = sel && this.orderedLayers.indexOf(sel.replace('#', '')) !== -1;
+
+    return inOrder ? sel : this.orderedLayers[this.orderedLayers.length - 1];
   }
 
   // Formattazione inline (es. <hi rend="underline"> con @change): il testo resta
@@ -66,7 +77,7 @@ export class GenericElementComponent implements OnInit, OnDestroy {
     if (this.editionLevel !== 'changesView' || !change) { return false; }
     if (GenericElementComponent.FILTERABLE_BLOCKS.includes(this.data?.class)) { return false; }
     if (this.orderedLayers.length === 0) { return false; }
-    const current = this.selectedLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
+    const current = this.effectiveCurrentLayer();
 
     return this.getLayerIndex(current) < this.getLayerIndex(change);
   }

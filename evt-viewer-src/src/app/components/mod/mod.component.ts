@@ -129,7 +129,14 @@ export class ModComponent {
         return false;
       }
       // generic content managament
-      if (this.getLayerIndex(this.selectedLayer) < this.getLayerIndex(this.data.changeLayer)) {
+      // [Autos] Se la fase selezionata e' fuori dalla sequenza ordinata (strato "ordine
+      // incerto" da un listChange non ordinato), per il confronto cumulativo vale come
+      // l'ultima fase ordinata: cosi' selezionarla mostra il testo finale, non lo nasconde.
+      const selClean = (this.selectedLayer || '').replace('#', '');
+      const selIdx = (this.orderedLayers.indexOf(selClean) === -1)
+        ? this.orderedLayers.length - 1
+        : this.getLayerIndex(this.selectedLayer);
+      if (selIdx < this.getLayerIndex(this.data.changeLayer)) {
         return true;
       }
     }

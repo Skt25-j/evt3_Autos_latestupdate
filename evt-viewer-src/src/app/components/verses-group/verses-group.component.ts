@@ -68,7 +68,11 @@ export class VersesGroupComponent implements OnInit, OnDestroy {
     const change = this.data?.attributes?.change;
     if (this.editionLevel !== 'changesView' || !change) { return false; }
     if (this.orderedLayers.length === 0) { return false; }
-    const current = this.selectedLayer ?? this.orderedLayers[this.orderedLayers.length - 1];
+    // [Autos] fase selezionata fuori dalla sequenza ordinata (strato "ordine incerto") ->
+    // usa l'ultima fase ordinata, cosi' mostra il testo finale invece di nasconderlo.
+    const sel = this.selectedLayer;
+    const current = (sel && this.orderedLayers.indexOf(sel.replace('#', '')) !== -1)
+      ? sel : this.orderedLayers[this.orderedLayers.length - 1];
 
     return this.getLayerIndex(current) < this.getLayerIndex(change);
   }

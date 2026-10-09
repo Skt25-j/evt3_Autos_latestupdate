@@ -108,15 +108,20 @@ export class ModGroupComponent implements OnInit, OnDestroy {
   // Ripieghi: valore dal servizio, @Input, e infine la PRIMA fase (default del filtro
   // pagina quando nessuna fase e' selezionata).
   private get effectiveLayer(): string|undefined {
-    const live = this.evtStatusService.updateLayer$?.getValue();
-    if (live) { return live; }
-    if (this.statusSelectedLayer) { return this.statusSelectedLayer; }
-    if (this.selLayer) { return this.selLayer; }
-    if (this.orderedLayers && this.orderedLayers.length > 0) {
-      return this.orderedLayers[0];
+    const raw = this.evtStatusService.updateLayer$?.getValue()
+      || this.statusSelectedLayer
+      || this.selLayer
+      || ((this.orderedLayers && this.orderedLayers.length > 0) ? this.orderedLayers[0] : undefined);
+    if (!raw) { return undefined; }
+    // [Autos] Se la fase selezionata e' fuori dalla sequenza ordinata (strato "ordine
+    // incerto" da un listChange non ordinato), per la visibilita' cumulativa la trattiamo
+    // come l'ultima fase ordinata: cosi' mostra il testo finale invece di nasconderlo.
+    if (this.orderedLayers && this.orderedLayers.length > 0
+        && this.orderedLayers.indexOf(raw.replace('#', '')) === -1) {
+      return this.orderedLayers[this.orderedLayers.length - 1];
     }
 
-    return undefined;
+    return raw;
   }
 
   // [Autos] changeLayer della lezione = quello del suo <mod> interno.

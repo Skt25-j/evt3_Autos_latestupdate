@@ -92,6 +92,9 @@ export interface Page {
 export interface ChangeLayerData {
     list: ListChange[],
     layerOrder: string[],
+    // [Autos] change dei listChange NON ordinati (fuori dalla sequenza cumulativa):
+    // mostrate nel menu fasi come "ordine incerto".
+    unorderedLayers?: string[],
     selectedLayer: string,
 }
 
