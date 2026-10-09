@@ -41,13 +41,18 @@ export class ModComponent {
 
   public orderedLayers: string[];
 
+  // [Autos] strati dei listChange NON ordinati (ordine incerto): legittimi, da NON
+  // segnalare come errore in getLayerIndex.
+  public unorderedLayers: string[] = [];
+
   public selectedLayer: string;
 
   public selectedLayer$ = this.evtStatusService.currentChanges$.pipe(
     distinctUntilChanged(),
-    map(({ selectedLayer, layerOrder }) => {
+    map(({ selectedLayer, layerOrder, unorderedLayers }) => {
       this.selectedLayer = selectedLayer;
       this.orderedLayers = layerOrder;
+      this.unorderedLayers = unorderedLayers || [];
       if (layerOrder.length > 0) {
         this.selectedLayer = this.selectedLayer ?? layerOrder[layerOrder.length-1];
       }
@@ -76,6 +81,7 @@ export class ModComponent {
 
   setLayerData(data: ChangeLayerData) {
     this.orderedLayers = data?.layerOrder;
+    this.unorderedLayers = data?.unorderedLayers || [];
     this.selectedLayer = data?.selectedLayer;
     if (this.orderedLayers.length > 0) {
       // default selected layer
@@ -99,6 +105,12 @@ export class ModComponent {
       layer = layer.replace('#','');
       const layerNumber = this.orderedLayers.indexOf(layer);
       if (layerNumber == -1) {
+        // [Autos] Strato di un listChange NON ordinato (ordine incerto): e' legittimo,
+        // non un errore di codifica -> niente warning. Per il confronto cumulativo vale
+        // come l'ultima fase ordinata (correzione a stato finale).
+        if ((this.unorderedLayers || []).indexOf(layer) !== -1) {
+          return this.orderedLayers.length > 0 ? this.orderedLayers.length - 1 : 0;
+        }
         this.errorService.logWarning(`Change layer ${layer} not found in listChange element.`);
         return 0;
       }
