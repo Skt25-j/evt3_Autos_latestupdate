@@ -51,6 +51,18 @@ evt-mod-group .source-container span.lb[data-n] { display: none !important; }
 .source-container .del,
 .source-container .add { margin-right: 0.3em; }
 
+/* [Autos] In critica (html[data-el="interpretative"]) il testo e' la lezione finale
+   pulita: il <subst> rende solo l'<add> (le cancellature sono nascoste) e non ci sono
+   sequenze da separare. Il margin-right 0.3em qui sopra - applicato anche al wrapper
+   dinamico ndc-dynamic.add - lasciava pero' un gap spurio a meta' parola per OGNI
+   correzione inline ("insuper bii" invece di "insuperbii", "camminav o" invece di
+   "camminavo"). Azzeriamo quei margini SOLO in critica; in diplomatica e changes restano
+   (li' servono a separare del/add e le correzioni in sequenza). */
+html[data-el="interpretative"] .subst .del,
+html[data-el="interpretative"] .subst .add,
+html[data-el="interpretative"] .source-container .del,
+html[data-el="interpretative"] .source-container .add { margin-right: 0 !important; margin-left: 0 !important; }
+
 /* [Autos] Niente apici (numeri/lettere) sulle lezioni corrette nel testo di lettura:
    nel vecchio fork non c'erano. La finestra di apparato si apre comunque cliccando la
    lezione; l'apparato completo resta nel pannello "Critical Apparatus" a destra (che
