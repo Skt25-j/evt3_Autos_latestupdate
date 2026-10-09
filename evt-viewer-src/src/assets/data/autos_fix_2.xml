@@ -236,13 +236,9 @@
         </fileDesc>
         <profileDesc>
             <creation corresp="#Autos" resp="#TAV">
-                <!-- [Autos] Serie unica ordered="true" (fasi + strati in sequenza cronologica,
-                     come da Nota al testo). @cert="low" marca l'UNICA change la cui collocazione
-                     cronologica e' davvero indeterminata: strato-X ("del tutto indecidibile",
-                     collocabile in qualunque momento dopo il 1911, posto in coda per convenzione).
-                     M, O, P NON sono marcati: hanno una posizione nota nella sequenza (M = 1921;
-                     O, P = seriori alla Fase N); la loro incertezza e' solo locale/di coppia
-                     (M vs L; ordine reciproco di O e P) ed e' spiegata nella Nota al testo. -->
+                <!-- [Autos] Sequenza compositiva (fasi + strati) in ordine cronologico: ordered="true".
+                     M, O, P restano qui: hanno una posizione nota nella sequenza (M = 1921; O, P =
+                     seriori alla Fase N) con sola incertezza locale/di coppia, spiegata nella Nota al testo. -->
                 <listChange ordered="true">
                     <change xml:id="fase-A"> Fase-A <p>penna  con inchiostro  nero con cui scrive il testo di Autos da 1r1 a 10r1 – esclusi i versi –</p></change>
                     <change xml:id="fase-B"> Fase-B <p>penna con inchiostro  nero con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
@@ -258,6 +254,12 @@
                     <change xml:id="fase-N"> fase-N <p>penna a sfera di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</p> </change>
                     <change xml:id="strato-O"> strato-O <p>lapis 2</p></change>
                     <change xml:id="strato-P"> strato-P <p>lapis con una mina molto scura, utilizzato soltanto per alcune cassature a 24r2.</p></change>
+                </listChange>
+                <!-- [Autos] strato-X: cronologia "del tutto indecidibile" (Nota al testo) -> lista NON
+                     ordinata. EVT di serie ignora i listChange ordered="false" nel menu fasi; estensione
+                     [Autos] (mod-parser.service + change-layer-selector) per renderlo comunque
+                     selezionabile, marcato "ordine incerto". -->
+                <listChange ordered="false">
                     <change xml:id="strato-X" cert="low"> strato-X <p>penna dcon inchiostro nero scuro, non tendente al marrone come negli altri casi, che interviene in pochi e circoscritti punti del testo, di difficile collocabilità rispetto alla cronologia degli interventi.</p></change>
                 </listChange>
             </creation>
@@ -755,7 +757,7 @@
                                 <rdg varSeq="2">
                                     <mod change="#fase-B">
                                         <del rend="strikethrough">Già cominciavo <lb n="13"/> a veder di mal occhio i maestri, a vedermi già dotto, a ri<hi rend="soloDiplomatica">-</hi><lb n="14" rend="soloDiplomatica"/>tirarmi dagli altri
-                                            compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ <persName ref="#genitori">genitori</persName>, ad aggrottar le ciglia quan<hi rend="soloDiplomatica">-</hi><lb n="16" rend="soloDiplomatica"/> do incontravo la
+                                            compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ <persName ref="#genitori">genitori</persName>, ad aggrottar le ciglia quan<hi rend="soloDiplomatica">-</hi><lb n="16" rend="soloDiplomatica"/>do incontravo la
                                             gente e andarmene leggendo a spasso solo e  con
                                             <add xml:id="add_rado_1" place="above">rado</add> 
                                             passo 
@@ -2280,8 +2282,7 @@
                             
                                 <lb n="1"/>Più volte <mod change="#fase-D">
                                     <del rend="strikethrough">ri</del></mod>mutai l’intreccio, più volte mi trovai accasciato e
-                                <lb n="2"/>quasi pronto a strappare tutti quei fogli; più volte m’insuper<hi rend="soloDiplomatica">-</hi><lb n="3" rend="soloDiplomatica"/>
-                                <mod change="#fase-D"><subst><del rend="strikethrough">bei</del>
+                                <lb n="2"/>quasi pronto a strappare tutti quei fogli; più volte m’insuper<hi rend="soloDiplomatica">-</hi><lb n="3" rend="soloDiplomatica"/><mod change="#fase-D"><subst><del rend="strikethrough">bei</del>
                                         <add place="inline">bii</add></subst></mod> e mi detti a sperare un glorioso avvenire.
                         </p>
                         <p rend="indent" change="#fase-D">
