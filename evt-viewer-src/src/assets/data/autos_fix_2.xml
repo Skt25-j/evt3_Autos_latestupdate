@@ -237,11 +237,12 @@
         <profileDesc>
             <creation corresp="#Autos" resp="#TAV">
                 <!-- [Autos] Serie unica ordered="true" (fasi + strati in sequenza cronologica,
-                     come da Nota al testo). @cert="low" su alcune <change> segnala che la loro
-                     COLLOCAZIONE CRONOLOGICA RELATIVA e' incerta (non l'esistenza dell'intervento):
-                     strato-M (ordine vs strato-L non accertabile), strato-O e strato-P (solo seriori
-                     alla Fase N, senza cronologia relativa), strato-X ("del tutto indecidibile",
-                     posto in coda per convenzione). Cfr. Nota al testo, par. "Le fasi di stesura...". -->
+                     come da Nota al testo). @cert="low" marca l'UNICA change la cui collocazione
+                     cronologica e' davvero indeterminata: strato-X ("del tutto indecidibile",
+                     collocabile in qualunque momento dopo il 1911, posto in coda per convenzione).
+                     M, O, P NON sono marcati: hanno una posizione nota nella sequenza (M = 1921;
+                     O, P = seriori alla Fase N); la loro incertezza e' solo locale/di coppia
+                     (M vs L; ordine reciproco di O e P) ed e' spiegata nella Nota al testo. -->
                 <listChange ordered="true">
                     <change xml:id="fase-A"> Fase-A <p>penna  con inchiostro  nero con cui scrive il testo di Autos da 1r1 a 10r1 – esclusi i versi –</p></change>
                     <change xml:id="fase-B"> Fase-B <p>penna con inchiostro  nero con cui scrive da 11r1 a 17r1 e le varie correzioni precedenti</p></change>
@@ -253,10 +254,10 @@
                     <change xml:id="fase-H"> Fase-H  <p>penna con inchiostro  nero con cui viene scritto l’appunto slegato presenta a 16v2 e 17v2, datato agosto 1911</p> </change>
                     <change xml:id="strato-I"> strato-I <p>matita di colore blu con cui apporta alcuni interventi</p></change>
                     <change xml:id="strato-L"> strato-L <p>matita di colore rosso con cui apporta alcuni interventi</p></change>
-                    <change xml:id="strato-M" cert="low"> strato-M <p>penna con inchiostro blu con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </p></change>
+                    <change xml:id="strato-M"> strato-M <p>penna con inchiostro blu con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </p></change>
                     <change xml:id="fase-N"> fase-N <p>penna a sfera di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</p> </change>
-                    <change xml:id="strato-O" cert="low"> strato-O <p>lapis 2</p></change>
-                    <change xml:id="strato-P" cert="low"> strato-P <p>lapis con una mina molto scura, utilizzato soltanto per alcune cassature a 24r2.</p></change>
+                    <change xml:id="strato-O"> strato-O <p>lapis 2</p></change>
+                    <change xml:id="strato-P"> strato-P <p>lapis con una mina molto scura, utilizzato soltanto per alcune cassature a 24r2.</p></change>
                     <change xml:id="strato-X" cert="low"> strato-X <p>penna dcon inchiostro nero scuro, non tendente al marrone come negli altri casi, che interviene in pochi e circoscritti punti del testo, di difficile collocabilità rispetto alla cronologia degli interventi.</p></change>
                 </listChange>
             </creation>
