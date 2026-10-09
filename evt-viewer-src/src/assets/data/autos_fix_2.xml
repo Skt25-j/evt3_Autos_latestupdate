@@ -1233,8 +1233,7 @@
                             <lb n="10"/><mod change="#fase-A">
                                 <add place="above" seq="2">nel</add>
                                 <add place="inline" seq="1">ri</add>legge<subst>
-                                    <del rend="overwritten" seq="2">vo</del>
-                                    <add place="superimposed" seq="2">re</add></subst>
+                                    <del rend="overwritten" seq="2">vo</del><add place="superimposed" seq="2">re</add></subst>
                             </mod> quella mia baggianata e
                             <app>
                                 <lem varSeq="3"><mod change="#fase-A"><add place="above">mi parve di</add> <add place="inline">compre<subst><del rend="overwritten">si</del><add place="superimposed">ndere</add></subst></add></mod></lem>
@@ -1263,8 +1262,7 @@
                             <lb n="16"/>a stare senza cena 
                             <mod change="#fase-A"><add place="above">o poco meno</add></mod>, senza adirarsi con 
                             <mod change="#fase-A">
-                                <del rend="overwritten" xml:id="del_i1">i</del>
-                                <add place="superimposed" xml:id="add_chi">chi</add>
+                                <del rend="overwritten" xml:id="del_i1">i</del><add place="superimposed" xml:id="add_chi">chi</add>
                                 <del rend="strikethrough" xml:id="del_2">2</del>
                                 <substJoin target="#del_i1 #add_chi #del_2"/>
                             </mod> me la negava. <!--  <subst><del rend="overwritten">i</del><add place="superimposed">chi</add> <del rend="strikethrough">2</del></subst>-->
@@ -1326,22 +1324,18 @@
                                 <rdg varSeq="1">
                                     <mod change="#fase-A">
                                         <subst>
-                                            <del rend="overwritten" seq="1">:</del>
-                                            <add place="superimposed" seq="1">e</add>
+                                            <del rend="overwritten" seq="1">:</del><add place="superimposed" seq="1">e</add>
                                         </subst>
                                         non mi ricordo
                                         <subst>
                                             <del rend="strikethrough" seq="1">che</del>
                                             <add place="inline" seq="1">che
                                                 <subst>
-                                                    <del rend="overwritten seq-transient" seq="2" n="1">di qualche verso</del>
-                                                    <add place="superimposed" seq="2"><subst>
-                                                            <del rend="overwritten" seq="2">di</del>
-                                                            <add place="superimposed" seq="2">della</add>
+                                                    <del rend="overwritten seq-transient" seq="2" n="1">di qualche verso</del><add place="superimposed" seq="2"><subst>
+                                                            <del rend="overwritten" seq="2">di</del><add place="superimposed" seq="2">della</add>
                                                         </subst>
                                                         <subst>
-                                                            <del rend="overwritten" seq="2">qualche</del>
-                                                            <add place="superimposed" seq="2">prima</add>
+                                                            <del rend="overwritten" seq="2">qualche</del><add place="superimposed" seq="2">prima</add>
                                                         </subst>
                                                         quartina e dell'ultima terzina.
                                                     </add>
@@ -1358,22 +1352,18 @@
                                 <rdg varSeq="1">
                                     <mod change="#fase-A">
                                         <subst>
-                                            <del rend="overwritten" seq="1">:</del>
-                                            <add place="superimposed" seq="1">e</add>
+                                            <del rend="overwritten" seq="1">:</del><add place="superimposed" seq="1">e</add>
                                         </subst>
                                         non mi ricordo
                                         <subst>
                                             <del rend="strikethrough" seq="1">che</del>
                                             <add place="inline" seq="1">che
                                                 <subst>
-                                                    <del rend="overwritten" seq="2">di qualche verso</del>
-                                                    <add place="superimposed" seq="2"><subst>
-                                                            <del rend="overwritten" seq="2">di</del>
-                                                            <add place="superimposed" seq="2">della</add>
+                                                    <del rend="overwritten" seq="2">di qualche verso</del><add place="superimposed" seq="2"><subst>
+                                                            <del rend="overwritten" seq="2">di</del><add place="superimposed" seq="2">della</add>
                                                         </subst>
                                                         <subst>
-                                                            <del rend="overwritten" seq="2">qualche</del>
-                                                            <add place="superimposed" seq="2">prima</add>
+                                                            <del rend="overwritten" seq="2">qualche</del><add place="superimposed" seq="2">prima</add>
                                                         </subst>
                                                         quartina e dell'ultima terzina.
                                                     </add>
@@ -1440,8 +1430,7 @@
                                 <del rend="strikethrough">mia</del>
                             </mod>narrazione della mia fanciullezza. B<mod change="#fase-A"><add place="above">u</add></mod>oni, il mio maestro, mi
                             <mod change="#fase-A"><del rend="strikethrough"><add place="above">di già</add></del></mod>aveva insegna<hi rend="soloDiplomatica">-</hi><lb n="4" rend="soloDiplomatica"/>to il latino, ma non l’italiano <mod change="#fase-A">
-                                <del rend="overwritten" xml:id="del_di">di</del>
-                                <add place="superimposed" xml:id="add_per">per</add>
+                                <del rend="overwritten" xml:id="del_di">di</del><add place="superimposed" xml:id="add_per">per</add>
                                 <del rend="strikethrough" xml:id="del_Igin">I<hi rend="apice">o</hi>  gin</del>
                                 <add place="inline" xml:id="add_Igin">I<hi rend="apice">o</hi> ginnasiale</add>
                                 <substJoin target="#del_di #add_per #del_Igin #add_Igin"/> <!-- L'uso di substJoin invece è dettato dal fatto che si debba esprimere la contemporaneità degli interventi; due subst separati avrebbero fatto perdere questa indormazione. Ugaule nel caso di 11r1-->
@@ -1457,8 +1446,7 @@
                             <!-- 
                                  <del rend="strikethrough" xml:id="del_privatamente">privatamente</del>
                                  <add place="above" xml:id="add_comeesterni">come esterni,</add>
-                                 <del rend="overwritten" xml:id="del_in">in</del>
-                                 <add place="superimposed" xml:id="add_nel">nel</add>
+                                 <del rend="overwritten" xml:id="del_in">in</del><add place="superimposed" xml:id="add_nel">nel</add>
                                  <substJoin target="#del_privatamente #add_comeesterni #del_in #add_nel"/>
                             -->
                             
@@ -1516,8 +1504,7 @@
                                 <lb n="4"/>lessi e gustai con nuovo piacere le famose <title><ref target="#Stanze_Giostra" type="biblio">stanze</ref></title>del
                                 <lb n="5"/><persName ref="#Agnolo_Poliziano">Poliziano</persName> sulla [Dolcezza della vita campestre] (<quote>Quant’è
                                     <lb n="6"/>più dolce, quant’è più sicura </quote>etc) talché non potei stare 
-                                <mod change="#fase-B"><del rend="overwritten" xml:id="del_di2">di</del>
-                                    <add place="superimposed" xml:id="add_a">a</add>
+                                <mod change="#fase-B"><del rend="overwritten" xml:id="del_di2">di</del><add place="superimposed" xml:id="add_a">a</add>
                                     <del rend="strikethrough" xml:id="del_imp">im</del>
                                     <lb n="7"/>
                                     <add place="inline" xml:id="add_non">non</add>
@@ -1527,8 +1514,7 @@
                         </p>
                         <p rend="indent" change="#fase-B">
                             <lb n="10"/>Gli <title><ref target="#Ospizi_Marini">ospizi marini</ref></title> dello <persName ref="#Giacomo_Zanella">Zanella</persName>; e soprattutto mi piacquero
-                                <lb n="11"/>le 8 prime ottave del canto 3 della <title><ref target="#Gerusalemme_Liberata">Gerusalemme Libera<hi rend="soloDiplomatica">-</hi><lb n="12" rend="soloDiplomatica"/>ta</ref></title>. Dolcissim
-                                <mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst></mod> mi parvero la <title><ref target="#Ave_Maria_della_Sera"><hi rend="underline">
+                                <lb n="11"/>le 8 prime ottave del canto 3 della <title><ref target="#Gerusalemme_Liberata">Gerusalemme Libera<hi rend="soloDiplomatica">-</hi><lb n="12" rend="soloDiplomatica"/>ta</ref></title>. Dolcissim<mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst></mod> mi parvero la <title><ref target="#Ave_Maria_della_Sera"><hi rend="underline">
                                             <mod change="#fase-B"><subst><del rend="overwritten">p</del><add place="superimposed">P</add></subst></mod>reghiera della</hi>
                                         <lb n="13"/><hi rend="underline">sera</hi></ref></title> della <persName ref="#Giannina_Milli">Milli</persName> e 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">la</del>
@@ -1577,8 +1563,7 @@
                                 <lb n="6"/>
                                 <mod change="#fase-B"><subst><del rend="strikethrough">La</del>
                                         <add place="inline">Inoltre</add> </subst></mod>la passione di questi libri o meglio delle poesie 
-                                <lb n="7"/>che trovav
-                                <mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> solo in questi libri mi rese assolutamente
+                                <lb n="7"/>che trovav<mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> solo in questi libri mi rese assolutamente
                                 <lb n="8"/>svogliato di tutto che non era versi; e accrebbe
                                 <mod change="#fase-B"><del rend="strikethrough">in me</del></mod>
                                 <lb n="9"/>la mia scapataggine, per la quale presso i maestri,
@@ -1637,13 +1622,11 @@
                          <lb n="6"/>
                          <mod change="#fase-B"><subst><del rend="strikethrough">La</del>
                          <add place="inline">Inoltre</add> </subst></mod>la passione di questi libri o meglio delle poesie 
-                         <lb n="7"/>che trovav
-                         <mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> solo in questi libri mi rese assolutamente
+                         <lb n="7"/>che trovav<mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> solo in questi libri mi rese assolutamente
                          <lb n="8"/>svogliato di tutto che non era versi; e accrebbe
                          <mod change="#fase-B"><del rend="strikethrough">in me</del></mod>
                          <lb n="9"/>la mia scapataggine, per la quale presso i maestri,
-                         <lb n="10"/><mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst></mod> i superiori persi la stima 
-                         <mod change="#fase-B"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del><add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
+                         <lb n="10"/><mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst></mod> i superiori persi la stima<mod change="#fase-B"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del><add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                          Quando si scrive qualcosa sopra qualcos'altro si usa del rend overwritten e place su add superimposed. Vedi ⚓︎12.3.4.7 Instant Corrections nella TEI
                          <lb n="11"/><mod change="#fase-B"><metamark xml:id="ref_1" target="#testo_aggiunta_12v" rend="superimposed">(1)</metamark><choice resp="#TAV"><sic/><corr><add place="opposite" copyOf="#testo_aggiunta_12v"> Molte volte <subst><add place="inline">m’avvenne</add>
                          <del rend="strikethrough">andare</del></subst>
@@ -1849,16 +1832,14 @@
                                 <lb n="6"/>sol<mod change="#fase-B"><subst><del rend="overwritten">l</del><add place="superimposed">o</add></subst></mod> alla battaglia, anzi mi sembrarono nemici,
                                 <lb n="7"/>ed io desiderai la solitudine, odiai la loro com<hi rend="soloDiplomatica">-</hi><lb n="8" rend="soloDiplomatica"/>pagnia. 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">Il g</del>
-                                        <add place="inline">Durante</add> </subst></mod>il giorno nello studio co<hi rend="soloDiplomatica">-</hi><lb n="9" rend="soloDiplomatica"/>mune il <persName ref="#Prefetto_Seminario">prefetto</persName> andava dicendo che non studiavo
-                                <mod change="#fase-B"><subst><del rend="overwritten">: <lb/> e</del><add place="superimposed">.
+                                        <add place="inline">Durante</add> </subst></mod>il giorno nello studio co<hi rend="soloDiplomatica">-</hi><lb n="9" rend="soloDiplomatica"/>mune il <persName ref="#Prefetto_Seminario">prefetto</persName> andava dicendo che non studiavo<mod change="#fase-B"><subst><del rend="overwritten">: <lb/> e</del><add place="superimposed">.
                                             <lb n="10"/>E</add></subst></mod> aveva ragione: io studiavo quando lui non
                                 <lb n="11"/>mi vedeva; lungo le ore della notte nella spolta
                                 <lb n="12"/>cella ricordo aver sfogliato centinaia di 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">fogl</del>
                                         <add place="inline">pagi<hi rend="soloDiplomatica">-</hi><lb n="13" rend="soloDiplomatica"/>ne</add></subst></mod> 
                                 <mod change="#fase-B"><subst><del rend="strikethrough">di cerc</del>
-                                        <add place="inline">assetato</add></subst></mod> di uno studio che mi contentas<hi rend="soloDiplomatica">-</hi><lb n="14" rend="soloDiplomatica"/>se, e sul quale non vede
-                                <mod change="#fase-B"><subst><del rend="overwritten">vo</del><add place="superimposed">ss</add></subst></mod>i <mod change="#fase-B">
+                                        <add place="inline">assetato</add></subst></mod> di uno studio che mi contentas<hi rend="soloDiplomatica">-</hi><lb n="14" rend="soloDiplomatica"/>se, e sul quale non vede<mod change="#fase-B"><subst><del rend="overwritten">vo</del><add place="superimposed">ss</add></subst></mod>i <mod change="#fase-B">
                                     <del rend="strikethrough">di fu</del></mod> maestri, 
                                 <app><lem varSeq="3"><mod change="#fase-B"><subst><del rend="strikethrough"><add place="above">a criticare</add></del><add place="inline">a dirigere e a giudicare.</add></subst></mod></lem><rdg varSeq="2"><mod change="#fase-B"><subst><del rend="strikethrough">dirigenti e sentenziosi</del><add place="above">a criticare</add></subst></mod></rdg><rdg varSeq="1"><mod change="#fase-B">dirigenti e sentenziosi</mod></rdg></app>
 <!-- Versione precedente (mod senza app), conservata:
@@ -1919,8 +1900,7 @@
                                 <mod change="#fase-B"><add place="above">da’ maestri</add></mod><note n="2" resp="ST">Lezione cerchiata con il lapis - E</note>
                                 <hi rend="underline" change="#strato-E">poco</hi> latino; con poca
                                 <lb n="11"/>voglia e tempo di attendere a uno studio regolare.
-                                <lb n="12"/>Però trovai un rifugio ne’ miei dolori d
-                                <mod change="#fase-B"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> fanciullo.
+                                <lb n="12"/>Però trovai un rifugio ne’ miei dolori d<mod change="#fase-B"><subst><del rend="overwritten">i</del><add place="superimposed">a</add></subst></mod> fanciullo.
                                 <lb n="13"/>
                                 <mod change="#fase-B">
                                     <add place="above" seq="1">Nel maggio di quell’anno 1905</add> 
@@ -1995,8 +1975,7 @@
 <!-- Versione precedente (mod senza app), conservata:
 <mod change="#fase-B">
                                     <del rend="strikethrough" seq="6"><subst>
-                                            <del rend="overwritten" seq="5">non</del>
-                                            <add place="superimposed" seq="5">la</add>
+                                            <del rend="overwritten" seq="5">non</del><add place="superimposed" seq="5">la</add>
                                         </subst>
                                         <subst>
                                             <del rend="strikethrough" seq="1">frucai tutte le librerie</del>
@@ -2243,8 +2222,7 @@
                         <fw place="top_right" type="pageNum"><mod change="#fase-C">19</mod></fw>
                         
                         <p rend="indent" change="#fase-C">
-                                <lb n="1"/>I principii erano molteplici e 
-                                <mod change="#fase-C"><subst><del rend="overwritten">r</del><add place="superimposed">v</add></subst></mod>ari; uno dei quali era
+                                <lb n="1"/>I principii erano molteplici e<mod change="#fase-C"><subst><del rend="overwritten">r</del><add place="superimposed">v</add></subst></mod>ari; uno dei quali era
                                 <lb n="2"/>questo:</p>
                         <sp who="#Dario" change="#fase-C"><speaker><lb n="3"/>Dario:</speaker><lg change="#fase-C">
                                     <l n="1">Sorgi, Daniele; la fortuna arride</l>
@@ -2286,16 +2264,11 @@
                         </p>
                         <p rend="indent" change="#fase-D">
                                 <lb n="4"/>Come ho già detto, principiai questo mio lavoro nel novembre del 1905,
-                                <lb n="5"/>quando io camminav
-                                <mod change="#fase-D"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> in 13 anni e frequentavo 2 ginna<hi rend="soloDiplomatica">-</hi><lb n="6" rend="soloDiplomatica"/>siale. Tostochè mi venne in testa di vendicarmi di quella
+                                <lb n="5"/>quando io camminav<mod change="#fase-D"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> in 13 anni e frequentavo 2 ginna<hi rend="soloDiplomatica">-</hi><lb n="6" rend="soloDiplomatica"/>siale. Tostochè mi venne in testa di vendicarmi di quella
                                 <lb n="7"/>creduta oppressione 
                                 <mod change="#fase-D"><subst><del rend="strikethrough">com</del>
                                         <add place="inline">scrivendo</add></subst></mod> un’opera che ritraesse simboli<hi rend="soloDiplomatica">-</hi><lb n="8" rend="soloDiplomatica"/>camente il suo carattere, mi s’affacciò davanti la difficoltà
-                                <lb n="9"/>della forma. La metrica non <mod change="#fase-D">l
-                                    <del rend="overwritten" xml:id="del_o">o</del>
-                                    <add place="superimposed" xml:id="agg_ap">’</add>avevo mai vist
-                                    <del rend="overwritten" xml:id="del_visto">o</del>
-                                    <add place="superimposed" xml:id="agg_vista">a</add>
+                                <lb n="9"/>della forma. La metrica non <mod change="#fase-D">l<del rend="overwritten" xml:id="del_o">o</del><add place="superimposed" xml:id="agg_ap">’</add>avevo mai vist<del rend="overwritten" xml:id="del_visto">o</del><add place="superimposed" xml:id="agg_vista">a</add>
                                     <substJoin target="#del_o #agg_ap"/>
                                     <substJoin target="#del_visto #agg_vista"/>
                                 </mod> e 
@@ -2542,8 +2515,7 @@
                                 <app><lem varSeq="2"><mod change="#fase-D">me <subst><add place="above">ne</add><del rend="strikethrough">l'</del></subst> avrebbe tosto <subst><del rend="strikethrough">proibito</del><add place="above">punito</add></subst> come <add place="above">d'</add>un delitto <del rend="strikethrough">de<hi rend="soloDiplomatica">-</hi><lb rend="soloDiplomatica"/>gno d'ergastolo</del></mod></lem><!-- mi ero scordata il mod nel rdg: è lo stesso del lem (#fase-D), così la prima fase compare nel box --><rdg varSeq="1"><mod change="#fase-D">me l’avrebbe tosto proibito come un delitto degno d’ergastolo</mod></rdg></app>
                                 <lb n="9"/>, e <mod change="#fase-D"><subst><del rend="strikethrough">d</del><add place="inline">per</add></subst></mod> <mod change="#fase-D"><add place="above">non</add></mod> essere veduto dai compagni i quali
                                 <lb n="10"/>avrebbero potuto riferire al <persName ref="#Prefetto_Seminario">prefetto</persName>. Quindi una barca di libri
-                                <lb n="11"/>studiavo che coprissero il mio operato <mod change="#fase-D"> <del rend="overwritten" xml:id="del_punto">.</del>
-                                    <add place="superimposed" xml:id="add_virgola">,</add>
+                                <lb n="11"/>studiavo che coprissero il mio operato <mod change="#fase-D"> <del rend="overwritten" xml:id="del_punto">.</del><add place="superimposed" xml:id="add_virgola">,</add>
                                     <subst> 
                                         <del rend="strikethrough" seq="1">In q</del>
                                         <del rend="strikethrough" seq="2"><add place="inline" seq="1">Sembr</add></del>
@@ -2977,8 +2949,7 @@
                                     <subst>
                                         <del rend="strikethrough" xml:id="del_male">male</del>
                                         <add place="above" xml:id="add_peggiore">peggiore</add>
-                                        <del rend="overwritten" xml:id="del_gap"><gap unit="char" quantity="1"/></del>
-                                        <add place="superimposed" xml:id="add_del">del</add>
+                                        <del rend="overwritten" xml:id="del_gap"><gap unit="char" quantity="1"/></del><add place="superimposed" xml:id="add_del">del</add>
                                     </subst> <substJoin target="#del_male #add_peggiore #del_gap #add_del"/><!-- <subst><del rend="strikethrough">male</del> <add place="above">peggiore</add> <del rend="overwritten"><gap unit="char" quantity="1"/></del><add place="superimposed">del</add></subst>-->
                                 </mod> primo, senza essermi corretto, ma <mod change="#fase-D"><subst><del rend="strikethrough">es</del> <add place="inline">fortifi<hi rend="soloDiplomatica">-</hi><lb n="18" rend="soloDiplomatica"/>cato</add></subst></mod> all'avversità <mod change="#fase-D">
                                     <subst>
@@ -3367,8 +3338,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                         <lb n="4"/><add place="inline">per</add></subst></mod> <mod change="#fase-F">
                                     <subst>
                                         <del rend="strikethrough" seq="1">9</del>
-                                        <del rend="overwritten" seq="2"><add place="inline">10</add></del>
-                                        <add place="superimposed" seq="2">9</add>
+                                        <del rend="overwritten" seq="2"><add place="inline">10</add></del><add place="superimposed" seq="2">9</add>
                                     </subst> <!-- <subst seq="2"><del rend="overwritten"><subst seq="1"><del rend="strikethrough">9</del> <add place="inline">10</add></subst></del> <add place="superimposed">9</add></subst>-->
                                 </mod> mesi mi era tolta la vista di quella <mod change="#fase-F"><add place="above">creatura</add></mod> che mi aveva rapito il cuore
                                 <lb n="5"/>insieme e la vita. <mod change="#fase-F"><subst><del rend="strikethrough">Da <del rend="strikethrough">l</del> la famiglia era già tre anni che vivevo
