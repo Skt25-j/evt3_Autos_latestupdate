@@ -100,6 +100,15 @@ evt-text-panel .evt-exponent {
 evt-substitution:has([data-rend="overwritten"]) .del,
 evt-substitution:has([data-rend="overwritten"]) .add,
 evt-substitution:has([data-rend="overwritten"]) ndc-dynamic { margin: 0 !important; }
+/* [Autos] In critica il <del rend="overwritten"> non viene reso: percio' il selettore
+   :has([data-rend="overwritten"]) qui sopra non trova nulla e NON azzera il margine. Il
+   wrapper dinamico dell'<add> (ndc-dynamic.add) conservava cosi' il margin-right 0.3em di
+   ".subst .add", lasciando uno spazio spurio a meta' parola ("sce na" invece di "scena",
+   "imperios o" invece di "imperioso"). Agganciamo l'azzeramento al superimposed, che e'
+   presente in TUTTE le viste (l'override [data-place="superimposed"] di sopra colpisce solo
+   lo span .add, non il suo wrapper ndc-dynamic: per questo serve anche la riga qui sotto). */
+evt-substitution:has([data-place="superimposed"]) .add,
+evt-substitution:has([data-place="superimposed"]) ndc-dynamic { margin: 0 !important; }
 
 *[rend="underline"] {
     text-decoration: underline !important;
