@@ -2343,10 +2343,10 @@
                         <p rend="indent" change="#fase-D">
                                 <lb n="1"/>Nella prima 
                                 <app>
-                                    <lem varSeq="1"><mod change="#fase-D">edizione</mod></lem>
-                                    <rdg varSeq="2" ana="#altVariant"><mod change="#strato-I">
+                                    <lem varSeq="1"><mod change="#strato-I">
                                             <add place="above">versione</add>
-                                        </mod></rdg>
+                                        </mod></lem>
+                                    <rdg varSeq="2" ana="#altVariant"><mod change="#fase-D">edizione</mod></rdg>
                                 </app>
                                 della mia tragedia trovai tuttavia molti versi
                                 <lb n="2"/>zoppicanti, ma nella seconda <mod change="#fase-D">
