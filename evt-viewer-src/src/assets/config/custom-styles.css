@@ -146,8 +146,8 @@ evt-generic-element.hi[change="#fase-H"] { text-decoration-color: #512DA8 !impor
 evt-generic-element.hi[change="#strato-I"] { text-decoration-color: #2404B5 !important; }
 evt-generic-element.hi[change="#strato-L"] { text-decoration-color: #BB1515 !important; }
 evt-generic-element.hi[change="#strato-M"] { text-decoration-color: #080277 !important; }
-evt-generic-element.hi[change="#strato-O"] { text-decoration-color: #9B9B9B !important; }
-evt-generic-element.hi[change="#fase-N"] { text-decoration-color: #260F8B !important; }
+evt-generic-element.hi[change="#strato-N"] { text-decoration-color: #9B9B9B !important; }
+evt-generic-element.hi[change="#fase-O"] { text-decoration-color: #260F8B !important; }
 evt-generic-element.hi[change="#strato-P"] { text-decoration-color: #6E6A6A !important; }
 evt-generic-element.hi[change="#strato-X"] { text-decoration-color: #00796B !important; }
 
@@ -221,12 +221,12 @@ evt-addition evt-note {
 evt-mod[change="#strato-E"] * {
     color: rgb(93, 91, 91) !important;
 }
-evt-mod[change="#strato-O"] * {
+evt-mod[change="#strato-N"] * {
     color: rgb(90, 92, 90);
     
 }
 
-evt-mod[change="#fase-N"] * {
+evt-mod[change="#fase-O"] * {
     color: rgb(38, 15, 139) !important;
 }
 
@@ -680,13 +680,13 @@ html[data-el="interpretative"] [data-rend~="soloDiplomatica"] { display: none !i
 
 /* --- colore per fase (solo changesView), SENZA sottolineatura --- */
 /* Testo NERO di default; solo queste fasi mantengono il colore:      */
-/* strato-E, strato-I, strato-L, strato-M, fase-N, strato-O, strato-P. */
+/* strato-E, strato-I, strato-L, strato-M, strato-N, fase-O, strato-P. */
 html[data-el="changesView"] [data-change="#strato-E"] { color: #9E9B9B; }
 html[data-el="changesView"] [data-change="#strato-I"] { color: #2404B5; }
 html[data-el="changesView"] [data-change="#strato-L"] { color: #BB1515; }
 html[data-el="changesView"] [data-change="#strato-M"] { color: #080277; }
-html[data-el="changesView"] [data-change="#fase-N"] { color: #260F8B; }
-html[data-el="changesView"] [data-change="#strato-O"] { color: #9B9B9B; }
+html[data-el="changesView"] [data-change="#fase-O"] { color: #260F8B; }
+html[data-el="changesView"] [data-change="#strato-N"] { color: #9B9B9B; }
 html[data-el="changesView"] [data-change="#strato-P"] { color: #6E6A6A; }
 
 /* ============================================================= */
