@@ -2835,21 +2835,24 @@
                         
                         <p rend="intent" change="#fase-D">
                             <lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
-                            <lb n="9"/>di punizioni e che ho descritto,germogliò un<mod change="#fase-D"><del rend="strikethrough">'</del></mod>altro non
-                            <lb n="10"/> e fu l’ira. Il carattere fiero, <mod change="#fase-D">
+                            <lb n="9"/>di punizioni e che ho descritto, germogliò un<mod change="#fase-D"><del rend="strikethrough">'</del></mod>altro non migliore
+                            <lb n="10"/>e fu l’ira. Il carattere fiero, <mod change="#fase-D">
     <subst seq="2">
         <del rend="strikethrough"><subst seq="1"><del rend="strikethrough">a</del><add place="inline">stuzzicato</add></subst></del>
         <lb n="11"/><add place="inline">provocato</add>
-    </subst>
+    </subst>  <!-- Meglio di app perché "a" è un falso avvio, <app>
+    <lem varSeq="2"><mod change="#fase-D"><subst><del rend="strikethrough">stuzzicato</del><add place="inline">provocato</add></subst></mod></lem>
+    <rdg varSeq="1"><mod change="#fase-D"><subst><del rend="strikethrough">a</del><add place="inline">stuzzicato</add></subst></mod></rdg>
+</app>  -->
 </mod> divenne irascibilissimo e fece come la piaga
-                            <lb n="12"/> molto stuzzicata. La rabbia <mod change="#fase-D"><del rend="strikethrough">nonché l'ira</del></mod> eccedeva per nulla
+                            <lb n="12"/>molto stuzzicata. La rabbia <mod change="#fase-D"><del rend="strikethrough">nonché l'ira</del></mod> eccedeva per nulla
                             <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
-                            <lb n="14"/>’andava raramente e penosamente soffocando, e più
-                            <lb n="15"/> spesso <app>
+                            <lb n="14"/>l’andava raramente e penosamente soffocando, e più
+                            <lb n="15"/>spesso <app>
                                     <lem varSeq="3"><mod change="#fase-D">di
                                             <subst><del rend="strikethrough">sferrandola</del>
                                                 <add place="above">sfrenandola</add>
-                                            </subst> a solo nella mia camera; talora <lb n="16"/> trascesi ad atti che anche a me stesso sembrrono con ragione da pazzo.
+                                            </subst> a solo nella mia camera; talora <lb n="16"/> trascesi ad atti che anche a me stesso sembrarono con ragione da pazzo.
                                         </mod>
                                 </lem>
                                     <rdg varSeq="2">
