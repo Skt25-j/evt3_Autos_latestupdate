@@ -2837,10 +2837,11 @@
                             <lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
                             <lb n="9"/>di punizioni e che ho descritto,germogliò un<mod change="#fase-D"><del rend="strikethrough">'</del></mod>altro non
                             <lb n="10"/> e fu l’ira. Il carattere fiero, <mod change="#fase-D">
-                                <del><del rend="strikethrough">a</del>
-                                <add place="inline">stuzzicato</add></del>
-                                <lb n="11"/><add place="inline">provocato</add>
-                            </mod> divenne irascibilissimo e fece come la piaga
+    <subst seq="2">
+        <del rend="strikethrough"><subst seq="1"><del rend="strikethrough">a</del><add place="inline">stuzzicato</add></subst></del>
+        <lb n="11"/><add place="inline">provocato</add>
+    </subst>
+</mod> divenne irascibilissimo e fece come la piaga
                             <lb n="12"/> molto stuzzicata. La rabbia <mod change="#fase-D"><del rend="strikethrough">nonché l'ira</del></mod> eccedeva per nulla
                             <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
                             <lb n="14"/>’andava raramente e penosamente soffocando, e più
