@@ -2831,8 +2831,20 @@
                                 <lb n="4"/>mi dava a conoscere il mio fiero spirito che <mod change="#fase-D"><subst><del rend="strikethrough">si</del> <add place="inline">voleva</add></subst></mod>
                                 <lb n="5"/>in qualche modo segnalar<mod change="#fase-D"><subst><del rend="overwritten">e</del><add place="superimposed">si</add></subst></mod>, <mod change="#fase-D"><add place="above">elevarsi</add></mod> e che non volendo essere pari,
                                 <lb n="6"/>uguale agli altri sceglieva un mezzo falso ed erroneo
-                                <lb n="7"/><mod change="#fase-D"><add place="above">tanto</add></mod> per dire: «io <mod change="#fase-D"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod>voi».</p>
-                        <p rend="indent" change="#fase-D"><app>
+                                <lb n="7"/><mod change="#fase-D"><add place="above">tanto</add></mod> per dire: «io <mod change="#fase-D"><subst><del rend="strikethrough">non la penso come</del> <add place="above">sono sopra</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> voi».</p>
+                        
+                        <p rend="intent" change="#fase-D">
+                            <lb n="8"/>Insieme agli altri difetti che io imparai a f<mod change="#fase-D"><subst><del rend="overwritten">are</del><add place="superimposed">orza</add></subst></mod>
+                            <lb n="9"/>di punizioni e che ho descritto,germogliò un<mod change="#fase-D"><del rend="strikethrough">'</del></mod>altro non
+                            <lb n="10"/> e fu l’ira. Il carattere fiero, <mod change="#fase-D">
+                                <del><del rend="strikethrough">a</del>
+                                <add place="inline">stuzzicato</add></del>
+                                <lb n="11"/><add place="inline">provocato</add>
+                            </mod> divenne irascibilissimo e fece come la piaga
+                            <lb n="12"/> molto stuzzicata. La rabbia <mod change="#fase-D"><del rend="strikethrough">nonché l'ira</del></mod> eccedeva per nulla
+                            <lb n="13"/>e non potendo sfogarla all’esterno davanti agli altri,
+                            <lb n="14"/>’andava raramente e penosamente soffocando, e più
+                            <lb n="15"/> spesso <app>
                                     <lem varSeq="3"><mod change="#fase-D">di
                                             <subst><del rend="strikethrough">sferrandola</del>
                                                 <add place="above">sfrenandola</add>
