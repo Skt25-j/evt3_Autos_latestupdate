@@ -1,4 +1,9 @@
 <ng-container *ngIf="!layerHidden()">
+	<!-- [Autos] Badge con la lettera dello strato (es. "E") per le annotazioni a blocco,
+	     come il marcatore delle correzioni <mod>. -->
+	<span *ngIf="showBlockLayerMarker()" class="layerMarker"
+		[title]="getLayerTitle(data?.attributes?.change)"
+		[style.background-color]="getLayerColor(data?.attributes?.change)">{{getLayerLabel(data?.attributes?.change)}}</span>
 	<evt-content-viewer class="genericElement {{data.class}}" [evtHtmlAttributes]="data?.attributes"
 		*ngFor="let el of data.content" [content]="el" [editionLevel]="editionLevel" [itemsToHighlight]="itemsToHighlight"
 		[evtHighlight]="highlightData" [textFlow]="textFlow" [withDeletions]="withDeletions" [selectedLayer]="selectedLayer"></evt-content-viewer>

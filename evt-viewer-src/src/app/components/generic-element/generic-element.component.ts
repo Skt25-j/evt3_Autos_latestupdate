@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { GenericElement } from '../../models/evt-models';
 import { register } from '../../services/component-register.service';
 import { EVTStatusService } from '../../services/evt-status.service';
+import { AppConfig } from '../../app.config';
 import { EditionlevelSusceptible, Highlightable, ShowDeletionsSusceptible, TextFlowSusceptible } from '../components-mixins';
 
 export interface GenericElementComponent extends EditionlevelSusceptible, Highlightable, TextFlowSusceptible, ShowDeletionsSusceptible { }
@@ -23,6 +24,9 @@ export class GenericElementComponent implements OnInit, OnDestroy {
   // effectiveCurrentLayer): cosi' il filtro segue davvero la fase selezionata.
   public orderedLayers: string[] = [];
   private layerSub: Subscription;
+
+  // [Autos] Mostra il badge con la lettera dello strato (come le correzioni <mod>).
+  public showLayerMarkers = AppConfig.evtSettings.edition.showChangeLayerMarkerInText;
 
   constructor(public evtStatusService: EVTStatusService) {}
 
@@ -86,5 +90,40 @@ export class GenericElementComponent implements OnInit, OnDestroy {
     const current = this.effectiveCurrentLayer();
 
     return this.getLayerIndex(current) < this.getLayerIndex(change);
+  }
+
+  // [Autos] Badge con la lettera dello strato (es. "E") per le annotazioni a blocco
+  // (<ab>/<div>/<seg> con @change) in changesView: stesso marcatore delle correzioni
+  // <mod>, cosi' l'annotazione risulta visibilmente agganciata alla sua fase/strato.
+  // Compare solo quando l'annotazione e' visibile (non filtrata dalla fase).
+  showBlockLayerMarker(): boolean {
+    const change = this.data?.attributes?.change;
+
+    return this.editionLevel === 'changesView'
+      && this.showLayerMarkers
+      && !!change
+      && GenericElementComponent.FILTERABLE_BLOCKS.includes(this.data?.class)
+      && !this.layerHidden();
+  }
+
+  // "strato-E" -> "E" (come getLayerLabel di mod.component).
+  getLayerLabel(layer: string): string {
+    if (!layer) { return ''; }
+    const clean = layer.replace('#', '');
+    const parts = clean.split('-');
+
+    return parts.length > 1 ? parts[parts.length - 1] : clean;
+  }
+
+  // "strato-E" -> nome leggibile per il tooltip del badge.
+  getLayerTitle(layer: string): string {
+    return (layer || '').replace('#', '').replace('-', ' ');
+  }
+
+  getLayerColor(layer: string): string {
+    const layerColors = AppConfig.evtSettings.edition.changeSequenceView.layerColors;
+    const key = (layer || '').replace('#', '');
+
+    return (key && layerColors && layerColors[key]) ? layerColors[key] : 'black';
   }
 }
