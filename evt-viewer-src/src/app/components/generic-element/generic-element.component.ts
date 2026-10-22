@@ -19,7 +19,8 @@ export class GenericElementComponent implements OnInit, OnDestroy {
 
   // [Autos] Filtro-per-fase su @change dei blocchi (div, ab, seg): stessa logica di
   // <mod> in changesView, ma senza aprire la scheda dell'apparato. L'ordine delle fasi
-  // arriva da currentChanges$; la fase corrente dall'input selectedLayer (live).
+  // arriva da currentChanges$; la fase corrente LIVE da updateLayer$ (vedi
+  // effectiveCurrentLayer): cosi' il filtro segue davvero la fase selezionata.
   public orderedLayers: string[] = [];
   private layerSub: Subscription;
 
@@ -62,7 +63,12 @@ export class GenericElementComponent implements OnInit, OnDestroy {
   // usiamo l'ultima fase ordinata: cosi' selezionarla mostra il testo finale completo
   // invece di nasconderlo (lo strato non ha una posizione nella sequenza).
   private effectiveCurrentLayer(): string {
-    const sel = this.selectedLayer;
+    // [Autos] Fonte di verita' LIVE della fase selezionata: updateLayer$ (il
+    // BehaviorSubject del selettore), letto in modo sincrono a ogni valutazione, come
+    // in mod-group. currentChanges$ NON ri-emette al cambio fase, quindi l'@Input
+    // selectedLayer puo' restare indietro per i blocchi creati dinamicamente (era la
+    // causa per cui le annotazioni @change su <ab>/<div> restavano sempre visibili).
+    const sel = this.evtStatusService.updateLayer$?.getValue() || this.selectedLayer;
     const inOrder = sel && this.orderedLayers.indexOf(sel.replace('#', '')) !== -1;
 
     return inOrder ? sel : this.orderedLayers[this.orderedLayers.length - 1];
