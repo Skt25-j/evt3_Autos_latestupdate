@@ -3543,7 +3543,10 @@ in una <mod change="#fase-F">
                         <p rend="indent" change="#fase-G"><lb n="12"/>Ebbi a <mod change="#fase-G"><subst><del rend="strikethrough">scuola</del> <add place="above">maestro</add></subst></mod> di Francese e di Religione il <choice>
                                     <abbr>Canco</abbr>
                                     <expan>Canonico</expan>
-                                </choice> d. Ilario
+                                </choice> <choice>
+                                    <abbr>d.</abbr>
+                                    <expan>don</expan>
+                                </choice> Ilario
                                 <lb n="13"/>Imberciatori, del quale serbo grata memoria per avermi,
                                 <lb n="14"/>come dirò <mod change="#fase-G"><subst><del rend="strikethrough">in avanti</del> <add place="inline">tra poco</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. -->, <mod change="#fase-G"><add place="above">saputo</add></mod> mostrare la bellezza de la religio<hi rend="soloDiplomatica">-</hi><lb n="15" rend="soloDiplomatica"/>ne intesa nel vero senso, priva di superstizioni, cauta <mod change="#fase-G"><subst><del rend="strikethrough">ma</del> <add place="above">e</add></subst></mod>
