@@ -266,7 +266,24 @@
         </profileDesc>
         <encodingDesc>
             <variantEncoding location="internal" method="parallel-segmentation"/>
-            
+
+            <editorialDecl>
+                <p>L'ordine di lettura dell'edizione segue la successione delle Fasi compositive, non
+                    la disposizione topografica delle carte né la numerazione d'autore (paginazione,
+                    strato-E), che articola due diegesi parallele: l'una sui recto (Fasi A-C), l'altra
+                    sui verso e sui recto finali (Fasi D-G). Tale ordine, di responsabilità editoriale,
+                    è dichiarato come catena di rinvii @next/@prev sugli elementi &lt;div type="page"&gt;
+                    (contenitore logico della carta, non il &lt;pb&gt;, che è un milestone documentario)
+                    ed è applicato nella sola vista critica; nella vista diplomatico-interpretativa le
+                    carte restano nell'ordine fisico. Le trasposizioni d'autore propriamente dette,
+                    segnalate nei manoscritti da rinvii, numeri o frecce, restano codificate con
+                    &lt;transpose&gt; e @resp="#TUS".</p>
+                <p>I numeri di pagina, racchiusi in &lt;fw type="pageNum"&gt;, recano
+                    @rend="soloDiplomatica": compaiono perciò nella sola vista diplomatico-interpretativa
+                    e sono omessi nella critica, trattandosi di elementi documentari estranei al testo
+                    di lettura.</p>
+            </editorialDecl>
+
             <tagsDecl>
                 <rendition xml:id="apice" scheme="css">
                     vertical-align: super;
