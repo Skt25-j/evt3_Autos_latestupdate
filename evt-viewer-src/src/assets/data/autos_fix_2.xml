@@ -370,6 +370,16 @@
                 <ptr target="#superiore_22v1"/>
                 <ptr target="#curioso_22v1"/>
             </transpose>
+            <transpose resp="#TAV" cert="low">
+                <!-- [Autos] Ricomposizione dei rimandi d'autore (segni di richiamo fisici, reinterpretati)
+                     su 7r2(fase-D)/3v2/4v2: dopo 6v2 i frammenti vanno letti in quest'ordine.
+                     Tenuta come <transpose> (autoriale) e non nella catena @next/@prev (editoriale). -->
+                <ptr target="#Quaderno2_6v"/>
+                <ptr target="#Quaderno2_7r_faseD"/>
+                <ptr target="#Quaderno2_3v_b"/>
+                <ptr target="#Quaderno2_4v"/>
+                <ptr target="#Quaderno2_7r_faseD2"/>
+            </transpose>
         </listTranspose>
     </standOff>
     <text xml:id="Autos">
@@ -626,7 +636,7 @@
                     </div>
                     
                     
-                    <div xml:id="pd_Quaderno1_1r" prev="#Copertina_interno" next="#pd_Quaderno1_2r" type="page">
+                    <div prev="#Copertina_interno" next="#pd_Quaderno1_2r" xml:id="pd_Quaderno1_1r" type="page">
                         <pb n="1r1" xml:id="Quaderno1_1r" facs="1r.jpg" change="#fase-A"/> 
                         <ab rend="indent">
                             <lb n="1"/>
@@ -770,7 +780,7 @@
                         <pb n="1v1" facs="1v.jpg" change="#fase-A"/>
                         <p rend="indent soloDiplomatica"><mod change="#fase-C"><add place="margin-left"><hi rend="underline">Corrigendo</hi></add></mod></p>
                     </div>
-                    <div xml:id="pd_Quaderno1_2r" prev="#pd_Quaderno1_1r" next="#pd_Quaderno1_2v" type="page">
+                    <div prev="#pd_Quaderno1_1r" next="#pd_Quaderno1_2v" xml:id="pd_Quaderno1_2r" type="page">
                         <pb n="2r1" xml:id="Quaderno1_2r" facs="2r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-B"><add>2</add></mod></fw>
                         <p rend="indent"><lb n="1"/>orgoglioso, che crebbe sempre più col crescere di essa, che divenne un<lb n="2"/> albero robusto e arduo a
@@ -842,10 +852,10 @@
                             <mod change="#fase-A"><subst><add place="superimposed">n</add><del rend="overwritten">m</del></subst></mod>'ero rimproverato, più
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_2v" prev="#pd_Quaderno1_2r" next="#pd_3r1" type="page">
+                    <div prev="#pd_Quaderno1_2r" next="#pd_3r1" xml:id="pd_Quaderno1_2v" type="page">
                         <pb n="2v1" xml:id="Quaderno1_2v" facs="2v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div xml:id="pd_3r1" prev="#pd_Quaderno1_2v" next="#pd_Quaderno1_3v" type="page">
+                    <div prev="#pd_Quaderno1_2v" next="#pd_Quaderno1_3v" xml:id="pd_3r1" type="page">
                         <pb n="3r1" facs="3r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>3</add></mod></fw>
                         <p rend="indent"><lb n="1"/>mi sembrava ingiusto il rimprovero e più perciò imparava a far osserva<hi rend="soloDiplomatica">-</hi><lb n="2" rend="soloDiplomatica"/>zioni sul contegno de’
@@ -951,10 +961,10 @@
                             cader dalla stima<lb n="19"/> di ragazzo coraggioso o meglio di uomo già serio e esperiente.</p>
                         <p rend="indent"> <lb n="20"/>L’impressione di tal fatto però fu tal che non potei desistere</p>
                     </div>
-                    <div xml:id="pd_Quaderno1_3v" prev="#pd_3r1" next="#pd_4r1" type="page">
+                    <div prev="#pd_3r1" next="#pd_4r1" xml:id="pd_Quaderno1_3v" type="page">
                         <pb n="3v1" xml:id="Quaderno1_3v" facs="3v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div xml:id="pd_4r1" prev="#pd_Quaderno1_3v" next="#pd_Quaderno1_4v" type="page">
+                    <div prev="#pd_Quaderno1_3v" next="#pd_Quaderno1_4v" xml:id="pd_4r1" type="page">
                         <pb n="4r1" facs="4r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>4</add></mod></fw>
                         <p><lb n="1"/>da non descriverla
@@ -1000,10 +1010,10 @@
                                 <lb/><l n="18">un istricabil laccio;</l></lg>
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_4v" prev="#pd_4r1" next="#pd_Quaderno1_5r" type="page">
+                    <div prev="#pd_4r1" next="#pd_Quaderno1_5r" xml:id="pd_Quaderno1_4v" type="page">
                         <pb n="4v1" xml:id="Quaderno1_4v" facs="4v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div xml:id="pd_Quaderno1_5r" prev="#pd_Quaderno1_4v" next="#pd_Quaderno1_5v" type="page">
+                    <div prev="#pd_Quaderno1_4v" next="#pd_Quaderno1_5v" xml:id="pd_Quaderno1_5r" type="page">
                         <pb n="5r1" xml:id="Quaderno1_5r" facs="5r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>5</add></mod></fw>
                         <lg n="3">
@@ -1081,10 +1091,10 @@
                             <lb n="20"/>di quando in quando però mi era dolce andare a ricavarla e specialmente
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_5v" prev="#pd_Quaderno1_5r" next="#pd_Quaderno1_6r" type="page">
+                    <div prev="#pd_Quaderno1_5r" next="#pd_Quaderno1_6r" xml:id="pd_Quaderno1_5v" type="page">
                         <pb n="5v1" xml:id="Quaderno1_5v" facs="5v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div xml:id="pd_Quaderno1_6r" prev="#pd_Quaderno1_5v" next="#pd_Quaderno1_6v" type="page">
+                    <div prev="#pd_Quaderno1_5v" next="#pd_Quaderno1_6v" xml:id="pd_Quaderno1_6r" type="page">
                         <pb n="6r1" xml:id="Quaderno1_6r" facs="6r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>6</add></mod></fw>
                         <p rend="indent">
@@ -1178,10 +1188,10 @@
                             <lb n="20"/>chi sa che stranezza avrei detto. Indispettito, inorgoglito, ratten-
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_6v" prev="#pd_Quaderno1_6r" next="#pd_Quaderno1_7r" type="page">
+                    <div prev="#pd_Quaderno1_6r" next="#pd_Quaderno1_7r" xml:id="pd_Quaderno1_6v" type="page">
                         <pb n="6v1" xml:id="Quaderno1_6v" facs="6v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div type="page" xml:id="pd_Quaderno1_7r" prev="#pd_Quaderno1_6v" next="#pd_Quaderno1_7v">
+                    <div prev="#pd_Quaderno1_6v" next="#pd_Quaderno1_7v" type="page" xml:id="pd_Quaderno1_7r">
                         <pb n="7r1" xml:id="Quaderno1_7r" facs="7r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>7</add></mod></fw>
                         <p rend="indent">
@@ -1262,10 +1272,10 @@
                             <lb n="20"/>mia <mod change="#fase-A"><add place="above">più</add></mod> difficile, mi seppe prendere pel pelo e presto tutto passò.
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_7v" prev="#pd_Quaderno1_7r" next="#pd_Quaderno1_8r" type="page">
+                    <div prev="#pd_Quaderno1_7r" next="#pd_Quaderno1_8r" xml:id="pd_Quaderno1_7v" type="page">
                         <pb n="7v1" xml:id="Quaderno1_7v" facs="7v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div xml:id="pd_Quaderno1_8r" prev="#pd_Quaderno1_7v" next="#pd_Quaderno1_8v" type="page">
+                    <div prev="#pd_Quaderno1_7v" next="#pd_Quaderno1_8v" xml:id="pd_Quaderno1_8r" type="page">
                         <pb n="8r1" xml:id="Quaderno1_8r" facs="8r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>8</add></mod></fw>
                         <p rend="indent">
@@ -1285,11 +1295,11 @@
                             </note>
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_8v" prev="#pd_Quaderno1_8r" next="#pd_Quaderno1_9r" type="page">
+                    <div prev="#pd_Quaderno1_8r" next="#pd_Quaderno1_9r" xml:id="pd_Quaderno1_8v" type="page">
                         <pb n="8v1" xml:id="Quaderno1_8v" type="blank" change="#fase-A"/>
                         <gap reason="deleted" extent="1" unit="pages" resp="#TUS"/>
                     </div>
-                    <div xml:id="pd_Quaderno1_9r" prev="#pd_Quaderno1_8v" next="#pd_Quaderno1_9v" type="page">
+                    <div prev="#pd_Quaderno1_8v" next="#pd_Quaderno1_9v" xml:id="pd_Quaderno1_9r" type="page">
                         <pb n="9r1" xml:id="Quaderno1_9r" facs="9r.jpg" change="#fase-A"/>
                         <gap reason="deleted" extent="half_page" unit="pages" resp="#TUS"/><note type="critical" n="1" resp="#TAV">
                             La carta è stata tagliata - verosimilmente con delle forbici data la natura del taglio.
@@ -1392,11 +1402,11 @@
                                 <add place="below">di mia età</add>.</mod>
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_9v" prev="#pd_Quaderno1_9r" next="#pd_Quaderno1_10r" type="page">
+                    <div prev="#pd_Quaderno1_9r" next="#pd_Quaderno1_10r" xml:id="pd_Quaderno1_9v" type="page">
                         <pb n="9v1" xml:id="Quaderno1_9v" facs="9v.jpg" type="blank" change="#fase-A"/>
                     </div>
                     <div><gap reason="deleted" extent="2" unit="pages" resp="#TUS"/></div>
-                    <div xml:id="pd_Quaderno1_10r" prev="#pd_Quaderno1_9v" next="#pd_Quaderno1_10v" type="page">
+                    <div prev="#pd_Quaderno1_9v" next="#pd_Quaderno1_10v" xml:id="pd_Quaderno1_10r" type="page">
                         <pb n="10r1" xml:id="Quaderno1_10r" facs="10r.jpg" change="#fase-A"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>11</add></mod></fw>
                         <lb n="1"/><ab rend="align-center"><mod change="#fase-B"><add>In <placeName ref="#Seminario_Vescovile">Seminario</placeName> 1<subst><del rend="overwritten">3</del><add place="superimposed">2</add></subst> e 1<subst><del rend="overwritten">5</del><add place="superimposed">3</add></subst>
@@ -1474,10 +1484,10 @@
                             <persName ref="#maestro_Buoni">Vicerettore</persName> dello stesso <placeName ref="#Seminario_Vescovile">Seminario</placeName>: tanto che ri<hi rend="soloDiplomatica">-</hi><lb n="19" rend="soloDiplomatica"/>masi sempre sotto lo sguardo dell’unico maestro di cui io serbi grata <mod change="#fase-A"><del rend="strikethrough">la</del></mod> me<hi rend="soloDiplomatica">-</hi><lb n="20" rend="soloDiplomatica"/>moria, e <mod change="#strato-E"><add place="above">che</add></mod> reputi uomo di senno.
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_10v" prev="#pd_Quaderno1_10r" next="#pd_Quaderno1_11r" type="page">
+                    <div prev="#pd_Quaderno1_10r" next="#pd_Quaderno1_11r" xml:id="pd_Quaderno1_10v" type="page">
                         <pb n="10v1" xml:id="Quaderno1_10v" facs="10v.jpg" type="blank" change="#fase-A"/>
                     </div>
-                    <div xml:id="pd_Quaderno1_11r" prev="#pd_Quaderno1_10v" next="#pd_Quaderno1_11v" type="page">
+                    <div prev="#pd_Quaderno1_10v" next="#pd_Quaderno1_11v" xml:id="pd_Quaderno1_11r" type="page">
                         <pb n="11r1" xml:id="Quaderno1_11r" facs="11r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>12</add></mod></fw>
                         <p rend="indent" change="#fase-B">
@@ -1514,7 +1524,7 @@
                                 <lb n="20"/>al tempo alle lezioni di scuola, nella quale fui sempre
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_11v" prev="#pd_Quaderno1_11r" next="#Quaderno1_12r" type="page">
+                    <div prev="#pd_Quaderno1_11r" next="#Quaderno1_12r" xml:id="pd_Quaderno1_11v" type="page">
                         <pb n="11v1" xml:id="Quaderno1_11v" facs="11v.jpg" type="blank" change="#fase-B"/>
                     </div>
                     
@@ -1667,7 +1677,7 @@
                          </div>-->
                     
                     
-                    <div xml:id="pd_Quaderno1_13r" prev="#Quaderno1_12v" next="#pd_Quaderno1_13v" type="page">
+                    <div prev="#Quaderno1_12v" next="#pd_Quaderno1_13v" xml:id="pd_Quaderno1_13r" type="page">
                         <pb n="13r1" xml:id="Quaderno1_13r" facs="13r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>14</add></mod></fw>
                         <p rend="indent" change="#fase-B">
@@ -1795,9 +1805,9 @@
                                 </mod>
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_13v" prev="#pd_Quaderno1_13r" next="#pd_Quaderno1_14r" type="page">
+                    <div prev="#pd_Quaderno1_13r" next="#pd_Quaderno1_14r" xml:id="pd_Quaderno1_13v" type="page">
                         <pb n="13v1" xml:id="Quaderno1_13v" facs="13v.jpg" type="blank" change="#fase-B"/></div>
-                    <div xml:id="pd_Quaderno1_14r" prev="#pd_Quaderno1_13v" next="#pd_Quaderno1_14v" type="page">
+                    <div prev="#pd_Quaderno1_13v" next="#pd_Quaderno1_14v" xml:id="pd_Quaderno1_14r" type="page">
                         <pb n="14r1" xml:id="Quaderno1_14r" facs="14r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>15</add></mod></fw>
                         <p rend="indent" change="#fase-B">
@@ -1861,9 +1871,9 @@
                                 <lb n="20"/>bravi ed avevano migliori punti e maggiore stima perché   
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_14v" prev="#pd_Quaderno1_14r" next="#pd_Quaderno1_15r" type="page">
+                    <div prev="#pd_Quaderno1_14r" next="#pd_Quaderno1_15r" xml:id="pd_Quaderno1_14v" type="page">
                         <pb n="14v1" xml:id="Quaderno1_14v" facs="14v.jpg" type="blank" change="#fase-B"/></div>
-                    <div xml:id="pd_Quaderno1_15r" prev="#pd_Quaderno1_14v" next="#pd_Quaderno1_15v" type="page">
+                    <div prev="#pd_Quaderno1_14v" next="#pd_Quaderno1_15v" xml:id="pd_Quaderno1_15r" type="page">
                         <pb n="15r1" xml:id="Quaderno1_15r" facs="15r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>16</add></mod></fw>
                         <p rend="indent" change="#fase-B"><lb n="1"/>più buoni e assennati, 
@@ -1915,9 +1925,9 @@
                                 <lb n="20"/>pace. <mod change="#fase-B"><del rend="strikethrough">Tor</del></mod>
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_15v" prev="#pd_Quaderno1_15r" next="#pd_Quaderno1_16r" type="page">
+                    <div prev="#pd_Quaderno1_15r" next="#pd_Quaderno1_16r" xml:id="pd_Quaderno1_15v" type="page">
                         <pb n="15v1" xml:id="Quaderno1_15v" facs="15v.jpg" type="blank" change="#fase-B"/></div>
-                    <div xml:id="pd_Quaderno1_16r" prev="#pd_Quaderno1_15v" next="#pd_Quaderno1_16v" type="page">
+                    <div prev="#pd_Quaderno1_15v" next="#pd_Quaderno1_16v" xml:id="pd_Quaderno1_16r" type="page">
                         <pb n="16r1" xml:id="Quaderno1_16r" facs="16r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>17</add></mod></fw>
                         <p rend="indent" change="#fase-B">
@@ -2140,9 +2150,9 @@
                                         <add place="inline">Sacra</add></subst></mod>.
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_16v" prev="#pd_Quaderno1_16r" next="#pd_Quaderno1_17r" type="page">
+                    <div prev="#pd_Quaderno1_16r" next="#pd_Quaderno1_17r" xml:id="pd_Quaderno1_16v" type="page">
                         <pb n="16v1" xml:id="Quaderno1_16v" facs="16v.jpg" type="blank" change="#fase-B"/></div>
-                    <div xml:id="pd_Quaderno1_17r" prev="#pd_Quaderno1_16v" next="#pd_Quaderno1_17v" type="page">
+                    <div prev="#pd_Quaderno1_16v" next="#pd_Quaderno1_17v" xml:id="pd_Quaderno1_17r" type="page">
                         <pb n="17r1" xml:id="Quaderno1_17r" facs="17r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>18</add></mod></fw>
                         <p rend="indent" change="#fase-B"><lb n="1"/>I personaggi erano 6, con nomi moderni (ridi?!) fuor
@@ -2200,9 +2210,9 @@
                             <lb n="19"/> del primo atto ripetuto
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_17v" prev="#pd_Quaderno1_17r" next="#pd_Quaderno1_18r" type="page">
+                    <div prev="#pd_Quaderno1_17r" next="#pd_Quaderno1_18r" xml:id="pd_Quaderno1_17v" type="page">
                         <pb n="17v1" xml:id="Quaderno1_17v" facs="17v.jpg" type="blank" change="#fase-B"/></div>
-                    <div xml:id="pd_Quaderno1_18r" prev="#pd_Quaderno1_17v" next="#pd_Quaderno1_19r" type="page">
+                    <div prev="#pd_Quaderno1_17v" next="#pd_Quaderno1_19r" xml:id="pd_Quaderno1_18r" type="page">
                         <pb n="18r1" xml:id="Quaderno1_18r" facs="18r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C">19</mod></fw>
                         
@@ -2280,7 +2290,7 @@
                                 
                         </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_19r" prev="#pd_Quaderno1_18r" next="#pd_Quaderno1_20r" type="page">
+                    <div prev="#pd_Quaderno1_18r" next="#pd_Quaderno1_20r" xml:id="pd_Quaderno1_19r" type="page">
                         <pb n="19r1" xml:id="Quaderno1_19r" facs="19r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum">
                             <app>
@@ -2388,7 +2398,7 @@
                                         <add place="inline">Nel</add> </subst></mod>Febbraio di quell’anno io compii i miei 14 anni e mi
 
                         </p></div>
-                    <div xml:id="pd_Quaderno1_20r" prev="#pd_Quaderno1_19r" next="#pd_Quaderno1_21r" type="page">
+                    <div prev="#pd_Quaderno1_19r" next="#pd_Quaderno1_21r" xml:id="pd_Quaderno1_20r" type="page">
                         <pb n="20r1" xml:id="Quaderno1_20r" facs="20r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C">2</mod><app><lem varSeq="2"><mod change="#strato-E"><del rend="overwritten">1</del><add place="superimposed">3</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">1</mod></rdg></app></fw>
                         
@@ -2453,7 +2463,7 @@
                                 <lb n="20"/>senza annientarlo, e tenendolo invece come ricordo della mia     
                             </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_21r" prev="#pd_Quaderno1_20r" next="#pd_Quaderno1_22r" type="page">
+                    <div prev="#pd_Quaderno1_20r" next="#pd_Quaderno1_22r" xml:id="pd_Quaderno1_21r" type="page">
                         <pb n="21r1" xml:id="Quaderno1_21r" facs="21r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><subst><del rend="overwritten">22</del><add place="superimposed">25</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-C">22</mod></rdg></app></fw>
                         <p rend="indent" change="#fase-C"><lb n="1"/>Un cortigiano amico del profeta e del Re di nome Corrado 
@@ -2519,7 +2529,7 @@
                                 <lb n="19"/>e plaudenti, e<choice resp="#TAV"><sic>|</sic><corr> </corr></choice>quante in quel silenzio <mod change="#fase-D"><subst><del rend="strikethrough">mi p</del><add place="inline">sognai</add></subst></mod> di sentire battimani.</p>
                         <p rend="indent" change="#fase-D"><lb n="20"/>Nonostante <mod change="#fase-D"><subst><del rend="strikethrough">i mi</del><add place="inline"><subst><del rend="overwritten">ei</del><add place="superimposed">g</add></subst>li</add></subst></mod> sforzi di tener celati i miei getti, nonostante</p>
                     </div>
-                    <div xml:id="pd_Quaderno1_22r" prev="#pd_Quaderno1_21r" next="#pd_Quaderno1_23r" type="page">
+                    <div prev="#pd_Quaderno1_21r" next="#pd_Quaderno1_23r" xml:id="pd_Quaderno1_22r" type="page">
                         <pb n="22r1" xml:id="Quaderno1_22r" facs="22r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><subst><del rend="overwritten">23</del><add place="superimposed">27</add></subst></mod></lem><rdg varSeq="1"><mod change="#fase-C">23</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg>
@@ -2592,7 +2602,7 @@
                                 <lb n="20"/>l’energie, mi rubava ogni altra cura, mi toglieva anche il
                             </p>
                     </div>
-                    <div xml:id="pd_Quaderno1_23r" prev="#pd_Quaderno1_22r" next="#pd_Quaderno1_24r" type="page">
+                    <div prev="#pd_Quaderno1_22r" next="#pd_Quaderno1_24r" xml:id="pd_Quaderno1_23r" type="page">
                         <pb n="23r1" xml:id="Quaderno1_23r" facs="23r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C">2</mod><app><lem varSeq="2"><mod change="#strato-E"><del rend="overwritten">4</del><add place="superimposed">9</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">6</mod></rdg></app></fw>
                         <p rend="indent" change="#fase-C"><lb n="1"/>Nella stessa scena Gerardo dice a Leopoldo:</p>
@@ -2656,7 +2666,7 @@
 -->.
                                 <lb n="20"/>Stare in silenzio era per me usuale come andare al refettorio,</p>
                     </div>
-                    <div xml:id="pd_Quaderno1_24r" prev="#pd_Quaderno1_23r" next="#pd_Quaderno1_25r" type="page">
+                    <div prev="#pd_Quaderno1_23r" next="#pd_Quaderno1_25r" xml:id="pd_Quaderno1_24r" type="page">
                         <pb n="24r1" xml:id="Quaderno1_24r" facs="24r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><del rend="strikethrough">25</del><add place="inline">31</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">25</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg>
@@ -2723,7 +2733,7 @@
                                 <lb n="19"/>a odiare quella veste che portavo e che portavano, a non curare
                                 <lb n="20"/>la religione, a dubitare nella fede.</p>
                     </div>
-                    <div xml:id="pd_Quaderno1_25r" prev="#pd_Quaderno1_24r" next="#pd_Quaderno1_26r" type="page">
+                    <div prev="#pd_Quaderno1_24r" next="#pd_Quaderno1_26r" xml:id="pd_Quaderno1_25r" type="page">
                         <pb n="25r1" xml:id="Quaderno1_25r" facs="25r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><del rend="overwritten">26</del><add place="superimposed">33</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">26</mod></rdg></app></fw>
                         <sp who="#Daniello_per" change="#fase-C"><lg>
@@ -2782,7 +2792,7 @@
                         <p rend="indent" change="#fase-D"><lb n="19"/><mod change="#fase-D"><subst><del rend="strikethrough">In quell'</del><add place="inline">Nell’anno</add> <add place="above">mio</add></subst> <!-- Non promosso ad app: currenti calamo; la lezione precedente non ha interesse critico autonomo. --></mod> 14<hi rend="apice">o</hi> di età cominciai a dubitare sulla fede
                                 <lb n="20"/>e questo dubbio mi perseguitò crescendo fino al 28 febbraio 1909,</p>
                     </div>
-                    <div xml:id="pd_Quaderno1_26r" prev="#pd_Quaderno1_25r" next="#pd_Quaderno1_27r" type="page">
+                    <div prev="#pd_Quaderno1_25r" next="#pd_Quaderno1_27r" xml:id="pd_Quaderno1_26r" type="page">
                         <pb n="26r1" xml:id="Quaderno1_26r" facs="26r.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">35</add> <del rend="strikethrough">27</del></mod></lem><rdg varSeq="1"><mod change="#fase-C">27</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg><lb n="1"/><l n="1">e l’infule indossiamo e le corazze;</l>
@@ -2864,7 +2874,7 @@
                                 <lb n="19"/>non sembratami giusta e certamente non adeguata, mi
                                 <lb n="20"/>ricordo aver portato <mod change="#fase-D"><add place="above">con uno strattone</add></mod> il letto <mod change="#fase-D"><subst><del rend="strikethrough">a met</del> <add place="inline">in mezzo</add></subst></mod> alla camera e</p>
                     </div>
-                    <div xml:id="pd_Quaderno1_27r" prev="#pd_Quaderno1_26r" next="#pd_Quaderno2_1r" type="page">
+                    <div prev="#pd_Quaderno1_26r" next="#pd_Quaderno2_1r" xml:id="pd_Quaderno1_27r" type="page">
                         <pb n="27r1" xml:id="Quaderno1_27r" facs="27r.jpg" type="blank"/>
                     </div>
                 </body>
@@ -2886,7 +2896,7 @@
                     <div prev="#Quaderno2_Cop_r" next="#Quaderno1_1v" type="page" xml:id="Quaderno2_Cop_v2">
                         <pb n="Cop_v2" facs="Cop_v2.jpg"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_1r" prev="#pd_Quaderno1_27r" next="#pd_Quaderno2_2r" type="page">
+                    <div prev="#pd_Quaderno1_27r" next="#pd_Quaderno2_2r" xml:id="pd_Quaderno2_1r" type="page">
                         <pb n="1r2" xml:id="Quaderno2_1r" facs="1r2.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">37</add> <del rend="strikethrough">28</del></mod></lem><rdg varSeq="1"><mod change="#fase-C">28</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg>
@@ -2969,7 +2979,7 @@
                                 <lb n="19"/>alla 3<hi rend="apice">a</hi> Ginnasiale e anelavo <mod change="#fase-D"><subst><del rend="overwritten">al</del><add place="superimposed">il</add></subst></mod> momento <choice resp="#TAV"><sic/><corr>che</corr></choice> <mod change="#fase-D"><subst><del rend="strikethrough">di</del> <add place="above">finissero le vacanze, per</add></subst></mod> potere studiare il Tasso,
                                 <lb n="20"/>che avevo già letto, e in <mod change="#fase-D"><add place="above">rara</add></mod> parte gustato.</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_2r" prev="#pd_Quaderno2_1r" next="#pd_Quaderno2_3r" type="page">
+                    <div prev="#pd_Quaderno2_1r" next="#pd_Quaderno2_3r" xml:id="pd_Quaderno2_2r" type="page">
                         <pb n="2r2" xml:id="Quaderno2_2r" facs="2r2.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"> <del rend="strikethrough">29</del> <add place="inline">39</add></mod></lem><rdg varSeq="1"><mod change="#fase-C">29</mod></rdg></app></fw>
                         <p rend="indent" change="#fase-C"><lb n="1"/>Atto 3<hi rend="apice">o</hi></p>
@@ -3025,7 +3035,7 @@
                                 <lb n="20"/><mod change="#fase-D"><subst><del rend="overwritten">il Giugno <gap quantity="3" unit="char"/></del><add place="superimposed">del 1905 aveva</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. --> già fatto un Sonetto e presentato a Boni sulle</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_3r" prev="#pd_Quaderno2_2r" next="#pd_Quaderno2_4r" type="page">
+                    <div prev="#pd_Quaderno2_2r" next="#pd_Quaderno2_4r" xml:id="pd_Quaderno2_3r" type="page">
                         <pb n="3r2" xml:id="Quaderno2_3r" facs="3r2.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">41</add> <del rend="strikethrough">30</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">30</mod></rdg></app></fw>
                         <p rend="indent" change="#fase-C"><lb n="1"/>Dopo la condanna di Daniele a morir <mod change="#fase-C"><subst><del rend="overwritten">t</del><add place="superimposed">n</add></subst></mod>ella fossa dei leoni Corra<hi rend="soloDiplomatica">-</hi><lb n="2" rend="soloDiplomatica"/>do cade<mod change="#fase-C"><add place="below">va</add></mod> in deliquio e dice<mod change="#fase-C"><retrace>v</retrace></mod>a <mod change="#fase-C"><subst><del rend="strikethrough">questa</del> <add place="inline">queste</add></subst></mod> stanze di senari:</p>
@@ -3080,14 +3090,14 @@
                                 <lb n="15"/>Madonna di Pompei fatta vedere a un Sottoprefetto, che mi criticò
                                 <lb n="16"/>una stranezza e <mod change="#fase-D"><add place="above">un’</add></mod>inconvenienza. <choice resp="#TAV"><sic>(1)</sic><corr/></choice></p>
                     </div>
-                    <div prev="#Quaderno2_7r_faseD" next="#Quaderno2_4v" type="page" xml:id="Quaderno2_3v_b">
+                    <div type="page" xml:id="Quaderno2_3v_b">
                         <pb n="3v2b" facs="3v2.jpg" change="#fase-D"/>
                         <p rend="indent" change="#fase-D"><lb n="17"/>Nel terzo anno di Seminario, in cui compî la terza edizione,
                                 <lb n="18"/>1907, la battaglia interna e i contrasti disciplinari si fecero
                                 <lb n="19"/>un po’ più lievi, <mod change="#fase-D"><subst><del rend="overwritten">non</del><add place="superimposed">ma</add></subst></mod> non che si chetassero affatto. Io non diventai
                                 <lb n="20"/>per questo migliore, sospettoso com’ero. Oltre <mod change="#fase-D"><del rend="strikethrough"><subst><del rend="strikethrough" seq="1">quell</del> <add place="inline" seq="1">questa</add></subst></del> <add place="above" seq="2">la</add></mod> tragedia</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_4r" prev="#pd_Quaderno2_3r" next="#pd_Quaderno2_5r" type="page">
+                    <div prev="#pd_Quaderno2_3r" next="#pd_Quaderno2_5r" xml:id="pd_Quaderno2_4r" type="page">
                         <pb n="4r2" xml:id="Quaderno2_4r" facs="4r2.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">43</add> <del rend="strikethrough">31</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">31</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg>
@@ -3117,7 +3127,7 @@
                                     <lb n="20"/><l n="7">Che dell’amor il pegno</l>
                             </lg></sp>
                     </div>
-                    <div prev="#Quaderno2_3v_b" next="#Quaderno2_7r_faseD2" type="page" xml:id="Quaderno2_4v">
+                    <div type="page" xml:id="Quaderno2_4v">
                         <pb n="4v2" facs="4v2.jpg" change="#fase-D"/>
                         <fw rend="soloDiplomatica" place="top_left" type="pageNum"><mod change="#strato-E"><add>45</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/><mod change="#fase-D"><subst><del rend="strikethrough">ne</del> <add place="inline">scrissi</add></subst></mod> altre poesie come una a S. Alfonso dei Liguori,
@@ -3143,7 +3153,7 @@
                                 <lb n="19"/>ne gustai per conto mio. Quell’antologia mi doventò
                                 <lb n="20"/>e soprattutto imparai a leggere, a sentire le bellezze del Carme</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_5r" prev="#pd_Quaderno2_4r" next="#pd_Quaderno2_6r" type="page">
+                    <div prev="#pd_Quaderno2_4r" next="#pd_Quaderno2_6r" xml:id="pd_Quaderno2_5r" type="page">
                         <pb n="5r2" xml:id="Quaderno2_5r" facs="5r2.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">45</add> <del rend="strikethrough">32</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">32</mod></rdg></app></fw>
                         <sp change="#fase-C"><lg>
@@ -3195,7 +3205,7 @@
                         <p rend="indent" change="#fase-D"><lb n="18"/>La preghiera della Vergine di Dante trovata e strombazzata
                                 <lb n="19"/>per ogni antologia, mi portò all’amore della Divina Comme<hi rend="soloDiplomatica">-</hi><lb n="20" rend="soloDiplomatica"/>dia. Nelle Vacanze del 1907 <mod change="#fase-D"><add place="above">nella Villa di Sant'Anna</add></mod> studiai un <mod change="#fase-D"><add place="above">ri</add></mod>assunto <mod change="#fase-D"><subst><del rend="overwritten">a</del><add place="superimposed">di</add></subst></mod> tutto</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_6r" prev="#pd_Quaderno2_5r" next="#Quaderno2_7r" type="page">
+                    <div prev="#pd_Quaderno2_5r" next="#Quaderno2_7r" xml:id="pd_Quaderno2_6r" type="page">
                         <pb n="6r2" xml:id="Quaderno2_6r" facs="6r2.jpg" change="#fase-C"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><app><lem varSeq="2"><mod change="#strato-E"><add place="inline">47</add> <del rend="strikethrough">33</del> </mod></lem><rdg varSeq="1"><mod change="#fase-C">33</mod></rdg></app></fw>
                         <p rend="indent" change="#fase-C"><lb n="1"/>Nell’atto 4 Gerardo dice a <mod change="#fase-C"><subst><del rend="strikethrough">Corr</del> <add place="inline">Leopoldo</add></subst></mod></p>
@@ -3228,7 +3238,7 @@
                                     <lb n="20"/><l n="1">Gittast<mod change="#fase-C"><subst><del rend="overwritten">i</del><add place="superimposed">e</add></subst></mod> il vate nella <mod change="#fase-C"><subst><del rend="overwritten">c</del><add place="superimposed">f</add></subst>o<subst><del rend="overwritten">n</del><add place="superimposed">ss</add></subst>a</mod> ed egli</l>
                                 </lg></sp>
                     </div>
-                    <div prev="#Quaderno2_5v" next="#Quaderno2_7r_faseD" type="page" xml:id="Quaderno2_6v">
+                    <div prev="#Quaderno2_5v" next="#pd_Quaderno2_8r" type="page" xml:id="Quaderno2_6v">
                         <pb n="6v2" facs="6v2.jpg" change="#fase-D"/>
                         <fw rend="soloDiplomatica" place="top_left" type="pageNum"><mod change="#strato-E"><add>48</add></mod></fw>
                         <p rend="indent" change="#fase-D"><lb n="1"/>il poema; imparai il Pater Noster <mod change="#fase-D"><subst><del rend="strikethrough">tutto versi</del> <add place="inline">poetizzato</add></subst></mod>
@@ -3277,7 +3287,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 <add place="margin">bene</add>
                             </mod></note><mod change="#strato-E" rend="soloDiplomatica"><add place="margin">bene</add></mod><lb/></ab>
                     </div>
-                    <div prev="#Quaderno2_6v" next="#Quaderno2_3v_b" type="page" xml:id="Quaderno2_7r_faseD">
+                    <div type="page" xml:id="Quaderno2_7r_faseD">
                         <pb n="7r2" facs="7r2.jpg" change="#fase-D"/>
                         
                         <p rend="indent" change="#fase-D"><lb n="8"/>
@@ -3289,7 +3299,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 <lb n="15"/>poteva avanzarmi gran tempo per ben riuscire agli studi
                                 <lb n="16"/>obbligatorii.</p>
                     </div>
-                    <div prev="#Quaderno2_4v" next="#pd_Quaderno2_8r" type="page" xml:id="Quaderno2_7r_faseD2">
+                    <div type="page" xml:id="Quaderno2_7r_faseD2">
                         <pb n="7r2c" facs="7r2.jpg" change="#fase-D"/>
                         <p change="#fase-D"><lb n="17"/><metamark rend="superimposed">(.)</metamark>In quell’anno <mod change="#fase-D"><add place="above">il</add> <subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">7</add></subst></mod> di Febbraio morì il Carducci, ed io, che
                                 <lb n="18"/>poco l’avevo sentito nominare, cominciai a desiderarne la co<hi rend="soloDiplomatica">-</hi><lb n="19" rend="soloDiplomatica"/>noscenza delle sue opere. Anzi <mod change="#fase-D"><add place="above" xml:id="add_ricordo1">ricordo</add> un aneddoto veramente notabile
@@ -3299,7 +3309,7 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                         <pb n="7v2" facs="7v2.jpg" change="#strato-E"/>
                         <ab change="#strato-E" rend="soloDiplomatica">Importante <lb/>questa frase "<hi rend="underline">Bene</hi>"</ab>
                     </div>
-                    <div xml:id="pd_Quaderno2_8r" prev="#Quaderno2_7r_faseD2" next="#pd_Quaderno2_8v" type="page">
+                    <div prev="#Quaderno2_6v" next="#pd_Quaderno2_8v" xml:id="pd_Quaderno2_8r" type="page">
                         <pb n="8r2" xml:id="Quaderno2_8r" facs="8r2.jpg" change="#fase-D"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-F">50</mod></fw>
                         <p rend="indent" change="#fase-D">
@@ -3330,10 +3340,10 @@ Quell’Ottobre mi capitò e mi piacque immensa<mod change="#fase-D"><add place=
                                 </choice> Don Alberto Borghi,<mod change="#fase-F"><subst><del rend="strikethrough">dottissimi</del> <add place="above">assai dotti</add></subst></mod>. Degli altri
                                 <lb n="20"/><mod change="#fase-F"><subst><del rend="strikethrough">S</del> <add place="inline">due</add></subst></mod> Seminari io non ne so nulla, perché ebbi la felicità di non andarvi.</p>    
                     </div>
-                    <div xml:id="pd_Quaderno2_8v" prev="#pd_Quaderno2_8r" next="#pd_Quaderno2_9r" type="page">
+                    <div prev="#pd_Quaderno2_8r" next="#pd_Quaderno2_9r" xml:id="pd_Quaderno2_8v" type="page">
                         <pb n="8v2" xml:id="Quaderno2_8v" facs="8v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_9r" prev="#pd_Quaderno2_8v" next="#pd_Quaderno2_9v" type="page">
+                    <div prev="#pd_Quaderno2_8v" next="#pd_Quaderno2_9v" xml:id="pd_Quaderno2_9r" type="page">
                         <pb n="9r2" xml:id="Quaderno2_9r" facs="9r2.jpg" change="#fase-F"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-F">51</mod></fw>
                         <p rend="indent" change="#fase-F"><lb n="1"/>L’allontanarsi dal paese nativo, <mod change="#fase-F"><subst><del rend="strikethrough">mi rese</del> <add place="inline">dal quale</add></subst></mod>
@@ -3414,10 +3424,10 @@ in una <mod change="#fase-F">
                             </p>
                         
                     </div>
-                    <div xml:id="pd_Quaderno2_9v" prev="#pd_Quaderno2_9r" next="#pd_Quaderno2_10r" type="page">
+                    <div prev="#pd_Quaderno2_9r" next="#pd_Quaderno2_10r" xml:id="pd_Quaderno2_9v" type="page">
                         <pb n="9v2" xml:id="Quaderno2_9v" facs="9v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_10r" prev="#pd_Quaderno2_9v" next="#pd_Quaderno2_10v" type="page">
+                    <div prev="#pd_Quaderno2_9v" next="#pd_Quaderno2_10v" xml:id="pd_Quaderno2_10r" type="page">
                         <pb n="10r2" xml:id="Quaderno2_10r" facs="10r2.jpg" change="#fase-F"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-F">52</mod></fw>
                         <p rend="indent" change="#fase-F"><lb n="1"/><app><lem varSeq="6"><mod change="#fase-F">Il Rettore era burbero e pingue, poco atto a gentilezze e meno atto <lb n="2"/>a ben regolare l'andamento d'un Istituto. Da la testa molto sviluppata (non <lb n="3"/>so se unitamente al suo contenuto) da le fattezze grasse e flosce, dai cigli fatti a sesto acuto, dalla bocca molto facile a’ versi, <lb n="4"/>dal passo aperto e a <mod change="#strato-N"><add place="inline">s</add></mod>balzi esso dava un’idea di persona <lb n="5"/>molto presa dal torpore, materiale, a cui non sia bale<hi rend="soloDiplomatica">-</hi><lb n="6" rend="soloDiplomatica"/>nato ne la mente mai un raggio neppure mediocre d’idealità. A me <lb n="7"/>parve molto capace per stare a gambe larghe, sberciare i labbri, e dondolarsi su la poltrona, e forse fu quello tutto <lb n="8"/>lo studio de la sua stupida vita;</mod></lem><rdg varSeq="5"><mod change="#fase-F">Il Rettore era burbero e pingue, poco atto a gentilezze e meno atto <lb n="2"/>a<del rend="strikethrough">l</del> <add place="above">ben</add> regola<subst><del rend="overwritten">mento</del><add place="superimposed">re</add></subst> <add place="above">l'andamento</add> d'un Istituto. Da la testa molto sviluppata<subst><del rend="overwritten">,</del><add place="superimposed">(</add></subst>non <lb n="3"/>so se unitamente al suo contenuto<subst><del rend="overwritten">,</del><add place="superimposed">)</add></subst> da le fattezze grasse e flosce, <add place="above">dai cigli fatti a sesto acuto, dalla bocca molto facile a’ versi </add> <lb n="4"/>dal passo aperto e a balzi esso dava un’idea di persona <lb n="5"/> molto presa dal torpore, <subst><del rend="strikethrough"><subst><del rend="strikethrough">desiderosa</del> <add place="above">affamata</add></subst> solo di pasto</del> <add place="above">materiale</add></subst>, a cui non sia bale <lb n="6"/>nato ne la mente mai un raggio neppure mediocre d’idealità. A me <lb n="7"/>parve molto capace per stare a gambe larghe <add place="above">, sberciare i labbri, e dondolarsi su la poltrona,</add> e forse fu quello tutto <lb n="8"/>lo studio de la sua <subst><del rend="strikethrough">vana</del> <add place="above">stupida</add></subst> <subst><del rend="strikethrough">gioventù</del><del rend="strikethrough"><add place="above">vida</add></del><add place="inline">vita</add></subst></mod></rdg><rdg varSeq="4"><mod change="#fase-F">Il Rettore era burbero <add place="above">e</add> pingue, poco atto a gentilezze e <subst><del rend="strikethrough">co</del> <add place="inline">meno</add></subst> atto <lb n="2"/>al regolamento d'un Istituto. Da la testa molto sviluppata, non <lb n="3"/>so se unitamente al suo contenuto, da le fattezze grasse e flosce, <lb n="4"/>dal passo <subst><del rend="strikethrough">largo</del> <add place="inline">aperto</add></subst> e a balzi <subst><del rend="strikethrough">egl</del> <add place="inline">esso</add></subst> dava un’idea di persona <lb n="5"/><subst><del rend="strikethrough">tor</del> <add place="inline">molto</add></subst> presa dal torpore, desiderosa solo di pasto, a cui non sia bale<hi rend="soloDiplomatica">-</hi><lb n="6" rend="soloDiplomatica"/>nato ne<del rend="strikethrough">l</del>la mai un ideale neppure mediocre d’idealità. A me <lb n="7"/>parve molto capace per stare a gambe larghe e forse fu quello tutto <lb n="8"/>lo studio de<del rend="strikethrough">l</del>la sua vana gioventù.</mod></rdg>
@@ -3462,10 +3472,10 @@ in una <mod change="#fase-F">
                                 <lb n="18"/>che con tutta la sua scienza geografico-<mod change="#fase-F"><subst><del rend="strikethrough">fisico</del> <add place="inline">astronomico</add></subst></mod>-cosmografica<hi rend="soloDiplomatica">-</hi><lb n="19" rend="soloDiplomatica"/>politic<mod change="#fase-F"><subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst> <del rend="strikethrough">- etnografico</del></mod> era riuscito a far mente <mod change="#fase-F"><subst><del rend="overwritten">n</del><add place="superimposed">l</add></subst></mod>ocale nella distinzione
                                 <lb n="20"/>molto importante a sapersi (e difficile a <mod change="#fase-F"><subst><del rend="strikethrough">immaginarsi</del> <add place="above">capirsi</add></subst></mod>) che <mod change="#fase-F"><del rend="strikethrough">:</del></mod> esiste tra nave e tor-</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_10v" prev="#pd_Quaderno2_10r" next="#pd_Quaderno2_11r" type="page">
+                    <div prev="#pd_Quaderno2_10r" next="#pd_Quaderno2_11r" xml:id="pd_Quaderno2_10v" type="page">
                         <pb n="10v2" xml:id="Quaderno2_10v" facs="10v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_11r" prev="#pd_Quaderno2_10v" next="#pd_Quaderno2_11v" type="page">
+                    <div prev="#pd_Quaderno2_10v" next="#pd_Quaderno2_11v" xml:id="pd_Quaderno2_11r" type="page">
                         <pb n="11r2" xml:id="Quaderno2_11r" facs="11r2.jpg" change="#fase-F"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-F">53</mod></fw>
                         <p rend="indent" change="#fase-F"><lb n="1"/>pediniera. Delle torpediniere anzi <mod change="#fase-F"><subst><del rend="strikethrough">fu amatissimo</del> <add place="above">era esageratamente entusiasta</add></subst></mod>
@@ -3503,10 +3513,10 @@ in una <mod change="#fase-F">
                                          <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">anda</del> <add place="inline">stare</add></subst></del> <add place="inline">essere</add></subst>-->
                                  </mod> antipo<hi rend="soloDiplomatica">-</hi><lb n="20" rend="soloDiplomatica"/>de a l’altro.</p> 
                     </div>
-                    <div xml:id="pd_Quaderno2_11v" prev="#pd_Quaderno2_11r" next="#pd_Quaderno2_12r" type="page">
+                    <div prev="#pd_Quaderno2_11r" next="#pd_Quaderno2_12r" xml:id="pd_Quaderno2_11v" type="page">
                         <pb n="11v2" xml:id="Quaderno2_11v" facs="11v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_12r" prev="#pd_Quaderno2_11v" next="#pd_Quaderno2_12v" type="page">
+                    <div prev="#pd_Quaderno2_11v" next="#pd_Quaderno2_12v" xml:id="pd_Quaderno2_12r" type="page">
                         <pb n="12r2" xml:id="Quaderno2_12r" facs="12r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">54</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/> <mod change="#fase-G"><del rend="strikethourgh">I maestri de la mia classe erano il <choice>
@@ -3540,7 +3550,7 @@ in una <mod change="#fase-F">
                                 <lb n="18"/>de la sua parola; anzi io era il prim<mod change="#fase-G"><subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst></mod> fra quelli a discono<hi rend="soloDiplomatica">-</hi><lb n="19" rend="soloDiplomatica"/>scere la necessità de lo studio apologetico, e di criticare
                                 <lb n="20"/>con ragione o senza, le <mod change="#fase-G"><subst><del rend="strikethrough">teorie</del> <add place="above">dottrine</add></subst></mod> che ci andava in<mod change="#fase-G"><subst><del rend="overwritten">n</del><add place="superimposed">se</add></subst></mod>gnando.</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_12v" prev="#pd_Quaderno2_12r" next="#pd_Quaderno2_13r" type="page">
+                    <div prev="#pd_Quaderno2_12r" next="#pd_Quaderno2_13r" xml:id="pd_Quaderno2_12v" type="page">
                         <pb n="12v2" xml:id="Quaderno2_12v" facs="12v2.jpg" change="#fase-G"/>
                         <p rend="indent" change="#fase-G"><lb n="1"/>L’Apologia era del Ballerini, scritta con arte e con scienza,
                                 <lb n="2"/>facile e divertente ai volenterosi, noiosa e difficile agli
@@ -3556,7 +3566,7 @@ in una <mod change="#fase-F">
                                          <subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">In quella</del> <add place="above">Tra questi</add></subst></del> <add place="above">Allora</add></subst>-->
                                      appunto <add place="above" seq="3">io</add></mod> era tra questi ultimi.</p> <!-- appunto è in tutte le lezioni, dovrei dirlo-->
                     </div>
-                    <div xml:id="pd_Quaderno2_13r" prev="#pd_Quaderno2_12v" next="#pd_Quaderno2_13v" type="page">
+                    <div prev="#pd_Quaderno2_12v" next="#pd_Quaderno2_13v" xml:id="pd_Quaderno2_13r" type="page">
                         <pb n="13r2" xml:id="Quaderno2_13r" facs="13r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">55</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>
@@ -3586,10 +3596,10 @@ in una <mod change="#fase-F">
                                 <lb n="19"/>per me un<choice resp="#TAV"><sic/><corr>'</corr></choice>ora di tempo per leggere saporitamente
                                 <lb n="20"/>le Canzoni del melanconico Leopardi, ch’io aveva in un</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_13v" prev="#pd_Quaderno2_13r" next="#pd_Quaderno2_14r" type="page">
+                    <div prev="#pd_Quaderno2_13r" next="#pd_Quaderno2_14r" xml:id="pd_Quaderno2_13v" type="page">
                         <pb n="13v2" xml:id="Quaderno2_13v" facs="13v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_14r" prev="#pd_Quaderno2_13v" next="#pd_Quaderno2_14v" type="page">
+                    <div prev="#pd_Quaderno2_13v" next="#pd_Quaderno2_14v" xml:id="pd_Quaderno2_14r" type="page">
                         <pb n="14r2" xml:id="Quaderno2_14r" facs="14r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">56</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>piccolo volume senza note, <mod change="#fase-G"><add place="above">edito da Oreste Garroni, non mai veduto dai miei superiori,</add></mod> e che nascondevo dietro le spalle
@@ -3611,11 +3621,11 @@ in una <mod change="#fase-F">
                                 <lb n="18"/>quello studio. Il <mod change="#fase-G"><add place="above">buon</add></mod> maestro <mod change="#fase-G"><subst><del rend="strikethrough">mi</del> <add place="inline">si</add></subst></mod> lamentò ripetuta<hi rend="soloDiplomatica">-</hi><lb n="19" rend="soloDiplomatica"/>mente, finché vedendomi incorreggibile finì per
                                 <lb n="20"/>non interrogarmi più, <mod change="#fase-G"><subst><del rend="strikethrough">per</del> <add place="inline">aspettandomi</add></subst></mod> a fare i conti</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_14v" prev="#pd_Quaderno2_14r" next="#pd_Quaderno2_15r" type="page">
+                    <div prev="#pd_Quaderno2_14r" next="#pd_Quaderno2_15r" xml:id="pd_Quaderno2_14v" type="page">
                         <pb n="14v2" xml:id="Quaderno2_14v" facs="14v2.jpg" type="blank" change="#fase-G"/>
                         <p rend="indent" change="#fase-G"><lb n="4"/><del rend="strikethrough">Int</del></p>
                     </div>
-                    <div xml:id="pd_Quaderno2_15r" prev="#pd_Quaderno2_14v" next="#Quaderno2_15r_ciò" type="page">
+                    <div prev="#pd_Quaderno2_14v" next="#Quaderno2_15r_ciò" xml:id="pd_Quaderno2_15r" type="page">
                         <pb n="15r2" xml:id="Quaderno2_15r" facs="15r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">57</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>a l'esame, e per stimarmi un capo ameno e strano,
@@ -3638,7 +3648,7 @@ in una <mod change="#fase-F">
                                 <lb n="10"/> pel timore <mod change="#fase-G"><add place="above">molto più de' superiori</add></mod> che mi fosse trovato e tolto quel caro libric<hi rend="soloDiplomatica">-</hi><lb n="11" rend="soloDiplomatica"/>cino che poi nell’ottobre del 1910, già secolare,
                                 <lb n="12"/><mod change="#fase-G"><subst><del rend="strikethrough">perdessi</del> <add place="inline">lasciai</add></subst></mod> per <mod change="#fase-G">l<subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst> solit<subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst> distrazion<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod> in un tram <mod change="#fase-G"><subst><del rend="strikethrough">tra F</del> <add place="inline">che</add></subst></mod> an<hi rend="soloDiplomatica">-</hi><lb n="13" rend="soloDiplomatica"/>dava da Firenze a Settignano.</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_15r_dopo" prev="#Quaderno2_15r_intanto" next="#pd_Quaderno2_15v" type="page">
+                    <div prev="#Quaderno2_15r_intanto" next="#pd_Quaderno2_15v" xml:id="pd_Quaderno2_15r_dopo" type="page">
                         <pb n="15r2d" xml:id="Quaderno2_15r_dopo" facs="15r2.jpg" change="#fase-G"/>
                         <p rend="indnet" change="#fase-G"><lb n="14"/>Oltre il Leopardi, m’era assi facile <mod change="#fase-G"><subst><del rend="strikethrough">il</del> <add place="inline">il</add></subst></mod> Foscolo e in
                                 <lb n="15"/>quell’anno stesso giunsi a impararne <mod change="#fase-G"><subst><del rend="strikethrough">a mena dito</del> <add place="above">da capo a fondo</add></subst></mod>
@@ -3665,10 +3675,10 @@ in una <mod change="#fase-F">
                                 </mod> del Monti e <mod change="#fase-G"><del rend="strikethrough">e del Pindemonte</del>
                                     <lb n="20"/><subst><del rend="strikethrough">e il <gap unit="char" quantity="5"/></del><add place="above">con note</add></subst></mod> di G. Mestica, e altre sparse poesie del Parini,</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_15v" prev="#pd_Quaderno2_15r_dopo" next="#pd_Quaderno2_16r" type="page">
+                    <div prev="#pd_Quaderno2_15r_dopo" next="#pd_Quaderno2_16r" xml:id="pd_Quaderno2_15v" type="page">
                         <pb n="15v2" xml:id="Quaderno2_15v" facs="15v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_16r" prev="#pd_Quaderno2_15v" next="#pd_Quaderno2_17r" type="page">
+                    <div prev="#pd_Quaderno2_15v" next="#pd_Quaderno2_17r" xml:id="pd_Quaderno2_16r" type="page">
                         <pb n="16r2" xml:id="Quaderno2_16r" facs="16r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">58</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>del Monti, del Carducci; e il Canto di Ugolino commentato
@@ -3724,7 +3734,7 @@ in una <mod change="#fase-F">
                                     <rdg varSeq="1"><mod change="#fase-H">invade</mod></rdg>    
                                 </app> l’anima.</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_17r" prev="#pd_Quaderno2_16r" next="#pd_Quaderno2_18r" type="page">
+                    <div prev="#pd_Quaderno2_16r" next="#pd_Quaderno2_18r" xml:id="pd_Quaderno2_17r" type="page">
                         <pb n="17r2" xml:id="Quaderno2_17r" facs="17r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">59</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>e mi partivo dal cuore e non da l’intelletto, come
@@ -3783,7 +3793,7 @@ in una <mod change="#fase-F">
                              </p>
                         <fw place="down_right" type="date"><mod change="#fase-H">2<choice><corr>8</corr><sic><gap unit="char" quantity="1"/></sic></choice> Agosto 1911</mod></fw>  
                     </div>
-                    <div xml:id="pd_Quaderno2_18r" prev="#pd_Quaderno2_17r" next="#pd_Quaderno2_18v" type="page">
+                    <div prev="#pd_Quaderno2_17r" next="#pd_Quaderno2_18v" xml:id="pd_Quaderno2_18r" type="page">
                         <pb n="18r2" xml:id="Quaderno2_18r" facs="18r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">60</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/><mod change="#fase-G"><subst><del rend="strikethrough">scrivevo come non scrivevo le</del> <add place="inline">e il maestro</add></subst></mod>
@@ -3805,10 +3815,10 @@ in una <mod change="#fase-F">
                                 <lb n="19"/>giudizio. <mod change="#fase-G"><subst><del rend="strikethrough">Io</del> <add place="inline">Avevo</add></subst></mod> formato un carattere veramente
                                 <lb n="20"/>bilioso, collerico; e godeva freneticamente quando </p>
                     </div>
-                    <div xml:id="pd_Quaderno2_18v" prev="#pd_Quaderno2_18r" next="#pd_Quaderno2_19r" type="page">
+                    <div prev="#pd_Quaderno2_18r" next="#pd_Quaderno2_19r" xml:id="pd_Quaderno2_18v" type="page">
                         <pb n="18v2" xml:id="Quaderno2_18v" facs="18v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_19r" prev="#pd_Quaderno2_18v" next="#pd_Quaderno2_19v" type="page">
+                    <div prev="#pd_Quaderno2_18v" next="#pd_Quaderno2_19v" xml:id="pd_Quaderno2_19r" type="page">
                         <pb n="19r2" xml:id="Quaderno2_19r" facs="19r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">61</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>potevo avere 
@@ -3852,10 +3862,10 @@ in una <mod change="#fase-F">
                                 <lb n="19"/>la gente che passava per la strada. Spesso ne l’ore di
                                 <lb n="20"/>rabbia io mi poneva coi gomiti sul davanzale di marmo</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_19v" prev="#pd_Quaderno2_19r" next="#pd_Quaderno2_20r" type="page">
+                    <div prev="#pd_Quaderno2_19r" next="#pd_Quaderno2_20r" xml:id="pd_Quaderno2_19v" type="page">
                         <pb n="19v2" xml:id="Quaderno2_19v" facs="19v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_20r" prev="#pd_Quaderno2_19v" next="#pd_Quaderno2_21r" type="page">
+                    <div prev="#pd_Quaderno2_19v" next="#pd_Quaderno2_21r" xml:id="pd_Quaderno2_20r" type="page">
                         <pb n="20r2" xml:id="Quaderno2_20r" facs="20r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">62</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>ad aspettare chi passasse per la via. Ogni persona
@@ -3881,7 +3891,7 @@ in una <mod change="#fase-F">
                         <pb n="20v2" facs="20v2.jpg" change="#strato-L"/>
                         <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <p rend="indent"><mod change="#strato-L"><note resp="#TUS"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</note></mod></p> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><p rend="indent soloDiplomatica"><mod change="#strato-L"><lb/><choice><abbr>N</abbr><expan>Nota</expan></choice><lb/>A 28 anni il<lb/>tentativo fu<lb/>reale!<lb/>W. Giovanni Ferraio<lb/>il Salvatore.</mod></p>
                     </div>
-                    <div xml:id="pd_Quaderno2_21r" prev="#pd_Quaderno2_20r" next="#pd_Quaderno2_21v" type="page">
+                    <div prev="#pd_Quaderno2_20r" next="#pd_Quaderno2_21v" xml:id="pd_Quaderno2_21r" type="page">
                         <pb n="21r2" xml:id="Quaderno2_21r" facs="21r2.jpg" change="#fase-G"/>
                         <!-- Codifica filologicamente piu' accurata (nota dentro il mod): <ab><mod change="#strato-N"><note resp="#TUS">Importante per la psicanalisi</note></mod></ab> . NON funziona in EVT: una <note> dentro un <mod> non viene resa nelle viste di lettura. --><note resp="#TUS" rend="soloCritica"><ab><mod change="#strato-N">Importante per la psicanalisi</mod></ab></note><ab rend="soloDiplomatica"><mod change="#strato-N">Importante per la psicanalisi</mod></ab> <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-G">63</mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/>mi <mod change="#fase-G">
@@ -3981,10 +3991,10 @@ in una <mod change="#fase-F">
                                 <lb n="19"/>ma non mi riusciva; <mod change="#fase-G"><subst><del rend="strikethrough">che mi</del><add place="inline">che</add></subst></mod> potevo farmi ammirare,
                                 <lb n="20"/>ma non mi riusciva; ch’anzi ero destinato a far <mod change="#fase-G"><subst><del rend="overwritten"><gap unit="char" quantity="2"/></del><add place="superimposed">male</add></subst></mod></p>
                     </div>
-                    <div xml:id="pd_Quaderno2_21v" prev="#pd_Quaderno2_21r" next="#pd_Quaderno2_22r" type="page">
+                    <div prev="#pd_Quaderno2_21r" next="#pd_Quaderno2_22r" xml:id="pd_Quaderno2_21v" type="page">
                         <pb n="21v2" xml:id="Quaderno2_21v" facs="21v2.jpg" type="blank"/>
                     </div>
-                    <div xml:id="pd_Quaderno2_22r" prev="#pd_Quaderno2_21v" next="#pd_Quaderno2_22v" type="page">
+                    <div prev="#pd_Quaderno2_21v" next="#pd_Quaderno2_22v" xml:id="pd_Quaderno2_22r" type="page">
                         <pb n="22r2" xml:id="Quaderno2_22r" facs="22r2.jpg" change="#fase-G"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-O"><add>64</add></mod></fw>
                         <p rend="indent" change="#fase-G"><lb n="1"/><hi rend="underline" change="#strato-N">tutto quello che doveva 
@@ -4033,11 +4043,11 @@ in una <mod change="#fase-F">
                                     <rdg varSeq="1"><mod change="#fase-G">poi</mod></rdg>
                                 </app><mod change="#fase-O">, molte altre poesie</mod></p>
                     </div>
-                    <div xml:id="pd_Quaderno2_22v" prev="#pd_Quaderno2_22r" next="#pd_Quaderno2_23r" type="page">
+                    <div prev="#pd_Quaderno2_22r" next="#pd_Quaderno2_23r" xml:id="pd_Quaderno2_22v" type="page">
                         <pb n="22v2" xml:id="Quaderno2_22v" facs="22v2.jpg" type="blank"/>
                         <fw place="bottom_right"><mod change="#strato-L">!</mod></fw>
                     </div>
-                    <div xml:id="pd_Quaderno2_23r" prev="#pd_Quaderno2_22v" next="#pd_Quaderno2_23v" type="page">
+                    <div prev="#pd_Quaderno2_22v" next="#pd_Quaderno2_23v" xml:id="pd_Quaderno2_23r" type="page">
                         <pb n="23r2" xml:id="Quaderno2_23r" facs="23r2.jpg" change="#fase-O"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-O">65</mod></fw>
                         <p rend="indent" change="#fase-O"><lb n="1"/>di cui <app><lem varSeq="2"><mod change="#strato-P"><del rend="strikethrough">ne</del></mod></lem>
@@ -4072,7 +4082,7 @@ in una <mod change="#fase-F">
                                 <lb n="17"/>in fumo <mod change="#fase-O"><subst><del rend="strikethrough">le m</del> <add place="inline">i miei</add></subst></mod> principi, e venissi a ritrattar<hi rend="soloDiplomatica">-</hi><lb n="18" rend="soloDiplomatica"/>mi dall’inclinazione per cui io mi sentivo nato e desti<hi rend="soloDiplomatica">-</hi><lb n="19" rend="soloDiplomatica"/>nato, mostrando insieme <mod change="#fase-O"><add place="above">la <del rend="strikethrough">mia</del> pazzia</add></mod> di essermi
                                 <lb n="20"/>creduto, senza esserlo, poeta.</p>
                     </div>
-                    <div xml:id="pd_Quaderno2_23v" prev="#pd_Quaderno2_23r" next="#Quaderno2_24r" type="page">
+                    <div prev="#pd_Quaderno2_23r" next="#Quaderno2_24r" xml:id="pd_Quaderno2_23v" type="page">
                         <pb n="23v2" xml:id="Quaderno2_23v" facs="23v2.jpg" type="blank"/>
                     </div>
                     <div prev="#pd_Quaderno2_23v" next="#Quaderno2_16v" type="page" xml:id="Quaderno2_24r">
