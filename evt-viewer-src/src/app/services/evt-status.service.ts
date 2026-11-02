@@ -6,7 +6,7 @@ import { distinctUntilChanged, filter, first, map, mergeMap, shareReplay, skip, 
 import { AppConfig, EditionLevel, EditionLevelType } from '../app.config';
 import { ChangeLayerData, Page, ViewMode } from '../models/evt-models';
 import { EVTModelService } from './evt-model.service';
-import { evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtMergePagesByFacs, evtPagesOverride$ } from './evt-custom-pages.util';
+import { evtApplyReadingOrder, evtApplyTranspositions, evtFilterBlankPages, evtFilterByWritingPhase, evtGetOwnerDoc, evtMergePagesByFacs, evtPagesOverride$ } from './evt-custom-pages.util';
 import { deepSearch } from '../utils/dom-utils';
 import { EditionSource } from './named-entities.service';
 
@@ -232,7 +232,9 @@ export class EVTStatusService {
                 const layerOrder = changes?.layerOrder || [];
                 let override: Page[] | null = null;
                 if (level === 'interpretative') {
-                    override = evtMergePagesByFacs(evtFilterBlankPages(evtApplyTranspositions(raw.slice(), doc), doc));
+                    // [Autos] 1) ordine di lettura editoriale (catena @next/@prev: due diegesi per Fasi);
+                    //         2) trasposizioni d'autore (resp #TUS); 3) pagine bianche nascoste; 4) fusione porzioni.
+                    override = evtMergePagesByFacs(evtFilterBlankPages(evtApplyTranspositions(evtApplyReadingOrder(raw.slice()), doc), doc));
                 } else if (level === 'changesView') {
                     override = evtMergePagesByFacs(evtFilterByWritingPhase(raw, selectedLayer, layerOrder), layerOrder);
                 } else if (level === 'diplomatic') {

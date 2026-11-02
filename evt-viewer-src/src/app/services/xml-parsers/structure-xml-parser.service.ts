@@ -633,6 +633,9 @@ private async checkDepaErrors(source: HTMLElement) {
       url: this.getPageUrl(imagesSource, getID(pb, 'page')),
       facsUrl: this.getPageUrl(imagesSource, (pb.getAttribute('facs') || getID(pb, 'page')).split('#').slice(-1)[0]),
       writingChange: pb.getAttribute('change') || undefined, // [Autos] fase/strato della carta
+      // [Autos] catena dell'ordine di lettura editoriale (@next/@prev sul <pb>)
+      readingNext: (pb.getAttribute('next') || '').replace('#', '') || undefined,
+      readingPrev: (pb.getAttribute('prev') || '').replace('#', '') || undefined,
     };
   }
 

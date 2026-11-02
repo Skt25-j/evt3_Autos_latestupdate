@@ -287,3 +287,39 @@ export function evtApplyTranspositions(pages: Page[], doc: Document | null): Pag
 
   return pages;
 }
+
+/**
+ * [Autos] Riordina le pagine secondo la catena dell'ordine di lettura editoriale
+ * dichiarata sui <pb> con @next/@prev (readingNext/readingPrev). Ricostruisce le due
+ * diegesi (recto/verso) nell'ordine delle Fasi: parte dalla testa (pagina con
+ * readingNext ma senza readingPrev) e segue readingNext; eventuali pagine non
+ * incatenate restano in coda nell'ordine documentario. Usata SOLO nella vista critica
+ * (interpretative), prima delle trasposizioni d'autore e del filtro pagine bianche.
+ */
+export function evtApplyReadingOrder(pages: Page[]): Page[] {
+  try {
+    if (!pages || !pages.length) { return pages; }
+    const hasChain = pages.some((p) => p.readingNext || p.readingPrev);
+    if (!hasChain) { return pages; }
+    const byId = new Map<string, Page>();
+    pages.forEach((p) => { if (p.id) { byId.set(p.id, p); } });
+    const heads = pages.filter((p) => p.readingNext && !p.readingPrev);
+    const start = heads.length ? heads[0] : pages[0];
+    const out: Page[] = [];
+    const seen = new Set<Page>();
+    let cur: Page | undefined = start;
+    while (cur && !seen.has(cur)) {
+      seen.add(cur);
+      out.push(cur);
+      cur = cur.readingNext ? byId.get(cur.readingNext) : undefined;
+    }
+    // pagine non raggiunte dalla catena: in coda, nell'ordine originale
+    pages.forEach((p) => { if (!seen.has(p)) { out.push(p); } });
+
+    return out;
+  } catch (err) {
+    console.error('evt reading-order chain error', err);
+
+    return pages;
+  }
+}
