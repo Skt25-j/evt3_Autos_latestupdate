@@ -87,9 +87,11 @@ export interface Page {
     // [Autos] fase/strato di scrittura della carta (@change sul <pb>), per il
     // filtro-per-fase delle pagine in changesView.
     writingChange?: string;
-    // [Autos] catena dell'ordine di lettura editoriale (@next/@prev sul <pb>):
+    // [Autos] xml:id del <div type="page"> (contenitore logico della carta) e catena
+    // dell'ordine di lettura editoriale (@next/@prev dichiarati su quel div):
     // ricostruzione delle due diegesi (recto/verso) secondo le Fasi. Letta da
     // evtApplyReadingOrder per riordinare le pagine nella vista critica.
+    divId?: string;
     readingNext?: string;
     readingPrev?: string;
 }

@@ -624,6 +624,11 @@ private async checkDepaErrors(source: HTMLElement) {
       ? this.getContentAfterMilestone(doc, pb, nextPb, ancestorTagName)
       : [pb];
 
+    // [Autos] L'ordine di lettura editoriale e' dichiarato come catena @next/@prev
+    // sull'elemento LOGICO <div type="page"> che avvolge il <pb> (non sul <pb>, che e'
+    // un milestone documentario): vedi evtApplyReadingOrder.
+    const pageDiv = this.closestPageDiv(pb);
+
     return {
       id: getID(pb, 'page'),
       label: getNOrDefaultFromElement(pb) || 'page',
@@ -633,10 +638,25 @@ private async checkDepaErrors(source: HTMLElement) {
       url: this.getPageUrl(imagesSource, getID(pb, 'page')),
       facsUrl: this.getPageUrl(imagesSource, (pb.getAttribute('facs') || getID(pb, 'page')).split('#').slice(-1)[0]),
       writingChange: pb.getAttribute('change') || undefined, // [Autos] fase/strato della carta
-      // [Autos] catena dell'ordine di lettura editoriale (@next/@prev sul <pb>)
-      readingNext: (pb.getAttribute('next') || '').replace('#', '') || undefined,
-      readingPrev: (pb.getAttribute('prev') || '').replace('#', '') || undefined,
+      // [Autos] id del div-pagina e catena dell'ordine di lettura (sul <div type="page">)
+      divId: (pageDiv && pageDiv.getAttribute('xml:id')) || undefined,
+      readingNext: ((pageDiv && pageDiv.getAttribute('next')) || '').replace('#', '') || undefined,
+      readingPrev: ((pageDiv && pageDiv.getAttribute('prev')) || '').replace('#', '') || undefined,
     };
+  }
+
+  // [Autos] Risale dal <pb> al <div type="page"> che lo contiene (contenitore logico
+  // della carta), su cui e' dichiarata la catena @next/@prev dell'ordine di lettura.
+  private closestPageDiv(el: XMLElement): XMLElement | null {
+    let p: any = el && el.parentNode;
+    while (p && p.nodeType === 1) {
+      if ((p.tagName || '').toLowerCase() === 'div' && p.getAttribute && p.getAttribute('type') === 'page') {
+        return p as XMLElement;
+      }
+      p = p.parentNode;
+    }
+
+    return null;
   }
 
   /* A milestone separator (<pb/>) is an empty marker: it only says where a page starts, so the page content is made of the nodes that follow it.
