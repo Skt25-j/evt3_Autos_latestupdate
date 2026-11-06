@@ -1,5 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { AppConfig } from 'src/app/app.config';
 
 import { Paragraph } from '../../models/evt-models';
 import { register } from '../../services/component-register.service';
@@ -23,6 +24,10 @@ export class ParagraphComponent implements OnInit, OnDestroy {
   // il paragrafo compare solo dalla sua fase in poi. Ordine fasi da currentChanges$.
   public orderedLayers: string[] = [];
   private layerSub: Subscription;
+
+  // [Autos] Badge con la lettera della fase sui <p> con @change (come <mod> e i blocchi
+  // <div>/<ab>/<seg>). Attivato dalla stessa opzione.
+  public showLayerMarkers = AppConfig.evtSettings.edition.showChangeLayerMarkerInText;
 
   constructor(public evtStatusService: EVTStatusService) {}
 
@@ -53,5 +58,35 @@ export class ParagraphComponent implements OnInit, OnDestroy {
       ? sel : this.orderedLayers[this.orderedLayers.length - 1];
 
     return this.getLayerIndex(current) < this.getLayerIndex(change);
+  }
+
+  // [Autos] Badge della fase: visibile in changesView, solo se il <p> ha @change ed e'
+  // effettivamente visibile nella fase corrente (stessa condizione del filtro).
+  showParagraphLayerMarker(): boolean {
+    return this.editionLevel === 'changesView'
+      && this.showLayerMarkers
+      && !!this.data?.attributes?.change
+      && !this.layerHidden();
+  }
+
+  // "strato-E" -> "E" (come mod.component / generic-element).
+  getLayerLabel(layer: string): string {
+    if (!layer) { return ''; }
+    const clean = layer.replace('#', '');
+    const parts = clean.split('-');
+
+    return parts.length > 1 ? parts[parts.length - 1] : clean;
+  }
+
+  // "strato-E" -> "strato E" per il tooltip del badge.
+  getLayerTitle(layer: string): string {
+    return (layer || '').replace('#', '').replace('-', ' ');
+  }
+
+  getLayerColor(layer: string): string {
+    const layerColors = AppConfig.evtSettings.edition.changeSequenceView.layerColors;
+    const key = (layer || '').replace('#', '');
+
+    return (key && layerColors && layerColors[key]) ? layerColors[key] : 'black';
   }
 }
