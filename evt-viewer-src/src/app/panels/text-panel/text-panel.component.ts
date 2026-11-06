@@ -176,18 +176,7 @@ export class TextPanelComponent implements OnDestroy {
   ]).pipe(
     delay(0),
     filter(([pages, currentPage, editionLevel, currentViewMode]) => !!pages && !!currentPage && !!editionLevel && !!currentViewMode),
-    // [Autos] Ri-risolve la pagina corrente dalla lista AGGIORNATA (pages$): al cambio di
-    // livello/fase l'override ricalcola le pagine (trasposizioni, riordino e fusione delle
-    // porzioni), ma la stessa carta mantiene l'id. Senza ri-risolvere, il pannello testo
-    // restava legato all'oggetto-pagina vecchio (porzioni NON riordinate) in assenza di un
-    // refresh dal pannello immagine: per questo il riordino si vedeva in image+text ma non
-    // nella sola vista testo. Il fallback a currentPage lascia tutto invariato se l'id non
-    // e' nella nuova lista (nessuna regressione).
-    map(([pages, currentPage, editionLevel, currentViewMode]) => {
-      const resolved = (currentPage && pages.find((p) => p.id === currentPage.id)) || currentPage;
-
-      return { pages, currentPage: resolved, editionLevel, currentViewMode };
-    }),
+    map(([pages, currentPage, editionLevel, currentViewMode]) => ({ pages, currentPage, editionLevel, currentViewMode })),
     distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
     shareReplay(1),
   );
