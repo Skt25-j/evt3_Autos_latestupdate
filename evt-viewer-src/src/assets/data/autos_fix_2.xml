@@ -932,14 +932,22 @@
                                 <lem varSeq="3">
                                     <mod change="#fase-B">
                                         <subst>
-                                            <del rend="strikethrough" >nel</del>
-                                            
-                                            <add place="above" seq="2">da bimbo</add></subst>
-                                    </mod></lem>
+                                            <del rend="strikethrough">nel</del>
+                                            <add place="above">da bimbo</add>
+                                        </subst>
+                                    </mod>
+                                </lem>
                                 <rdg varSeq="2">
-                                    <mod><subst change="#fase-B"><del rend="strikethrough"> della serva</del>
-                                    <add place="above">nel</add></subst></mod></rdg>
-                                <rdg varSeq="1"><mod change="#fase-A">dalla serva</mod></rdg>
+                                    <mod change="#fase-B">
+                                        <subst>
+                                            <del rend="strikethrough">dalla serva</del>
+                                            <add place="above">nel</add>
+                                        </subst>
+                                    </mod>
+                                </rdg>
+                                <rdg varSeq="1">
+                                    <mod change="#fase-A">dalla serva</mod>
+                                </rdg>
                             </app>
                             mi prese <mod change="#fase-A">
                                 <subst><add place="inline">tale</add>
