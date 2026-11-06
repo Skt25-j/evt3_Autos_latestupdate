@@ -929,14 +929,16 @@
                             --> non so <mod change="#fase-A"><add place="above">il</add></mod> perché, mi parve di sentir<lb n="13"/>dei bussi,
                             d<mod change="#fase-A"><subst><add place="superimposed">i</add><del rend="overwritten">ei</del></subst></mod> veder delle larve e ricordandomi di tutte le fiabe<lb n="14"/>paurose raccontatemi
                             <app>
-                                <lem varSeq="2">
+                                <lem varSeq="3">
                                     <mod change="#fase-B">
                                         <subst>
-                                            <del rend="strikethrough" seq="1">della serva</del>
-                                            <del rend="strikethrough" seq="2"><add place="above">nel</add></del>
+                                            <del rend="strikethrough" >nel</del>
                                             
                                             <add place="above" seq="2">da bimbo</add></subst>
                                     </mod></lem>
+                                <rdg varSeq="2">
+                                    <mod><subst change="#fase-B"><del rend="strikethrough"> della serva</del>
+                                    <add place="above">nel</add></subst></mod></rdg>
                                 <rdg varSeq="1"><mod change="#fase-A">dalla serva</mod></rdg>
                             </app>
                             mi prese <mod change="#fase-A">
