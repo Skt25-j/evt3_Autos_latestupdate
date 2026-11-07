@@ -80,7 +80,13 @@ export class EVTStatusService {
             // passa a una fase in cui quella carta non esiste) si torna alla prima pagina.
             // Cosi' il testo si aggiorna subito invece di restare "congelato" sulla pagina
             // vecchia finche' non si scorre.
-            mergeMap((id) => this.evtModelService.pages$.pipe(
+            // [Autos] switchMap (non mergeMap): risolve SOLO l'ultimo id richiesto e annulla
+            // le risoluzioni precedenti. Con mergeMap ogni id navigato lasciava viva una
+            // sottoscrizione a pages$ che, al ri-emettere della lista, ricadeva su pages[0]
+            // (la prima pagina, "Autos primi appunti") -> flash della prima pagina a ogni
+            // navigazione con le frecce. switchMap mantiene il comportamento voluto (se la
+            // pagina corrente sparisce in una fase, si va alla prima) senza i pages[0] fantasma.
+            switchMap((id) => this.evtModelService.pages$.pipe(
                 map((pages) => !id ? pages[0] : pages.find((p) => p.id === id) || pages[0]),
             )),
         ),
