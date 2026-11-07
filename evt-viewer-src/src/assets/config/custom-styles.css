@@ -660,14 +660,17 @@ html[data-el="interpretative"] [rend~="soloDiplomatica"],
 html[data-el="interpretative"] [data-rend~="soloDiplomatica"] { display: none !important; }
 
 /* [Autos] Spazio fra le due porzioni trasposte d'autore (ingenuamente/credetti a
-   13r, superiore/curioso a 22v). Lo spazio in coda ai <seg> nel TEI viene collassato
-   in fase di rendering (nodo di testo di soli spazi fra elementi inline), cosi' in
-   critica le parole risultavano attaccate ("ingenuamentecredetti"). Reintroduciamo
-   uno spazio con ::after per questi seg specifici, in tutte le viste. */
+   13r, superiore/curioso a 22v, cominciava/infelicemente a 20v). Lo spazio in coda ai
+   <seg> nel TEI viene collassato in fase di rendering (nodo di testo di soli spazi fra
+   elementi inline), cosi' in critica le parole risultavano attaccate
+   ("ingenuamentecredetti"). Reintroduciamo uno spazio con ::after per questi seg
+   specifici, in tutte le viste. */
 #seg_ingenuamente::after,
 #seg_credetti::after,
 #superiore_22v1::after,
-#curioso_22v1::after { content: " "; white-space: pre-wrap; }
+#curioso_22v1::after,
+#cominciava_20v1::after,
+#infelicemente_20v1::after { content: " "; white-space: pre-wrap; }
 
 /* ============================================================= */
 /* CHANGE su blocco (p / div / ab / lg / l): fase senza apparato  */
