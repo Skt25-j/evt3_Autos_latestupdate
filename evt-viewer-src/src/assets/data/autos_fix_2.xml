@@ -370,12 +370,6 @@
                 <ptr target="#superiore_22v1"/>
                 <ptr target="#curioso_22v1"/>
             </transpose>
-            <!-- 20v1: trasposizione d'autore "infelicemente/cominciava" (numeri 1/2 d'autore);
-                 ptr nell'ordine voluto: cominciava -> infelicemente. In precedenza resa con <choice>/sic-corr. -->
-            <transpose>
-                <ptr target="#cominciava_20v1"/>
-                <ptr target="#infelicemente_20v1"/>
-            </transpose>
             <transpose resp="#TAV" cert="low">
                 <!-- [Autos] Ricomposizione dei rimandi d'autore (segni di richiamo fisici, reinterpretati)
                      su 7r2(fase-D)/3v2/4v2: dopo 6v2 i frammenti vanno letti in quest'ordine.
@@ -1544,7 +1538,7 @@
                         <pb n="11v1" xml:id="Quaderno1_11v" facs="11v.jpg" type="blank" change="#fase-B"/>
                     </div>
                     
-                    <div prev="#pd_Quaderno1_11v" next="#pd_Quaderno1_13r" type="page" xml:id="Quaderno1_12r">
+                    <div prev="#pd_Quaderno1_11v" next="#Quaderno1_12r_b" type="page" xml:id="Quaderno1_12r">
                         <pb n="12r1" facs="12r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>13</add></mod></fw>
                         <p rend="indent" change="#fase-B">
@@ -1581,7 +1575,7 @@
                                 <lb n="10"/><mod change="#fase-B"><subst><del rend="overwritten">a</del><add place="superimposed">e</add></subst></mod> i superiori persi la stima <mod change="#fase-B"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del><add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
                             </p>
                     </div>
-                    <div type="page" xml:id="Quaderno1_12r_b">
+                    <div prev="#Quaderno1_12r" next="#Quaderno1_12v" type="page" xml:id="Quaderno1_12r_b">
                         <pb n="12r1b" facs="12r.jpg" change="#fase-B"/>
                         <p rend="indent" change="#fase-B">
                                 <metamark function="transposition" target="#Quaderno1_12v" place="above">(1)</metamark>
@@ -1669,7 +1663,7 @@
                          </choice> scresceva la scapataggine, non potevano</mod> 
                          </p>
                          </div> -->
-                    <div type="page" xml:id="Quaderno1_12v">
+                    <div prev="#Quaderno1_12r_b" next="#pd_Quaderno1_13r" type="page" xml:id="Quaderno1_12v">
                         <pb n="12v1" facs="12v.jpg" change="#fase-B"/>
                         <p rend="indent" change="#fase-B">
                                 <lb n="1"/><metamark function="transposition" target="#Quaderno1_12r_b" place="above">(1)</metamark>Molte volte <mod change="#fase-B"><subst><add place="inline">m'avvenne</add>
@@ -1693,7 +1687,7 @@
                          </div>-->
                     
                     
-                    <div prev="#Quaderno1_12r" next="#pd_Quaderno1_13v" xml:id="pd_Quaderno1_13r" type="page">
+                    <div prev="#Quaderno1_12v" next="#pd_Quaderno1_13v" xml:id="pd_Quaderno1_13r" type="page">
                         <pb n="13r1" xml:id="Quaderno1_13r" facs="13r.jpg" change="#fase-B"/>
                         <fw rend="soloDiplomatica" place="top_right" type="pageNum"><mod change="#fase-C"><add>14</add></mod></fw>
                         <p rend="indent" change="#fase-B">
@@ -2448,7 +2442,15 @@
                         <fw rend="soloDiplomatica" place="top_left" type="pageNum"><mod change="#strato-E"><add><hi rend="underline">24</hi></add></mod></fw>
                         <p rend="indent" change="#fase-D">
                             <lb n="1"/>ricordo che la superbia s’era moltiplicata per 14 e la mia fede invece
-                                <lb n="2"/><seg xml:id="infelicemente_20v1">infelicemente<metamark function="transposition" place="above" rend="soloDiplomatica"><hi rend="apice">2</hi></metamark> </seg><seg xml:id="cominciava_20v1"><del rend="strikethrough">in</del>cominciava<metamark function="transposition" place="above" rend="soloDiplomatica"><hi rend="apice">1</hi></metamark> </seg>a doventare quattordicesima.
+                                <lb n="2"/><choice resp="#TAV">
+                                    <sic>
+                                        infelicemente 
+                                        <metamark function="transposition" place="above"><hi rend="apice">2</hi></metamark>
+                                        <del rend="strikethrough">in</del>cominciava
+                                        <metamark function="transposition" place="above"><hi rend="apice">1</hi></metamark>
+                                    </sic>
+                                    <corr>cominciava infelicemente</corr>
+                                </choice>a doventare quattordicesima.
                         </p>
                         <p rend="indent" change="#fase-D">
                             <lb n="3"/>La terza edizione è questa qui notata, e il lettore potrà dire
@@ -3981,8 +3983,7 @@ in una <mod change="#fase-F">
                             <lb n="13"/>la cagione di tutte le mie scapataggini, di
                             <lb n="14"/>tutte le mie svogliatezze:
                             
-                           
-                                <mod change="#fase-G"><subst seq="2">
+                           <!-- <mod change="#fase-G"><subst seq="2">
                                         <del rend="strikethrough" seq="2"><lb n="9"/>Questo stato terribile che io solea tenere represso
                                             <lb n="10"/>e nascosto
                                             <subst seq="1"><del rend="strikethrough" seq="1"> mi rendeva sconstro <gap unit="char" quantity="3"/>coi compagni
@@ -3990,8 +3991,9 @@ in una <mod change="#fase-F">
                                                 <add place="inline" seq="1">rompeva dal profondo del mio animo risposte ardi<hi rend="soloDiplomatica">-</hi><lb n="12" rend="soloDiplomatica"/>te al prefetto</add></subst></del>
                                         <add place="inline" seq="2">Quest’orribile stato interno era la
                                             <lb n="13"/>cagione di tutte le mie scapataggini, di
-                                            <lb n="14"/>tutte le mie svogliatezze:</add> <!--Non si vede l'esterno, il problema è che non si capisce cosa sostituisce rompeva -->
-                                    </subst></mod>vivevo <mod change="#fase-G"><subst><del rend="strikethrough">una condi</del>
+                                            <lb n="14"/>tutte le mie svogliatezze:</add> Non si vede l'esterno, il problema è che non si capisce cosa sostituisce rompeva
+                                    </subst></mod> -->
+                                vivevo <mod change="#fase-G"><subst><del rend="strikethrough">una condi</del>
                                         <lb n="15"/><add place="inline">una vita</add></subst></mod>
 <!-- Non promosso ad app: currenti calamo / lezione precedente senza interesse critico autonomo. --> troppo <mod change="#fase-O"><add place="above">scomposta, troppo</add></mod> anormale per un ragazzo del<hi rend="soloDiplomatica">-</hi><lb n="16" rend="soloDiplomatica"/>le mie in<mod change="#fase-G"><subst><del rend="overwritten">d</del><add place="superimposed">cl</add></subst></mod>inazioni, talché lo svolgimento di esse
                                 <lb n="17"/>fu disviato, scorretto ed erroneo.</p>
