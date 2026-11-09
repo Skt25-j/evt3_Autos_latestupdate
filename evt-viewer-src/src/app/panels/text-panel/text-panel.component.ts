@@ -171,12 +171,27 @@ export class TextPanelComponent implements OnDestroy {
   public currentStatus$ = combineLatest([
     this.evtModelService.pages$,
     this.currentPage$,
+    this.evtStatusService.currentPage$,
     this.currentEdLevel$,
     this.evtStatusService.currentViewMode$,
   ]).pipe(
     delay(0),
-    filter(([pages, currentPage, editionLevel, currentViewMode]) => !!pages && !!currentPage && !!editionLevel && !!currentViewMode),
-    map(([pages, currentPage, editionLevel, currentViewMode]) => ({ pages, currentPage, editionLevel, currentViewMode })),
+    filter(([pages, localPage, svcPage, editionLevel, currentViewMode]) =>
+      !!pages && (!!localPage || !!svcPage) && !!editionLevel && !!currentViewMode),
+    // [Autos] La pagina da rendere e' SEMPRE quella presente nella lista aggiornata pages$
+    // (che riflette riordino/trasposizioni/fusione del livello corrente). Si preferisce la
+    // pagina autorevole del servizio (evtStatusService.currentPage$), che viene ri-risolta su
+    // pages$ a ogni cambio di livello/fase; il currentPage$ locale si aggiorna invece solo da
+    // scroll o dal selettore, quindi in sola vista testo (senza il refresh del pannello
+    // immagine) restava legato all'oggetto-pagina vecchio -> porzioni non riordinate.
+    // Ri-ancoriamo per id alla lista corrente; nessun ripiego su oggetti di altri livelli
+    // (era la causa del "congelamento" visto in precedenza).
+    map(([pages, localPage, svcPage, editionLevel, currentViewMode]) => {
+      const ref = svcPage || localPage;
+      const currentPage = (ref && pages.find((p) => p.id === ref.id)) || ref;
+
+      return { pages, currentPage, editionLevel, currentViewMode };
+    }),
     distinctUntilChanged((a, b) => JSON.stringify(a) === JSON.stringify(b)),
     shareReplay(1),
   );
