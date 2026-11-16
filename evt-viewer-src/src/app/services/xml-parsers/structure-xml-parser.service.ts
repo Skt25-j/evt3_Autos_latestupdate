@@ -624,10 +624,23 @@ private async checkDepaErrors(source: HTMLElement) {
       ? this.getContentAfterMilestone(doc, pb, nextPb, ancestorTagName)
       : [pb];
 
-    // [Autos] L'ordine di lettura editoriale e' dichiarato come catena @next/@prev
-    // sull'elemento LOGICO <div type="page"> che avvolge il <pb> (non sul <pb>, che e'
-    // un milestone documentario): vedi evtApplyReadingOrder.
+    // [Autos] L'ordine di lettura editoriale puo' essere dichiarato in due modi sul
+    // contenitore LOGICO <div type="page"> che avvolge il <pb> (non sul <pb>, milestone
+    // documentario): (1) come aggregato virtuale <join>/<joinGrp> in <standOff>, la cui
+    // @target ordinata elenca le carte nell'ordine di lettura -> forma attuale; oppure
+    // (2) come catena @next/@prev -> forma storica, tenuta come fallback. La (1), se
+    // presente, prevale. Entrambe alimentano evtApplyReadingOrder via readingNext/Prev.
     const pageDiv = this.closestPageDiv(pb);
+    const divId = (pageDiv && pageDiv.getAttribute('xml:id')) || undefined;
+    let readingNext = ((pageDiv && pageDiv.getAttribute('next')) || '').replace('#', '') || undefined;
+    let readingPrev = ((pageDiv && pageDiv.getAttribute('prev')) || '').replace('#', '') || undefined;
+    if (divId) {
+      const joinEntry = this.getJoinReadingIndex(doc).get(divId);
+      if (joinEntry) {
+        readingPrev = joinEntry.prev || undefined;
+        readingNext = joinEntry.next || undefined;
+      }
+    }
 
     return {
       id: getID(pb, 'page'),
@@ -638,11 +651,37 @@ private async checkDepaErrors(source: HTMLElement) {
       url: this.getPageUrl(imagesSource, getID(pb, 'page')),
       facsUrl: this.getPageUrl(imagesSource, (pb.getAttribute('facs') || getID(pb, 'page')).split('#').slice(-1)[0]),
       writingChange: pb.getAttribute('change') || undefined, // [Autos] fase/strato della carta
-      // [Autos] id del div-pagina e catena dell'ordine di lettura (sul <div type="page">)
-      divId: (pageDiv && pageDiv.getAttribute('xml:id')) || undefined,
-      readingNext: ((pageDiv && pageDiv.getAttribute('next')) || '').replace('#', '') || undefined,
-      readingPrev: ((pageDiv && pageDiv.getAttribute('prev')) || '').replace('#', '') || undefined,
+      divId,
+      readingNext,
+      readingPrev,
     };
+  }
+
+  // [Autos] Ordine di lettura dichiarato come <join>/<joinGrp> (aggregato virtuale, TEI
+  // att.pointing: la @target ordinata elenca le carte nell'ordine di lettura). Costruisce
+  // una mappa divId -> {prev, next} dalla sequenza dei target; cache sul doc. Se non ci
+  // sono <join>, la mappa e' vuota e si ricade sul fallback @next/@prev.
+  private getJoinReadingIndex(doc: Document): Map<string, { prev?: string; next?: string }> {
+    const cacheKey = '__autosJoinReadingIndex';
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    if ((doc as any)[cacheKey]) { return (doc as any)[cacheKey]; }
+    const idx = new Map<string, { prev?: string; next?: string }>();
+    try {
+      const order: string[] = [];
+      Array.from(doc.querySelectorAll('join')).forEach((j: Element) => {
+        (j.getAttribute('target') || '').split(/\s+/)
+          .map((s) => s.replace('#', '').trim())
+          .filter((s) => !!s)
+          .forEach((id) => { if (order.indexOf(id) === -1) { order.push(id); } });
+      });
+      order.forEach((id, i) => idx.set(id, { prev: order[i - 1], next: order[i + 1] }));
+    } catch (e) {
+      console.error('evt [Autos] join reading-order parse error', e);
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (doc as any)[cacheKey] = idx;
+
+    return idx;
   }
 
   // [Autos] Risale dal <pb> al <div type="page"> che lo contiene (contenitore logico
